@@ -1,0 +1,13 @@
+- name: Rick Owens
+  projects:
+    - Basel 2017
+    - Basel 2016
+
+- name: Lucas Samaras
+  projects:
+    - Gold Chicken Wire
+    - Basel 2016
+
+- name: Lucas Samaras Duplicate
+  projects:
+    - Miami 2009
