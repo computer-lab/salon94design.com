@@ -9,3 +9,7 @@ export const baseUl = css`
 export const monofont = css`
   font-family: Inconsolata, Menlo, monospace;
 `
+
+export const sansfont = css`
+  font-family: Work Sans, Helvetica, Arial, sans-serif;
+`
