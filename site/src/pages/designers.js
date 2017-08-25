@@ -1,7 +1,7 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 
-export default function Template({ data }) {
+const Designers = ({ data }) => {
   const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
@@ -19,6 +19,8 @@ export default function Template({ data }) {
     </div>
   )
 }
+
+export default Designers
 
 export const pageQuery = graphql`
   query DesignersQuery {
