@@ -7,7 +7,8 @@ const Designers = ({ data }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
 
   return (
-    <div className="blog-post-container">
+    <div>
+      <Helmet title={`Salon 94 Design - Designers`} />
       <h4>Here are my designers:</h4>
       <ul>
         {designers.map(item =>
