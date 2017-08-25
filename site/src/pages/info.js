@@ -27,7 +27,13 @@ const sectionEl = css`
   line-height: 1.4;
 `
 
-const SectionText = styled.p`composes: ${sectionEl};`
+const SectionText = styled.p`
+  composes: ${sectionEl};
+  & a {
+    text-decoration: none;
+    border-bottom: 2px solid #000;
+  }
+`
 
 const SectionList = styled.ul`
   composes: ${sectionEl};
@@ -53,6 +59,7 @@ const MailingListSignup = styled.div`
 
   & a {
     color: #000;
+    text-decoration: none;
     border-bottom: 2px solid #000;
   }
 `

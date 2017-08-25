@@ -1,13 +1,37 @@
-- name: Rick Owens
-  projects:
-    - Basel 2017
-    - Basel 2016
+- slug: rick-owens
+  name: Rick Owens
+  bio:
+    Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.
+    Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.
+  pieces:
+    -
+      title: Shirt #1
+      when: 2017
+      projects: [basel-2016]
+      tags: [clothing]
+      images: ['rick-owens/shirt1']
+    -
+      title: Shirt #2
+      when: 2017
+      projects: [basel-2016]
+      tags: [clothing]
+      images: ['rick-owens/shirt2']
 
-- name: Lucas Samaras
-  projects:
-    - Gold Chicken Wire
-    - Basel 2016
-
-- name: Lucas Samaras Duplicate
-  projects:
-    - Miami 2009
+- slug: lucas-samaras
+  name: Lucas Samaras
+  bio:
+    Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.
+    Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.
+  pieces:
+    -
+      title: Gold #1
+      when: 2017
+      projects: [gold-chicken-wire]
+      tags: [jewelry]
+      images: ['lucas-samaras/gold1']
+    -
+      title: Gold #2
+      when: 2017
+      projects: [gold-chicken-wire]
+      tags: [jewelry]
+      images: ['lucas-samaras/gold2']
