@@ -2,8 +2,17 @@ const path = require('path');
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
   const { createPage } = boundActionCreators;
+
+  const emptyTemplate = path.resolve(`src/templates/empty.js`);
   const postTemplate = path.resolve(`src/templates/post.js`);
 
+  // top-level pages
+  createPage({ path: '/projects', component: emptyTemplate })
+  createPage({ path: '/designers', component: emptyTemplate })
+  createPage({ path: '/pieces', component: emptyTemplate })
+  createPage({ path: '/info', component: emptyTemplate })
+
+  // markdown blog posts
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
