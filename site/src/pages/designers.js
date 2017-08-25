@@ -12,8 +12,8 @@ const Designers = ({ data }) => {
       <h4>Here are my designers:</h4>
       <ul>
         {designers.map(item =>
-          <li>
-            {item.name} — {item.projects.join(', ')}
+          <li key={item.name}>
+            {item.name}
           </li>
         )}
       </ul>
@@ -29,7 +29,7 @@ export const pageQuery = graphql`
       edges {
         node {
           name
-          projects
+          slug
         }
       }
     }

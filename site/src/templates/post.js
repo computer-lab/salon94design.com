@@ -2,9 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 
 export default function Template({ data }) {
-  const { markdownRemark: post, allDesignersYaml } = data
-
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
+  const { markdownRemark: post } = data
 
   return (
     <div>
@@ -13,15 +11,6 @@ export default function Template({ data }) {
         <h1>
           {post.frontmatter.title}
         </h1>
-
-        <h4>Here are my designers:</h4>
-        <ul>
-          {designers.map(item =>
-            <li>
-              {item.name} — {item.projects.join(', ')}
-            </li>
-          )}
-        </ul>
 
         <div
           className="blog-post-content"
@@ -34,14 +23,6 @@ export default function Template({ data }) {
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
-    allDesignersYaml {
-      edges {
-        node {
-          name
-          projects
-        }
-      }
-    }
     markdownRemark(frontmatter: { path: { eq: $path } }) {
       html
       frontmatter {
