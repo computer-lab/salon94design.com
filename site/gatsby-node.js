@@ -1,9 +1,11 @@
-const path = require('path');
+const path = require('path')
 
 exports.createPages = ({ boundActionCreators, graphql }) => {
-  const { createPage } = boundActionCreators;
-  const exampleTemplate = path.resolve(`src/templates/example.js`);
+  const { createPage } = boundActionCreators
 
+  const postTemplate = path.resolve(`src/templates/post.js`)
+
+  // markdown blog posts
   return graphql(`{
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
@@ -22,19 +24,16 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
         }
       }
     }
-  }`
-)
-    .then(result => {
-      if (result.errors) {
-        return Promise.reject(result.errors);
-      }
-      result.data.allMarkdownRemark.edges
-        .forEach(({ node }) => {
-          createPage({
-            path: node.frontmatter.path,
-            component: exampleTemplate,
-            context: {} // additional data can be passed via context
-          });
-        });
-    });
+  }`).then(result => {
+    if (result.errors) {
+      return Promise.reject(result.errors)
+    }
+    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      createPage({
+        path: node.frontmatter.path,
+        component: postTemplate,
+        context: {}, // additional data can be passed via context
+      })
+    })
+  })
 }
