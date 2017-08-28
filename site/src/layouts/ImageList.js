@@ -65,7 +65,7 @@ class ImageList extends Component {
     this.onKeyDown = this.onKeyDown.bind(this)
 
     this.state = {
-      isExpanded: false
+      isExpanded: false,
     }
   }
 
@@ -105,7 +105,7 @@ class ImageList extends Component {
       Scroll.scroller.scrollTo(`image-${i}`, {
         duration: 100,
         smooth: true,
-        offset: -24
+        offset: -24,
       })
     })
   }
@@ -122,24 +122,40 @@ class ImageList extends Component {
           {images.map((image, i) => {
             const { src, linkPath, leftText, rightText, alt = '' } = image
 
-            const onMouseEnter = isExpanded || !onImageHover ? null : () => onImageHover(image)
-            const onMouseLeave = isExpanded || !onImageHover ? null : () => onImageHover(null)
-            const img = <img src={src} alt={alt} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+            const onMouseEnter =
+              isExpanded || !onImageHover ? null : () => onImageHover(image)
+            const onMouseLeave =
+              isExpanded || !onImageHover ? null : () => onImageHover(null)
+            const img = (
+              <img
+                src={src}
+                alt={alt}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+              />
+            )
 
             return (
               <Scroll.Element name={`image-${i}`} key={`image-${i}`}>
-                <ImageItem className={cx({ expanded: isExpanded })} onClick={() => this.onImageClick(i)}>
-                  { isExpanded && linkPath
-                    ? <Link to={linkPath}>{img}</Link>
-                    : img
-                  }
+                <ImageItem
+                  className={cx({ expanded: isExpanded })}
+                  onClick={() => this.onImageClick(i)}
+                >
+                  {isExpanded && linkPath
+                    ? <Link to={linkPath}>
+                        {img}
+                      </Link>
+                    : img}
 
-                  { isExpanded &&
+                  {isExpanded &&
                     <ImageTextContainer>
-                      <ImageText className="left">{leftText}</ImageText>
-                      <ImageText className="right">{rightText}</ImageText>
-                    </ImageTextContainer>
-                  }
+                      <ImageText className="left">
+                        {leftText}
+                      </ImageText>
+                      <ImageText className="right">
+                        {rightText}
+                      </ImageText>
+                    </ImageTextContainer>}
                 </ImageItem>
               </Scroll.Element>
             )
@@ -152,7 +168,7 @@ class ImageList extends Component {
 
 ImageList.propTypes = {
   images: PropTypes.array.isRequired,
-  onImageHover: PropTypes.function
+  onImageHover: PropTypes.function,
 }
 
 export default ImageList

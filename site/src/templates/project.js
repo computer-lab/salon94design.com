@@ -25,7 +25,7 @@ export default class ProjectTemplate extends Component {
     this.imageHoverHandler = this.imageHoverHandler.bind(this)
 
     this.state = {
-      hoverImage: null
+      hoverImage: null,
     }
   }
 
@@ -45,25 +45,30 @@ export default class ProjectTemplate extends Component {
 
     const pieceImages = []
     designers.forEach(designer => {
-      const pieces = designer.pieces.filter(piece => piece.projects.includes(currentProjectSlug))
+      const pieces = designer.pieces.filter(piece =>
+        piece.projects.includes(currentProjectSlug)
+      )
 
       pieces.forEach(piece => {
         piece.images.forEach((src, i) => {
-          const leftText = piece.caption ? `${piece.title}\n${piece.caption}` : piece.title
+          const leftText = piece.caption
+            ? `${piece.title}\n${piece.caption}`
+            : piece.title
           pieceImages.push({
             piece,
             designer,
             src: pieceImagePath(src),
             linkPath: `/designers/${designer.slug}/${piece.slug}`,
             leftText: i === 0 && leftText,
-            rightText: i === 0 && piece.price
+            rightText: i === 0 && piece.price,
           })
         })
       })
     })
 
     const images = []
-    for (let i = 0; i < 10; i++) { // TODO: remove temporary image multiplication
+    for (let i = 0; i < 10; i++) {
+      // TODO: remove temporary image multiplication
       pieceImages.forEach(item => images.push(item))
     }
 
@@ -78,7 +83,11 @@ export default class ProjectTemplate extends Component {
             projects={projects}
             currentProjectSlug={currentProjectSlug}
           />
-          {hoverImage && <PieceSummary piece={hoverImage.piece} designer={hoverImage.designer} />}
+          {hoverImage &&
+            <PieceSummary
+              piece={hoverImage.piece}
+              designer={hoverImage.designer}
+            />}
         </RightPane>
       </PageContainer>
     )
