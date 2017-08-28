@@ -23,10 +23,19 @@ const SummaryItem = styled.div`
 
 const PieceSummary = ({ designer, piece }) =>
   <Container>
-    <Title>{piece.title}</Title>
-    <SummaryItem>{designer.name}</SummaryItem>
-    <SummaryItem>{piece.price}</SummaryItem>
-    {piece.caption && <SummaryItem>{piece.caption}</SummaryItem>}
+    <Title>
+      {piece.title}
+    </Title>
+    <SummaryItem>
+      {designer.name}
+    </SummaryItem>
+    <SummaryItem>
+      {piece.price}
+    </SummaryItem>
+    {piece.caption &&
+      <SummaryItem>
+        {piece.caption}
+      </SummaryItem>}
   </Container>
 
 PieceSummary.propTypes = {
