@@ -39,6 +39,7 @@ const ImageTextContainer = styled.div`
 const ImageText = styled.div`
   width: 50%;
   text-align: left;
+  white-space: pre-line;
 
   &.right {
     text-align: right;
@@ -96,6 +97,10 @@ class ImageList extends Component {
   onImageClick(i) {
     if (this.state.isExpanded) return
 
+    if (this.props.onImageHover) {
+      this.props.onImageHover(null)
+    }
+
     this.setState({ isExpanded: true }, () => {
       Scroll.scroller.scrollTo(`image-${i}`, {
         duration: 100,
@@ -106,7 +111,7 @@ class ImageList extends Component {
   }
 
   render() {
-    const { images } = this.props
+    const { images, onImageHover } = this.props
     const { isExpanded } = this.state
 
     return (
@@ -114,8 +119,13 @@ class ImageList extends Component {
         {this.renderExpansionButton()}
 
         <ImageContainer>
-          {images.map(({ src, linkPath, leftText, rightText, alt = '' }, i) => {
-            const img = <img src={src} alt={alt} />
+          {images.map((image, i) => {
+            const { src, linkPath, leftText, rightText, alt = '' } = image
+
+            const onMouseEnter = isExpanded || !onImageHover ? null : () => onImageHover(image)
+            const onMouseLeave = isExpanded || !onImageHover ? null : () => onImageHover(null)
+            const img = <img src={src} alt={alt} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} />
+
             return (
               <Scroll.Element name={`image-${i}`} key={`image-${i}`}>
                 <ImageItem className={cx({ expanded: isExpanded })} onClick={() => this.onImageClick(i)}>
@@ -141,7 +151,8 @@ class ImageList extends Component {
 }
 
 ImageList.propTypes = {
-  images: PropTypes.array.isRequired
+  images: PropTypes.array.isRequired,
+  onImageHover: PropTypes.function
 }
 
 export default ImageList
