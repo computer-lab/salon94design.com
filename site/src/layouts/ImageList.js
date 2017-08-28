@@ -25,10 +25,6 @@ const ImageItem = styled.div`
     cursor: pointer;
   }
 
-  &.expanded {
-    margin: 0 0 20px 0;
-  }
-
   &.expanded img {
     max-width: 100%;
     max-height: calc(100vh - 80px);

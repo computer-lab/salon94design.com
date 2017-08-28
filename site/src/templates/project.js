@@ -7,7 +7,7 @@ import ProjectSelector from '../layouts/ProjectSelector'
 import { pieceImagePath } from '../util'
 
 const LeftPane = styled.div`
-  width: calc(100% - 380px);
+  width: calc(100% - 360px);
   height: 100%;
 `
 
