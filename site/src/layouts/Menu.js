@@ -48,7 +48,7 @@ const Menu = ({ location }) => {
     { name: 'Info', path: '/info' },
   ].map(item => ({
     ...item,
-    className: cx({ active: item.path === location.pathname }),
+    className: cx({ active: location.pathname.includes(item.path) }),
   }))
 
   return (

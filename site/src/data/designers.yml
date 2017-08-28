@@ -6,16 +6,22 @@
   pieces:
     -
       title: Shirt #1
+      slug: shirt-1
       when: 2017
       projects: [basel-2016]
       tags: [clothing]
       images: ['rick-owens/shirt1']
+      caption: Black Shirt
+      price: $20,000
     -
       title: Shirt #2
+      slug: shirt-2
       when: 2017
       projects: [basel-2016]
       tags: [clothing]
       images: ['rick-owens/shirt2']
+      price: $20,000
+
 
 - slug: lucas-samaras
   name: Lucas Samaras
@@ -25,13 +31,19 @@
   pieces:
     -
       title: Gold #1
+      slug: gold-1
       when: 2017
       projects: [gold-chicken-wire]
       tags: [jewelry]
       images: ['lucas-samaras/gold1']
+      caption: Gold Anklet
+      price: $20,000
     -
       title: Gold #2
+      slug: gold-2
       when: 2017
       projects: [gold-chicken-wire]
       tags: [jewelry]
       images: ['lucas-samaras/gold2']
+      caption: Gold Necklace
+      price: $20,000
