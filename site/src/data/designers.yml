@@ -5,16 +5,16 @@
     Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.
   pieces:
     -
-      title: Shirt #1
+      title: Shirt 1
       slug: shirt-1
       when: 2017
       projects: [basel-2016]
       tags: [clothing]
       images: ['rick-owens/shirt1']
-      caption: Black Shirt
-      price: $20,000
+      caption: Black Shirt, waterproof.
+      price: $10,000
     -
-      title: Shirt #2
+      title: Shirt 2
       slug: shirt-2
       when: 2017
       projects: [basel-2016]
@@ -30,20 +30,19 @@
     Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.
   pieces:
     -
-      title: Gold #1
-      slug: gold-1
+      title: Gold Anklet
+      slug: gold-anklet
       when: 2017
       projects: [gold-chicken-wire]
       tags: [jewelry]
       images: ['lucas-samaras/gold1']
-      caption: Gold Anklet
       price: $20,000
     -
-      title: Gold #2
-      slug: gold-2
+      title: Gold Necklace
+      slug: gold-necklace
       when: 2017
       projects: [gold-chicken-wire]
       tags: [jewelry]
       images: ['lucas-samaras/gold2']
-      caption: Gold Necklace
+      caption: This is a very nice necklace.
       price: $20,000

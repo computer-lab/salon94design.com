@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import styled from 'emotion/react'
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
 import ProjectSelector from '../layouts/ProjectSelector'
+import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath } from '../util'
 
 const LeftPane = styled.div`
@@ -17,49 +18,71 @@ const RightPane = styled.div`
   right: 24px;
 `
 
-export default function ProjectTemplate({ data, pathContext }) {
-  const { allProjectsYaml, allDesignersYaml } = data
-  const { slug: currentProjectSlug } = pathContext
+export default class ProjectTemplate extends Component {
+  constructor(props) {
+    super(props)
 
-  const projects = allProjectsYaml.edges.map(edge => edge.node)
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const projectSlugs = new Set(projects.map(p => p.slug))
+    this.imageHoverHandler = this.imageHoverHandler.bind(this)
 
-  const pieceImages = []
-  designers.forEach(designer => {
-    const pieces = designer.pieces.filter(piece => piece.projects.includes(currentProjectSlug))
+    this.state = {
+      hoverImage: null
+    }
+  }
 
-    pieces.forEach(piece => {
-      piece.images.forEach((src, i) => {
-        pieceImages.push({
-          src: pieceImagePath(src),
-          linkPath: `/designers/${designer.slug}/${piece.slug}`,
-          leftText: i === 0 && piece.caption,
-          rightText: i === 0 && piece.price
+  imageHoverHandler(hoverImage) {
+    this.setState({ hoverImage: hoverImage || null })
+  }
+
+  render() {
+    const { data, pathContext } = this.props
+    const { allProjectsYaml, allDesignersYaml } = data
+    const { slug: currentProjectSlug } = pathContext
+    const { hoverImage } = this.state
+
+    const projects = allProjectsYaml.edges.map(edge => edge.node)
+    const designers = allDesignersYaml.edges.map(edge => edge.node)
+    const projectSlugs = new Set(projects.map(p => p.slug))
+
+    const pieceImages = []
+    designers.forEach(designer => {
+      const pieces = designer.pieces.filter(piece => piece.projects.includes(currentProjectSlug))
+
+      pieces.forEach(piece => {
+        piece.images.forEach((src, i) => {
+          const leftText = piece.caption ? `${piece.title}\n${piece.caption}` : piece.title
+          pieceImages.push({
+            piece,
+            designer,
+            src: pieceImagePath(src),
+            linkPath: `/designers/${designer.slug}/${piece.slug}`,
+            leftText: i === 0 && leftText,
+            rightText: i === 0 && piece.price
+          })
         })
       })
     })
-  })
 
-  const images = []
-  for (let i = 0; i < 10; i++) { // TODO: remove temporary image multiplication
-    pieceImages.forEach(item => images.push(item))
+    const images = []
+    for (let i = 0; i < 10; i++) { // TODO: remove temporary image multiplication
+      pieceImages.forEach(item => images.push(item))
+    }
+
+    return (
+      <PageContainer>
+        <Helmet title={`Salon 94 Design - Projects`} />
+        <LeftPane>
+          <ImageList images={images} onImageHover={this.imageHoverHandler} />
+        </LeftPane>
+        <RightPane>
+          <ProjectSelector
+            projects={projects}
+            currentProjectSlug={currentProjectSlug}
+          />
+          {hoverImage && <PieceSummary piece={hoverImage.piece} designer={hoverImage.designer} />}
+        </RightPane>
+      </PageContainer>
+    )
   }
-
-  return (
-    <PageContainer>
-      <Helmet title={`Salon 94 Design - Projects`} />
-      <LeftPane>
-        <ImageList images={images} />
-      </LeftPane>
-      <RightPane>
-        <ProjectSelector
-          projects={projects}
-          currentProjectSlug={currentProjectSlug}
-        />
-      </RightPane>
-    </PageContainer>
-  )
 }
 
 export const pageQuery = graphql`
@@ -79,6 +102,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
+          name
           pieces {
             slug
             title
