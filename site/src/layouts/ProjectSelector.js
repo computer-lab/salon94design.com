@@ -35,7 +35,8 @@ const ProjectList = styled.ul`
     padding: 2px;
     width: 50%;
 
-    &.active {
+    &.active a {
+      background: #ff0;
       text-decoration: underline;
     }
 

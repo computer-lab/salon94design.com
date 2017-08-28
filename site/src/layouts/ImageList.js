@@ -56,6 +56,7 @@ const ExpansionButton = styled.button`
   background: none;
   border: none;
   outline: none;
+  user-select: none;
 `
 
 class ImageList extends Component {
@@ -168,7 +169,7 @@ class ImageList extends Component {
 
 ImageList.propTypes = {
   images: PropTypes.array.isRequired,
-  onImageHover: PropTypes.function,
+  onImageHover: PropTypes.func,
 }
 
 export default ImageList

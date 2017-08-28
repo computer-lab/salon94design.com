@@ -1,21 +1,43 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import styled from 'emotion/react'
-import { PageContainer } from '../layouts/containers'
+import {
+  createPanes,
+  PageContainer,
+  FlexBetweenContainer,
+} from '../layouts/containers'
+import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import ProjectSelector from '../layouts/ProjectSelector'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath } from '../util'
 
-const LeftPane = styled.div`
-  width: calc(100% - 360px);
-  height: 100%;
+const { LeftPane, RightPane } = createPanes()
+
+const ProjectHeader = styled.div`
+  composes: ${sansfont};
+  position: fixed;
+  top: 20px;
 `
 
-const RightPane = styled.div`
-  width: 360px;
-  position: fixed;
-  right: 24px;
+const ProjectTitle = styled.h1`
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 26px;
+`
+
+const ProjectDescription = styled.div`
+  font-size: 16px;
+  line-height: 1.2;
+  max-width: 320px;
+`
+
+const ProjectWhen = styled.div`
+  composes: ${monofont};
+  margin-top: -2px;
+  font-weight: bold;
+  font-size: 24px;
 `
 
 export default class ProjectTemplate extends Component {
@@ -40,8 +62,14 @@ export default class ProjectTemplate extends Component {
     const { hoverImage } = this.state
 
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projectSlugs = new Set(projects.map(p => p.slug))
+    const designers = allDesignersYaml.edges.map(edge => edge.node)
+
+    const currentProject = projects.find(p => p.slug === currentProjectSlug)
+    const currentProjectDesignersNames = currentProject.designers
+      .map(slug => designers.find(d => d.slug === slug).name)
+      .join(' / ')
+    const currentProjectTitle = `${currentProjectDesignersNames} — ${currentProject.title}`
 
     const pieceImages = []
     designers.forEach(designer => {
@@ -76,6 +104,19 @@ export default class ProjectTemplate extends Component {
       <PageContainer>
         <Helmet title={`Salon 94 Design - Projects`} />
         <LeftPane>
+          <ProjectHeader>
+            <ProjectTitle>
+              {currentProjectTitle}
+            </ProjectTitle>
+            <FlexBetweenContainer>
+              <ProjectDescription>
+                {currentProject.description}
+              </ProjectDescription>
+              <ProjectWhen>
+                {currentProject.when}
+              </ProjectWhen>
+            </FlexBetweenContainer>
+          </ProjectHeader>
           <ImageList images={images} onImageHover={this.imageHoverHandler} />
         </LeftPane>
         <RightPane>
