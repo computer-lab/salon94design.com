@@ -54,7 +54,7 @@ const ProjectList = styled.ul`
 
 const ProjectSelector = ({ projects, currentProjectSlug }) => {
   const projectsByYear = Array.from(new Set(projects.map(p => p.when))) // years
-    .sort((a, b) => b.localeCompare(a)) // sort reverse-chronologically
+    .sort((a, b) => b - a) // sort reverse-chronologically
     .map(year => ({ year, projects: projects.filter(p => p.when === year) }))
 
   return (
