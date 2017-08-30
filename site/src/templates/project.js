@@ -7,11 +7,11 @@ import {
   PageContainer,
   FlexBetweenContainer,
 } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import ProjectSelector from '../layouts/ProjectSelector'
 import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath } from '../util'
+import { pieceImagePath, designerLink, pieceLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -29,15 +29,7 @@ const ProjectTitle = styled.h1`
 `
 
 const ProjectDesigner = styled.span`
-  & a {
-    color: inherit;
-    text-decoration: inherit;
-
-    &:hover,
-    &:focus {
-      border-bottom: 2px solid #000;
-    }
-  }
+  composes: ${childLink};
 
   &:not(:first-child)::before {
     content: " / ";
@@ -95,17 +87,22 @@ export default class ProjectTemplate extends Component {
       )
 
       pieces.forEach(piece => {
-        piece.images.forEach((src, i) => {
+        piece.images.forEach(src => {
           const leftText = piece.caption
             ? `${piece.title}\n${piece.caption}`
             : piece.title
+
+          const rightText = `${piece.when} ${piece.price}\n${designer.name}`
           pieceImages.push({
             piece,
             designer,
             src: pieceImagePath(src),
-            linkPath: `/designers/${designer.slug}/${piece.slug}`,
-            leftText: i === 0 && leftText,
-            rightText: i === 0 && piece.price,
+            texts: {
+              title: <Link to={pieceLink(designer.slug, piece.slug)}>{piece.title}</Link>,
+              caption: piece.caption,
+              data: [piece.when, piece.price],
+              credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+            },
           })
         })
       })
@@ -125,7 +122,7 @@ export default class ProjectTemplate extends Component {
             <ProjectTitle>
               {currentProject.designers.map(slug =>
                 <ProjectDesigner key={slug}>
-                  <Link to={`/designers/${slug}`}>
+                  <Link to={designerLink(slug)}>
                     {getDesigner(slug).name}
                   </Link>
                 </ProjectDesigner>
