@@ -8,6 +8,7 @@ import {
   FlexBetweenContainer,
 } from '../layouts/containers'
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
+import DesignerSelector from '../layouts/DesignerSelector'
 import ImageList from '../layouts/ImageList'
 import { pieceImagePath, designerLink, pieceLink } from '../util'
 
@@ -29,6 +30,14 @@ export default class DesignerTemplate extends Component {
   }
 
   render() {
+    const { data, pathContext } = this.props
+    const { allProjectsYaml, allDesignersYaml } = data
+    const { slug: currentDesignerSlug } = pathContext
+
+    const designers = allDesignersYaml.edges.map(edge => edge.node)
+
+    const projects = allProjectsYaml.edges.map(edge => edge.node)
+
     return (
       <PageContainer>
         <Helmet title={`Salon 94 Design - Designers`} />
@@ -36,7 +45,10 @@ export default class DesignerTemplate extends Component {
           Hello
         </LeftPane>
         <RightPane>
-          Hi!
+          <DesignerSelector
+            designers={designers}
+            currentDesignerSlug={currentDesignerSlug}
+          />
         </RightPane>
       </PageContainer>
     )
@@ -56,11 +68,14 @@ export const pageQuery = graphql`
         }
       }
     }
-    allDesignersYaml {
+    allDesignersYaml(
+      sort: { order: ASC, fields: [name] }
+    ) {
       edges {
         node {
           slug
           name
+          bio
           pieces {
             slug
             title
