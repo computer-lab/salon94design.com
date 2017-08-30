@@ -26,4 +26,5 @@ export const createPanes = (rightPaneWidth = '360px') => {
 export const FlexBetweenContainer = styled.div`
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
 `
