@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import {
   createPanes,
@@ -25,6 +26,26 @@ const ProjectTitle = styled.h1`
   padding: 0;
   font-weight: normal;
   font-size: 26px;
+`
+
+const ProjectDesigner = styled.span`
+  & a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid #000;
+    }
+  }
+
+  &:not(:first-child)::before {
+    content: " / ";
+  }
+
+  &:last-child::after {
+    content: " ";
+  }
 `
 
 const ProjectDescription = styled.div`
@@ -62,14 +83,10 @@ export default class ProjectTemplate extends Component {
     const { hoverImage } = this.state
 
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const projectSlugs = new Set(projects.map(p => p.slug))
-    const designers = allDesignersYaml.edges.map(edge => edge.node)
-
     const currentProject = projects.find(p => p.slug === currentProjectSlug)
-    const currentProjectDesignersNames = currentProject.designers
-      .map(slug => designers.find(d => d.slug === slug).name)
-      .join(' / ')
-    const currentProjectTitle = `${currentProjectDesignersNames} — ${currentProject.title}`
+
+    const designers = allDesignersYaml.edges.map(edge => edge.node)
+    const getDesigner = slug => designers.find(d => d.slug === slug)
 
     const pieceImages = []
     designers.forEach(designer => {
@@ -106,7 +123,14 @@ export default class ProjectTemplate extends Component {
         <LeftPane>
           <ProjectHeader>
             <ProjectTitle>
-              {currentProjectTitle}
+              {currentProject.designers.map(slug =>
+                <ProjectDesigner key={slug}>
+                  <Link to={`/designers/${slug}`}>
+                    {getDesigner(slug).name}
+                  </Link>
+                </ProjectDesigner>
+              )}
+              — {currentProject.title}
             </ProjectTitle>
             <FlexBetweenContainer>
               <ProjectDescription>
