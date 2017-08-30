@@ -9,6 +9,7 @@ import {
 } from '../layouts/containers'
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import DesignerSelector from '../layouts/DesignerSelector'
+import DesignerProjects from '../layouts/DesignerProjects'
 import ImageList from '../layouts/ImageList'
 import { pieceImagePath, designerLink, pieceLink } from '../util'
 
@@ -37,6 +38,7 @@ export default class DesignerTemplate extends Component {
     const designers = allDesignersYaml.edges.map(edge => edge.node)
 
     const projects = allProjectsYaml.edges.map(edge => edge.node)
+      .filter(project => project.designers.includes(currentDesignerSlug))
 
     return (
       <PageContainer>
@@ -45,10 +47,15 @@ export default class DesignerTemplate extends Component {
           Hello
         </LeftPane>
         <RightPane>
-          <DesignerSelector
-            designers={designers}
-            currentDesignerSlug={currentDesignerSlug}
-          />
+          <FlexBetweenContainer>
+            <div>
+              <DesignerProjects projects={projects} />
+            </div>
+            <DesignerSelector
+              designers={designers}
+              currentDesignerSlug={currentDesignerSlug}
+            />
+          </FlexBetweenContainer>
         </RightPane>
       </PageContainer>
     )
@@ -62,8 +69,6 @@ export const pageQuery = graphql`
         node {
           slug
           title
-          description
-          when
           designers
         }
       }

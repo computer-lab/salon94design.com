@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { css } from 'emotion'
 import styled from 'emotion/react'
-import { sansfont } from '../layouts/emotion-base'
+import { sansfont, Header2 } from '../layouts/emotion-base'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -10,13 +10,6 @@ const Container = styled.div`
   & a {
     color: inherit;
   }
-`
-
-const SectionHeader = styled.h4`
-  composes: ${sansfont};
-  margin: 0 0 16px 0;
-  font-weight: 500;
-  font-size: 24px;
 `
 
 const sectionEl = css`
@@ -54,6 +47,7 @@ const SectionList = styled.ul`
 `
 
 const MailingListSignup = styled.div`
+  margin-top: 48px;
   font-weight: 500;
   font-size: 28px;
 
@@ -86,10 +80,10 @@ const Info = ({ data }) => {
     <Container>
       <Helmet title={`Salon 94 Design - Info`} />
 
-      <SectionHeader>About</SectionHeader>
+      <Header2>About</Header2>
       <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
 
-      <SectionHeader>Contact</SectionHeader>
+      <Header2>Contact</Header2>
       <SectionList>
         {contactItems.map(item =>
           <li key={item.name}>
