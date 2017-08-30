@@ -5,7 +5,6 @@ import styled from 'emotion/react'
 import {
   createPanes,
   PageContainer,
-  FlexBetweenContainer,
 } from '../layouts/containers'
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import DesignerSelector from '../layouts/DesignerSelector'
@@ -14,7 +13,7 @@ import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
 import { pieceImagePath, designerLink, pieceLink } from '../util'
 
-const { LeftPane, RightPane } = createPanes('420px')
+const { LeftPane, RightPane } = createPanes()
 
 export default class DesignerTemplate extends Component {
   constructor(props) {
@@ -48,17 +47,13 @@ export default class DesignerTemplate extends Component {
         <LeftPane>
           Hello
         </LeftPane>
-        <RightPane>
-          <FlexBetweenContainer style={{marginTop: 12}}>
-            <div>
-              <DesignerProjects projects={projects} />
-              <DesignerBio bio={currentDesigner.bio} />
-            </div>
-            <DesignerSelector
-              designers={designers}
-              currentDesignerSlug={currentDesignerSlug}
-            />
-          </FlexBetweenContainer>
+        <RightPane style={{marginTop: 12}}>
+          <DesignerProjects projects={projects} />
+          <DesignerBio bio={currentDesigner.bio} />
+          <DesignerSelector
+            designers={designers}
+            currentDesignerSlug={currentDesignerSlug}
+          />
         </RightPane>
       </PageContainer>
     )
