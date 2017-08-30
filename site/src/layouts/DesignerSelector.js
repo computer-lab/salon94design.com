@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
@@ -6,18 +6,25 @@ import cx from 'classnames'
 import { monofont, sansfont, baseUl } from './emotion-base'
 
 const Container = styled.div`
-  margin-left: 20px;
-  margin-right: -12px;
-  padding: 8px;
+  position: fixed;
+  top: 120px;
+  right: 0;
+  padding: 16px 8px;
   border: 2px solid #000;
-  width: 120px;
-  min-width: 120px;
+  width: 128px;
+  background: #fff;
+
+  transform: translateX(100px);
+  transition: transform 0.2s ease;
+
+  &.active {
+    transform: none;
+  }
 `
 
 const DesignerList = styled.ul`
   composes: ${baseUl}, ${monofont};
   font-size: 14px;
-  text-align: right;
 
   & li {
     margin: 0;
@@ -45,33 +52,76 @@ const DesignerList = styled.ul`
   }
 `
 
-const DesignerSelector = ({ designers, currentDesignerSlug }) => {
-  // TODO: remove temporary designers
-  for (let i = 3; i < 15; i++) {
-    designers.push({
-      slug: `designer-${i}`,
-      name: `Designer ${i}`
+class DesignerSelector extends Component {
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      isActive: true,
+      lastActivationTime: Date.now()
+    }
+  }
+
+  componentDidMount() {
+    // hide self after initial peek
+    setTimeout(() => {
+      this.setState({isActive: false })
+    }, 1200)
+  }
+
+  onMouseEnter() {
+    this.setState({
+      isActive: true,
+      lastActivationTime: Date.now()
     })
   }
 
-  return (
-    <Container>
-      <DesignerList>
-        {designers.map(item =>
-          <li
-            key={item.slug}
-            className={cx({
-              active: item.slug === currentDesignerSlug,
-            })}
-          >
-            <Link to={`/designers/${item.slug}`}>
-              {item.name}
-            </Link>
-          </li>
-        )}
-      </DesignerList>
-    </Container>
-  )
+  onMouseLeave() {
+    // before hiding, allow a buffer for user to re-enter the container
+    clearTimeout(this.leaveTimeout)
+    this.leaveTimeout = setTimeout(() => {
+      if (Date.now() - this.state.lastActivationTime > 300) {
+        this.setState({ isActive: false })
+      }
+    }, 300)
+  }
+
+  render() {
+    const { currentDesignerSlug } = this.props
+    const { isActive } = this.state
+
+    // TODO: remove temporary designers
+    const designers = [].concat(this.props.designers)
+    for (let i = 3; i < 15; i++) {
+      designers.push({
+        slug: `designer-${i}`,
+        name: `Designer ${i}`
+      })
+    }
+
+    return (
+      <Container
+        className={cx({active: isActive })}
+        onMouseEnter={this.onMouseEnter.bind(this)}
+        onMouseLeave={this.onMouseLeave.bind(this)}
+      >
+        <DesignerList>
+          {designers.map(item =>
+            <li
+              key={item.slug}
+              className={cx({
+                active: item.slug === currentDesignerSlug,
+              })}
+            >
+              <Link to={`/designers/${item.slug}`}>
+                {item.name}
+              </Link>
+            </li>
+          )}
+        </DesignerList>
+      </Container>
+    )
+  }
 }
 
 DesignerSelector.propTypes = {
