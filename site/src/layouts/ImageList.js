@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
-import { monofont, sansfont, baseUl } from './emotion-base'
+import { monofont, sansfont, childLink } from './emotion-base'
 
 const ImageContainer = styled.div`
   display: flex;
@@ -27,22 +27,33 @@ const ImageItem = styled.div`
 
   &.expanded img {
     max-width: 100%;
-    max-height: calc(100vh - 80px);
+    max-height: calc(100vh - 108px);
+    cursor: default;
   }
 `
 
 const ImageTextContainer = styled.div`
   composes: ${sansfont};
   display: flex;
+  flex-wrap: wrap;
 `
 
 const ImageText = styled.div`
+  composes: ${childLink};
   width: 50%;
   text-align: left;
   white-space: pre-line;
 
   &.right {
     text-align: right;
+  }
+`
+
+const ImageTextData = styled.span`
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 24px;
   }
 `
 
@@ -121,7 +132,7 @@ class ImageList extends Component {
 
         <ImageContainer>
           {images.map((image, i) => {
-            const { src, linkPath, leftText, rightText, alt = '' } = image
+            const { src, texts, alt = '' } = image
 
             const onMouseEnter =
               isExpanded || !onImageHover ? null : () => onImageHover(image)
@@ -142,19 +153,21 @@ class ImageList extends Component {
                   className={cx({ expanded: isExpanded })}
                   onClick={() => this.onImageClick(i)}
                 >
-                  {isExpanded && linkPath
-                    ? <Link to={linkPath}>
-                        {img}
-                      </Link>
-                    : img}
+                  {img}
 
-                  {isExpanded &&
+                  {isExpanded && texts &&
                     <ImageTextContainer>
                       <ImageText className="left">
-                        {leftText}
+                        {texts.title}
                       </ImageText>
                       <ImageText className="right">
-                        {rightText}
+                        {texts.data.map(txt => <ImageTextData key={txt}>{txt}</ImageTextData>)}
+                      </ImageText>
+                      <ImageText className="left">
+                        {texts.caption}
+                      </ImageText>
+                      <ImageText className="right">
+                        {texts.credit}
                       </ImageText>
                     </ImageTextContainer>}
                 </ImageItem>
