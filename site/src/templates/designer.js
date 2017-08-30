@@ -10,10 +10,11 @@ import {
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import DesignerSelector from '../layouts/DesignerSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
+import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
 import { pieceImagePath, designerLink, pieceLink } from '../util'
 
-const { LeftPane, RightPane } = createPanes()
+const { LeftPane, RightPane } = createPanes('420px')
 
 export default class DesignerTemplate extends Component {
   constructor(props) {
@@ -36,6 +37,7 @@ export default class DesignerTemplate extends Component {
     const { slug: currentDesignerSlug } = pathContext
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
+    const currentDesigner = designers.find(d => d.slug === currentDesignerSlug)
 
     const projects = allProjectsYaml.edges.map(edge => edge.node)
       .filter(project => project.designers.includes(currentDesignerSlug))
@@ -47,9 +49,10 @@ export default class DesignerTemplate extends Component {
           Hello
         </LeftPane>
         <RightPane>
-          <FlexBetweenContainer>
+          <FlexBetweenContainer style={{marginTop: 12}}>
             <div>
               <DesignerProjects projects={projects} />
+              <DesignerBio bio={currentDesigner.bio} />
             </div>
             <DesignerSelector
               designers={designers}

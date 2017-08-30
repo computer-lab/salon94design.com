@@ -6,7 +6,7 @@ import cx from 'classnames'
 import { sansfont, baseUl, childLink, Header2 } from './emotion-base'
 import { projectLink } from '../util'
 
-const Container = styled.div``
+const Container = styled.section``
 
 const ProjectList = styled.ul`
   composes: ${baseUl}, ${sansfont};

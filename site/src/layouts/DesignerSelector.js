@@ -6,7 +6,7 @@ import cx from 'classnames'
 import { monofont, sansfont, baseUl } from './emotion-base'
 
 const Container = styled.div`
-  margin-left: 12px;
+  margin-left: 20px;
   margin-right: -12px;
   padding: 8px;
   border: 2px solid #000;
