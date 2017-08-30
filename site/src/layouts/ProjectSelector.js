@@ -4,9 +4,10 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import { monofont, sansfont, baseUl } from './emotion-base'
+import { projectLink } from '../util'
 
 const Container = styled.div`
-  padding: 25px 20px;
+  padding: 24px 20px;
   border: 2px solid #000;
 `
 
@@ -73,7 +74,7 @@ const ProjectSelector = ({ projects, currentProjectSlug }) => {
                     active: project.slug === currentProjectSlug,
                   })}
                 >
-                  <Link to={`/projects/${project.slug}`}>
+                  <Link to={projectLink(project.slug)}>
                     {project.title}
                   </Link>
                 </li>

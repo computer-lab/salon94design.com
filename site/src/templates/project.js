@@ -11,7 +11,7 @@ import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import ProjectSelector from '../layouts/ProjectSelector'
 import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath, designerLink, pieceLink } from '../util'
+import { pieceImagePath, designerLink, pieceImageTexts } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -88,29 +88,11 @@ export default class ProjectTemplate extends Component {
 
       pieces.forEach(piece => {
         piece.images.forEach(src => {
-          const leftText = piece.caption
-            ? `${piece.title}\n${piece.caption}`
-            : piece.title
-
-          const rightText = `${piece.when} ${piece.price}\n${designer.name}`
           pieceImages.push({
             piece,
             designer,
             src: pieceImagePath(src),
-            texts: {
-              title: (
-                <Link to={pieceLink(designer.slug, piece.slug)}>
-                  {piece.title}
-                </Link>
-              ),
-              caption: piece.caption,
-              data: [piece.when, piece.price],
-              credit: (
-                <Link to={designerLink(designer.slug)}>
-                  {designer.name}
-                </Link>
-              ),
-            },
+            texts: pieceImageTexts({ piece, designer }),
           })
         })
       })
@@ -121,6 +103,8 @@ export default class ProjectTemplate extends Component {
       // TODO: remove temporary image multiplication
       pieceImages.forEach(item => images.push(item))
     }
+
+    const imageSets = [{ images }]
 
     return (
       <PageContainer>
@@ -146,7 +130,10 @@ export default class ProjectTemplate extends Component {
               </ProjectWhen>
             </FlexBetweenContainer>
           </ProjectHeader>
-          <ImageList images={images} onImageHover={this.imageHoverHandler} />
+          <ImageList
+            imageSets={imageSets}
+            onImageHover={this.imageHoverHandler}
+          />
         </LeftPane>
         <RightPane>
           <ProjectSelector

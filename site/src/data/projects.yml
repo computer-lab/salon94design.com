@@ -10,7 +10,7 @@
   slug: ghost-dog
   title: Ghost Dog
   when: 2017
-  designers: [lucas-samaras]
+  designers: [rick-owens]
 
 -
   slug: collective
@@ -22,7 +22,7 @@
   slug: man-drill-rock
   title: Man, Drill, Rock
   when: 2017
-  designers: [lucas-samaras]
+  designers: [rick-owens]
 
 - slug: basel-2016
   title: Basel 2016
@@ -32,7 +32,7 @@
 - slug: miami-2016
   title: Design Miami 2016
   when: 2016
-  designers: [lucas-samaras]
+  designers: [rick-owens]
 
 - slug: new-orleans-2015
   title: Design New Orleans
