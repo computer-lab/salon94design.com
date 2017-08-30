@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import {
   createPanes,
   PageContainer,
   FlexBetweenContainer,
 } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import ProjectSelector from '../layouts/ProjectSelector'
 import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath } from '../util'
+import { pieceImagePath, designerLink, pieceLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -25,6 +26,18 @@ const ProjectTitle = styled.h1`
   padding: 0;
   font-weight: normal;
   font-size: 26px;
+`
+
+const ProjectDesigner = styled.span`
+  composes: ${childLink};
+
+  &:not(:first-child)::before {
+    content: " / ";
+  }
+
+  &:last-child::after {
+    content: " ";
+  }
 `
 
 const ProjectDescription = styled.div`
@@ -62,14 +75,10 @@ export default class ProjectTemplate extends Component {
     const { hoverImage } = this.state
 
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const projectSlugs = new Set(projects.map(p => p.slug))
-    const designers = allDesignersYaml.edges.map(edge => edge.node)
-
     const currentProject = projects.find(p => p.slug === currentProjectSlug)
-    const currentProjectDesignersNames = currentProject.designers
-      .map(slug => designers.find(d => d.slug === slug).name)
-      .join(' / ')
-    const currentProjectTitle = `${currentProjectDesignersNames} — ${currentProject.title}`
+
+    const designers = allDesignersYaml.edges.map(edge => edge.node)
+    const getDesigner = slug => designers.find(d => d.slug === slug)
 
     const pieceImages = []
     designers.forEach(designer => {
@@ -78,17 +87,30 @@ export default class ProjectTemplate extends Component {
       )
 
       pieces.forEach(piece => {
-        piece.images.forEach((src, i) => {
+        piece.images.forEach(src => {
           const leftText = piece.caption
             ? `${piece.title}\n${piece.caption}`
             : piece.title
+
+          const rightText = `${piece.when} ${piece.price}\n${designer.name}`
           pieceImages.push({
             piece,
             designer,
             src: pieceImagePath(src),
-            linkPath: `/designers/${designer.slug}/${piece.slug}`,
-            leftText: i === 0 && leftText,
-            rightText: i === 0 && piece.price,
+            texts: {
+              title: (
+                <Link to={pieceLink(designer.slug, piece.slug)}>
+                  {piece.title}
+                </Link>
+              ),
+              caption: piece.caption,
+              data: [piece.when, piece.price],
+              credit: (
+                <Link to={designerLink(designer.slug)}>
+                  {designer.name}
+                </Link>
+              ),
+            },
           })
         })
       })
@@ -106,7 +128,14 @@ export default class ProjectTemplate extends Component {
         <LeftPane>
           <ProjectHeader>
             <ProjectTitle>
-              {currentProjectTitle}
+              {currentProject.designers.map(slug =>
+                <ProjectDesigner key={slug}>
+                  <Link to={designerLink(slug)}>
+                    {getDesigner(slug).name}
+                  </Link>
+                </ProjectDesigner>
+              )}
+              — {currentProject.title}
             </ProjectTitle>
             <FlexBetweenContainer>
               <ProjectDescription>

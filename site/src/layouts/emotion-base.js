@@ -13,3 +13,15 @@ export const monofont = css`
 export const sansfont = css`
   font-family: Work Sans, Helvetica, Arial, sans-serif;
 `
+
+export const childLink = css`
+  & a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover,
+    &:focus {
+      border-bottom: 2px solid #000;
+    }
+  }
+`
