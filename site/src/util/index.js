@@ -1,4 +1,3 @@
-
 export const pieceImagePath = name => require(`../assets/images/${name}.jpg`)
 
 export const designerLink = slug => `/designers/${slug}`

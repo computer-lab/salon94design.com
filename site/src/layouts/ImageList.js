@@ -155,13 +155,18 @@ class ImageList extends Component {
                 >
                   {img}
 
-                  {isExpanded && texts &&
+                  {isExpanded &&
+                    texts &&
                     <ImageTextContainer>
                       <ImageText className="left">
                         {texts.title}
                       </ImageText>
                       <ImageText className="right">
-                        {texts.data.map(txt => <ImageTextData key={txt}>{txt}</ImageTextData>)}
+                        {texts.data.map(txt =>
+                          <ImageTextData key={txt}>
+                            {txt}
+                          </ImageTextData>
+                        )}
                       </ImageText>
                       <ImageText className="left">
                         {texts.caption}

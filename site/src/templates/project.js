@@ -98,10 +98,18 @@ export default class ProjectTemplate extends Component {
             designer,
             src: pieceImagePath(src),
             texts: {
-              title: <Link to={pieceLink(designer.slug, piece.slug)}>{piece.title}</Link>,
+              title: (
+                <Link to={pieceLink(designer.slug, piece.slug)}>
+                  {piece.title}
+                </Link>
+              ),
               caption: piece.caption,
               data: [piece.when, piece.price],
-              credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+              credit: (
+                <Link to={designerLink(designer.slug)}>
+                  {designer.name}
+                </Link>
+              ),
             },
           })
         })
