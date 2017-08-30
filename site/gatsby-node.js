@@ -4,7 +4,7 @@ exports.createPages = props => {
   return Promise.all([
     createBlogPosts(props),
     createProjects(props),
-    createDesigners(props)
+    createDesigners(props),
   ])
 }
 

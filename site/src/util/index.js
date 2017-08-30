@@ -9,13 +9,19 @@ export const projectLink = slug => `/projects/${slug}`
 
 export const pieceLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
 
-export const pieceImageTexts = ({piece, designer, projects}) => {
+export const pieceImageTexts = ({ piece, designer, projects }) => {
   let data = [piece.price, piece.when]
   if (projects) {
-    data = data.concat(piece.projects.map(slug => {
-      const project = projects.find(p => p.slug === slug)
-      return <Link to={projectLink(slug)}>{project.title}</Link>
-    }))
+    data = data.concat(
+      piece.projects.map(slug => {
+        const project = projects.find(p => p.slug === slug)
+        return (
+          <Link to={projectLink(slug)}>
+            {project.title}
+          </Link>
+        )
+      })
+    )
   }
 
   return {

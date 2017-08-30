@@ -2,10 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
-import {
-  createPanes,
-  PageContainer,
-} from '../layouts/containers'
+import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import DesignerSelector from '../layouts/DesignerSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
@@ -47,7 +44,8 @@ export default class DesignerTemplate extends Component {
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const currentDesigner = designers.find(d => d.slug === currentDesignerSlug)
 
-    const projects = allProjectsYaml.edges.map(edge => edge.node)
+    const projects = allProjectsYaml.edges
+      .map(edge => edge.node)
       .filter(project => project.designers.includes(currentDesignerSlug))
 
     let images = []
@@ -56,7 +54,11 @@ export default class DesignerTemplate extends Component {
         images.push({
           piece,
           src: pieceImagePath(src),
-          texts: pieceImageTexts({ designer: currentDesigner, piece, projects })
+          texts: pieceImageTexts({
+            designer: currentDesigner,
+            piece,
+            projects,
+          }),
         })
       })
     })
@@ -68,18 +70,23 @@ export default class DesignerTemplate extends Component {
 
     const imagesByProject = projects.map(project => ({
       project,
-      images: images.filter(image => image.piece.projects.includes(project.slug))
+      images: images.filter(image =>
+        image.piece.projects.includes(project.slug)
+      ),
     }))
 
     // include pieces w/o project
     imagesByProject.push({
       project: null,
-      images: images.filter(image => image.piece.projects.length === 0)
+      images: images.filter(image => image.piece.projects.length === 0),
     })
 
     let imageSets = imagesByProject
       .filter(item => item.images.length > 0)
-      .map(({project, images}) => ({ title: project ? project.title : null, images }))
+      .map(({ project, images }) => ({
+        title: project ? project.title : null,
+        images,
+      }))
 
     // TODO: remove image set multiplication
     for (let i = 0; i < 2; i++) {
@@ -91,9 +98,12 @@ export default class DesignerTemplate extends Component {
         <Helmet title={`Salon 94 Design - Designers`} />
         <LeftPane>
           <WorksHeader>Works</WorksHeader>
-          <ImageList imageSets={imageSets} onImageHover={this.imageHoverHandler} />
+          <ImageList
+            imageSets={imageSets}
+            onImageHover={this.imageHoverHandler}
+          />
         </LeftPane>
-        <RightPane style={{marginTop: 12, marginRight: 24}}>
+        <RightPane style={{ marginTop: 12, marginRight: 24 }}>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <DesignerSelector
@@ -117,9 +127,7 @@ export const pageQuery = graphql`
         }
       }
     }
-    allDesignersYaml(
-      sort: { order: ASC, fields: [name] }
-    ) {
+    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
       edges {
         node {
           slug

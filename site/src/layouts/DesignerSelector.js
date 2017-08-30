@@ -58,21 +58,21 @@ class DesignerSelector extends Component {
 
     this.state = {
       isActive: true,
-      lastActivationTime: Date.now()
+      lastActivationTime: Date.now(),
     }
   }
 
   componentDidMount() {
     // hide self after initial peek
     setTimeout(() => {
-      this.setState({isActive: false })
+      this.setState({ isActive: false })
     }, 1200)
   }
 
   onMouseEnter() {
     this.setState({
       isActive: true,
-      lastActivationTime: Date.now()
+      lastActivationTime: Date.now(),
     })
   }
 
@@ -95,13 +95,13 @@ class DesignerSelector extends Component {
     for (let i = 3; i < 15; i++) {
       designers.push({
         slug: `designer-${i}`,
-        name: `Designer ${i}`
+        name: `Designer ${i}`,
       })
     }
 
     return (
       <Container
-        className={cx({active: isActive })}
+        className={cx({ active: isActive })}
         onMouseEnter={this.onMouseEnter.bind(this)}
         onMouseLeave={this.onMouseLeave.bind(this)}
       >

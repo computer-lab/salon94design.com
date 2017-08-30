@@ -130,7 +130,10 @@ export default class ProjectTemplate extends Component {
               </ProjectWhen>
             </FlexBetweenContainer>
           </ProjectHeader>
-          <ImageList imageSets={imageSets} onImageHover={this.imageHoverHandler} />
+          <ImageList
+            imageSets={imageSets}
+            onImageHover={this.imageHoverHandler}
+          />
         </LeftPane>
         <RightPane>
           <ProjectSelector
