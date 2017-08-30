@@ -11,9 +11,18 @@ import DesignerSelector from '../layouts/DesignerSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
-import { pieceImagePath, designerLink, pieceLink } from '../util'
+import { pieceImagePath, designerLink, pieceImageTexts } from '../util'
 
-const { LeftPane, RightPane } = createPanes()
+const { LeftPane, RightPane } = createPanes('370px')
+
+const WorksHeader = styled.h1`
+  composes: ${sansfont};
+  position: fixed;
+  top: 20px;
+  margin: 0;
+  font-weight: 600;
+  font-size: 56px;
+`
 
 export default class DesignerTemplate extends Component {
   constructor(props) {
@@ -41,13 +50,50 @@ export default class DesignerTemplate extends Component {
     const projects = allProjectsYaml.edges.map(edge => edge.node)
       .filter(project => project.designers.includes(currentDesignerSlug))
 
+    let images = []
+    currentDesigner.pieces.forEach(piece => {
+      piece.images.forEach(src => {
+        images.push({
+          piece,
+          src: pieceImagePath(src),
+          texts: pieceImageTexts({ designer: currentDesigner, piece, projects })
+        })
+      })
+    })
+
+    // TODO: remove image multiplication
+    for (let i = 0; i < 3; i++) {
+      images = images.concat(images)
+    }
+
+    const imagesByProject = projects.map(project => ({
+      project,
+      images: images.filter(image => image.piece.projects.includes(project.slug))
+    }))
+
+    // include pieces w/o project
+    imagesByProject.push({
+      project: null,
+      images: images.filter(image => image.piece.projects.length === 0)
+    })
+
+    let imageSets = imagesByProject
+      .filter(item => item.images.length > 0)
+      .map(({project, images}) => ({ title: project ? project.title : null, images }))
+
+    // TODO: remove image set multiplication
+    for (let i = 0; i < 2; i++) {
+      imageSets = imageSets.concat(imageSets.slice(0, 1))
+    }
+
     return (
       <PageContainer>
         <Helmet title={`Salon 94 Design - Designers`} />
         <LeftPane>
-          Hello
+          <WorksHeader>Works</WorksHeader>
+          <ImageList imageSets={imageSets} onImageHover={this.imageHoverHandler} />
         </LeftPane>
-        <RightPane style={{marginTop: 12}}>
+        <RightPane style={{marginTop: 12, marginRight: 24}}>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <DesignerSelector

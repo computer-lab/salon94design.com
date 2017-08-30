@@ -6,6 +6,18 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
+const ImageSet = styled.div`
+  margin-bottom: 12px;
+`
+
+const SetTitle = styled.h3`
+  composes: ${sansfont};
+  margin: 0 72px 28px 0;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: right;
+`
+
 const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -16,6 +28,8 @@ const ImageContainer = styled.div`
 
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
+  padding-right: 20px;
+  display: inline-block;
 
   & img {
     margin: 0;
@@ -27,7 +41,7 @@ const ImageItem = styled.div`
 
   &.expanded img {
     max-width: 100%;
-    max-height: calc(100vh - 108px);
+    max-height: 100%;
     cursor: default;
   }
 `
@@ -92,13 +106,20 @@ class ImageList extends Component {
   onKeyDown(ev) {
     // if expanded and ESC pressed, unexpand
     if (this.state.isExpanded && ev.keyCode === 27) {
-      this.setState({ isExpanded: false })
+      this.unexpand()
     }
   }
 
   renderExpansionButton() {
     const { isExpanded } = this.state
-    const onClick = () => this.setState({ isExpanded: !isExpanded })
+    const onClick = () => {
+      if (!this.state.isExpanded) {
+        this.setState({ isExpanded: true })
+      } else {
+        this.unexpand()
+      }
+    }
+
     return (
       <ExpansionButton onClick={onClick}>
         {isExpanded ? 'x' : 'o'}
@@ -106,7 +127,7 @@ class ImageList extends Component {
     )
   }
 
-  onImageClick(i) {
+  onImageClick(setIndex, imageIndex) {
     if (this.state.isExpanded) return
 
     if (this.props.onImageHover) {
@@ -114,79 +135,97 @@ class ImageList extends Component {
     }
 
     this.setState({ isExpanded: true }, () => {
-      Scroll.scroller.scrollTo(`image-${i}`, {
-        duration: 100,
-        smooth: true,
-        offset: -24,
-      })
+      this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
+    })
+  }
+
+  unexpand() {
+    this.setState({ isExpanded: false }, () => {
+      this.scrollTo('set-0-image-0', -170) // scroll to top
+    })
+  }
+
+  scrollTo(name, offset = 0) {
+    Scroll.scroller.scrollTo(name, {
+      duration: 100,
+      smooth: true,
+      offset,
     })
   }
 
   render() {
-    const { images, onImageHover } = this.props
+    const { imageSets, onImageHover } = this.props
     const { isExpanded } = this.state
 
     return (
-      <div>
+      <section>
         {this.renderExpansionButton()}
 
-        <ImageContainer>
-          {images.map((image, i) => {
-            const { src, texts, alt = '' } = image
+        {imageSets.map(({ images, title }, setIndex) =>
+          <ImageSet key={setIndex}>
+            { title &&
+              <SetTitle>{title}</SetTitle>
+            }
 
-            const onMouseEnter =
-              isExpanded || !onImageHover ? null : () => onImageHover(image)
-            const onMouseLeave =
-              isExpanded || !onImageHover ? null : () => onImageHover(null)
-            const img = (
-              <img
-                src={src}
-                alt={alt}
-                onMouseEnter={onMouseEnter}
-                onMouseLeave={onMouseLeave}
-              />
-            )
+            <ImageContainer>
+              {images.map((image, i) => {
+                const { src, texts, alt = '' } = image
 
-            return (
-              <Scroll.Element name={`image-${i}`} key={`image-${i}`}>
-                <ImageItem
-                  className={cx({ expanded: isExpanded })}
-                  onClick={() => this.onImageClick(i)}
-                >
-                  {img}
+                const onMouseEnter =
+                  isExpanded || !onImageHover ? null : () => onImageHover(image)
+                const onMouseLeave =
+                  isExpanded || !onImageHover ? null : () => onImageHover(null)
+                const img = (
+                  <img
+                    src={src}
+                    alt={alt}
+                    onMouseEnter={onMouseEnter}
+                    onMouseLeave={onMouseLeave}
+                  />
+                )
 
-                  {isExpanded &&
-                    texts &&
-                    <ImageTextContainer>
-                      <ImageText className="left">
-                        {texts.title}
-                      </ImageText>
-                      <ImageText className="right">
-                        {texts.data.map(txt =>
-                          <ImageTextData key={txt}>
-                            {txt}
-                          </ImageTextData>
-                        )}
-                      </ImageText>
-                      <ImageText className="left">
-                        {texts.caption}
-                      </ImageText>
-                      <ImageText className="right">
-                        {texts.credit}
-                      </ImageText>
-                    </ImageTextContainer>}
-                </ImageItem>
-              </Scroll.Element>
-            )
-          })}
-        </ImageContainer>
-      </div>
+                return (
+                  <Scroll.Element name={`set-${setIndex}-image-${i}`} key={`image-${i}`}>
+                    <ImageItem
+                      className={cx({ expanded: isExpanded })}
+                      onClick={() => this.onImageClick(setIndex, i)}
+                    >
+                      {img}
+
+                      {isExpanded &&
+                        texts &&
+                        <ImageTextContainer>
+                          <ImageText className="left">
+                            {texts.title}
+                          </ImageText>
+                          <ImageText className="right">
+                            {texts.data.map(txt =>
+                              <ImageTextData key={txt}>
+                                {txt}
+                              </ImageTextData>
+                            )}
+                          </ImageText>
+                          <ImageText className="left">
+                            {texts.caption}
+                          </ImageText>
+                          <ImageText className="right">
+                            {texts.credit}
+                          </ImageText>
+                        </ImageTextContainer>}
+                    </ImageItem>
+                  </Scroll.Element>
+                )
+              })}
+            </ImageContainer>
+          </ImageSet>
+        )}
+      </section>
     )
   }
 }
 
 ImageList.propTypes = {
-  images: PropTypes.array.isRequired,
+  imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
 }
 
