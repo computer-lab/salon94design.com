@@ -6,21 +6,26 @@ import cx from 'classnames'
 import { monofont, sansfont, baseUl } from './emotion-base'
 
 const Container = styled.div`
-  padding: 12px;
+  margin-left: 12px;
+  margin-right: -12px;
+  padding: 8px;
   border: 2px solid #000;
-  width: 140px;
+  width: 120px;
+  min-width: 120px;
 `
 
 const DesignerList = styled.ul`
   composes: ${baseUl}, ${monofont};
-  font-size: 16px;
+  font-size: 14px;
+  text-align: right;
 
   & li {
     margin: 0;
     padding: 0;
+    line-height: 1.25;
 
     &:not(:last-child) {
-      margin-bottom: 4px;
+      margin-bottom: 12px;
     }
 
     &.active a {
@@ -41,6 +46,14 @@ const DesignerList = styled.ul`
 `
 
 const DesignerSelector = ({ designers, currentDesignerSlug }) => {
+  // TODO: remove temporary designers
+  for (let i = 3; i < 15; i++) {
+    designers.push({
+      slug: `designer-${i}`,
+      name: `Designer ${i}`
+    })
+  }
+
   return (
     <Container>
       <DesignerList>
