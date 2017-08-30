@@ -6,9 +6,7 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
-const ImageSet = styled.div`
-  margin-bottom: 12px;
-`
+const ImageSet = styled.div`margin-bottom: 12px;`
 
 const SetTitle = styled.h3`
   composes: ${sansfont};
@@ -163,9 +161,10 @@ class ImageList extends Component {
 
         {imageSets.map(({ images, title }, setIndex) =>
           <ImageSet key={setIndex}>
-            { title &&
-              <SetTitle>{title}</SetTitle>
-            }
+            {title &&
+              <SetTitle>
+                {title}
+              </SetTitle>}
 
             <ImageContainer>
               {images.map((image, i) => {
@@ -185,7 +184,10 @@ class ImageList extends Component {
                 )
 
                 return (
-                  <Scroll.Element name={`set-${setIndex}-image-${i}`} key={`image-${i}`}>
+                  <Scroll.Element
+                    name={`set-${setIndex}-image-${i}`}
+                    key={`image-${i}`}
+                  >
                     <ImageItem
                       className={cx({ expanded: isExpanded })}
                       onClick={() => this.onImageClick(setIndex, i)}
