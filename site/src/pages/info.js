@@ -4,7 +4,13 @@ import Link from 'gatsby-link'
 import { css } from 'emotion'
 import styled from 'emotion/react'
 
-import { sansfont, baseUl, childLink, Header2, breakpoint1 } from '../layouts/emotion-base'
+import {
+  sansfont,
+  baseUl,
+  childLink,
+  Header2,
+  breakpoint1,
+} from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
 
 const Container = styled.div`
@@ -26,7 +32,7 @@ const Section = styled.section`
     margin-right: 0;
   }
 
-  @media(${breakpoint1}) {
+  @media (${breakpoint1}) {
     margin: 60px 0 0 24px;
   }
 `
@@ -47,9 +53,7 @@ const SectionText = styled.p`
   }
 `
 
-const SectionList = styled.ul`
-  composes: ${baseUl}, ${sectionContent};
-`
+const SectionList = styled.ul`composes: ${baseUl}, ${sectionContent};`
 
 const SectionListItem = styled.li`
   composes: ${childLink};

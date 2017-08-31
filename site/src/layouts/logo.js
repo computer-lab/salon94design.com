@@ -13,7 +13,7 @@ const Logo = styled.div`
   width: ${({ width }) => `${width}px`};
   height: ${({ width }) => `${height(width)}px`};
 
-  @media(${breakpoint1}) {
+  @media (${breakpoint1}) {
     margin: 0 auto;
     width: 300px;
     height: ${height(300)}px;

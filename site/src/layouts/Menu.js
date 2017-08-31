@@ -4,7 +4,13 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 
-import { baseUl, monofont, childLink, breakpoint1, breakpoint2 } from './emotion-base'
+import {
+  baseUl,
+  monofont,
+  childLink,
+  breakpoint1,
+  breakpoint2,
+} from './emotion-base'
 
 const Wrapper = styled.div`
   position: fixed;
@@ -13,7 +19,7 @@ const Wrapper = styled.div`
   color: #000;
   background: #fff;
 
-  @media(${breakpoint1}) {
+  @media (${breakpoint1}) {
     right: auto;
     left: 50%;
     transform: translateX(-50%);
@@ -25,11 +31,11 @@ const Nav = styled.ul`
   display: flex;
   font-size: 28px;
 
-  @media(${breakpoint1}) {
+  @media (${breakpoint1}) {
     font-size: 22px;
   }
 
-  @media(${breakpoint2}) {
+  @media (${breakpoint2}) {
     font-size: 18px;
   }
 `
