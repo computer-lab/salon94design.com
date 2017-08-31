@@ -5,6 +5,7 @@ import styled from 'emotion/react'
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont, childLink } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
+import TagSelector from '../layouts/TagSelector'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath, pieceImageTexts } from '../util'
 
@@ -33,12 +34,16 @@ export default class PiecesTemplate extends Component {
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projects = allProjectsYaml.edges.map(edge => edge.node)
+    const filterPiece = p => (p.tags.includes(currentTag) || p.when === currentTag)
 
     const images = []
+    const tagSet = new Set()
     designers.forEach(designer => {
-      designer.pieces
-        .filter(p => p.tags.includes(currentTag) || p.when === currentTag)
-        .forEach(piece => {
+      designer.pieces.forEach(piece => {
+        piece.tags.forEach(t => tagSet.add(t))
+        tagSet.add(piece.when)
+
+        if (filterPiece(piece)) {
           images.push({
             piece,
             designer,
@@ -49,10 +54,17 @@ export default class PiecesTemplate extends Component {
               projects,
             })
           })
-        })
+        }
+      })
     })
 
     const imageSets = [{ images }]
+    const tags = Array.from(tagSet).sort()
+
+    // TODO: remove temporary tag multiplication
+    for (let i = 4; i < 13; i++) {
+      tags.push(`Tag ${i}`);
+    }
 
     return (
       <PageContainer>
@@ -64,6 +76,7 @@ export default class PiecesTemplate extends Component {
           />
         </LeftPane>
         <RightPane>
+          <TagSelector tags={tags} currentTag={currentTag} />
           {hoverImage &&
             <PieceSummary
               piece={hoverImage.piece}

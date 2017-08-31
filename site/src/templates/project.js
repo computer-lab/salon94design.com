@@ -87,13 +87,11 @@ export default class ProjectTemplate extends Component {
       )
 
       pieces.forEach(piece => {
-        piece.images.forEach(src => {
-          pieceImages.push({
-            piece,
-            designer,
-            src: pieceImagePath(src),
-            texts: pieceImageTexts({ piece, designer }),
-          })
+        pieceImages.push({
+          piece,
+          designer,
+          src: pieceImagePath(piece.images[0]),
+          texts: pieceImageTexts({ piece, designer }),
         })
       })
     })
@@ -108,7 +106,7 @@ export default class ProjectTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Projects`} />
+        <Helmet title={`Salon 94 Design - Projects - ${currentProject.title}`} />
         <LeftPane>
           <ProjectHeader>
             <ProjectTitle>

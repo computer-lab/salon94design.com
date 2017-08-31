@@ -52,16 +52,14 @@ export default class DesignerTemplate extends Component {
 
     let images = []
     currentDesigner.pieces.forEach(piece => {
-      piece.images.forEach(src => {
-        images.push({
+      images.push({
+        piece,
+        src: pieceImagePath(piece.images[0]),
+        texts: pieceImageTexts({
+          designer: currentDesigner,
           piece,
-          src: pieceImagePath(src),
-          texts: pieceImageTexts({
-            designer: currentDesigner,
-            piece,
-            projects,
-          }),
-        })
+          projects,
+        }),
       })
     })
 
