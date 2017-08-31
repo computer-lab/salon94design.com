@@ -34,7 +34,8 @@ export default class PiecesTemplate extends Component {
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const filterPiece = p => (p.tags.includes(currentTag) || p.when === currentTag)
+    const filterPiece = p =>
+      p.tags.includes(currentTag) || p.when === currentTag
 
     let images = []
     const tagSet = new Set()
@@ -52,8 +53,8 @@ export default class PiecesTemplate extends Component {
               designer,
               piece,
               projects,
-              smallText: true
-            })
+              smallText: true,
+            }),
           })
         }
       })
@@ -69,13 +70,13 @@ export default class PiecesTemplate extends Component {
 
     // TODO: remove temporary tag multiplication
     for (let i = 4; i < 13; i++) {
-      tags.push(`Tag ${i}`);
+      tags.push(`Tag ${i}`)
     }
 
     return (
       <PageContainer>
         <Helmet title={`Salon 94 Design - Pieces - ${currentTag}`} />
-        <LeftPane style={{marginTop: -86}}>
+        <LeftPane style={{ marginTop: -86 }}>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
