@@ -6,7 +6,13 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
-const ImageSet = styled.div`margin-bottom: 60px;`
+const ImageSet = styled.div`
+  margin-bottom: 60px;
+
+  &.unexpandable {
+    margin-right: -20px;
+  }
+`
 
 const SetTitle = styled.h3`
   composes: ${sansfont};
@@ -140,7 +146,7 @@ class ImageList extends Component {
   }
 
   onImageClick(setIndex, imageIndex) {
-    if (this.state.isExpanded) return
+    if (this.props.unexpandable || this.state.isExpanded) return
 
     if (this.props.onImageHover) {
       this.props.onImageHover(null)
@@ -170,15 +176,15 @@ class ImageList extends Component {
   }
 
   render() {
-    const { imageSets, onImageHover, alwaysExpand } = this.props
+    const { imageSets, onImageHover, alwaysExpand, unexpandable } = this.props
     const { isExpanded } = this.state
 
     return (
       <section>
-        {!alwaysExpand && this.renderExpansionButton()}
+        {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) =>
-          <ImageSet key={setIndex}>
+          <ImageSet key={setIndex} className={cx({ unexpandable })}>
             {title &&
               <SetTitle>
                 {title}
@@ -186,7 +192,7 @@ class ImageList extends Component {
 
             <ImageContainer>
               {images.map((image, i) => {
-                const { src, texts, alt = '' } = image
+                const { src, texts, unexpandedLink, alt = '' } = image
 
                 const onMouseEnter =
                   isExpanded || !onImageHover ? null : () => onImageHover(image)
@@ -210,7 +216,11 @@ class ImageList extends Component {
                       className={cx({ expanded: isExpanded })}
                       onClick={() => this.onImageClick(setIndex, i)}
                     >
-                      {img}
+                      {isExpanded || !unexpandedLink
+                        ? img
+                        : <Link to={unexpandedLink}>
+                            {img}
+                          </Link>}
 
                       {isExpanded &&
                         texts &&
@@ -257,6 +267,7 @@ ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
   alwaysExpand: PropTypes.bool,
+  unexpandable: PropTypes.bool,
 }
 
 export default ImageList
