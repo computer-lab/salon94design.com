@@ -36,8 +36,7 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
         <Link to={designerLink(designer.slug)}>
           {designer.name}
         </Link>
-      </SummaryItem>
-    }
+      </SummaryItem>}
     <Title>
       {piece.title}
     </Title>
@@ -48,14 +47,15 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
       <SummaryItem>
         {piece.caption}
       </SummaryItem>}
-    { projects && piece.projects.map(slug =>
-      <SummaryItem key={slug}>
-        <Link to={projectLink(slug)}>
-          {projects.find(p => p.slug === slug).title}
-        </Link>
-      </SummaryItem>
-    )}
-    { detailed &&
+    {projects &&
+      piece.projects.map(slug =>
+        <SummaryItem key={slug}>
+          <Link to={projectLink(slug)}>
+            {projects.find(p => p.slug === slug).title}
+          </Link>
+        </SummaryItem>
+      )}
+    {detailed &&
       <div>
         <SummaryItem>
           <Link to={pieceTagLink(piece.when)}>
@@ -69,15 +69,14 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
             </Link>
           </SummaryItem>
         )}
-      </div>
-    }
+      </div>}
   </Container>
 
 PieceSummary.propTypes = {
   piece: PropTypes.object.isRequired,
   designer: PropTypes.object,
   projects: PropTypes.array,
-  detailed: PropTypes.bool
+  detailed: PropTypes.bool,
 }
 
 export default PieceSummary

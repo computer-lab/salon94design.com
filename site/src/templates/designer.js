@@ -95,7 +95,7 @@ export default class DesignerTemplate extends Component {
 
     const selectorItems = designers.map(item => ({
       title: item.name,
-      link: designerLink(item.slug)
+      link: designerLink(item.slug),
     }))
 
     // TODO: remove temporary selector multiplication
@@ -108,9 +108,13 @@ export default class DesignerTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Designers — ${currentDesigner.name}`} />
+        <Helmet
+          title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
+        />
         <LeftPane>
-          <WorksHeader>{currentDesigner.name} - Works</WorksHeader>
+          <WorksHeader>
+            {currentDesigner.name} - Works
+          </WorksHeader>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
@@ -123,10 +127,7 @@ export default class DesignerTemplate extends Component {
             items={selectorItems}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
-          {hoverImage &&
-            <PieceSummary
-              piece={hoverImage.piece}
-            />}
+          {hoverImage && <PieceSummary piece={hoverImage.piece} />}
         </RightPane>
       </PageContainer>
     )

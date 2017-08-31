@@ -5,7 +5,7 @@ exports.createPages = props => {
     createBlogPosts(props),
     createProjects(props),
     createDesigners(props),
-    createPieces(props)
+    createPieces(props),
   ])
 }
 
@@ -145,7 +145,7 @@ function createPieces({ boundActionCreators, graphql }) {
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
     const pieces = designers
-      .map(d => d.pieces.map(p => Object.assign({}, p, {designer: d})))
+      .map(d => d.pieces.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
     const tagSet = new Set()

@@ -106,7 +106,9 @@ export default class ProjectTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Projects - ${currentProject.title}`} />
+        <Helmet
+          title={`Salon 94 Design - Projects - ${currentProject.title}`}
+        />
         <LeftPane>
           <ProjectHeader>
             <ProjectTitle>

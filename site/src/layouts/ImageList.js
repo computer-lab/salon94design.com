@@ -233,13 +233,14 @@ class ImageList extends Component {
                           </ImageText>
                         </ImageTextContainer>}
 
-                      {!isExpanded && texts && texts.smallText &&
+                      {!isExpanded &&
+                        texts &&
+                        texts.smallText &&
                         <ImageTextContainer>
                           <ImageText className="small">
                             {texts.smallText}
                           </ImageText>
-                        </ImageTextContainer>
-                      }
+                        </ImageTextContainer>}
                     </ImageItem>
                   </Scroll.Element>
                 )
@@ -255,7 +256,7 @@ class ImageList extends Component {
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
-  alwaysExpand: PropTypes.boolean
+  alwaysExpand: PropTypes.boolean,
 }
 
 export default ImageList

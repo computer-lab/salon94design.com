@@ -11,7 +11,7 @@ import { pieceImagePath, pieceLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
-const PieceTemplate = ({ data, pathContext}) => {
+const PieceTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data
   const { designerSlug, pieceSlug } = pathContext
 
@@ -23,7 +23,7 @@ const PieceTemplate = ({ data, pathContext}) => {
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
   let images = currentPiece.images.map(src => ({
-    src: pieceImagePath(src)
+    src: pieceImagePath(src),
   }))
 
   // TODO: remove temporary image multiplication
@@ -35,17 +35,16 @@ const PieceTemplate = ({ data, pathContext}) => {
 
   const selectorItems = pieces.map(piece => ({
     title: piece.title,
-    link: pieceLink(currentDesigner.slug, piece.slug)
+    link: pieceLink(currentDesigner.slug, piece.slug),
   }))
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - ${currentDesigner.name} Pieces - ${currentPiece.title}`} />
-      <LeftPane style={{marginTop: -86}}>
-        <ImageList
-          imageSets={imageSets}
-          alwaysExpand={true}
-        />
+      <Helmet
+        title={`Salon 94 Design - ${currentDesigner.name} Pieces - ${currentPiece.title}`}
+      />
+      <LeftPane style={{ marginTop: -86 }}>
+        <ImageList imageSets={imageSets} alwaysExpand={true} />
       </LeftPane>
       <RightPane>
         <PieceSummary
@@ -61,9 +60,9 @@ const PieceTemplate = ({ data, pathContext}) => {
       </RightPane>
     </PageContainer>
   )
-};
+}
 
-export default PieceTemplate;
+export default PieceTemplate
 
 export const pageQuery = graphql`
   query PieceTemplateQuery {
