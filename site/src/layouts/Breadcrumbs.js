@@ -44,26 +44,29 @@ const Breadcrumb = styled.li`
 `
 
 class Breadcrumbs extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props)
 
     this.state = {
       breadcrumbs: [],
-      listening: true
+      listening: true,
     }
   }
 
-  pushLocation (location) {
+  pushLocation(location) {
     const { breadcrumbs } = this.state
     this.setState({
-      breadcrumbs: breadcrumbs.concat([location])
+      breadcrumbs: breadcrumbs.concat([location]),
     })
   }
 
-  popLocation () {
+  popLocation() {
     const { breadcrumbs } = this.state
     this.setState({
-      breadcrumbs: breadcrumbs.length > 0 ? breadcrumbs.slice(0, breadcrumbs.length - 1) : []
+      breadcrumbs:
+        breadcrumbs.length > 0
+          ? breadcrumbs.slice(0, breadcrumbs.length - 1)
+          : [],
     })
   }
 
@@ -75,16 +78,18 @@ class Breadcrumbs extends Component {
       return
     }
 
-    this.setState({
-      listening: false,
-      breadcrumbs: breadcrumbs.slice(0, index + 1)
-    }, () => {
-      history.go(index + 1 - breadcrumbs.length)
-      setTimeout(() => {
-        this.setState({ listening: true })
-      }, 10)
-    })
-
+    this.setState(
+      {
+        listening: false,
+        breadcrumbs: breadcrumbs.slice(0, index + 1),
+      },
+      () => {
+        history.go(index + 1 - breadcrumbs.length)
+        setTimeout(() => {
+          this.setState({ listening: true })
+        }, 10)
+      }
+    )
   }
 
   componentDidMount() {
@@ -102,19 +107,20 @@ class Breadcrumbs extends Component {
 
       switch (action) {
         case 'PUSH':
-          this.pushLocation(location);
-          break;
+          this.pushLocation(location)
+          break
         case 'POP':
-          if (breadcrumbs.findIndex(l => l.key === location.key) === breadcrumbs.length - 2) {
+          const existingIdx = breadcrumbs.findIndex(l => l.key === location.key)
+          if (existingIdx === breadcrumbs.length - 2) {
             // backwards pop
-            this.popLocation();
+            this.popLocation()
           } else {
             // browser forward button pop
-            this.pushLocation(location);
+            this.pushLocation(location)
           }
-          break;
+          break
         default:
-          break;
+          break
       }
     })
   }
@@ -123,7 +129,10 @@ class Breadcrumbs extends Component {
     const { breadcrumbs } = this.state
 
     const maxDisplay = 5
-    const displayBreadcrumbs = breadcrumbs.length <= maxDisplay ? breadcrumbs : breadcrumbs.slice(breadcrumbs.length - maxDisplay)
+    const displayBreadcrumbs =
+      breadcrumbs.length <= maxDisplay
+        ? breadcrumbs
+        : breadcrumbs.slice(breadcrumbs.length - maxDisplay)
 
     return (
       <Container>
@@ -132,7 +141,9 @@ class Breadcrumbs extends Component {
             <Breadcrumb
               key={index}
               onClick={() => this.onBreadCrumbClick(index)}
-              className={cx({ active: index === displayBreadcrumbs.length - 1})}
+              className={cx({
+                active: index === displayBreadcrumbs.length - 1,
+              })}
             >
               {location.pathname}
             </Breadcrumb>
@@ -144,7 +155,7 @@ class Breadcrumbs extends Component {
 }
 
 Breadcrumbs.propTypes = {
-  history: PropTypes.object
+  history: PropTypes.object,
 }
 
 export default Breadcrumbs
