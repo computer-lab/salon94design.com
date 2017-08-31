@@ -8,6 +8,9 @@ export const designerLink = slug => `/designers/${slug}`
 export const projectLink = slug => `/projects/${slug}`
 
 export const pieceLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
+export const pieceTagLink = tag => `/pieces/${tag}`
+
+export const capitalize = str => str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
 export const pieceImageTexts = ({ piece, designer, projects }) => {
   let data = [piece.price, piece.when]

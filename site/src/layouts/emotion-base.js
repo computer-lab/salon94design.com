@@ -27,6 +27,27 @@ export const childLink = css`
   }
 `
 
+export const selectorList = css`
+  composes: ${baseUl};
+
+  & li {
+    &.active a {
+      background: #ff0;
+      text-decoration: underline;
+    }
+
+    & a {
+      color: inherit;
+      text-decoration: inherit;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+`
+
 export const Header2 = styled.h2`
   composes: ${sansfont};
   margin: 0 0 16px 0;

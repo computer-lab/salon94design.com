@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, sansfont, baseUl } from './emotion-base'
+import { monofont, selectorList } from './emotion-base'
 
 const Container = styled.div`
   position: fixed;
@@ -23,7 +23,7 @@ const Container = styled.div`
 `
 
 const DesignerList = styled.ul`
-  composes: ${baseUl}, ${monofont};
+  composes: ${selectorList}, ${monofont};
   font-size: 14px;
 
   & li {
@@ -33,21 +33,6 @@ const DesignerList = styled.ul`
 
     &:not(:last-child) {
       margin-bottom: 12px;
-    }
-
-    &.active a {
-      background: #ff0;
-      text-decoration: underline;
-    }
-
-    & a {
-      color: inherit;
-      text-decoration: inherit;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-      }
     }
   }
 `
