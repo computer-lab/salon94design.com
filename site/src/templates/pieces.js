@@ -36,7 +36,7 @@ export default class PiecesTemplate extends Component {
     const projects = allProjectsYaml.edges.map(edge => edge.node)
     const filterPiece = p => (p.tags.includes(currentTag) || p.when === currentTag)
 
-    const images = []
+    let images = []
     const tagSet = new Set()
     designers.forEach(designer => {
       designer.pieces.forEach(piece => {
@@ -52,11 +52,17 @@ export default class PiecesTemplate extends Component {
               designer,
               piece,
               projects,
+              smallText: true
             })
           })
         }
       })
     })
+
+    // TODO: remove temporary image multiplication
+    for (let i = 0; i < 3; i++) {
+      images = images.concat(images)
+    }
 
     const imageSets = [{ images }]
     const tags = Array.from(tagSet).sort()
@@ -69,7 +75,7 @@ export default class PiecesTemplate extends Component {
     return (
       <PageContainer>
         <Helmet title={`Salon 94 Design - Pieces - ${currentTag}`} />
-        <LeftPane>
+        <LeftPane style={{marginTop: -86}}>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
