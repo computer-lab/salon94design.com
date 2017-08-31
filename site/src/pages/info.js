@@ -1,8 +1,10 @@
 import React from 'react'
 import Helmet from 'react-helmet'
+import Link from 'gatsby-link'
 import { css } from 'emotion'
 import styled from 'emotion/react'
-import { sansfont, Header2 } from '../layouts/emotion-base'
+import { sansfont, baseUl, childLink, Header2, breakpoint1 } from '../layouts/emotion-base'
+import Logo from '../layouts/logo'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -12,8 +14,24 @@ const Container = styled.div`
   }
 `
 
-const sectionEl = css`
-  margin: 0 0 30px 20px;
+const SectionWrapper = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const Section = styled.section`
+  margin: 96px 120px 0 24px;
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media(${breakpoint1}) {
+    margin: 60px 0 0 24px;
+  }
+`
+
+const sectionContent = css`
+  margin: 0;
   padding: 0;
   max-width: 400px;
   font-size: 18px;
@@ -21,7 +39,7 @@ const sectionEl = css`
 `
 
 const SectionText = styled.p`
-  composes: ${sectionEl};
+  composes: ${sectionContent};
   & a {
     text-decoration: none;
     border-bottom: 2px solid #000;
@@ -29,25 +47,16 @@ const SectionText = styled.p`
 `
 
 const SectionList = styled.ul`
-  composes: ${sectionEl};
-  list-style: none;
+  composes: ${baseUl}, ${sectionContent};
+`
 
-  & li {
-    margin: 0 0 16px 0;
-
-    & a {
-      text-decoration: none;
-
-      &:hover,
-      &:focus {
-        border-bottom: 2px solid #000;
-      }
-    }
-  }
+const SectionListItem = styled.li`
+  composes: ${childLink};
+  margin: 0 0 16px 0;
 `
 
 const MailingListSignup = styled.div`
-  margin-top: 48px;
+  margin-top: 32px;
   font-weight: 500;
   font-size: 28px;
 
@@ -80,23 +89,32 @@ const Info = ({ data }) => {
     <Container>
       <Helmet title={`Salon 94 Design - Info`} />
 
-      <Header2>About</Header2>
-      <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
+      <Link to={'/'}>
+        <Logo width={600} />
+      </Link>
 
-      <Header2>Contact</Header2>
-      <SectionList>
-        {contactItems.map(item =>
-          <li key={item.name}>
-            <a href={item.link} target="_blank">
-              {item.name}
-            </a>
-          </li>
-        )}
-      </SectionList>
+      <SectionWrapper>
+        <Section>
+          <Header2>About</Header2>
+          <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
+        </Section>
 
-      <MailingListSignup>
-        <a href={mailingList}>Sign Up For Mailing List</a>
-      </MailingListSignup>
+        <Section>
+          <Header2>Contact</Header2>
+          <SectionList>
+            {contactItems.map(item =>
+              <SectionListItem key={item.name}>
+                <a href={item.link} target="_blank">
+                  {item.name}
+                </a>
+              </SectionListItem>
+            )}
+          </SectionList>
+          <MailingListSignup>
+            <a href={mailingList}>Sign Up For Mailing List</a>
+          </MailingListSignup>
+        </Section>
+      </SectionWrapper>
     </Container>
   )
 }
