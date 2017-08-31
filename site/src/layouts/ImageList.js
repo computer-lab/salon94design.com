@@ -256,7 +256,7 @@ class ImageList extends Component {
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
-  alwaysExpand: PropTypes.boolean,
+  alwaysExpand: PropTypes.bool,
 }
 
 export default ImageList

@@ -3,6 +3,7 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import { css } from 'emotion'
 import styled from 'emotion/react'
+
 import { sansfont, baseUl, childLink, Header2, breakpoint1 } from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
 
