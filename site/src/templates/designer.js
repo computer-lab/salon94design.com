@@ -8,7 +8,8 @@ import DesignerSelector from '../layouts/DesignerSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
-import { pieceImagePath, designerLink, pieceImageTexts } from '../util'
+import PieceSummary from '../layouts/PieceSummary'
+import { pieceImagePath, pieceImageTexts } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -40,6 +41,7 @@ export default class DesignerTemplate extends Component {
     const { data, pathContext } = this.props
     const { allProjectsYaml, allDesignersYaml } = data
     const { slug: currentDesignerSlug } = pathContext
+    const { hoverImage } = this.state
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const currentDesigner = designers.find(d => d.slug === currentDesignerSlug)
@@ -95,7 +97,7 @@ export default class DesignerTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Designers`} />
+        <Helmet title={`Salon 94 Design - Designers — ${currentDesigner.name}`} />
         <LeftPane>
           <WorksHeader>Works</WorksHeader>
           <ImageList
@@ -110,6 +112,10 @@ export default class DesignerTemplate extends Component {
             designers={designers}
             currentDesignerSlug={currentDesignerSlug}
           />
+          {hoverImage &&
+            <PieceSummary
+              piece={hoverImage.piece}
+            />}
         </RightPane>
       </PageContainer>
     )
