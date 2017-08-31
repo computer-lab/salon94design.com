@@ -132,6 +132,7 @@ function createPieces({ boundActionCreators, graphql }) {
         node {
           pieces {
             tags
+            when
           }
         }
       }
@@ -146,6 +147,7 @@ function createPieces({ boundActionCreators, graphql }) {
 
     const tagSet = new Set()
     pieces.forEach(p => {
+      tagSet.add(p.when)
       p.tags.forEach(tag => {
         tagSet.add(tag)
       })
@@ -153,7 +155,7 @@ function createPieces({ boundActionCreators, graphql }) {
 
     const tags = Array.from(tagSet).sort()
 
-    // root /pieces is equivalent to /designers/first_alphabetical_tag
+    // root /pieces is equivalent to /pieces/first_alphabetical_tag
     createPage({
       path: '/pieces',
       component: template,
