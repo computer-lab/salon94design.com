@@ -5,6 +5,7 @@ exports.createPages = props => {
     createBlogPosts(props),
     createProjects(props),
     createDesigners(props),
+    createPieces(props)
   ])
 }
 
@@ -115,6 +116,55 @@ function createDesigners({ boundActionCreators, graphql }) {
         path: `/designers/${node.slug}`,
         component: template,
         context: { slug: node.slug },
+      })
+    })
+  })
+}
+
+function createPieces({ boundActionCreators, graphql }) {
+  const { createPage } = boundActionCreators
+
+  const template = path.resolve(`src/templates/pieces.js`)
+
+  return graphql(`{
+    allDesignersYaml{
+      edges {
+        node {
+          pieces {
+            tags
+          }
+        }
+      }
+    }
+  }`).then(result => {
+    if (result.errors) return Promise.reject(result.errors)
+
+    const designers = result.data.allDesignersYaml.edges.map(e => e.node)
+    const pieces = designers
+      .map(d => d.pieces)
+      .reduce((arr, p) => arr.concat(p), [])
+
+    const tagSet = new Set()
+    pieces.forEach(p => {
+      p.tags.forEach(tag => {
+        tagSet.add(tag)
+      })
+    })
+
+    const tags = Array.from(tagSet).sort()
+
+    // root /pieces is equivalent to /designers/first_alphabetical_tag
+    createPage({
+      path: '/pieces',
+      component: template,
+      context: { currentTag: tags[0] },
+    })
+
+    tags.forEach(tag => {
+      createPage({
+        path: `/pieces/${tag}`,
+        component: template,
+        context: { currentTag: tag },
       })
     })
   })
