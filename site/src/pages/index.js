@@ -11,8 +11,8 @@ import { pieceImagePath, pieceLink } from '../util'
 
 const logoPosition = css`
   position: fixed;
-  bottom: 20px;
-  right: 40px;
+  top: 92px;
+  z-index: -1;
 `
 
 const IndexPage = ({ data }) => {
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
   return (
     <PageContainer>
       <Helmet title={`Salon 94 Design`} />
-      <div style={{ marginTop: -20 }}>
+      <div style={{ paddingTop: 92 }}>
         <Logo width={300} className={logoPosition} />
         <ImageList imageSets={imageSets} unexpandable={true} />
       </div>
