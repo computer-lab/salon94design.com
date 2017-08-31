@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
+
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
