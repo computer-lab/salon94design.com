@@ -12,7 +12,7 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-  margin-bottom: 18px;
+  margin-bottom: 24px;
   font-size: 32px;
 `
 
@@ -21,10 +21,23 @@ const SummaryItem = styled.div`
   margin: 8px 0;
   line-height: 1.25;
   font-size: 24px;
+
+  &.designer {
+    font-size: 24px;
+    font-weight: 500;
+    margin: 0 0 20px 0;
+  }
 `
 
 const PieceSummary = ({ designer, piece, detailed, projects }) =>
   <Container>
+    {designer &&
+      <SummaryItem className="designer">
+        <Link to={designerLink(designer.slug)}>
+          {designer.name}
+        </Link>
+      </SummaryItem>
+    }
     <Title>
       {piece.title}
     </Title>
@@ -35,13 +48,6 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
       <SummaryItem>
         {piece.caption}
       </SummaryItem>}
-    {designer &&
-      <SummaryItem>
-        <Link to={designerLink(designer.slug)}>
-          {designer.name}
-        </Link>
-      </SummaryItem>
-    }
     { projects && piece.projects.map(slug =>
       <SummaryItem key={slug}>
         <Link to={projectLink(slug)}>

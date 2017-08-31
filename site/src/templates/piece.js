@@ -5,8 +5,9 @@ import styled from 'emotion/react'
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
+import HiddenSelector from '../layouts/HiddenSelector'
 import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath, pieceImageTexts } from '../util'
+import { pieceImagePath, pieceLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -32,6 +33,11 @@ const PieceTemplate = ({ data, pathContext}) => {
 
   const imageSets = [{ images }]
 
+  const selectorItems = pieces.map(piece => ({
+    title: piece.title,
+    link: pieceLink(currentDesigner.slug, piece.slug)
+  }))
+
   return (
     <PageContainer>
       <Helmet title={`Salon 94 Design - ${currentDesigner.name} Pieces - ${currentPiece.title}`} />
@@ -47,6 +53,10 @@ const PieceTemplate = ({ data, pathContext}) => {
           designer={currentDesigner}
           projects={projects}
           detailed={true}
+        />
+        <HiddenSelector
+          items={selectorItems}
+          currentItemLink={pieceLink(currentDesigner.slug, currentPiece.slug)}
         />
       </RightPane>
     </PageContainer>
