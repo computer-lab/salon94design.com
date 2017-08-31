@@ -19,7 +19,7 @@ export const pieceImageTexts = ({ piece, designer, projects, smallText = false }
       piece.projects.map(slug => {
         const project = projects.find(p => p.slug === slug)
         return (
-          <Link to={projectLink(slug)}>
+          <Link to={projectLink(slug)} key={slug}>
             {project.title}
           </Link>
         )
