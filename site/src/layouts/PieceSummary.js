@@ -26,9 +26,11 @@ const PieceSummary = ({ designer, piece }) =>
     <Title>
       {piece.title}
     </Title>
-    <SummaryItem>
-      {designer.name}
-    </SummaryItem>
+    {designer &&
+      <SummaryItem>
+        {designer.name}
+      </SummaryItem>
+    }
     <SummaryItem>
       {piece.price}
     </SummaryItem>
@@ -40,7 +42,7 @@ const PieceSummary = ({ designer, piece }) =>
 
 PieceSummary.propTypes = {
   piece: PropTypes.object.isRequired,
-  designer: PropTypes.object.isRequired,
+  designer: PropTypes.object,
 }
 
 export default PieceSummary
