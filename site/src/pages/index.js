@@ -1,9 +1,9 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Logo from '../layouts/logo'
 
 const IndexPage = () =>
   <div>
-    <h1>Homepage</h1>
+    <Logo width={600} />
   </div>
 
 export default IndexPage
