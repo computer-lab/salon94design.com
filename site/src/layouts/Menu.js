@@ -10,6 +10,7 @@ const Wrapper = styled.div`
   position: fixed;
   top: 40px;
   right: 40px;
+  background: #fff;
 `
 
 const Nav = styled.ul`

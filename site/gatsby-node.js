@@ -124,13 +124,16 @@ function createDesigners({ boundActionCreators, graphql }) {
 function createPieces({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const template = path.resolve(`src/templates/pieces.js`)
+  const piecesTemplate = path.resolve(`src/templates/pieces.js`)
+  const pieceTemplate = path.resolve(`src/templates/piece.js`)
 
   return graphql(`{
     allDesignersYaml{
       edges {
         node {
+          slug
           pieces {
+            slug
             tags
             when
           }
@@ -142,10 +145,11 @@ function createPieces({ boundActionCreators, graphql }) {
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
     const pieces = designers
-      .map(d => d.pieces)
+      .map(d => d.pieces.map(p => Object.assign({}, p, {designer: d})))
       .reduce((arr, p) => arr.concat(p), [])
 
     const tagSet = new Set()
+
     pieces.forEach(p => {
       tagSet.add(p.when)
       p.tags.forEach(tag => {
@@ -158,15 +162,25 @@ function createPieces({ boundActionCreators, graphql }) {
     // root /pieces is equivalent to /pieces/first_alphabetical_tag
     createPage({
       path: '/pieces',
-      component: template,
+      component: piecesTemplate,
       context: { currentTag: tags[0] },
     })
 
+    // create page for each tag
     tags.forEach(tag => {
       createPage({
         path: `/pieces/${tag}`,
-        component: template,
+        component: piecesTemplate,
         context: { currentTag: tag },
+      })
+    })
+
+    // create page for each piece
+    pieces.forEach(piece => {
+      createPage({
+        path: `/designers/${piece.designer.slug}/${piece.slug}`,
+        component: pieceTemplate,
+        context: { designerSlug: piece.designer.slug, pieceSlug: piece.slug },
       })
     })
   })

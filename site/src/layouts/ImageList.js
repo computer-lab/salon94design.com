@@ -58,10 +58,14 @@ const ImageText = styled.div`
   text-align: left;
   width: 50%;
   font-size: 18px;
-  line-height: 1.6;
+  line-height: 28px;
 
   &.right {
     text-align: right;
+  }
+
+  &.primary {
+    font-size: 24px;
   }
 
   &.small {
@@ -99,7 +103,7 @@ class ImageList extends Component {
     this.onKeyDown = this.onKeyDown.bind(this)
 
     this.state = {
-      isExpanded: false,
+      isExpanded: props.alwaysExpand ? true : false,
     }
   }
 
@@ -148,6 +152,10 @@ class ImageList extends Component {
   }
 
   unexpand() {
+    if (this.props.alwaysExpand) {
+      return
+    }
+
     this.setState({ isExpanded: false }, () => {
       this.scrollTo('set-0-image-0', -170) // scroll to top
     })
@@ -162,12 +170,12 @@ class ImageList extends Component {
   }
 
   render() {
-    const { imageSets, onImageHover } = this.props
+    const { imageSets, onImageHover, alwaysExpand } = this.props
     const { isExpanded } = this.state
 
     return (
       <section>
-        {this.renderExpansionButton()}
+        {!alwaysExpand && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) =>
           <ImageSet key={setIndex}>
@@ -207,7 +215,7 @@ class ImageList extends Component {
                       {isExpanded &&
                         texts &&
                         <ImageTextContainer>
-                          <ImageText className="left">
+                          <ImageText className="left primary">
                             {texts.title}
                           </ImageText>
                           <ImageText className="right">
@@ -247,6 +255,7 @@ class ImageList extends Component {
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
+  alwaysExpand: PropTypes.boolean
 }
 
 export default ImageList
