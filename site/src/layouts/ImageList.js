@@ -26,7 +26,6 @@ const ImageContainer = styled.div`
 
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
-  padding-right: 20px;
   display: inline-block;
 
   & img {
@@ -37,10 +36,14 @@ const ImageItem = styled.div`
     cursor: pointer;
   }
 
-  &.expanded img {
-    max-width: 100%;
-    max-height: 100%;
-    cursor: default;
+  &.expanded {
+    padding-right: 20px;
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: default;
+    }
   }
 `
 
@@ -52,12 +55,19 @@ const ImageTextContainer = styled.div`
 
 const ImageText = styled.div`
   composes: ${childLink};
-  width: 50%;
   text-align: left;
-  white-space: pre-line;
+  width: 50%;
+  font-size: 18px;
+  line-height: 1.6;
 
   &.right {
     text-align: right;
+  }
+
+  &.small {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
   }
 `
 
@@ -214,6 +224,14 @@ class ImageList extends Component {
                             {texts.credit}
                           </ImageText>
                         </ImageTextContainer>}
+
+                      {!isExpanded && texts && texts.smallText &&
+                        <ImageTextContainer>
+                          <ImageText className="small">
+                            {texts.smallText}
+                          </ImageText>
+                        </ImageTextContainer>
+                      }
                     </ImageItem>
                   </Scroll.Element>
                 )
