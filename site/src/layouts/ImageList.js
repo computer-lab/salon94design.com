@@ -6,7 +6,7 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
-const ImageSet = styled.div`margin-bottom: 12px;`
+const ImageSet = styled.div`margin-bottom: 60px;`
 
 const SetTitle = styled.h3`
   composes: ${sansfont};

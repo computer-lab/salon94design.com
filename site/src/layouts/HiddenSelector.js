@@ -22,7 +22,7 @@ const Container = styled.div`
   }
 `
 
-const DesignerList = styled.ul`
+const OptionList = styled.ul`
   composes: ${selectorList}, ${monofont};
   font-size: 14px;
 
@@ -37,7 +37,7 @@ const DesignerList = styled.ul`
   }
 `
 
-class DesignerSelector extends Component {
+class HiddenSelector extends Component {
   constructor(props) {
     super(props)
 
@@ -72,17 +72,8 @@ class DesignerSelector extends Component {
   }
 
   render() {
-    const { currentDesignerSlug } = this.props
+    const { items, currentItemLink } = this.props
     const { isActive } = this.state
-
-    // TODO: remove temporary designers
-    const designers = [].concat(this.props.designers)
-    for (let i = 3; i < 15; i++) {
-      designers.push({
-        slug: `designer-${i}`,
-        name: `Designer ${i}`,
-      })
-    }
 
     return (
       <Container
@@ -90,28 +81,28 @@ class DesignerSelector extends Component {
         onMouseEnter={this.onMouseEnter.bind(this)}
         onMouseLeave={this.onMouseLeave.bind(this)}
       >
-        <DesignerList>
-          {designers.map(item =>
+        <OptionList>
+          {items.map(item =>
             <li
-              key={item.slug}
+              key={item.link}
               className={cx({
-                active: item.slug === currentDesignerSlug,
+                active: item.link === currentItemLink,
               })}
             >
-              <Link to={`/designers/${item.slug}`}>
-                {item.name}
+              <Link to={item.link}>
+                {item.title}
               </Link>
             </li>
           )}
-        </DesignerList>
+        </OptionList>
       </Container>
     )
   }
 }
 
-DesignerSelector.propTypes = {
-  designers: PropTypes.array.isRequired,
-  currentDesignerSlug: PropTypes.string.isRequired,
+HiddenSelector.propTypes = {
+  items: PropTypes.array.isRequired,
+  currentItemLink: PropTypes.string.isRequired,
 }
 
-export default DesignerSelector
+export default HiddenSelector
