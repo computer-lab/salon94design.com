@@ -6,7 +6,13 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
-const ImageSet = styled.div`margin-bottom: 12px;`
+const ImageSet = styled.div`
+  margin-bottom: 60px;
+
+  &.unexpandable {
+    margin-right: -20px;
+  }
+`
 
 const SetTitle = styled.h3`
   composes: ${sansfont};
@@ -26,7 +32,6 @@ const ImageContainer = styled.div`
 
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
-  padding-right: 20px;
   display: inline-block;
 
   & img {
@@ -37,10 +42,14 @@ const ImageItem = styled.div`
     cursor: pointer;
   }
 
-  &.expanded img {
-    max-width: 100%;
-    max-height: 100%;
-    cursor: default;
+  &.expanded {
+    padding-right: 20px;
+
+    & img {
+      max-width: 100%;
+      max-height: 100%;
+      cursor: default;
+    }
   }
 `
 
@@ -52,12 +61,23 @@ const ImageTextContainer = styled.div`
 
 const ImageText = styled.div`
   composes: ${childLink};
-  width: 50%;
   text-align: left;
-  white-space: pre-line;
+  width: 50%;
+  font-size: 18px;
+  line-height: 28px;
 
   &.right {
     text-align: right;
+  }
+
+  &.primary {
+    font-size: 24px;
+  }
+
+  &.small {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1;
   }
 `
 
@@ -89,7 +109,7 @@ class ImageList extends Component {
     this.onKeyDown = this.onKeyDown.bind(this)
 
     this.state = {
-      isExpanded: false,
+      isExpanded: props.alwaysExpand ? true : false,
     }
   }
 
@@ -126,7 +146,7 @@ class ImageList extends Component {
   }
 
   onImageClick(setIndex, imageIndex) {
-    if (this.state.isExpanded) return
+    if (this.props.unexpandable || this.state.isExpanded) return
 
     if (this.props.onImageHover) {
       this.props.onImageHover(null)
@@ -138,6 +158,10 @@ class ImageList extends Component {
   }
 
   unexpand() {
+    if (this.props.alwaysExpand) {
+      return
+    }
+
     this.setState({ isExpanded: false }, () => {
       this.scrollTo('set-0-image-0', -170) // scroll to top
     })
@@ -152,15 +176,15 @@ class ImageList extends Component {
   }
 
   render() {
-    const { imageSets, onImageHover } = this.props
+    const { imageSets, onImageHover, alwaysExpand, unexpandable } = this.props
     const { isExpanded } = this.state
 
     return (
       <section>
-        {this.renderExpansionButton()}
+        {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) =>
-          <ImageSet key={setIndex}>
+          <ImageSet key={setIndex} className={cx({ unexpandable })}>
             {title &&
               <SetTitle>
                 {title}
@@ -168,7 +192,7 @@ class ImageList extends Component {
 
             <ImageContainer>
               {images.map((image, i) => {
-                const { src, texts, alt = '' } = image
+                const { src, texts, unexpandedLink, alt = '' } = image
 
                 const onMouseEnter =
                   isExpanded || !onImageHover ? null : () => onImageHover(image)
@@ -192,12 +216,16 @@ class ImageList extends Component {
                       className={cx({ expanded: isExpanded })}
                       onClick={() => this.onImageClick(setIndex, i)}
                     >
-                      {img}
+                      {isExpanded || !unexpandedLink
+                        ? img
+                        : <Link to={unexpandedLink}>
+                            {img}
+                          </Link>}
 
                       {isExpanded &&
                         texts &&
                         <ImageTextContainer>
-                          <ImageText className="left">
+                          <ImageText className="left primary">
                             {texts.title}
                           </ImageText>
                           <ImageText className="right">
@@ -212,6 +240,15 @@ class ImageList extends Component {
                           </ImageText>
                           <ImageText className="right">
                             {texts.credit}
+                          </ImageText>
+                        </ImageTextContainer>}
+
+                      {!isExpanded &&
+                        texts &&
+                        texts.smallText &&
+                        <ImageTextContainer>
+                          <ImageText className="small">
+                            {texts.smallText}
                           </ImageText>
                         </ImageTextContainer>}
                     </ImageItem>
@@ -229,6 +266,8 @@ class ImageList extends Component {
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
   onImageHover: PropTypes.func,
+  alwaysExpand: PropTypes.bool,
+  unexpandable: PropTypes.bool,
 }
 
 export default ImageList

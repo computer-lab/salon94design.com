@@ -5,6 +5,7 @@ exports.createPages = props => {
     createBlogPosts(props),
     createProjects(props),
     createDesigners(props),
+    createPieces(props),
   ])
 }
 
@@ -65,13 +66,6 @@ function createProjects({ boundActionCreators, graphql }) {
 
     const projects = result.data.allProjectsYaml.edges.map(e => e.node)
 
-    // root /projects is equivalent to /projects/first_project_slug
-    createPage({
-      path: '/projects',
-      component: template,
-      context: { slug: projects[0].slug },
-    })
-
     projects.forEach(node => {
       createPage({
         path: `/projects/${node.slug}`,
@@ -103,18 +97,69 @@ function createDesigners({ boundActionCreators, graphql }) {
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
 
-    // root /designers is equivalent to /designers/first_designer_slug
-    createPage({
-      path: '/designers',
-      component: template,
-      context: { slug: designers[0].slug },
-    })
-
     designers.forEach(node => {
       createPage({
         path: `/designers/${node.slug}`,
         component: template,
         context: { slug: node.slug },
+      })
+    })
+  })
+}
+
+function createPieces({ boundActionCreators, graphql }) {
+  const { createPage } = boundActionCreators
+
+  const piecesTemplate = path.resolve(`src/templates/pieces.js`)
+  const pieceTemplate = path.resolve(`src/templates/piece.js`)
+
+  return graphql(`{
+    allDesignersYaml{
+      edges {
+        node {
+          slug
+          pieces {
+            slug
+            tags
+            when
+          }
+        }
+      }
+    }
+  }`).then(result => {
+    if (result.errors) return Promise.reject(result.errors)
+
+    const designers = result.data.allDesignersYaml.edges.map(e => e.node)
+    const pieces = designers
+      .map(d => d.pieces.map(p => Object.assign({}, p, { designer: d })))
+      .reduce((arr, p) => arr.concat(p), [])
+
+    const tagSet = new Set()
+
+    pieces.forEach(p => {
+      tagSet.add(p.when)
+      p.tags.forEach(tag => {
+        tagSet.add(tag)
+      })
+    })
+
+    const tags = Array.from(tagSet).sort()
+
+    // create page for each tag
+    tags.forEach(tag => {
+      createPage({
+        path: `/pieces/${tag}`,
+        component: piecesTemplate,
+        context: { currentTag: tag },
+      })
+    })
+
+    // create page for each piece
+    pieces.forEach(piece => {
+      createPage({
+        path: `/designers/${piece.designer.slug}/${piece.slug}`,
+        component: pieceTemplate,
+        context: { designerSlug: piece.designer.slug, pieceSlug: piece.slug },
       })
     })
   })
