@@ -5,9 +5,10 @@ import Helmet from 'react-helmet'
 
 import './index.css'
 import Menu from './Menu'
+import Breadcrumbs from './Breadcrumbs'
 import { ContentContainer } from './containers'
 
-const TemplateWrapper = ({ children, location }) =>
+const TemplateWrapper = ({ children, location, history }) =>
   <div>
     <Helmet
       title="Gatsby Default Starter"
@@ -17,6 +18,7 @@ const TemplateWrapper = ({ children, location }) =>
       ]}
     />
     <Menu location={location} />
+    <Breadcrumbs location={location} />
     <ContentContainer>
       {children()}
     </ContentContainer>

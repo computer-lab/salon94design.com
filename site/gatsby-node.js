@@ -66,13 +66,6 @@ function createProjects({ boundActionCreators, graphql }) {
 
     const projects = result.data.allProjectsYaml.edges.map(e => e.node)
 
-    // root /projects is equivalent to /projects/first_project_slug
-    createPage({
-      path: '/projects',
-      component: template,
-      context: { slug: projects[0].slug },
-    })
-
     projects.forEach(node => {
       createPage({
         path: `/projects/${node.slug}`,
@@ -103,13 +96,6 @@ function createDesigners({ boundActionCreators, graphql }) {
     if (result.errors) return Promise.reject(result.errors)
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
-
-    // root /designers is equivalent to /designers/first_designer_slug
-    createPage({
-      path: '/designers',
-      component: template,
-      context: { slug: designers[0].slug },
-    })
 
     designers.forEach(node => {
       createPage({
@@ -158,13 +144,6 @@ function createPieces({ boundActionCreators, graphql }) {
     })
 
     const tags = Array.from(tagSet).sort()
-
-    // root /pieces is equivalent to /pieces/first_alphabetical_tag
-    createPage({
-      path: '/pieces',
-      component: piecesTemplate,
-      context: { currentTag: tags[0] },
-    })
 
     // create page for each tag
     tags.forEach(tag => {

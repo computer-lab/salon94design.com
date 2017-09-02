@@ -1,6 +1,9 @@
 import { css } from 'emotion'
 import styled from 'emotion/react'
 
+export const breakpoint1 = `max-width: 796px`
+export const breakpoint2 = `max-width: 448px`
+
 export const baseUl = css`
   margin: 0;
   padding: 0;
