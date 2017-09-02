@@ -9,4 +9,4 @@ deployment:
     tag: /release-v[0-9]+(\.[0-9]+)*/
     owner: computer-lab
     commands:
-      - ./bin/deploy-release.sh
+      - ./site/bin/deploy-release.sh
