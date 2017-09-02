@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
+
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont, childLink } from '../layouts/emotion-base'
-import DesignerSelector from '../layouts/DesignerSelector'
+import { sansfont, monofont } from '../layouts/emotion-base'
+import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
-import { pieceImagePath, designerLink, pieceImageTexts } from '../util'
+import PieceSummary from '../layouts/PieceSummary'
+import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -40,6 +42,7 @@ export default class DesignerTemplate extends Component {
     const { data, pathContext } = this.props
     const { allProjectsYaml, allDesignersYaml } = data
     const { slug: currentDesignerSlug } = pathContext
+    const { hoverImage } = this.state
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const currentDesigner = designers.find(d => d.slug === currentDesignerSlug)
@@ -50,16 +53,14 @@ export default class DesignerTemplate extends Component {
 
     let images = []
     currentDesigner.pieces.forEach(piece => {
-      piece.images.forEach(src => {
-        images.push({
+      images.push({
+        piece,
+        src: pieceImagePath(piece.images[0]),
+        texts: pieceImageTexts({
+          designer: currentDesigner,
           piece,
-          src: pieceImagePath(src),
-          texts: pieceImageTexts({
-            designer: currentDesigner,
-            piece,
-            projects,
-          }),
-        })
+          projects,
+        }),
       })
     })
 
@@ -93,11 +94,28 @@ export default class DesignerTemplate extends Component {
       imageSets = imageSets.concat(imageSets.slice(0, 1))
     }
 
+    const selectorItems = designers.map(item => ({
+      title: item.name,
+      link: designerLink(item.slug),
+    }))
+
+    // TODO: remove temporary selector multiplication
+    for (let i = 3; i < 15; i++) {
+      selectorItems.push({
+        link: designerLink(`designer-${i}`),
+        title: `Designer ${i}`,
+      })
+    }
+
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Designers`} />
+        <Helmet
+          title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
+        />
         <LeftPane>
-          <WorksHeader>Works</WorksHeader>
+          <WorksHeader>
+            {currentDesigner.name} - Works
+          </WorksHeader>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
@@ -106,10 +124,11 @@ export default class DesignerTemplate extends Component {
         <RightPane style={{ marginTop: 12, marginRight: 24 }}>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
-          <DesignerSelector
-            designers={designers}
-            currentDesignerSlug={currentDesignerSlug}
+          <HiddenSelector
+            items={selectorItems}
+            currentItemLink={designerLink(currentDesigner.slug)}
           />
+          {hoverImage && <PieceSummary piece={hoverImage.piece} />}
         </RightPane>
       </PageContainer>
     )

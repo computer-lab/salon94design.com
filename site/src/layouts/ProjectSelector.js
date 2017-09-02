@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, sansfont, baseUl } from './emotion-base'
+import { monofont, sansfont, selectorList } from './emotion-base'
 import { projectLink } from '../util'
 
 const Container = styled.div`
@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const ProjectSection = styled.section`
   &:not(:last-child) {
-    margin-bottom: 30px;
+    margin-bottom: 36px;
   }
 `
 
@@ -26,30 +26,17 @@ const Year = styled.h3`
 `
 
 const ProjectList = styled.ul`
-  composes: ${baseUl}, ${sansfont};
+  composes: ${selectorList}, ${sansfont};
   display: flex;
   flex-wrap: wrap;
   margin-top: 16px;
+  margin-bottom: -12px;
   font-size: 16px;
 
   & li {
+    margin: 0 0 12px 0;
     padding: 2px;
     width: 50%;
-
-    &.active a {
-      background: #ff0;
-      text-decoration: underline;
-    }
-
-    & a {
-      color: inherit;
-      text-decoration: inherit;
-
-      &:hover,
-      &:focus {
-        text-decoration: underline;
-      }
-    }
   }
 `
 

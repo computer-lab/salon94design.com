@@ -1,42 +1,58 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from 'react-helmet'
-import { pieceImagePath } from '../util'
+import Link from 'gatsby-link'
+import styled from 'emotion/react'
 
-const Pieces = ({ data }) => {
+import { PageContainer, createPanes } from '../layouts/containers'
+import { sansfont, monofont } from '../layouts/emotion-base'
+import TagSelector from '../layouts/TagSelector'
+
+const { LeftPane, RightPane } = createPanes('470px')
+
+const Instructions = styled.div`
+  composes: ${sansfont};
+  font-size: 42px;
+  margin-bottom: 40px;
+`
+
+export default function Pieces({ data }) {
   const { allDesignersYaml } = data
 
+  const tagSet = new Set()
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const pieces = designers.reduce((items, d) => items.concat(d.pieces), [])
+  designers.forEach(designer => {
+    designer.pieces.forEach(piece => {
+      piece.tags.forEach(t => tagSet.add(t))
+      tagSet.add(piece.when)
+    })
+  })
+
+  const tags = Array.from(tagSet).sort()
 
   return (
-    <div>
+    <PageContainer>
       <Helmet title={`Salon 94 Design - Pieces`} />
-      <h4>Here are my pieces:</h4>
-      <ul>
-        {pieces.map(item =>
-          <li key={item.title}>
-            {item.title}
-            {item.images.map(src =>
-              <img key={src} src={pieceImagePath(src)} />
-            )}
-          </li>
-        )}
-      </ul>
-    </div>
+      <LeftPane>
+        <Instructions>Select a category to view pieces.</Instructions>
+      </LeftPane>
+      <RightPane>
+        <TagSelector tags={tags} />
+      </RightPane>
+    </PageContainer>
   )
 }
-
-export default Pieces
 
 export const pageQuery = graphql`
   query PiecesQuery {
     allDesignersYaml {
       edges {
         node {
+          slug
+          name
           pieces {
+            slug
             title
             when
-            projects
             tags
             images
           }
