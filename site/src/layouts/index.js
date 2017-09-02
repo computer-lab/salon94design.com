@@ -18,7 +18,7 @@ const TemplateWrapper = ({ children, location, history }) =>
       ]}
     />
     <Menu location={location} />
-    <Breadcrumbs history={history} />
+    <Breadcrumbs location={location} />
     <ContentContainer>
       {children()}
     </ContentContainer>
