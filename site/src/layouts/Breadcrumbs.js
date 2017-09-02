@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 
 import { baseUl, monofont } from './emotion-base'
+import { capitalize } from '../util'
 
 const Container = styled.div`
   position: fixed;
@@ -24,6 +26,16 @@ const Breadcrumb = styled.li`
   user-select: none;
   color: #888;
 
+  & a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover,
+    &:focus {
+      text-decoration: underline;
+    }
+  }
+
   &:hover,
   &:focus {
     color: #000;
@@ -43,119 +55,42 @@ const Breadcrumb = styled.li`
   }
 `
 
-class Breadcrumbs extends Component {
-  constructor(props) {
-    super(props)
+function Breadcrumbs({ location }) {
+  const pathSections = location.pathname.split('/').filter(s => s.length > 0)
 
-    this.state = {
-      breadcrumbs: [],
-      listening: true,
-    }
-  }
+  const home = { name: 'Home', path: '/' }
+  const breadcrumbs = [home].concat(
+    pathSections.map(section => ({
+      name: capitalize(section.replace(/-/g, ' ')),
+      path: location.pathname.substring(
+        0,
+        location.pathname.indexOf(section) + section.length
+      ),
+    }))
+  )
 
-  pushLocation(location) {
-    const { breadcrumbs } = this.state
-    this.setState({
-      breadcrumbs: breadcrumbs.concat([location]),
-    })
-  }
-
-  popLocation() {
-    const { breadcrumbs } = this.state
-    this.setState({
-      breadcrumbs:
-        breadcrumbs.length > 0
-          ? breadcrumbs.slice(0, breadcrumbs.length - 1)
-          : [],
-    })
-  }
-
-  onBreadCrumbClick(index) {
-    // when item is clicked, go backwards to that point in browser history
-    const { history } = this.props
-    const { breadcrumbs } = this.state
-    if (index === breadcrumbs.length - 1) {
-      return
-    }
-
-    this.setState(
-      {
-        listening: false,
-        breadcrumbs: breadcrumbs.slice(0, index + 1),
-      },
-      () => {
-        history.go(index + 1 - breadcrumbs.length)
-        setTimeout(() => {
-          this.setState({ listening: true })
-        }, 10)
-      }
-    )
-  }
-
-  componentDidMount() {
-    const { history } = this.props
-
-    // push initial path to breadcrumbs
-    this.pushLocation(history.location)
-
-    // listen for history changes to maintain breadcrumbs
-    history.listen((location, action) => {
-      const { breadcrumbs, listening } = this.state
-      if (!listening) {
-        return
-      }
-
-      switch (action) {
-        case 'PUSH':
-          this.pushLocation(location)
-          break
-        case 'POP':
-          const existingIdx = breadcrumbs.findIndex(l => l.key === location.key)
-          if (existingIdx === breadcrumbs.length - 2) {
-            // backwards pop
-            this.popLocation()
-          } else {
-            // browser forward button pop
-            this.pushLocation(location)
-          }
-          break
-        default:
-          break
-      }
-    })
-  }
-
-  render() {
-    const { breadcrumbs } = this.state
-
-    const maxDisplay = 5
-    const displayBreadcrumbs =
-      breadcrumbs.length <= maxDisplay
-        ? breadcrumbs
-        : breadcrumbs.slice(breadcrumbs.length - maxDisplay)
-
-    return (
-      <Container>
-        <BreadcrumbList>
-          {displayBreadcrumbs.map((location, index) =>
-            <Breadcrumb
-              key={index}
-              onClick={() => this.onBreadCrumbClick(index)}
-              className={cx({
-                active: index === displayBreadcrumbs.length - 1,
-              })}
-            >
-              {location.pathname}
-            </Breadcrumb>
-          )}
-        </BreadcrumbList>
-      </Container>
-    )
-  }
+  return (
+    <Container>
+      <BreadcrumbList>
+        {breadcrumbs.map(({ name, path }, index) =>
+          <Breadcrumb
+            key={index}
+            className={cx({
+              active: index === breadcrumbs.length - 1,
+            })}
+          >
+            <Link to={path}>
+              {name}
+            </Link>
+          </Breadcrumb>
+        )}
+      </BreadcrumbList>
+    </Container>
+  )
 }
 
 Breadcrumbs.propTypes = {
-  history: PropTypes.object,
+  location: PropTypes.object,
 }
 
 export default Breadcrumbs
