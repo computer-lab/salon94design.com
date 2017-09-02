@@ -7,6 +7,7 @@ import { monofont, selectorList } from './emotion-base'
 import { pieceTagLink, capitalize } from '../util'
 
 const Container = styled.div`
+  width: 320px;
   padding: 24px 20px;
   border: 2px solid #000;
 `
@@ -48,7 +49,7 @@ const TagSelector = ({ tags, currentTag }) => {
 
 TagSelector.propTypes = {
   tags: PropTypes.array.isRequired,
-  currentTag: PropTypes.string.isRequired,
+  currentTag: PropTypes.string,
 }
 
 export default TagSelector
