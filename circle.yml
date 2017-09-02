@@ -1,6 +1,11 @@
+general:
+  build_dir: site/
 machine:
   node:
     version: 6.11.2
+dependencies:
+  override:
+    - npm i
 test:
   override:
     - exit 0
@@ -9,4 +14,4 @@ deployment:
     tag: /release-v[0-9]+(\.[0-9]+)*/
     owner: computer-lab
     commands:
-      - ./site/bin/deploy-release.sh
+      - ./bin/deploy-release.sh
