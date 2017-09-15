@@ -2,9 +2,15 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
-import { sansfont, baseUl } from './emotion-base'
+import { sansfont, baseUl, breakpoint3 } from './emotion-base'
 
-const Container = styled.div`padding: 24px 24px 64px 24px;`
+const Container = styled.div`
+  padding: 0 24px 0 24px;
+
+  @media (${breakpoint3}) {
+    padding: 0;
+  }
+`
 
 const Title = styled.h1`
   composes: ${sansfont};
@@ -24,6 +30,10 @@ const List = styled.ul`
   align-items: flex-end;
   box-sizing: border-box;
   margin-right: -48px;
+
+  @media (${breakpoint3}) {
+    margin-right: 0;
+  }
 `
 
 const ListItem = styled.li`
@@ -46,20 +56,32 @@ const ListItem = styled.li`
     max-width: 320px;
     max-height: 280px;
   }
+
+  @media (${breakpoint3}) {
+    margin: 0 0 32px 0;
+    width: 100%;
+
+    & img {
+      display: none;
+    }
+  }
 `
 
 const ItemTitle = styled.div`
   margin-top: 4px;
   font-size: 16px;
   white-space: pre-line;
+
+  @media (${breakpoint3}) {
+    margin: 0;
+    font-size: 32px;
+    line-height: 48px;
+  }
 `
 
 function SectionItemList({ title, items }) {
   return (
     <Container>
-      <Title>
-        {title}
-      </Title>
       <List>
         {items.map(({ image, alt = '', title, link }, i) =>
           <ListItem key={i}>
