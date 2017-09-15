@@ -7,7 +7,9 @@ import Scroll from 'react-scroll'
 import { monofont, sansfont, childLink } from './emotion-base'
 
 const ImageSet = styled.div`
-  margin-bottom: 60px;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+  }
 
   &.unexpandable {
     margin-right: -20px;

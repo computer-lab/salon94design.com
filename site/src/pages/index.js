@@ -1,19 +1,11 @@
 import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-import { css } from 'emotion'
 import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
-import Logo from '../layouts/logo'
 import { pieceImagePath, pieceLink } from '../util'
-
-const logoPosition = css`
-  position: fixed;
-  top: 92px;
-  z-index: -1;
-`
 
 const IndexPage = ({ data }) => {
   const { allProjectsYaml, allDesignersYaml } = data
@@ -48,8 +40,7 @@ const IndexPage = ({ data }) => {
   return (
     <PageContainer>
       <Helmet title={`Salon 94 Design`} />
-      <div style={{ paddingTop: 92 }}>
-        <Logo width={300} className={logoPosition} />
+      <div>
         <ImageList imageSets={imageSets} unexpandable={true} />
       </div>
     </PageContainer>
