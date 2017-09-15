@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, selectorList } from './emotion-base'
+import { monofont, selectorList, breakpoint3 } from './emotion-base'
 
 const Container = styled.div`
   position: fixed;
@@ -19,6 +19,10 @@ const Container = styled.div`
 
   &.active {
     transform: none;
+  }
+
+  @media (${breakpoint3}) {
+    display: none;
   }
 `
 

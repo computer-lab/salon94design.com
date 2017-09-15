@@ -4,7 +4,13 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import {
+  sansfont,
+  monofont,
+  Header2,
+  breakpoint1,
+  breakpoint2,
+} from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
@@ -14,13 +20,26 @@ import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-const WorksHeader = styled.h1`
+const WorksHeaderWrapper = styled.div`
+  @media (${breakpoint1}) {
+    margin: 8px 0 28px 0;
+  }
+`
+
+const DesignerName = styled.h1`
   composes: ${sansfont};
-  position: fixed;
-  top: 20px;
-  margin: 0;
+  margin: 0 0 60px 0;
   font-weight: 600;
   font-size: 56px;
+
+  @media (${breakpoint1}) {
+    margin: 0 0 36px 0;
+    font-size: 44px;
+  }
+
+  @media (${breakpoint2}) {
+    font-size: 36px;
+  }
 `
 
 export default class DesignerTemplate extends Component {
@@ -113,15 +132,18 @@ export default class DesignerTemplate extends Component {
           title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
         />
         <LeftPane>
-          <WorksHeader>
-            {currentDesigner.name} - Works
-          </WorksHeader>
+          <WorksHeaderWrapper>
+            <Header2>Works</Header2>
+          </WorksHeaderWrapper>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane style={{ marginTop: 12, marginRight: 24 }}>
+        <RightPane style={{ marginRight: 24 }}>
+          <DesignerName>
+            {currentDesigner.name}
+          </DesignerName>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <HiddenSelector
