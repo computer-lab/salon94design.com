@@ -10,8 +10,8 @@ import {
   baseUl,
   monofont,
   childLink,
-  breakpoint1,
   breakpoint2,
+  breakpoint3,
 } from './emotion-base'
 
 const menuBreakpoint1 = `max-width: 660px`
@@ -41,7 +41,7 @@ const Logo = styled.div`
     height: ${getLogoHeight(80)}px;
   }
 
-  @media (${breakpoint2}) {
+  @media (${breakpoint3}) {
     left: 5px;
     top: 5px;
     width: 60px;
@@ -65,7 +65,7 @@ const Nav = styled.ul`
     font-size: 18px;
   }
 
-  @media (${breakpoint2}) {
+  @media (${breakpoint3}) {
     right: auto;
     left: 50%;
     top: 38px;

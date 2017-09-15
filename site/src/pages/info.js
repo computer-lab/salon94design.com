@@ -9,7 +9,7 @@ import {
   baseUl,
   childLink,
   Header2,
-  breakpoint1,
+  breakpoint2,
 } from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
 
@@ -32,7 +32,7 @@ const Section = styled.section`
     margin-right: 0;
   }
 
-  @media (${breakpoint1}) {
+  @media (${breakpoint2}) {
     margin: 60px 0 0 24px;
   }
 `

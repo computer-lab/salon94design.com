@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'emotion/react'
-import { breakpoint1 } from './emotion-base'
+import { breakpoint2 } from './emotion-base'
 
 export const LOGO_ASPECT_RATIO = 2048 / 884
 export const getLogoHeight = width => width / LOGO_ASPECT_RATIO
@@ -14,7 +14,7 @@ const Logo = styled.div`
   width: ${({ width }) => `${width}px`};
   height: ${({ width }) => `${getLogoHeight(width)}px`};
 
-  @media (${breakpoint1}) {
+  @media (${breakpoint2}) {
     margin: 0 auto;
     width: 300px;
     height: ${getLogoHeight(300)}px;

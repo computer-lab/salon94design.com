@@ -4,11 +4,21 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
-import { monofont, sansfont, childLink } from './emotion-base'
+import {
+  monofont,
+  sansfont,
+  childLink,
+  breakpoint1,
+  breakpoint3,
+} from './emotion-base'
 
 const ImageSet = styled.div`
   &:not(:last-child) {
     margin-bottom: 60px;
+
+    @media (${breakpoint1}) {
+      margin-bottom: 30px;
+    }
   }
 
   &.unexpandable {
@@ -22,6 +32,16 @@ const SetTitle = styled.h3`
   font-weight: 400;
   font-size: 28px;
   text-align: right;
+
+  @media (${breakpoint1}) {
+    text-align: left;
+    font-size: 22px;
+    margin: 0 0 28px 0;
+  }
+
+  @media (${breakpoint3}) {
+    margin: 0 0 16px 0;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -51,6 +71,14 @@ const ImageItem = styled.div`
       max-width: 100%;
       max-height: 100%;
       cursor: default;
+    }
+  }
+
+  @media (${breakpoint3}) {
+    & img {
+      max-width: none;
+      max-height: none;
+      width: 100%;
     }
   }
 `
@@ -132,6 +160,11 @@ class ImageList extends Component {
 
   renderExpansionButton() {
     const { isExpanded } = this.state
+
+    if (!isExpanded) {
+      return null // no longer show the "O" open state
+    }
+
     const onClick = () => {
       if (!this.state.isExpanded) {
         this.setState({ isExpanded: true })
