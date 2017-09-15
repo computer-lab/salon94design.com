@@ -3,17 +3,42 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, sansfont, childLink } from './emotion-base'
+import {
+  monofont,
+  sansfont,
+  childLink,
+  breakpoint1,
+  breakpoint3,
+} from './emotion-base'
 import { designerLink, pieceTagLink, projectLink, capitalize } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
   margin-top: 60px;
+
+  @media (${breakpoint1}) {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 6px;
+    background: #fff;
+    border: 2px solid #000;
+  }
+
+  @media (${breakpoint3}) {
+    display: none;
+  }
 `
 
 const Title = styled.div`
   margin-bottom: 24px;
   font-size: 32px;
+
+  @media (${breakpoint1}) {
+    margin-bottom: 18px;
+    font-size: 28px;
+  }
 `
 
 const SummaryItem = styled.div`
@@ -22,10 +47,22 @@ const SummaryItem = styled.div`
   line-height: 1.25;
   font-size: 24px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   &.designer {
     font-size: 24px;
     font-weight: 500;
     margin: 0 0 20px 0;
+  }
+
+  @media (${breakpoint1}) {
+    font-size: 18px;
+
+    &.designer {
+      font-size: 18px;
+    }
   }
 `
 

@@ -40,7 +40,7 @@ const SetTitle = styled.h3`
   }
 
   @media (${breakpoint3}) {
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
   }
 `
 
@@ -75,10 +75,18 @@ const ImageItem = styled.div`
   }
 
   @media (${breakpoint3}) {
-    & img {
+    margin: 0 0 20px 0;
+
+    &.expanded {
+      padding-right: 0;
+    }
+
+    & img,
+    &.expanded img {
       max-width: none;
       max-height: none;
       width: 100%;
+      cursor: default;
     }
   }
 `
@@ -87,6 +95,29 @@ const ImageTextContainer = styled.div`
   composes: ${sansfont};
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  &.compact {
+    .expanded-text {
+      display: none;
+    }
+  }
+
+  &.expanded {
+    .small {
+      display: none;
+    }
+  }
+
+  @media (${breakpoint3}) {
+    & .small {
+      display: none;
+    }
+
+    &.compact .expanded-text {
+      display: block;
+    }
+  }
 `
 
 const ImageText = styled.div`
@@ -109,6 +140,27 @@ const ImageText = styled.div`
     font-size: 12px;
     line-height: 1;
   }
+
+  @media (${breakpoint3}) {
+    font-size: 15px;
+    line-height: 24px;
+    width: auto;
+
+    &.primary {
+      font-size: 18px;
+      order: -2;
+    }
+
+    &.credit {
+      order: -1;
+    }
+
+    &.data-texts,
+    &.caption {
+      width: 100%;
+      text-align: right;
+    }
+  }
 `
 
 const ImageTextData = styled.span`
@@ -116,6 +168,12 @@ const ImageTextData = styled.span`
 
   &:not(:last-child) {
     margin-right: 24px;
+  }
+
+  @media (${breakpoint3}) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 `
 
@@ -130,6 +188,10 @@ const ExpansionButton = styled.button`
   border: none;
   outline: none;
   user-select: none;
+
+  @media (${breakpoint3}) {
+    display: none;
+  }
 `
 
 class ImageList extends Component {
@@ -242,6 +304,11 @@ class ImageList extends Component {
                   />
                 )
 
+                const textContainerClass = cx({
+                  expanded: isExpanded,
+                  compact: !isExpanded,
+                })
+
                 return (
                   <Scroll.Element
                     name={`set-${setIndex}-image-${i}`}
@@ -257,33 +324,28 @@ class ImageList extends Component {
                             {img}
                           </Link>}
 
-                      {isExpanded &&
-                        texts &&
-                        <ImageTextContainer>
-                          <ImageText className="left primary">
+                      {texts &&
+                        <ImageTextContainer className={textContainerClass}>
+                          {texts.smallText &&
+                            <ImageText className="small">
+                              {texts.smallText}
+                            </ImageText>}
+
+                          <ImageText className="expanded-text left primary">
                             {texts.title}
                           </ImageText>
-                          <ImageText className="right">
+                          <ImageText className="expanded-text right data-texts">
                             {texts.data.map(txt =>
                               <ImageTextData key={txt}>
                                 {txt}
                               </ImageTextData>
                             )}
                           </ImageText>
-                          <ImageText className="left">
+                          <ImageText className="expanded-text left caption">
                             {texts.caption}
                           </ImageText>
-                          <ImageText className="right">
+                          <ImageText className="expanded-text right credit">
                             {texts.credit}
-                          </ImageText>
-                        </ImageTextContainer>}
-
-                      {!isExpanded &&
-                        texts &&
-                        texts.smallText &&
-                        <ImageTextContainer>
-                          <ImageText className="small">
-                            {texts.smallText}
                           </ImageText>
                         </ImageTextContainer>}
                     </ImageItem>
