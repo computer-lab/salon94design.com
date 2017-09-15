@@ -1,9 +1,15 @@
 import styled from 'emotion/react'
 
+import { breakpoint1, breakpoint2 } from './emotion-base'
+
 export const ContentContainer = styled.div`
   margin: 0 auto;
   padding: 108px 24px 100px 24px;
   box-sizing: border-box;
+
+  @media (${breakpoint1}) {
+    padding: 96px 24px 24px 24px;
+  }
 `
 
 export const PageContainer = styled.div`display: flex;`
