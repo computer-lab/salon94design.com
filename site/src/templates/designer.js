@@ -10,6 +10,7 @@ import {
   Header2,
   breakpoint1,
   breakpoint2,
+  breakpoint3,
 } from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
@@ -39,6 +40,10 @@ const DesignerName = styled.h1`
 
   @media (${breakpoint2}) {
     font-size: 36px;
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 28px;
   }
 `
 
