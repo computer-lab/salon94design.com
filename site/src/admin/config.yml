@@ -50,3 +50,49 @@ collections:
           - name: price
             label: Price
             widget: string
+  - name: project
+    label: Project
+    file: src/data/projects.yml
+    description: Salon94 Designer Projects
+    fields:
+      - name: slug
+        label: Slug
+        widget: string
+      - name: title
+        label: Title
+        widget: string
+      - name: bio
+        label: Bio
+        widget: textarea
+      - name: when
+        label: Year
+        widget: number
+      - name: designers
+        label: Designers
+        widget: list
+      - name: description
+        label: Description
+        widget: textarea
+  - name: info
+    label: Info
+    file: src/data/info.yml
+    description: Salon94 Basic Info
+    fields:
+      - name: email
+        label: Email
+        widget: string
+      - name: instagram
+        label: Instagram
+        widget: string
+      - name: facebook
+        label: Facebook
+        widget: string
+      - name: twitter
+        label: Twitter
+        widget: string
+      - name: mailingList
+        label: Mailing List
+        widget: string
+      - name: aboutText
+        label: About Us
+        widget: textarea
