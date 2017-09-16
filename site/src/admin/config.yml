@@ -1,0 +1,52 @@
+backend:
+  name: github
+  owner: computerlab/salon94design.com
+  branch: master
+
+publish_mode: editorial_workflow
+media_folder: src/assets/images
+public_folder: public/static
+
+collections:
+  - name: designer
+    label: Designer
+    file: src/data/designers.yml
+    description: Salon94 Designers
+    fields:
+      - name: slug
+        label: Slug
+        widget: string
+      - name: name
+        label: Name
+        widget: string
+      - name: bio
+        label: Bio
+        widget: textarea
+      - name: pieces
+        label: Pieces
+        widget: list
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: slug
+            label: Slug
+            widget: string
+          - name: when
+            label: Year
+            widget: number
+          - name: projects
+            label: Projects
+            widget: list
+          - name: tags
+            label: Tags
+            widget: list
+          - name: images
+            label: Images
+            widget: list
+          - name: caption
+            label: Caption
+            widget: string
+          - name: price
+            label: Price
+            widget: string
