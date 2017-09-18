@@ -18,10 +18,10 @@ export default function Projects({ data }) {
   const listItems = projects.map(project => {
     const designers = project.designers.map(getDesigner)
     const image = choice(designers[0].pieces).images[0]
-    const title = `${project.title}\n${designers.map(d => d.name).join(' / ')}`
 
     return {
-      title,
+      title: project.title,
+      subtitle: designers.map(d => d.name).join(' / '),
       image: pieceImagePath(image),
       link: projectLink(project.slug),
     }
