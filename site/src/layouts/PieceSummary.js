@@ -5,6 +5,7 @@ import styled from 'emotion/react'
 import cx from 'classnames'
 import {
   monofont,
+  monoFontFamily,
   sansfont,
   childLink,
   breakpoint1,
@@ -14,22 +15,9 @@ import { designerLink, pieceTagLink, projectLink, capitalize } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  padding: 6px;
-  background: #fff;
-  border: 2px solid #000;
 
-  @media (${breakpoint1}) {
-    right: auto;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
-  }
-
-  @media (${breakpoint3}) {
-    display: none;
+  &.detailed {
+    margin-bottom: 20px;
   }
 `
 
@@ -59,6 +47,11 @@ const SummaryItem = styled.div`
     margin: 0 0 20px 0;
   }
 
+  &.tag {
+    font-family: ${monoFontFamily};
+    font-weight: 700;
+  }
+
   @media (${breakpoint1}) {
     font-size: 18px;
 
@@ -69,7 +62,7 @@ const SummaryItem = styled.div`
 `
 
 const PieceSummary = ({ designer, piece, detailed, projects }) =>
-  <Container>
+  <Container className={cx({ detailed })}>
     {designer &&
       <SummaryItem className="designer">
         <Link to={designerLink(designer.slug)}>
@@ -96,13 +89,13 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
       )}
     {detailed &&
       <div>
-        <SummaryItem>
+        <SummaryItem className="tag">
           <Link to={pieceTagLink(piece.when)}>
             {piece.when}
           </Link>
         </SummaryItem>
         {piece.tags.map(tag =>
-          <SummaryItem key={tag}>
+          <SummaryItem key={tag} className="tag">
             <Link to={pieceTagLink(tag)}>
               {capitalize(tag)}
             </Link>

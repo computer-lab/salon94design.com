@@ -39,15 +39,17 @@ const PieceTemplate = ({ data, pathContext }) => {
     link: pieceLink(currentDesigner.slug, piece.slug),
   }))
 
+  const selectorSections = [{ items: selectorItems }]
+
   return (
     <PageContainer>
       <Helmet
         title={`Salon 94 Design - ${currentDesigner.name} Pieces - ${currentPiece.title}`}
       />
-      <LeftPane style={{ marginTop: -86 }}>
+      <LeftPane>
         <ImageList imageSets={imageSets} alwaysExpand={true} />
       </LeftPane>
-      <RightPane>
+      <RightPane className="selectable">
         <PieceSummary
           piece={currentPiece}
           designer={currentDesigner}
@@ -55,7 +57,8 @@ const PieceTemplate = ({ data, pathContext }) => {
           detailed={true}
         />
         <HiddenSelector
-          items={selectorItems}
+          title={`All Pieces by ${currentDesigner.name}`}
+          sections={selectorSections}
           currentItemLink={pieceLink(currentDesigner.slug, currentPiece.slug)}
         />
       </RightPane>
