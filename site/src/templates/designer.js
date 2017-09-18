@@ -17,6 +17,7 @@ import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
+import HoverInfo from '../layouts/HoverInfo'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
@@ -128,7 +129,7 @@ export default class DesignerTemplate extends Component {
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane>
+        <RightPane className="selectable">
           <Header1>
             {currentDesigner.name}
           </Header1>
@@ -139,7 +140,10 @@ export default class DesignerTemplate extends Component {
             sections={selectorSections}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
-          {hoverImage && <PieceSummary piece={hoverImage.piece} />}
+          {hoverImage &&
+            <HoverInfo>
+              <PieceSummary piece={hoverImage.piece} />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )

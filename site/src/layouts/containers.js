@@ -44,11 +44,16 @@ export const createPanes = (rightPaneWidth = '360px') => {
       right: auto;
       max-height: none;
       order: -1;
-      margin-right: 24px;
+
+      &.selectable {
+        margin-right: 24px;
+      }
     }
 
     @media (${breakpoint3}) {
-      margin-right: 0;
+      &.selectable {
+        margin-right: 0;
+      }
     }
   `
 

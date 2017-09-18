@@ -12,6 +12,7 @@ import {
   breakpoint1,
 } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
+import HoverInfo from '../layouts/HoverInfo'
 import HiddenSelector from '../layouts/HiddenSelector'
 import PieceSummary from '../layouts/PieceSummary'
 import {
@@ -136,7 +137,7 @@ export default class ProjectTemplate extends Component {
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane>
+        <RightPane className="selectable">
           <ProjectHeader>
             <Header1>
               {currentProject.title}
@@ -163,10 +164,12 @@ export default class ProjectTemplate extends Component {
             currentItemLink={projectLink(currentProjectSlug)}
           />
           {hoverImage &&
-            <PieceSummary
-              piece={hoverImage.piece}
-              designer={hoverImage.designer}
-            />}
+            <HoverInfo>
+              <PieceSummary
+                piece={hoverImage.piece}
+                designer={hoverImage.designer}
+              />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )
