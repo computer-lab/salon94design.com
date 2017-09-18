@@ -7,6 +7,7 @@ import { createPanes, PageContainer } from '../layouts/containers'
 import {
   sansfont,
   monofont,
+  Header1,
   Header2,
   breakpoint1,
   breakpoint2,
@@ -24,26 +25,6 @@ const { LeftPane, RightPane } = createPanes('370px')
 const WorksHeaderWrapper = styled.div`
   @media (${breakpoint1}) {
     margin: 8px 0 28px 0;
-  }
-`
-
-const DesignerName = styled.h1`
-  composes: ${sansfont};
-  margin: 0 0 60px 0;
-  font-weight: 600;
-  font-size: 56px;
-
-  @media (${breakpoint1}) {
-    margin: 0 0 36px 0;
-    font-size: 44px;
-  }
-
-  @media (${breakpoint2}) {
-    font-size: 36px;
-  }
-
-  @media (${breakpoint3}) {
-    font-size: 28px;
   }
 `
 
@@ -131,6 +112,8 @@ export default class DesignerTemplate extends Component {
       })
     }
 
+    const selectorSections = [{ items: selectorItems }]
+
     return (
       <PageContainer>
         <Helmet
@@ -145,14 +128,15 @@ export default class DesignerTemplate extends Component {
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane style={{ marginRight: 24 }}>
-          <DesignerName>
+        <RightPane>
+          <Header1>
             {currentDesigner.name}
-          </DesignerName>
+          </Header1>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <HiddenSelector
-            items={selectorItems}
+            title="All Designers"
+            sections={selectorSections}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
           {hoverImage && <PieceSummary piece={hoverImage.piece} />}
