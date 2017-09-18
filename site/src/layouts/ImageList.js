@@ -23,6 +23,10 @@ const ImageSet = styled.div`
 
   &.unexpandable {
     margin-right: -20px;
+
+    @media (${breakpoint3}) {
+      margin-right: 0;
+    }
   }
 `
 
@@ -188,6 +192,11 @@ const ExpansionButton = styled.button`
   border: none;
   outline: none;
   user-select: none;
+
+  @media (${breakpoint1}) {
+    bottom: 30px;
+    right: 0;
+  }
 
   @media (${breakpoint3}) {
     display: none;

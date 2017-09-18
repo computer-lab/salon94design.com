@@ -69,8 +69,7 @@ const ListItem = styled.li`
 
 const ItemTitle = styled.div`
   margin-top: 4px;
-  font-size: 16px;
-  white-space: pre-line;
+  font-size: 18px;
 
   @media (${breakpoint3}) {
     margin: 0;
@@ -79,16 +78,29 @@ const ItemTitle = styled.div`
   }
 `
 
+const ItemSubtitle = styled.div`
+  font-size: 14px;
+  line-height: 1.28;
+
+  @media (${breakpoint3}) {
+    font-size: 16px;
+  }
+`
+
 function SectionItemList({ title, items }) {
   return (
     <Container>
       <List>
-        {items.map(({ image, alt = '', title, link }, i) =>
+        {items.map(({ image, alt = '', title, subtitle, link }, i) =>
           <ListItem key={i}>
             <Link to={link}>
               <img src={image} alt={alt} />
               <ItemTitle>
                 {title}
+                {subtitle &&
+                  <ItemSubtitle>
+                    {subtitle}
+                  </ItemSubtitle>}
               </ItemTitle>
             </Link>
           </ListItem>
