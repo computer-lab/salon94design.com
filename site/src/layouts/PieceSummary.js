@@ -14,16 +14,18 @@ import { designerLink, pieceTagLink, projectLink, capitalize } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
-  margin-top: 60px;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  padding: 6px;
+  background: #fff;
+  border: 2px solid #000;
 
   @media (${breakpoint1}) {
-    position: fixed;
-    bottom: 20px;
+    right: auto;
     left: 50%;
+    bottom: 20px;
     transform: translateX(-50%);
-    padding: 6px;
-    background: #fff;
-    border: 2px solid #000;
   }
 
   @media (${breakpoint3}) {

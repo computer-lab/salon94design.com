@@ -5,13 +5,7 @@ import styled from 'emotion/react'
 import cx from 'classnames'
 import { sansfont, childLink, Header2, breakpoint1 } from './emotion-base'
 
-const Container = styled.section`
-  margin-top: 60px;
-
-  @media (${breakpoint1}) {
-    margin-top: 20px;
-  }
-`
+const Container = styled.section`margin-top: 20px;`
 
 const Bio = styled.div`
   composes: ${childLink}, ${sansfont};

@@ -35,20 +35,22 @@ export const createPanes = (rightPaneWidth = '360px') => {
     width: ${rightPaneWidth};
     position: fixed;
     right: 24px;
+    max-height: calc(100vh - 124px);
+    overflow-y: auto;
 
     @media (${breakpoint1}) {
       position: static;
       width: 100%;
       right: auto;
+      max-height: none;
       order: -1;
+      margin-right: 24px;
+    }
+
+    @media (${breakpoint3}) {
+      margin-right: 0;
     }
   `
 
   return { LeftPane, RightPane }
 }
-
-export const FlexBetweenContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-`

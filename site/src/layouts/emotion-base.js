@@ -52,6 +52,32 @@ export const selectorList = css`
   }
 `
 
+export const Header1 = styled.h1`
+  composes: ${sansfont};
+  margin: 0 0 60px 0;
+  font-weight: 600;
+  font-size: 48px;
+
+  & .subheader {
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  @media (${breakpoint1}) {
+    margin: 0 0 36px 0;
+    font-size: 44px;
+  }
+
+  @media (${breakpoint2}) {
+    font-size: 36px;
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 28px;
+  }
+`
+
 export const Header2 = styled.h2`
   composes: ${sansfont};
   margin: 0 0 16px 0;
