@@ -1,6 +1,6 @@
 backend:
   name: github
-  owner: computerlab/salon94design.com
+  repo: computerlab/salon94design.com
   branch: master
 
 publish_mode: editorial_workflow
