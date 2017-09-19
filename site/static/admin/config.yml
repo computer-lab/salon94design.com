@@ -4,8 +4,8 @@ backend:
   branch: master
 
 publish_mode: editorial_workflow
-media_folder: src/assets/images
-public_folder: public/static
+media_folder: site/src/assets/images
+public_folder: site/public/static
 
 collections:
   - name: designer
@@ -14,7 +14,7 @@ collections:
     files:
       - name: salon94
         label: Salon94
-        file: src/data/designers.yml
+        file: site/src/data/designers.yml
         description: Salon94 Designers
         fields:
           - name: slug
@@ -59,7 +59,7 @@ collections:
     files:
       - name: salon94
         label: Salon94
-        file: src/data/projects.yml
+        file: site/src/data/projects.yml
         description: Salon94 Projects
         create: true
         fields:
@@ -86,7 +86,7 @@ collections:
     files:
       - name: salon94
         label: Salon94
-        file: src/data/info.yml
+        file: site/src/data/info.yml
         description: Salon94 Basic Info
         create: true
         fields:
