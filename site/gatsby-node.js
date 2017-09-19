@@ -164,3 +164,16 @@ function createPieces({ boundActionCreators, graphql }) {
     })
   })
 }
+
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
+  const { createPage } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    if (page.path.match(/^\/admin/)) {
+      page.layout = "admin"
+      createPage(page)
+    }
+
+    resolve()
+  })
+}
