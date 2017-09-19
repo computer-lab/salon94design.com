@@ -4,23 +4,35 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import {
+  sansfont,
+  monofont,
+  Header1,
+  breakpoint1,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
+import HoverInfo from '../layouts/HoverInfo'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-const WorksHeader = styled.h1`
+const WorksHeader = styled.h2`
   composes: ${sansfont};
-  position: fixed;
-  top: 20px;
-  margin: 0;
-  font-weight: 600;
-  font-size: 56px;
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 36px;
+
+  @media (${breakpoint1}) {
+    margin: 8px 0 28px 0;
+    font-size: 24px;
+  }
 `
 
 export default class DesignerTemplate extends Component {
@@ -99,13 +111,7 @@ export default class DesignerTemplate extends Component {
       link: designerLink(item.slug),
     }))
 
-    // TODO: remove temporary selector multiplication
-    for (let i = 3; i < 15; i++) {
-      selectorItems.push({
-        link: designerLink(`designer-${i}`),
-        title: `Designer ${i}`,
-      })
-    }
+    const selectorSections = [{ items: selectorItems }]
 
     return (
       <PageContainer>
@@ -113,22 +119,27 @@ export default class DesignerTemplate extends Component {
           title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
         />
         <LeftPane>
-          <WorksHeader>
-            {currentDesigner.name} - Works
-          </WorksHeader>
+          <WorksHeader>Works</WorksHeader>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane style={{ marginTop: 12, marginRight: 24 }}>
+        <RightPane className="selectable">
+          <Header1>
+            {currentDesigner.name}
+          </Header1>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <HiddenSelector
-            items={selectorItems}
+            title="All Designers"
+            sections={selectorSections}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
-          {hoverImage && <PieceSummary piece={hoverImage.piece} />}
+          {hoverImage &&
+            <HoverInfo>
+              <PieceSummary piece={hoverImage.piece} />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )

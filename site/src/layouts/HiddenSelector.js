@@ -3,36 +3,92 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, selectorList } from './emotion-base'
+import {
+  monofont,
+  sansfont,
+  selectorList,
+  breakpoint1,
+  breakpoint3,
+} from './emotion-base'
 
-const Container = styled.div`
-  position: fixed;
-  top: 120px;
-  right: 0;
-  padding: 16px 8px;
+const Selector = styled.div`
+  margin-top: 60px;
+  padding: 8px 8px 16px 8px;
   border: 2px solid #000;
-  width: 128px;
   background: #fff;
-
-  transform: translateX(100px);
   transition: transform 0.2s ease;
 
-  &.active {
-    transform: none;
+  /* Goes into "hidden peek" mode */
+  @media (${breakpoint1}) {
+    margin-top: 0;
+    padding: 16px 8px;
+    position: fixed;
+    top: 120px;
+    right: 0;
+    width: 128px;
+
+    transform: translateX(100px);
+
+    &.active {
+      transform: none;
+    }
   }
+
+  /* Hides on mobile */
+  @media (${breakpoint3}) {
+    display: none;
+  }
+`
+
+const SelectorTitle = styled.div`
+  composes: ${sansfont};
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+
+  @media (${breakpoint1}) {
+    display: none;
+  }
+`
+
+const OptionSection = styled.div`
+  &:not(:last-child) {
+    margin-bottom: 36px;
+  }
+`
+
+const OptionSectionTitle = styled.h3`
+  composes: ${monofont};
+  font-weight: bold;
+  font-size: 22px;
+  padding: 0;
+  margin: 0 0 12px 0;
 `
 
 const OptionList = styled.ul`
   composes: ${selectorList}, ${monofont};
-  font-size: 14px;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
 
   & li {
     margin: 0;
-    padding: 0;
+    padding: 0 20px 0 0;
     line-height: 1.25;
 
     &:not(:last-child) {
       margin-bottom: 12px;
+    }
+  }
+
+  @media (${breakpoint1}) {
+    display: block;
+    font-size: 14px;
+
+    & li {
+      padding: 0;
     }
   }
 `
@@ -72,36 +128,49 @@ class HiddenSelector extends Component {
   }
 
   render() {
-    const { items, currentItemLink } = this.props
+    const { title, sections, currentItemLink } = this.props
     const { isActive } = this.state
 
     return (
-      <Container
+      <Selector
         className={cx({ active: isActive })}
         onMouseEnter={this.onMouseEnter.bind(this)}
         onMouseLeave={this.onMouseLeave.bind(this)}
       >
-        <OptionList>
-          {items.map(item =>
-            <li
-              key={item.link}
-              className={cx({
-                active: item.link === currentItemLink,
-              })}
-            >
-              <Link to={item.link}>
-                {item.title}
-              </Link>
-            </li>
-          )}
-        </OptionList>
-      </Container>
+        {title &&
+          <SelectorTitle>
+            {title}
+          </SelectorTitle>}
+        {sections.map(({ title, items }, i) =>
+          <OptionSection key={i}>
+            {title &&
+              <OptionSectionTitle>
+                {title}
+              </OptionSectionTitle>}
+            <OptionList>
+              {items.map(item =>
+                <li
+                  key={item.link}
+                  className={cx({
+                    active: item.link === currentItemLink,
+                  })}
+                >
+                  <Link to={item.link}>
+                    {item.title}
+                  </Link>
+                </li>
+              )}
+            </OptionList>
+          </OptionSection>
+        )}
+      </Selector>
     )
   }
 }
 
 HiddenSelector.propTypes = {
-  items: PropTypes.array.isRequired,
+  title: PropTypes.string,
+  sections: PropTypes.array.isRequired,
   currentItemLink: PropTypes.string.isRequired,
 }
 

@@ -4,13 +4,29 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
-import { monofont, sansfont, childLink } from './emotion-base'
+import {
+  monofont,
+  sansfont,
+  childLink,
+  breakpoint1,
+  breakpoint3,
+} from './emotion-base'
 
 const ImageSet = styled.div`
-  margin-bottom: 60px;
+  &:not(:last-child) {
+    margin-bottom: 60px;
+
+    @media (${breakpoint1}) {
+      margin-bottom: 30px;
+    }
+  }
 
   &.unexpandable {
     margin-right: -20px;
+
+    @media (${breakpoint3}) {
+      margin-right: 0;
+    }
   }
 `
 
@@ -20,6 +36,16 @@ const SetTitle = styled.h3`
   font-weight: 400;
   font-size: 28px;
   text-align: right;
+
+  @media (${breakpoint1}) {
+    text-align: left;
+    font-size: 22px;
+    margin: 0 0 28px 0;
+  }
+
+  @media (${breakpoint3}) {
+    margin: 0 0 20px 0;
+  }
 `
 
 const ImageContainer = styled.div`
@@ -51,12 +77,51 @@ const ImageItem = styled.div`
       cursor: default;
     }
   }
+
+  @media (${breakpoint3}) {
+    margin: 0 0 20px 0;
+
+    &.expanded {
+      padding-right: 0;
+    }
+
+    & img,
+    &.expanded img {
+      max-width: none;
+      max-height: none;
+      width: 100%;
+      cursor: default;
+    }
+  }
 `
 
 const ImageTextContainer = styled.div`
   composes: ${sansfont};
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+
+  &.compact {
+    .expanded-text {
+      display: none;
+    }
+  }
+
+  &.expanded {
+    .small {
+      display: none;
+    }
+  }
+
+  @media (${breakpoint3}) {
+    & .small {
+      display: none;
+    }
+
+    &.compact .expanded-text {
+      display: block;
+    }
+  }
 `
 
 const ImageText = styled.div`
@@ -79,6 +144,27 @@ const ImageText = styled.div`
     font-size: 12px;
     line-height: 1;
   }
+
+  @media (${breakpoint3}) {
+    font-size: 15px;
+    line-height: 24px;
+    width: auto;
+
+    &.primary {
+      font-size: 18px;
+      order: -2;
+    }
+
+    &.credit {
+      order: -1;
+    }
+
+    &.data-texts,
+    &.caption {
+      width: 100%;
+      text-align: right;
+    }
+  }
 `
 
 const ImageTextData = styled.span`
@@ -86,6 +172,12 @@ const ImageTextData = styled.span`
 
   &:not(:last-child) {
     margin-right: 24px;
+  }
+
+  @media (${breakpoint3}) {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
   }
 `
 
@@ -100,6 +192,15 @@ const ExpansionButton = styled.button`
   border: none;
   outline: none;
   user-select: none;
+
+  @media (${breakpoint1}) {
+    bottom: 30px;
+    right: 0;
+  }
+
+  @media (${breakpoint3}) {
+    display: none;
+  }
 `
 
 class ImageList extends Component {
@@ -130,6 +231,11 @@ class ImageList extends Component {
 
   renderExpansionButton() {
     const { isExpanded } = this.state
+
+    if (!isExpanded) {
+      return null // no longer show the "O" open state
+    }
+
     const onClick = () => {
       if (!this.state.isExpanded) {
         this.setState({ isExpanded: true })
@@ -207,6 +313,11 @@ class ImageList extends Component {
                   />
                 )
 
+                const textContainerClass = cx({
+                  expanded: isExpanded,
+                  compact: !isExpanded,
+                })
+
                 return (
                   <Scroll.Element
                     name={`set-${setIndex}-image-${i}`}
@@ -222,33 +333,28 @@ class ImageList extends Component {
                             {img}
                           </Link>}
 
-                      {isExpanded &&
-                        texts &&
-                        <ImageTextContainer>
-                          <ImageText className="left primary">
+                      {texts &&
+                        <ImageTextContainer className={textContainerClass}>
+                          {texts.smallText &&
+                            <ImageText className="small">
+                              {texts.smallText}
+                            </ImageText>}
+
+                          <ImageText className="expanded-text left primary">
                             {texts.title}
                           </ImageText>
-                          <ImageText className="right">
+                          <ImageText className="expanded-text right data-texts">
                             {texts.data.map(txt =>
                               <ImageTextData key={txt}>
                                 {txt}
                               </ImageTextData>
                             )}
                           </ImageText>
-                          <ImageText className="left">
+                          <ImageText className="expanded-text left caption">
                             {texts.caption}
                           </ImageText>
-                          <ImageText className="right">
+                          <ImageText className="expanded-text right credit">
                             {texts.credit}
-                          </ImageText>
-                        </ImageTextContainer>}
-
-                      {!isExpanded &&
-                        texts &&
-                        texts.smallText &&
-                        <ImageTextContainer>
-                          <ImageText className="small">
-                            {texts.smallText}
                           </ImageText>
                         </ImageTextContainer>}
                     </ImageItem>
