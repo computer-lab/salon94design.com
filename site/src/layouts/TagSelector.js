@@ -3,13 +3,18 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, selectorList } from './emotion-base'
+import { monofont, selectorList, breakpoint1 } from './emotion-base'
 import { pieceTagLink, capitalize } from '../util'
 
 const Container = styled.div`
   width: 320px;
   padding: 24px 20px;
   border: 2px solid #000;
+
+  @media (${breakpoint1}) {
+    width: auto;
+    margin-bottom: 40px;
+  }
 `
 
 const TagList = styled.ul`
@@ -24,9 +29,27 @@ const TagList = styled.ul`
     padding: 2px;
     width: 50%;
   }
+
+  @media (${breakpoint1}) {
+    & li {
+      margin: 0 18px 24px 0;
+      width: auto;
+    }
+  }
 `
 
 const TagSelector = ({ tags, currentTag }) => {
+  // TODO: remove temporary tag multiplication
+  tags = tags.concat([
+    'Tables',
+    'Beds',
+    'Objects',
+    'Jewelry',
+    'Outdoor',
+    'Lighting',
+    'Storage',
+  ])
+
   return (
     <Container>
       <TagList>
