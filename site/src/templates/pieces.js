@@ -7,6 +7,7 @@ import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
+import HoverInfo from '../layouts/HoverInfo'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath, pieceImageTexts } from '../util'
 
@@ -69,15 +70,10 @@ export default class PiecesTemplate extends Component {
     const imageSets = [{ images }]
     const tags = Array.from(tagSet).sort()
 
-    // TODO: remove temporary tag multiplication
-    for (let i = 4; i < 13; i++) {
-      tags.push(`Tag ${i}`)
-    }
-
     return (
       <PageContainer>
         <Helmet title={`Salon 94 Design - Pieces - ${currentTag}`} />
-        <LeftPane style={{ marginTop: -86 }}>
+        <LeftPane>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
@@ -86,10 +82,12 @@ export default class PiecesTemplate extends Component {
         <RightPane>
           <TagSelector tags={tags} currentTag={currentTag} />
           {hoverImage &&
-            <PieceSummary
-              piece={hoverImage.piece}
-              designer={hoverImage.designer}
-            />}
+            <HoverInfo>
+              <PieceSummary
+                piece={hoverImage.piece}
+                designer={hoverImage.designer}
+              />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )

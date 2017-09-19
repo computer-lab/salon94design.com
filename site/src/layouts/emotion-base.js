@@ -1,8 +1,12 @@
 import { css } from 'emotion'
 import styled from 'emotion/react'
 
-export const breakpoint1 = `max-width: 796px`
-export const breakpoint2 = `max-width: 448px`
+export const breakpoint1 = `max-width: 1108px`
+export const breakpoint2 = `max-width: 796px`
+export const breakpoint3 = `max-width: 448px`
+
+export const monoFontFamily = `Inconsolata, Menlo, monospace`
+export const sansFontFamily = `Work Sans, Helvetica, Arial, sans-serif`
 
 export const baseUl = css`
   margin: 0;
@@ -11,11 +15,11 @@ export const baseUl = css`
 `
 
 export const monofont = css`
-  font-family: Inconsolata, Menlo, monospace;
+  font-family: ${monoFontFamily};
 `
 
 export const sansfont = css`
-  font-family: Work Sans, Helvetica, Arial, sans-serif;
+  font-family: ${sansFontFamily};
 `
 
 export const childLink = css`
@@ -48,6 +52,32 @@ export const selectorList = css`
         text-decoration: underline;
       }
     }
+  }
+`
+
+export const Header1 = styled.h1`
+  composes: ${sansfont};
+  margin: 0 0 60px 0;
+  font-weight: 600;
+  font-size: 48px;
+
+  & .subheader {
+    margin-top: 6px;
+    font-weight: 500;
+    font-size: 32px;
+  }
+
+  @media (${breakpoint1}) {
+    margin: 0 0 36px 0;
+    font-size: 44px;
+  }
+
+  @media (${breakpoint2}) {
+    font-size: 36px;
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 28px;
   }
 `
 
