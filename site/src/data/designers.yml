@@ -48,3 +48,129 @@
       images: ['lucas-samaras/gold2']
       caption: This is a very nice necklace.
       price: $20,000
+
+- slug: anton-alvarez
+  name: Anton Alvarez
+  bio:
+    <p>Anton Alvarez is a designer.</p>
+  pieces:
+    -
+      title: Black Chair
+      slug: black-chair
+      when: 2016
+      projects: [collective]
+      tags: [chairs]
+      images: ['lucas-samaras/gold1']
+      price: $2,500
+
+- slug: jack-craig
+  name: Jack Craig
+  bio:
+    <p>Jack Craig is a designer.</p>
+  pieces:
+    -
+      title: Red Chair
+      slug: red-chair
+      when: 2016
+      projects: [collective]
+      tags: [chairs]
+      images: ['lucas-samaras/gold2']
+      price: $2,500
+
+- slug: dozie-kanu
+  name: Dozie Kanu
+  bio:
+    <p>Dozie Kanu is a designer.</p>
+  pieces:
+    -
+      title: Blue Chair
+      slug: blue-chair
+      when: 2016
+      projects: []
+      tags: [chairs]
+      images: ['rick-owens/shirt1']
+      price: $2,500
+
+- slug: max-lamb
+  name: Max Lamb
+  bio:
+    <p>Max Lamb is a designer.</p>
+  pieces:
+    -
+      title: Yellow Chair
+      slug: yellow-chair
+      when: 2015
+      projects: [man-drill-rock]
+      tags: [chairs]
+      images: ['rick-owens/shirt2']
+      price: $2,500
+
+- slug: gaetano-pesce
+  name: Gaetano Pesce
+  bio:
+    <p>Gaetano Pesce is a designer.</p>
+  pieces:
+    -
+      title: White Chair
+      slug: white-chair
+      when: 2015
+      projects: [man-drill-rock]
+      tags: [chairs]
+      images: ['rick-owens/shirt1']
+      price: $2,500
+
+- slug: jay-sae-jung-oh
+  name: Jay Sae Jung Oh
+  bio:
+    <p>Jay Sae Jung Oh is a designer.</p>
+  pieces:
+    -
+      title: Black Bench
+      slug: black-bench
+      when: 2016
+      projects: [miami-2016]
+      tags: [benches]
+      images: ['rick-owens/shirt2']
+      price: $2,500
+
+- slug: thomas-barger
+  name: Thomas Barger
+  bio:
+    <p>Thomas Barger is a designer.</p>
+  pieces:
+    -
+      title: Red Bench
+      slug: red-bench
+      when: 2016
+      projects: [miami-2016]
+      tags: [benches]
+      images: ['lucas-samaras/gold1']
+      price: $2,500
+
+- slug: kwangho-lee
+  name: Kwangho Lee
+  bio:
+    <p>Kwangho Lee is a designer.</p>
+  pieces:
+    -
+      title: Blue Bench
+      slug: blue-bench
+      when: 2016
+      projects: [miami-2016]
+      tags: [benches]
+      images: ['lucas-samaras/gold2']
+      price: $2,500
+
+- slug: kueng-caputo
+  name: Kueng Caputo
+  bio:
+    <p>Kueng Caputo is a designer.</p>
+  pieces:
+    -
+      title: Yellow Bench
+      slug: yellow-bench
+      when: 2015
+      projects: [milan-2015]
+      tags: [benches]
+      images: ['lucas-samaras/gold1']
+      price: $2,500

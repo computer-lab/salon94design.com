@@ -16,13 +16,13 @@
   slug: collective
   title: Collective
   when: 2017
-  designers: [lucas-samaras]
+  designers: [anton-alvarez, jack-craig, dozie-kanu]
 
 -
   slug: man-drill-rock
   title: Man, Drill, Rock
   when: 2017
-  designers: [rick-owens]
+  designers: [max-lamb, gaetano-pesce]
 
 - slug: basel-2016
   title: Basel 2016
@@ -32,7 +32,7 @@
 - slug: miami-2016
   title: Design Miami 2016
   when: 2016
-  designers: [rick-owens]
+  designers: [jay-sae-jung-oh, thomas-barger, kwangho-lee]
 
 - slug: new-orleans-2015
   title: Design New Orleans
@@ -42,4 +42,4 @@
 - slug: milan-2015
   title: Design Milan
   when: 2015
-  designers: [lucas-samaras]
+  designers: [kueng-caputo]

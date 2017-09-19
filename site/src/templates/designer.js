@@ -8,7 +8,6 @@ import {
   sansfont,
   monofont,
   Header1,
-  Header2,
   breakpoint1,
   breakpoint2,
   breakpoint3,
@@ -23,9 +22,16 @@ import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-const WorksHeaderWrapper = styled.div`
+const WorksHeader = styled.h2`
+  composes: ${sansfont};
+  margin: 0 0 16px 0;
+  padding: 0;
+  font-weight: 500;
+  font-size: 36px;
+
   @media (${breakpoint1}) {
     margin: 8px 0 28px 0;
+    font-size: 24px;
   }
 `
 
@@ -105,14 +111,6 @@ export default class DesignerTemplate extends Component {
       link: designerLink(item.slug),
     }))
 
-    // TODO: remove temporary selector multiplication
-    for (let i = 3; i < 15; i++) {
-      selectorItems.push({
-        link: designerLink(`designer-${i}`),
-        title: `Designer ${i}`,
-      })
-    }
-
     const selectorSections = [{ items: selectorItems }]
 
     return (
@@ -121,9 +119,7 @@ export default class DesignerTemplate extends Component {
           title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
         />
         <LeftPane>
-          <WorksHeaderWrapper>
-            <Header2>Works</Header2>
-          </WorksHeaderWrapper>
+          <WorksHeader>Works</WorksHeader>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
