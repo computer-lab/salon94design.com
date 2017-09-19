@@ -12,6 +12,7 @@ collections:
     label: Designer
     file: src/data/designers.yml
     description: Salon94 Designers
+    create: true
     fields:
       - name: slug
         label: Slug
@@ -54,6 +55,7 @@ collections:
     label: Project
     file: src/data/projects.yml
     description: Salon94 Designer Projects
+    create: true
     fields:
       - name: slug
         label: Slug
@@ -77,6 +79,7 @@ collections:
     label: Info
     file: src/data/info.yml
     description: Salon94 Basic Info
+    create: true
     fields:
       - name: email
         label: Email
