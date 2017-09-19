@@ -4,23 +4,29 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import {
+  sansfont,
+  monofont,
+  Header1,
+  Header2,
+  breakpoint1,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
 import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
 import ImageList from '../layouts/ImageList'
+import HoverInfo from '../layouts/HoverInfo'
 import PieceSummary from '../layouts/PieceSummary'
 import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-const WorksHeader = styled.h1`
-  composes: ${sansfont};
-  position: fixed;
-  top: 20px;
-  margin: 0;
-  font-weight: 600;
-  font-size: 56px;
+const WorksHeaderWrapper = styled.div`
+  @media (${breakpoint1}) {
+    margin: 8px 0 28px 0;
+  }
 `
 
 export default class DesignerTemplate extends Component {
@@ -107,28 +113,37 @@ export default class DesignerTemplate extends Component {
       })
     }
 
+    const selectorSections = [{ items: selectorItems }]
+
     return (
       <PageContainer>
         <Helmet
           title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
         />
         <LeftPane>
-          <WorksHeader>
-            {currentDesigner.name} - Works
-          </WorksHeader>
+          <WorksHeaderWrapper>
+            <Header2>Works</Header2>
+          </WorksHeaderWrapper>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane style={{ marginTop: 12, marginRight: 24 }}>
+        <RightPane className="selectable">
+          <Header1>
+            {currentDesigner.name}
+          </Header1>
           <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
           <HiddenSelector
-            items={selectorItems}
+            title="All Designers"
+            sections={selectorSections}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
-          {hoverImage && <PieceSummary piece={hoverImage.piece} />}
+          {hoverImage &&
+            <HoverInfo>
+              <PieceSummary piece={hoverImage.piece} />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )

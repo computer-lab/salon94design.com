@@ -3,30 +3,30 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
+import { createPanes, PageContainer } from '../layouts/containers'
 import {
-  createPanes,
-  PageContainer,
-  FlexBetweenContainer,
-} from '../layouts/containers'
-import { sansfont, monofont, childLink } from '../layouts/emotion-base'
+  sansfont,
+  monofont,
+  childLink,
+  Header1,
+  breakpoint1,
+} from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
-import ProjectSelector from '../layouts/ProjectSelector'
+import HoverInfo from '../layouts/HoverInfo'
+import HiddenSelector from '../layouts/HiddenSelector'
 import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath, designerLink, pieceImageTexts } from '../util'
+import {
+  pieceImagePath,
+  designerLink,
+  projectLink,
+  pieceImageTexts,
+} from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
 const ProjectHeader = styled.div`
   composes: ${sansfont};
-  position: fixed;
-  top: 20px;
-`
-
-const ProjectTitle = styled.h1`
-  margin: 0 0 8px 0;
-  padding: 0;
-  font-weight: normal;
-  font-size: 26px;
+  margin-bottom: 40px;
 `
 
 const ProjectDesigner = styled.span`
@@ -41,17 +41,26 @@ const ProjectDesigner = styled.span`
   }
 `
 
-const ProjectDescription = styled.div`
-  font-size: 16px;
-  line-height: 1.2;
-  max-width: 320px;
-`
-
 const ProjectWhen = styled.div`
   composes: ${monofont};
-  margin-top: -2px;
-  font-weight: bold;
+  margin-top: 10px;
+  font-weight: 700;
   font-size: 24px;
+  text-align: right;
+
+  @media (${breakpoint1}) {
+    text-align: left;
+  }
+`
+
+const ProjectDescription = styled.div`
+  max-width: 320px;
+  font-size: 16px;
+  line-height: 1.4;
+
+  @media (${breakpoint1}) {
+    max-width: 480px;
+  }
 `
 
 export default class ProjectTemplate extends Component {
@@ -105,47 +114,62 @@ export default class ProjectTemplate extends Component {
 
     const imageSets = [{ images }]
 
+    const projectsByYear = Array.from(new Set(projects.map(p => p.when))) // years
+      .sort((a, b) => b - a) // sort reverse-chronologically
+      .map(year => ({ year, projects: projects.filter(p => p.when === year) }))
+
+    const selectorSections = projectsByYear.map(({ year, projects }) => ({
+      title: year,
+      items: projects.map(project => ({
+        title: project.title,
+        link: projectLink(project.slug),
+      })),
+    }))
+
     return (
       <PageContainer>
         <Helmet
           title={`Salon 94 Design - Projects - ${currentProject.title}`}
         />
         <LeftPane>
-          <ProjectHeader>
-            <ProjectTitle>
-              {currentProject.designers.map(slug =>
-                <ProjectDesigner key={slug}>
-                  <Link to={designerLink(slug)}>
-                    {getDesigner(slug).name}
-                  </Link>
-                </ProjectDesigner>
-              )}
-              — {currentProject.title}
-            </ProjectTitle>
-            <FlexBetweenContainer>
-              <ProjectDescription>
-                {currentProject.description}
-              </ProjectDescription>
-              <ProjectWhen>
-                {currentProject.when}
-              </ProjectWhen>
-            </FlexBetweenContainer>
-          </ProjectHeader>
           <ImageList
             imageSets={imageSets}
             onImageHover={this.imageHoverHandler}
           />
         </LeftPane>
-        <RightPane>
-          <ProjectSelector
-            projects={projects}
-            currentProjectSlug={currentProjectSlug}
+        <RightPane className="selectable">
+          <ProjectHeader>
+            <Header1>
+              {currentProject.title}
+              <div className="subheader">
+                {currentProject.designers.map(slug =>
+                  <ProjectDesigner key={slug}>
+                    <Link to={designerLink(slug)}>
+                      {getDesigner(slug).name}
+                    </Link>
+                  </ProjectDesigner>
+                )}
+                <ProjectWhen>
+                  {currentProject.when}
+                </ProjectWhen>
+              </div>
+            </Header1>
+            <ProjectDescription>
+              {currentProject.description}
+            </ProjectDescription>
+          </ProjectHeader>
+          <HiddenSelector
+            title="All Projects"
+            sections={selectorSections}
+            currentItemLink={projectLink(currentProjectSlug)}
           />
           {hoverImage &&
-            <PieceSummary
-              piece={hoverImage.piece}
-              designer={hoverImage.designer}
-            />}
+            <HoverInfo>
+              <PieceSummary
+                piece={hoverImage.piece}
+                designer={hoverImage.designer}
+              />
+            </HoverInfo>}
         </RightPane>
       </PageContainer>
     )

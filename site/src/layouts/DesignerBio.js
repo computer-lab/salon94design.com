@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { sansfont, childLink, Header2 } from './emotion-base'
+import { sansfont, childLink, Header2, breakpoint1 } from './emotion-base'
 
-const Container = styled.section`margin-top: 60px;`
+const Container = styled.section`margin-top: 20px;`
 
 const Bio = styled.div`
   composes: ${childLink}, ${sansfont};
