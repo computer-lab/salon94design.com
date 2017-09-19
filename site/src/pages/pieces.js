@@ -31,7 +31,9 @@ export default function Pieces({ data }) {
     })
   })
 
-  const tags = Array.from(tagSet).sort()
+  const tags = Array.from(tagSet).sort(
+    (a, b) => (Number(a) && Number(b) ? b.localeCompare(a) : a.localeCompare(b))
+  )
 
   return (
     <PageContainer>
