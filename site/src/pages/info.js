@@ -10,8 +10,10 @@ import {
   childLink,
   Header2,
   breakpoint2,
+  breakpoint3,
 } from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
+import Press from '../layouts/Press'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -24,18 +26,21 @@ const Container = styled.div`
 const SectionWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 840px;
+  margin: 0 auto;
 `
 
 const Section = styled.section`
-  margin: 96px 120px 0 24px;
-  &:last-child {
-    margin-right: 0;
-  }
+  margin: 40px 0 0 0;
+  max-width: 400px;
 
   @media (${breakpoint2}) {
-    margin: 60px 0 0 24px;
+    margin: 40px 0 0 24px;
   }
 `
+
+const AboutWrapper = styled.div`margin-bottom: 40px;`
 
 const sectionContent = css`
   margin: 0;
@@ -61,14 +66,19 @@ const SectionListItem = styled.li`
 `
 
 const MailingListSignup = styled.div`
-  margin-top: 32px;
+  margin-top: 24px;
   font-weight: 500;
   font-size: 28px;
+  line-height: 1.4;
 
   & a {
     color: #000;
     text-decoration: none;
     border-bottom: 2px solid #000;
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 24px;
   }
 `
 
@@ -81,6 +91,7 @@ const Info = ({ data }) => {
     facebook,
     twitter,
     mailingList,
+    press,
   } = allInfoYaml.edges[0].node
 
   const contactItems = [
@@ -100,8 +111,12 @@ const Info = ({ data }) => {
 
       <SectionWrapper>
         <Section>
-          <Header2>About</Header2>
-          <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
+          <AboutWrapper>
+            <Header2>About</Header2>
+            <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
+          </AboutWrapper>
+
+          <Press press={press} />
         </Section>
 
         <Section>
@@ -137,6 +152,10 @@ export const pageQuery = graphql`
           facebook
           twitter
           mailingList
+          press {
+            link
+            title
+          }
         }
       }
     }

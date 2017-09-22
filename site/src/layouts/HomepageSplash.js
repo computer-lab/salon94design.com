@@ -65,11 +65,11 @@ class HomepageSplash extends Component {
   }
 
   componentDidMount() {
-    document.body.style.overflow = 'hidden'
+    this.updateBodyStyle()
   }
 
   componentDidUpdate() {
-    const { hasVisitedHomepage, visible } = this.state
+    const { hasVisitedHomepage } = this.state
 
     if (!hasVisitedHomepage) {
       const homepage = this.props.location.pathname === '/'
@@ -82,9 +82,11 @@ class HomepageSplash extends Component {
       }
     }
 
-    if (!visible) {
-      document.body.style.overflow = ''
-    }
+    this.updateBodyStyle()
+  }
+
+  updateBodyStyle() {
+    document.body.style.overflow = this.state.visible ? 'hidden' : ''
   }
 
   render() {

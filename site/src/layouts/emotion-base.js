@@ -88,3 +88,20 @@ export const Header2 = styled.h2`
   font-weight: 500;
   font-size: 24px;
 `
+
+export const SimpleLinkList = styled.ul`
+  composes: ${baseUl}, ${sansfont};
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+`
+
+export const SimpleLinkListItem = styled.li`
+  composes: ${childLink};
+  margin: 0 24px 12px 0;
+  padding: 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+`

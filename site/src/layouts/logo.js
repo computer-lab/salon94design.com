@@ -8,14 +8,14 @@ export const logoImageUrl = require('../assets/images/logo/logo_2048.jpg')
 
 // dynamic sizing via `width` prop
 const Logo = styled.div`
-  margin: -72px 0 0 20px;
+  margin: 0 auto 60px auto;
   background-image: url(${logoImageUrl});
   background-size: 100% 100%;
   width: ${({ width }) => `${width}px`};
   height: ${({ width }) => `${getLogoHeight(width)}px`};
 
   @media (${breakpoint2}) {
-    margin: 0 auto;
+    margin: 0 auto 20px auto;
     width: 300px;
     height: ${getLogoHeight(300)}px;
   }

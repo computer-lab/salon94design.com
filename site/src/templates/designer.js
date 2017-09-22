@@ -13,8 +13,9 @@ import {
   breakpoint3,
 } from '../layouts/emotion-base'
 import HiddenSelector from '../layouts/HiddenSelector'
-import DesignerProjects from '../layouts/DesignerProjects'
 import DesignerBio from '../layouts/DesignerBio'
+import DesignerProjects from '../layouts/DesignerProjects'
+import Press from '../layouts/Press'
 import ImageList from '../layouts/ImageList'
 import HoverInfo from '../layouts/HoverInfo'
 import PieceSummary from '../layouts/PieceSummary'
@@ -30,7 +31,7 @@ const WorksHeader = styled.h2`
   font-size: 36px;
 
   @media (${breakpoint1}) {
-    margin: 8px 0 28px 0;
+    margin: 15px 0 28px 0;
     font-size: 24px;
   }
 `
@@ -113,6 +114,18 @@ export default class DesignerTemplate extends Component {
 
     const selectorSections = [{ items: selectorItems }]
 
+    // TODO: remove filler press content
+    const currentDesignerPress = currentDesigner.press || [
+      {
+        link: 'https://google.com',
+        title: `Artforum - This Designer's interesting furniture`,
+      },
+      {
+        link: 'https://nytimes.com',
+        title: `NYTimes - We really love this furniture`,
+      },
+    ]
+
     return (
       <PageContainer>
         <Helmet
@@ -129,8 +142,9 @@ export default class DesignerTemplate extends Component {
           <Header1>
             {currentDesigner.name}
           </Header1>
-          <DesignerProjects projects={projects} />
           <DesignerBio bio={currentDesigner.bio} />
+          <DesignerProjects projects={projects} />
+          <Press press={currentDesignerPress} />
           <HiddenSelector
             title="All Designers"
             sections={selectorSections}
@@ -163,6 +177,7 @@ export const pageQuery = graphql`
           slug
           name
           bio
+          press
           pieces {
             slug
             title
