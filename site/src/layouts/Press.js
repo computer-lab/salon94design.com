@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import {
@@ -15,16 +14,16 @@ import { projectLink } from '../util'
 
 const Container = styled.section`margin-top: 20px;`
 
-const DesignerProjects = ({ projects }) => {
+const Press = ({ press }) => {
   return (
     <Container>
-      <Header2>Projects</Header2>
+      <Header2>Press</Header2>
       <SimpleLinkList>
-        {projects.map(item =>
-          <SimpleLinkListItem key={item.slug}>
-            <Link to={projectLink(item.slug)}>
+        {press.map(item =>
+          <SimpleLinkListItem key={item.link}>
+            <a href={item.link} target="_blank">
               {item.title}
-            </Link>
+            </a>
           </SimpleLinkListItem>
         )}
       </SimpleLinkList>
@@ -32,8 +31,8 @@ const DesignerProjects = ({ projects }) => {
   )
 }
 
-DesignerProjects.propTypes = {
-  projects: PropTypes.array.isRequired,
+Press.propTypes = {
+  press: PropTypes.array.isRequired,
 }
 
-export default DesignerProjects
+export default Press
