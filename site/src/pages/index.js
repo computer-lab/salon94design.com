@@ -41,7 +41,11 @@ const IndexPage = ({ data }) => {
     <PageContainer>
       <Helmet title={`Salon 94 Design`} />
       <div>
-        <ImageList imageSets={imageSets} unexpandable={true} />
+        <ImageList
+          imageSets={imageSets}
+          unexpandable={true}
+          centerImages={true}
+        />
       </div>
     </PageContainer>
   )

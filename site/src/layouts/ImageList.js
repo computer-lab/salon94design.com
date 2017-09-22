@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import { css } from 'emotion'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
@@ -18,14 +19,6 @@ const ImageSet = styled.div`
 
     @media (${breakpoint1}) {
       margin-bottom: 30px;
-    }
-  }
-
-  &.unexpandable {
-    margin-right: -20px;
-
-    @media (${breakpoint3}) {
-      margin-right: 0;
     }
   }
 `
@@ -54,6 +47,10 @@ const ImageContainer = styled.div`
   justify-content: flex-start;
   align-items: flex-end;
   box-sizing: border-box;
+
+  &.center {
+    justify-content: center;
+  }
 `
 
 const ImageItem = styled.div`
@@ -282,7 +279,13 @@ class ImageList extends Component {
   }
 
   render() {
-    const { imageSets, onImageHover, alwaysExpand, unexpandable } = this.props
+    const {
+      imageSets,
+      onImageHover,
+      alwaysExpand,
+      unexpandable,
+      centerImages,
+    } = this.props
     const { isExpanded } = this.state
 
     return (
@@ -296,7 +299,7 @@ class ImageList extends Component {
                 {title}
               </SetTitle>}
 
-            <ImageContainer>
+            <ImageContainer className={cx({ center: centerImages })}>
               {images.map((image, i) => {
                 const { src, texts, unexpandedLink, alt = '' } = image
 

@@ -6,6 +6,7 @@ import Helmet from 'react-helmet'
 import './index.css'
 import Menu from './Menu'
 import Breadcrumbs from './Breadcrumbs'
+import HomepageSplash from './HomepageSplash'
 import { ContentContainer } from './containers'
 
 const TemplateWrapper = ({ children, location, history }) =>
@@ -19,6 +20,8 @@ const TemplateWrapper = ({ children, location, history }) =>
     />
     <Menu location={location} />
     <Breadcrumbs location={location} />
+    <HomepageSplash location={location} />
+
     <ContentContainer>
       {children()}
     </ContentContainer>
