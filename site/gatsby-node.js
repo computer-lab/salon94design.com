@@ -170,7 +170,7 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
   return new Promise((resolve, reject) => {
     if (page.path.match(/^\/admin/)) {
-      page.layout = "admin"
+      page.layout = 'admin'
       createPage(page)
     }
 

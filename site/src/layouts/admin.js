@@ -7,10 +7,13 @@ const TemplateWrapper = ({ children, location, history }) =>
     <Helmet
       title="Salon94 Design Administration"
       meta={[
-        { name: 'description', content: 'Administration of salon94design.com' }
+        { name: 'description', content: 'Administration of salon94design.com' },
       ]}
     >
-      <link rel="stylesheet" href="https://unpkg.com/netlify-cms@~0.4/dist/cms.css" />
+      <link
+        rel="stylesheet"
+        href="https://unpkg.com/netlify-cms@~0.4/dist/cms.css"
+      />
     </Helmet>
     {children()}
   </div>
