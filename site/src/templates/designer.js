@@ -114,18 +114,6 @@ export default class DesignerTemplate extends Component {
 
     const selectorSections = [{ items: selectorItems }]
 
-    // TODO: remove filler press content
-    const currentDesignerPress = currentDesigner.press || [
-      {
-        link: 'https://google.com',
-        title: `Artforum - This Designer's interesting furniture`,
-      },
-      {
-        link: 'https://nytimes.com',
-        title: `NYTimes - We really love this furniture`,
-      },
-    ]
-
     return (
       <PageContainer>
         <Helmet
@@ -144,7 +132,7 @@ export default class DesignerTemplate extends Component {
           </Header1>
           <DesignerBio bio={currentDesigner.bio} />
           <DesignerProjects projects={projects} />
-          <Press press={currentDesignerPress} />
+          <Press press={currentDesigner.press} />
           <HiddenSelector
             title="All Designers"
             sections={selectorSections}
@@ -177,7 +165,10 @@ export const pageQuery = graphql`
           slug
           name
           bio
-          press
+          press {
+            title
+            link
+          }
           pieces {
             slug
             title
