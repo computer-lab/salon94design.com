@@ -4,7 +4,10 @@
     <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
 
     <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Shirt 1
@@ -31,7 +34,10 @@
     <p>Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.</p>
 
     <p>Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Gold Anklet
@@ -55,7 +61,10 @@
   name: Anton Alvarez
   bio:
     <p>Anton Alvarez is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Black Chair
@@ -70,7 +79,10 @@
   name: Jack Craig
   bio:
     <p>Jack Craig is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Red Chair
@@ -85,7 +97,10 @@
   name: Dozie Kanu
   bio:
     <p>Dozie Kanu is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Blue Chair
@@ -100,7 +115,10 @@
   name: Max Lamb
   bio:
     <p>Max Lamb is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Yellow Chair
@@ -115,7 +133,10 @@
   name: Gaetano Pesce
   bio:
     <p>Gaetano Pesce is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: White Chair
@@ -130,7 +151,10 @@
   name: Jay Sae Jung Oh
   bio:
     <p>Jay Sae Jung Oh is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Black Bench
@@ -145,7 +169,10 @@
   name: Thomas Barger
   bio:
     <p>Thomas Barger is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Red Bench
@@ -160,7 +187,10 @@
   name: Kwangho Lee
   bio:
     <p>Kwangho Lee is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Blue Bench
@@ -175,7 +205,10 @@
   name: Kueng Caputo
   bio:
     <p>Kueng Caputo is a designer.</p>
-  press: none
+  press:
+      -
+        title: NYTimes - Press Coverage of Design
+        link: https://google.com
   pieces:
     -
       title: Yellow Bench
