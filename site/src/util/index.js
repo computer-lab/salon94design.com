@@ -1,6 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { tagCategory } from './tag'
+export * from './tag'
+
 export const workImagePath = name => require(`../assets/images/${name}.jpg`)
 
 export const designerLink = slug => `/designers/${slug}`
@@ -8,7 +11,10 @@ export const designerLink = slug => `/designers/${slug}`
 export const projectLink = slug => `/projects/${slug}`
 
 export const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
-export const workTagLink = tag => `/works/${tag}`
+
+export const workTagLink = tag => {
+  return `/works/${tagCategory(tag)}`
+}
 
 export const capitalize = str =>
   str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')

@@ -1,4 +1,5 @@
 const path = require('path')
+const { tagCategory } = require('./src/util/tag')
 
 exports.createPages = props => {
   return Promise.all([
@@ -134,23 +135,22 @@ function createWorks({ boundActionCreators, graphql }) {
       .map(d => d.works.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
-    const tagSet = new Set()
+    const categorySet = new Set()
 
     works.forEach(p => {
-      tagSet.add(p.when)
       p.tags.forEach(tag => {
-        tagSet.add(tag)
+        categorySet.add(tagCategory(tag))
       })
     })
 
-    const tags = Array.from(tagSet).sort()
+    const categories = Array.from(categorySet).sort()
 
-    // create page for each tag
-    tags.forEach(tag => {
+    // create page for each category
+    categories.forEach(category => {
       createPage({
-        path: `/works/${tag}`,
+        path: `/works/${category}`,
         component: worksTemplate,
-        context: { currentTag: tag },
+        context: { currentCategory: category },
       })
     })
 
