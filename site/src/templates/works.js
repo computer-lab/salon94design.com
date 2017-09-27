@@ -9,7 +9,12 @@ import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import HoverInfo from '../layouts/HoverInfo'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workImageTexts, categoryTags, tagCategory } from '../util'
+import {
+  workImagePath,
+  workImageTexts,
+  categoryTags,
+  tagCategory,
+} from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 

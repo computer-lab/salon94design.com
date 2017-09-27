@@ -107,8 +107,7 @@ const Menu = ({ location }) => {
       {includeLogo &&
         <Link to={'/'}>
           <Logo width={120} />
-        </Link>
-      }
+        </Link>}
 
       <Nav>
         {navItems.map(item =>
