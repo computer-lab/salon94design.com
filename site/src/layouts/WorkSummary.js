@@ -22,13 +22,18 @@ const Container = styled.div`
 `
 
 const Title = styled.div`
-  margin-bottom: 24px;
+  margin-bottom: 18px;
   font-size: 32px;
 
   @media (${breakpoint1}) {
     margin-bottom: 18px;
     font-size: 28px;
   }
+`
+
+const When = styled.div`
+  margin-bottom: 24px;
+  font-size: 24px;
 `
 
 const SummaryItem = styled.div`
@@ -72,6 +77,9 @@ const WorkSummary = ({ designer, work, detailed, projects }) =>
     <Title>
       {work.title}
     </Title>
+    <When>
+      {work.when}
+    </When>
     <SummaryItem>
       {work.price}
     </SummaryItem>
@@ -89,11 +97,6 @@ const WorkSummary = ({ designer, work, detailed, projects }) =>
       )}
     {detailed &&
       <div>
-        <SummaryItem className="tag">
-          <Link to={workTagLink(work.when)}>
-            {work.when}
-          </Link>
-        </SummaryItem>
         {work.tags.map(tag =>
           <SummaryItem key={tag} className="tag">
             <Link to={workTagLink(tag)}>
