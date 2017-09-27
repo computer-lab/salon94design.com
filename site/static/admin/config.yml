@@ -93,14 +93,11 @@ collections:
           - name: email
             label: Email
             widget: string
+          - name: phone
+            label: Phone
+            widget: string
           - name: instagram
             label: Instagram
-            widget: string
-          - name: facebook
-            label: Facebook
-            widget: string
-          - name: twitter
-            label: Twitter
             widget: string
           - name: mailingList
             label: Mailing List
