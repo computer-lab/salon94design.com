@@ -11,7 +11,7 @@ import {
   breakpoint1,
   breakpoint3,
 } from './emotion-base'
-import { designerLink, pieceTagLink, projectLink, capitalize } from '../util'
+import { designerLink, workTagLink, projectLink, capitalize } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -61,7 +61,7 @@ const SummaryItem = styled.div`
   }
 `
 
-const PieceSummary = ({ designer, piece, detailed, projects }) =>
+const WorkSummary = ({ designer, work, detailed, projects }) =>
   <Container className={cx({ detailed })}>
     {designer &&
       <SummaryItem className="designer">
@@ -70,17 +70,17 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
         </Link>
       </SummaryItem>}
     <Title>
-      {piece.title}
+      {work.title}
     </Title>
     <SummaryItem>
-      {piece.price}
+      {work.price}
     </SummaryItem>
-    {piece.caption &&
+    {work.caption &&
       <SummaryItem>
-        {piece.caption}
+        {work.caption}
       </SummaryItem>}
     {projects &&
-      piece.projects.map(slug =>
+      work.projects.map(slug =>
         <SummaryItem key={slug}>
           <Link to={projectLink(slug)}>
             {projects.find(p => p.slug === slug).title}
@@ -90,13 +90,13 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
     {detailed &&
       <div>
         <SummaryItem className="tag">
-          <Link to={pieceTagLink(piece.when)}>
-            {piece.when}
+          <Link to={workTagLink(work.when)}>
+            {work.when}
           </Link>
         </SummaryItem>
-        {piece.tags.map(tag =>
+        {work.tags.map(tag =>
           <SummaryItem key={tag} className="tag">
-            <Link to={pieceTagLink(tag)}>
+            <Link to={workTagLink(tag)}>
               {capitalize(tag)}
             </Link>
           </SummaryItem>
@@ -104,11 +104,11 @@ const PieceSummary = ({ designer, piece, detailed, projects }) =>
       </div>}
   </Container>
 
-PieceSummary.propTypes = {
-  piece: PropTypes.object.isRequired,
+WorkSummary.propTypes = {
+  work: PropTypes.object.isRequired,
   designer: PropTypes.object,
   projects: PropTypes.array,
   detailed: PropTypes.bool,
 }
 
-export default PieceSummary
+export default WorkSummary

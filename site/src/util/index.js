@@ -1,30 +1,30 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-export const pieceImagePath = name => require(`../assets/images/${name}.jpg`)
+export const workImagePath = name => require(`../assets/images/${name}.jpg`)
 
 export const designerLink = slug => `/designers/${slug}`
 
 export const projectLink = slug => `/projects/${slug}`
 
-export const pieceLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
-export const pieceTagLink = tag => `/pieces/${tag}`
+export const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
+export const workTagLink = tag => `/works/${tag}`
 
 export const capitalize = str =>
   str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
 
 export const choice = arr => arr[Math.floor(arr.length * Math.random())]
 
-export const pieceImageTexts = ({
-  piece,
+export const workImageTexts = ({
+  work,
   designer,
   projects,
   smallText = false,
 }) => {
-  let data = [piece.price, piece.when]
+  let data = [work.price, work.when]
   if (projects) {
     data = data.concat(
-      piece.projects.map(slug => {
+      work.projects.map(slug => {
         const project = projects.find(p => p.slug === slug)
         return (
           <Link to={projectLink(slug)} key={slug}>
@@ -40,15 +40,15 @@ export const pieceImageTexts = ({
     smallText: smallText
       ? <div>
           <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-          , {piece.when}
+          , {work.when}
         </div>
       : null,
     title: (
-      <Link to={pieceLink(designer.slug, piece.slug)}>
-        {piece.title}
+      <Link to={workLink(designer.slug, work.slug)}>
+        {work.title}
       </Link>
     ),
-    caption: piece.caption,
+    caption: work.caption,
     credit: (
       <Link to={designerLink(designer.slug)}>
         {designer.name}

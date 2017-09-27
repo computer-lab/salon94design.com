@@ -14,12 +14,12 @@ import {
 import ImageList from '../layouts/ImageList'
 import HoverInfo from '../layouts/HoverInfo'
 import HiddenSelector from '../layouts/HiddenSelector'
-import PieceSummary from '../layouts/PieceSummary'
+import WorkSummary from '../layouts/WorkSummary'
 import {
-  pieceImagePath,
+  workImagePath,
   designerLink,
   projectLink,
-  pieceImageTexts,
+  workImageTexts,
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
@@ -90,18 +90,18 @@ export default class ProjectTemplate extends Component {
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const getDesigner = slug => designers.find(d => d.slug === slug)
 
-    const pieceImages = []
+    const workImages = []
     designers.forEach(designer => {
-      const pieces = designer.pieces.filter(piece =>
-        piece.projects.includes(currentProjectSlug)
+      const works = designer.works.filter(work =>
+        work.projects.includes(currentProjectSlug)
       )
 
-      pieces.forEach(piece => {
-        pieceImages.push({
-          piece,
+      works.forEach(work => {
+        workImages.push({
+          work,
           designer,
-          src: pieceImagePath(piece.images[0]),
-          texts: pieceImageTexts({ piece, designer }),
+          src: workImagePath(work.images[0]),
+          texts: workImageTexts({ work, designer }),
         })
       })
     })
@@ -109,7 +109,7 @@ export default class ProjectTemplate extends Component {
     const images = []
     for (let i = 0; i < 10; i++) {
       // TODO: remove temporary image multiplication
-      pieceImages.forEach(item => images.push(item))
+      workImages.forEach(item => images.push(item))
     }
 
     const imageSets = [{ images }]
@@ -165,8 +165,8 @@ export default class ProjectTemplate extends Component {
           />
           {hoverImage &&
             <HoverInfo>
-              <PieceSummary
-                piece={hoverImage.piece}
+              <WorkSummary
+                work={hoverImage.work}
                 designer={hoverImage.designer}
               />
             </HoverInfo>}
@@ -194,7 +194,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             when

@@ -5,7 +5,7 @@ import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
-import { pieceImagePath, pieceLink } from '../util'
+import { workImagePath, workLink } from '../util'
 
 const IndexPage = ({ data }) => {
   const { allProjectsYaml, allDesignersYaml } = data
@@ -13,15 +13,15 @@ const IndexPage = ({ data }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const currentProject = projects[0]
-  const filterPiece = p => p.projects.includes(currentProject.slug)
+  const filterWork = p => p.projects.includes(currentProject.slug)
 
   let images = []
   designers.forEach(designer => {
-    designer.pieces.filter(filterPiece).forEach(piece => {
-      piece.images.forEach(src => {
+    designer.works.filter(filterWork).forEach(work => {
+      work.images.forEach(src => {
         images.push({
-          src: pieceImagePath(src),
-          unexpandedLink: pieceLink(designer.slug, piece.slug),
+          src: workImagePath(src),
+          unexpandedLink: workLink(designer.slug, work.slug),
         })
       })
     })
@@ -68,7 +68,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             when

@@ -19,15 +19,15 @@ const Instructions = styled.div`
   }
 `
 
-export default function Pieces({ data }) {
+export default function Works({ data }) {
   const { allDesignersYaml } = data
 
   const tagSet = new Set()
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   designers.forEach(designer => {
-    designer.pieces.forEach(piece => {
-      piece.tags.forEach(t => tagSet.add(t))
-      tagSet.add(piece.when)
+    designer.works.forEach(work => {
+      work.tags.forEach(t => tagSet.add(t))
+      tagSet.add(work.when)
     })
   })
 
@@ -37,9 +37,9 @@ export default function Pieces({ data }) {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Pieces`} />
+      <Helmet title={`Salon 94 Design - Works`} />
       <LeftPane>
-        <Instructions>Select a category to view pieces.</Instructions>
+        <Instructions>Select a category to view works.</Instructions>
       </LeftPane>
       <RightPane>
         <TagSelector tags={tags} />
@@ -49,13 +49,13 @@ export default function Pieces({ data }) {
 }
 
 export const pageQuery = graphql`
-  query PiecesQuery {
+  query WorksQuery {
     allDesignersYaml {
       edges {
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             when
