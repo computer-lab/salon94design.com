@@ -5,7 +5,7 @@ exports.createPages = props => {
     createBlogPosts(props),
     createProjects(props),
     createDesigners(props),
-    createPieces(props),
+    createWorks(props),
   ])
 }
 
@@ -107,18 +107,18 @@ function createDesigners({ boundActionCreators, graphql }) {
   })
 }
 
-function createPieces({ boundActionCreators, graphql }) {
+function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const piecesTemplate = path.resolve(`src/templates/pieces.js`)
-  const pieceTemplate = path.resolve(`src/templates/piece.js`)
+  const worksTemplate = path.resolve(`src/templates/works.js`)
+  const workTemplate = path.resolve(`src/templates/work.js`)
 
   return graphql(`{
     allDesignersYaml{
       edges {
         node {
           slug
-          pieces {
+          works {
             slug
             tags
             when
@@ -130,13 +130,13 @@ function createPieces({ boundActionCreators, graphql }) {
     if (result.errors) return Promise.reject(result.errors)
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
-    const pieces = designers
-      .map(d => d.pieces.map(p => Object.assign({}, p, { designer: d })))
+    const works = designers
+      .map(d => d.works.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
     const tagSet = new Set()
 
-    pieces.forEach(p => {
+    works.forEach(p => {
       tagSet.add(p.when)
       p.tags.forEach(tag => {
         tagSet.add(tag)
@@ -148,18 +148,18 @@ function createPieces({ boundActionCreators, graphql }) {
     // create page for each tag
     tags.forEach(tag => {
       createPage({
-        path: `/pieces/${tag}`,
-        component: piecesTemplate,
+        path: `/works/${tag}`,
+        component: worksTemplate,
         context: { currentTag: tag },
       })
     })
 
-    // create page for each piece
-    pieces.forEach(piece => {
+    // create page for each work
+    works.forEach(work => {
       createPage({
-        path: `/designers/${piece.designer.slug}/${piece.slug}`,
-        component: pieceTemplate,
-        context: { designerSlug: piece.designer.slug, pieceSlug: piece.slug },
+        path: `/designers/${work.designer.slug}/${work.slug}`,
+        component: workTemplate,
+        context: { designerSlug: work.designer.slug, workSlug: work.slug },
       })
     })
   })

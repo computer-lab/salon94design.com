@@ -94,7 +94,7 @@ const Menu = ({ location }) => {
   const navItems = [
     { name: 'Projects', path: '/projects' },
     { name: 'Designers', path: '/designers' },
-    { name: 'Pieces', path: '/pieces' },
+    { name: 'Works', path: '/works' },
     { name: 'Info', path: '/info' },
   ].map(item => ({
     ...item,

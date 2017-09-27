@@ -8,12 +8,12 @@ import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import HoverInfo from '../layouts/HoverInfo'
-import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath, pieceImageTexts } from '../util'
+import WorkSummary from '../layouts/WorkSummary'
+import { workImagePath, workImageTexts } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
-export default class PiecesTemplate extends Component {
+export default class WorksTemplate extends Component {
   constructor(props) {
     super(props)
 
@@ -36,24 +36,24 @@ export default class PiecesTemplate extends Component {
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const filterPiece = p =>
+    const filterWork = p =>
       p.tags.includes(currentTag) || p.when === currentTag
 
     let images = []
     const tagSet = new Set()
     designers.forEach(designer => {
-      designer.pieces.forEach(piece => {
-        piece.tags.forEach(t => tagSet.add(t))
-        tagSet.add(piece.when)
+      designer.works.forEach(work => {
+        work.tags.forEach(t => tagSet.add(t))
+        tagSet.add(work.when)
 
-        if (filterPiece(piece)) {
+        if (filterWork(work)) {
           images.push({
-            piece,
+            work,
             designer,
-            src: pieceImagePath(piece.images[0]),
-            texts: pieceImageTexts({
+            src: workImagePath(work.images[0]),
+            texts: workImageTexts({
               designer,
-              piece,
+              work,
               projects,
               smallText: true,
             }),
@@ -75,7 +75,7 @@ export default class PiecesTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Pieces - ${currentTag}`} />
+        <Helmet title={`Salon 94 Design - Works - ${currentTag}`} />
         <LeftPane>
           <ImageList
             imageSets={imageSets}
@@ -86,8 +86,8 @@ export default class PiecesTemplate extends Component {
           <TagSelector tags={tags} currentTag={currentTag} />
           {hoverImage &&
             <HoverInfo>
-              <PieceSummary
-                piece={hoverImage.piece}
+              <WorkSummary
+                work={hoverImage.work}
                 designer={hoverImage.designer}
               />
             </HoverInfo>}
@@ -98,7 +98,7 @@ export default class PiecesTemplate extends Component {
 }
 
 export const pageQuery = graphql`
-  query PiecesTemplateQuery {
+  query WorksTemplateQuery {
     allProjectsYaml {
       edges {
         node {
@@ -112,7 +112,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             when

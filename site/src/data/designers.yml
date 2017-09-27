@@ -1,14 +1,14 @@
 - slug: rick-owens
   name: Rick Owens
   bio:
-    <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
+    <p>Rick Owens is a noted menswear designer and he also makes these gold works of jewelry.</p>
 
-    <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
+    <p>Rick Owens is a noted menswear designer and he also makes these gold works of jewelry.</p>
   press:
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Shirt 1
       slug: shirt-1
@@ -38,7 +38,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Gold Anklet
       slug: gold-anklet
@@ -65,7 +65,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Black Chair
       slug: black-chair
@@ -83,7 +83,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Red Chair
       slug: red-chair
@@ -101,7 +101,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Blue Chair
       slug: blue-chair
@@ -119,7 +119,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Yellow Chair
       slug: yellow-chair
@@ -137,7 +137,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: White Chair
       slug: white-chair
@@ -155,7 +155,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Black Bench
       slug: black-bench
@@ -173,7 +173,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Red Bench
       slug: red-bench
@@ -191,7 +191,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Blue Bench
       slug: blue-bench
@@ -209,7 +209,7 @@
       -
         title: NYTimes - Press Coverage of Design
         link: https://google.com
-  pieces:
+  works:
     -
       title: Yellow Bench
       slug: yellow-bench
