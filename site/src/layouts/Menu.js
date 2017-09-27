@@ -23,7 +23,6 @@ const Wrapper = styled.div`
   width: 100%;
   height: 72px;
   background: #fff;
-  border-bottom: 2px solid #000;
 `
 
 const Logo = styled.div`
@@ -54,7 +53,7 @@ const Nav = styled.ul`
   composes: ${baseUl} ${monofont};
   position: absolute;
   right: 40px;
-  top: 50%;
+  top: 51%;
   display: flex;
   font-size: 28px;
   color: #000;
@@ -92,8 +91,8 @@ const NavItem = styled.li`
 
 const Menu = ({ location }) => {
   const navItems = [
-    { name: 'Projects', path: '/projects' },
     { name: 'Designers', path: '/designers' },
+    { name: 'Projects', path: '/projects' },
     { name: 'Works', path: '/works' },
     { name: 'Info', path: '/info' },
   ].map(item => ({
@@ -105,7 +104,11 @@ const Menu = ({ location }) => {
 
   return (
     <Wrapper>
-      {includeLogo && <Logo width={120} />}
+      {includeLogo &&
+        <Link to={'/'}>
+          <Logo width={120} />
+        </Link>
+      }
 
       <Nav>
         {navItems.map(item =>
