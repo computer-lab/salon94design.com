@@ -9,7 +9,7 @@ import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import HoverInfo from '../layouts/HoverInfo'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workImageTexts } from '../util'
+import { workImagePath, workImageTexts, categoryTags, tagCategory } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -31,20 +31,29 @@ export default class WorksTemplate extends Component {
   render() {
     const { data, pathContext } = this.props
     const { allProjectsYaml, allDesignersYaml } = data
-    const { currentTag } = pathContext
+    const { currentCategory } = pathContext
     const { hoverImage } = this.state
+
+    const currentTags = categoryTags(currentCategory)
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const filterWork = p =>
-      p.tags.includes(currentTag) || p.when === currentTag
+    const filterWork = p => {
+      let tags = p.tags.concat(p.when)
+      for (let i = 0; i < currentTags.length; i++) {
+        if (tags.includes(currentTags[i])) {
+          return true
+        }
+      }
+
+      return false
+    }
 
     let images = []
     const tagSet = new Set()
     designers.forEach(designer => {
       designer.works.forEach(work => {
-        work.tags.forEach(t => tagSet.add(t))
-        tagSet.add(work.when)
+        work.tags.forEach(t => tagSet.add(tagCategory(t)))
 
         if (filterWork(work)) {
           images.push({
@@ -75,7 +84,7 @@ export default class WorksTemplate extends Component {
 
     return (
       <PageContainer>
-        <Helmet title={`Salon 94 Design - Works - ${currentTag}`} />
+        <Helmet title={`Salon 94 Design - Works - ${currentCategory}`} />
         <LeftPane>
           <ImageList
             imageSets={imageSets}
@@ -83,7 +92,7 @@ export default class WorksTemplate extends Component {
           />
         </LeftPane>
         <RightPane>
-          <TagSelector tags={tags} currentTag={currentTag} />
+          <TagSelector tags={tags} currentTag={currentCategory} />
           {hoverImage &&
             <HoverInfo>
               <WorkSummary

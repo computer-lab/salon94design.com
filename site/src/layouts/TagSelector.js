@@ -43,11 +43,12 @@ const TagSelector = ({ tags, currentTag }) => {
   tags = tags.concat([
     'Tables',
     'Beds',
-    'Objects',
-    'Jewelry',
     'Outdoor',
     'Lighting',
     'Storage',
+    'Textiles',
+    'Ceramic',
+    'Misc.',
   ])
 
   return (
