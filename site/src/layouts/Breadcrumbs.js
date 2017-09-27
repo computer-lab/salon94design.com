@@ -16,7 +16,7 @@ const Container = styled.div`
 const BreadcrumbList = styled.ul`
   composes: ${baseUl}, ${monofont};
   display: flex;
-  font-size: 9px;
+  font-size: 12px;
 `
 
 const Breadcrumb = styled.li`
