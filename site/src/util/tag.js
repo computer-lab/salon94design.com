@@ -1,4 +1,3 @@
-
 // convert subcategory tags to their parent
 const tagCategory = tag => {
   if (tag === 'benches' || tag === 'chairs') {

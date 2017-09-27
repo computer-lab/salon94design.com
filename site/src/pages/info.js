@@ -115,13 +115,21 @@ const Info = ({ data }) => {
           <Header2>Contact</Header2>
           <SectionList>
             <SectionListItem>
-              <a href={instagram} target="_blank">Instagram</a>
+              <a href={instagram} target="_blank">
+                Instagram
+              </a>
             </SectionListItem>
             <SectionListItem>
-              Phone: <a href={`tel:${phone}`} target="_blank">{ phone }</a>
+              Phone:{' '}
+              <a href={`tel:${phone}`} target="_blank">
+                {phone}
+              </a>
             </SectionListItem>
             <SectionListItem>
-              Email: <a href={`mailto:${email}`} target="_blank">{ email }</a>
+              Email:{' '}
+              <a href={`mailto:${email}`} target="_blank">
+                {email}
+              </a>
             </SectionListItem>
           </SectionList>
           <MailingListSignup>
