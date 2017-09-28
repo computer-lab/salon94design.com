@@ -28,6 +28,7 @@ export const createPanes = (rightPaneWidth = '360px') => {
     @media (${breakpoint1}) {
       width: 100%;
       height: auto;
+      margin-top: 10px;
     }
   `
 

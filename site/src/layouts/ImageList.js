@@ -10,6 +10,7 @@ import {
   sansfont,
   childLink,
   breakpoint1,
+  breakpoint2,
   breakpoint3,
 } from './emotion-base'
 
@@ -125,7 +126,8 @@ const ImageText = styled.div`
   composes: ${childLink};
   text-align: left;
   width: 50%;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 28px;
 
   &.right {
@@ -134,32 +136,40 @@ const ImageText = styled.div`
 
   &.primary {
     font-size: 24px;
+    order: -2;
+  }
+
+  &.credit {
+    order: -1;
+  }
+
+  &.data-texts {
+    width: 100%;
+    text-align: right;
   }
 
   &.small {
     width: 100%;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 1;
   }
 
-  @media (${breakpoint3}) {
-    font-size: 15px;
+  @media (${breakpoint2}) {
+    font-size: 16px;
     line-height: 24px;
     width: auto;
 
-    &.primary {
-      font-size: 18px;
-      order: -2;
-    }
-
-    &.credit {
-      order: -1;
-    }
-
-    &.data-texts,
     &.caption {
       width: 100%;
       text-align: right;
+    }
+  }
+
+  @media (${breakpoint3}) {
+    line-height: 24px;
+
+    &.primary {
+      font-size: 18px;
     }
   }
 `
@@ -169,10 +179,12 @@ const ImageTextData = styled.span`
 
   &:not(:last-child) {
     margin-right: 24px;
-  }
 
-  @media (${breakpoint3}) {
-    &:not(:last-child) {
+    @media (${breakpoint1}) {
+      margin-right: 18px;
+    }
+
+    @media (${breakpoint3}) {
       margin-right: 10px;
     }
   }
