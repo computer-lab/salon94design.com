@@ -1,0 +1,17 @@
+slug: jay-sae-jung-oh
+name: Jay Sae Jung Oh
+bio:
+  <p>Jay Sae Jung Oh is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+works:
+  -
+    title: Black Bench
+    slug: black-bench
+    when: 2016
+    projects: [miami-2016]
+    tags: [benches]
+    images: ['rick-owens/shirt2']
+    price: $2,500

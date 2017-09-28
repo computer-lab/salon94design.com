@@ -1,0 +1,17 @@
+slug: anton-alvarez
+name: Anton Alvarez
+bio:
+  <p>Anton Alvarez is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+works:
+  -
+    title: Black Chair
+    slug: black-chair
+    when: 2016
+    projects: [collective]
+    tags: [chairs]
+    images: ['lucas-samaras/gold1']
+    price: $2,500
