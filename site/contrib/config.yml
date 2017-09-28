@@ -22,7 +22,7 @@ collections:
         widget: string
       - name: bio
         label: Bio
-        widget: textarea
+        widget: text
       - name: pieces
         label: Pieces
         widget: list
@@ -66,7 +66,7 @@ collections:
         widget: string
       - name: bio
         label: Bio
-        widget: textarea
+        widget: text
       - name: when
         label: Year
         widget: number
@@ -75,7 +75,7 @@ collections:
         widget: list
       - name: description
         label: Description
-        widget: textarea
+        widget: text
   - name: info
     label: Info
     folder: site/src/data/info
@@ -99,4 +99,4 @@ collections:
         widget: string
       - name: aboutText
         label: About Us
-        widget: textarea
+        widget: text
