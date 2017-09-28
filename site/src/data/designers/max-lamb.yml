@@ -1,0 +1,17 @@
+slug: max-lamb
+name: Max Lamb
+bio:
+  <p>Max Lamb is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+pieces:
+  -
+    title: Yellow Chair
+    slug: yellow-chair
+    when: 2015
+    projects: [man-drill-rock]
+    tags: [chairs]
+    images: ['rick-owens/shirt2']
+    price: $2,500

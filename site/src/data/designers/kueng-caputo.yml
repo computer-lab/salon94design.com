@@ -1,0 +1,17 @@
+slug: kueng-caputo
+name: Kueng Caputo
+bio:
+  <p>Kueng Caputo is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+pieces:
+  -
+    title: Yellow Bench
+    slug: yellow-bench
+    when: 2015
+    projects: [milan-2015]
+    tags: [benches]
+    images: ['lucas-samaras/gold1']
+    price: $2,500
