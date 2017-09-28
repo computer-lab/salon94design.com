@@ -100,13 +100,13 @@ const ImageTextContainer = styled.div`
   justify-content: space-between;
 
   &.compact {
-    .expanded-text {
+    & .expanded-text {
       display: none;
     }
   }
 
   &.expanded {
-    .small {
+    & .small {
       display: none;
     }
   }
@@ -136,16 +136,15 @@ const ImageText = styled.div`
 
   &.primary {
     font-size: 24px;
-    order: -2;
+    order: -3;
   }
 
   &.credit {
-    order: -1;
+    order: -2;
   }
 
-  &.data-texts {
-    width: 100%;
-    text-align: right;
+  &.caption {
+    order: -1;
   }
 
   &.small {
@@ -159,6 +158,7 @@ const ImageText = styled.div`
     line-height: 24px;
     width: auto;
 
+    &.data-texts,
     &.caption {
       width: 100%;
       text-align: right;

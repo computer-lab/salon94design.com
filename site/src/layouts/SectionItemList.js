@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
-import { sansfont, baseUl, breakpoint3 } from './emotion-base'
+import { sansfont, baseUl, breakpoint2, breakpoint3 } from './emotion-base'
 
 const Container = styled.div`
   padding: 0 24px 0 24px;
@@ -57,6 +57,16 @@ const ListItem = styled.li`
     max-height: 280px;
   }
 
+  @media (${breakpoint2}) {
+    width: 240px;
+    margin: 0 40px 64px 0;
+
+    & img {
+      max-width: 240px;
+      max-height: 200px;
+    }
+  }
+
   @media (${breakpoint3}) {
     margin: 0 0 32px 0;
     width: 100%;
@@ -69,7 +79,11 @@ const ListItem = styled.li`
 
 const ItemTitle = styled.div`
   margin-top: 4px;
-  font-size: 18px;
+  font-size: 24px;
+
+  @media (${breakpoint2}) {
+    font-size: 22px;
+  }
 
   @media (${breakpoint3}) {
     margin: 0;
@@ -79,7 +93,8 @@ const ItemTitle = styled.div`
 `
 
 const ItemSubtitle = styled.div`
-  font-size: 16px;
+  margin-top: 2px;
+  font-size: 18px;
   font-weight: 300;
   line-height: 1.28;
 
