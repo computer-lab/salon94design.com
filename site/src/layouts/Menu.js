@@ -9,6 +9,7 @@ import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from './logo'
 import {
   baseUl,
   monofont,
+  sansfont,
   childLink,
   breakpoint2,
   breakpoint3,
@@ -23,7 +24,6 @@ const Wrapper = styled.div`
   width: 100%;
   height: 72px;
   background: #fff;
-  border-bottom: 2px solid #000;
 `
 
 const Logo = styled.div`
@@ -51,12 +51,13 @@ const Logo = styled.div`
 `
 
 const Nav = styled.ul`
-  composes: ${baseUl} ${monofont};
+  composes: ${baseUl} ${sansfont};
   position: absolute;
   right: 40px;
-  top: 50%;
+  top: 51%;
   display: flex;
   font-size: 28px;
+  font-weight: 300;
   color: #000;
   transform: translateY(-50%);
 
@@ -92,9 +93,9 @@ const NavItem = styled.li`
 
 const Menu = ({ location }) => {
   const navItems = [
-    { name: 'Projects', path: '/projects' },
     { name: 'Designers', path: '/designers' },
-    { name: 'Pieces', path: '/pieces' },
+    { name: 'Projects', path: '/projects' },
+    { name: 'Works', path: '/works' },
     { name: 'Info', path: '/info' },
   ].map(item => ({
     ...item,
@@ -105,7 +106,10 @@ const Menu = ({ location }) => {
 
   return (
     <Wrapper>
-      {includeLogo && <Logo width={120} />}
+      {includeLogo &&
+        <Link to={'/'}>
+          <Logo width={120} />
+        </Link>}
 
       <Nav>
         {navItems.map(item =>
