@@ -9,7 +9,7 @@ public_folder: site/public/static
 collections:
   - name: designer
     label: Designer
-    folder: data/designers
+    folder: site/src/data/designers
     create: true
     slug: "{{slug}}"
     fields:
@@ -52,7 +52,7 @@ collections:
             widget: string
   - name: project
     label: Project
-    folder: data/projects
+    folder: site/src/data/projects
     create: true
     slug: "{{slug}}"
     fields:
@@ -76,7 +76,7 @@ collections:
         widget: textarea
   - name: info
     label: Info
-    folder: data/info
+    folder: site/src/data/info
     create: false
     fields:
       - name: email
