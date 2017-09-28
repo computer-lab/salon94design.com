@@ -9,6 +9,7 @@ import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from './logo'
 import {
   baseUl,
   monofont,
+  sansfont,
   childLink,
   breakpoint2,
   breakpoint3,
@@ -50,12 +51,13 @@ const Logo = styled.div`
 `
 
 const Nav = styled.ul`
-  composes: ${baseUl} ${monofont};
+  composes: ${baseUl} ${sansfont};
   position: absolute;
   right: 40px;
   top: 51%;
   display: flex;
   font-size: 28px;
+  font-weight: 300;
   color: #000;
   transform: translateY(-50%);
 

@@ -17,6 +17,7 @@ import Press from '../layouts/Press'
 
 const Container = styled.div`
   composes: ${sansfont};
+  font-weight: 300;
 
   & a {
     color: inherit;
@@ -58,7 +59,10 @@ const SectionText = styled.p`
   }
 `
 
-const SectionList = styled.ul`composes: ${baseUl}, ${sectionContent};`
+const SectionList = styled.ul`
+  composes: ${baseUl}, ${sectionContent};
+  font-weight: 400;
+`
 
 const SectionListItem = styled.li`
   composes: ${childLink};

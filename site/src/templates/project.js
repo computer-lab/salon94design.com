@@ -43,19 +43,14 @@ const ProjectDesigner = styled.span`
 
 const ProjectWhen = styled.div`
   composes: ${monofont};
-  margin-top: 10px;
-  font-weight: 700;
+  margin-top: 8px;
   font-size: 24px;
-  text-align: right;
-
-  @media (${breakpoint1}) {
-    text-align: left;
-  }
 `
 
 const ProjectDescription = styled.div`
   max-width: 320px;
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
   line-height: 1.4;
 
   @media (${breakpoint1}) {

@@ -79,7 +79,8 @@ const ItemTitle = styled.div`
 `
 
 const ItemSubtitle = styled.div`
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 300;
   line-height: 1.28;
 
   @media (${breakpoint3}) {
