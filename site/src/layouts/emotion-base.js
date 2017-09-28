@@ -6,7 +6,7 @@ export const breakpoint2 = `max-width: 796px`
 export const breakpoint3 = `max-width: 448px`
 
 export const monoFontFamily = `Inconsolata, Menlo, monospace`
-export const sansFontFamily = `Work Sans, Helvetica, Arial, sans-serif`
+export const sansFontFamily = `Gill Sans, Work Sans, Helvetica, Arial, sans-serif`
 
 export const baseUl = css`
   margin: 0;
@@ -57,13 +57,13 @@ export const selectorList = css`
 
 export const Header1 = styled.h1`
   composes: ${sansfont};
-  margin: 0 0 60px 0;
+  margin: 0 0 40px 0;
   font-weight: 600;
   font-size: 48px;
 
   & .subheader {
     margin-top: 6px;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 32px;
   }
 
@@ -91,7 +91,8 @@ export const Header2 = styled.h2`
 
 export const SimpleLinkList = styled.ul`
   composes: ${baseUl}, ${sansfont};
-  font-size: 16px;
+  font-size: 20px;
+  font-weight: 300;
   display: flex;
   flex-wrap: wrap;
 `
