@@ -12,6 +12,7 @@ collections:
     folder: site/src/data/designers
     create: true
     slug: "{{slug}}"
+    format: yml
     fields:
       - name: slug
         label: Slug
@@ -55,6 +56,7 @@ collections:
     folder: site/src/data/projects
     create: true
     slug: "{{slug}}"
+    format: yml
     fields:
       - name: slug
         label: Slug
@@ -78,6 +80,7 @@ collections:
     label: Info
     folder: site/src/data/info
     create: false
+    format: yml
     fields:
       - name: email
         label: Email
