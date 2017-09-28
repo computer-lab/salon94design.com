@@ -1,0 +1,17 @@
+slug: gaetano-pesce
+name: Gaetano Pesce
+bio:
+  <p>Gaetano Pesce is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+pieces:
+  -
+    title: White Chair
+    slug: white-chair
+    when: 2015
+    projects: [man-drill-rock]
+    tags: [chairs]
+    images: ['rick-owens/shirt1']
+    price: $2,500

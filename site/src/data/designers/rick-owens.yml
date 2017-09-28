@@ -1,0 +1,28 @@
+slug: rick-owens
+name: Rick Owens
+bio:
+  <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
+
+  <p>Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.</p>
+press:
+  -
+    title: NYTimes - Press Coverage of Design
+    link: https://google.com
+pieces:
+  -
+    title: Shirt 1
+    slug: shirt-1
+    when: 2017
+    projects: [basel-2016]
+    tags: [clothing]
+    images: ['rick-owens/shirt1']
+    caption: Black Shirt, waterproof.
+    price: $10,000
+  -
+    title: Shirt 2
+    slug: shirt-2
+    when: 2017
+    projects: [basel-2016]
+    tags: [clothing]
+    images: ['rick-owens/shirt2']
+    price: $20,000

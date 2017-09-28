@@ -1,0 +1,28 @@
+slug: lucas-samaras
+name: Lucas Samaras
+bio:
+  <p>Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.</p>
+
+  <p>Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.</p>
+press:
+  -
+    title: NYTimes - Press Coverage of Design
+    link: https://google.com
+pieces:
+  -
+    title: Gold Anklet
+    slug: gold-anklet
+    when: 2017
+    projects: [gold-chicken-wire]
+    tags: [jewelry]
+    images: ['lucas-samaras/gold1']
+    price: $20,000
+  -
+    title: Gold Necklace
+    slug: gold-necklace
+    when: 2017
+    projects: [gold-chicken-wire]
+    tags: [jewelry]
+    images: ['lucas-samaras/gold2']
+    caption: This is a very nice necklace.
+    price: $20,000

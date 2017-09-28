@@ -3,108 +3,97 @@ backend:
   repo: computer-lab/salon94design.com
   branch: master
 
-publish_mode: editorial_workflow
 media_folder: site/src/assets/images
 public_folder: site/public/static
 
 collections:
   - name: designer
     label: Designer
+    folder: site/src/data/designers
     create: true
-    files:
-      - name: salon94
-        label: Salon94
-        file: site/src/data/designers.yml
-        description: Salon94 Designers
+    slug: "{{slug}}"
+    fields:
+      - name: slug
+        label: Slug
+        widget: string
+      - name: name
+        label: Name
+        widget: string
+      - name: bio
+        label: Bio
+        widget: textarea
+      - name: pieces
+        label: Pieces
+        widget: list
         fields:
-          - name: slug
-            label: Slug
-            widget: string
-          - name: name
-            label: Name
-            widget: string
-          - name: bio
-            label: Bio
-            widget: textarea
-          - name: pieces
-            label: Pieces
-            widget: list
-            fields:
-              - name: title
-                label: Title
-                widget: string
-              - name: slug
-                label: Slug
-                widget: string
-              - name: when
-                label: Year
-                widget: number
-              - name: projects
-                label: Projects
-                widget: list
-              - name: tags
-                label: Tags
-                widget: list
-              - name: images
-                label: Images
-                widget: list
-              - name: caption
-                label: Caption
-                widget: string
-              - name: price
-                label: Price
-                widget: string
-  - name: project
-    label: Project
-    files:
-      - name: salon94
-        label: Salon94
-        file: site/src/data/projects.yml
-        description: Salon94 Projects
-        create: true
-        fields:
-          - name: slug
-            label: Slug
-            widget: string
           - name: title
             label: Title
             widget: string
-          - name: bio
-            label: Bio
-            widget: textarea
+          - name: slug
+            label: Slug
+            widget: string
           - name: when
             label: Year
             widget: number
-          - name: designers
-            label: Designers
+          - name: projects
+            label: Projects
             widget: list
-          - name: description
-            label: Description
-            widget: textarea
+          - name: tags
+            label: Tags
+            widget: list
+          - name: images
+            label: Images
+            widget: list
+          - name: caption
+            label: Caption
+            widget: string
+          - name: price
+            label: Price
+            widget: string
+  - name: project
+    label: Project
+    folder: site/src/data/projects
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - name: slug
+        label: Slug
+        widget: string
+      - name: title
+        label: Title
+        widget: string
+      - name: bio
+        label: Bio
+        widget: textarea
+      - name: when
+        label: Year
+        widget: number
+      - name: designers
+        label: Designers
+        widget: list
+      - name: description
+        label: Description
+        widget: textarea
   - name: info
     label: Info
-    files:
-      - name: salon94
-        label: Salon94
-        file: site/src/data/info.yml
-        description: Salon94 Basic Info
-        create: true
-        fields:
-          - name: email
-            label: Email
-            widget: string
-          - name: instagram
-            label: Instagram
-            widget: string
-          - name: facebook
-            label: Facebook
-            widget: string
-          - name: twitter
-            label: Twitter
-            widget: string
-          - name: mailingList
-            label: Mailing List
-            widget: string
-          - name: aboutText
-            label: About Us
-            widget: textarea
+    folder: site/src/data/info
+    create: false
+    fields:
+      - name: email
+        label: Email
+        widget: string
+      - name: instagram
+        label: Instagram
+        widget: string
+      - name: facebook
+        label: Facebook
+        widget: string
+      - name: twitter
+        label: Twitter
+        widget: string
+      - name: mailingList
+        label: Mailing List
+        widget: string
+      - name: aboutText
+        label: About Us
+        widget: textarea
