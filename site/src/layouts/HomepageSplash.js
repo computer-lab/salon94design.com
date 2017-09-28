@@ -37,7 +37,7 @@ const SplashImage = styled.img`
 `
 
 const Logo = styled.div`
-  margin: 28px auto 0 auto;
+  margin: 24px auto 36px auto;
   background-image: url(${logoImageUrl});
   background-size: 100% 100%;
   width: 280px;
@@ -90,7 +90,7 @@ class HomepageSplash extends Component {
   }
 
   render() {
-    const imageSrc = '/images/dozie_gloves_homepage.jpg'
+    const imageSrc = '/images/splash_chair.gif'
 
     const onContentClick = () => {
       if (this.state.visible) {
@@ -109,8 +109,8 @@ class HomepageSplash extends Component {
     return (
       <Container className={containerClass}>
         <Content onClick={onContentClick}>
-          <SplashImage src={imageSrc} />
           <Logo />
+          <SplashImage src={imageSrc} />
         </Content>
       </Container>
     )

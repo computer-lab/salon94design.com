@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import { monofont, selectorList, breakpoint1 } from './emotion-base'
-import { pieceTagLink, capitalize } from '../util'
+import { workTagLink, capitalize } from '../util'
 
 const Container = styled.div`
   width: 320px;
@@ -43,11 +43,12 @@ const TagSelector = ({ tags, currentTag }) => {
   tags = tags.concat([
     'Tables',
     'Beds',
-    'Objects',
-    'Jewelry',
     'Outdoor',
     'Lighting',
     'Storage',
+    'Textiles',
+    'Ceramic',
+    'Misc.',
   ])
 
   return (
@@ -60,7 +61,7 @@ const TagSelector = ({ tags, currentTag }) => {
               active: tag === currentTag,
             })}
           >
-            <Link to={pieceTagLink(tag)}>
+            <Link to={workTagLink(tag)}>
               {capitalize(tag)}
             </Link>
           </li>

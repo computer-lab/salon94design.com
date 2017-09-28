@@ -4,7 +4,9 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "babel-plugin-emotion": "^7.3.2",
     "classnames": "^2.2.5",
+    "emotion-server": "^7.3.2",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-emotion": "^1.1.2",
