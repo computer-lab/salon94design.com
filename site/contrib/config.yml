@@ -3,7 +3,6 @@ backend:
   repo: computer-lab/salon94design.com
   branch: master
 
-publish_mode: editorial_workflow
 media_folder: site/src/assets/images
 public_folder: site/public/static
 
