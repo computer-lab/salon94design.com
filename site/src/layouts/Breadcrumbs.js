@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 
-import { baseUl, monofont } from './emotion-base'
+import { baseUl, monofont, breakpoint3 } from './emotion-base'
 import { capitalize } from '../util'
 
 const Container = styled.div`
@@ -16,7 +16,11 @@ const Container = styled.div`
 const BreadcrumbList = styled.ul`
   composes: ${baseUl}, ${monofont};
   display: flex;
-  font-size: 9px;
+  font-size: 12px;
+
+  @media (${breakpoint3}) {
+    font-size: 10px;
+  }
 `
 
 const Breadcrumb = styled.li`

@@ -6,8 +6,9 @@ import styled from 'emotion/react'
 import { PageContainer, createPanes } from '../layouts/containers'
 import { sansfont, monofont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../layouts/TagSelector'
+import { tagCategory } from '../util'
 
-const { LeftPane, RightPane } = createPanes('470px')
+const { LeftPane, RightPane } = createPanes()
 
 const Instructions = styled.div`
   composes: ${sansfont};
@@ -19,15 +20,14 @@ const Instructions = styled.div`
   }
 `
 
-export default function Pieces({ data }) {
+export default function Works({ data }) {
   const { allDesignersYaml } = data
 
   const tagSet = new Set()
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   designers.forEach(designer => {
-    designer.pieces.forEach(piece => {
-      piece.tags.forEach(t => tagSet.add(t))
-      tagSet.add(piece.when)
+    designer.works.forEach(work => {
+      work.tags.forEach(t => tagSet.add(tagCategory(t)))
     })
   })
 
@@ -37,10 +37,8 @@ export default function Pieces({ data }) {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Pieces`} />
-      <LeftPane>
-        <Instructions>Select a category to view pieces.</Instructions>
-      </LeftPane>
+      <Helmet title={`Salon 94 Design - Works`} />
+      <LeftPane />
       <RightPane>
         <TagSelector tags={tags} />
       </RightPane>
@@ -49,13 +47,13 @@ export default function Pieces({ data }) {
 }
 
 export const pageQuery = graphql`
-  query PiecesQuery {
+  query WorksQuery {
     allDesignersYaml {
       edges {
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             when

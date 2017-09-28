@@ -23,8 +23,8 @@ collections:
       - name: bio
         label: Bio
         widget: text
-      - name: pieces
-        label: Pieces
+      - name: works
+        label: Works
         widget: list
         fields:
           - name: title

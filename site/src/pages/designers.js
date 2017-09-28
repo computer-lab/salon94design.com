@@ -5,7 +5,7 @@ import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../layouts/SectionItemList'
-import { pieceImagePath, designerLink, choice } from '../util'
+import { workImagePath, designerLink, choice } from '../util'
 
 export default function Projects({ data }) {
   const { allDesignersYaml } = data
@@ -13,11 +13,11 @@ export default function Projects({ data }) {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
 
   const listItems = designers.map(designer => {
-    const image = choice(designer.pieces).images[0]
+    const image = choice(designer.works).images[0]
 
     return {
       title: designer.name,
-      image: pieceImagePath(image),
+      image: workImagePath(image),
       link: designerLink(designer.slug),
     }
   })
@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          pieces {
+          works {
             slug
             title
             images

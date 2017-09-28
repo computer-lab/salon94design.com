@@ -17,6 +17,7 @@ import Press from '../layouts/Press'
 
 const Container = styled.div`
   composes: ${sansfont};
+  font-weight: 300;
 
   & a {
     color: inherit;
@@ -58,7 +59,10 @@ const SectionText = styled.p`
   }
 `
 
-const SectionList = styled.ul`composes: ${baseUl}, ${sectionContent};`
+const SectionList = styled.ul`
+  composes: ${baseUl}, ${sectionContent};
+  font-weight: 400;
+`
 
 const SectionListItem = styled.li`
   composes: ${childLink};
@@ -87,19 +91,11 @@ const Info = ({ data }) => {
   const {
     aboutText,
     email,
+    phone,
     instagram,
-    facebook,
-    twitter,
     mailingList,
     press,
   } = allInfoYaml.edges[0].node
-
-  const contactItems = [
-    { name: 'Email', link: `mailto:${email}` },
-    { name: 'Instagram', link: instagram },
-    { name: 'Facebook', link: facebook },
-    { name: 'Twitter', link: twitter },
-  ]
 
   return (
     <Container>
@@ -122,13 +118,23 @@ const Info = ({ data }) => {
         <Section>
           <Header2>Contact</Header2>
           <SectionList>
-            {contactItems.map(item =>
-              <SectionListItem key={item.name}>
-                <a href={item.link} target="_blank">
-                  {item.name}
-                </a>
-              </SectionListItem>
-            )}
+            <SectionListItem>
+              <a href={instagram} target="_blank">
+                Instagram
+              </a>
+            </SectionListItem>
+            <SectionListItem>
+              Phone:{' '}
+              <a href={`tel:${phone}`} target="_blank">
+                {phone}
+              </a>
+            </SectionListItem>
+            <SectionListItem>
+              Email:{' '}
+              <a href={`mailto:${email}`} target="_blank">
+                {email}
+              </a>
+            </SectionListItem>
           </SectionList>
           <MailingListSignup>
             <a href={mailingList}>Sign Up For Mailing List</a>
@@ -148,9 +154,8 @@ export const pageQuery = graphql`
         node {
           aboutText
           email
+          phone
           instagram
-          facebook
-          twitter
           mailingList
           press {
             link

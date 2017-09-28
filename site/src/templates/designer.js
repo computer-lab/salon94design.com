@@ -18,8 +18,8 @@ import DesignerProjects from '../layouts/DesignerProjects'
 import Press from '../layouts/Press'
 import ImageList from '../layouts/ImageList'
 import HoverInfo from '../layouts/HoverInfo'
-import PieceSummary from '../layouts/PieceSummary'
-import { pieceImagePath, pieceImageTexts, designerLink } from '../util'
+import WorkSummary from '../layouts/WorkSummary'
+import { workImagePath, workImageTexts, designerLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -65,13 +65,13 @@ export default class DesignerTemplate extends Component {
       .filter(project => project.designers.includes(currentDesignerSlug))
 
     let images = []
-    currentDesigner.pieces.forEach(piece => {
+    currentDesigner.works.forEach(work => {
       images.push({
-        piece,
-        src: pieceImagePath(piece.images[0]),
-        texts: pieceImageTexts({
+        work,
+        src: workImagePath(work.images[0]),
+        texts: workImageTexts({
           designer: currentDesigner,
-          piece,
+          work,
           projects,
         }),
       })
@@ -85,14 +85,14 @@ export default class DesignerTemplate extends Component {
     const imagesByProject = projects.map(project => ({
       project,
       images: images.filter(image =>
-        image.piece.projects.includes(project.slug)
+        image.work.projects.includes(project.slug)
       ),
     }))
 
-    // include pieces w/o project
+    // include works w/o project
     imagesByProject.push({
       project: null,
-      images: images.filter(image => image.piece.projects.length === 0),
+      images: images.filter(image => image.work.projects.length === 0),
     })
 
     let imageSets = imagesByProject
@@ -140,7 +140,7 @@ export default class DesignerTemplate extends Component {
           />
           {hoverImage &&
             <HoverInfo>
-              <PieceSummary piece={hoverImage.piece} />
+              <WorkSummary work={hoverImage.work} />
             </HoverInfo>}
         </RightPane>
       </PageContainer>
@@ -169,7 +169,7 @@ export const pageQuery = graphql`
             title
             link
           }
-          pieces {
+          works {
             slug
             title
             when
