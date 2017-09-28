@@ -25,6 +25,6 @@ module.exports = {
         plugins: [],
       },
     },
-    `gatsby-transformer-yaml`,
+    `gatsby-transformer-yaml-netlify`,
   ],
 }

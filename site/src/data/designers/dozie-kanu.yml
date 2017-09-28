@@ -1,0 +1,17 @@
+slug: dozie-kanu
+name: Dozie Kanu
+bio:
+  <p>Dozie Kanu is a designer.</p>
+press:
+    -
+      title: NYTimes - Press Coverage of Design
+      link: https://google.com
+pieces:
+  -
+    title: Blue Chair
+    slug: blue-chair
+    when: 2016
+    projects: []
+    tags: [chairs]
+    images: ['rick-owens/shirt1']
+    price: $2,500
