@@ -2,7 +2,7 @@ general:
   build_dir: site/
 machine:
   node:
-    version: 6.11.2
+    version: 8.6.0
 dependencies:
   override:
     - npm i
