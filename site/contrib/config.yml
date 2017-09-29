@@ -22,7 +22,7 @@ collections:
         widget: string
       - name: bio
         label: Bio
-        widget: text
+        widget: markdown
       - name: works
         label: Works
         widget: list
