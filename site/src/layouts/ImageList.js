@@ -57,22 +57,31 @@ const ImageContainer = styled.div`
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
   display: inline-block;
+  max-width: 144px;
 
   & img {
     margin: 0;
     padding: 0;
-    max-width: 144px;
+    max-width: 100%;
     max-height: 144px;
     cursor: pointer;
   }
 
-  &.expanded {
-    padding-right: 20px;
+  &.with-small-text {
+    max-width: 204px;
 
     & img {
-      max-width: 100%;
-      max-height: 100%;
+      max-height: 204px;
+    }
+  }
+
+  &.expanded {
+    padding-right: 20px;
+    max-width: none;
+
+    & img {
       cursor: default;
+      max-height: 100%;
     }
   }
 
@@ -125,7 +134,6 @@ const ImageTextContainer = styled.div`
 const ImageText = styled.div`
   composes: ${childLink};
   text-align: left;
-  width: 50%;
   min-width: 50%;
   font-size: 20px;
   font-weight: 300;
@@ -334,6 +342,10 @@ class ImageList extends Component {
                   />
                 )
 
+                const imageItemClass = cx({
+                  expanded: isExpanded,
+                  'with-small-text': texts && texts.smallText,
+                })
                 const textContainerClass = cx({
                   expanded: isExpanded,
                   compact: !isExpanded,
@@ -345,7 +357,7 @@ class ImageList extends Component {
                     key={`image-${i}`}
                   >
                     <ImageItem
-                      className={cx({ expanded: isExpanded })}
+                      className={imageItemClass}
                       onClick={() => this.onImageClick(setIndex, i)}
                     >
                       {isExpanded || !unexpandedLink
