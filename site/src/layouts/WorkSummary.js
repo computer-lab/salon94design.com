@@ -18,6 +18,7 @@ import { designerLink, workTagLink, projectLink, capitalize } from '../util'
 const Container = styled.div`
   composes: ${sansfont};
   font-weight: 300;
+  max-width: 400px;
 
   &.detailed {
     margin-bottom: 20px;
@@ -108,50 +109,42 @@ const SummaryItem = styled.div`
   }
 `
 
-const WorkSummary = ({ designer, work, detailed, projects }) =>
+const WorkSummary = ({ designer, work, detailed, projects }) => (
   <Container className={cx({ detailed })}>
     <PrimaryInfo>
-      {designer &&
+      {designer && (
         <SummaryItem className="designer">
-          <Link to={designerLink(designer.slug)}>
-            {designer.name}
-          </Link>
-        </SummaryItem>}
-      <Title>
-        {work.title}
-      </Title>
-      <When>
-        {work.when}
-      </When>
+          <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+        </SummaryItem>
+      )}
+      <Title>{work.title}</Title>
+      <When>{work.when}</When>
     </PrimaryInfo>
     <Details>
-      <SummaryItem>
-        {work.price}
-      </SummaryItem>
-      {work.caption &&
-        <SummaryItem>
-          {work.caption}
-        </SummaryItem>}
+      <SummaryItem>{work.medium}</SummaryItem>
+      <SummaryItem>{work.dimensions}</SummaryItem>
+      <SummaryItem>{work.price}</SummaryItem>
+      <SummaryItem>{work.caption}</SummaryItem>
       {projects &&
-        work.projects.map(slug =>
+        work.projects.map(slug => (
           <SummaryItem key={slug} className="project">
             <Link to={projectLink(slug)}>
               {projects.find(p => p.slug === slug).title}
             </Link>
           </SummaryItem>
-        )}
-      {detailed &&
+        ))}
+      {detailed && (
         <div>
-          {work.tags.map(tag =>
+          {work.tags.map(tag => (
             <SummaryItem key={tag} className="tag">
-              <Link to={workTagLink(tag)}>
-                {capitalize(tag)}
-              </Link>
+              <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
             </SummaryItem>
-          )}
-        </div>}
+          ))}
+        </div>
+      )}
     </Details>
   </Container>
+)
 
 WorkSummary.propTypes = {
   work: PropTypes.object.isRequired,

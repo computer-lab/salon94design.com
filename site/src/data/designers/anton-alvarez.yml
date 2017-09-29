@@ -13,5 +13,9 @@ works:
     when: 2016
     projects: [collective]
     tags: [chairs]
-    images: ['lucas-samaras/gold1']
+    images:
+      -
+        file: 'lucas-samaras-gold1.jpg'
     price: $2,500
+    medium: ''
+    dimensions: ''

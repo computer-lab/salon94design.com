@@ -33,11 +33,11 @@ const ProjectDesigner = styled.span`
   composes: ${childLink};
 
   &:not(:first-child)::before {
-    content: " / ";
+    content: ' / ';
   }
 
   &:last-child::after {
-    content: " ";
+    content: ' ';
   }
 `
 
@@ -95,7 +95,7 @@ export default class ProjectTemplate extends Component {
         workImages.push({
           work,
           designer,
-          src: workImagePath(work.images[0]),
+          src: workImagePath(work.images[0].file),
           texts: workImageTexts({ work, designer }),
         })
       })
@@ -137,16 +137,14 @@ export default class ProjectTemplate extends Component {
             <Header1>
               {currentProject.title}
               <div className="subheader">
-                {currentProject.designers.map(slug =>
+                {currentProject.designers.map(slug => (
                   <ProjectDesigner key={slug}>
                     <Link to={designerLink(slug)}>
                       {getDesigner(slug).name}
                     </Link>
                   </ProjectDesigner>
-                )}
-                <ProjectWhen>
-                  {currentProject.when}
-                </ProjectWhen>
+                ))}
+                <ProjectWhen>{currentProject.when}</ProjectWhen>
               </div>
             </Header1>
             <ProjectDescription dangerouslySetInnerHTML={{ __html: currentProject.description }} />
@@ -156,13 +154,14 @@ export default class ProjectTemplate extends Component {
             sections={selectorSections}
             currentItemLink={projectLink(currentProjectSlug)}
           />
-          {hoverImage &&
+          {hoverImage && (
             <HoverInfo>
               <WorkSummary
                 work={hoverImage.work}
                 designer={hoverImage.designer}
               />
-            </HoverInfo>}
+            </HoverInfo>
+          )}
         </RightPane>
       </PageContainer>
     )
@@ -193,9 +192,13 @@ export const pageQuery = graphql`
             when
             projects
             tags
-            images
+            images {
+              file
+            }
             caption
             price
+            medium
+            dimensions
           }
         }
       }
