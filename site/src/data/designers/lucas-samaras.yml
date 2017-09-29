@@ -13,7 +13,9 @@ works:
     title: Necklace 49
     slug: necklace-49
     when: 1996-1998
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -
@@ -25,7 +27,9 @@ works:
     title: Necklace 44
     slug: necklace-44
     when: 1996-1998
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -
@@ -37,7 +41,9 @@ works:
     title: Necklace 48
     slug: necklace-48
     when: 1996-1998
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -
@@ -49,7 +55,9 @@ works:
     title: Necklace 51
     slug: necklace-51
     when: 1996-1998
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -

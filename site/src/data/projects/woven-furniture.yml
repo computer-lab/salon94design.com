@@ -1,4 +1,6 @@
 slug: woven-furniture
 title: Woven Furniture
 when: '2006-Present'
-designers: [kwangho-lee]
+designers:
+    -
+      slug: kwangho-lee

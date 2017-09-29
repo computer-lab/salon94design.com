@@ -13,7 +13,9 @@ works:
     title: Thermal Spray Dining Table Stainless
     slug: thermal-spray-dining-table-stainless
     when: '2017'
-    projects: [thermal-spray-furniture]
+    projects:
+      -
+        slug: thermal-spray-furniture
     tags: [tables]
     images:
       -
@@ -27,7 +29,9 @@ works:
     title: Thermal Spray Chair Stainless
     slug: thermal-spray-chair-stainless
     when: '2017'
-    projects: [thermal-spray-furniture]
+    projects:
+      -
+        slug: thermal-spray-furniture
     tags: [chairs]
     images:
       -
@@ -39,7 +43,9 @@ works:
     title: Thermal Spray Shelf Bronze
     slug: thermal-spray-shelf-bronze
     when: '2017'
-    projects: [thermal-spray-furniture]
+    projects:
+      -
+        slug: thermal-spray-furniture
     tags: [storage]
     images:
       -
