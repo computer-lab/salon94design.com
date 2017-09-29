@@ -11,7 +11,9 @@ works:
     title: Yellow Chair
     slug: yellow-chair
     when: 2015
-    projects: [man-drill-rock]
+    projects:
+      -
+        slug: man-drill-rock
     tags: [chairs]
     images:
       -

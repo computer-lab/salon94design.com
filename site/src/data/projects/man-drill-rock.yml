@@ -1,4 +1,8 @@
 slug: man-drill-rock
 title: Man, Drill, Rock
 when: 2017
-designers: [max-lamb, gaetano-pesce]
+designers:
+  -
+    slug: max-lamb
+  -
+    slug: gaetano-pesce
