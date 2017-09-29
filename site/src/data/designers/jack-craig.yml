@@ -11,7 +11,9 @@ works:
     title: Red Chair
     slug: red-chair
     when: 2016
-    projects: [collective]
+    projects:
+      -
+       slug: collective
     tags: [chairs]
     images:
       -

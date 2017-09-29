@@ -11,7 +11,9 @@ works:
     title: Yellow Bench
     slug: yellow-bench
     when: 2015
-    projects: [milan-2015]
+    projects:
+      -
+        slug: milan-2015
     tags: [benches]
     images:
       -

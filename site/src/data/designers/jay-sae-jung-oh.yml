@@ -11,7 +11,9 @@ works:
     title: Black Bench
     slug: black-bench
     when: 2016
-    projects: [miami-2016]
+    projects:
+      -
+        slug: miami-2016
     tags: [benches]
     images:
       -

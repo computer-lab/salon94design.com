@@ -1,4 +1,8 @@
 slug: basel-2016
 title: Basel 2016
 when: 2016
-designers: [rick-owens, lucas-samaras]
+designers:
+  -
+    slug: rick-owens
+  -
+    slug: lucas-samaras

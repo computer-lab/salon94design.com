@@ -87,7 +87,9 @@ export const pageQuery = graphql`
             slug
             title
             when
-            projects
+            projects {
+              slug
+            }
             tags
             images {
               file
