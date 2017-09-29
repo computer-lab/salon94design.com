@@ -126,10 +126,10 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       <SummaryItem>{work.price}</SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
       {projects &&
-        work.projects.map(slug => (
-          <SummaryItem key={slug} className="project">
-            <Link to={projectLink(slug)}>
-              {projects.find(p => p.slug === slug).title}
+        work.projects.map(project => (
+          <SummaryItem key={project.slug} className="project">
+            <Link to={projectLink(project.slug)}>
+              {projects.find(p => p.slug === project.slug).title}
             </Link>
           </SummaryItem>
         ))}

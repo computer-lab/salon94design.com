@@ -1,6 +1,8 @@
 slug: gold-chicken-wire
 title: Gold Chicken Wire
 when: 1996-1998
-designers: [lucas-samaras]
+designers:
+    -
+      slug: lucas-samaras
 description:
   Lucas Samaras's collection of Cast Gold Chicken Wire Jewelry.

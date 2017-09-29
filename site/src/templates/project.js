@@ -88,7 +88,7 @@ export default class ProjectTemplate extends Component {
     const images = []
     designers.forEach(designer => {
       const works = designer.works.filter(work =>
-        work.projects.includes(currentProjectSlug)
+        work.projects.map(project => project.slug).includes(currentProjectSlug)
       )
 
       works.forEach(work => {
@@ -131,10 +131,10 @@ export default class ProjectTemplate extends Component {
             <Header1>
               {currentProject.title}
               <div className="subheader">
-                {currentProject.designers.map(slug => (
-                  <ProjectDesigner key={slug}>
-                    <Link to={designerLink(slug)}>
-                      {getDesigner(slug).name}
+                {currentProject.designers.map(designer => (
+                  <ProjectDesigner key={designer.slug}>
+                    <Link to={designerLink(designer.slug)}>
+                      {getDesigner(designer.slug).name}
                     </Link>
                   </ProjectDesigner>
                 ))}
@@ -171,7 +171,9 @@ export const pageQuery = graphql`
           title
           description
           when
-          designers
+          designers {
+            slug
+          }
         }
       }
     }
@@ -184,7 +186,9 @@ export const pageQuery = graphql`
             slug
             title
             when
-            projects
+            projects {
+              slug
+            }
             tags
             images {
               file

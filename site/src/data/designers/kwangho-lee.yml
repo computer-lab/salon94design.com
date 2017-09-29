@@ -11,7 +11,9 @@ works:
     title: Silk Bench 1
     slug: silk-bench-1
     when: '2006'
-    projects: [woven-furniture]
+    projects:
+      -
+        slug: woven-furniture
     tags: [benches]
     images:
       -
@@ -25,7 +27,9 @@ works:
     title: Large Nylon Bench
     slug: kwangho-large-nylon-bench
     when: '2006'
-    projects: [woven-furniture]
+    projects:
+      -
+        slug: woven-furniture
     tags: [benches]
     images:
       -
@@ -37,7 +41,9 @@ works:
     title: Small PVC Bench
     slug: kwangho-small-pvc-bench
     when: '2006'
-    projects: [woven-furniture]
+    projects:
+      -
+        slug: woven-furniture
     tags: [benches]
     images:
       -
