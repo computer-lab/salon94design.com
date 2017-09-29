@@ -16,3 +16,5 @@ works:
     images:
       - { file: 'lucas-samaras-gold1.jpg' }
     price: $2,500
+    medium: ''
+    dimensions: ''

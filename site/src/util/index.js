@@ -27,7 +27,8 @@ export const workImageTexts = ({
   projects,
   smallText = false,
 }) => {
-  let data = [work.price, work.when]
+  let data = [work.medium, work.dimensions, work.price, work.when]
+    .filter(item => item && item.length > 0)
   if (projects) {
     data = data.concat(
       work.projects.map(slug => {

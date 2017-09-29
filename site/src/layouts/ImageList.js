@@ -97,7 +97,7 @@ const ImageTextContainer = styled.div`
   composes: ${sansfont};
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   &.compact {
     & .expanded-text {
@@ -126,6 +126,7 @@ const ImageText = styled.div`
   composes: ${childLink};
   text-align: left;
   width: 50%;
+  min-width: 50%;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -158,10 +159,15 @@ const ImageText = styled.div`
     line-height: 24px;
     width: auto;
 
-    &.data-texts,
     &.caption {
-      width: 100%;
+      width: 75%;
       text-align: right;
+    }
+
+    &.data-texts {
+      width: 75%;
+      text-align: right;
+      margin-top: 2px;
     }
   }
 
@@ -169,7 +175,7 @@ const ImageText = styled.div`
     line-height: 24px;
 
     &.primary {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 `
@@ -177,15 +183,15 @@ const ImageText = styled.div`
 const ImageTextData = styled.span`
   display: inline-block;
 
-  &:not(:last-child) {
-    margin-right: 24px;
+  &:not(:first-child) {
+    margin-left: 24px;
 
     @media (${breakpoint1}) {
-      margin-right: 18px;
+      margin-left: 18px;
     }
 
     @media (${breakpoint3}) {
-      margin-right: 10px;
+      margin-left: 10px;
     }
   }
 `

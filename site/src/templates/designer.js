@@ -180,6 +180,8 @@ export const pageQuery = graphql`
             }
             caption
             price
+            medium
+            dimensions
           }
         }
       }
