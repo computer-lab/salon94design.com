@@ -98,13 +98,14 @@ export default class WorksTemplate extends Component {
         </LeftPane>
         <RightPane>
           <TagSelector tags={tags} currentTag={currentCategory} />
-          {hoverImage &&
+          {hoverImage && (
             <HoverInfo>
               <WorkSummary
                 work={hoverImage.work}
                 designer={hoverImage.designer}
               />
-            </HoverInfo>}
+            </HoverInfo>
+          )}
         </RightPane>
       </PageContainer>
     )

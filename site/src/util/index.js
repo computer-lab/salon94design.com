@@ -17,7 +17,10 @@ export const workTagLink = tag => {
 }
 
 export const capitalize = str =>
-  str.split(' ').map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(' ')
+  str
+    .split(' ')
+    .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+    .join(' ')
 
 export const choice = arr => arr[Math.floor(arr.length * Math.random())]
 
