@@ -12,7 +12,9 @@ works:
     title: Gold Anklet
     slug: gold-anklet
     when: 2017
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -
@@ -24,7 +26,9 @@ works:
     title: Gold Necklace
     slug: gold-necklace
     when: 2017
-    projects: [gold-chicken-wire]
+    projects:
+      -
+        slug: gold-chicken-wire
     tags: [jewelry]
     images:
       -

@@ -35,10 +35,10 @@ export const workImageTexts = ({
   )
   if (projects) {
     data = data.concat(
-      work.projects.map(slug => {
-        const project = projects.find(p => p.slug === slug)
+      work.projects.map(workProject => {
+        const project = projects.find(p => p.slug === workProject.slug)
         return (
-          <Link to={projectLink(slug)} key={slug}>
+          <Link to={projectLink(workProject.slug)} key={workProject.slug}>
             {project.title}
           </Link>
         )

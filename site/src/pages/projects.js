@@ -13,7 +13,7 @@ export default function Projects({ data }) {
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const getDesigner = slug => designers.find(d => d.slug === slug)
+  const getDesigner = designer => designers.find(d => d.slug === designer.slug)
 
   const listItems = projects.map(project => {
     const designers = project.designers.map(getDesigner)
@@ -46,7 +46,9 @@ export const pageQuery = graphql`
           title
           description
           when
-          designers
+          designers {
+            slug
+          }
         }
       }
     }
