@@ -14,5 +14,6 @@ works:
     projects: [man-drill-rock]
     tags: [chairs]
     images:
-      - { file: 'rick-owens-shirt2.jpg' }
+      -
+        file: 'rick-owens-shirt2.jpg'
     price: $2,500

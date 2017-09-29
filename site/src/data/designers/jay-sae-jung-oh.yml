@@ -14,5 +14,6 @@ works:
     projects: [miami-2016]
     tags: [benches]
     images:
-      - { file: 'rick-owens-shirt2.jpg' }
+      -
+        file: 'rick-owens-shirt2.jpg'
     price: $2,500

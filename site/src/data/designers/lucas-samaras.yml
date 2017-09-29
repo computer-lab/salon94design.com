@@ -15,7 +15,8 @@ works:
     projects: [gold-chicken-wire]
     tags: [jewelry]
     images:
-      - { file: 'lucas-samaras-gold1.jpg' }
+      -
+        file: 'lucas-samaras-gold1.jpg'
     price: $20,000
   -
     title: Gold Necklace
@@ -24,6 +25,7 @@ works:
     projects: [gold-chicken-wire]
     tags: [jewelry]
     images:
-      - { file: 'lucas-samaras-gold2.jpg' }
+      -
+        file: 'lucas-samaras-gold2.jpg'
     caption: This is a very nice necklace.
     price: $20,000
