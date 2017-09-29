@@ -149,9 +149,7 @@ export default class ProjectTemplate extends Component {
                 </ProjectWhen>
               </div>
             </Header1>
-            <ProjectDescription>
-              {currentProject.description}
-            </ProjectDescription>
+            <ProjectDescription dangerouslySetInnerHTML={{ __html: currentProject.description }} />
           </ProjectHeader>
           <HiddenSelector
             title="All Projects"
