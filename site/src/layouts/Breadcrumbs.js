@@ -53,7 +53,7 @@ const Breadcrumb = styled.li`
 
   &:not(:last-child)::after {
     margin-left: 10px;
-    content: "->";
+    content: '->';
     font-weight: bold;
     color: #000;
   }
@@ -76,18 +76,16 @@ function Breadcrumbs({ location }) {
   return (
     <Container>
       <BreadcrumbList>
-        {breadcrumbs.map(({ name, path }, index) =>
+        {breadcrumbs.map(({ name, path }, index) => (
           <Breadcrumb
             key={index}
             className={cx({
               active: index === breadcrumbs.length - 1,
             })}
           >
-            <Link to={path}>
-              {name}
-            </Link>
+            <Link to={path}>{name}</Link>
           </Breadcrumb>
-        )}
+        ))}
       </BreadcrumbList>
     </Container>
   )

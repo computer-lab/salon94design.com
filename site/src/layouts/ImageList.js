@@ -318,12 +318,9 @@ class ImageList extends Component {
       <section>
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
-        {imageSets.map(({ images, title }, setIndex) =>
+        {imageSets.map(({ images, title }, setIndex) => (
           <ImageSet key={setIndex} className={cx({ unexpandable })}>
-            {title &&
-              <SetTitle>
-                {title}
-              </SetTitle>}
+            {title && <SetTitle>{title}</SetTitle>}
 
             <ImageContainer className={cx({ center: centerImages })}>
               {images.map((image, i) => {
@@ -360,28 +357,27 @@ class ImageList extends Component {
                       className={imageItemClass}
                       onClick={() => this.onImageClick(setIndex, i)}
                     >
-                      {isExpanded || !unexpandedLink
-                        ? img
-                        : <Link to={unexpandedLink}>
-                            {img}
-                          </Link>}
+                      {isExpanded || !unexpandedLink ? (
+                        img
+                      ) : (
+                        <Link to={unexpandedLink}>{img}</Link>
+                      )}
 
-                      {texts &&
+                      {texts && (
                         <ImageTextContainer className={textContainerClass}>
-                          {texts.smallText &&
+                          {texts.smallText && (
                             <ImageText className="small">
                               {texts.smallText}
-                            </ImageText>}
+                            </ImageText>
+                          )}
 
                           <ImageText className="expanded-text left primary">
                             {texts.title}
                           </ImageText>
                           <ImageText className="expanded-text right data-texts">
-                            {texts.data.map(txt =>
-                              <ImageTextData key={txt}>
-                                {txt}
-                              </ImageTextData>
-                            )}
+                            {texts.data.map(txt => (
+                              <ImageTextData key={txt}>{txt}</ImageTextData>
+                            ))}
                           </ImageText>
                           <ImageText className="expanded-text left caption">
                             {texts.caption}
@@ -389,14 +385,15 @@ class ImageList extends Component {
                           <ImageText className="expanded-text right credit">
                             {texts.credit}
                           </ImageText>
-                        </ImageTextContainer>}
+                        </ImageTextContainer>
+                      )}
                     </ImageItem>
                   </Scroll.Element>
                 )
               })}
             </ImageContainer>
           </ImageSet>
-        )}
+        ))}
       </section>
     )
   }
