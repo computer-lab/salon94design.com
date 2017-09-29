@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const currentProject = projects[0]
-  const filterWork = p => p.projects.includes(currentProject.slug)
+  const filterWork = p => p.projects.map(project => project.slug).includes(currentProject.slug)
 
   let images = []
   designers.forEach(designer => {
@@ -72,7 +72,9 @@ export const pageQuery = graphql`
             slug
             title
             when
-            projects
+            projects {
+              slug
+            }
             tags
             images {
               file

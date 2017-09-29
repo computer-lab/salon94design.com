@@ -11,7 +11,9 @@ works:
     title: White Chair
     slug: white-chair
     when: 2015
-    projects: [man-drill-rock]
+    projects:
+      -
+        slug: man-drill-rock
     tags: [chairs]
     images:
       -

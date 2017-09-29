@@ -62,7 +62,7 @@ export default class DesignerTemplate extends Component {
 
     const projects = allProjectsYaml.edges
       .map(edge => edge.node)
-      .filter(project => project.designers.includes(currentDesignerSlug))
+      .filter(project => project.designers.map(designer => designer.slug).includes(currentDesignerSlug))
 
     let images = []
     currentDesigner.works.forEach(work => {
@@ -85,7 +85,7 @@ export default class DesignerTemplate extends Component {
     const imagesByProject = projects.map(project => ({
       project,
       images: images.filter(image =>
-        image.work.projects.includes(project.slug)
+        image.work.projects.map(p => p.slug).includes(project.slug)
       ),
     }))
 
@@ -154,7 +154,9 @@ export const pageQuery = graphql`
         node {
           slug
           title
-          designers
+          designers {
+            slug
+          }
         }
       }
     }
@@ -172,7 +174,9 @@ export const pageQuery = graphql`
             slug
             title
             when
-            projects
+            projects {
+              slug
+            }
             tags
             images {
               file

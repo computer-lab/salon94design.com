@@ -39,6 +39,13 @@ collections:
           - name: projects
             label: Projects
             widget: list
+            fields:
+              - name: project
+                label: Project
+                widget: relation
+                collection: project
+                searchFields: [slug, title]
+                valueField: slug
           - name: tags
             label: Tags
             widget: list
@@ -80,6 +87,13 @@ collections:
       - name: designers
         label: Designers
         widget: list
+        fields:
+          - name: slug
+            label: Designer
+            widget: relation
+            collection: designer
+            searchFields: [slug, name]
+            valueField: slug
       - name: description
         label: Description
         widget: markdown
