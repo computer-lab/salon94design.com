@@ -29,3 +29,5 @@ works:
       -
         file: 'rick-owens-shirt2.jpg'
     price: $20,000
+    medium: ''
+    dimensions: ''

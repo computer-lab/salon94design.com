@@ -107,20 +107,17 @@ function SectionItemList({ title, items }) {
   return (
     <Container>
       <List>
-        {items.map(({ image, alt = '', title, subtitle, link }, i) =>
+        {items.map(({ image, alt = '', title, subtitle, link }, i) => (
           <ListItem key={i}>
             <Link to={link}>
               <img src={image} alt={alt} />
               <ItemTitle>
                 {title}
-                {subtitle &&
-                  <ItemSubtitle>
-                    {subtitle}
-                  </ItemSubtitle>}
+                {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
               </ItemTitle>
             </Link>
           </ListItem>
-        )}
+        ))}
       </List>
     </Container>
   )

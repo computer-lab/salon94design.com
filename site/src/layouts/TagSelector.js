@@ -54,18 +54,16 @@ const TagSelector = ({ tags, currentTag }) => {
   return (
     <Container>
       <TagList>
-        {tags.map(tag =>
+        {tags.map(tag => (
           <li
             key={tag}
             className={cx({
               active: tag === currentTag,
             })}
           >
-            <Link to={workTagLink(tag)}>
-              {capitalize(tag)}
-            </Link>
+            <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
           </li>
-        )}
+        ))}
       </TagList>
     </Container>
   )

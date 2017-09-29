@@ -16,7 +16,7 @@ import {
   tagCategory,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes()
+const { LeftPane, RightPane } = createPanes('320px')
 
 export default class WorksTemplate extends Component {
   constructor(props) {
@@ -98,13 +98,14 @@ export default class WorksTemplate extends Component {
         </LeftPane>
         <RightPane>
           <TagSelector tags={tags} currentTag={currentCategory} />
-          {hoverImage &&
+          {hoverImage && (
             <HoverInfo>
               <WorkSummary
                 work={hoverImage.work}
                 designer={hoverImage.designer}
               />
-            </HoverInfo>}
+            </HoverInfo>
+          )}
         </RightPane>
       </PageContainer>
     )
@@ -137,6 +138,8 @@ export const pageQuery = graphql`
             }
             caption
             price
+            medium
+            dimensions
           }
         }
       }

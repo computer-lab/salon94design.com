@@ -8,9 +8,7 @@ export default function Template({ data }) {
     <div>
       <Helmet title={`Salon 94 Design - ${post.frontmatter.title}`} />
       <div className="blog-post">
-        <h1>
-          {post.frontmatter.title}
-        </h1>
+        <h1>{post.frontmatter.title}</h1>
 
         <div
           className="blog-post-content"

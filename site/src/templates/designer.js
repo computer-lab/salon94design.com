@@ -127,9 +127,7 @@ export default class DesignerTemplate extends Component {
           />
         </LeftPane>
         <RightPane className="selectable">
-          <Header1>
-            {currentDesigner.name}
-          </Header1>
+          <Header1>{currentDesigner.name}</Header1>
           <DesignerBio bio={currentDesigner.bio} />
           <DesignerProjects projects={projects} />
           <Press press={currentDesigner.press} />
@@ -138,10 +136,11 @@ export default class DesignerTemplate extends Component {
             sections={selectorSections}
             currentItemLink={designerLink(currentDesigner.slug)}
           />
-          {hoverImage &&
+          {hoverImage && (
             <HoverInfo>
               <WorkSummary work={hoverImage.work} />
-            </HoverInfo>}
+            </HoverInfo>
+          )}
         </RightPane>
       </PageContainer>
     )
@@ -180,6 +179,8 @@ export const pageQuery = graphql`
             }
             caption
             price
+            medium
+            dimensions
           }
         }
       }
