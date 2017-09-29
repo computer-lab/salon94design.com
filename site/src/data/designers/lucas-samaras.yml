@@ -17,6 +17,8 @@ works:
     images:
       - { file: 'lucas-samaras-gold1.jpg' }
     price: $20,000
+    medium: 'Gold'
+    dimensions: '17" x 13"'
   -
     title: Gold Necklace
     slug: gold-necklace
@@ -27,3 +29,5 @@ works:
       - { file: 'lucas-samaras-gold2.jpg' }
     caption: This is a very nice necklace.
     price: $20,000
+    medium: ''
+    dimensions: ''

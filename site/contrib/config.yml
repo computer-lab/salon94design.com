@@ -55,6 +55,12 @@ collections:
           - name: price
             label: Price
             widget: string
+          - name: medium
+            label: Medium
+            widget: string
+          - name: dimensions
+            label: Dimensions
+            widget: string
   - name: project
     label: Project
     folder: site/src/data/projects
