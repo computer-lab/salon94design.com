@@ -15,7 +15,6 @@ const Bio = styled.div`
 `
 
 const DesignerProjects = ({ bio }) => {
-  // TODO: bio should just be full markdown in the CMS?
   return (
     <Container>
       <Header2>About</Header2>
