@@ -85,14 +85,14 @@ export default class ProjectTemplate extends Component {
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const getDesigner = slug => designers.find(d => d.slug === slug)
 
-    const workImages = []
+    const images = []
     designers.forEach(designer => {
       const works = designer.works.filter(work =>
         work.projects.includes(currentProjectSlug)
       )
 
       works.forEach(work => {
-        workImages.push({
+        images.push({
           work,
           designer,
           src: workImagePath(work.images[0].file),
@@ -100,12 +100,6 @@ export default class ProjectTemplate extends Component {
         })
       })
     })
-
-    const images = []
-    for (let i = 0; i < 10; i++) {
-      // TODO: remove temporary image multiplication
-      workImages.forEach(item => images.push(item))
-    }
 
     const imageSets = [{ images }]
 

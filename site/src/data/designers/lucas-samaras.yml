@@ -1,35 +1,59 @@
 slug: lucas-samaras
 name: Lucas Samaras
 bio:
-  Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.
-  Lucas Samaras is chicken wire. Lucas Samaras is chicken wire. Lucas Samaras is chicken wire.
+  Lucas Samaras is an artist who was born in Kastoria, Greece.
+  He studied at Rutgers University on a scholarship, where he met Allan Kaprow and George Segal.
+  He participated in Kaprow's "Happenings," and posed for Segal's plaster sculptures.
 press:
   -
     title: NYTimes - Press Coverage of Design
     link: https://google.com
 works:
   -
-    title: Gold Anklet
-    slug: gold-anklet
-    when: 2017
+    title: Necklace 49
+    slug: necklace-49
+    when: 1996-1998
     projects: [gold-chicken-wire]
     tags: [jewelry]
     images:
       -
-        file: 'lucas-samaras-gold1.jpg'
-    price: $20,000
-    medium: 'Gold'
-    dimensions: '17" x 13"'
+        file: 'lucas-samaras-necklace-49.jpg'
+    price: $38,000
+    medium: 22 Karat gold
+    dimensions: 13.2 ounces
   -
-    title: Gold Necklace
-    slug: gold-necklace
-    when: 2017
+    title: Necklace 44
+    slug: necklace-44
+    when: 1996-1998
     projects: [gold-chicken-wire]
     tags: [jewelry]
     images:
       -
-        file: 'lucas-samaras-gold2.jpg'
-    caption: This is a very nice necklace.
-    price: $20,000
-    medium: ''
+        file: 'lucas-samaras-necklace-44.jpg'
+    price: $38,000
+    medium: 22 Karat gold
     dimensions: ''
+  -
+    title: Necklace 48
+    slug: necklace-48
+    when: 1996-1998
+    projects: [gold-chicken-wire]
+    tags: [jewelry]
+    images:
+      -
+        file: 'lucas-samaras-necklace-48.jpg'
+    price: $36,000
+    medium: 22 Karat gold
+    dimensions: 11.2 ounces
+  -
+    title: Necklace 51
+    slug: necklace-51
+    when: 1996-1998
+    projects: [gold-chicken-wire]
+    tags: [jewelry]
+    images:
+      -
+        file: 'lucas-samaras-necklace-51.jpg'
+    price: $36,000
+    medium: 22 Karat gold
+    dimensions: 11.1 ounces

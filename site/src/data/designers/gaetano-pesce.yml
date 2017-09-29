@@ -10,8 +10,8 @@ works:
   -
     title: White Chair
     slug: white-chair
-    when: 2015
-    projects: [man-drill-rock]
+    when: '2015'
+    projects: []
     tags: [chairs]
     images:
       -

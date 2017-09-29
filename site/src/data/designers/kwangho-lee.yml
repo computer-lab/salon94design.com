@@ -1,21 +1,49 @@
 slug: kwangho-lee
 name: Kwangho Lee
 bio:
-  Kwangho Lee is a designer.
+  Kwangho Lee lives and works in Seoul, South Korea, having received his BA in 2007 from Hongik University, majoring in Metal Art & Design. Inspired by a childhood growing up on a farm with his grandparents, Lee uses humble materials and traditional techniques in innovative ways, whether his tables made from bundled rice straw or novel interpretations of weaving processes. He has developed a way of knitting industrial materials to create lamps from tangles of extension cords, as well as a series of couches and stools made from woven garden hoses, PVC, leather and silk, titled Obsession.
 press:
     -
       title: NYTimes - Press Coverage of Design
       link: https://google.com
 works:
   -
-    title: Blue Bench
-    slug: blue-bench
-    when: 2016
-    projects: [miami-2016]
+    title: Silk Bench 1
+    slug: silk-bench-1
+    when: '2006'
+    projects: [woven-furniture]
     tags: [benches]
     images:
       -
-        file: 'lucas-samaras-gold2.jpg'
-    price: $2,500
-    medium: ''
-    dimensions: ''
+        file: 'kwangho-silk-bench-1.jpg'
+      -
+        file: 'kwangho-silk-bench-1-detail.jpg'
+    price: $25,000
+    medium: 'Silk'
+    dimensions: '5-10 feet long (1.5-3 m long)'
+  -
+    title: Large Nylon Bench
+    slug: kwangho-large-nylon-bench
+    when: '2006'
+    projects: [woven-furniture]
+    tags: [benches]
+    images:
+      -
+        file: 'kwangho-large-nylon-bench.jpg'
+    price: $28,000
+    medium: 'Nylon'
+    dimensions: '15-20 feet long (4.5-6 m long)'
+  -
+    title: Small PVC Bench
+    slug: kwangho-small-pvc-bench
+    when: '2006'
+    projects: [woven-furniture]
+    tags: [benches]
+    images:
+      -
+        file: 'kwangho-small-pvc-bench.jpg'
+      -
+        file: 'kwangho-small-pvc-bench-detail.jpg'
+    price: $15,000-20,000
+    medium: 'PVC'
+    dimensions: 'Up to 8 feet (up to 2.4 m)'

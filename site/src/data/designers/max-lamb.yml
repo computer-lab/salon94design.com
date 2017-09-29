@@ -1,21 +1,51 @@
 slug: max-lamb
 name: Max Lamb
 bio:
-  Max Lamb is a designer.
+  Max Lamb is a British designer who combines traditional - if not prehistoric - design methods with digital design.
+  He is known for employing highly unusual approaches to using natural materials,
+  including pouring pewter onto sand, and volcanic rock.
 press:
     -
       title: NYTimes - Press Coverage of Design
       link: https://google.com
 works:
   -
-    title: Yellow Chair
-    slug: yellow-chair
-    when: 2015
-    projects: [man-drill-rock]
+    title: Thermal Spray Dining Table Stainless
+    slug: thermal-spray-dining-table-stainless
+    when: '2017'
+    projects: [thermal-spray-furniture]
+    tags: [tables]
+    images:
+      -
+        file: 'max-lamb-thermal-spray-dining-table-1.jpg'
+      -
+        file: 'max-lamb-thermal-spray-dining-table-2.jpg'
+    price: $65,000
+    medium: 'Polystyrene and stainless steel'
+    dimensions: '29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)'
+  -
+    title: Thermal Spray Chair Stainless
+    slug: thermal-spray-chair-stainless
+    when: '2017'
+    projects: [thermal-spray-furniture]
     tags: [chairs]
     images:
       -
-        file: 'rick-owens-shirt2.jpg'
-    price: $2,500
-    medium: ''
-    dimensions: ''
+        file: 'max-lamb-thermal-spray-chair-stainless.jpg'
+    price: $30,000
+    medium: 'Polystyrene and stainless steel'
+    dimensions: '38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)'
+  -
+    title: Thermal Spray Shelf Bronze
+    slug: thermal-spray-shelf-bronze
+    when: '2017'
+    projects: [thermal-spray-furniture]
+    tags: [storage]
+    images:
+      -
+        file: 'max-lamb-thermal-spray-shelf-bronze.jpg'
+      -
+        file: 'max-lamb-thermal-spray-shelf-bronze-detail.jpg'
+    price: $65,000
+    medium: 'Polystyrene and bronze'
+    dimensions: '64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)'
