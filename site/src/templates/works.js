@@ -16,7 +16,7 @@ import {
   tagCategory,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes()
+const { LeftPane, RightPane } = createPanes('320px')
 
 export default class WorksTemplate extends Component {
   constructor(props) {
