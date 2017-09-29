@@ -4,7 +4,7 @@ import { breakpoint2 } from './emotion-base'
 
 export const LOGO_ASPECT_RATIO = 2048 / 884
 export const getLogoHeight = width => width / LOGO_ASPECT_RATIO
-export const logoImageUrl = require('../assets/images/logo/logo_2048.jpg')
+export const logoImageUrl = require('../assets/images/logo_2048.jpg')
 
 // dynamic sizing via `width` prop
 const Logo = styled.div`

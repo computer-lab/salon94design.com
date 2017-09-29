@@ -45,6 +45,10 @@ collections:
           - name: images
             label: Images
             widget: list
+            fields:
+              - name: file
+                label: File
+                widget: image
           - name: caption
             label: Caption
             widget: string

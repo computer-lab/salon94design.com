@@ -17,7 +17,7 @@ export default function Projects({ data }) {
 
     return {
       title: designer.name,
-      image: workImagePath(image),
+      image: workImagePath(image.file),
       link: designerLink(designer.slug),
     }
   })
@@ -42,7 +42,9 @@ export const pageQuery = graphql`
           works {
             slug
             title
-            images
+            images {
+              file
+            }
           }
         }
       }

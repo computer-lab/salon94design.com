@@ -68,7 +68,7 @@ export default class DesignerTemplate extends Component {
     currentDesigner.works.forEach(work => {
       images.push({
         work,
-        src: workImagePath(work.images[0]),
+        src: workImagePath(work.images[0].file),
         texts: workImageTexts({
           designer: currentDesigner,
           work,
@@ -175,7 +175,9 @@ export const pageQuery = graphql`
             when
             projects
             tags
-            images
+            images {
+              file
+            }
             caption
             price
           }

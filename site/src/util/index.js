@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { tagCategory } from './tag'
 export * from './tag'
 
-export const workImagePath = name => require(`../assets/images/${name}.jpg`)
+export const workImagePath = name => require(`../assets/images/${name}`)
 
 export const designerLink = slug => `/designers/${slug}`
 

@@ -18,9 +18,9 @@ const IndexPage = ({ data }) => {
   let images = []
   designers.forEach(designer => {
     designer.works.filter(filterWork).forEach(work => {
-      work.images.forEach(src => {
+      work.images.forEach(image => {
         images.push({
-          src: workImagePath(src),
+          src: workImagePath(image.file),
           unexpandedLink: workLink(designer.slug, work.slug),
         })
       })
@@ -74,7 +74,9 @@ export const pageQuery = graphql`
             when
             projects
             tags
-            images
+            images {
+              file
+            }
             caption
             price
           }

@@ -58,7 +58,9 @@ export const pageQuery = graphql`
             title
             when
             tags
-            images
+            images {
+              file
+            }
           }
         }
       }

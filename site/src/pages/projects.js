@@ -22,7 +22,7 @@ export default function Projects({ data }) {
     return {
       title: project.title,
       subtitle: designers.map(d => d.name).join(' / '),
-      image: workImagePath(image),
+      image: workImagePath(image.file),
       link: projectLink(project.slug),
     }
   })
@@ -58,7 +58,9 @@ export const pageQuery = graphql`
           works {
             slug
             title
-            images
+            images {
+              file
+            }
           }
         }
       }
