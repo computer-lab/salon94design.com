@@ -106,19 +106,18 @@ const Menu = ({ location }) => {
 
   return (
     <Wrapper>
-      {includeLogo &&
+      {includeLogo && (
         <Link to={'/'}>
           <Logo width={120} />
-        </Link>}
+        </Link>
+      )}
 
       <Nav>
-        {navItems.map(item =>
+        {navItems.map(item => (
           <NavItem key={item.name} className={item.className}>
-            <Link to={item.path}>
-              {item.name}
-            </Link>
+            <Link to={item.path}>{item.name}</Link>
           </NavItem>
-        )}
+        ))}
       </Nav>
     </Wrapper>
   )

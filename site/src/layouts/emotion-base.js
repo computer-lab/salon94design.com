@@ -14,13 +14,9 @@ export const baseUl = css`
   list-style: none;
 `
 
-export const monofont = css`
-  font-family: ${monoFontFamily};
-`
+export const monofont = css`font-family: ${monoFontFamily};`
 
-export const sansfont = css`
-  font-family: ${sansFontFamily};
-`
+export const sansfont = css`font-family: ${sansFontFamily};`
 
 export const childLink = css`
   & a {

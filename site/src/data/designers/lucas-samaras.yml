@@ -14,14 +14,22 @@ works:
     when: 2017
     projects: [gold-chicken-wire]
     tags: [jewelry]
-    images: ['lucas-samaras/gold1']
+    images:
+      -
+        file: 'lucas-samaras-gold1.jpg'
     price: $20,000
+    medium: 'Gold'
+    dimensions: '17" x 13"'
   -
     title: Gold Necklace
     slug: gold-necklace
     when: 2017
     projects: [gold-chicken-wire]
     tags: [jewelry]
-    images: ['lucas-samaras/gold2']
+    images:
+      -
+        file: 'lucas-samaras-gold2.jpg'
     caption: This is a very nice necklace.
     price: $20,000
+    medium: ''
+    dimensions: ''

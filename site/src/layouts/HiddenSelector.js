@@ -137,32 +137,24 @@ class HiddenSelector extends Component {
         onMouseEnter={this.onMouseEnter.bind(this)}
         onMouseLeave={this.onMouseLeave.bind(this)}
       >
-        {title &&
-          <SelectorTitle>
-            {title}
-          </SelectorTitle>}
-        {sections.map(({ title, items }, i) =>
+        {title && <SelectorTitle>{title}</SelectorTitle>}
+        {sections.map(({ title, items }, i) => (
           <OptionSection key={i}>
-            {title &&
-              <OptionSectionTitle>
-                {title}
-              </OptionSectionTitle>}
+            {title && <OptionSectionTitle>{title}</OptionSectionTitle>}
             <OptionList>
-              {items.map(item =>
+              {items.map(item => (
                 <li
                   key={item.link}
                   className={cx({
                     active: item.link === currentItemLink,
                   })}
                 >
-                  <Link to={item.link}>
-                    {item.title}
-                  </Link>
+                  <Link to={item.link}>{item.title}</Link>
                 </li>
-              )}
+              ))}
             </OptionList>
           </OptionSection>
-        )}
+        ))}
       </Selector>
     )
   }

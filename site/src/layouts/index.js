@@ -9,7 +9,7 @@ import Breadcrumbs from './Breadcrumbs'
 import HomepageSplash from './HomepageSplash'
 import { ContentContainer } from './containers'
 
-const TemplateWrapper = ({ children, location, history }) =>
+const TemplateWrapper = ({ children, location, history }) => (
   <div>
     <Helmet
       title="Gatsby Default Starter"
@@ -22,10 +22,9 @@ const TemplateWrapper = ({ children, location, history }) =>
     <Breadcrumbs location={location} />
     <HomepageSplash location={location} />
 
-    <ContentContainer>
-      {children()}
-    </ContentContainer>
+    <ContentContainer>{children()}</ContentContainer>
   </div>
+)
 
 TemplateWrapper.propTypes = {
   children: PropTypes.func,

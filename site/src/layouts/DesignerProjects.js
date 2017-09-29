@@ -20,13 +20,11 @@ const DesignerProjects = ({ projects }) => {
     <Container>
       <Header2>Projects</Header2>
       <SimpleLinkList>
-        {projects.map(item =>
+        {projects.map(item => (
           <SimpleLinkListItem key={item.slug}>
-            <Link to={projectLink(item.slug)}>
-              {item.title}
-            </Link>
+            <Link to={projectLink(item.slug)}>{item.title}</Link>
           </SimpleLinkListItem>
-        )}
+        ))}
       </SimpleLinkList>
     </Container>
   )

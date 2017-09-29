@@ -57,22 +57,31 @@ const ImageContainer = styled.div`
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
   display: inline-block;
+  max-width: 144px;
 
   & img {
     margin: 0;
     padding: 0;
-    max-width: 144px;
+    max-width: 100%;
     max-height: 144px;
     cursor: pointer;
   }
 
-  &.expanded {
-    padding-right: 20px;
+  &.with-small-text {
+    max-width: 204px;
 
     & img {
-      max-width: 100%;
-      max-height: 100%;
+      max-height: 204px;
+    }
+  }
+
+  &.expanded {
+    padding-right: 20px;
+    max-width: none;
+
+    & img {
       cursor: default;
+      max-height: 100%;
     }
   }
 
@@ -97,7 +106,7 @@ const ImageTextContainer = styled.div`
   composes: ${sansfont};
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: flex-end;
 
   &.compact {
     & .expanded-text {
@@ -125,7 +134,7 @@ const ImageTextContainer = styled.div`
 const ImageText = styled.div`
   composes: ${childLink};
   text-align: left;
-  width: 50%;
+  min-width: 50%;
   font-size: 20px;
   font-weight: 300;
   line-height: 28px;
@@ -158,10 +167,15 @@ const ImageText = styled.div`
     line-height: 24px;
     width: auto;
 
-    &.data-texts,
     &.caption {
-      width: 100%;
+      width: 75%;
       text-align: right;
+    }
+
+    &.data-texts {
+      width: 75%;
+      text-align: right;
+      margin-top: 2px;
     }
   }
 
@@ -169,7 +183,7 @@ const ImageText = styled.div`
     line-height: 24px;
 
     &.primary {
-      font-size: 18px;
+      font-size: 19px;
     }
   }
 `
@@ -177,15 +191,15 @@ const ImageText = styled.div`
 const ImageTextData = styled.span`
   display: inline-block;
 
-  &:not(:last-child) {
-    margin-right: 24px;
+  &:not(:first-child) {
+    margin-left: 24px;
 
     @media (${breakpoint1}) {
-      margin-right: 18px;
+      margin-left: 18px;
     }
 
     @media (${breakpoint3}) {
-      margin-right: 10px;
+      margin-left: 10px;
     }
   }
 `
@@ -304,12 +318,9 @@ class ImageList extends Component {
       <section>
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
-        {imageSets.map(({ images, title }, setIndex) =>
+        {imageSets.map(({ images, title }, setIndex) => (
           <ImageSet key={setIndex} className={cx({ unexpandable })}>
-            {title &&
-              <SetTitle>
-                {title}
-              </SetTitle>}
+            {title && <SetTitle>{title}</SetTitle>}
 
             <ImageContainer className={cx({ center: centerImages })}>
               {images.map((image, i) => {
@@ -328,6 +339,10 @@ class ImageList extends Component {
                   />
                 )
 
+                const imageItemClass = cx({
+                  expanded: isExpanded,
+                  'with-small-text': texts && texts.smallText,
+                })
                 const textContainerClass = cx({
                   expanded: isExpanded,
                   compact: !isExpanded,
@@ -339,31 +354,30 @@ class ImageList extends Component {
                     key={`image-${i}`}
                   >
                     <ImageItem
-                      className={cx({ expanded: isExpanded })}
+                      className={imageItemClass}
                       onClick={() => this.onImageClick(setIndex, i)}
                     >
-                      {isExpanded || !unexpandedLink
-                        ? img
-                        : <Link to={unexpandedLink}>
-                            {img}
-                          </Link>}
+                      {isExpanded || !unexpandedLink ? (
+                        img
+                      ) : (
+                        <Link to={unexpandedLink}>{img}</Link>
+                      )}
 
-                      {texts &&
+                      {texts && (
                         <ImageTextContainer className={textContainerClass}>
-                          {texts.smallText &&
+                          {texts.smallText && (
                             <ImageText className="small">
                               {texts.smallText}
-                            </ImageText>}
+                            </ImageText>
+                          )}
 
                           <ImageText className="expanded-text left primary">
                             {texts.title}
                           </ImageText>
                           <ImageText className="expanded-text right data-texts">
-                            {texts.data.map(txt =>
-                              <ImageTextData key={txt}>
-                                {txt}
-                              </ImageTextData>
-                            )}
+                            {texts.data.map(txt => (
+                              <ImageTextData key={txt}>{txt}</ImageTextData>
+                            ))}
                           </ImageText>
                           <ImageText className="expanded-text left caption">
                             {texts.caption}
@@ -371,14 +385,15 @@ class ImageList extends Component {
                           <ImageText className="expanded-text right credit">
                             {texts.credit}
                           </ImageText>
-                        </ImageTextContainer>}
+                        </ImageTextContainer>
+                      )}
                     </ImageItem>
                   </Scroll.Element>
                 )
               })}
             </ImageContainer>
           </ImageSet>
-        )}
+        ))}
       </section>
     )
   }

@@ -45,11 +45,21 @@ collections:
           - name: images
             label: Images
             widget: list
+            fields:
+              - name: file
+                label: File
+                widget: image
           - name: caption
             label: Caption
             widget: string
           - name: price
             label: Price
+            widget: string
+          - name: medium
+            label: Medium
+            widget: string
+          - name: dimensions
+            label: Dimensions
             widget: string
   - name: project
     label: Project
