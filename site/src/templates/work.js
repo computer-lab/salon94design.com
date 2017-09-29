@@ -23,8 +23,8 @@ const WorkTemplate = ({ data, pathContext }) => {
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
-  let images = currentWork.images.map(src => ({
-    src: workImagePath(src),
+  let images = currentWork.images.map(image => ({
+    src: workImagePath(image.file),
   }))
 
   // TODO: remove temporary image multiplication
@@ -89,7 +89,9 @@ export const pageQuery = graphql`
             when
             projects
             tags
-            images
+            images {
+              file
+            }
             caption
             price
           }

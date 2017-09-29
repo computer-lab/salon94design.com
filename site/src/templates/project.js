@@ -95,7 +95,7 @@ export default class ProjectTemplate extends Component {
         workImages.push({
           work,
           designer,
-          src: workImagePath(work.images[0]),
+          src: workImagePath(work.images[0].file),
           texts: workImageTexts({ work, designer }),
         })
       })
@@ -195,7 +195,9 @@ export const pageQuery = graphql`
             when
             projects
             tags
-            images
+            images {
+              file
+            }
             caption
             price
           }

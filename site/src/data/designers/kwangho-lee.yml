@@ -13,5 +13,6 @@ works:
     when: 2016
     projects: [miami-2016]
     tags: [benches]
-    images: ['lucas-samaras/gold2']
+    images:
+      - { file: 'lucas-samaras-gold2.jpg' }
     price: $2,500

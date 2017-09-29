@@ -13,5 +13,6 @@ works:
     when: 2015
     projects: [milan-2015]
     tags: [benches]
-    images: ['lucas-samaras/gold1']
+    images:
+      - { file: 'lucas-samaras-gold1.jpg' }
     price: $2,500
