@@ -75,7 +75,7 @@ collections:
         widget: list
       - name: description
         label: Description
-        widget: text
+        widget: markdown
   - name: info
     label: Info
     folder: site/src/data/info
@@ -99,4 +99,4 @@ collections:
         widget: string
       - name: aboutText
         label: About Us
-        widget: text
+        widget: markdown
