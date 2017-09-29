@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
-  const currentProject = projects[0]
+  const currentProject = projects.find(p => p.slug === 'gold-chicken-wire')
   const filterWork = p => p.projects.includes(currentProject.slug)
 
   let images = []
@@ -26,11 +26,6 @@ const IndexPage = ({ data }) => {
       })
     })
   })
-
-  // TODO: remove temporary image multiplication
-  for (let i = 0; i < 5; i++) {
-    images = images.concat(images)
-  }
 
   // randomize image order
   images.sort(() => Math.random() - 0.5)

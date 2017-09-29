@@ -10,8 +10,8 @@ works:
   -
     title: Red Chair
     slug: red-chair
-    when: 2016
-    projects: [collective]
+    when: '2016'
+    projects: []
     tags: [chairs]
     images:
       -

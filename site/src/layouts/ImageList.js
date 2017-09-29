@@ -75,13 +75,18 @@ const ImageItem = styled.div`
     }
   }
 
+  &.compact img {
+    display: block;
+    margin: 0 auto;
+  }
+
   &.expanded {
     padding-right: 20px;
     max-width: none;
 
     & img {
       cursor: default;
-      max-height: 100%;
+      max-height: 90vh;
     }
   }
 
@@ -109,6 +114,7 @@ const ImageTextContainer = styled.div`
   justify-content: flex-end;
 
   &.compact {
+    margin-top: 6px;
     & .expanded-text {
       display: none;
     }
@@ -341,6 +347,7 @@ class ImageList extends Component {
 
                 const imageItemClass = cx({
                   expanded: isExpanded,
+                  compact: !isExpanded,
                   'with-small-text': texts && texts.smallText,
                 })
                 const textContainerClass = cx({

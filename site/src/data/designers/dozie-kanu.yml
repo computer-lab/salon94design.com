@@ -10,7 +10,7 @@ works:
   -
     title: Blue Chair
     slug: blue-chair
-    when: 2016
+    when: '2016'
     projects: []
     tags: [chairs]
     images:

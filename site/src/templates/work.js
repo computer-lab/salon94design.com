@@ -27,11 +27,6 @@ const WorkTemplate = ({ data, pathContext }) => {
     src: workImagePath(image.file),
   }))
 
-  // TODO: remove temporary image multiplication
-  for (let i = 0; i < 1; i++) {
-    images = images.concat(images)
-  }
-
   const imageSets = [{ images }]
 
   const selectorItems = works.map(work => ({

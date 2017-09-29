@@ -10,8 +10,8 @@ works:
   -
     title: Yellow Bench
     slug: yellow-bench
-    when: 2015
-    projects: [milan-2015]
+    when: '2015'
+    projects: []
     tags: [benches]
     images:
       -

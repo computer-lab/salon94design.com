@@ -16,6 +16,10 @@ import { projectLink } from '../util'
 const Container = styled.section`margin-top: 20px;`
 
 const DesignerProjects = ({ projects }) => {
+  if (!projects || projects.length === 0) {
+    return null
+  }
+
   return (
     <Container>
       <Header2>Projects</Header2>
