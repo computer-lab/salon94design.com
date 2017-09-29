@@ -19,13 +19,13 @@ const Press = ({ press }) => {
     <Container>
       <Header2>Press</Header2>
       <SimpleLinkList>
-        {press.map(item =>
+        {press.map(item => (
           <SimpleLinkListItem key={item.link}>
             <a href={item.link} target="_blank">
               {item.title}
             </a>
           </SimpleLinkListItem>
-        )}
+        ))}
       </SimpleLinkList>
     </Container>
   )
