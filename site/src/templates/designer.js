@@ -77,11 +77,6 @@ export default class DesignerTemplate extends Component {
       })
     })
 
-    // TODO: remove image multiplication
-    for (let i = 0; i < 3; i++) {
-      images = images.concat(images)
-    }
-
     const imagesByProject = projects.map(project => ({
       project,
       images: images.filter(image =>
@@ -101,11 +96,6 @@ export default class DesignerTemplate extends Component {
         title: project ? project.title : null,
         images,
       }))
-
-    // TODO: remove image set multiplication
-    for (let i = 0; i < 2; i++) {
-      imageSets = imageSets.concat(imageSets.slice(0, 1))
-    }
 
     const selectorItems = designers.map(item => ({
       title: item.name,

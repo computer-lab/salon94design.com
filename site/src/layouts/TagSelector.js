@@ -41,11 +41,9 @@ const TagList = styled.ul`
 const TagSelector = ({ tags, currentTag }) => {
   // TODO: remove temporary tag multiplication
   tags = tags.concat([
-    'Tables',
     'Beds',
     'Outdoor',
     'Lighting',
-    'Storage',
     'Textiles',
     'Ceramic',
     'Misc.',
