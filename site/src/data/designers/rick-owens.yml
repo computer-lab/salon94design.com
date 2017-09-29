@@ -11,10 +11,8 @@ works:
   -
     title: Shirt 1
     slug: shirt-1
-    when: 2017
-    projects:
-      -
-        slug: basel-2016
+    when: '2017'
+    projects: []
     tags: [clothing]
     images:
       -
@@ -24,10 +22,8 @@ works:
   -
     title: Shirt 2
     slug: shirt-2
-    when: 2017
-    projects:
-      -
-        slug: basel-2016
+    when: '2017'
+    projects: []
     tags: [clothing]
     images:
       -

@@ -10,10 +10,8 @@ works:
   -
     title: Black Bench
     slug: black-bench
-    when: 2016
-    projects:
-      -
-        slug: miami-2016
+    when: '2016'
+    projects: []
     tags: [benches]
     images:
       -

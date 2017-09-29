@@ -76,11 +76,6 @@ export default class WorksTemplate extends Component {
       })
     })
 
-    // TODO: remove temporary image multiplication
-    for (let i = 0; i < 3; i++) {
-      images = images.concat(images)
-    }
-
     const imageSets = [{ images }]
     const tags = Array.from(tagSet).sort(
       (a, b) =>

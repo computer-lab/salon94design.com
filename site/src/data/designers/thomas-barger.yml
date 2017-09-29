@@ -10,10 +10,8 @@ works:
   -
     title: Red Bench
     slug: red-bench
-    when: 2016
-    projects:
-      -
-        slug: miami-2016
+    when: '2016'
+    projects: []
     tags: [benches]
     images:
       -
