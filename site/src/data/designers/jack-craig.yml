@@ -14,5 +14,13 @@ works:
     slug: Bronze Stool
     tags:
       - chairs
-    title: Bronze Stool
+    title: 'Bronze Stool, 2016'
     when: '2016'
+  - dimensions: '36 x 15 x 20 inches '
+    images:
+      - file: /site/public/static/Screen Shot 2017-10-02 at 10.14.51 AM.png
+    medium: 'bronze, marble'
+    price: ''
+    slug: large marble table lamp
+    title: 'Large Marble Table Lamp, 2017'
+    when: '2017'
