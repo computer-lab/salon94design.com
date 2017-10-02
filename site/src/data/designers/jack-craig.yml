@@ -22,5 +22,7 @@ works:
     medium: 'bronze, marble'
     price: ''
     slug: large marble table lamp
+    tags:
+      - lamps
     title: 'Large Marble Table Lamp, 2017'
     when: '2017'
