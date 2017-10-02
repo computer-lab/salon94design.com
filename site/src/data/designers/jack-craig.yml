@@ -9,7 +9,7 @@ works:
     images:
       - file: /site/public/static/bronze concrete1.jpg
     medium: ''
-    price: '$2,500'
+    price: ''
     projects: []
     slug: red-chair
     tags:
