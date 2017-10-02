@@ -8,11 +8,11 @@ works:
   - dimensions: ''
     images:
       - file: /site/public/static/bronze concrete1.jpg
-    medium: ''
+    medium: 'bronze, concrete'
     price: ''
     projects: []
-    slug: red-chair
+    slug: Bronze Stool
     tags:
       - chairs
-    title: Red Chair
+    title: Bronze Stool
     when: '2016'
