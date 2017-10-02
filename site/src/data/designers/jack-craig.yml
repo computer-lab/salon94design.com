@@ -1,21 +1,18 @@
 slug: jack-craig
 name: Jack Craig
-bio:
-  Jack Craig is a designer.
+bio: Jack Craig is a designer.
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
 works:
-  -
-    title: Red Chair
-    slug: red-chair
-    when: '2016'
-    projects: []
-    tags: [chairs]
+  - dimensions: ''
     images:
-      -
-        file: 'lucas-samaras-gold2.jpg'
-    price: $2,500
+      - file: /site/public/static/bronze concrete1.jpg
     medium: ''
-    dimensions: ''
+    price: '$2,500'
+    projects: []
+    slug: red-chair
+    tags:
+      - chairs
+    title: Red Chair
+    when: '2016'
