@@ -13,7 +13,7 @@ const IndexPage = ({ data }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const currentProject = projects.find(p => p.slug === 'gold-chicken-wire')
-  const filterWork = p => p.projects.map(project => project.slug).includes(currentProject.slug)
+  const filterWork = work => work.projects && work.projects.map(project => project.slug).includes(currentProject.slug)
 
   let images = []
   designers.forEach(designer => {
