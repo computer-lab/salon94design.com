@@ -7,9 +7,9 @@ press:
 works:
   - dimensions: 70 x 35 x 45
     images:
-      - file: /site/public/static/4F7A0178_1 copy.jpg
-      - file: /site/public/static/4F7A0206_1 copy.jpg
-      - file: /site/public/static/4F7A0246_1 copy.jpg
+      - file: /public/static/4F7A0178_1 copy.jpg
+      - file: /public/static/4F7A0206_1 copy.jpg
+      - file: /public/static/4F7A0246_1 copy.jpg
     medium: 'leather cord, various plastics'
     projects: []
     slug: Savage Series Black Leather Sofa
