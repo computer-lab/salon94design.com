@@ -80,14 +80,14 @@ export default class DesignerTemplate extends Component {
     const imagesByProject = projects.map(project => ({
       project,
       images: images.filter(image =>
-        image.work.projects.map(p => p.slug).includes(project.slug)
+        image.work.projects && image.work.projects.map(p => p.slug).includes(project.slug)
       ),
     }))
 
     // include works w/o project
     imagesByProject.push({
       project: null,
-      images: images.filter(image => image.work.projects.length === 0),
+      images: images.filter(image => image.work.projects && image.work.projects.length === 0),
     })
 
     let imageSets = imagesByProject

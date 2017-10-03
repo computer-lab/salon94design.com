@@ -125,7 +125,7 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       <SummaryItem>{work.dimensions}</SummaryItem>
       <SummaryItem>{work.price}</SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
-      {projects &&
+      {projects && work.projects &&
         work.projects.map(project => (
           <SummaryItem key={project.slug} className="project">
             <Link to={projectLink(project.slug)}>

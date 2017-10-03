@@ -88,7 +88,7 @@ export default class ProjectTemplate extends Component {
     const images = []
     designers.forEach(designer => {
       const works = designer.works.filter(work =>
-        work.projects.map(project => project.slug).includes(currentProjectSlug)
+        work.projects && work.projects.map(project => project.slug).includes(currentProjectSlug)
       )
 
       works.forEach(work => {

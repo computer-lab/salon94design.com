@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { tagCategory } from './tag'
 export * from './tag'
 
-export const workImagePath = name => require(`../assets/images/${name}`)
+export const workImagePath = name => __PATH_PREFIX__ + `/images/${name}`;
 
 export const designerLink = slug => `/designers/${slug}`
 
@@ -33,7 +33,7 @@ export const workImageTexts = ({
   let data = [work.medium, work.dimensions, work.price, work.when].filter(
     item => item && item.length > 0
   )
-  if (projects) {
+  if (projects && work.projects) {
     data = data.concat(
       work.projects.map(workProject => {
         const project = projects.find(p => p.slug === workProject.slug)
