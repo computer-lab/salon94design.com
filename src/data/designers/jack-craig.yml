@@ -14,7 +14,7 @@ press:
 works:
   - dimensions: ''
     images:
-      - file: /site/public/static/bronze concrete1.jpg
+      - file: /public/static/bronze concrete1.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -25,7 +25,7 @@ works:
     when: '2016'
   - dimensions: '36 x 15 x 20 inches '
     images:
-      - file: /site/public/static/Screen Shot 2017-10-02 at 10.14.51 AM.png
+      - file: /public/static/Screen Shot 2017-10-02 at 10.14.51 AM.png
     medium: 'bronze, marble'
     price: ''
     slug: large marble table lamp
