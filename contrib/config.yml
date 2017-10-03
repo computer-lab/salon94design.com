@@ -3,13 +3,13 @@ backend:
   repo: computer-lab/salon94design.com
   branch: master
 
-media_folder: site/static/images
-public_folder: site/public/static
+media_folder: static/images
+public_folder: public/static
 
 collections:
   - name: designer
     label: Designer
-    folder: site/src/data/designers
+    folder: src/data/designers
     create: true
     slug: "{{slug}}"
     format: yaml
@@ -70,7 +70,7 @@ collections:
             widget: string
   - name: project
     label: Project
-    folder: site/src/data/projects
+    folder: src/data/projects
     create: true
     slug: "{{slug}}"
     format: yaml
@@ -99,7 +99,7 @@ collections:
         widget: markdown
   - name: info
     label: Info
-    folder: site/src/data/info
+    folder: src/data/info
     create: false
     format: yaml
     fields:
