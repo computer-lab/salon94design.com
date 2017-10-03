@@ -1,10 +1,12 @@
+const path = require('path');
+
 import React from 'react'
 import Link from 'gatsby-link'
 
 import { tagCategory } from './tag'
 export * from './tag'
 
-export const workImagePath = name => __PATH_PREFIX__ + `/images/${name}`;
+export const workImagePath = name => __PATH_PREFIX__ + `/images/${path.basename(name)}`;
 
 export const designerLink = slug => `/designers/${slug}`
 
