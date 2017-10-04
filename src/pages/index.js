@@ -13,12 +13,15 @@ const IndexPage = ({ data }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const currentProject = projects.find(p => p.slug === 'gold-chicken-wire')
-  const filterWork = work => work.projects && work.projects.map(project => project.slug).includes(currentProject.slug)
+  const filterWork = work =>
+    work.projects &&
+    work.projects.map(project => project.slug).includes(currentProject.slug)
 
   let images = []
   designers.forEach(designer => {
-    designer.works.filter(filterWork).forEach(work => {
-      work.images.forEach(image => {
+    const works = (designer.works || []).filter(filterWork)
+    works.forEach(work => {
+      ;(work.images || []).forEach(image => {
         images.push({
           src: workImagePath(image.file),
           unexpandedLink: workLink(designer.slug, work.slug),

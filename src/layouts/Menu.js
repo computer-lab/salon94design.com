@@ -102,7 +102,7 @@ const Menu = ({ location }) => {
     className: cx({ active: location.pathname.includes(item.path) }),
   }))
 
-  const includeLogo = true // location.pathname === '/'
+  const includeLogo = true
 
   return (
     <Wrapper>

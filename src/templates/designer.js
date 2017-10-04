@@ -62,11 +62,16 @@ export default class DesignerTemplate extends Component {
 
     const projects = allProjectsYaml.edges
       .map(edge => edge.node)
-      .filter(project => project.designers.map(designer => designer.slug).includes(currentDesignerSlug))
+      .filter(project =>
+        (project.designers || [])
+          .map(designer => designer.slug)
+          .includes(currentDesignerSlug)
+      )
 
-    let images = []
-    currentDesigner.works.forEach(work => {
-      images.push({
+    const works = currentDesigner.works || []
+    const images = works
+      .filter(work => work.images && work.images.length > 0)
+      .map(work => ({
         work,
         src: workImagePath(work.images[0].file),
         texts: workImageTexts({
@@ -74,20 +79,23 @@ export default class DesignerTemplate extends Component {
           work,
           projects,
         }),
-      })
-    })
+      }))
 
     const imagesByProject = projects.map(project => ({
       project,
-      images: images.filter(image =>
-        image.work.projects && image.work.projects.map(p => p.slug).includes(project.slug)
+      images: images.filter(
+        image =>
+          image.work.projects &&
+          image.work.projects.map(p => p.slug).includes(project.slug)
       ),
     }))
 
     // include works w/o project
     imagesByProject.push({
       project: null,
-      images: images.filter(image => image.work.projects && image.work.projects.length === 0),
+      images: images.filter(
+        image => !image.work.projects || image.work.projects.length === 0
+      ),
     })
 
     let imageSets = imagesByProject

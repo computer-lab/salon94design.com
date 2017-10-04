@@ -87,17 +87,23 @@ export default class ProjectTemplate extends Component {
 
     const images = []
     designers.forEach(designer => {
-      const works = designer.works.filter(work =>
-        work.projects && work.projects.map(project => project.slug).includes(currentProjectSlug)
+      const works = (designer.works || []).filter(
+        work =>
+          work.projects &&
+          work.projects
+            .map(project => project.slug)
+            .includes(currentProjectSlug)
       )
 
       works.forEach(work => {
-        images.push({
-          work,
-          designer,
-          src: workImagePath(work.images[0].file),
-          texts: workImageTexts({ work, designer }),
-        })
+        if (work.images && work.images.length > 0) {
+          images.push({
+            work,
+            designer,
+            src: workImagePath(work.images[0].file),
+            texts: workImageTexts({ work, designer }),
+          })
+        }
       })
     })
 
@@ -115,6 +121,8 @@ export default class ProjectTemplate extends Component {
       })),
     }))
 
+    const currentProjectDesigners = currentProject.designers || []
+
     return (
       <PageContainer>
         <Helmet
@@ -131,7 +139,7 @@ export default class ProjectTemplate extends Component {
             <Header1>
               {currentProject.title}
               <div className="subheader">
-                {currentProject.designers.map(designer => (
+                {currentProjectDesigners.map(designer => (
                   <ProjectDesigner key={designer.slug}>
                     <Link to={designerLink(designer.slug)}>
                       {getDesigner(designer.slug).name}
@@ -141,7 +149,9 @@ export default class ProjectTemplate extends Component {
                 <ProjectWhen>{currentProject.when}</ProjectWhen>
               </div>
             </Header1>
-            <ProjectDescription dangerouslySetInnerHTML={{ __html: currentProject.description }} />
+            <ProjectDescription
+              dangerouslySetInnerHTML={{ __html: currentProject.description }}
+            />
           </ProjectHeader>
           <HiddenSelector
             title="All Projects"
