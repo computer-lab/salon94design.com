@@ -12,7 +12,7 @@ import { ContentContainer } from './containers'
 const TemplateWrapper = ({ children, location, history }) => (
   <div>
     <Helmet
-      title="Gatsby Default Starter"
+      title="Salon 94 Design"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
