@@ -350,7 +350,9 @@ class ImageList extends Component {
                   />
                 )
 
-                const scrollElementClass = isExpanded ? scrollElementExpanded : null
+                const scrollElementClass = isExpanded
+                  ? scrollElementExpanded
+                  : null
                 const imageItemClass = cx({
                   expanded: isExpanded,
                   compact: !isExpanded,
