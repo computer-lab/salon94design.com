@@ -54,10 +54,15 @@ const ImageContainer = styled.div`
   }
 `
 
+const scrollElementExpanded = css`
+  width: 100%;
+`
+
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
   display: inline-block;
   max-width: 144px;
+  text-align: center;
 
   & img {
     margin: 0;
@@ -75,18 +80,15 @@ const ImageItem = styled.div`
     }
   }
 
-  &.compact img {
-    display: block;
-    margin: 0 auto;
-  }
-
   &.expanded {
+    display: table;
     padding-right: 20px;
     max-width: none;
 
     & img {
       cursor: default;
-      max-height: 90vh;
+      max-width: 100%;
+      max-height: calc(100vh - 200px);
     }
   }
 
@@ -107,20 +109,19 @@ const ImageItem = styled.div`
   }
 `
 
-const ImageTextContainer = styled.div`
+const ImageTextWrapper = styled.div`
   composes: ${sansfont};
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
 
   &.compact {
-    margin-top: 6px;
     & .expanded-text {
       display: none;
     }
   }
 
   &.expanded {
+    display: table-caption;
+    caption-side: bottom;
+    padding: 0 20px 0 0;
     & .small {
       display: none;
     }
@@ -137,6 +138,13 @@ const ImageTextContainer = styled.div`
   }
 `
 
+const ImageTextContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  text-align: left;
+`
+
 const ImageText = styled.div`
   composes: ${childLink};
   text-align: left;
@@ -151,15 +159,12 @@ const ImageText = styled.div`
 
   &.primary {
     font-size: 24px;
-    order: -3;
+    width: 50%;
+    margin-bottom: 4px;
   }
 
   &.credit {
-    order: -2;
-  }
-
-  &.caption {
-    order: -1;
+    width: 50%;
   }
 
   &.small {
@@ -345,6 +350,7 @@ class ImageList extends Component {
                   />
                 )
 
+                const scrollElementClass = isExpanded ? scrollElementExpanded : null
                 const imageItemClass = cx({
                   expanded: isExpanded,
                   compact: !isExpanded,
@@ -359,6 +365,7 @@ class ImageList extends Component {
                   <Scroll.Element
                     name={`set-${setIndex}-image-${i}`}
                     key={`image-${i}`}
+                    className={scrollElementClass}
                   >
                     <ImageItem
                       className={imageItemClass}
@@ -371,28 +378,30 @@ class ImageList extends Component {
                       )}
 
                       {texts && (
-                        <ImageTextContainer className={textContainerClass}>
-                          {texts.smallText && (
-                            <ImageText className="small">
-                              {texts.smallText}
-                            </ImageText>
-                          )}
+                        <ImageTextWrapper className={textContainerClass}>
+                          <ImageTextContainer>
+                            {texts.smallText && (
+                              <ImageText className="small">
+                                {texts.smallText}
+                              </ImageText>
+                            )}
 
-                          <ImageText className="expanded-text left primary">
-                            {texts.title}
-                          </ImageText>
-                          <ImageText className="expanded-text right data-texts">
-                            {texts.data.map(txt => (
-                              <ImageTextData key={txt}>{txt}</ImageTextData>
-                            ))}
-                          </ImageText>
-                          <ImageText className="expanded-text left caption">
-                            {texts.caption}
-                          </ImageText>
-                          <ImageText className="expanded-text right credit">
-                            {texts.credit}
-                          </ImageText>
-                        </ImageTextContainer>
+                            <ImageText className="expanded-text left primary">
+                              {texts.title}
+                            </ImageText>
+                            <ImageText className="expanded-text right credit">
+                              {texts.credit}
+                            </ImageText>
+                            <ImageText className="expanded-text left caption">
+                              {texts.caption}
+                            </ImageText>
+                            <ImageText className="expanded-text right data-texts">
+                              {texts.data.map(txt => (
+                                <ImageTextData key={txt}>{txt}</ImageTextData>
+                              ))}
+                            </ImageText>
+                          </ImageTextContainer>
+                        </ImageTextWrapper>
                       )}
                     </ImageItem>
                   </Scroll.Element>
