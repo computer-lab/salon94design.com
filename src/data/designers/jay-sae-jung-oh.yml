@@ -1,0 +1,21 @@
+slug: jay-sae-jung-oh
+name: Jay Sae Jung Oh
+bio: "Jae Say Jung Oh describes her interests as lying\nat the intersection of art and design, particularly as reconciling the two\nideas is an ongoing challenge for her. “I am always trying to combine them\nwithout losing the essence of each field,” she says. Oh was trained in\nsculpture and 3D design, and has worked with the artist Gaetano Pesce on\nprojects including furniture installations and product design. Her best-known\nproject, “Savage,” is comprised of a series of functional seating units and\nside tables. The earliest of these were made using mundane, mass-produced\nobjects affixed together with epoxy and adhesive, after which the entire volume\nwas wrapped with jute string. Each takes about four months to complete. In the\nnewer iteration of “Savage,” Oh produces the objects in leather.\n\n\_\n\n\_\n\n\_\n\n\_"
+press:
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
+works:
+  - dimensions: 70 x 35 x 45
+    images:
+      - file: /public/static/4F7A0178_1 copy.jpg
+      - file: /public/static/4F7A0206_1 copy.jpg
+      - file: /public/static/4F7A0246_1 copy.jpg
+    medium: 'leather cord, various plastics'
+    projects: []
+    slug: Savage Series Black Leather Sofa
+    tags:
+      - seating
+      - leather
+      - ''
+    title: 'Savage Series Black Leather Sofa, 2016'
+    when: '2016'
