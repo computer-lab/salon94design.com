@@ -97,6 +97,9 @@ collections:
       - name: description
         label: Description
         widget: markdown
+      - name: homepage
+        label: Show on Homepage
+        widget: boolean
   - name: info
     label: Info
     folder: src/data/info
