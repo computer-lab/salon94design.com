@@ -1,0 +1,53 @@
+slug: kwangho-lee
+name: Kwangho Lee
+bio: >-
+  Kwangho Lee lives and works in Seoul, South Korea, having received his BA in
+  2007 from Hongik University, majoring in Metal Art & Design. Inspired by a
+  childhood growing up on a farm with his grandparents, Lee uses humble
+  materials and traditional techniques in innovative ways, whether his tables
+  made from bundled rice straw or novel interpretations of weaving processes. He
+  has developed a way of knitting industrial materials to create lamps from
+  tangles of extension cords, as well as a series of couches and stools made
+  from woven garden hoses, PVC, leather and silk, titled Obsession.
+press:
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
+works:
+  - dimensions: 5-10 feet long (1.5-3 m long)
+    images:
+      - file: kwangho-silk-bench-1.jpg
+      - file: kwangho-silk-bench-1-detail.jpg
+    medium: Silk
+    price: ''
+    projects:
+      - slug: woven-furniture
+    slug: silk-bench-1
+    tags:
+      - benches
+    title: Silk Bench 1
+    when: '2006'
+  - dimensions: 15-20 feet long (4.5-6 m long)
+    images:
+      - file: kwangho-large-nylon-bench.jpg
+    medium: Nylon
+    price: '$28,000'
+    projects:
+      - slug: woven-furniture
+    slug: kwangho-large-nylon-bench
+    tags:
+      - benches
+    title: Large Nylon Bench
+    when: '2006'
+  - dimensions: Up to 8 feet (up to 2.4 m)
+    images:
+      - file: kwangho-small-pvc-bench.jpg
+      - file: kwangho-small-pvc-bench-detail.jpg
+    medium: PVC
+    price: '$15,000-20,000'
+    projects:
+      - slug: woven-furniture
+    slug: kwangho-small-pvc-bench
+    tags:
+      - benches
+    title: Small PVC Bench
+    when: '2006'
