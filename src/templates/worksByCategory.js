@@ -13,10 +13,10 @@ import {
   workImagePath,
   workImageTexts,
   categoryTags,
-  tagCategory,
+  getAllTags,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('320px')
+const { LeftPane, RightPane } = createPanes('370px')
 
 export default class WorksTemplate extends Component {
   constructor(props) {
@@ -43,8 +43,12 @@ export default class WorksTemplate extends Component {
 
     const designers = allDesignersYaml.edges.map(edge => edge.node)
     const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const filterWork = p => {
-      let tags = p.tags.concat(p.when)
+    const filterWork = w => {
+      if (!w.images || w.images.length === 0) {
+        return false
+      }
+
+      let tags = (w.tags || []).concat(w.when)
       for (let i = 0; i < currentTags.length; i++) {
         if (tags.includes(currentTags[i])) {
           return true
@@ -54,33 +58,27 @@ export default class WorksTemplate extends Component {
       return false
     }
 
-    let images = []
-    const tagSet = new Set()
-    designers.forEach(designer => {
-      designer.works.forEach(work => {
-        work.tags.forEach(t => tagSet.add(tagCategory(t)))
+    const tags = getAllTags(designers)
 
-        if (filterWork(work)) {
-          images.push({
-            work,
+    const images = []
+    designers.forEach(designer => {
+      const works = (designer.works || []).filter(filterWork)
+      works.forEach(work => {
+        images.push({
+          work,
+          designer,
+          src: workImagePath(work.images[0].file),
+          texts: workImageTexts({
             designer,
-            src: workImagePath(work.images[0].file),
-            texts: workImageTexts({
-              designer,
-              work,
-              projects,
-              smallText: true,
-            }),
-          })
-        }
+            work,
+            projects,
+            smallText: true,
+          }),
+        })
       })
     })
 
     const imageSets = [{ images }]
-    const tags = Array.from(tagSet).sort(
-      (a, b) =>
-        Number(a) && Number(b) ? b.localeCompare(a) : a.localeCompare(b)
-    )
 
     return (
       <PageContainer>

@@ -23,7 +23,7 @@ const WorkTemplate = ({ data, pathContext }) => {
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
-  let images = currentWork.images.map(image => ({
+  const images = (currentWork.images || []).map(image => ({
     src: workImagePath(image.file),
   }))
 

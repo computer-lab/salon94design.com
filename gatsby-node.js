@@ -3,7 +3,7 @@ const { tagCategory } = require('./src/util/tag')
 
 exports.createPages = props => {
   return Promise.all([
-    createBlogPosts(props),
+    // createBlogPosts(props),
     createProjects(props),
     createDesigners(props),
     createWorks(props),
@@ -15,25 +15,27 @@ function createBlogPosts({ boundActionCreators, graphql }) {
 
   const postTemplate = path.resolve(`src/templates/post.js`)
 
-  return graphql(`{
-    allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] }
-      limit: 1000
-    ) {
-      edges {
-        node {
-          excerpt(pruneLength: 250)
-          html
-          id
-          frontmatter {
-            date
-            path
-            title
+  return graphql(`
+    {
+      allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        limit: 1000
+      ) {
+        edges {
+          node {
+            excerpt(pruneLength: 250)
+            html
+            id
+            frontmatter {
+              date
+              path
+              title
+            }
           }
         }
       }
     }
-  }`).then(result => {
+  `).then(result => {
     if (result.errors) return Promise.reject(result.errors)
 
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
@@ -51,18 +53,18 @@ function createProjects({ boundActionCreators, graphql }) {
 
   const template = path.resolve(`src/templates/project.js`)
 
-  return graphql(`{
-    allProjectsYaml(
-      sort: { order: DESC, fields: [when] }
-    ) {
-      edges {
-        node {
-          slug
-          when
+  return graphql(`
+    {
+      allProjectsYaml(sort: { order: DESC, fields: [when] }) {
+        edges {
+          node {
+            slug
+            when
+          }
         }
       }
     }
-  }`).then(result => {
+  `).then(result => {
     if (result.errors) return Promise.reject(result.errors)
 
     const projects = result.data.allProjectsYaml.edges.map(e => e.node)
@@ -82,18 +84,18 @@ function createDesigners({ boundActionCreators, graphql }) {
 
   const template = path.resolve(`src/templates/designer.js`)
 
-  return graphql(`{
-    allDesignersYaml(
-      sort: { order: ASC, fields: [name] }
-    ) {
-      edges {
-        node {
-          slug
-          name
+  return graphql(`
+    {
+      allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+        edges {
+          node {
+            slug
+            name
+          }
         }
       }
     }
-  }`).then(result => {
+  `).then(result => {
     if (result.errors) return Promise.reject(result.errors)
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
@@ -111,23 +113,27 @@ function createDesigners({ boundActionCreators, graphql }) {
 function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const worksTemplate = path.resolve(`src/templates/works.js`)
+  const worksByCategoryTemplate = path.resolve(
+    `src/templates/worksByCategory.js`
+  )
   const workTemplate = path.resolve(`src/templates/work.js`)
 
-  return graphql(`{
-    allDesignersYaml{
-      edges {
-        node {
-          slug
-          works {
+  return graphql(`
+    {
+      allDesignersYaml {
+        edges {
+          node {
             slug
-            tags
-            when
+            works {
+              slug
+              tags
+              when
+            }
           }
         }
       }
     }
-  }`).then(result => {
+  `).then(result => {
     if (result.errors) return Promise.reject(result.errors)
 
     const designers = result.data.allDesignersYaml.edges.map(e => e.node)
@@ -149,7 +155,7 @@ function createWorks({ boundActionCreators, graphql }) {
     categories.forEach(category => {
       createPage({
         path: `/works/${category}`,
-        component: worksTemplate,
+        component: worksByCategoryTemplate,
         context: { currentCategory: category },
       })
     })

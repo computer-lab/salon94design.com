@@ -7,7 +7,7 @@ import { monofont, selectorList, breakpoint1 } from './emotion-base'
 import { workTagLink, capitalize } from '../util'
 
 const Container = styled.div`
-  width: 320px;
+  width: 370px;
   padding: 24px 20px;
   border: 2px solid #000;
 
@@ -40,14 +40,7 @@ const TagList = styled.ul`
 
 const TagSelector = ({ tags, currentTag }) => {
   // TODO: remove temporary tag multiplication
-  tags = tags.concat([
-    'Beds',
-    'Outdoor',
-    'Lighting',
-    'Textiles',
-    'Ceramic',
-    'Misc.',
-  ])
+  tags = tags.concat(['Beds', 'Outdoor', 'Lighting', 'Textiles', 'Ceramic'])
 
   return (
     <Container>

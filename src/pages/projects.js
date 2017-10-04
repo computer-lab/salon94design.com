@@ -5,7 +5,7 @@ import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../layouts/SectionItemList'
-import { workImagePath, projectLink, choice } from '../util'
+import { chooseProjectImage, projectLink } from '../util'
 
 export default function Projects({ data }) {
   const { allProjectsYaml, allDesignersYaml } = data
@@ -16,13 +16,12 @@ export default function Projects({ data }) {
   const getDesigner = designer => designers.find(d => d.slug === designer.slug)
 
   const listItems = projects.map(project => {
-    const designers = project.designers.map(getDesigner)
-    const image = choice(designers[0].works).images[0]
+    const designers = (project.designers || []).map(getDesigner)
 
     return {
       title: project.title,
       subtitle: designers.map(d => d.name).join(' / '),
-      image: workImagePath(image.file),
+      image: chooseProjectImage(project, designers),
       link: projectLink(project.slug),
     }
   })

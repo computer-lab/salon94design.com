@@ -125,7 +125,8 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       <SummaryItem>{work.dimensions}</SummaryItem>
       <SummaryItem>{work.price}</SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
-      {projects && work.projects &&
+      {projects &&
+        work.projects &&
         work.projects.map(project => (
           <SummaryItem key={project.slug} className="project">
             <Link to={projectLink(project.slug)}>
@@ -135,11 +136,12 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
         ))}
       {detailed && (
         <div>
-          {work.tags.map(tag => (
-            <SummaryItem key={tag} className="tag">
-              <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
-            </SummaryItem>
-          ))}
+          {work.tags &&
+            work.tags.map(tag => (
+              <SummaryItem key={tag} className="tag">
+                <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
+              </SummaryItem>
+            ))}
         </div>
       )}
     </Details>

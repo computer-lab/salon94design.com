@@ -12,9 +12,15 @@ import {
 } from './emotion-base'
 import { projectLink } from '../util'
 
-const Container = styled.section`margin-top: 20px;`
+const Container = styled.section`
+  margin-top: 20px;
+`
 
 const Press = ({ press }) => {
+  if (!press || press.length === 0) {
+    return null
+  }
+
   return (
     <Container>
       <Header2>Press</Header2>
