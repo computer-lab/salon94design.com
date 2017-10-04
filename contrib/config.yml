@@ -109,11 +109,8 @@ collections:
       - name: instagram
         label: Instagram
         widget: string
-      - name: facebook
-        label: Facebook
-        widget: string
-      - name: twitter
-        label: Twitter
+      - name: phone
+        label: Phone
         widget: string
       - name: mailingList
         label: Mailing List
@@ -121,3 +118,13 @@ collections:
       - name: aboutText
         label: About Us
         widget: markdown
+      - name: press
+        label: Press
+        widget: list
+        fields:
+          - name: link
+            label: Link
+            widget: string
+          - name: title
+            label: Title
+            widget: string
