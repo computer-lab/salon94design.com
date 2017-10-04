@@ -41,7 +41,9 @@ const Section = styled.section`
   }
 `
 
-const AboutWrapper = styled.div`margin-bottom: 40px;`
+const AboutWrapper = styled.div`
+  margin-bottom: 40px;
+`
 
 const sectionContent = css`
   margin: 0;
