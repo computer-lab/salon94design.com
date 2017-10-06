@@ -1,57 +1,49 @@
 slug: max-lamb
 name: Max Lamb
-bio:
-  Max Lamb is a British designer who combines traditional - if not prehistoric - design methods with digital design.
-  He is known for employing highly unusual approaches to using natural materials,
-  including pouring pewter onto sand, and volcanic rock.
+bio: >-
+  Max Lamb is a British designer who combines traditional - if not prehistoric -
+  design methods with digital design. He is known for employing highly unusual
+  approaches to using natural materials, including pouring pewter onto sand, and
+  volcanic rock.
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
 works:
-  -
-    title: Thermal Spray Dining Table Stainless
+  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+    images:
+      - file: max-lamb-thermal-spray-dining-table-1.jpg
+      - file: max-lamb-thermal-spray-dining-table-2.jpg
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
     slug: thermal-spray-dining-table-stainless
+    tags:
+      - tables
+    title: Thermal Spray Dining Table Stainless
     when: '2017'
-    projects:
-      -
-        slug: thermal-spray-furniture
-    tags: [tables]
+  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
-      -
-        file: 'max-lamb-thermal-spray-dining-table-1.jpg'
-      -
-        file: 'max-lamb-thermal-spray-dining-table-2.jpg'
-    price: $65,000
-    medium: 'Polystyrene and stainless steel'
-    dimensions: '29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)'
-  -
-    title: Thermal Spray Chair Stainless
+      - file: max-lamb-thermal-spray-chair-stainless.jpg
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
     slug: thermal-spray-chair-stainless
+    tags:
+      - chairs
+    title: Thermal Spray Chair Stainless
     when: '2017'
-    projects:
-      -
-        slug: thermal-spray-furniture
-    tags: [chairs]
+  - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
     images:
-      -
-        file: 'max-lamb-thermal-spray-chair-stainless.jpg'
-    price: $30,000
-    medium: 'Polystyrene and stainless steel'
-    dimensions: '38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)'
-  -
-    title: Thermal Spray Shelf Bronze
+      - file: max-lamb-thermal-spray-shelf-bronze.jpg
+      - file: max-lamb-thermal-spray-shelf-bronze-detail.jpg
+    medium: Polystyrene and bronze
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
     slug: thermal-spray-shelf-bronze
+    tags:
+      - storage
+    title: Thermal Spray Shelf Bronze
     when: '2017'
-    projects:
-      -
-        slug: thermal-spray-furniture
-    tags: [storage]
-    images:
-      -
-        file: 'max-lamb-thermal-spray-shelf-bronze.jpg'
-      -
-        file: 'max-lamb-thermal-spray-shelf-bronze-detail.jpg'
-    price: $65,000
-    medium: 'Polystyrene and bronze'
-    dimensions: '64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)'
