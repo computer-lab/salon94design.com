@@ -1,21 +1,12 @@
 slug: dozie-kanu
 name: Dozie Kanu
-bio:
-  Dozie Kanu is a designer.
+bio: |-
+  Born in 1993, the Houston native effortlessly floats between
+  design, hip-hop, and fashion's various microcosms. At home in the post-Tumblr
+  world of design, Kanu is driven by a predilection for subverting norms, an
+  insatiable urge to create, and a love of melding street culture with design
+  sensibilities.
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
-works:
-  -
-    title: Blue Chair
-    slug: blue-chair
-    when: '2016'
-    projects: []
-    tags: [chairs]
-    images:
-      -
-        file: 'rick-owens-shirt1.jpg'
-    price: $2,500
-    medium: ''
-    dimensions: ''
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
+works: []
