@@ -1,7 +1,15 @@
 slug: woven-furniture
 title: Woven Furniture
-when: '2006-Present'
-homepage: true
+when: 2006-Present
 designers:
-    -
-      slug: kwangho-lee
+  - slug: kwangho-lee
+description: |
+  Kwangho Lee lives and works in Seoul, South Korea, having received his BA in
+  2007 from Hongik University, majoring in Metal Art & Design. Inspired by a
+  childhood growing up on a farm with his grandparents, Lee uses humble
+  materials and traditional techniques in innovative ways, whether his tables
+  made from bundled rice straw or novel interpretations of weaving processes.
+  He has developed a way of knitting industrial materials to create lamps from
+  tangles of extension cords, as well as a series of couches and stools made
+  from woven garden hoses, PVC, leather and silk, titled *Obsession*.
+homepage: false
