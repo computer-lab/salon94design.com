@@ -9,4 +9,13 @@ bio: |-
 press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
-works: []
+works:
+  - dimensions: 20.5 x 18 x 100 inches
+    images:
+      - file: /public/static/20170501-LeverHouse-081.jpg
+    medium: 'poured concrete, steel '
+    slug: bench on 84s
+    tags:
+      - seating
+    title: Bench on 84s
+    when: '2017'
