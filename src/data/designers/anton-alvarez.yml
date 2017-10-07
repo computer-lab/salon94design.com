@@ -13,6 +13,9 @@ works:
     when: '2016'
     projects: []
     tags: [chairs]
+    video:
+      vimeoId: '125737181'
+      caption: Anton Alvarez Timelapse
     images:
       -
         file: 'lucas-samaras-gold1.jpg'

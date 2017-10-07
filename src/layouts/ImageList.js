@@ -94,6 +94,12 @@ const ImageItem = styled.div`
     }
   }
 
+  @media (${breakpoint1}) {
+    &.expanded {
+      margin: 0 0 20px 0;
+    }
+  }
+
   @media (${breakpoint3}) {
     margin: 0 0 20px 0;
 
@@ -220,6 +226,7 @@ const ImageTextData = styled.span`
 const ExpansionButton = styled.button`
   composes: ${monofont};
   position: fixed;
+  z-index: 10;
   right: 50px;
   bottom: 50px;
   cursor: pointer;
@@ -335,6 +342,8 @@ class ImageList extends Component {
     } = this.props
     const { isExpanded, hoverImage } = this.state
 
+    const hoverInfoClass = cx({ hidden: !hoverImage || !hoverImageRenderer })
+
     return (
       <section>
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
@@ -425,10 +434,9 @@ class ImageList extends Component {
           </ImageSet>
         ))}
 
-        {hoverImage &&
-          hoverImageRenderer && (
-            <HoverInfo>{hoverImageRenderer(hoverImage)}</HoverInfo>
-          )}
+        <HoverInfo className={hoverInfoClass}>
+          {hoverImage && hoverImageRenderer && hoverImageRenderer(hoverImage)}
+        </HoverInfo>
       </section>
     )
   }

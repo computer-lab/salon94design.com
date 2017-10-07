@@ -22,13 +22,10 @@ const Container = styled.div`
 
   &.detailed {
     margin-bottom: 20px;
+    max-width: none;
 
     @media (${breakpoint1}) {
       display: flex;
-    }
-
-    @media (${breakpoint2}) {
-      display: space-between;
     }
 
     @media (${breakpoint3}) {

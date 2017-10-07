@@ -6,6 +6,7 @@ import styled from 'emotion/react'
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
+import Video from '../layouts/Video'
 import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import { workImagePath, workLink } from '../util'
@@ -42,6 +43,7 @@ const WorkTemplate = ({ data, pathContext }) => {
         title={`Salon 94 Design - ${currentDesigner.name} Works - ${currentWork.title}`}
       />
       <LeftPane>
+        {currentWork.video && <Video video={currentWork.video} />}
         <ImageList imageSets={imageSets} alwaysExpand={true} />
       </LeftPane>
       <RightPane className="selectable">
@@ -86,6 +88,10 @@ export const pageQuery = graphql`
               slug
             }
             tags
+            video {
+              vimeoId
+              caption
+            }
             images {
               file
             }
