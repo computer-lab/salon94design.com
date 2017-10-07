@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
@@ -7,103 +7,93 @@ import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
 import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
-import HoverInfo from '../layouts/HoverInfo'
 import WorkSummary from '../layouts/WorkSummary'
 import {
   workImagePath,
   workImageTexts,
+  workLink,
+  designerLink,
   categoryTags,
   getAllTags,
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-export default class WorksTemplate extends Component {
-  constructor(props) {
-    super(props)
 
-    this.imageHoverHandler = this.imageHoverHandler.bind(this)
+const WorksTemplate = ({ data, pathContext }) => {
+  const { allProjectsYaml, allDesignersYaml } = data
+  const { currentCategory } = pathContext
 
-    this.state = {
-      hoverImage: null,
-    }
-  }
+  const currentTags = categoryTags(currentCategory)
 
-  imageHoverHandler(hoverImage) {
-    this.setState({ hoverImage: hoverImage || null })
-  }
-
-  render() {
-    const { data, pathContext } = this.props
-    const { allProjectsYaml, allDesignersYaml } = data
-    const { currentCategory } = pathContext
-    const { hoverImage } = this.state
-
-    const currentTags = categoryTags(currentCategory)
-
-    const designers = allDesignersYaml.edges.map(edge => edge.node)
-    const projects = allProjectsYaml.edges.map(edge => edge.node)
-    const filterWork = w => {
-      if (!w.images || w.images.length === 0) {
-        return false
-      }
-
-      let tags = (w.tags || []).concat(w.when)
-      for (let i = 0; i < currentTags.length; i++) {
-        if (tags.includes(currentTags[i])) {
-          return true
-        }
-      }
-
+  const designers = allDesignersYaml.edges.map(edge => edge.node)
+  const projects = allProjectsYaml.edges.map(edge => edge.node)
+  const filterWork = w => {
+    if (!w.images || w.images.length === 0) {
       return false
     }
 
-    const tags = getAllTags(designers)
+    let tags = (w.tags || []).concat(w.when)
+    for (let i = 0; i < currentTags.length; i++) {
+      if (tags.includes(currentTags[i])) {
+        return true
+      }
+    }
 
-    const images = []
-    designers.forEach(designer => {
-      const works = (designer.works || []).filter(filterWork)
-      works.forEach(work => {
-        images.push({
-          work,
+    return false
+  }
+
+  const tags = getAllTags(designers)
+
+  const images = []
+  designers.forEach(designer => {
+    const works = (designer.works || []).filter(filterWork)
+    works.forEach(work => {
+      images.push({
+        work,
+        designer,
+        src: workImagePath(work.images[0].file),
+        texts: workImageTexts({
           designer,
-          src: workImagePath(work.images[0].file),
-          texts: workImageTexts({
-            designer,
-            work,
-            projects,
-            smallText: true,
-          }),
-        })
+          work,
+          projects,
+          smallText: (
+            <div>
+              <Link to={workLink(designer.slug, work.slug)}>{work.title} </Link>
+              – <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+              , {work.when}
+            </div>
+          ),
+        }),
       })
     })
+  })
 
-    const imageSets = [{ images }]
+  const imageSets = [{ images }]
 
-    return (
-      <PageContainer>
-        <Helmet title={`Salon 94 Design - Works - ${currentCategory}`} />
-        <LeftPane>
-          <ImageList
-            imageSets={imageSets}
-            onImageHover={this.imageHoverHandler}
-          />
-        </LeftPane>
-        <RightPane>
-          <TagSelector tags={tags} currentTag={currentCategory} />
-          {hoverImage && (
-            <HoverInfo>
-              <WorkSummary
-                work={hoverImage.work}
-                designer={hoverImage.designer}
-              />
-            </HoverInfo>
-          )}
-        </RightPane>
-      </PageContainer>
-    )
-  }
+  const hoverImageRenderer = (hoverImage) =>
+    <WorkSummary
+      work={hoverImage.work}
+      designer={hoverImage.designer}
+    />
+
+  return (
+    <PageContainer>
+      <Helmet title={`Salon 94 Design - Works - ${currentCategory}`} />
+      <LeftPane>
+        <ImageList
+          imageSets={imageSets}
+          hoverImageRenderer={hoverImageRenderer}
+        />
+      </LeftPane>
+      <RightPane>
+        <TagSelector tags={tags} currentTag={currentCategory} />
+      </RightPane>
+    </PageContainer>
+  )
 }
+
+export default WorksTemplate
 
 export const pageQuery = graphql`
   query WorksTemplateQuery {

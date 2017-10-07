@@ -5,6 +5,7 @@ import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
+import WorkSummary from '../layouts/WorkSummary'
 import { workImagePath, workLink } from '../util'
 
 const IndexPage = ({ data }) => {
@@ -32,6 +33,7 @@ const IndexPage = ({ data }) => {
         images.push({
           src: workImagePath(work.images[0].file),
           unexpandedLink: workLink(designer.slug, work.slug),
+          designer, work,
         })
       }
     })
@@ -42,6 +44,12 @@ const IndexPage = ({ data }) => {
 
   const imageSets = [{ images }]
 
+  const hoverImageRenderer = (hoverImage) =>
+    <WorkSummary
+      work={hoverImage.work}
+      designer={hoverImage.designer}
+    />
+
   return (
     <PageContainer>
       <Helmet title={`Salon 94 Design`} />
@@ -50,6 +58,7 @@ const IndexPage = ({ data }) => {
           imageSets={imageSets}
           unexpandable={true}
           centerImages={true}
+          hoverImageRenderer={hoverImageRenderer}
         />
       </div>
     </PageContainer>
@@ -87,6 +96,8 @@ export const pageQuery = graphql`
             }
             caption
             price
+            medium
+            dimensions
           }
         }
       }
