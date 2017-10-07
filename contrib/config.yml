@@ -66,6 +66,16 @@ collections:
               - name: file
                 label: File
                 widget: image
+          - name: video
+            label: Video
+            widget: object
+            fields:
+              - vimeoId: id
+                label: Vimeo ID
+                widget: string
+              - name: caption
+                label: Caption
+                widget: string
           - name: caption
             label: Caption
             widget: string
@@ -107,6 +117,16 @@ collections:
       - name: description
         label: Description
         widget: markdown
+      - name: video
+        label: Video
+        widget: object
+        fields:
+          - vimeoId: id
+            label: Vimeo ID
+            widget: string
+          - name: caption
+            label: Caption
+            widget: string
       - name: homepage
         label: Show on Homepage
         widget: boolean
