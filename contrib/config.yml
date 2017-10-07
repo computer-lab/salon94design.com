@@ -70,7 +70,7 @@ collections:
             label: Video
             widget: object
             fields:
-              - vimeoId: id
+              - name: vimeoId
                 label: Vimeo ID
                 widget: string
               - name: caption
@@ -121,7 +121,7 @@ collections:
         label: Video
         widget: object
         fields:
-          - vimeoId: id
+          - name: vimeoId
             label: Vimeo ID
             widget: string
           - name: caption
