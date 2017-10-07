@@ -12,12 +12,16 @@ const HoverInfo = styled.div`
   padding: 6px;
   background: #fff;
   border: 2px solid #000;
+  z-index: 20;
+
+  &.hidden {
+    display: none;
+  }
 
   @media (${breakpoint1}) {
-    right: auto;
-    left: 50%;
-    bottom: 20px;
-    transform: translateX(-50%);
+    right: 0;
+    bottom: auto;
+    top: 120px;
   }
 
   @media (${breakpoint3}) {
