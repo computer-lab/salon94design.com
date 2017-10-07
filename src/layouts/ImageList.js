@@ -13,6 +13,7 @@ import {
   breakpoint2,
   breakpoint3,
 } from './emotion-base'
+import HoverInfo from './HoverInfo'
 
 const ImageSet = styled.div`
   &:not(:last-child) {
@@ -68,15 +69,16 @@ const ImageItem = styled.div`
     margin: 0;
     padding: 0;
     max-width: 100%;
-    max-height: 144px;
+    max-height: 288px;
     cursor: pointer;
   }
 
   &.with-small-text {
-    max-width: 204px;
+    text-align: left;
+    max-width: 172px;
 
     & img {
-      max-height: 204px;
+      max-height: 300px;
     }
   }
 
@@ -241,10 +243,12 @@ class ImageList extends Component {
   constructor(props) {
     super(props)
 
+    this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
 
     this.state = {
       isExpanded: props.alwaysExpand ? true : false,
+      hoverImage: null,
     }
   }
 
@@ -254,6 +258,10 @@ class ImageList extends Component {
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.onKeyDown)
+  }
+
+  onImageHover (hoverImage) {
+    this.setState({ hoverImage: hoverImage || null })
   }
 
   onKeyDown(ev) {
@@ -288,11 +296,10 @@ class ImageList extends Component {
   onImageClick(setIndex, imageIndex) {
     if (this.props.unexpandable || this.state.isExpanded) return
 
-    if (this.props.onImageHover) {
-      this.props.onImageHover(null)
-    }
-
-    this.setState({ isExpanded: true }, () => {
+    this.setState({
+      isExpanded: true,
+      hoverImage: null
+    }, () => {
       this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
     })
   }
@@ -318,12 +325,12 @@ class ImageList extends Component {
   render() {
     const {
       imageSets,
-      onImageHover,
+      hoverImageRenderer,
       alwaysExpand,
       unexpandable,
       centerImages,
     } = this.props
-    const { isExpanded } = this.state
+    const { isExpanded, hoverImage } = this.state
 
     return (
       <section>
@@ -337,10 +344,8 @@ class ImageList extends Component {
               {images.map((image, i) => {
                 const { src, texts, unexpandedLink, alt = '' } = image
 
-                const onMouseEnter =
-                  isExpanded || !onImageHover ? null : () => onImageHover(image)
-                const onMouseLeave =
-                  isExpanded || !onImageHover ? null : () => onImageHover(null)
+                const onMouseEnter = isExpanded ? null : () => this.onImageHover(image)
+                const onMouseLeave = isExpanded ? null : () => this.onImageHover(null)
                 const img = (
                   <img
                     src={src}
@@ -356,7 +361,7 @@ class ImageList extends Component {
                 const imageItemClass = cx({
                   expanded: isExpanded,
                   compact: !isExpanded,
-                  'with-small-text': texts && texts.smallText,
+                  'with-small-text': !isExpanded && texts && texts.smallText,
                 })
                 const textContainerClass = cx({
                   expanded: isExpanded,
@@ -412,6 +417,12 @@ class ImageList extends Component {
             </ImageContainer>
           </ImageSet>
         ))}
+
+        { hoverImage && hoverImageRenderer &&
+          <HoverInfo>
+            { hoverImageRenderer(hoverImage) }
+          </HoverInfo>
+        }
       </section>
     )
   }
@@ -419,7 +430,7 @@ class ImageList extends Component {
 
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
-  onImageHover: PropTypes.func,
+  hoverImageRenderer: PropTypes.func,
   alwaysExpand: PropTypes.bool,
   unexpandable: PropTypes.bool,
 }
