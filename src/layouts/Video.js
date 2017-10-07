@@ -53,20 +53,17 @@ const Caption = styled.p`
 `
 
 const vimeoEmbed = videoId =>
-  `<iframe
-    src="https://player.vimeo.com/video/${videoId}?portrait=0&byline=0&color=ffffff"
-    frameborder="0"
-    webkitallowfullscreen
-    mozallowfullscreen
-    allowfullscreen />`
+  <iframe
+    src={`https://player.vimeo.com/video/${videoId}?portrait=0&byline=0&color=ffffff`}
+    frameBorder={0}
+    allowFullScreen={true} />
 
 const Video = ({ video }) => {
   const { vimeoId, caption } = video
-  const iframe = vimeoEmbed(vimeoId)
 
   return (
     <VideoWrapper>
-      <div dangerouslySetInnerHTML={{ __html: iframe }} />
+      { vimeoEmbed(vimeoId) }
       {caption && <Caption>{caption}</Caption>}
     </VideoWrapper>
   )
