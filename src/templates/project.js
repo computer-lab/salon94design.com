@@ -14,6 +14,7 @@ import {
 import ImageList from '../layouts/ImageList'
 import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
+import Video from '../layouts/Video'
 import {
   workImagePath,
   designerLink,
@@ -118,6 +119,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
     <PageContainer>
       <Helmet title={`Salon 94 Design - Projects - ${currentProject.title}`} />
       <LeftPane>
+        {currentProject.video && <Video video={currentProject.video} />}
         <ImageList
           imageSets={imageSets}
           hoverImageRenderer={hoverImageRenderer}
@@ -163,6 +165,10 @@ export const pageQuery = graphql`
           title
           description
           when
+          video {
+            vimeoId
+            caption
+          }
           designers {
             slug
           }

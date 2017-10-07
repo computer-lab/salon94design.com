@@ -45,6 +45,7 @@ export const createPanes = (rightPaneWidth = '360px') => {
       right: auto;
       max-height: none;
       order: -1;
+      padding-bottom: 0;
 
       &.selectable {
         margin-right: 24px;
