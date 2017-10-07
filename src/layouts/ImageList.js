@@ -260,7 +260,7 @@ class ImageList extends Component {
     window.removeEventListener('keydown', this.onKeyDown)
   }
 
-  onImageHover (hoverImage) {
+  onImageHover(hoverImage) {
     this.setState({ hoverImage: hoverImage || null })
   }
 
@@ -296,12 +296,15 @@ class ImageList extends Component {
   onImageClick(setIndex, imageIndex) {
     if (this.props.unexpandable || this.state.isExpanded) return
 
-    this.setState({
-      isExpanded: true,
-      hoverImage: null
-    }, () => {
-      this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
-    })
+    this.setState(
+      {
+        isExpanded: true,
+        hoverImage: null,
+      },
+      () => {
+        this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
+      }
+    )
   }
 
   unexpand() {
@@ -344,8 +347,12 @@ class ImageList extends Component {
               {images.map((image, i) => {
                 const { src, texts, unexpandedLink, alt = '' } = image
 
-                const onMouseEnter = isExpanded ? null : () => this.onImageHover(image)
-                const onMouseLeave = isExpanded ? null : () => this.onImageHover(null)
+                const onMouseEnter = isExpanded
+                  ? null
+                  : () => this.onImageHover(image)
+                const onMouseLeave = isExpanded
+                  ? null
+                  : () => this.onImageHover(null)
                 const img = (
                   <img
                     src={src}
@@ -418,11 +425,10 @@ class ImageList extends Component {
           </ImageSet>
         ))}
 
-        { hoverImage && hoverImageRenderer &&
-          <HoverInfo>
-            { hoverImageRenderer(hoverImage) }
-          </HoverInfo>
-        }
+        {hoverImage &&
+          hoverImageRenderer && (
+            <HoverInfo>{hoverImageRenderer(hoverImage)}</HoverInfo>
+          )}
       </section>
     )
   }

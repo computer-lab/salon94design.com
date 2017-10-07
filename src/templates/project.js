@@ -73,9 +73,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
     const works = (designer.works || []).filter(
       work =>
         work.projects &&
-        work.projects
-          .map(project => project.slug)
-          .includes(currentProjectSlug)
+        work.projects.map(project => project.slug).includes(currentProjectSlug)
     )
 
     works.forEach(work => {
@@ -85,8 +83,11 @@ const ProjectTemplate = ({ data, pathContext }) => {
           designer,
           src: workImagePath(work.images[0].file),
           texts: workImageTexts({
-            work, designer,
-            smallText: <Link to={workLink(designer.slug, work.slug)}>{work.title} </Link>
+            work,
+            designer,
+            smallText: (
+              <Link to={workLink(designer.slug, work.slug)}>{work.title} </Link>
+            ),
           }),
         })
       }
@@ -109,17 +110,13 @@ const ProjectTemplate = ({ data, pathContext }) => {
 
   const currentProjectDesigners = currentProject.designers || []
 
-  const hoverImageRenderer = (hoverImage) =>
-    <WorkSummary
-      work={hoverImage.work}
-      designer={hoverImage.designer}
-    />
+  const hoverImageRenderer = hoverImage => (
+    <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
+  )
 
   return (
     <PageContainer>
-      <Helmet
-        title={`Salon 94 Design - Projects - ${currentProject.title}`}
-      />
+      <Helmet title={`Salon 94 Design - Projects - ${currentProject.title}`} />
       <LeftPane>
         <ImageList
           imageSets={imageSets}

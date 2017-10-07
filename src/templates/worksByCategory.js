@@ -19,7 +19,6 @@ import {
 
 const { LeftPane, RightPane } = createPanes('370px')
 
-
 const WorksTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data
   const { currentCategory } = pathContext
@@ -71,11 +70,9 @@ const WorksTemplate = ({ data, pathContext }) => {
 
   const imageSets = [{ images }]
 
-  const hoverImageRenderer = (hoverImage) =>
-    <WorkSummary
-      work={hoverImage.work}
-      designer={hoverImage.designer}
-    />
+  const hoverImageRenderer = hoverImage => (
+    <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
+  )
 
   return (
     <PageContainer>
