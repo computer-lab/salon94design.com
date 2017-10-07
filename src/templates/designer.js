@@ -60,7 +60,11 @@ const DesignerTemplate = ({ data, pathContext }) => {
         designer: currentDesigner,
         work,
         projects,
-        smallText: <Link to={workLink(currentDesigner.slug, work.slug)}>{work.title} </Link>
+        smallText: (
+          <Link to={workLink(currentDesigner.slug, work.slug)}>
+            {work.title}{' '}
+          </Link>
+        ),
       }),
     }))
 
@@ -88,8 +92,9 @@ const DesignerTemplate = ({ data, pathContext }) => {
       images,
     }))
 
-  const hoverImageRenderer = (hoverImage) =>
+  const hoverImageRenderer = hoverImage => (
     <WorkSummary work={hoverImage.work} />
+  )
 
   const selectorItems = designers.map(item => ({
     title: item.name,
@@ -100,9 +105,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet
-        title={`Salon 94 Design - Designers — ${currentDesigner.name}`}
-      />
+      <Helmet title={`Salon 94 Design - Designers — ${currentDesigner.name}`} />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
         <ImageList

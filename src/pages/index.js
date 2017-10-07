@@ -33,7 +33,8 @@ const IndexPage = ({ data }) => {
         images.push({
           src: workImagePath(work.images[0].file),
           unexpandedLink: workLink(designer.slug, work.slug),
-          designer, work,
+          designer,
+          work,
         })
       }
     })
@@ -44,11 +45,9 @@ const IndexPage = ({ data }) => {
 
   const imageSets = [{ images }]
 
-  const hoverImageRenderer = (hoverImage) =>
-    <WorkSummary
-      work={hoverImage.work}
-      designer={hoverImage.designer}
-    />
+  const hoverImageRenderer = hoverImage => (
+    <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
+  )
 
   return (
     <PageContainer>
