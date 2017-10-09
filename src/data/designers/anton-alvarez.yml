@@ -1,24 +1,24 @@
 slug: anton-alvarez
 name: Anton Alvarez
-bio:
-  Anton Alvarez is a designer.
+bio: Anton Alvarez is a designer.
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
 works:
-  -
-    title: Black Chair
-    slug: black-chair
-    when: '2016'
-    projects: []
-    tags: [chairs]
-    video:
-      vimeoId: '125737181'
-      caption: Anton Alvarez Timelapse
+  - dimensions: 18.11 x 82.28 x 10.24 inches
     images:
-      -
-        file: 'lucas-samaras-gold1.jpg'
-    price: $2,500
-    medium: ''
-    dimensions: ''
+      - file: /public/static/Screen Shot 2017-10-08 at 11.20.25 PM.png
+    medium: >-
+      polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
+      wood, plastic, metal
+    price: ''
+    projects:
+      - slug: MIDTOWN
+    slug: 'The Thread Wrapping Machine Bench 271115, 2015'
+    tags:
+      - bench
+    title: The Thread Wrapping Machine Bench 271115
+    video:
+      caption: Anton Alvarez Timelapse
+      vimeoId: ''
+    when: '2015'
