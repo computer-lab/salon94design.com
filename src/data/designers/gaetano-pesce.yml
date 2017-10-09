@@ -26,9 +26,13 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - images:
+  - dimensions: 96.46 x 53.54 x 39.37 inches
+    images:
       - file: /public/static/4F7A8249 (1).jpg
+    medium: 'resin, wood, steel'
     projects: []
     slug: 'Tornando dal Circo Cabinet, 2016'
+    tags:
+      - storage
     title: Tornando dal Circo Cabinet
     when: '2016'
