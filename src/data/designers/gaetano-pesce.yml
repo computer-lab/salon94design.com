@@ -1,21 +1,34 @@
 slug: gaetano-pesce
 name: Gaetano Pesce
-bio:
-  Gaetano Pesce is a designer.
+bio: >
+  Gaetano Pesce was born in 1939 in La Spezia, Italy, and
+
+  today lives and works in New York and Milan. His career spans five decades
+  with international
+
+  commissions and exhibitions in architecture, urban planning, interior, and
+  industrial design. He is a
+
+  founder of Radical Design (Italy, late 1960s). A guiding principle of his
+  work, he has said,
+
+  “modernism is less a style than a method for interpreting the present and
+  hinting at the future in
+
+  which individuality is preserved and celebrated.” Since the 1980s, Pesce has
+  exploited the technical
+
+  qualities of resins, polyurethanes and silicones to create signature pliable,
+  corporeal, and organic
+
+  design. 
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
 works:
-  -
-    title: White Chair
-    slug: white-chair
-    when: '2015'
+  - images:
+      - file: /public/static/4F7A8249 (1).jpg
     projects: []
-    tags: [chairs]
-    images:
-      -
-        file: 'rick-owens-shirt1.jpg'
-    price: $2,500
-    medium: ''
-    dimensions: ''
+    slug: 'Tornando dal Circo Cabinet, 2016'
+    title: Tornando dal Circo Cabinet
+    when: '2016'
