@@ -14,7 +14,7 @@ press:
 works:
   - dimensions: ''
     images:
-      - file: /public/static/bronze concrete1.jpg
+      - file: /public/static/bronze-concrete1.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
