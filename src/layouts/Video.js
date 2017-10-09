@@ -52,18 +52,20 @@ const Caption = styled.p`
   }
 `
 
-const vimeoEmbed = videoId =>
+const vimeoEmbed = videoId => (
   <iframe
     src={`https://player.vimeo.com/video/${videoId}?portrait=0&byline=0&color=ffffff`}
     frameBorder={0}
-    allowFullScreen={true} />
+    allowFullScreen={true}
+  />
+)
 
 const Video = ({ video }) => {
   const { vimeoId, caption } = video
 
   return (
     <VideoWrapper>
-      { vimeoEmbed(vimeoId) }
+      {vimeoEmbed(vimeoId)}
       {caption && <Caption>{caption}</Caption>}
     </VideoWrapper>
   )
