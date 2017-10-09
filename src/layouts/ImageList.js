@@ -5,6 +5,7 @@ import { css } from 'emotion'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
+
 import {
   monofont,
   sansfont,
@@ -14,6 +15,7 @@ import {
   breakpoint3,
 } from './emotion-base'
 import HoverInfo from './HoverInfo'
+import FullscreenImageViewer from './FullscreenImageViewer'
 
 const ImageSet = styled.div`
   &:not(:last-child) {
@@ -89,6 +91,9 @@ const ImageItem = styled.div`
 
     & img {
       cursor: default;
+      cursor: crosshair;
+      cursor: nesw-resize;
+      cursor: zoom-in;
       max-width: 100%;
       max-height: calc(100vh - 200px);
     }
@@ -252,10 +257,17 @@ class ImageList extends Component {
 
     this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
+    this.fullscreenImageViewerCloseHandler = this.fullscreenImageViewerCloseHandler.bind(
+      this
+    )
+    this.fullscreenImageViewerChangeHandler = this.fullscreenImageViewerChangeHandler.bind(
+      this
+    )
 
     this.state = {
       isExpanded: props.alwaysExpand ? true : false,
       hoverImage: null,
+      fullscreenImageIndices: null,
     }
   }
 
@@ -273,9 +285,54 @@ class ImageList extends Component {
 
   onKeyDown(ev) {
     // if expanded and ESC pressed, unexpand
-    if (this.state.isExpanded && ev.keyCode === 27) {
+    if (
+      this.state.isExpanded &&
+      !this.state.fullscreenImageIndices &&
+      ev.keyCode === 27
+    ) {
       this.unexpand()
     }
+  }
+
+  fullscreenImageViewerCloseHandler() {
+    this.setState({
+      fullscreenImageIndices: null,
+    })
+  }
+
+  fullscreenImageViewerChangeHandler(delta) {
+    const { imageSets } = this.props
+    const { setIndex, imageIndex } = this.state.fullscreenImageIndices
+
+    let nextSetIndex = setIndex
+    let nextImageIndex = imageIndex + delta
+
+    // move to next set if necessary and possible
+    if (nextImageIndex >= imageSets[nextSetIndex].images.length) {
+      if (nextSetIndex >= imageSets.length - 1) {
+        return
+      }
+
+      nextSetIndex += 1
+      nextImageIndex = 0
+    }
+
+    // move to previous set if necessary and possible
+    if (nextImageIndex < 0) {
+      if (nextSetIndex === 0) {
+        return
+      }
+
+      nextSetIndex -= 1
+      nextImageIndex = imageSets[nextSetIndex].images.length - 1
+    }
+
+    this.setState({
+      fullscreenImageIndices: {
+        setIndex: nextSetIndex,
+        imageIndex: nextImageIndex,
+      },
+    })
   }
 
   renderExpansionButton() {
@@ -286,10 +343,10 @@ class ImageList extends Component {
     }
 
     const onClick = () => {
-      if (!this.state.isExpanded) {
-        this.setState({ isExpanded: true })
-      } else {
+      if (this.state.isExpanded) {
         this.unexpand()
+      } else {
+        this.setState({ isExpanded: true })
       }
     }
 
@@ -301,7 +358,13 @@ class ImageList extends Component {
   }
 
   onImageClick(setIndex, imageIndex) {
-    if (this.props.unexpandable || this.state.isExpanded) return
+    if (this.props.unexpandable) return
+
+    if (this.state.isExpanded) {
+      return this.setState({
+        fullscreenImageIndices: { setIndex, imageIndex },
+      })
+    }
 
     this.setState(
       {
@@ -340,9 +403,15 @@ class ImageList extends Component {
       unexpandable,
       centerImages,
     } = this.props
-    const { isExpanded, hoverImage } = this.state
+    const { isExpanded, hoverImage, fullscreenImageIndices } = this.state
 
     const hoverInfoClass = cx({ hidden: !hoverImage || !hoverImageRenderer })
+
+    const fullscreenImage = fullscreenImageIndices
+      ? imageSets[fullscreenImageIndices.setIndex].images[
+          fullscreenImageIndices.imageIndex
+        ]
+      : null
 
     return (
       <section>
@@ -437,6 +506,14 @@ class ImageList extends Component {
         <HoverInfo className={hoverInfoClass}>
           {hoverImage && hoverImageRenderer && hoverImageRenderer(hoverImage)}
         </HoverInfo>
+
+        {fullscreenImage && (
+          <FullscreenImageViewer
+            image={fullscreenImage}
+            closeHandler={this.fullscreenImageViewerCloseHandler}
+            changeHandler={this.fullscreenImageViewerChangeHandler}
+          />
+        )}
       </section>
     )
   }
