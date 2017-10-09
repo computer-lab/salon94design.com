@@ -43,7 +43,7 @@ works:
       - file: kwangho-small-pvc-bench.jpg
       - file: kwangho-small-pvc-bench-detail.jpg
     medium: PVC
-    price: '$15,000-20,000'
+    price: ''
     projects:
       - slug: woven-furniture
     slug: kwangho-small-pvc-bench
