@@ -76,8 +76,8 @@ export const workImageTexts = ({
           <Link to={projectLink(workProject.slug)} key={workProject.slug}>
             {project.title}
           </Link>
-        ) : null;
-      }).filter(project => project !== null);
+        ) : null
+      }).filter(project => project !== null)
     )
   }
 
