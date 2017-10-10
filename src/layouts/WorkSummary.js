@@ -124,17 +124,16 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       <SummaryItem>{work.caption}</SummaryItem>
       {projects &&
         work.projects &&
-        work.projects.map(project => (
+        work.projects.map(project => {
           let fullProject = projects.find(p => p.slug === project.slug)
-          return fullProject ?
-            (
+          return fullProject ? (
               <SummaryItem key={project.slug} className="project">
                 <Link to={projectLink(project.slug)}>
                   {fullProject.title}
                 </Link>
               </SummaryItem>
             ) : null
-        )).filter(project => project !== null)
+        }).filter(project => project !== null)
       }
       {detailed && (
         <div>
