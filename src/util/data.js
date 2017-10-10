@@ -72,12 +72,12 @@ export const workImageTexts = ({
     data = data.concat(
       work.projects.map(workProject => {
         const project = projects.find(p => p.slug === workProject.slug)
-        return (
+        return project ? (
           <Link to={projectLink(workProject.slug)} key={workProject.slug}>
             {project.title}
           </Link>
-        )
-      })
+        ) : null;
+      }).filter(project => project !== null);
     )
   }
 
