@@ -50,12 +50,18 @@ async function processWorks ({ data, file }) {
 }
 
 async function updateDesigner ({ data, file }, processedWorks) {
-  // clone the data
-  const designer = JSON.parse(JSON.stringify(data))
+  const getImageData = async (filename) => {
+    const { width, height } = await sharp(filename).metadata()
+    return {
+      file: imageDataFilename(filename),
+      width,
+      height
+    }
+  }
 
-  const workDatas = designer.works.map((work, index) => {
+  const works = await Promise.all(data.works.map(async (work, index) => {
     const processedWorkItems = processedWorks[index]
-    const images = work.images.map((image, index) => {
+    const images = await Promise.all(work.images.map(async (image, index) => {
       // check if image was processed
       const processedWorkItem = processedWorkItems.find(item => item.originalImageIndex === index)
       if (!processedWorkItem) {
@@ -63,19 +69,19 @@ async function updateDesigner ({ data, file }, processedWorks) {
       }
 
       const { newImage, resizedImages } = processedWorkItem
+      const primaryImageData = await getImageData(newImage)
+      return Object.assign({}, primaryImageData, {
+        resized: await Promise.all(resizedImages.map(getImageData))
+      })
+    }))
 
-      const { width, height } = await sharp(newImage).metadata()
+    return Object.assign({}, work, { images })
+  }))
 
-      return {
-        file: imageDataFilename(newImage),
-        width,
-        height,
-        resized: resizedImages.map(resizedImage => {
-
-        })
-      }
-    })
-  })
+  // write updated designer to same file
+  const updatedDesigner = Object.assign({}, designer, { works })
+  const updatedYaml = yaml.safeDump(updatedDesigner)
+  await fs.writeFile(file, updatedYaml)
 }
 
 async function getDesigners () {
