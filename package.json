@@ -7,6 +7,7 @@
     "babel-plugin-emotion": "^7.3.2",
     "classnames": "^2.2.5",
     "emotion-server": "^7.3.2",
+    "fs-extra": "^4.0.2",
     "gatsby": "^1.8.12",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-emotion": "^1.1.2",
@@ -14,7 +15,10 @@
     "gatsby-source-filesystem": "^1.4.4",
     "gatsby-transformer-remark": "^1.7.2",
     "gatsby-transformer-yaml": "^1.5.4",
-    "react-scroll": "^1.5.4"
+    "js-yaml": "^3.10.0",
+    "react-scroll": "^1.5.4",
+    "sharp": "^0.18.4",
+    "shortid": "^2.2.8"
   },
   "keywords": [
     "gatsby"
