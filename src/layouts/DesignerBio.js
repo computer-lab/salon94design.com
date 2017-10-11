@@ -14,17 +14,17 @@ const Bio = styled.div`
   line-height: 1.4;
 `
 
-const DesignerProjects = ({ bio }) => {
+const DesignerProjects = ({ bioHtml }) => {
   return (
     <Container>
       <Header2>About</Header2>
-      <Bio dangerouslySetInnerHTML={{ __html: bio }} />
+      <Bio dangerouslySetInnerHTML={{ __html: bioHtml }} />
     </Container>
   )
 }
 
 DesignerProjects.propTypes = {
-  bio: PropTypes.string.isRequired,
+  bioHtml: PropTypes.string.isRequired,
 }
 
 export default DesignerProjects
