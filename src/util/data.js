@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { choice } from './index'
-import { workImagePath, designerLink, projectLink, workLink } from './path'
+import { designerLink, projectLink, workLink } from './path'
 import { tagCategory } from './tag'
 
 export const chooseDesignerImage = designer => {
@@ -10,7 +10,7 @@ export const chooseDesignerImage = designer => {
 
   const work = choice(designer.works)
   if (work && work.images && work.images.length > 0) {
-    image = workImagePath(work.images[0].file)
+    image = work.images[0]
   }
 
   return image
@@ -28,7 +28,7 @@ export const chooseProjectImage = (project, designers) => {
   }, null)
 
   if (work && work.images && work.images.length > 0) {
-    image = workImagePath(images[0].file)
+    image = images[0]
   }
 
   if (!image && designers.length > 0) {
@@ -70,14 +70,16 @@ export const workImageTexts = ({
   )
   if (projects && work.projects) {
     data = data.concat(
-      work.projects.map(workProject => {
-        const project = projects.find(p => p.slug === workProject.slug)
-        return project ? (
-          <Link to={projectLink(workProject.slug)} key={workProject.slug}>
-            {project.title}
-          </Link>
-        ) : null
-      }).filter(project => project !== null)
+      work.projects
+        .map(workProject => {
+          const project = projects.find(p => p.slug === workProject.slug)
+          return project ? (
+            <Link to={projectLink(workProject.slug)} key={workProject.slug}>
+              {project.title}
+            </Link>
+          ) : null
+        })
+        .filter(project => project !== null)
     )
   }
 

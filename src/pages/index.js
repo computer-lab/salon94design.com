@@ -6,7 +6,7 @@ import styled from 'emotion/react'
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workLink } from '../util'
+import { imageLargePath, imageSrcSet, workLink } from '../util'
 
 const IndexPage = ({ data }) => {
   const { allProjectsYaml, allDesignersYaml } = data
@@ -30,8 +30,10 @@ const IndexPage = ({ data }) => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
       if (work.images && work.images.length > 0) {
+        const image = work.images[0]
         images.push({
-          src: workImagePath(work.images[0].file),
+          src: imageLargePath(image),
+          srcSet: imageSrcSet(image),
           unexpandedLink: workLink(designer.slug, work.slug),
           designer,
           work,
@@ -92,6 +94,13 @@ export const pageQuery = graphql`
             tags
             images {
               file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
             }
             caption
             price

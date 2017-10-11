@@ -21,17 +21,37 @@ bio: >
   qualities of resins, polyurethanes and silicones to create signature pliable,
   corporeal, and organic
 
-  design. 
+  design.
 press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: 96.46 x 53.54 x 39.37 inches
+  - slug: tornando-dal-circo-cabinet-2016
+    dimensions: 96.46 x 53.54 x 39.37 inches
     images:
-      - file: /public/static/4F7A8249 (1).jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/large.jpg
+        width: 4133
+        height: 6200
+        resized:
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h300.jpg
+            width: 200
+            height: 300
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h600.jpg
+            width: 400
+            height: 600
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h900.jpg
+            width: 600
+            height: 900
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h1600.jpg
+            width: 1067
+            height: 1600
     medium: 'resin, wood, steel'
     projects: []
-    slug: 'Tornando dal Circo Cabinet, 2016'
     tags:
       - storage
     title: Tornando dal Circo Cabinet

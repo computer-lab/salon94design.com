@@ -62,6 +62,9 @@ const vimeoEmbed = videoId => (
 
 const Video = ({ video }) => {
   const { vimeoId, caption } = video
+  if (!vimeoId) {
+    return null
+  }
 
   return (
     <VideoWrapper>
