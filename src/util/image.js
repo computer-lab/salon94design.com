@@ -1,4 +1,5 @@
-export const imageFilepath = file => __PATH_PREFIX__ + `/images/${file}`
+export const imageFilepath = file =>
+  __PATH_PREFIX__ + `${file.replace('/public/static', '')}`
 
 export const imageLargePath = image => imageFilepath(image.file)
 

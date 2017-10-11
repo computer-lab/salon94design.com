@@ -1,4 +1,5 @@
 const path = require('path')
+const { promisify } = require('util')
 const simpleGit = require('simple-git')
 
 module.exports = {
@@ -9,45 +10,32 @@ module.exports = {
 const gitDir = path.join(__dirname, '../')
 
 function pullRepo () {
-  return new Promise((resolve, reject) => {
-    const repo = simpleGit(gitDir)
-    repo.pull('origin', 'master', err => {
-      if (err) {
-        console.error('error pulling: ', err)
-        return reject(err)
-      }
-
-      resolve()
+  const repo = simpleGit(gitDir)
+  const pull = promisify(repo.pull).bind(repo)
+  return pull('origin', 'master')
+    .catch(err => {
+      console.error('error pulling: ', err)
     })
-  })
 }
 
-function pushChanges () {
-  return new Promise((resolve, reject) => {
-    const repo = simpleGit(gitDir)
-    repo.diff((err, diff) => {
-      if (err) {
-        console.error('error reading git diff:', err)
-        return reject(err)
-      }
+async function pushChanges () {
+  let repo = simpleGit(gitDir)
+  const repoDiff = promisify(repo.diff).bind(repo)
 
-      const hasDiff = diff.length > 0
-      if (!hasDiff) {
-        console.log('no diff to commit')
-        resolve()
-      }
+  try {
+    const diff = await repoDiff()
+    const hasDiff = diff.length > 0
+    if (!hasDiff) {
+      return
+    }
 
-      repo
-        .add('./*')
-        .commit('data processing')
-        .push('origin', 'master', err => {
-          if (err) {
-            console.error('error commiting and pushing:', err)
-            return reject(err)
-          }
+    repo = repo
+      .add('./*')
+      .commit('data processing')
 
-          resolve()
-        })
-    })
-  })
+    const repoPush = promisify(repo.push).bind(repo)
+    await repoPush('origin', 'master')
+  } catch (err) {
+    console.error('error commiting changes:', err)
+  }
 }

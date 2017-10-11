@@ -10,12 +10,12 @@ async function main () {
     // pull down latest version
     await pullRepo()
 
-    // ensure slugs, etc, are of the correct format
-    await purifyData()
-
-    // move images to correct place, generate smaller sizes
-    await processImages()
-
+    // // ensure slugs, etc, are of the correct format
+    // await purifyData()
+    //
+    // // move images to correct place, generate smaller sizes
+    // await processImages()
+    //
     // commit changes (if any made)
     await pushChanges()
   } catch (err) {

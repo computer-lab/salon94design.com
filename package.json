@@ -21,7 +21,8 @@
     "remark-html": "^6.0.1",
     "sharp": "^0.18.4",
     "shortid": "^2.2.8",
-    "simple-git": "^1.79.0"
+    "simple-git": "^1.79.0",
+    "slugify": "^1.2.1"
   },
   "keywords": [
     "gatsby"

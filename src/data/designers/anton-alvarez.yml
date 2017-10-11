@@ -9,20 +9,20 @@ works:
     dimensions: 18.11 x 82.28 x 10.24 inches
     images:
       - file: >-
-          works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
+          /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
         width: 1356
         height: 924
         resized:
           - file: >-
-              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w200.jpg
+              /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w200.jpg
             width: 200
             height: 136
           - file: >-
-              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w400.jpg
+              /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w400.jpg
             width: 400
             height: 273
           - file: >-
-              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w800.jpg
+              /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w800.jpg
             width: 800
             height: 545
     medium: >-

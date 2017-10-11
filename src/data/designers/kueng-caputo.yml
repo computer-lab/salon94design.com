@@ -12,17 +12,17 @@ works:
     tags:
       - benches
     images:
-      - file: works/kueng-caputo/yellow-bench-BJDFVhjjn-/large.jpg
+      - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/large.jpg
         width: 1200
         height: 800
         resized:
-          - file: works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w200.jpg
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w200.jpg
             width: 200
             height: 133
-          - file: works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w400.jpg
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w400.jpg
             width: 400
             height: 267
-          - file: works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w800.jpg
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w800.jpg
             width: 800
             height: 533
     price: '$2,500'
