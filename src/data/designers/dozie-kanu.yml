@@ -13,7 +13,22 @@ works:
   - slug: bench-on-84s
     dimensions: 20.5 x 18 x 100 inches
     images:
-      - file: /public/static/20170501-LeverHouse-081.jpg
+      - file: works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
+        width: 1500
+        height: 1125
+        resized:
+          - file: works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w200.jpg
+            width: 200
+            height: 150
+          - file: works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w400.jpg
+            width: 400
+            height: 300
+          - file: works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w800.jpg
+            width: 800
+            height: 600
+          - file: works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w1440.jpg
+            width: 1440
+            height: 1080
     medium: 'poured concrete, steel '
     tags:
       - seating

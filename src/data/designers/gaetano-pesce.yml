@@ -29,7 +29,27 @@ works:
   - slug: tornando-dal-circo-cabinet-2016
     dimensions: 96.46 x 53.54 x 39.37 inches
     images:
-      - file: /public/static/4F7A8249 (1).jpg
+      - file: >-
+          works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/large.jpg
+        width: 4133
+        height: 6200
+        resized:
+          - file: >-
+              works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h300.jpg
+            width: 200
+            height: 300
+          - file: >-
+              works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h600.jpg
+            width: 400
+            height: 600
+          - file: >-
+              works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h900.jpg
+            width: 600
+            height: 900
+          - file: >-
+              works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/resized-h1600.jpg
+            width: 1067
+            height: 1600
     medium: 'resin, wood, steel'
     projects: []
     tags:

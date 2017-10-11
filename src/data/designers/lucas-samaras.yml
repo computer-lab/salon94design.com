@@ -11,7 +11,22 @@ press:
 works:
   - dimensions: 13.2 ounces
     images:
-      - file: lucas-samaras-necklace-49.jpg
+      - file: works/lucas-samaras/necklace-49-S1aFN2iin-/large.jpg
+        width: 1766
+        height: 1772
+        resized:
+          - file: works/lucas-samaras/necklace-49-S1aFN2iin-/resized-h300.jpg
+            width: 299
+            height: 300
+          - file: works/lucas-samaras/necklace-49-S1aFN2iin-/resized-h600.jpg
+            width: 598
+            height: 600
+          - file: works/lucas-samaras/necklace-49-S1aFN2iin-/resized-h900.jpg
+            width: 897
+            height: 900
+          - file: works/lucas-samaras/necklace-49-S1aFN2iin-/resized-h1600.jpg
+            width: 1595
+            height: 1600
     medium: 22 Karat gold
     price: ''
     projects:
@@ -23,7 +38,22 @@ works:
     when: 1996-1998
   - dimensions: ''
     images:
-      - file: lucas-samaras-necklace-44.jpg
+      - file: works/lucas-samaras/necklace-44-Bk0F42js2b/large.jpg
+        width: 1810
+        height: 1202
+        resized:
+          - file: works/lucas-samaras/necklace-44-Bk0F42js2b/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: works/lucas-samaras/necklace-44-Bk0F42js2b/resized-w400.jpg
+            width: 400
+            height: 266
+          - file: works/lucas-samaras/necklace-44-Bk0F42js2b/resized-w800.jpg
+            width: 800
+            height: 531
+          - file: works/lucas-samaras/necklace-44-Bk0F42js2b/resized-w1440.jpg
+            width: 1440
+            height: 956
     medium: 22 Karat gold
     price: ''
     projects:
@@ -35,7 +65,22 @@ works:
     when: 1996-1998
   - dimensions: 11.2 ounces
     images:
-      - file: lucas-samaras-necklace-48.jpg
+      - file: works/lucas-samaras/necklace-48-HykxFEhos3-/large.jpg
+        width: 1820
+        height: 1200
+        resized:
+          - file: works/lucas-samaras/necklace-48-HykxFEhos3-/resized-w200.jpg
+            width: 200
+            height: 132
+          - file: works/lucas-samaras/necklace-48-HykxFEhos3-/resized-w400.jpg
+            width: 400
+            height: 264
+          - file: works/lucas-samaras/necklace-48-HykxFEhos3-/resized-w800.jpg
+            width: 800
+            height: 527
+          - file: works/lucas-samaras/necklace-48-HykxFEhos3-/resized-w1440.jpg
+            width: 1440
+            height: 949
     medium: 22 Karat gold
     price: ''
     projects:
@@ -47,7 +92,22 @@ works:
     when: 1996-1998
   - dimensions: 11.1 ounces
     images:
-      - file: lucas-samaras-necklace-51.jpg
+      - file: works/lucas-samaras/necklace-51-SklltV3jjh-/large.jpg
+        width: 870
+        height: 1772
+        resized:
+          - file: works/lucas-samaras/necklace-51-SklltV3jjh-/resized-h300.jpg
+            width: 147
+            height: 300
+          - file: works/lucas-samaras/necklace-51-SklltV3jjh-/resized-h600.jpg
+            width: 295
+            height: 600
+          - file: works/lucas-samaras/necklace-51-SklltV3jjh-/resized-h900.jpg
+            width: 442
+            height: 900
+          - file: works/lucas-samaras/necklace-51-SklltV3jjh-/resized-h1600.jpg
+            width: 786
+            height: 1600
     medium: 22 Karat gold
     price: ''
     projects:

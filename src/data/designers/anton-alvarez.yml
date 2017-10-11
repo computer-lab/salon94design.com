@@ -8,7 +8,23 @@ works:
   - slug: the-thread-wrapping-machine-bench-271115-2015
     dimensions: 18.11 x 82.28 x 10.24 inches
     images:
-      - file: /public/static/Screen Shot 2017-10-08 at 11.20.25 PM.png
+      - file: >-
+          works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
+        width: 1356
+        height: 924
+        resized:
+          - file: >-
+              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w200.jpg
+            width: 200
+            height: 136
+          - file: >-
+              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w400.jpg
+            width: 400
+            height: 273
+          - file: >-
+              works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/resized-w800.jpg
+            width: 800
+            height: 545
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic, metal
