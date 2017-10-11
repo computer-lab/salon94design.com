@@ -10,7 +10,7 @@ import {
   SimpleLinkList,
   SimpleLinkListItem,
 } from './emotion-base'
-import { projectLink } from '../util'
+import { projectLink, imageFilepath } from '../util'
 
 const Container = styled.section`
   margin-top: 20px;
@@ -25,13 +25,17 @@ const Press = ({ press }) => {
     <Container>
       <Header2>Press</Header2>
       <SimpleLinkList>
-        {press.map(item => (
-          <SimpleLinkListItem key={item.link}>
-            <a href={item.link} target="_blank">
-              {item.title}
-            </a>
-          </SimpleLinkListItem>
-        ))}
+        {press.map(item => {
+          // press items either have a pdf file or a string link
+          const link = item.file ? imageFilepath(item.file) : item.link
+          return (
+            <SimpleLinkListItem key={link}>
+              <a href={link} target="_blank">
+                {item.title}
+              </a>
+            </SimpleLinkListItem>
+          )
+        })}
       </SimpleLinkList>
     </Container>
   )
