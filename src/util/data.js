@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import { choice } from './index'
-import { workImagePath, designerLink, projectLink, workLink } from './path'
+import { imagePath, designerLink, projectLink, workLink } from './path'
 import { tagCategory } from './tag'
 
 export const chooseDesignerImage = designer => {
@@ -10,7 +10,7 @@ export const chooseDesignerImage = designer => {
 
   const work = choice(designer.works)
   if (work && work.images && work.images.length > 0) {
-    image = workImagePath(work.images[0].file)
+    image = imagePath(work.images[0].file)
   }
 
   return image
@@ -28,7 +28,7 @@ export const chooseProjectImage = (project, designers) => {
   }, null)
 
   if (work && work.images && work.images.length > 0) {
-    image = workImagePath(images[0].file)
+    image = imagePath(images[0].file)
   }
 
   if (!image && designers.length > 0) {
