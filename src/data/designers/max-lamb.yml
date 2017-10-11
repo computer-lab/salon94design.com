@@ -12,45 +12,45 @@ works:
   - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
     images:
       - file: >-
-          works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
+          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
         width: 1162
         height: 1764
         resized:
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h300.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h300.jpg
             width: 198
             height: 300
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h600.jpg
             width: 395
             height: 600
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h900.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h900.jpg
             width: 593
             height: 900
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h1600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/resized-h1600.jpg
             width: 1054
             height: 1600
       - file: >-
-          works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/large.jpg
+          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/large.jpg
         width: 1752
         height: 1168
         resized:
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w200.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w200.jpg
             width: 200
             height: 133
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w400.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w400.jpg
             width: 400
             height: 267
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w800.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w800.jpg
             width: 800
             height: 533
           - file: >-
-              works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w1440.jpg
+              /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/resized-w1440.jpg
             width: 1440
             height: 960
     medium: Polystyrene and stainless steel
@@ -64,24 +64,24 @@ works:
     when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
-      - file: works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
+      - file: /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
         width: 1156
         height: 1752
         resized:
           - file: >-
-              works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h300.jpg
+              /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h300.jpg
             width: 198
             height: 300
           - file: >-
-              works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h600.jpg
             width: 396
             height: 600
           - file: >-
-              works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h900.jpg
+              /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h900.jpg
             width: 594
             height: 900
           - file: >-
-              works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h1600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/resized-h1600.jpg
             width: 1056
             height: 1600
     medium: Polystyrene and stainless steel
@@ -95,44 +95,44 @@ works:
     when: '2017'
   - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
     images:
-      - file: works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
+      - file: /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
         width: 1158
         height: 1750
         resized:
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h300.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h300.jpg
             width: 199
             height: 300
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h600.jpg
             width: 397
             height: 600
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h900.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h900.jpg
             width: 596
             height: 900
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h1600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h1600.jpg
             width: 1059
             height: 1600
-      - file: works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
+      - file: /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
         width: 1156
         height: 1746
         resized:
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h300.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h300.jpg
             width: 199
             height: 300
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h600.jpg
             width: 397
             height: 600
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h900.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h900.jpg
             width: 596
             height: 900
           - file: >-
-              works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h1600.jpg
+              /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/resized-h1600.jpg
             width: 1059
             height: 1600
     medium: Polystyrene and bronze

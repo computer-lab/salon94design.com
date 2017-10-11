@@ -1,4 +1,4 @@
-
+const slugify = require('slugify')
 const { getDesigners, getProjects, updateDesignerFile, updateProjectFile } = require('./data')
 
 module.exports = main
@@ -31,7 +31,7 @@ async function processDesigners () {
 
   const impureDesigners = designers.filter(designer =>
     designer.slug !== slugify(designer.slug) ||
-    designer.works.filter(work =>
+    (designer.works || []).filter(work =>
       work.slug !== slugify(work.slug)
     ).length > 0
   )
@@ -39,7 +39,7 @@ async function processDesigners () {
   const pureDesigners = await Promise.all(impureDesigners.map(designer =>
     Object.assign({}, designer, {
       slug: slugify(designer.slug),
-      works: designer.works.map(work => Object.assign({}, work, {
+      works: (designer.works || []).map(work => Object.assign({}, work, {
         slug: slugify(work.slug)
       }))
     })
@@ -48,11 +48,4 @@ async function processDesigners () {
   await Promise.all(pureDesigners.map(data =>
     updateDesignerFile(data)
   ))
-}
-
-function slugify (str) {
-  return str
-    .replace(/\s+/g, '-') // replace whitespace with dashes
-    .replace(/[|&;$%@"<>()+,]/g, '') // remove weird non-url-friendly characters
-    .toLowerCase()
 }

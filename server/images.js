@@ -27,7 +27,8 @@ async function main () {
 async function processDesignerWorks (data) {
   const { works } = data
   return Promise.all(works.map(async (work) => {
-    const imagesToProcess = work.images.filter(image =>
+    const images = work.images || []
+    const imagesToProcess = images.filter(image =>
       !image.file.includes(processedImageDir)
     )
 
@@ -48,7 +49,7 @@ async function processDesignerWorks (data) {
 
     // return relevant info
     return imagesToProcess.map((image, index) => ({
-      originalImageIndex: work.images.indexOf(image),
+      originalImageIndex: images.indexOf(image),
       newImage: jpegImages[index],
       resizedImages: processedImages[index]
     }))
@@ -65,9 +66,11 @@ async function updateDesigner (data, processedWorks) {
     }
   }
 
-  const works = await Promise.all(data.works.map(async (work, index) => {
+  const dataWorks = data.works || []
+  const works = await Promise.all(dataWorks.map(async (work, index) => {
     const processedWorkItems = processedWorks[index]
-    const images = await Promise.all(work.images.map(async (image, index) => {
+    const workImages = work.images || []
+    const images = await Promise.all(workImages.map(async (image, index) => {
       // check if image was processed
       const processedWorkItem = processedWorkItems.find(item => item.originalImageIndex === index)
       if (!processedWorkItem) {
@@ -91,9 +94,9 @@ async function updateDesigner (data, processedWorks) {
 }
 
 function imageDataFilename (filename) {
-  // shorten filename to only include necessary info in yaml
+  // References to images in the data need to be prefixed with /public/static/ to show up in the CMS
   const prefix = 'images/'
-  return filename.substr(filename.indexOf(prefix) + prefix.length)
+  return path.join('/public/static', filename.substr(filename.indexOf(prefix)))
 }
 
 function getImageDirectory (designer) {
