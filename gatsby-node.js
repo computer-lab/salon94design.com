@@ -197,11 +197,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
       markdownToHtml(markdown).then((html) => {
         node.aboutHtml = html.contents
-        resolve()
       });
     }
-    else {
-      resolve();
-    }
+    resolve();
   });
 }
