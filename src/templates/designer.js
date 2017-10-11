@@ -85,10 +85,13 @@ const DesignerTemplate = ({ data, pathContext }) => {
   }))
 
   // include works w/o project
+  const projectSlugs = projects.map(p => p.slug)
   imagesByProject.push({
     project: null,
     images: images.filter(
-      image => !image.work.projects || image.work.projects.length === 0
+      image =>
+        !image.work.projects ||
+        !image.work.projects.find(p => projectSlugs.includes(p.slug))
     ),
   })
 
@@ -159,6 +162,7 @@ export const pageQuery = graphql`
           press {
             title
             link
+            file
           }
           works {
             slug

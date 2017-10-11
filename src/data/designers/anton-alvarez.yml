@@ -2,8 +2,8 @@ slug: anton-alvarez
 name: Anton Alvarez
 bio: Anton Alvarez is a designer.
 press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+  - title: CV Press Coverage
+    file: /public/static/images/anton-alvarez-cv.pdf
 works:
   - slug: the-thread-wrapping-machine-bench-271115-2015
     dimensions: 18.11 x 82.28 x 10.24 inches

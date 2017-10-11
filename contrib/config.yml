@@ -33,6 +33,9 @@ collections:
           - name: link
             label: Link
             widget: string
+          - name: file
+            label: PDF
+            widget: file
       - name: works
         label: Works
         widget: list
@@ -155,9 +158,12 @@ collections:
         label: Press
         widget: list
         fields:
-          - name: link
-            label: Link
-            widget: string
           - name: title
             label: Title
             widget: string
+          - name: link
+            label: Link
+            widget: string
+          - name: file
+            label: PDF
+            widget: file
