@@ -18,7 +18,7 @@ import DesignerProjects from '../layouts/DesignerProjects'
 import Press from '../layouts/Press'
 import ImageList from '../layouts/ImageList'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workImageTexts, designerLink, workLink } from '../util'
+import { imagePath, workImageTexts, designerLink, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -55,7 +55,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
     .filter(work => work.images && work.images.length > 0)
     .map(work => ({
       work,
-      src: workImagePath(work.images[0].file),
+      src: imagePath(work.images[0].file),
       texts: workImageTexts({
         designer: currentDesigner,
         work,

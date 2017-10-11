@@ -16,7 +16,7 @@ import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import Video from '../layouts/Video'
 import {
-  workImagePath,
+  imagePath,
   designerLink,
   projectLink,
   workImageTexts,
@@ -82,7 +82,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
         images.push({
           work,
           designer,
-          src: workImagePath(work.images[0].file),
+          src: imagePath(work.images[0].file),
           texts: workImageTexts({
             work,
             designer,

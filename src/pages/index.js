@@ -6,7 +6,7 @@ import styled from 'emotion/react'
 import { PageContainer } from '../layouts/containers'
 import ImageList from '../layouts/ImageList'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workLink } from '../util'
+import { imagePath, workLink } from '../util'
 
 const IndexPage = ({ data }) => {
   const { allProjectsYaml, allDesignersYaml } = data
@@ -31,7 +31,7 @@ const IndexPage = ({ data }) => {
     works.forEach(work => {
       if (work.images && work.images.length > 0) {
         images.push({
-          src: workImagePath(work.images[0].file),
+          src: imagePath(work.images[0].file),
           unexpandedLink: workLink(designer.slug, work.slug),
           designer,
           work,

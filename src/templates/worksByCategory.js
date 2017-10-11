@@ -9,7 +9,7 @@ import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import {
-  workImagePath,
+  imagePath,
   workImageTexts,
   workLink,
   designerLink,
@@ -51,7 +51,7 @@ const WorksTemplate = ({ data, pathContext }) => {
       images.push({
         work,
         designer,
-        src: workImagePath(work.images[0].file),
+        src: imagePath(work.images[0].file),
         texts: workImageTexts({
           designer,
           work,

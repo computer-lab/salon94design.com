@@ -9,7 +9,7 @@ import ImageList from '../layouts/ImageList'
 import Video from '../layouts/Video'
 import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
-import { workImagePath, workLink } from '../util'
+import { imagePath, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
 
@@ -25,7 +25,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
   const images = (currentWork.images || []).map(image => ({
-    src: workImagePath(image.file),
+    src: imagePath(image.file),
   }))
 
   const imageSets = [{ images }]
