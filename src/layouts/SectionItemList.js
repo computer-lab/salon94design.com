@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import { sansfont, baseUl, breakpoint2, breakpoint3 } from './emotion-base'
+import { imageLargePath, imageSrcSet } from '../util'
 
 const Container = styled.div`
   padding: 0 24px 0 24px;
@@ -103,25 +104,28 @@ const ItemSubtitle = styled.div`
   }
 `
 
-function SectionItemList({ title, items }) {
-  return (
-    <Container>
-      <List>
-        {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-          <ListItem key={i}>
-            <Link to={link}>
-              <img src={image} alt={alt} />
-              <ItemTitle>
-                {title}
-                {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
-              </ItemTitle>
-            </Link>
-          </ListItem>
-        ))}
-      </List>
-    </Container>
-  )
-}
+const SectionItemList = ({ title, items }) => (
+  <Container>
+    <List>
+      {items.map(({ image, alt = '', title, subtitle, link }, i) => (
+        <ListItem key={i}>
+          <Link to={link}>
+            <img
+              src={imageLargePath(image)}
+              srcSet={imageSrcSet(image)}
+              sizes={'400w'}
+              alt={alt}
+            />
+            <ItemTitle>
+              {title}
+              {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
+            </ItemTitle>
+          </Link>
+        </ListItem>
+      ))}
+    </List>
+  </Container>
+)
 
 SectionItemList.propTypes = {
   title: PropTypes.string.isRequired,

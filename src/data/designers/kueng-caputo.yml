@@ -1,21 +1,30 @@
 slug: kueng-caputo
 name: Kueng Caputo
-bio:
-  Kueng Caputo is a designer.
+bio: Kueng Caputo is a designer.
 press:
-    -
-      title: NYTimes - Press Coverage of Design
-      link: https://google.com
+  - title: NYTimes - Press Coverage of Design
+    link: 'https://google.com'
 works:
-  -
-    title: Yellow Bench
+  - title: Yellow Bench
     slug: yellow-bench
     when: '2015'
     projects: []
-    tags: [benches]
+    tags:
+      - benches
     images:
-      -
-        file: 'lucas-samaras-gold1.jpg'
-    price: $2,500
+      - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/large.jpg
+        width: 1200
+        height: 800
+        resized:
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w400.jpg
+            width: 400
+            height: 267
+          - file: /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w800.jpg
+            width: 800
+            height: 533
+    price: '$2,500'
     medium: ''
     dimensions: ''

@@ -423,8 +423,16 @@ class ImageList extends Component {
 
             <ImageContainer className={cx({ center: centerImages })}>
               {images.map((image, i) => {
-                const { src, texts, unexpandedLink, alt = '' } = image
+                const {
+                  src,
+                  srcSet,
+                  width,
+                  texts,
+                  unexpandedLink,
+                  alt = '',
+                } = image
 
+                const sizes = isExpanded ? '70vw' : '200w'
                 const onMouseEnter = isExpanded
                   ? null
                   : () => this.onImageHover(image)
@@ -435,6 +443,8 @@ class ImageList extends Component {
                   <img
                     src={src}
                     alt={alt}
+                    srcSet={srcSet}
+                    sizes={sizes}
                     onMouseEnter={onMouseEnter}
                     onMouseLeave={onMouseLeave}
                   />

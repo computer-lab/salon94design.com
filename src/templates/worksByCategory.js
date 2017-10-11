@@ -9,7 +9,8 @@ import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import {
-  workImagePath,
+  imageLargePath,
+  imageSrcSet,
   workImageTexts,
   workLink,
   designerLink,
@@ -48,10 +49,12 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.forEach(designer => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
+      const image = work.images[0]
       images.push({
         work,
         designer,
-        src: workImagePath(work.images[0].file),
+        src: imageLargePath(image),
+        srcSet: imageSrcSet(image),
         texts: workImageTexts({
           designer,
           work,
@@ -117,6 +120,13 @@ export const pageQuery = graphql`
             tags
             images {
               file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
             }
             caption
             price

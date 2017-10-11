@@ -1,33 +1,55 @@
 slug: rick-owens
 name: Rick Owens
-bio:
-  Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.
-  Rick Owens is a noted menswear designer and he also makes these gold pieces of jewelry.
+bio: >-
+  Rick Owens is a noted menswear designer and he also makes these gold pieces of
+  jewelry. Rick Owens is a noted menswear designer and he also makes these gold
+  pieces of jewelry.
 press:
-  -
-    title: NYTimes - Press Coverage of Design
-    link: https://google.com
+  - title: NYTimes - Press Coverage of Design
+    link: 'https://google.com'
 works:
-  -
-    title: Shirt 1
+  - title: Shirt 1
     slug: shirt-1
     when: '2017'
     projects: []
-    tags: [clothing]
+    tags:
+      - clothing
     images:
-      -
-        file: 'rick-owens-shirt1.jpg'
-    caption: Black Shirt, waterproof.
-    price: $10,000
-  -
-    title: Shirt 2
+      - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/large.jpg
+        width: 1200
+        height: 800
+        resized:
+          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w400.jpg
+            width: 400
+            height: 267
+          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w800.jpg
+            width: 800
+            height: 533
+    caption: 'Black Shirt, waterproof.'
+    price: '$10,000'
+  - title: Shirt 2
     slug: shirt-2
     when: '2017'
     projects: []
-    tags: [clothing]
+    tags:
+      - clothing
     images:
-      -
-        file: 'rick-owens-shirt2.jpg'
-    price: $20,000
+      - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/large.jpg
+        width: 1200
+        height: 800
+        resized:
+          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w400.jpg
+            width: 400
+            height: 267
+          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w800.jpg
+            width: 800
+            height: 533
+    price: '$20,000'
     medium: ''
     dimensions: ''
