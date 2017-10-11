@@ -1,17 +1,17 @@
 const fs = require('fs-extra')
 const path = require('path')
-const yaml = require('js-yaml')
 const shortid = require('shortid')
 const sharp = require('sharp')
+
+const { getDesigners, updateDesignerFile } = require('./data')
+
+module.exports = main
 
 const imageDir = path.join(__dirname, '../static/images')
 const processedImageDir = path.join(imageDir, 'works')
 
-main()
-
 async function main () {
-  let designers = await getDesigners()
-  designers = [designers[0]] // test me baby
+  const designers = await getDesigners()
 
   // process works of all designers
   const processedWorks = await Promise.all(designers.map(designer =>
@@ -24,7 +24,7 @@ async function main () {
   ))
 }
 
-async function processDesignerWorks ({ data, file }) {
+async function processDesignerWorks (data) {
   const { works } = data
   return Promise.all(works.map(async (work) => {
     const imagesToProcess = work.images.filter(image =>
@@ -55,7 +55,7 @@ async function processDesignerWorks ({ data, file }) {
   }))
 }
 
-async function updateDesigner ({ data, file }, processedWorks) {
+async function updateDesigner (data, processedWorks) {
   const getImageData = async (filename) => {
     const { width, height } = await sharp(filename).metadata()
     return {
@@ -74,6 +74,7 @@ async function updateDesigner ({ data, file }, processedWorks) {
         return image
       }
 
+      // rewrite images list to include width, height, and resized files
       const { newImage, resizedImages } = processedWorkItem
       const primaryImageData = await getImageData(newImage)
       return Object.assign({}, primaryImageData, {
@@ -86,23 +87,7 @@ async function updateDesigner ({ data, file }, processedWorks) {
 
   // write updated designer to same file
   const updatedDesigner = Object.assign({}, data, { works })
-  const updatedYaml = yaml.safeDump(updatedDesigner)
-  await fs.writeFile(file, updatedYaml)
-}
-
-async function getDesigners () {
-  const designerDir = path.join(__dirname, '../src/data/designers')
-  const designerFiles = fs.readdirSync(designerDir).map(f => path.join(designerDir, f))
-
-  return Promise.all(designerFiles.map(designerFile => {
-    return fs.readFile(designerFile, 'utf8')
-      .then(str => yaml.safeLoad(str))
-      .then(data => ({ data, file: designerFile}))
-      .catch(err => {
-        console.error('err reading yaml: ', designerFile)
-        console.error(err)
-      })
-  }))
+  await updateDesignerFile(updatedDesigner)
 }
 
 function imageDataFilename (filename) {
@@ -118,8 +103,8 @@ function getImageDirectory (designer) {
 function moveImage (designer, work, image) {
   // move image to correct directory
   const oldFilename = path.join(imageDir, path.basename(image.file))
-  const newBasename = `${work.slug}-${shortid.generate()}${path.extname(oldFilename)}`
-  const newFilename = path.join(getImageDirectory(designer), newBasename)
+  const newDirectory = path.join(getImageDirectory(designer), `${work.slug}-${shortid.generate()}`)
+  const newFilename = path.join(newDirectory, `large${path.extname(oldFilename)}`)
   return fs.move(oldFilename, newFilename)
     .then(() => newFilename)
     .catch(err => {
@@ -177,8 +162,7 @@ async function resizeImage (jpegFilename) {
 
   return Promise.all(sizes.map(size => {
     const ext = path.extname(jpegFilename)
-    let resizedFilename = path.basename(jpegFilename, ext) +
-      `-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
+    let resizedFilename = `resized-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
     resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
 
     return sharp(jpegFilename)
