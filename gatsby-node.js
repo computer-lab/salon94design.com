@@ -191,14 +191,32 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    if (node.internal.type === 'InfoYaml') {
-      const markdownToHtml = util.promisify(remark().use(html).process);
-      const markdown = node.aboutText
+    const markdownToHtml = util.promisify(remark().use(html).process)
+    let markdown
 
-      markdownToHtml(markdown).then((html) => {
-        node.aboutHtml = html.contents
-      });
+    switch (node.internal.type) {
+      case 'InfoYaml':
+        markdown = node.aboutText
+
+        markdownToHtml(markdown).then((html) => {
+          node.aboutHtml = html.contents
+        })
+        break
+      case 'DesignersYaml':
+        markdown = node.bio
+
+        markdownToHtml(markdown).then((html) => {
+          node.bioHtml = html.contents
+        })
+        break
+      case 'ProjectsYaml':
+        markdown = node.description
+
+        markdownToHtml(markdown).then((html) => {
+          node.descriptionHtml = html.contents
+        })
+        break
     }
-    resolve();
+    resolve()
   });
 }
