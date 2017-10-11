@@ -9,5 +9,5 @@ async function main () {
   await purifyData()
 
   // move images to correct place, generate smaller sizes
-  // await processImages()
+  await processImages()
 }

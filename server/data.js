@@ -14,9 +14,7 @@ const projectDir = path.join(__dirname, '../src/data/projects')
 
 async function getDesigners () {
   const designerFiles = readdirAbsolute(designerDir)
-  let designers = await getYamlDatas(designerFiles)
-  designers = [designers[0]] // for testing
-
+  const designers = await getYamlDatas(designerFiles)
   return designers
 }
 
