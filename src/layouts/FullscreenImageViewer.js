@@ -177,6 +177,8 @@ class FullscreenImageViewer extends Component {
             className={smallImageClass}
             src={image.src}
             alt={image.alt}
+            srcSet={image.srcSet}
+            sizes={'100vw'}
             onLoad={this.onSmallImageLoad}
             ref={el => {
               this.smallImageEl = el

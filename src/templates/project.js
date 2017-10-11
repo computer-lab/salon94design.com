@@ -16,7 +16,8 @@ import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import Video from '../layouts/Video'
 import {
-  imagePath,
+  imageLargePath,
+  imageSrcSet,
   designerLink,
   projectLink,
   workImageTexts,
@@ -82,7 +83,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
         images.push({
           work,
           designer,
-          src: imagePath(work.images[0].file),
+          src: imageLargePath(work.images[0]),
+          srcSet: imageSrcSet(work.images[0]),
           texts: workImageTexts({
             work,
             designer,
@@ -190,6 +192,13 @@ export const pageQuery = graphql`
             tags
             images {
               file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
             }
             caption
             price

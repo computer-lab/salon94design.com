@@ -42,6 +42,13 @@ export const pageQuery = graphql`
             title
             images {
               file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
             }
           }
         }
