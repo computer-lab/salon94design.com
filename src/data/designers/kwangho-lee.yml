@@ -15,8 +15,38 @@ press:
 works:
   - dimensions: 5-10 feet long (1.5-3 m long)
     images:
-      - file: kwangho-silk-bench-1.jpg
-      - file: kwangho-silk-bench-1-detail.jpg
+      - file: works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
+        width: 2318
+        height: 1552
+        resized:
+          - file: works/kwangho-lee/silk-bench-1-ry_t42iih-/resized-w200.jpg
+            width: 200
+            height: 134
+          - file: works/kwangho-lee/silk-bench-1-ry_t42iih-/resized-w400.jpg
+            width: 400
+            height: 268
+          - file: works/kwangho-lee/silk-bench-1-ry_t42iih-/resized-w800.jpg
+            width: 800
+            height: 536
+          - file: works/kwangho-lee/silk-bench-1-ry_t42iih-/resized-w1440.jpg
+            width: 1440
+            height: 964
+      - file: works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
+        width: 1162
+        height: 1760
+        resized:
+          - file: works/kwangho-lee/silk-bench-1-B1tYNnii3b/resized-h300.jpg
+            width: 198
+            height: 300
+          - file: works/kwangho-lee/silk-bench-1-B1tYNnii3b/resized-h600.jpg
+            width: 396
+            height: 600
+          - file: works/kwangho-lee/silk-bench-1-B1tYNnii3b/resized-h900.jpg
+            width: 594
+            height: 900
+          - file: works/kwangho-lee/silk-bench-1-B1tYNnii3b/resized-h1600.jpg
+            width: 1056
+            height: 1600
     medium: Silk
     price: ''
     projects:
@@ -28,7 +58,26 @@ works:
     when: '2006'
   - dimensions: 15-20 feet long (4.5-6 m long)
     images:
-      - file: kwangho-large-nylon-bench.jpg
+      - file: works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
+        width: 1746
+        height: 1162
+        resized:
+          - file: >-
+              works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: >-
+              works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/resized-w400.jpg
+            width: 400
+            height: 266
+          - file: >-
+              works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/resized-w800.jpg
+            width: 800
+            height: 532
+          - file: >-
+              works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/resized-w1440.jpg
+            width: 1440
+            height: 958
     medium: Nylon
     price: '$28,000'
     projects:
@@ -40,8 +89,46 @@ works:
     when: '2006'
   - dimensions: Up to 8 feet (up to 2.4 m)
     images:
-      - file: kwangho-small-pvc-bench.jpg
-      - file: kwangho-small-pvc-bench-detail.jpg
+      - file: works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
+        width: 1752
+        height: 1152
+        resized:
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/resized-w200.jpg
+            width: 200
+            height: 132
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/resized-w400.jpg
+            width: 400
+            height: 263
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/resized-w800.jpg
+            width: 800
+            height: 526
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/resized-w1440.jpg
+            width: 1440
+            height: 947
+      - file: works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
+        width: 1490
+        height: 1874
+        resized:
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/resized-h300.jpg
+            width: 239
+            height: 300
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/resized-h600.jpg
+            width: 477
+            height: 600
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/resized-h900.jpg
+            width: 716
+            height: 900
+          - file: >-
+              works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/resized-h1600.jpg
+            width: 1272
+            height: 1600
     medium: PVC
     price: ''
     projects:
