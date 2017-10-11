@@ -1,0 +1,19 @@
+{
+  "name": "salon94design.com-data-cleaner",
+  "description": "Checks commits for salon94design.com and processes relevant data",
+  "version": "1.0.0",
+  "author": "Computer Lab <hi@computerlab.io>",
+  "dependencies": {
+    "fs-extra": "^4.0.2",
+    "js-yaml": "^3.10.0",
+    "sharp": "^0.18.4",
+    "shortid": "^2.2.8",
+    "simple-git": "^1.79.0",
+    "slugify": "^1.2.1"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "micro"
+  }
+}
