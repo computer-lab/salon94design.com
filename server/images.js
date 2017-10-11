@@ -7,20 +7,26 @@ const sharp = require('sharp')
 const imageDir = path.join(__dirname, '../static/images')
 const processedImageDir = path.join(imageDir, 'works')
 
-processDesigners()
+main()
 
-function processDesigners () {
-  const designers = await getDesigners()
-  const processedWorks = await Promise.all(designers.map(designer => processWorks(designer)))
+async function main () {
+  let designers = await getDesigners()
+  designers = [designers[0]] // test me baby
 
+  // process works of all designers
+  const processedWorks = await Promise.all(designers.map(designer =>
+    processDesignerWorks(designer)
+  ))
+
+  // update yaml files of all designers
   await Promise.all(designers.map((designer, index) =>
     updateDesigner(designer, processedWorks[index])
   ))
 }
 
-async function processWorks ({ data, file }) {
+async function processDesignerWorks ({ data, file }) {
   const { works } = data
-  return Promise.all(works.map(work => {
+  return Promise.all(works.map(async (work) => {
     const imagesToProcess = work.images.filter(image =>
       !image.file.includes(processedImageDir)
     )
@@ -79,7 +85,7 @@ async function updateDesigner ({ data, file }, processedWorks) {
   }))
 
   // write updated designer to same file
-  const updatedDesigner = Object.assign({}, designer, { works })
+  const updatedDesigner = Object.assign({}, data, { works })
   const updatedYaml = yaml.safeDump(updatedDesigner)
   await fs.writeFile(file, updatedYaml)
 }
@@ -115,19 +121,21 @@ function moveImage (designer, work, image) {
   const newBasename = `${work.slug}-${shortid.generate()}${path.extname(oldFilename)}`
   const newFilename = path.join(getImageDirectory(designer), newBasename)
   return fs.move(oldFilename, newFilename)
+    .then(() => newFilename)
     .catch(err => {
       console.error('err moving file: ', oldFilename)
       console.error(err)
     })
 }
 
-function makeImageJpeg (image) {
+function makeImageJpeg (imageFilename) {
   const ext = path.extname(imageFilename)
   if (ext === '.jpg') {
     return Promise.resolve(imageFilename)
   }
 
-  const jpegFilename = path.basename(imageFilename, ext) + '.jpg'
+  let jpegFilename = path.basename(imageFilename, ext) + '.jpg'
+  jpegFilename = path.join(path.dirname(imageFilename), jpegFilename)
   return sharp(imageFilename)
     .jpeg({ quality: 90 })
     .toFile(jpegFilename)
@@ -154,12 +162,14 @@ async function resizeImage (jpegFilename) {
   if (width >= height) {
     sizes.push({ width: 200 })
     sizes.push({ width: 400 })
+    sizes.push({ width: 800 })
     if (width > 1440) {
       sizes.push({ width: 1440 })
     }
   } else {
     sizes.push({ height: 300 })
     sizes.push({ height: 600 })
+    sizes.push({ height: 900 })
     if (height > 1600) {
       sizes.push({ height: 1600 })
     }
@@ -167,8 +177,9 @@ async function resizeImage (jpegFilename) {
 
   return Promise.all(sizes.map(size => {
     const ext = path.extname(jpegFilename)
-    const resizedFilename = path.basename(jpegFilename, ext) +
-      `-${size.width ? `w${size.width}` : `h${size.height}`}`
+    let resizedFilename = path.basename(jpegFilename, ext) +
+      `-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
+    resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
 
     return sharp(jpegFilename)
       .resize(size.width, size.height)
