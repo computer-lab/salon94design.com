@@ -141,7 +141,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
             </div>
           </Header1>
           <ProjectDescription
-            dangerouslySetInnerHTML={{ __html: currentProject.description }}
+            dangerouslySetInnerHTML={{ __html: currentProject.descriptionHtml }}
           />
         </ProjectHeader>
         <HiddenSelector
@@ -163,7 +163,7 @@ export const pageQuery = graphql`
         node {
           slug
           title
-          description
+          descriptionHtml
           when
           video {
             vimeoId
