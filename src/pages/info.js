@@ -91,7 +91,7 @@ const MailingListSignup = styled.div`
 const Info = ({ data }) => {
   const { allInfoYaml } = data
   const {
-    aboutText,
+    aboutHtml,
     email,
     phone,
     instagram,
@@ -111,7 +111,7 @@ const Info = ({ data }) => {
         <Section>
           <AboutWrapper>
             <Header2>About</Header2>
-            <SectionText dangerouslySetInnerHTML={{ __html: aboutText }} />
+            <SectionText dangerouslySetInnerHTML={{ __html: aboutHtml }} />
           </AboutWrapper>
 
           <Press press={press} />
@@ -154,7 +154,7 @@ export const pageQuery = graphql`
     allInfoYaml {
       edges {
         node {
-          aboutText
+          aboutHtml
           email
           phone
           instagram
