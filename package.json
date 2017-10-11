@@ -14,7 +14,9 @@
     "gatsby-source-filesystem": "^1.4.4",
     "gatsby-transformer-remark": "^1.7.2",
     "gatsby-transformer-yaml": "^1.5.4",
-    "react-scroll": "^1.5.4"
+    "react-scroll": "^1.5.4",
+    "remark": "^8.0.0",
+    "remark-html": "^6.0.1"
   },
   "keywords": [
     "gatsby"
