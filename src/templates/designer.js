@@ -18,7 +18,13 @@ import DesignerProjects from '../layouts/DesignerProjects'
 import Press from '../layouts/Press'
 import ImageList from '../layouts/ImageList'
 import WorkSummary from '../layouts/WorkSummary'
-import { imagePath, workImageTexts, designerLink, workLink } from '../util'
+import {
+  imageLargePath,
+  imageSrcSet,
+  workImageTexts,
+  designerLink,
+  workLink,
+} from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -55,7 +61,8 @@ const DesignerTemplate = ({ data, pathContext }) => {
     .filter(work => work.images && work.images.length > 0)
     .map(work => ({
       work,
-      src: imagePath(work.images[0].file),
+      src: imageLargePath(work.images[0]),
+      srcSet: imageSrcSet(work.images[0]),
       texts: workImageTexts({
         designer: currentDesigner,
         work,
@@ -163,6 +170,13 @@ export const pageQuery = graphql`
             tags
             images {
               file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
             }
             caption
             price

@@ -1,4 +1,5 @@
 export * from './data'
+export * from './image'
 export * from './path'
 export * from './tag'
 

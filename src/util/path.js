@@ -1,9 +1,4 @@
-const { basename } = require('path')
-
 import { tagCategory } from './tag'
-
-export const imagePath = name =>
-  __PATH_PREFIX__ + `/images/${name}`
 
 export const designerLink = slug => `/designers/${slug}`
 
