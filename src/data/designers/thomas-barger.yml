@@ -12,13 +12,13 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: 27.5 x 36 x 21
+  - slug: underwear-armoire
+    dimensions: 27.5 x 36 x 21
     images:
       - file: /public/static/4F7A9936.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects: []
-    slug: underwear armoire
     tags:
       - storage
       - miscellaneous
