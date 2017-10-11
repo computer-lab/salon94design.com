@@ -1,4 +1,7 @@
 const path = require('path')
+const util = require('util')
+const remark = require('remark')
+const html = require('remark-html')
 const { tagCategory } = require('./src/util/tag')
 
 exports.createPages = props => {
@@ -171,7 +174,7 @@ function createWorks({ boundActionCreators, graphql }) {
   })
 }
 
-exports.onCreatePage = ({ page, boundActionCreators }) => {
+exports.onCreatePage = async ({ page, boundActionCreators }) => {
   const { createPage } = boundActionCreators
 
   return new Promise((resolve, reject) => {
@@ -182,4 +185,23 @@ exports.onCreatePage = ({ page, boundActionCreators }) => {
 
     resolve()
   })
+}
+
+exports.onCreateNode = async ({ node, boundActionCreators }) => {
+  const { createNodeField } = boundActionCreators
+
+  return new Promise((resolve, reject) => {
+    if (node.internal.type === 'InfoYaml') {
+      const markdownToHtml = util.promisify(remark().use(html).process);
+      const markdown = node.aboutText
+
+      markdownToHtml(markdown).then((html) => {
+        node.aboutHtml = html.contents
+        resolve()
+      });
+    }
+    else {
+      resolve();
+    }
+  });
 }
