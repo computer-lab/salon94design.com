@@ -92,8 +92,8 @@ async function updateDesigner (data, processedWorks) {
 
 function imageDataFilename (filename) {
   // shorten filename to only include necessary info in yaml
-  const imagesIndex = filename.indexOf('images')
-  return filename.substr(imagesIndex)
+  const prefix = 'images/'
+  return filename.substr(filename.indexOf(prefix) + prefix.length)
 }
 
 function getImageDirectory (designer) {
@@ -124,6 +124,10 @@ function makeImageJpeg (imageFilename) {
   return sharp(imageFilename)
     .jpeg({ quality: 90 })
     .toFile(jpegFilename)
+    .then(() =>
+      fs.remove(imageFilename) // remove old non-jpeg file
+        .catch() // ignore non-critical error
+    )
     .then(() => jpegFilename)
     .catch(err => {
       console.error('err making image jpeg: ', imageFilename)
