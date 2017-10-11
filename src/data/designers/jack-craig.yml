@@ -12,23 +12,23 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: ''
+  - slug: bronze-stool
+    dimensions: ''
     images:
       - file: /public/static/bronze-concrete1.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
-    slug: Bronze Stool
     tags:
       - chairs
     title: 'Bronze Stool, 2016'
     when: '2016'
-  - dimensions: '36 x 15 x 20 inches '
+  - slug: large-marble-table-lamp
+    dimensions: '36 x 15 x 20 inches '
     images:
       - file: /public/static/Screen Shot 2017-10-02 at 10.14.51 AM.png
     medium: 'bronze, marble'
     price: ''
-    slug: large marble table lamp
     tags:
       - lighting
     title: 'Large Marble Table Lamp, 2017'

@@ -39,9 +39,9 @@ async function processDesigners () {
   const pureDesigners = await Promise.all(impureDesigners.map(designer =>
     Object.assign({}, designer, {
       slug: slugify(designer.slug),
-      works: designer.works.map(work => Object.assign({}, {
+      works: designer.works.map(work => Object.assign({}, work, {
         slug: slugify(work.slug)
-      }, work))
+      }))
     })
   ))
 

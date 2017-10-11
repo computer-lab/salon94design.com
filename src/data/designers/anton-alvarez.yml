@@ -5,7 +5,8 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: 18.11 x 82.28 x 10.24 inches
+  - slug: the-thread-wrapping-machine-bench-271115-2015
+    dimensions: 18.11 x 82.28 x 10.24 inches
     images:
       - file: /public/static/Screen Shot 2017-10-08 at 11.20.25 PM.png
     medium: >-
@@ -14,7 +15,6 @@ works:
     price: ''
     projects:
       - slug: MIDTOWN
-    slug: 'The Thread Wrapping Machine Bench 271115, 2015'
     tags:
       - bench
     title: The Thread Wrapping Machine Bench 271115
