@@ -160,8 +160,8 @@ export const pageQuery = graphql`
           instagram
           mailingList
           press {
-            link
             title
+            link
           }
         }
       }

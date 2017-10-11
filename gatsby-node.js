@@ -198,25 +198,25 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
       case 'InfoYaml':
         markdown = node.aboutText
 
-        markdownToHtml(markdown).then((html) => {
+        markdownToHtml(markdown).then(html => {
           node.aboutHtml = html.contents
         })
         break
       case 'DesignersYaml':
         markdown = node.bio
 
-        markdownToHtml(markdown).then((html) => {
+        markdownToHtml(markdown).then(html => {
           node.bioHtml = html.contents
         })
         break
       case 'ProjectsYaml':
         markdown = node.description
 
-        markdownToHtml(markdown).then((html) => {
+        markdownToHtml(markdown).then(html => {
           node.descriptionHtml = html.contents
         })
         break
     }
     resolve()
-  });
+  })
 }
