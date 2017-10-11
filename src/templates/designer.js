@@ -115,7 +115,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
       </LeftPane>
       <RightPane className="selectable">
         <Header1>{currentDesigner.name}</Header1>
-        <DesignerBio bio={currentDesigner.bio} />
+        <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
         <HiddenSelector
@@ -148,7 +148,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          bio
+          bioHtml
           press {
             title
             link
