@@ -191,8 +191,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
 
   return new Promise((resolve, reject) => {
-    const markdownToHtml = util.promisify(remark().use(html).process);
-    let markdown;
+    const markdownToHtml = util.promisify(remark().use(html).process)
+    let markdown
 
     switch (node.internal.type) {
       case 'InfoYaml':
