@@ -105,7 +105,10 @@ collections:
         label: Title
         widget: string
       - name: when
-        label: Year
+        label: When
+        widget: string
+      - name: groupingYear
+        label: Year for grouping / sorting
         widget: number
       - name: designers
         label: Designers

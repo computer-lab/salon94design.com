@@ -41,13 +41,14 @@ export default function Projects({ data }) {
 
 export const pageQuery = graphql`
   query ProjectsQuery {
-    allProjectsYaml(sort: { order: DESC, fields: [when] }) {
+    allProjectsYaml(sort: { order: DESC, fields: [groupingYear, title] }) {
       edges {
         node {
           slug
           title
           description
           when
+          groupingYear
           designers {
             slug
           }
