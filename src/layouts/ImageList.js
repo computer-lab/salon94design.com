@@ -422,9 +422,13 @@ class ImageList extends Component {
 
     return (
       <section>
-        <Helmet
-          meta={[{ name: 'og:image', content: `${ROOT_URL}${firstImage.src}` }]}
-        />
+        {firstImage && (
+          <Helmet
+            meta={[
+              { name: 'og:image', content: `${ROOT_URL}${firstImage.src}` },
+            ]}
+          />
+        )}
 
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
