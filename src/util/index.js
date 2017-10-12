@@ -13,3 +13,5 @@ export const choice = arr => {
   if (!arr) return null
   return arr[Math.floor(arr.length * Math.random())]
 }
+
+export const ROOT_URL = 'https://www.salon94design.com'
