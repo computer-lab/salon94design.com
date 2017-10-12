@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
+import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
@@ -41,7 +41,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - ${currentDesigner.name} Works - ${currentWork.title}`}
+        title={`Salon 94 Design - ${currentWork.title}, ${currentDesigner.name}`}
       />
       <LeftPane>
         {currentWork.video && <Video video={currentWork.video} />}

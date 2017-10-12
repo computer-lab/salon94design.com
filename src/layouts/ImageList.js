@@ -6,6 +6,8 @@ import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
 
+import { ROOT_URL } from '../util'
+import Helmet from '../components/helmet'
 import {
   monofont,
   sansfont,
@@ -413,8 +415,17 @@ class ImageList extends Component {
         ]
       : null
 
+    const firstImage =
+      imageSets.length > 0 && imageSets[0].images.length > 0
+        ? imageSets[0].images[0]
+        : null
+
     return (
       <section>
+        <Helmet
+          meta={[{ name: 'og:image', content: `${ROOT_URL}${firstImage.src}` }]}
+        />
+
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) => (

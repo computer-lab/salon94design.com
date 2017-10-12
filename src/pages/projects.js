@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Helmet from 'react-helmet'
+import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
@@ -28,7 +28,10 @@ export default function Projects({ data }) {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Projects`} />
+      <Helmet
+        title={`Salon 94 Design - Projects`}
+        description={`List of Salon 94 Design exhibtions and projects`}
+      />
       <div>
         <SectionItemList title="Projects" items={listItems} />
       </div>

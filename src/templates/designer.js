@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
@@ -115,7 +115,10 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Designers — ${currentDesigner.name}`} />
+      <Helmet
+        title={`${currentDesigner.name} - Salon 94 Design`}
+        description={`Projects and works by ${currentDesigner.name}. ${currentDesigner.bio}`}
+      />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
         <ImageList
@@ -158,6 +161,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
+          bio
           bioHtml
           press {
             title

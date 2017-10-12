@@ -1,5 +1,5 @@
 import React from 'react'
-import Helmet from 'react-helmet'
+import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
@@ -119,7 +119,10 @@ const ProjectTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Projects - ${currentProject.title}`} />
+      <Helmet
+        title={`${currentProject.title} - Salon 94 Design`}
+        description={currentProject.description}
+      />
       <LeftPane>
         {currentProject.video && <Video video={currentProject.video} />}
         <ImageList
@@ -165,6 +168,7 @@ export const pageQuery = graphql`
         node {
           slug
           title
+          description
           descriptionHtml
           when
           video {
