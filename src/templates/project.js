@@ -99,9 +99,12 @@ const ProjectTemplate = ({ data, pathContext }) => {
 
   const imageSets = [{ images }]
 
-  const projectsByYear = Array.from(new Set(projects.map(p => p.when))) // years
+  const projectsByYear = Array.from(new Set(projects.map(p => p.groupingYear))) // years
     .sort((a, b) => b - a) // sort reverse-chronologically
-    .map(year => ({ year, projects: projects.filter(p => p.when === year) }))
+    .map(year => ({
+      year,
+      projects: projects.filter(p => p.groupingYear === year),
+    }))
 
   const selectorSections = projectsByYear.map(({ year, projects }) => ({
     title: year,
@@ -171,6 +174,7 @@ export const pageQuery = graphql`
           description
           descriptionHtml
           when
+          groupingYear
           video {
             vimeoId
             caption

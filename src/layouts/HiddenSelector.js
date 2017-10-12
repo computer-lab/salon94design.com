@@ -55,7 +55,7 @@ const SelectorTitle = styled.div`
 
 const OptionSection = styled.div`
   &:not(:last-child) {
-    margin-bottom: 36px;
+    margin-bottom: 24px;
   }
 `
 
@@ -64,7 +64,7 @@ const OptionSectionTitle = styled.h3`
   font-weight: bold;
   font-size: 22px;
   padding: 0;
-  margin: 0 0 12px 0;
+  margin: 0;
 `
 
 const OptionList = styled.ul`
@@ -74,13 +74,9 @@ const OptionList = styled.ul`
   flex-wrap: wrap;
 
   & li {
-    margin: 0;
+    margin: 12px 0 0 0;
     padding: 0 20px 0 0;
     line-height: 1.25;
-
-    &:not(:last-child) {
-      margin-bottom: 12px;
-    }
   }
 
   @media (${breakpoint1}) {
