@@ -513,7 +513,7 @@ class ImageList extends Component {
                               {texts.caption}
                             </ImageText>
                             <ImageText className="expanded-text right data-texts">
-                              {texts.data.map(txt => (
+                              {(texts.data || []).map(txt => (
                                 <ImageTextData key={txt}>{txt}</ImageTextData>
                               ))}
                             </ImageText>
