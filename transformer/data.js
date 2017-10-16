@@ -6,7 +6,9 @@ module.exports = {
   getDesigners,
   getProjects,
   updateDesignerFile,
-  updateProjectFile
+  updateProjectFile,
+  resetDesignerFile,
+  resetProjectFile
 }
 
 const designerDir = path.join(__dirname, '../src/data/designers')
@@ -42,19 +44,42 @@ function readdirAbsolute (dir) {
   return fs.readdirSync(dir).map(f => path.join(dir, f))
 }
 
+const designerFileName = data => path.join(designerDir, `${data.slug.trim()}.yml`)
+const projectFileName = data => path.join(projectDir, `${data.slug.trim()}.yml`)
+
 async function updateDesignerFile (data) {
   // write updated designer to same file
-  const file = path.join(designerDir, `${data.slug}.yml`)
-  await writeYamlFile(data, file)
+  await writeYamlFile(data, designerFileName(data))
+}
+
+async function resetDesignerFile (oldData, data) {
+  await resetYamlFile(oldData, data, designerFileName)
 }
 
 async function updateProjectFile (data) {
   // write updated designer to same file
-  const file = path.join(projectDir, `${data.slug}.yml`)
-  await writeYamlFile(data, file)
+  await writeYamlFile(data, projectFileName(data))
+}
+
+async function resetProjectFile (oldData, data) {
+  await resetYamlFile(oldData, data, projectFileName)
 }
 
 async function writeYamlFile (data, file) {
   const yamlData = yaml.safeDump(data)
   await fs.writeFile(file, yamlData)
+}
+
+async function resetYamlFile (oldData, data, fileMaker) {
+  const newDataFile = fileMaker(data)
+
+  // remove old duplicate file if necessary
+  const oldDataFile = fileMaker(oldData)
+  console.log(oldDataFile, newDataFile)
+  if (oldDataFile !== newDataFile) {
+    await fs.remove(oldDataFile)
+  }
+
+  // write new file
+  await writeYamlFile(data, newDataFile)
 }
