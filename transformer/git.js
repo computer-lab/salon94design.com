@@ -11,7 +11,7 @@ const gitDir = path.join(__dirname, '../')
 
 function pullRepo () {
   const repo = simpleGit(gitDir)
-  const pull = promisify(repo.pull).bind(repo)
+  const pull = promisify(repo.pull)
   return pull('origin', 'master')
     .catch(err => {
       console.error('error pulling: ', err)
@@ -20,7 +20,7 @@ function pullRepo () {
 
 async function pushChanges () {
   let repo = simpleGit(gitDir)
-  const repoDiff = promisify(repo.diff).bind(repo)
+  const repoDiff = promisify(repo.diff)
 
   try {
     const diff = await repoDiff()
@@ -33,7 +33,7 @@ async function pushChanges () {
       .add('./*')
       .commit('data processing')
 
-    const repoPush = promisify(repo.push).bind(repo)
+    const repoPush = promisify(repo.push)
     await repoPush('origin', 'master')
   } catch (err) {
     console.error('error commiting changes:', err)
