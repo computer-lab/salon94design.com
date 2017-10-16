@@ -4,6 +4,9 @@ export const imageFilepath = file =>
 export const imageLargePath = image => imageFilepath(image.file)
 
 export const imageSrcSet = image => {
+  if (!image || !image.resized) {
+    return ''
+  }
   const resized = image.resized.map(
     ({ file, width }) => `${imageFilepath(file)} ${width}w`
   )
