@@ -11,31 +11,44 @@ const gitDir = path.join(__dirname, '../')
 
 function pullRepo () {
   const repo = simpleGit(gitDir)
-  const pull = promisify(repo.pull)
-  return pull('origin', 'master')
-    .catch(err => {
-      console.error('error pulling: ', err)
+  return new Promise((resolve, reject) => {
+    repo.pull('origin', 'master', err => {
+      if (err) {
+        console.error('error pulling: ', err)
+        return reject(err)
+      }
+
+      resolve()
     })
+  })
 }
 
 async function pushChanges () {
   let repo = simpleGit(gitDir)
-  const repoDiff = promisify(repo.diff)
+  return new Promise((resolve, reject) => {
+    repo.diff((err, diff) => {
+      if (err) {
+        console.error('error diffing: ', err)
+        return reject(err)
+      }
 
-  try {
-    const diff = await repoDiff()
-    const hasDiff = diff.length > 0
-    if (!hasDiff) {
-      return
-    }
+      const hasDiff = diff.length > 0
+      if (!hasDiff) {
+        return resolve()
+      }
 
-    repo = repo
-      .add('./*')
-      .commit('data processing')
+      repo = repo
+        .add('./*')
+        .commit('data processing')
 
-    const repoPush = promisify(repo.push)
-    await repoPush('origin', 'master')
-  } catch (err) {
-    console.error('error commiting changes:', err)
-  }
+      repo.push('origin', 'master', err => {
+        if (err) {
+          console.error('error commiting changes:', err)
+          return reject(err)
+        }
+
+        resolve()
+      })
+    })
+  })
 }
