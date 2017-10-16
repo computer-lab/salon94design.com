@@ -1,34 +1,25 @@
 slug: kueng-caputo
 name: Kueng Caputo
-bio: Kueng Caputo is a designer.
+bio: >-
+  The young Swiss-born partnership Kueng Caputo have worked together since they
+  were both students of design at the HGKZ Zurich from 2004 to 2008. Sarah Kueng
+  and Lovis Caputo practice design as response with an emphasis on
+  understatement and improvisation. Their first 'Five Stars Cardboard'
+  installations at the Salone Satellite in 2007 went on to show in South Korea,
+  Basel and New York.
 press:
-  - title: NYTimes - Press Coverage of Design
-    link: 'https://google.com'
+  - link: 'https://google.com'
+    title: NYTimes - Press Coverage of Design
 works:
-  - title: Yellow Bench
-    slug: yellow-bench
-    when: '2015'
-    projects: []
-    tags:
-      - benches
+  - dimensions: ''
     images:
       - file: >-
           /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/large.jpg
-        width: 1200
-        height: 800
-        resized:
-          - file: >-
-              /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w200.jpg
-            width: 200
-            height: 133
-          - file: >-
-              /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w400.jpg
-            width: 400
-            height: 267
-          - file: >-
-              /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/resized-w800.jpg
-            width: 800
-            height: 533
-    price: '$2,500'
     medium: ''
-    dimensions: ''
+    price: ''
+    projects: []
+    slug: yellow-bench
+    tags:
+      - benches
+    title: Yellow Bench
+    when: '2015'
