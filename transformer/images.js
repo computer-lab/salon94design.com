@@ -29,7 +29,7 @@ async function processDesignerWorks (data) {
   return Promise.all(works.map(async (work) => {
     const images = work.images || []
     const imagesToProcess = images.filter(image =>
-      !image.file.includes(processedImageDir)
+      !image.file.includes('static/images/works')
     )
 
     // move from root static folder to correct subdirectory, and rename
