@@ -40,7 +40,7 @@ const TagList = styled.ul`
 
 const TagSelector = ({ tags, currentTag }) => {
   // TODO: remove temporary tag multiplication
-  tags = tags.concat(['Beds', 'Outdoor', 'Lighting', 'Textiles', 'Ceramic'])
+  tags = tags.concat(['Beds', 'Outdoor', 'Textiles', 'Ceramic'])
 
   return (
     <Container>
