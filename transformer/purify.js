@@ -1,7 +1,9 @@
 const slugify = require('slugify')
-const { getDesigners, getProjects, updateDesignerFile, updateProjectFile } = require('./data')
+const { getDesigners, getProjects, resetDesignerFile, resetProjectFile } = require('./data')
 
 module.exports = main
+
+const slugifyLower = str => slugify(str, { lower: true })
 
 async function main () {
   await processProjects()
@@ -12,40 +14,36 @@ async function processProjects () {
   const projects = await getProjects()
 
   const impureProjects = projects.filter(project =>
-    project.slug !== slugify(project.slug)
+    project.slug !== slugifyLower(project.slug)
   )
 
-  const pureProjects = await Promise.all(impureProjects.map(project =>
-    Object.assign({}, project, {
-      slug: slugify(project.slug)
+  await Promise.all(impureProjects.map(project => {
+    const pureProject = Object.assign({}, project, {
+      slug: slugifyLower(project.slug)
     })
-  ))
 
-  await Promise.all(pureProjects.map(data =>
-    updateProjectFile(data)
-  ))
+    return resetProjectFile(project, pureProject)
+  }))
 }
 
 async function processDesigners () {
   const designers = await getDesigners()
 
   const impureDesigners = designers.filter(designer =>
-    designer.slug !== slugify(designer.slug) ||
+    designer.slug !== slugifyLower(designer.slug) ||
     (designer.works || []).filter(work =>
-      work.slug !== slugify(work.slug)
+      work.slug !== slugifyLower(work.slug)
     ).length > 0
   )
 
-  const pureDesigners = await Promise.all(impureDesigners.map(designer =>
-    Object.assign({}, designer, {
-      slug: slugify(designer.slug),
+  await Promise.all(impureDesigners.map(designer => {
+    const pureDesigner = Object.assign({}, designer, {
+      slug: slugifyLower(designer.slug),
       works: (designer.works || []).map(work => Object.assign({}, work, {
-        slug: slugify(work.slug)
+        slug: slugifyLower(work.slug)
       }))
     })
-  ))
 
-  await Promise.all(pureDesigners.map(data =>
-    updateDesignerFile(data)
-  ))
+    return resetDesignerFile(designer, pureDesigner)
+  }))
 }
