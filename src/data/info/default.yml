@@ -2,12 +2,11 @@ email: info@salon94design.com
 instagram: 'https://www.instagram.com/salon94'
 phone: 212-979-0001
 mailingList: 'https://salon94design.com/mailing-list'
-aboutText: >-
-  The Design wing of [Salon 94](https://www.salon94.com/). We represent 9
-  multimaterial designers that have each shown globally, and do about 4 shows a
-  year. bio text bio text bio text bio text bio text this is Salon 94 Design.
+aboutText: 'The Design wing of [Salon 94](https://www.salon94.com/).'
 press:
-  - link: 'https://google.com'
-    title: Google - Salon94 Launches "Salon94 Design"
-  - link: 'https://nytimes.com'
-    title: NYTimes - Salon94Design.com
+  - link: >-
+      http://www.sightunseen.com/2017/03/new-york-design-gallery-salon-94-design/
+    title: Design and Art Are More Connected Than Ever at New York’s Newest Gallery
+  - link: >-
+      http://www.artnews.com/2017/03/02/salon-94-gallery-to-launch-design-program/
+    title: Salon 94 Gallery to Launch Design Program
