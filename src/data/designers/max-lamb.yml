@@ -64,7 +64,8 @@ works:
     when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
-      - file: /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
         width: 1156
         height: 1752
         resized:
@@ -95,7 +96,8 @@ works:
     when: '2017'
   - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
     images:
-      - file: /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
         width: 1158
         height: 1750
         resized:
@@ -115,7 +117,8 @@ works:
               /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/resized-h1600.jpg
             width: 1059
             height: 1600
-      - file: /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
         width: 1156
         height: 1746
         resized:

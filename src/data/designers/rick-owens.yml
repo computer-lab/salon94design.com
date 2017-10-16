@@ -19,13 +19,16 @@ works:
         width: 1200
         height: 800
         resized:
-          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w200.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w200.jpg
             width: 200
             height: 133
-          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w400.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w400.jpg
             width: 400
             height: 267
-          - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w800.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/resized-w800.jpg
             width: 800
             height: 533
     caption: 'Black Shirt, waterproof.'
@@ -41,13 +44,16 @@ works:
         width: 1200
         height: 800
         resized:
-          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w200.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w200.jpg
             width: 200
             height: 133
-          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w400.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w400.jpg
             width: 400
             height: 267
-          - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w800.jpg
+          - file: >-
+              /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/resized-w800.jpg
             width: 800
             height: 533
     price: '$20,000'
