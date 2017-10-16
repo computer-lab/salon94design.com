@@ -15,17 +15,21 @@ works:
   - slug: underwear-armoire
     dimensions: 27.5 x 36 x 21
     images:
-      - file: /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
+      - file: >-
+          /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
         width: 6275
         height: 4183
         resized:
-          - file: /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w200.jpg
+          - file: >-
+              /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w200.jpg
             width: 200
             height: 133
-          - file: /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w400.jpg
+          - file: >-
+              /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w400.jpg
             width: 400
             height: 267
-          - file: /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w800.jpg
+          - file: >-
+              /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/resized-w800.jpg
             width: 800
             height: 533
           - file: >-
