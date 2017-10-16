@@ -66,8 +66,8 @@ ImageMagnifier.propTypes = {
 
   // the size of the zoomed-in image
   largeImageSize: PropTypes.shape({
-    width: PropTypes.number.isRequired,
-    height: PropTypes.number.isRequired,
+    width: PropTypes.isRequired,
+    height: PropTypes.isRequired,
   }).isRequired,
 
   // src of the zoomed-in image

@@ -9,8 +9,7 @@ import ImageList from '../layouts/ImageList'
 import TagSelector from '../layouts/TagSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import {
-  imageLargePath,
-  imageSrcSet,
+  imageInfo,
   workImageTexts,
   workLink,
   designerLink,
@@ -50,24 +49,26 @@ const WorksTemplate = ({ data, pathContext }) => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
       const image = work.images[0]
-      images.push({
-        work,
-        designer,
-        src: imageLargePath(image),
-        srcSet: imageSrcSet(image),
-        texts: workImageTexts({
-          designer,
+      images.push(
+        Object.assign(imageInfo(image), {
           work,
-          projects,
-          smallText: (
-            <div>
-              <Link to={workLink(designer.slug, work.slug)}>{work.title} </Link>
-              – <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-              , {work.when}
-            </div>
-          ),
-        }),
-      })
+          designer,
+          texts: workImageTexts({
+            designer,
+            work,
+            projects,
+            smallText: (
+              <div>
+                <Link to={workLink(designer.slug, work.slug)}>
+                  {work.title}{' '}
+                </Link>
+                – <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+                , {work.when}
+              </div>
+            ),
+          }),
+        })
+      )
     })
   })
 

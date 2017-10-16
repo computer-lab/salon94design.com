@@ -13,3 +13,14 @@ export const imageSrcSet = image => {
   const large = `${imageLargePath(image)} ${image.width}w`
   return resized.concat([large]).join(', ')
 }
+
+export const imageLargeSize = image => ({
+  width: image.width,
+  height: image.height,
+})
+
+export const imageInfo = image => ({
+  src: imageLargePath(image),
+  srcSet: imageSrcSet(image),
+  largeSize: imageLargeSize(image),
+})
