@@ -123,6 +123,16 @@ collections:
       - name: description
         label: Description
         widget: markdown
+      - name: images
+        label: Images
+        widget: list
+        fields:
+          - name: file
+            label: File
+            widget: image
+          - name: caption
+            label: Caption
+            widget: string
       - name: video
         label: Video
         widget: object

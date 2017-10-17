@@ -3,14 +3,20 @@ const path = require('path')
 const shortid = require('shortid')
 const sharp = require('sharp')
 
-const { getDesigners, updateDesignerFile } = require('./data')
+const { getDesigners, updateDesignerFile, getProjects, updateProjectFile } = require('./data')
 
 module.exports = main
 
 const imageDir = path.join(__dirname, '../static/images')
-const processedImageDir = path.join(imageDir, 'works')
 
 async function main () {
+  await Promise.all([
+    processDesigners(),
+    processProjects()
+  ])
+}
+
+async function processDesigners () {
   const designers = await getDesigners()
 
   // process works of all designers
@@ -24,65 +30,69 @@ async function main () {
   ))
 }
 
+async function processProjects () {
+  const projects = await getProjects()
+
+  // process project images
+  const processedProjectImages = await Promise.all(projects.map(project =>
+    processProjectImages(project)
+  ))
+
+  // update yaml files of all designers
+  await Promise.all(projects.map((project, index) =>
+    updateProject(project, processedProjectImages[index])
+  ))
+}
+
 async function processDesignerWorks (data) {
   const { works } = data
   return Promise.all(works.map(async (work) => {
+    // find images that need processing
     const images = work.images || []
     const imagesToProcess = images.filter(image =>
       !image.file.includes('static/images/works')
     )
 
-    // move from root static folder to correct subdirectory, and rename
-    const movedImages = await Promise.all(imagesToProcess.map(image =>
-      moveImage(data, work, image)
-    ))
-
-    // convert other image formats to jpg
-    const jpegImages = await Promise.all(movedImages.map(image =>
-      makeImageJpeg(image)
-    ))
-
-    // create necessary sizes
-    const processedImages = await Promise.all(jpegImages.map(jpegFilename =>
-      resizeImage(jpegFilename)
-    ))
+    // process them
+    const processedImages = await Promise.all(imagesToProcess.map(image => {
+      const newFilename = workImageFilename(data, work, image)
+      return processImage(image, newFilename)
+    }))
 
     // return relevant info
-    return imagesToProcess.map((image, index) => ({
-      originalImageIndex: images.indexOf(image),
-      newImage: jpegImages[index],
-      resizedImages: processedImages[index]
+    return processedImages.map((item, i) => Object.assign({}, item, {
+      originalImageIndex: images.indexOf(imagesToProcess[i])
     }))
   }))
 }
 
-async function updateDesigner (data, processedWorks) {
-  const getImageData = async (filename) => {
-    const { width, height } = await sharp(filename).metadata()
-    return {
-      file: imageDataFilename(filename),
-      width,
-      height
-    }
-  }
+async function processProjectImages (project) {
+  // find images that need processing
+  const images = project.images || []
+  const imagesToProcess = images.filter(image =>
+    !image.file.includes('static/images/projects')
+  )
 
+  // process them
+  const processedImages = await Promise.all(imagesToProcess.map(image => {
+    const newFilename = projectImageFilename(project, image)
+    return processImage(image, newFilename)
+  }))
+
+  // return relevant info
+  return processedImages.map((item, i) => Object.assign({}, item, {
+    originalImageIndex: images.indexOf(imagesToProcess[i])
+  }))
+}
+
+async function updateDesigner (data, processedWorks) {
   const dataWorks = data.works || []
   const works = await Promise.all(dataWorks.map(async (work, index) => {
     const processedWorkItems = processedWorks[index]
     const workImages = work.images || []
     const images = await Promise.all(workImages.map(async (image, index) => {
-      // check if image was processed
       const processedWorkItem = processedWorkItems.find(item => item.originalImageIndex === index)
-      if (!processedWorkItem) {
-        return image
-      }
-
-      // rewrite images list to include width, height, and resized files
-      const { newImage, resizedImages } = processedWorkItem
-      const primaryImageData = await getImageData(newImage)
-      return Object.assign({}, primaryImageData, {
-        resized: await Promise.all(resizedImages.map(getImageData))
-      })
+      return processedWorkItem ? getImageData(image, processedWorkItem) : image
     }))
 
     return Object.assign({}, work, { images })
@@ -93,21 +103,76 @@ async function updateDesigner (data, processedWorks) {
   await updateDesignerFile(updatedDesigner)
 }
 
+async function updateProject (project, processedImages) {
+  if (!project.images || processedImages.length === 0) {
+    return
+  }
+
+  const images = await Promise.all(project.images.map(async (image, index) => {
+    const processedItem = processedImages.find(item => item.originalImageIndex === index)
+    return processedItem ? getImageData(image, processedItem) : image
+  }))
+
+  // write updated project to same file
+  const updatedProject = Object.assign({}, project, { images })
+  await updateProjectFile(updatedProject)
+}
+
+async function getImageData (image, processedImageItem) {
+  const singleImageData = async (filename) => {
+    const { width, height } = await sharp(filename).metadata()
+    return {
+      file: imageDataFilename(filename),
+      width,
+      height
+    }
+  }
+
+  const { newImage, resizedImages } = processedImageItem
+  const primaryImageData = await singleImageData(newImage)
+  return Object.assign({}, image, primaryImageData, {
+    resized: await Promise.all(resizedImages.map(singleImageData))
+  })
+}
+
 function imageDataFilename (filename) {
   // References to images in the data need to be prefixed with /public/static/ to show up in the CMS
   const prefix = 'images/'
   return path.join('/public/static', filename.substr(filename.indexOf(prefix)))
 }
 
-function getImageDirectory (designer) {
-  return path.join(processedImageDir, designer.slug)
+function workImageFilename (designer, work, image) {
+  const newDirectory = path.resolve(imageDir, 'works', designer.slug,  `${work.slug}-${shortid.generate()}`)
+  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
+  return newFilename
 }
 
-function moveImage (designer, work, image) {
+function projectImageFilename (project, image) {
+  const newDirectory = path.resolve(imageDir, 'projects', project.slug, shortid.generate())
+  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
+  return newFilename
+}
+
+async function processImage (image, newFilename) {
+  // move from root static folder to correct subdirectory, and rename
+  const movedImage = await moveImage(image, newFilename)
+
+  // convert other image formats to jpg
+  const jpegImage = await makeImageJpeg(movedImage)
+
+  // create necessary sizes
+  const resizedImages = await resizeImage(jpegImage)
+
+  // return relevant info
+  return {
+    newImage: jpegImage,
+    resizedImages
+  }
+}
+
+function moveImage (image, newFilename) {
   // move image to correct directory
   const oldFilename = path.join(imageDir, path.basename(image.file))
-  const newDirectory = path.join(getImageDirectory(designer), `${work.slug}-${shortid.generate()}`)
-  const newFilename = path.join(newDirectory, `large${path.extname(oldFilename)}`)
   return fs.move(oldFilename, newFilename)
     .then(() => newFilename)
     .catch(err => {
@@ -154,17 +219,13 @@ async function resizeImage (jpegFilename) {
   if (width >= height) {
     sizes.push({ width: 200 })
     sizes.push({ width: 400 })
-    sizes.push({ width: 800 })
-    if (width > 1440) {
-      sizes.push({ width: 1440 })
-    }
+    if (width > 800) sizes.push({ width: 800 })
+    if (width > 1440) sizes.push({ width: 1440 })
   } else {
     sizes.push({ height: 300 })
-    sizes.push({ height: 600 })
-    sizes.push({ height: 900 })
-    if (height > 1600) {
-      sizes.push({ height: 1600 })
-    }
+    if (height > 600) sizes.push({ height: 600 })
+    if (height > 900) sizes.push({ height: 900 })
+    if (height > 1600) sizes.push({ height: 1600 })
   }
 
   return Promise.all(sizes.map(size => {

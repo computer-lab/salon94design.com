@@ -8,7 +8,7 @@ main()
 async function main () {
   try {
     // pull down latest version
-    // await pullRepo()
+    await pullRepo()
 
     // ensure slugs, etc, are of the correct format
     await purifyData()
@@ -17,7 +17,7 @@ async function main () {
     await processImages()
 
     // commit changes (if any made)
-    // await pushChanges()
+    await pushChanges()
   } catch (err) {
     console.error(err)
   }

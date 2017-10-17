@@ -18,13 +18,7 @@ import DesignerProjects from '../layouts/DesignerProjects'
 import Press from '../layouts/Press'
 import ImageList from '../layouts/ImageList'
 import WorkSummary from '../layouts/WorkSummary'
-import {
-  imageLargePath,
-  imageSrcSet,
-  workImageTexts,
-  designerLink,
-  workLink,
-} from '../util'
+import { imageInfo, workImageTexts, designerLink, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -59,21 +53,21 @@ const DesignerTemplate = ({ data, pathContext }) => {
   const works = currentDesigner.works || []
   const images = works
     .filter(work => work.images && work.images.length > 0)
-    .map(work => ({
-      work,
-      src: imageLargePath(work.images[0]),
-      srcSet: imageSrcSet(work.images[0]),
-      texts: workImageTexts({
-        designer: currentDesigner,
+    .map(work =>
+      Object.assign(imageInfo(work.images[0]), {
         work,
-        projects,
-        smallText: (
-          <Link to={workLink(currentDesigner.slug, work.slug)}>
-            {work.title}{' '}
-          </Link>
-        ),
-      }),
-    }))
+        texts: workImageTexts({
+          designer: currentDesigner,
+          work,
+          projects,
+          smallText: (
+            <Link to={workLink(currentDesigner.slug, work.slug)}>
+              {work.title}{' '}
+            </Link>
+          ),
+        }),
+      })
+    )
 
   const imagesByProject = projects.map(project => ({
     project,
