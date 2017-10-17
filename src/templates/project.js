@@ -16,8 +16,7 @@ import HiddenSelector from '../layouts/HiddenSelector'
 import WorkSummary from '../layouts/WorkSummary'
 import Video from '../layouts/Video'
 import {
-  imageLargePath,
-  imageSrcSet,
+  imageInfo,
   designerLink,
   projectLink,
   workImageTexts,
@@ -70,7 +69,13 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const getDesigner = slug => designers.find(d => d.slug === slug)
 
-  const images = []
+  const projectImages = (currentProject.images || []).map(image =>
+    Object.assign(imageInfo(image), {
+      texts: image.caption ? { title: image.caption } : null,
+    })
+  )
+
+  const workImages = []
   designers.forEach(designer => {
     const works = (designer.works || []).filter(
       work =>
@@ -80,24 +85,29 @@ const ProjectTemplate = ({ data, pathContext }) => {
 
     works.forEach(work => {
       if (work.images && work.images.length > 0) {
-        images.push({
-          work,
-          designer,
-          src: imageLargePath(work.images[0]),
-          srcSet: imageSrcSet(work.images[0]),
-          texts: workImageTexts({
+        workImages.push(
+          Object.assign(imageInfo(work.images[0]), {
             work,
             designer,
-            smallText: (
-              <Link to={workLink(designer.slug, work.slug)}>{work.title} </Link>
-            ),
-          }),
-        })
+            texts: workImageTexts({
+              work,
+              designer,
+              smallText: (
+                <Link to={workLink(designer.slug, work.slug)}>
+                  {work.title}{' '}
+                </Link>
+              ),
+            }),
+          })
+        )
       }
     })
   })
 
-  const imageSets = [{ images }]
+  const imageSets = [
+    { images: projectImages, title: 'Exhibition Images' },
+    { images: workImages, title: 'Included Works' },
+  ].filter(item => item.images.length > 0)
 
   const projectsByYear = Array.from(new Set(projects.map(p => p.groupingYear))) // years
     .sort((a, b) => b - a) // sort reverse-chronologically
@@ -116,9 +126,10 @@ const ProjectTemplate = ({ data, pathContext }) => {
 
   const currentProjectDesigners = currentProject.designers || []
 
-  const hoverImageRenderer = hoverImage => (
-    <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
-  )
+  const hoverImageRenderer = hoverImage =>
+    hoverImage.work && hoverImage.designer ? (
+      <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
+    ) : null
 
   return (
     <PageContainer>
@@ -175,6 +186,17 @@ export const pageQuery = graphql`
           descriptionHtml
           when
           groupingYear
+          images {
+            file
+            caption
+            width
+            height
+            resized {
+              file
+              width
+              height
+            }
+          }
           video {
             vimeoId
             caption
