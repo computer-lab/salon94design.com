@@ -15,6 +15,7 @@ import {
   breakpoint1,
   breakpoint2,
   breakpoint3,
+  isMobileWidth,
 } from './emotion-base'
 import HoverInfo from './HoverInfo'
 import FullscreenImageViewer from './FullscreenImageViewer'
@@ -109,6 +110,15 @@ const ImageItem = styled.div`
 
   @media (${breakpoint3}) {
     margin: 0 0 20px 0;
+    max-width: none;
+    width: 100%;
+
+    &.with-small-text {
+      max-width: none;
+      & img {
+        max-height: none;
+      }
+    }
 
     &.expanded {
       padding-right: 0;
@@ -116,7 +126,6 @@ const ImageItem = styled.div`
 
     & img,
     &.expanded img {
-      max-width: none;
       max-height: none;
       width: 100%;
       cursor: default;
@@ -211,11 +220,21 @@ const ImageText = styled.div`
     &.primary {
       font-size: 19px;
     }
+
+    &.data-texts {
+      width: 100%;
+      text-align: left;
+      margin-top: 2px;
+    }
   }
 `
 
 const ImageTextData = styled.span`
   display: inline-block;
+
+  @media (${breakpoint3}) {
+    display: block;
+  }
 
   &:not(:first-child) {
     margin-left: 24px;
@@ -225,7 +244,7 @@ const ImageTextData = styled.span`
     }
 
     @media (${breakpoint3}) {
-      margin-left: 10px;
+      margin-left: 0 !important;
     }
   }
 `
@@ -259,6 +278,7 @@ class ImageList extends Component {
 
     this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
+    this.onResize = this.onResize.bind(this)
     this.fullscreenImageViewerCloseHandler = this.fullscreenImageViewerCloseHandler.bind(
       this
     )
@@ -270,15 +290,18 @@ class ImageList extends Component {
       isExpanded: props.alwaysExpand ? true : false,
       hoverImage: null,
       fullscreenImageIndices: null,
+      mobileWidth: false,
     }
   }
 
   componentDidMount() {
     window.addEventListener('keydown', this.onKeyDown)
+    window.addEventListener('resize', this.onResize)
   }
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.onKeyDown)
+    window.removeEventListener('resize', this.onResize)
   }
 
   onImageHover(hoverImage) {
@@ -293,6 +316,13 @@ class ImageList extends Component {
       ev.keyCode === 27
     ) {
       this.unexpand()
+    }
+  }
+
+  onResize() {
+    const mobileWidth = isMobileWidth()
+    if (mobileWidth !== this.state.mobileWidth) {
+      this.setState({ mobileWidth })
     }
   }
 
@@ -405,7 +435,12 @@ class ImageList extends Component {
       unexpandable,
       centerImages,
     } = this.props
-    const { isExpanded, hoverImage, fullscreenImageIndices } = this.state
+    const {
+      isExpanded,
+      hoverImage,
+      fullscreenImageIndices,
+      mobileWidth,
+    } = this.state
 
     const hoverInfoClass = cx({ hidden: !hoverImage || !hoverImageRenderer })
 
@@ -447,7 +482,9 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
-                const sizes = isExpanded ? '70vw' : '200w'
+                let sizes = isExpanded ? '70vw' : '200w'
+                if (mobileWidth) sizes = '100vw'
+
                 const onMouseEnter = isExpanded
                   ? null
                   : () => this.onImageHover(image)

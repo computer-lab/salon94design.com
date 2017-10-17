@@ -4,6 +4,8 @@ import styled from 'emotion/react'
 export const breakpoint1 = `max-width: 1108px`
 export const breakpoint2 = `max-width: 796px`
 export const breakpoint3 = `max-width: 448px`
+export const isMobileWidth = () =>
+  typeof window === 'undefined' ? false : window.innerWidth <= 448
 
 export const monoFontFamily = `Inconsolata, Menlo, monospace`
 export const sansFontFamily = `Gill Sans, Work Sans, Helvetica, Arial, sans-serif`
