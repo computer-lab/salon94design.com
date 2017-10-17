@@ -39,6 +39,10 @@ const Section = styled.section`
   @media (${breakpoint2}) {
     margin: 40px 0 0 24px;
   }
+
+  @media (${breakpoint3}) {
+    margin: 40px 0 0 12px;
+  }
 `
 
 const AboutWrapper = styled.div`
