@@ -1,26 +1,13 @@
 slug: gold-chicken-wire
 title: Gold Chicken Wire
 when: 1996-1998
-groupingYear: '2016'
+groupingYear: '2017'
 designers:
   - slug: lucas-samaras
 description: Lucas Samaras's collection of Cast Gold Chicken Wire Jewelry.
-homepage: false
 images:
-  - file: /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/large.jpg
-    caption: Multicolor chicken wire on white wall
-    width: 1024
-    height: 1018
-    resized:
-      - file: >-
-          /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/resized-w200.jpg
-        width: 200
-        height: 199
-      - file: >-
-          /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/resized-w400.jpg
-        width: 400
-        height: 398
-      - file: >-
-          /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/resized-w800.jpg
-        width: 800
-        height: 795
+  - caption: Multicolor chicken wire on white wall
+    file: /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/large.jpg
+video:
+  vimeoId: ''
+homepage: true
