@@ -253,8 +253,9 @@ const ExpansionButton = styled.button`
   composes: ${monofont};
   position: fixed;
   z-index: 10;
-  right: 50px;
-  bottom: 50px;
+  height: 72px;
+  right: 15px;
+  bottom: 20px;
   cursor: pointer;
   font-size: 96px;
   background: none;
@@ -263,8 +264,10 @@ const ExpansionButton = styled.button`
   user-select: none;
 
   @media (${breakpoint1}) {
-    bottom: 30px;
+    bottom: 0;
     right: 0;
+    font-size: 48px;
+    height: 48px;
   }
 
   @media (${breakpoint3}) {
@@ -482,8 +485,7 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
-                let sizes = isExpanded ? '70vw' : '200w'
-                if (mobileWidth) sizes = '100vw'
+                let sizes = isExpanded || mobileWidth ? '' : '200w'
 
                 const onMouseEnter = isExpanded
                   ? null

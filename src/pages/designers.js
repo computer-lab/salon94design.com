@@ -43,7 +43,7 @@ export const pageQuery = graphql`
           works {
             slug
             title
-            images {
+            hydratedImages {
               file
               width
               height

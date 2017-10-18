@@ -69,7 +69,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const getDesigner = slug => designers.find(d => d.slug === slug)
 
-  const projectImages = (currentProject.images || []).map(image =>
+  const projectImages = (currentProject.hydratedImages || []).map(image =>
     Object.assign(imageInfo(image), {
       texts: image.caption ? { title: image.caption } : null,
     })
@@ -84,9 +84,9 @@ const ProjectTemplate = ({ data, pathContext }) => {
     )
 
     works.forEach(work => {
-      if (work.images && work.images.length > 0) {
+      if (work.hydratedImages && work.hydratedImages.length > 0) {
         workImages.push(
-          Object.assign(imageInfo(work.images[0]), {
+          Object.assign(imageInfo(work.hydratedImages[0]), {
             work,
             designer,
             texts: workImageTexts({
@@ -186,7 +186,7 @@ export const pageQuery = graphql`
           descriptionHtml
           when
           groupingYear
-          images {
+          hydratedImages {
             file
             caption
             width
@@ -220,7 +220,7 @@ export const pageQuery = graphql`
               slug
             }
             tags
-            images {
+            hydratedImages {
               file
               width
               height
