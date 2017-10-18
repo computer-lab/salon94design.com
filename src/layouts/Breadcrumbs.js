@@ -15,7 +15,10 @@ const Container = styled.div`
 
 const BreadcrumbList = styled.ul`
   composes: ${baseUl}, ${monofont};
+  max-width: calc(100vw - 120px);
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
   font-size: 12px;
 
   @media (${breakpoint3}) {
