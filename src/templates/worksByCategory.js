@@ -28,7 +28,7 @@ const WorksTemplate = ({ data, pathContext }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const filterWork = w => {
-    if (!w.images || w.images.length === 0) {
+    if (!w.hydratedImages || w.hydratedImages.length === 0) {
       return false
     }
 
@@ -48,7 +48,7 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.forEach(designer => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
-      const image = work.images[0]
+      const image = work.hydratedImages[0]
       images.push(
         Object.assign(imageInfo(image), {
           work,
@@ -119,7 +119,7 @@ export const pageQuery = graphql`
               slug
             }
             tags
-            images {
+            hydratedImages {
               file
               width
               height

@@ -3,6 +3,8 @@ const util = require('util')
 const remark = require('remark')
 const html = require('remark-html')
 const { tagCategory } = require('./src/util/tag')
+const { readdirAbsolute } = require('./transformer/data')
+const { getImageData } = require('./transformer/images')
 
 exports.createPages = props => {
   return Promise.all([
@@ -190,33 +192,55 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
 exports.onCreateNode = async ({ node, boundActionCreators }) => {
   const { createNodeField } = boundActionCreators
 
-  return new Promise((resolve, reject) => {
-    const markdownToHtml = util.promisify(remark().use(html).process)
-    let markdown
+  const markdownToHtml = util.promisify(remark().use(html).process)
 
-    switch (node.internal.type) {
-      case 'InfoYaml':
-        markdown = node.aboutText
+  switch (node.internal.type) {
+    case 'InfoYaml':
+      {
+        const html = await markdownToHtml(node.aboutText)
+        node.aboutHtml = html.contents
+      }
+      break
 
-        markdownToHtml(markdown).then(html => {
-          node.aboutHtml = html.contents
-        })
-        break
-      case 'DesignersYaml':
-        markdown = node.bio
+    case 'DesignersYaml':
+      {
+        const html = await markdownToHtml(node.bio)
+        node.bioHtml = html.contents
 
-        markdownToHtml(markdown).then(html => {
-          node.bioHtml = html.contents
-        })
-        break
-      case 'ProjectsYaml':
-        markdown = node.description
+        const works = node.works || []
+        await Promise.all(
+          works.map(async work => {
+            if (work.images) {
+              work.hydratedImages = await Promise.all(
+                work.images.map(hydrateImage)
+              )
+            }
+          })
+        )
+      }
+      break
 
-        markdownToHtml(markdown).then(html => {
-          node.descriptionHtml = html.contents
-        })
-        break
-    }
-    resolve()
+    case 'ProjectsYaml':
+      {
+        const html = await markdownToHtml(node.description)
+        node.descriptionHtml = html.contents
+
+        if (node.images) {
+          node.hydratedImages = await Promise.all(node.images.map(hydrateImage))
+        }
+      }
+      break
+  }
+}
+
+async function hydrateImage(image) {
+  const localFilename = path.resolve(image.file.replace('/public/', ''))
+
+  const images = await readdirAbsolute(path.dirname(localFilename))
+  const resizedImages = images.filter(n => n !== localFilename)
+
+  const imageData = await getImageData(localFilename)
+  return Object.assign({}, image, imageData, {
+    resized: await Promise.all(resizedImages.map(getImageData)),
   })
 }

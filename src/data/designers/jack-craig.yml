@@ -17,25 +17,6 @@ works:
     images:
       - file: >-
           /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
-        width: 3160
-        height: 3672
-        resized:
-          - file: >-
-              /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/resized-h300.jpg
-            width: 258
-            height: 300
-          - file: >-
-              /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/resized-h600.jpg
-            width: 516
-            height: 600
-          - file: >-
-              /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/resized-h900.jpg
-            width: 775
-            height: 900
-          - file: >-
-              /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/resized-h1600.jpg
-            width: 1377
-            height: 1600
     medium: 'bronze, concrete'
     price: ''
     projects: []

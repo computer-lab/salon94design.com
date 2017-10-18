@@ -29,8 +29,8 @@ const IndexPage = ({ data }) => {
   designers.forEach(designer => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
-      if (work.images && work.images.length > 0) {
-        const image = work.images[0]
+      if (work.hydratedImages && work.hydratedImages.length > 0) {
+        const image = work.hydratedImages[0]
         images.push(
           Object.assign(imageInfo(image), {
             unexpandedLink: workLink(designer.slug, work.slug),
@@ -92,7 +92,7 @@ export const pageQuery = graphql`
               slug
             }
             tags
-            images {
+            hydratedImages {
               file
               width
               height

@@ -5,7 +5,10 @@ const sharp = require('sharp')
 
 const { getDesigners, updateDesignerFile, getProjects, updateProjectFile } = require('./data')
 
-module.exports = main
+module.exports = {
+  processImages: main,
+  getImageData
+}
 
 const imageDir = path.join(__dirname, '../static/images')
 
@@ -92,7 +95,7 @@ async function updateDesigner (data, processedWorks) {
     const workImages = work.images || []
     const images = await Promise.all(workImages.map(async (image, index) => {
       const processedWorkItem = processedWorkItems.find(item => item.originalImageIndex === index)
-      return processedWorkItem ? getImageData(image, processedWorkItem) : image
+      return processedWorkItem ? getProcessedImageData(image, processedWorkItem) : image
     }))
 
     return Object.assign({}, work, { images })
@@ -110,7 +113,7 @@ async function updateProject (project, processedImages) {
 
   const images = await Promise.all(project.images.map(async (image, index) => {
     const processedItem = processedImages.find(item => item.originalImageIndex === index)
-    return processedItem ? getImageData(image, processedItem) : image
+    return processedItem ? getProcessedImageData(image, processedItem) : image
   }))
 
   // write updated project to same file
@@ -118,21 +121,21 @@ async function updateProject (project, processedImages) {
   await updateProjectFile(updatedProject)
 }
 
-async function getImageData (image, processedImageItem) {
-  const singleImageData = async (filename) => {
-    const { width, height } = await sharp(filename).metadata()
-    return {
-      file: imageDataFilename(filename),
-      width,
-      height
-    }
-  }
-
+async function getProcessedImageData (image, processedImageItem) {
   const { newImage, resizedImages } = processedImageItem
-  const primaryImageData = await singleImageData(newImage)
+  const primaryImageData = await getImageData(newImage)
   return Object.assign({}, image, primaryImageData, {
-    resized: await Promise.all(resizedImages.map(singleImageData))
+    resized: await Promise.all(resizedImages.map(getImageData))
   })
+}
+
+async function getImageData (filename) {
+  const { width, height } = await sharp(filename).metadata()
+  return {
+    file: imageDataFilename(filename),
+    width,
+    height
+  }
 }
 
 function imageDataFilename (filename) {

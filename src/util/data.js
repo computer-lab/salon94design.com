@@ -9,8 +9,8 @@ export const chooseDesignerImage = designer => {
   let image = null
 
   const work = choice(designer.works)
-  if (work && work.images && work.images.length > 0) {
-    image = work.images[0]
+  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
+    image = work.hydratedImages[0]
   }
 
   return image
@@ -27,8 +27,8 @@ export const chooseProjectImage = (project, designers) => {
     return choice(projectWorks)
   }, null)
 
-  if (work && work.images && work.images.length > 0) {
-    image = images[0]
+  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
+    image = work.hydratedImages[0]
   }
 
   if (!image && designers.length > 0) {
