@@ -52,9 +52,9 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   const works = currentDesigner.works || []
   const images = works
-    .filter(work => work.images && work.images.length > 0)
+    .filter(work => work.hydratedImages && work.hydratedImages.length > 0)
     .map(work =>
-      Object.assign(imageInfo(work.images[0]), {
+      Object.assign(imageInfo(work.hydratedImages[0]), {
         work,
         texts: workImageTexts({
           designer: currentDesigner,
@@ -170,7 +170,7 @@ export const pageQuery = graphql`
               slug
             }
             tags
-            images {
+            hydratedImages {
               file
               width
               height

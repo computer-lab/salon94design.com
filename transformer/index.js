@@ -1,6 +1,6 @@
 
 const purifyData = require('./purify')
-const processImages = require('./images')
+const { processImages } = require('./images')
 const { pullRepo, pushChanges } = require('./git')
 
 main()

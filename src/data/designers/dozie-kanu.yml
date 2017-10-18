@@ -15,25 +15,6 @@ works:
     images:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
-        width: 1500
-        height: 1125
-        resized:
-          - file: >-
-              /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w200.jpg
-            width: 200
-            height: 150
-          - file: >-
-              /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w400.jpg
-            width: 400
-            height: 300
-          - file: >-
-              /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w800.jpg
-            width: 800
-            height: 600
-          - file: >-
-              /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/resized-w1440.jpg
-            width: 1440
-            height: 1080
     medium: 'poured concrete, steel '
     tags:
       - seating

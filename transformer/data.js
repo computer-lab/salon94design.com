@@ -5,6 +5,7 @@ const yaml = require('js-yaml')
 module.exports = {
   getDesigners,
   getProjects,
+  readdirAbsolute,
   updateDesignerFile,
   updateProjectFile,
   resetDesignerFile,
@@ -15,15 +16,20 @@ const designerDir = path.join(__dirname, '../src/data/designers')
 const projectDir = path.join(__dirname, '../src/data/projects')
 
 async function getDesigners () {
-  const designerFiles = readdirAbsolute(designerDir)
+  const designerFiles = await readdirAbsolute(designerDir)
   const designers = await getYamlDatas(designerFiles)
   return designers
 }
 
 async function getProjects () {
-  const projectFiles = readdirAbsolute(projectDir)
+  const projectFiles = await readdirAbsolute(projectDir)
   const projects = await getYamlDatas(projectFiles)
   return projects
+}
+
+async function readdirAbsolute (dir) {
+  const files = await fs.readdir(dir)
+  return files.map(f => path.join(dir, f))
 }
 
 async function getYamlDatas (files) {
@@ -38,10 +44,6 @@ async function getYamlDatas (files) {
   }))
 
   return datas
-}
-
-function readdirAbsolute (dir) {
-  return fs.readdirSync(dir).map(f => path.join(dir, f))
 }
 
 const designerFileName = data => path.join(designerDir, `${data.slug.trim()}.yml`)
