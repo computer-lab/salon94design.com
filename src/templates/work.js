@@ -24,7 +24,9 @@ const WorkTemplate = ({ data, pathContext }) => {
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
-  const images = (currentWork.images || []).map(image => imageInfo(image))
+  const images = (currentWork.hydratedImages || []).map(image =>
+    imageInfo(image)
+  )
   const imageSets = [{ images }]
 
   const selectorItems = works.map(work => ({
@@ -89,7 +91,7 @@ export const pageQuery = graphql`
               vimeoId
               caption
             }
-            images {
+            hydratedImages {
               file
               width
               height

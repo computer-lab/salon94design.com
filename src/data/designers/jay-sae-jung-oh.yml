@@ -10,67 +10,10 @@ works:
     images:
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
-        width: 5000
-        height: 3333
-        resized:
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/resized-w200.jpg
-            width: 200
-            height: 133
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/resized-w400.jpg
-            width: 400
-            height: 267
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/resized-w800.jpg
-            width: 800
-            height: 533
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/resized-w1440.jpg
-            width: 1440
-            height: 960
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/large.jpg
-        width: 5000
-        height: 3333
-        resized:
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/resized-w200.jpg
-            width: 200
-            height: 133
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/resized-w400.jpg
-            width: 400
-            height: 267
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/resized-w800.jpg
-            width: 800
-            height: 533
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/resized-w1440.jpg
-            width: 1440
-            height: 960
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
-        width: 5000
-        height: 3333
-        resized:
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/resized-w200.jpg
-            width: 200
-            height: 133
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/resized-w400.jpg
-            width: 400
-            height: 267
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/resized-w800.jpg
-            width: 800
-            height: 533
-          - file: >-
-              /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/resized-w1440.jpg
-            width: 1440
-            height: 960
     medium: 'leather cord, various plastics'
     projects: []
     tags:

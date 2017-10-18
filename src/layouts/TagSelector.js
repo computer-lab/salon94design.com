@@ -10,6 +10,7 @@ const Container = styled.div`
   width: 370px;
   padding: 24px 20px;
   border: 2px solid #000;
+  z-index: 1;
 
   @media (${breakpoint1}) {
     width: auto;

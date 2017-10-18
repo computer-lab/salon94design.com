@@ -24,10 +24,11 @@ const CloseButton = styled.button`
   composes: ${monofont};
   position: fixed;
   z-index: 10;
-  right: 50px;
-  bottom: 50px;
+  right: 15px;
+  bottom: 20px;
   cursor: pointer;
   font-size: 96px;
+  height: 72px;
   background: none;
   border: none;
   outline: none;
