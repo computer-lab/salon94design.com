@@ -15,6 +15,10 @@ description: |-
 
   March 3-April15, 2017
   Salon 94 Bowery
+images:
+  - caption: ''
+    file: /public/static/AAA.jpg
+  - file: /public/static/B.jpg
 video:
   vimeoId: ''
 homepage: true
