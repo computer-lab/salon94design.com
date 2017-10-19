@@ -17,8 +17,38 @@ description: |-
   Salon 94 Bowery
 images:
   - caption: 'Gaetano Pesce, Jay Sae Jung Oh, Kwangho Lee, Jack Craig, Thomas Barger'
-    file: /public/static/AAA.jpg
-  - file: /public/static/B.jpg
+    file: /public/static/images/projects/ghost-dog/ryHHJPIpZ/large.jpg
+    width: 5342
+    height: 3561
+    resized:
+      - file: /public/static/images/projects/ghost-dog/ryHHJPIpZ/resized-w200.jpg
+        width: 200
+        height: 133
+      - file: /public/static/images/projects/ghost-dog/ryHHJPIpZ/resized-w400.jpg
+        width: 400
+        height: 267
+      - file: /public/static/images/projects/ghost-dog/ryHHJPIpZ/resized-w800.jpg
+        width: 800
+        height: 533
+      - file: /public/static/images/projects/ghost-dog/ryHHJPIpZ/resized-w1440.jpg
+        width: 1440
+        height: 960
+  - file: /public/static/images/projects/ghost-dog/HyxSHJPIaZ/large.jpg
+    width: 6720
+    height: 4480
+    resized:
+      - file: /public/static/images/projects/ghost-dog/HyxSHJPIaZ/resized-w200.jpg
+        width: 200
+        height: 133
+      - file: /public/static/images/projects/ghost-dog/HyxSHJPIaZ/resized-w400.jpg
+        width: 400
+        height: 267
+      - file: /public/static/images/projects/ghost-dog/HyxSHJPIaZ/resized-w800.jpg
+        width: 800
+        height: 533
+      - file: /public/static/images/projects/ghost-dog/HyxSHJPIaZ/resized-w1440.jpg
+        width: 1440
+        height: 960
 video:
   vimeoId: ''
 homepage: true
