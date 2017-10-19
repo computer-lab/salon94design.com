@@ -12,14 +12,15 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - slug: underwear-armoire
-    dimensions: 27.5 x 36 x 21
+  - dimensions: 27.5 x 36 x 21
     images:
       - file: >-
           /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
-    projects: []
+    projects:
+      - slug: ghost-dog
+    slug: underwear-armoire
     tags:
       - storage
       - miscellaneous
