@@ -20,20 +20,26 @@ const Salon94Helmet = ({
   meta = [],
   links = [],
 }) => {
-  const extendedMeta = meta
+  const props = { meta, links }
+
   if (title && title.length > 0) {
-    extendedMeta.push({ name: 'og:title', content: title })
+    props.meta.push({ name: 'og:title', content: title })
+    props.title = title
   }
+
   if (description && description.length > 0) {
-    extendedMeta.push({ name: 'og:description', content: description })
+    props.meta.push({ name: 'og:description', content: description })
+    props.description = description
   }
+
   if (location) {
-    extendedMeta.push({
+    props.meta.push({
       name: 'og:url',
       content: `${ROOT_URL}${location.pathname}`,
     })
   }
-  const extendedLinks = links.concat([
+
+  props.links = props.links.concat([
     { rel: 'shortcut icon', href: icons.favicon },
     { rel: 'apple-touch-icon', href: icons.appleTouch.regular },
     { rel: 'apple-touch-icon', sizes: '57x57', href: icons.appleTouch.w57 },
@@ -42,14 +48,7 @@ const Salon94Helmet = ({
     { rel: 'apple-touch-icon', sizes: '144x144', href: icons.appleTouch.w144 },
   ])
 
-  return (
-    <Helmet
-      title={title}
-      description={description}
-      meta={extendedMeta}
-      links={extendedLinks}
-    />
-  )
+  return <Helmet {...props} />
 }
 
 export default Salon94Helmet

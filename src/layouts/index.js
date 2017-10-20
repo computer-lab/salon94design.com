@@ -17,6 +17,7 @@ const TemplateWrapper = ({ children, location, history }) => (
   <div>
     <Helmet
       title="Salon 94 Design"
+      description={description}
       location={location}
       meta={[
         { name: 'description', content: description },
