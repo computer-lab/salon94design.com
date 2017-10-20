@@ -50,5 +50,6 @@ images:
         width: 1440
         height: 960
 video:
+  caption: ''
   vimeoId: ''
 homepage: true
