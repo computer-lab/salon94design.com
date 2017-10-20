@@ -9,5 +9,6 @@ images:
   - caption: Multicolor chicken wire on white wall
     file: /public/static/images/projects/gold-chicken-wire/HJK9Z2Gab/large.jpg
 video:
+  caption: ''
   vimeoId: ''
 homepage: true
