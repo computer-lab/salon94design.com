@@ -188,7 +188,6 @@ export const pageQuery = graphql`
           groupingYear
           hydratedImages {
             file
-            caption
             width
             height
             resized {
