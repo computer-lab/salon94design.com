@@ -93,14 +93,19 @@ const NavItem = styled.li`
 
 const Menu = ({ location }) => {
   const navItems = [
-    { name: 'Designers', path: '/designers' },
+    { name: 'Designers', path: '/', activePath: '/designers' },
     { name: 'Projects', path: '/projects' },
     { name: 'Works', path: '/works' },
     { name: 'Info', path: '/info' },
-  ].map(item => ({
-    ...item,
-    className: cx({ active: location.pathname.includes(item.path) }),
-  }))
+  ].map(item => {
+    const active = (location.pathname === item.path)
+      || location.pathname.includes(item.activePath || item.path)
+
+    return {
+      ...item,
+      className: cx({ active }),
+    }
+  })
 
   const includeLogo = true
 
