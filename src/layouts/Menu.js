@@ -98,8 +98,9 @@ const Menu = ({ location }) => {
     { name: 'Works', path: '/works' },
     { name: 'Info', path: '/info' },
   ].map(item => {
-    const active = (location.pathname === item.path)
-      || location.pathname.includes(item.activePath || item.path)
+    const active =
+      location.pathname === item.path ||
+      location.pathname.includes(item.activePath || item.path)
 
     return {
       ...item,

@@ -19,12 +19,8 @@ export const chooseDesignerImage = designer => {
 export const chooseCategoryImage = (works, tag) => {
   const tagSet = new Set(categoryTags(tag))
   const worksInCategory = works
-    .filter(work =>
-      work.tags.filter(t => tagSet.has(t)).length > 0
-    )
-    .filter(work =>
-      work.hydratedImages && work.hydratedImages.length > 0
-    )
+    .filter(work => work.tags.filter(t => tagSet.has(t)).length > 0)
+    .filter(work => work.hydratedImages && work.hydratedImages.length > 0)
 
   if (worksInCategory.length === 0) {
     return null

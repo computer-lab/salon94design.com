@@ -125,7 +125,13 @@ const SectionItemList = ({ items, fullWidthMobile = true }) => (
   <Container>
     <List>
       {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-        <ListItem key={i} className={cx({ 'no-image': !image, 'full-width-mobile': fullWidthMobile })}>
+        <ListItem
+          key={i}
+          className={cx({
+            'no-image': !image,
+            'full-width-mobile': fullWidthMobile,
+          })}
+        >
           <Link to={link}>
             <img
               src={imageLargePath(image)}
