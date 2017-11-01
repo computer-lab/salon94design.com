@@ -41,7 +41,7 @@ export const selectorList = css`
 
   & li {
     &.active a {
-      background: #ff0;
+      background: linear-gradient(to right, #ff0, #ff6);
       text-decoration: underline;
     }
 
