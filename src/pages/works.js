@@ -28,7 +28,7 @@ export default function Works({ data }) {
   const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const works = designers.reduce((items, d) => items.concat(d.works), [])
+  const works = designers.reduce((items, d) => items.concat(d.works || []), [])
   const tags = getAllTags(designers)
 
   const listItems = tags.map(tag => ({
