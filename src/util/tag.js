@@ -21,7 +21,7 @@ const getAllTags = designers => {
     'storage',
     'tables',
     'textiles',
-    'miscellaneous'
+    'miscellaneous',
   ]
 
   const tagSortValue = tag => {
@@ -42,8 +42,8 @@ const getAllTags = designers => {
     })
   })
 
-  const tags = Array.from(tagSet).sort(
-    (a, b) => tagSortValue(a).localeCompare(tagSortValue(b))
+  const tags = Array.from(tagSet).sort((a, b) =>
+    tagSortValue(a).localeCompare(tagSortValue(b))
   )
 
   return tags

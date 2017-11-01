@@ -39,7 +39,7 @@ const TagList = styled.ul`
   }
 `
 
-const TagSelector = ({ tags, currentTag }) =>
+const TagSelector = ({ tags, currentTag }) => (
   <Container>
     <TagList>
       {tags.map(tag => (
@@ -54,6 +54,7 @@ const TagSelector = ({ tags, currentTag }) =>
       ))}
     </TagList>
   </Container>
+)
 
 TagSelector.propTypes = {
   tags: PropTypes.array.isRequired,
