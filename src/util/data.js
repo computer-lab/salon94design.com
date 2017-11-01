@@ -3,7 +3,6 @@ import Link from 'gatsby-link'
 
 import { choice } from './index'
 import { designerLink, projectLink, workLink } from './path'
-import { tagCategory } from './tag'
 
 export const chooseDesignerImage = designer => {
   let image = null
@@ -36,27 +35,6 @@ export const chooseProjectImage = (project, designers) => {
   }
 
   return image
-}
-
-export const getAllTags = designers => {
-  const tagSet = new Set()
-  designers.forEach(designer => {
-    const works = designer.works || []
-    works.forEach(work => {
-      const tags = (work.tags || [])
-        .filter(t => !!t)
-        .map(t => t.trim())
-        .filter(t => t.length > 0)
-
-      tags.forEach(t => tagSet.add(tagCategory(t)))
-    })
-  })
-
-  const tags = Array.from(tagSet).sort(
-    (a, b) => (Number(a) && Number(b) ? b.localeCompare(a) : a.localeCompare(b))
-  )
-
-  return tags
 }
 
 export const workImageTexts = ({

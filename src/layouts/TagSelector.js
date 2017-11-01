@@ -39,27 +39,21 @@ const TagList = styled.ul`
   }
 `
 
-const TagSelector = ({ tags, currentTag }) => {
-  // TODO: remove temporary tag multiplication
-  tags = tags.concat(['Beds', 'Outdoor', 'Textiles', 'Ceramic'])
-
-  return (
-    <Container>
-      <TagList>
-        {tags.map(tag => (
-          <li
-            key={tag}
-            className={cx({
-              active: tag === currentTag,
-            })}
-          >
-            <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
-          </li>
-        ))}
-      </TagList>
-    </Container>
-  )
-}
+const TagSelector = ({ tags, currentTag }) =>
+  <Container>
+    <TagList>
+      {tags.map(tag => (
+        <li
+          key={tag}
+          className={cx({
+            active: tag === currentTag,
+          })}
+        >
+          <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
+        </li>
+      ))}
+    </TagList>
+  </Container>
 
 TagSelector.propTypes = {
   tags: PropTypes.array.isRequired,
