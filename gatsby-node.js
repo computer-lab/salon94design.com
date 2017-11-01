@@ -118,9 +118,7 @@ function createDesigners({ boundActionCreators, graphql }) {
 function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const categoryTemplate = path.resolve(
-    `src/templates/worksByCategory.js`
-  )
+  const categoryTemplate = path.resolve(`src/templates/worksByCategory.js`)
   const workTemplate = path.resolve(`src/templates/work.js`)
 
   return graphql(`
