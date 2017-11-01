@@ -3,6 +3,7 @@ import Link from 'gatsby-link'
 
 import { choice } from './index'
 import { designerLink, projectLink, workLink } from './path'
+import { categoryTags } from './tag'
 
 export const chooseDesignerImage = designer => {
   let image = null
@@ -12,6 +13,25 @@ export const chooseDesignerImage = designer => {
     image = work.hydratedImages[0]
   }
 
+  return image
+}
+
+export const chooseCategoryImage = (works, tag) => {
+  const tagSet = new Set(categoryTags(tag))
+  const worksInCategory = works
+    .filter(work =>
+      work.tags.filter(t => tagSet.has(t)).length > 0
+    )
+    .filter(work =>
+      work.hydratedImages && work.hydratedImages.length > 0
+    )
+
+  if (worksInCategory.length === 0) {
+    return null
+  }
+
+  const work = choice(worksInCategory)
+  const image = work.hydratedImages[0]
   return image
 }
 
