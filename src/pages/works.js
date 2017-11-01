@@ -7,7 +7,12 @@ import { PageContainer, createPanes } from '../layouts/containers'
 import { sansfont, monofont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../layouts/TagSelector'
 import SectionItemList from '../layouts/SectionItemList'
-import { getAllTags, capitalize, chooseCategoryImage, workTagLink } from '../util'
+import {
+  getAllTags,
+  capitalize,
+  chooseCategoryImage,
+  workTagLink,
+} from '../util'
 
 const Instructions = styled.div`
   composes: ${sansfont};
@@ -39,7 +44,11 @@ export default function Works({ data }) {
         description={`Filter works by tagged categories.`}
       />
       <div>
-        <SectionItemList title="Works by Category" items={listItems} fullWidthMobile={false} />
+        <SectionItemList
+          title="Works by Category"
+          items={listItems}
+          fullWidthMobile={false}
+        />
       </div>
     </PageContainer>
   )
