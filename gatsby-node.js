@@ -2,7 +2,7 @@ const path = require('path')
 const util = require('util')
 const remark = require('remark')
 const html = require('remark-html')
-const { tagCategory } = require('./src/util/tag')
+const { getAllTags } = require('./src/util/tag')
 const { readdirAbsolute } = require('./transformer/data')
 const { getImageData } = require('./transformer/images')
 
@@ -118,7 +118,7 @@ function createDesigners({ boundActionCreators, graphql }) {
 function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const worksByCategoryTemplate = path.resolve(
+  const categoryTemplate = path.resolve(
     `src/templates/worksByCategory.js`
   )
   const workTemplate = path.resolve(`src/templates/work.js`)
@@ -146,21 +146,12 @@ function createWorks({ boundActionCreators, graphql }) {
       .map(d => d.works.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
-    const categorySet = new Set()
-
-    works.forEach(p => {
-      p.tags.forEach(tag => {
-        categorySet.add(tagCategory(tag))
-      })
-    })
-
-    const categories = Array.from(categorySet).sort()
-
+    const tags = getAllTags(designers)
     // create page for each category
-    categories.forEach(category => {
+    tags.forEach(category => {
       createPage({
         path: `/works/${category}`,
-        component: worksByCategoryTemplate,
+        component: categoryTemplate,
         context: { currentCategory: category },
       })
     })
