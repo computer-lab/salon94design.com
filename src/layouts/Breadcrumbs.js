@@ -50,7 +50,7 @@ const Breadcrumb = styled.li`
 
   &.active {
     cursor: auto;
-    background: #ff0;
+    background: linear-gradient(to right, #c9c1d5, #f2e8ff);
     color: #000;
   }
 
