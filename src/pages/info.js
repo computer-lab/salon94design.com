@@ -18,6 +18,11 @@ import Press from '../layouts/Press'
 const Container = styled.div`
   composes: ${sansfont};
   font-weight: 300;
+  box-sizing: border-box;
+
+  & * {
+    box-sizing: inherit;
+  }
 
   & a {
     color: inherit;
