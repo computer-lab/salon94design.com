@@ -7,27 +7,44 @@ import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../layouts/SectionItemList'
 import { chooseDesignerImage, designerLink } from '../util'
 
-export default function Projects({ data }) {
+const prefferedStatusOrder = ['Represented', 'Available']
+
+export default function Designers({ data }) {
   const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
 
-  const listItems = designers.map(designer => {
-    return {
+  const designersByStatus = {}
+  designers.forEach(d => {
+    if (!designersByStatus[d.status]) {
+      designersByStatus[d.status] = [d]
+    } else {
+      designersByStatus[d.status].push(d)
+    }
+  })
+
+  const sortedStatuses = Object.keys(designersByStatus).sort(
+    (a, b) => prefferedStatusOrder.indexOf(a) - prefferedStatusOrder.indexOf(b)
+  )
+
+  const listSections = sortedStatuses.map(status => {
+    const items = designersByStatus[status].map(designer => ({
       title: designer.name,
       image: chooseDesignerImage(designer),
       link: designerLink(designer.slug),
-    }
+    }))
+
+    return { title: status, items }
   })
 
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - Designers`}
+        title={`Salon 94 Design`}
         description={`List of designers represented by Salon 94 Design.`}
       />
       <div>
-        <SectionItemList title="Designers" items={listItems} />
+        <SectionItemList title="Designers" sections={listSections} />
       </div>
     </PageContainer>
   )
@@ -40,6 +57,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
+          status
           works {
             slug
             title
