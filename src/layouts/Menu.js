@@ -6,16 +6,10 @@ import cx from 'classnames'
 
 import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from './logo'
 
-import {
-  baseUl,
-  monofont,
-  sansfont,
-  childLink,
-  breakpoint2,
-  breakpoint3,
-} from './emotion-base'
+import { baseUl, monofont, sansfont, childLink } from './emotion-base'
 
-const menuBreakpoint1 = `max-width: 660px`
+const menuBreakpoint1 = `max-width: 740px`
+const menuBreakpoint3 = `max-width: 520px`
 
 const Wrapper = styled.div`
   position: fixed;
@@ -41,7 +35,7 @@ const Logo = styled.div`
     height: ${getLogoHeight(80)}px;
   }
 
-  @media (${breakpoint3}) {
+  @media (${menuBreakpoint3}) {
     left: 5px;
     top: 5px;
     width: 60px;
@@ -66,13 +60,13 @@ const Nav = styled.ul`
     font-size: 18px;
   }
 
-  @media (${breakpoint3}) {
+  @media (${menuBreakpoint3}) {
     right: auto;
     left: 50%;
-    top: 38px;
+    top: 40px;
     transform: translateX(-50%);
-    font-size: 22px;
     font-size: 16px;
+    padding-right: 30px;
   }
 `
 
@@ -81,9 +75,14 @@ const NavItem = styled.li`
   margin: 0;
   padding: 0;
   cursor: pointer;
+  flex-shrink: 0;
 
   &:not(:first-child) {
     margin-left: 25px;
+
+    @media (${menuBreakpoint3}) {
+      margin-left: 10px;
+    }
   }
 
   &.active a {
@@ -92,15 +91,22 @@ const NavItem = styled.li`
 `
 
 const Menu = ({ location }) => {
-  const navItems = [
-    { name: 'Designers', path: '/designers' },
-    { name: 'Projects', path: '/projects' },
+  let navItems = [
+    { name: 'Designers', path: '/', activePath: '/designers' },
+    { name: 'Exhibitions', path: '/exhibitions' },
     { name: 'Works', path: '/works' },
+    { name: 'Art Fairs', path: '/art-fairs' },
     { name: 'Info', path: '/info' },
-  ].map(item => ({
-    ...item,
-    className: cx({ active: location.pathname.includes(item.path) }),
-  }))
+  ].map(item => {
+    const active =
+      location.pathname === item.path ||
+      location.pathname.includes(item.activePath || item.path)
+
+    return {
+      ...item,
+      className: cx({ active }),
+    }
+  })
 
   const includeLogo = true
 

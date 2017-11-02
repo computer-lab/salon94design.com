@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
+import cx from 'classnames'
 import { sansfont, baseUl, breakpoint2, breakpoint3 } from './emotion-base'
 import { imageLargePath, imageSrcSet } from '../util'
 
@@ -52,10 +53,16 @@ const ListItem = styled.li`
   }
 
   & img {
+    background-color: #eee;
     margin: 0;
     padding: 0;
     max-width: 320px;
     max-height: 280px;
+  }
+
+  &.no-image img {
+    min-width: 320px;
+    min-height: 200px;
   }
 
   @media (${breakpoint2}) {
@@ -66,11 +73,21 @@ const ListItem = styled.li`
       max-width: 240px;
       max-height: 200px;
     }
+
+    &.no-image img {
+      min-width: 240px;
+      min-height: 150px;
+    }
   }
 
   @media (${breakpoint3}) {
     margin: 0 0 32px 0;
-    width: 100%;
+    width: auto;
+    min-width: 50%;
+
+    &.full-width-mobile {
+      width: 100%;
+    }
 
     & img {
       display: none;
@@ -104,11 +121,17 @@ const ItemSubtitle = styled.div`
   }
 `
 
-const SectionItemList = ({ title, items }) => (
+const SectionItemList = ({ items, fullWidthMobile = true }) => (
   <Container>
     <List>
       {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-        <ListItem key={i}>
+        <ListItem
+          key={i}
+          className={cx({
+            'no-image': !image,
+            'full-width-mobile': fullWidthMobile,
+          })}
+        >
           <Link to={link}>
             <img
               src={imageLargePath(image)}
@@ -128,7 +151,6 @@ const SectionItemList = ({ title, items }) => (
 )
 
 SectionItemList.propTypes = {
-  title: PropTypes.string.isRequired,
   items: PropTypes.array.isRequired,
 }
 

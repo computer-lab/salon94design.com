@@ -13,7 +13,7 @@ works:
     when: '2017'
     projects: []
     tags:
-      - clothing
+      - fashion
     images:
       - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/large.jpg
     caption: 'Black Shirt, waterproof.'
@@ -23,7 +23,7 @@ works:
     when: '2017'
     projects: []
     tags:
-      - clothing
+      - fashion
     images:
       - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/large.jpg
     price: '$20,000'
