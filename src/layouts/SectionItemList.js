@@ -14,14 +14,31 @@ const Container = styled.div`
   }
 `
 
-const Title = styled.h1`
+const Section = styled.div`
+  &:not(:first-child) {
+    margin-top: 60px;
+
+    @media (${breakpoint3}) {
+      margin-top: 40px;
+    }
+  }
+`
+
+const SectionTitle = styled.h1`
   composes: ${sansfont};
-  position: fixed;
-  top: 24px;
-  margin: 0;
+  margin: 0 72px 28px 0;
   padding: 0;
-  font-weight: 500;
-  font-size: 44px;
+  font-weight: 600;
+  font-size: 36px;
+
+  @media (${breakpoint2}) {
+    font-size: 28px;
+    margin: 0 0 28px 0;
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 46px;
+  }
 `
 
 const List = styled.ul`
@@ -121,37 +138,49 @@ const ItemSubtitle = styled.div`
   }
 `
 
-const SectionItemList = ({ items, fullWidthMobile = true }) => (
-  <Container>
-    <List>
-      {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-        <ListItem
-          key={i}
-          className={cx({
-            'no-image': !image,
-            'full-width-mobile': fullWidthMobile,
-          })}
-        >
-          <Link to={link}>
-            <img
-              src={imageLargePath(image)}
-              srcSet={imageSrcSet(image)}
-              sizes={'400w'}
-              alt={alt}
-            />
-            <ItemTitle>
-              {title}
-              {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
-            </ItemTitle>
-          </Link>
-        </ListItem>
+const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
+  if (!sections) {
+    sections = [{ title: null, items }]
+  }
+
+  return (
+    <Container>
+      {sections.map(({ title, items }, i) => (
+        <Section key={i}>
+          {title && <SectionTitle>{title}</SectionTitle>}
+          <List>
+            {items.map(({ image, alt = '', title, subtitle, link }, i) => (
+              <ListItem
+                key={i}
+                className={cx({
+                  'no-image': !image,
+                  'full-width-mobile': fullWidthMobile,
+                })}
+              >
+                <Link to={link}>
+                  <img
+                    src={imageLargePath(image)}
+                    srcSet={imageSrcSet(image)}
+                    sizes={'400w'}
+                    alt={alt}
+                  />
+                  <ItemTitle>
+                    {title}
+                    {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
+                  </ItemTitle>
+                </Link>
+              </ListItem>
+            ))}
+          </List>
+        </Section>
       ))}
-    </List>
-  </Container>
-)
+    </Container>
+  )
+}
 
 SectionItemList.propTypes = {
-  items: PropTypes.array.isRequired,
+  items: PropTypes.array,
+  sections: PropTypes.array,
 }
 
 export default SectionItemList
