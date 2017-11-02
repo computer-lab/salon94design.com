@@ -2,6 +2,7 @@ import React from 'react'
 import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
+import cx from 'classnames'
 
 import { createPanes, PageContainer } from '../layouts/containers'
 import {
@@ -32,6 +33,41 @@ const WorksHeader = styled.h2`
   @media (${breakpoint1}) {
     margin: 15px 0 28px 0;
     font-size: 24px;
+  }
+`
+
+const StatusTagWrapper = styled.div`
+  margin: -32px 0 32px 0;
+
+  @media (${breakpoint1}) {
+    margin: -26px 0 28px 0;
+  }
+
+  @media (${breakpoint3}) {
+    margin: -30px 0 28px 0;
+  }
+`
+
+const StatusTag = styled.div`
+  composes: ${monofont};
+  display: inline-block;
+  padding: 5px;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  &.available {
+    background: linear-gradient(to right, #eee, #fafafa);
+  }
+
+  &.represented {
+    background: linear-gradient(to right, #33f, #eef);
+  }
+
+  @media (${breakpoint3}) {
+    font-size: 13px;
   }
 `
 
@@ -107,6 +143,11 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   const selectorSections = [{ items: selectorItems }]
 
+  const statusClass = cx({
+    available: currentDesigner.status === 'Available',
+    represented: currentDesigner.status === 'Represented',
+  })
+
   return (
     <PageContainer>
       <Helmet
@@ -122,6 +163,11 @@ const DesignerTemplate = ({ data, pathContext }) => {
       </LeftPane>
       <RightPane className="selectable">
         <Header1>{currentDesigner.name}</Header1>
+        <StatusTagWrapper>
+          <StatusTag className={statusClass}>
+            {currentDesigner.status}
+          </StatusTag>
+        </StatusTagWrapper>
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
@@ -155,6 +201,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
+          status
           bio
           bioHtml
           press {
