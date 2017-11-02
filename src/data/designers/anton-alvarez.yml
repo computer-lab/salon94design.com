@@ -17,7 +17,7 @@ works:
     projects:
       - slug: MIDTOWN
     tags:
-      - bench
+      - benches
     title: The Thread Wrapping Machine Bench 271115
     video:
       caption: Anton Alvarez Timelapse

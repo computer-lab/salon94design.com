@@ -1,85 +1,41 @@
-import React from 'react'
+import React, { Component } from 'react'
 import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
-import ImageList from '../layouts/ImageList'
-import WorkSummary from '../layouts/WorkSummary'
-import { imageInfo, workLink } from '../util'
+import SectionItemList from '../layouts/SectionItemList'
+import { chooseDesignerImage, designerLink } from '../util'
 
-const IndexPage = ({ data }) => {
-  const { allProjectsYaml, allDesignersYaml } = data
+export default function Projects({ data }) {
+  const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const projects = allProjectsYaml.edges.map(edge => edge.node)
-  const homepageProjectSlugs = projects.filter(p => p.homepage).map(p => p.slug)
-  const filterWork = work => {
-    const projects = work.projects || []
-    for (let i = 0; i < projects.length; i++) {
-      if (homepageProjectSlugs.includes(projects[i].slug)) {
-        return true
-      }
+
+  const listItems = designers.map(designer => {
+    return {
+      title: designer.name,
+      image: chooseDesignerImage(designer),
+      link: designerLink(designer.slug),
     }
-
-    return false
-  }
-
-  let images = []
-  designers.forEach(designer => {
-    const works = (designer.works || []).filter(filterWork)
-    works.forEach(work => {
-      if (work.hydratedImages && work.hydratedImages.length > 0) {
-        const image = work.hydratedImages[0]
-        images.push(
-          Object.assign(imageInfo(image), {
-            unexpandedLink: workLink(designer.slug, work.slug),
-            designer,
-            work,
-          })
-        )
-      }
-    })
   })
-
-  // randomize image order
-  images.sort(() => Math.random() - 0.5)
-
-  const imageSets = [{ images }]
-
-  const hoverImageRenderer = hoverImage => (
-    <WorkSummary work={hoverImage.work} designer={hoverImage.designer} />
-  )
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design`} />
+      <Helmet
+        title={`Salon 94 Design - Designers`}
+        description={`List of designers represented by Salon 94 Design.`}
+      />
       <div>
-        <ImageList
-          imageSets={imageSets}
-          unexpandable={true}
-          centerImages={true}
-          hoverImageRenderer={hoverImageRenderer}
-        />
+        <SectionItemList title="Designers" items={listItems} />
       </div>
     </PageContainer>
   )
 }
 
-export default IndexPage
-
 export const pageQuery = graphql`
-  query LandingPageQuery {
-    allProjectsYaml {
-      edges {
-        node {
-          slug
-          title
-          homepage
-        }
-      }
-    }
-    allDesignersYaml {
+  query HomepageQuery {
+    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
       edges {
         node {
           slug
@@ -87,11 +43,6 @@ export const pageQuery = graphql`
           works {
             slug
             title
-            when
-            projects {
-              slug
-            }
-            tags
             hydratedImages {
               file
               width
@@ -102,10 +53,6 @@ export const pageQuery = graphql`
                 height
               }
             }
-            caption
-            price
-            medium
-            dimensions
           }
         }
       }

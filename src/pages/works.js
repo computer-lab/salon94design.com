@@ -6,9 +6,13 @@ import styled from 'emotion/react'
 import { PageContainer, createPanes } from '../layouts/containers'
 import { sansfont, monofont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../layouts/TagSelector'
-import { getAllTags } from '../util'
-
-const { LeftPane, RightPane } = createPanes('370px')
+import SectionItemList from '../layouts/SectionItemList'
+import {
+  getAllTags,
+  capitalize,
+  chooseCategoryImage,
+  workTagLink,
+} from '../util'
 
 const Instructions = styled.div`
   composes: ${sansfont};
@@ -24,15 +28,28 @@ export default function Works({ data }) {
   const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
+  const works = designers.reduce((items, d) => items.concat(d.works || []), [])
   const tags = getAllTags(designers)
+
+  const listItems = tags.map(tag => ({
+    title: capitalize(tag),
+    link: workTagLink(tag),
+    image: chooseCategoryImage(works, tag),
+  }))
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Works by Category`} />
-      <LeftPane />
-      <RightPane>
-        <TagSelector tags={tags} />
-      </RightPane>
+      <Helmet
+        title={`Salon 94 Design - Works by Category`}
+        description={`Filter works by tagged categories.`}
+      />
+      <div>
+        <SectionItemList
+          title="Works by Category"
+          items={listItems}
+          fullWidthMobile={false}
+        />
+      </div>
     </PageContainer>
   )
 }
@@ -45,6 +62,16 @@ export const pageQuery = graphql`
           works {
             when
             tags
+            hydratedImages {
+              file
+              width
+              height
+              resized {
+                file
+                width
+                height
+              }
+            }
           }
         }
       }
