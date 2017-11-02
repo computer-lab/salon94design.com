@@ -1,3 +1,9 @@
 [build]
 publish = "public"
 command = "npm run git-user && npm run build"
+
+[[redirects]]
+from = "/designers"
+to = "/"
+status = 301
+force = true
