@@ -8,12 +8,13 @@ import Menu from './Menu'
 import Breadcrumbs from './Breadcrumbs'
 import HomepageSplash from './HomepageSplash'
 import { ContentContainer } from './containers'
+import { imageFilepath } from '../util'
 
 const description =
   'The design wing of Salon 94 represents designers working across categories like furniture, lighting, textiles, and ceramics.'
 const keywords = 'Salon 94, Salon 94 Design, Designers, NYC, furniture'
 
-const TemplateWrapper = ({ children, location, history }) => (
+const TemplateWrapper = ({ children, location, history, data }) => (
   <div>
     <Helmet
       title="Salon 94 Design"
@@ -30,7 +31,7 @@ const TemplateWrapper = ({ children, location, history }) => (
     />
     <Menu location={location} />
     <Breadcrumbs location={location} />
-    <HomepageSplash location={location} />
+    <HomepageSplash location={location} image={imageFilepath(data.allLandingPageYaml.edges[0].node.splashImage)} />
 
     <ContentContainer>{children()}</ContentContainer>
   </div>
@@ -41,3 +42,15 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
+
+export const pageQuery = graphql`
+  query LayoutHomepageSplashQuery {
+    allLandingPageYaml {
+      edges {
+        node {
+          splashImage
+        }
+      }
+    }
+  }
+`
