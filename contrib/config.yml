@@ -180,3 +180,12 @@ collections:
           - name: file
             label: PDF
             widget: file
+    - name: landingPage
+      label: Landing Page
+      folder: src/data/landing-page
+      create: false
+      format: yaml
+      fields:
+        - name: splashImage
+          label: Splash Image
+          widget: image

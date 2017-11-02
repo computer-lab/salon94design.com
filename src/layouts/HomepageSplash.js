@@ -90,8 +90,6 @@ class HomepageSplash extends Component {
   }
 
   render() {
-    const imageSrc = '/images/splash_chair.gif'
-
     const onContentClick = () => {
       if (this.state.visible) {
         this.setState({ visible: false })
@@ -110,7 +108,7 @@ class HomepageSplash extends Component {
       <Container className={containerClass}>
         <Content onClick={onContentClick}>
           <Logo />
-          <SplashImage src={imageSrc} />
+          <SplashImage src={this.props.image}/>
         </Content>
       </Container>
     )
