@@ -91,6 +91,13 @@ collections:
           - name: dimensions
             label: Dimensions
             widget: string
+      - name: status
+        label: Status
+        widget: select
+        options:
+          - Available
+          - Represented
+        default: Available
   - name: project
     label: Project
     folder: src/data/projects
