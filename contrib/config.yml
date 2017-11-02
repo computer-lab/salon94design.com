@@ -150,9 +150,6 @@ collections:
           - name: caption
             label: Caption
             widget: string
-      - name: homepage
-        label: Show on Homepage
-        widget: boolean
   - name: info
     label: Info
     folder: src/data/info
