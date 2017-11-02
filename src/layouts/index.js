@@ -31,7 +31,10 @@ const TemplateWrapper = ({ children, location, history, data }) => (
     />
     <Menu location={location} />
     <Breadcrumbs location={location} />
-    <HomepageSplash location={location} image={imageFilepath(data.allLandingPageYaml.edges[0].node.splashImage)} />
+    <HomepageSplash
+      location={location}
+      image={imageFilepath(data.allLandingPageYaml.edges[0].node.splashImage)}
+    />
 
     <ContentContainer>{children()}</ContentContainer>
   </div>

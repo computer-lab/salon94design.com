@@ -108,7 +108,7 @@ class HomepageSplash extends Component {
       <Container className={containerClass}>
         <Content onClick={onContentClick}>
           <Logo />
-          <SplashImage src={this.props.image}/>
+          <SplashImage src={this.props.image} />
         </Content>
       </Container>
     )
