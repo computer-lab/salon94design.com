@@ -24,7 +24,7 @@ const DesignerProjects = ({ projects }) => {
 
   return (
     <Container>
-      <Header2>Projects</Header2>
+      <Header2>Exhibitions</Header2>
       <SimpleLinkList>
         {projects.map(item => (
           <SimpleLinkListItem key={item.slug}>

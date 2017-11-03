@@ -76,7 +76,7 @@ function createProjects({ boundActionCreators, graphql }) {
 
     projects.forEach(node => {
       createPage({
-        path: `/projects/${node.slug}`,
+        path: `/exhibitions/${node.slug}`,
         component: template,
         context: { slug: node.slug },
       })

@@ -152,7 +152,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
     <PageContainer>
       <Helmet
         title={`${currentDesigner.name} - Salon 94 Design`}
-        description={`Projects and works by ${currentDesigner.name}. ${currentDesigner.bio}`}
+        description={`Exhibitions, projects and works by ${currentDesigner.name}. ${currentDesigner.bio}`}
       />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
