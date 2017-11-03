@@ -52,4 +52,14 @@ works:
       - storage
     title: Thermal Spray Shelf Bronze
     when: '2017'
+  - dimensions: >-
+      Table: 90 x 42 x 29 inches / 228.6 x 106.7 cm x 73.7  Chairs: 14 x 18 x
+      27.5 inches
+    medium: 'polystyrene, rubber polymer'
+    slug: poly-dining-set
+    tags:
+      - tables
+      - ''
+    title: 'Poly Dining Set, 2010'
+    when: '2010'
 status: Represented
