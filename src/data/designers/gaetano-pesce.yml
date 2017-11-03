@@ -37,8 +37,10 @@ works:
       - storage
     title: Tornando dal Circo Cabinet
     when: '2016'
-  - images:
+  - dimensions: 21.65 x 31.5 x 31.5 inches / 55 x 80 x 80 cm
+    images:
       - file: /public/static/Pesce oct15-7883.jpg
+    medium: polyurethane resin and papier maché
     projects: []
     slug: tree vase
     title: 'Tree Vase, 2017'
