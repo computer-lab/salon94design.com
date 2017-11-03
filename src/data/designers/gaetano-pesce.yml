@@ -26,15 +26,15 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - slug: tornando-dal-circo-cabinet-2016
-    dimensions: 96.46 x 53.54 x 39.37 inches
+  - dimensions: 96.46 x 53.54 x 39.37 inches
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/large.jpg
     medium: 'resin, wood, steel'
     projects: []
+    slug: tornando-dal-circo-cabinet-2016
     tags:
       - storage
     title: Tornando dal Circo Cabinet
     when: '2016'
-status: Available
+status: Represented
