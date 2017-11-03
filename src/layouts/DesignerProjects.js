@@ -28,7 +28,7 @@ const DesignerProjects = ({ projects }) => {
       <SimpleLinkList>
         {projects.map(item => (
           <SimpleLinkListItem key={item.slug}>
-            <Link to={projectLink(item.slug)}>{item.title}</Link>
+            <Link to={projectLink(item)}>{item.title}</Link>
           </SimpleLinkListItem>
         ))}
       </SimpleLinkList>
