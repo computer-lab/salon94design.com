@@ -29,11 +29,11 @@ export default function Projects({ data }) {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - Projects`}
+        title={`Salon 94 Design - Exhibitions`}
         description={`List of Salon 94 Design exhibtions and projects`}
       />
       <div>
-        <SectionItemList title="Projects" items={listItems} />
+        <SectionItemList title="Exhibitions" items={listItems} />
       </div>
     </PageContainer>
   )

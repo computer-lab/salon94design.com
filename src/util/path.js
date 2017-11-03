@@ -1,6 +1,6 @@
 export const designerLink = slug => `/designers/${slug}`
 
-export const projectLink = slug => `/projects/${slug}`
+export const projectLink = slug => `/exhibitions/${slug}`
 
 export const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
 

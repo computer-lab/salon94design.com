@@ -164,7 +164,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
           />
         </ProjectHeader>
         <HiddenSelector
-          title="All Projects"
+          title="All Exhibitions"
           sections={selectorSections}
           currentItemLink={projectLink(currentProjectSlug)}
         />
