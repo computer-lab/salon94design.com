@@ -37,4 +37,10 @@ works:
       - storage
     title: Tornando dal Circo Cabinet
     when: '2016'
+  - images:
+      - file: /public/static/Pesce oct15-7883.jpg
+    projects: []
+    slug: tree vase
+    title: 'Tree Vase, 2017'
+    when: '2017'
 status: Represented
