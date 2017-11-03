@@ -41,28 +41,19 @@ works:
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/large.jpg
-        width: 7360
-        height: 4912
-        resized:
-          - file: >-
-              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w200.jpg
-            width: 200
-            height: 133
-          - file: >-
-              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w400.jpg
-            width: 400
-            height: 267
-          - file: >-
-              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w800.jpg
-            width: 800
-            height: 534
-          - file: >-
-              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w1440.jpg
-            width: 1440
-            height: 961
     medium: polyurethane resin and papier maché
     projects: []
     slug: tree-vase
     title: 'Tree Vase, 2017'
     when: '2017'
+  - dimensions: 18.5 x 51.8 x 36.22 inches / 47 x 130 x 92 cm
+    images:
+      - file: /public/static/Pesce 72715-4990-2.jpg
+    medium: 'papier maché, resin, and polyurethane foam'
+    slug: swamp-coffee-table
+    tags:
+      - tables
+      - ''
+    title: 'Swamp Coffee Table, 2015'
+    when: '2015'
 status: Represented
