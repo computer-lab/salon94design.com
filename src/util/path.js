@@ -1,7 +1,22 @@
-export const designerLink = slug => `/designers/${slug}`
+const designerLink = slug => `/designers/${slug}`
 
-export const projectLink = slug => `/exhibitions/${slug}`
+const projectLink = project => {
+  switch (project.type) {
+    case 'Art Fair':
+      return `/art-fairs/${project.slug}`
+    case 'Exhibition':
+    default:
+      return `/exhibitions/${project.slug}`
+  }
+}
 
-export const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
+const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
 
-export const workTagLink = tag => `/works/${tag}`
+const workTagLink = tag => `/works/${tag}`
+
+module.exports = {
+  designerLink,
+  projectLink,
+  workLink,
+  workTagLink,
+}
