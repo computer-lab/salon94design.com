@@ -48,7 +48,27 @@ works:
     when: '2017'
   - dimensions: 18.5 x 51.8 x 36.22 inches / 47 x 130 x 92 cm
     images:
-      - file: /public/static/Pesce 72715-4990-2.jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/large.jpg
+        width: 6769
+        height: 4549
+        resized:
+          - file: >-
+              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w200.jpg
+            width: 200
+            height: 134
+          - file: >-
+              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w400.jpg
+            width: 400
+            height: 269
+          - file: >-
+              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w800.jpg
+            width: 800
+            height: 538
+          - file: >-
+              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w1440.jpg
+            width: 1440
+            height: 968
     medium: 'papier maché, resin, and polyurethane foam'
     slug: swamp-coffee-table
     tags:
