@@ -14,6 +14,7 @@ module.exports = {
 
 const designerDir = path.join(__dirname, '../src/data/designers')
 const projectDir = path.join(__dirname, '../src/data/projects')
+const infoDir = path.join(__dirname, '../src/data/info')
 
 async function getDesigners () {
   const designerFiles = await readdirAbsolute(designerDir)
@@ -25,6 +26,12 @@ async function getProjects () {
   const projectFiles = await readdirAbsolute(projectDir)
   const projects = await getYamlDatas(projectFiles)
   return projects
+}
+
+async function getInfo () {
+  const infoFiles = await readdirAbsolute(infoDir)
+  const info = await getYamlDatas(infoFiles)
+  return info[0]
 }
 
 async function readdirAbsolute (dir) {
@@ -48,6 +55,12 @@ async function getYamlDatas (files) {
 
 const designerFileName = data => path.join(designerDir, `${data.slug.trim()}.yml`)
 const projectFileName = data => path.join(projectDir, `${data.slug.trim()}.yml`)
+const infoFileName = data => path.join(infoDir, `${data.slug.trim()}.yml`)
+
+async function updateInfoFile (data) {
+  // write updated designer to same file
+  await writeYamlFile(data, infoFileName(data))
+}
 
 async function updateDesignerFile (data) {
   // write updated designer to same file
