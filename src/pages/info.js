@@ -103,8 +103,8 @@ const Info = ({ data }) => {
     press,
   } = allInfoYaml.edges[0].node
 
-  const socialLinks = social.map((item) => (
-    <SectionListItem>
+  const socialLinks = social.map(item => (
+    <SectionListItem key={item.link}>
       <a href={item.link} target="_blank">
         {item.title}
       </a>
