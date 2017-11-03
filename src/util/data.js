@@ -87,3 +87,10 @@ export const workImageTexts = ({
     credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
   }
 }
+
+export const byLastName = (designerA, designerB) => {
+  const getLastName = (designer) => {
+    return designer.name ? designer.name.trim().split(' ').pop() : ''
+  }
+  return getLastName(designerA).localeCompare(getLastName(designerB))
+}
