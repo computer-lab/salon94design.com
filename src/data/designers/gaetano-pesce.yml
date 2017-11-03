@@ -39,10 +39,30 @@ works:
     when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches / 55 x 80 x 80 cm
     images:
-      - file: /public/static/Pesce oct15-7883.jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/large.jpg
+        width: 7360
+        height: 4912
+        resized:
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w200.jpg
+            width: 200
+            height: 133
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w400.jpg
+            width: 400
+            height: 267
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w800.jpg
+            width: 800
+            height: 534
+          - file: >-
+              /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/resized-w1440.jpg
+            width: 1440
+            height: 961
     medium: polyurethane resin and papier maché
     projects: []
-    slug: tree vase
+    slug: tree-vase
     title: 'Tree Vase, 2017'
     when: '2017'
 status: Represented
