@@ -101,7 +101,11 @@ const Info = ({ data }) => {
     instagram,
     mailingList,
     press,
+    photos,
   } = allInfoYaml.edges[0].node
+
+  const images = (info.hydratedImages || []).map(image => imageInfo(image))
+  const imageSets = [{ images }]
 
   return (
     <Container>
@@ -110,6 +114,8 @@ const Info = ({ data }) => {
       <Link to={'/'}>
         <Logo width={600} />
       </Link>
+
+      <ImageList imageSets={imageSets} />
 
       <SectionWrapper>
         <Section>
@@ -166,6 +172,10 @@ export const pageQuery = graphql`
           press {
             title
             link
+          }
+          photos {
+            title
+            file
           }
         }
       }
