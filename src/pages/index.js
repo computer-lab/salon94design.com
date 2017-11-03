@@ -5,14 +5,16 @@ import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../layouts/SectionItemList'
-import { chooseDesignerImage, designerLink } from '../util'
+import { chooseDesignerImage, designerLink, byLastName } from '../util'
 
 const prefferedStatusOrder = ['Represented', 'Available']
 
 export default function Designers({ data }) {
   const { allDesignersYaml } = data
 
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
+  // Technically this can be `const` but that's a lie right ;p
+  let designers = allDesignersYaml.edges.map(edge => edge.node)
+  designers.sort(byLastName)
 
   const designersByStatus = {}
   designers.forEach(d => {
