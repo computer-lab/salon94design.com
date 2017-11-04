@@ -11,10 +11,10 @@ import {
   Header1,
   breakpoint1,
 } from '../layouts/emotion-base'
-import ImageList from '../layouts/ImageList'
-import HiddenSelector from '../layouts/HiddenSelector'
-import WorkSummary from '../layouts/WorkSummary'
-import Video from '../layouts/Video'
+import ImageList from '../components/ImageList'
+import HiddenSelector from '../components/HiddenSelector'
+import WorkSummary from '../components/WorkSummary'
+import Video from '../components/Video'
 import {
   imageInfo,
   designerLink,

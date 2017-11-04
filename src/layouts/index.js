@@ -4,9 +4,9 @@ import Link from 'gatsby-link'
 
 import './index.css'
 import Helmet from '../components/helmet'
-import Menu from './Menu'
-import Breadcrumbs from './Breadcrumbs'
-import HomepageSplash from './HomepageSplash'
+import Menu from '../components/Menu'
+import Breadcrumbs from '../components/Breadcrumbs'
+import HomepageSplash from '../components/HomepageSplash'
 import { ContentContainer } from './containers'
 import { imageFilepath } from '../util'
 

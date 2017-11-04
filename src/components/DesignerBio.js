@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { sansfont, childLink, breakpoint1 } from './emotion-base'
+import { sansfont, childLink, breakpoint1 } from '../layouts/emotion-base'
 
 const Container = styled.section``
 

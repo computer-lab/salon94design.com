@@ -9,7 +9,7 @@ import {
   Header2,
   SimpleLinkList,
   SimpleLinkListItem,
-} from './emotion-base'
+} from '../layouts/emotion-base'
 import { imageFilepath } from '../util'
 
 const Container = styled.section`
