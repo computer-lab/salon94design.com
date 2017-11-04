@@ -13,12 +13,12 @@ import {
   breakpoint2,
   breakpoint3,
 } from '../layouts/emotion-base'
-import HiddenSelector from '../layouts/HiddenSelector'
-import DesignerBio from '../layouts/DesignerBio'
-import DesignerProjects from '../layouts/DesignerProjects'
-import Press from '../layouts/Press'
-import ImageList from '../layouts/ImageList'
-import WorkSummary from '../layouts/WorkSummary'
+import HiddenSelector from '../components/HiddenSelector'
+import DesignerBio from '../components/DesignerBio'
+import DesignerProjects from '../components/DesignerProjects'
+import Press from '../components/Press'
+import ImageList from '../components/ImageList'
+import WorkSummary from '../components/WorkSummary'
 import { imageInfo, workImageTexts, designerLink, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { breakpoint1, breakpoint3 } from './emotion-base'
+import { breakpoint1, breakpoint3 } from '../layouts/emotion-base'
 
 const HoverInfo = styled.div`
   position: fixed;

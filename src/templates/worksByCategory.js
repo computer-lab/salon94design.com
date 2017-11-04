@@ -5,9 +5,9 @@ import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
-import ImageList from '../layouts/ImageList'
-import TagSelector from '../layouts/TagSelector'
-import WorkSummary from '../layouts/WorkSummary'
+import ImageList from '../components/ImageList'
+import TagSelector from '../components/TagSelector'
+import WorkSummary from '../components/WorkSummary'
 import {
   imageInfo,
   workImageTexts,

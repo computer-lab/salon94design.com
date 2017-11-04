@@ -12,7 +12,7 @@ import {
   breakpoint1,
   breakpoint2,
   breakpoint3,
-} from './emotion-base'
+} from '../layouts/emotion-base'
 import { designerLink, workTagLink, projectLink, capitalize } from '../util'
 
 const Container = styled.div`

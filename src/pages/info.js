@@ -13,7 +13,7 @@ import {
   breakpoint3,
 } from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
-import Press from '../layouts/Press'
+import Press from '../components/Press'
 import SimpleImageList from '../components/SimpleImageList'
 import { imageInfo } from '../util'
 
