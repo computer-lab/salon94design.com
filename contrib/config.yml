@@ -184,8 +184,8 @@ collections:
           - name: file
             label: PDF
             widget: file
-      - name: photos
-        label: Photos
+      - name: images
+        label: Images
         widget: list
         fields:
           - name: title

@@ -5,9 +5,11 @@ const yaml = require('js-yaml')
 module.exports = {
   getDesigners,
   getProjects,
+  getInfo,
   readdirAbsolute,
   updateDesignerFile,
   updateProjectFile,
+  updateInfoFile,
   resetDesignerFile,
   resetProjectFile
 }
@@ -55,25 +57,25 @@ async function getYamlDatas (files) {
 
 const designerFileName = data => path.join(designerDir, `${data.slug.trim()}.yml`)
 const projectFileName = data => path.join(projectDir, `${data.slug.trim()}.yml`)
-const infoFileName = data => path.join(infoDir, `${data.slug.trim()}.yml`)
-
-async function updateInfoFile (data) {
-  // write updated designer to same file
-  await writeYamlFile(data, infoFileName(data))
-}
+const infoFileName = data => path.join(infoDir, `default.yml`)
 
 async function updateDesignerFile (data) {
   // write updated designer to same file
   await writeYamlFile(data, designerFileName(data))
 }
 
-async function resetDesignerFile (oldData, data) {
-  await resetYamlFile(oldData, data, designerFileName)
+async function updateProjectFile (data) {
+  // write updated project to same file
+  await writeYamlFile(data, projectFileName(data))
 }
 
-async function updateProjectFile (data) {
-  // write updated designer to same file
-  await writeYamlFile(data, projectFileName(data))
+async function updateInfoFile (data) {
+  // write updated info to same file
+  await writeYamlFile(data, infoFileName(data))
+}
+
+async function resetDesignerFile (oldData, data) {
+  await resetYamlFile(oldData, data, designerFileName)
 }
 
 async function resetProjectFile (oldData, data) {
