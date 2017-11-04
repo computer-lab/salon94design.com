@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'emotion/react'
 
 import { baseUl, sansfont, breakpoint3 } from '../layouts/emotion-base'
-import FullscreenImageViewer from '../layouts/FullscreenImageViewer'
+import FullscreenImageViewer from '../components/FullscreenImageViewer'
 
 const List = styled.ul`
   composes: ${baseUl};

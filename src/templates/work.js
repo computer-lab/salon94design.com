@@ -5,10 +5,10 @@ import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
 import { sansfont, monofont } from '../layouts/emotion-base'
-import ImageList from '../layouts/ImageList'
-import Video from '../layouts/Video'
-import HiddenSelector from '../layouts/HiddenSelector'
-import WorkSummary from '../layouts/WorkSummary'
+import ImageList from '../components/ImageList'
+import Video from '../components/Video'
+import HiddenSelector from '../components/HiddenSelector'
+import WorkSummary from '../components/WorkSummary'
 import { imageInfo, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes()

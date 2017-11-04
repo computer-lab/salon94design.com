@@ -2,8 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { breakpoint3 } from './emotion-base'
-import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from './logo'
+
+import { breakpoint3 } from '../layouts/emotion-base'
+import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from '../layouts/logo'
 
 const Container = styled.div`
   position: fixed;

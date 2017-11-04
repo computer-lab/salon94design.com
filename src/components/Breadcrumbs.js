@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 
-import { baseUl, monofont, breakpoint3 } from './emotion-base'
+import { baseUl, monofont, breakpoint3 } from '../layouts/emotion-base'
 import { capitalize } from '../util'
 
 const Container = styled.div`

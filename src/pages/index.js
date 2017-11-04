@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
-import SectionItemList from '../layouts/SectionItemList'
+import SectionItemList from '../components/SectionItemList'
 import { chooseDesignerImage, designerLink, byLastName } from '../util'
 
 const prefferedStatusOrder = ['Represented', 'Available']

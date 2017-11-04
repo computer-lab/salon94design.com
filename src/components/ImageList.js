@@ -7,7 +7,6 @@ import cx from 'classnames'
 import Scroll from 'react-scroll'
 
 import { ROOT_URL } from '../util'
-import Helmet from '../components/helmet'
 import {
   monofont,
   sansfont,
@@ -16,7 +15,8 @@ import {
   breakpoint2,
   breakpoint3,
   isMobileWidth,
-} from './emotion-base'
+} from '../layouts/emotion-base'
+import Helmet from './helmet'
 import HoverInfo from './HoverInfo'
 import FullscreenImageViewer from './FullscreenImageViewer'
 

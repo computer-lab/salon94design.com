@@ -5,8 +5,8 @@ import styled from 'emotion/react'
 
 import { PageContainer, createPanes } from '../layouts/containers'
 import { sansfont, monofont, breakpoint1 } from '../layouts/emotion-base'
-import TagSelector from '../layouts/TagSelector'
-import SectionItemList from '../layouts/SectionItemList'
+import TagSelector from '../components/TagSelector'
+import SectionItemList from '../components/SectionItemList'
 import {
   getAllTags,
   capitalize,

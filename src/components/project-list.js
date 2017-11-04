@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 
-import SectionItemList from '../layouts/SectionItemList'
+import SectionItemList from '../components/SectionItemList'
 import { chooseProjectImage, projectLink } from '../util'
 
 function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {

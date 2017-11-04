@@ -4,9 +4,8 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 
-import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from './logo'
-
-import { baseUl, monofont, sansfont, childLink } from './emotion-base'
+import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from '../layouts/logo'
+import { baseUl, monofont, sansfont, childLink } from '../layouts/emotion-base'
 
 const menuBreakpoint1 = `max-width: 740px`
 const menuBreakpoint3 = `max-width: 520px`
