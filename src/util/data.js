@@ -70,7 +70,7 @@ export const workImageTexts = ({
         .map(workProject => {
           const project = projects.find(p => p.slug === workProject.slug)
           return project ? (
-            <Link to={projectLink(workProject.slug)} key={workProject.slug}>
+            <Link to={projectLink(workProject)} key={workProject.slug}>
               {project.title}
             </Link>
           ) : null
@@ -86,4 +86,16 @@ export const workImageTexts = ({
     caption: work.caption,
     credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
   }
+}
+
+export const byLastName = (designerA, designerB) => {
+  const getLastName = designer => {
+    return designer.name
+      ? designer.name
+          .trim()
+          .split(' ')
+          .pop()
+      : ''
+  }
+  return getLastName(designerA).localeCompare(getLastName(designerB))
 }

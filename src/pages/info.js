@@ -104,7 +104,7 @@ const Info = ({ data }) => {
     aboutHtml,
     email,
     phone,
-    instagram,
+    social,
     mailingList,
     press,
     hydratedImages,
@@ -113,6 +113,14 @@ const Info = ({ data }) => {
   const images = (hydratedImages || []).map(image =>
     Object.assign({}, image, imageInfo(image))
   )
+
+  const socialLinks = social.map(item => (
+    <SectionListItem key={item.link}>
+      <a href={item.link} target="_blank">
+        {item.title}
+      </a>
+    </SectionListItem>
+  ))
 
   return (
     <Container>
@@ -135,11 +143,7 @@ const Info = ({ data }) => {
         <Section>
           <Header2>Contact</Header2>
           <SectionList>
-            <SectionListItem>
-              <a href={instagram} target="_blank">
-                Instagram
-              </a>
-            </SectionListItem>
+            {socialLinks}
             <SectionListItem>
               Phone:{' '}
               <a href={`tel:${phone}`} target="_blank">
@@ -178,7 +182,10 @@ export const pageQuery = graphql`
           aboutHtml
           email
           phone
-          instagram
+          social {
+            title
+            link
+          }
           mailingList
           press {
             title

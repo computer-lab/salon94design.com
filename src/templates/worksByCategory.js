@@ -15,6 +15,7 @@ import {
   designerLink,
   categoryTags,
   getAllTags,
+  byLastName,
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
@@ -25,7 +26,10 @@ const WorksTemplate = ({ data, pathContext }) => {
 
   const currentTags = categoryTags(currentCategory)
 
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
+  // Technically this can be `const` but that's a lie right ;p
+  let designers = allDesignersYaml.edges.map(edge => edge.node)
+  designers.sort(byLastName)
+
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const filterWork = w => {
     if (!w.hydratedImages || w.hydratedImages.length === 0) {
@@ -103,6 +107,7 @@ export const pageQuery = graphql`
         node {
           slug
           title
+          type
         }
       }
     }

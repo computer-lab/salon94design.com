@@ -111,6 +111,13 @@ collections:
       - name: title
         label: Title
         widget: string
+      - name: type
+        label: Type
+        widget: select
+        options:
+          - Exhibition
+          - Art Fair
+        default: Exhibition
       - name: when
         label: When
         widget: string
@@ -159,9 +166,16 @@ collections:
       - name: email
         label: Email
         widget: string
-      - name: instagram
-        label: Instagram
-        widget: string
+      - name: social
+        label: Social
+        widget: list
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: link
+            label: Link
+            widget: string
       - name: phone
         label: Phone
         widget: string

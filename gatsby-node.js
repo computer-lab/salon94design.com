@@ -2,6 +2,7 @@ const path = require('path')
 const util = require('util')
 const remark = require('remark')
 const html = require('remark-html')
+const { projectLink } = require('./src/util/path')
 const { getAllTags } = require('./src/util/tag')
 const { readdirAbsolute } = require('./transformer/data')
 const { getImageData } = require('./transformer/images')
@@ -65,6 +66,7 @@ function createProjects({ boundActionCreators, graphql }) {
           node {
             slug
             when
+            type
           }
         }
       }
@@ -76,7 +78,7 @@ function createProjects({ boundActionCreators, graphql }) {
 
     projects.forEach(node => {
       createPage({
-        path: `/exhibitions/${node.slug}`,
+        path: projectLink(node),
         component: template,
         context: { slug: node.slug },
       })

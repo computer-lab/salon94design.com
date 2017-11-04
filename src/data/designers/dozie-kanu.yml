@@ -10,14 +10,14 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - slug: bench-on-84s
-    dimensions: 20.5 x 18 x 100 inches
+  - dimensions: 20.5 x 18 x 100 inches
     images:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
     medium: 'poured concrete, steel '
+    slug: bench-on-84s
     tags:
       - seating
     title: Bench on 84s
     when: '2017'
-status: Available
+status: Represented

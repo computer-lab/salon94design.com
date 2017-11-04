@@ -11,16 +11,32 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: ''
+  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm
     images:
       - file: >-
-          /public/static/images/works/kueng-caputo/yellow-bench-BJDFVhjjn-/large.jpg
-    medium: ''
+          /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/large.jpg
+        width: 1399
+        height: 1540
+        resized:
+          - file: >-
+              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h300.jpg
+            width: 273
+            height: 300
+          - file: >-
+              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h600.jpg
+            width: 545
+            height: 600
+          - file: >-
+              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h900.jpg
+            width: 818
+            height: 900
+    medium: marble
     price: ''
     projects: []
-    slug: yellow-bench
+    slug: marble-stool
     tags:
-      - benches
-    title: Yellow Bench
-    when: '2015'
-status: Available
+      - seating
+      - ''
+    title: 'Marble Stool, 2016'
+    when: '2016'
+status: Represented

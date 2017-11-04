@@ -52,4 +52,36 @@ works:
       - storage
     title: Thermal Spray Shelf Bronze
     when: '2017'
+  - dimensions: >-
+      Table: 90 x 42 x 29 inches / 228.6 x 106.7 cm x 73.7  Chairs: 14 x 18 x
+      27.5 inches
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/large.jpg
+        width: 2708
+        height: 2033
+        resized:
+          - file: >-
+              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w200.jpg
+            width: 200
+            height: 150
+          - file: >-
+              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w400.jpg
+            width: 400
+            height: 300
+          - file: >-
+              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w800.jpg
+            width: 800
+            height: 601
+          - file: >-
+              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w1440.jpg
+            width: 1440
+            height: 1081
+    medium: 'polystyrene, rubber polymer'
+    slug: poly-dining-set
+    tags:
+      - tables
+      - ''
+    title: 'Poly Dining Set, 2010'
+    when: '2010'
 status: Represented
