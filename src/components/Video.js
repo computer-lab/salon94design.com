@@ -1,7 +1,12 @@
 import React from 'react'
 import styled from 'emotion/react'
 
-import { sansfont, breakpoint1, breakpoint2, breakpoint3 } from './emotion-base'
+import {
+  sansfont,
+  breakpoint1,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 
 const VideoWrapper = styled.div`
   margin-bottom: 40px;

@@ -9,7 +9,7 @@ import {
   selectorList,
   breakpoint1,
   breakpoint3,
-} from './emotion-base'
+} from '../layouts/emotion-base'
 
 const Selector = styled.div`
   margin-top: 60px;

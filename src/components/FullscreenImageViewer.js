@@ -2,9 +2,9 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { css } from 'emotion'
 import styled from 'emotion/react'
-import ImageMagnifier from './ImageMagnifier'
 
-import { monofont, breakpoint1, breakpoint3 } from './emotion-base'
+import ImageMagnifier from './ImageMagnifier'
+import { monofont, breakpoint1, breakpoint3 } from '../layouts/emotion-base'
 
 const Container = styled.div`
   position: fixed;

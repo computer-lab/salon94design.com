@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, selectorList, breakpoint1 } from './emotion-base'
+import { monofont, selectorList, breakpoint1 } from '../layouts/emotion-base'
 import { workTagLink, capitalize } from '../util'
 
 const Container = styled.div`

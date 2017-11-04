@@ -3,7 +3,12 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { sansfont, baseUl, breakpoint2, breakpoint3 } from './emotion-base'
+import {
+  sansfont,
+  baseUl,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 import { imageLargePath, imageSrcSet } from '../util'
 
 const Container = styled.div`
