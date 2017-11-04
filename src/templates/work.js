@@ -71,6 +71,7 @@ export const pageQuery = graphql`
         node {
           slug
           title
+          type
         }
       }
     }

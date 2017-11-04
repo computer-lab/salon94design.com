@@ -1,32 +1,26 @@
 slug: rick-owens
 name: Rick Owens
 bio: >-
-  Rick Owens is a noted menswear designer and he also makes these gold pieces of
-  jewelry. Rick Owens is a noted menswear designer and he also makes these gold
-  pieces of jewelry.
-press:
-  - title: NYTimes - Press Coverage of Design
-    link: 'https://google.com'
+  Born in 1961 in California, Rick Owens founded his own fashion label in 1994.
+  In 2002 he won the Council of Fashion Designers of America Perry Ellis
+  Emerging Talent Award. In 2007 he was awarded the prestigious Cooper-Hewitt
+  National Design Award. His first furniture collection was shown in Paris in
+  2007 at Jousse Entreprise and subsequently in London in 2009. In addition to
+  being a seminal figure in fashion design, Owens is a major new talent in
+  furniture design
+press: []
 works:
-  - title: Shirt 1
-    slug: shirt-1
-    when: '2017'
-    projects: []
-    tags:
-      - fashion
+  - caption: ''
+    dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
     images:
-      - file: /public/static/images/works/rick-owens/shirt-1-BkLgYE3johZ/large.jpg
-    caption: 'Black Shirt, waterproof.'
-    price: '$10,000'
-  - title: Shirt 2
-    slug: shirt-2
-    when: '2017'
+      - file: /public/static/RO 104.3.jpg
+    medium: 'french elm wood, moose antler'
+    price: ''
     projects: []
+    slug: stag-stool
     tags:
-      - fashion
-    images:
-      - file: /public/static/images/works/rick-owens/shirt-2-SkvgY42sonb/large.jpg
-    price: '$20,000'
-    medium: ''
-    dimensions: ''
-status: Available
+      - seating
+      - ''
+    title: 'Stag Stool, 2015'
+    when: '2015'
+status: Represented

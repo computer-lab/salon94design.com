@@ -5,8 +5,7 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - slug: savage-series-black-leather-sofa
-    dimensions: 70 x 35 x 45
+  - dimensions: 70 x 35 x 45
     images:
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
@@ -16,8 +15,9 @@ works:
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
     medium: 'leather cord, various plastics'
     projects: []
+    slug: savage-series-black-leather-sofa
     tags:
       - seating
     title: 'Savage Series Black Leather Sofa, 2016'
     when: '2016'
-status: Available
+status: Represented

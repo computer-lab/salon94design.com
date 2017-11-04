@@ -109,18 +109,25 @@ const ProjectTemplate = ({ data, pathContext }) => {
     { images: workImages, title: 'Included Works' },
   ].filter(item => item.images.length > 0)
 
-  const projectsByYear = Array.from(new Set(projects.map(p => p.groupingYear))) // years
+  const typeTitle = `${currentProject.type}s`
+  const currentTypeProjects = projects.filter(
+    p => p.type === currentProject.type
+  )
+
+  const projectsByYear = Array.from(
+    new Set(currentTypeProjects.map(p => p.groupingYear))
+  ) // years
     .sort((a, b) => b - a) // sort reverse-chronologically
     .map(year => ({
       year,
-      projects: projects.filter(p => p.groupingYear === year),
+      projects: currentTypeProjects.filter(p => p.groupingYear === year),
     }))
 
   const selectorSections = projectsByYear.map(({ year, projects }) => ({
     title: year,
     items: projects.map(project => ({
       title: project.title,
-      link: projectLink(project.slug),
+      link: projectLink(project),
     })),
   }))
 
@@ -163,11 +170,14 @@ const ProjectTemplate = ({ data, pathContext }) => {
             dangerouslySetInnerHTML={{ __html: currentProject.descriptionHtml }}
           />
         </ProjectHeader>
-        <HiddenSelector
-          title="All Exhibitions"
-          sections={selectorSections}
-          currentItemLink={projectLink(currentProjectSlug)}
-        />
+
+        {currentTypeProjects.length > 1 && (
+          <HiddenSelector
+            title={`All ${typeTitle}`}
+            sections={selectorSections}
+            currentItemLink={projectLink(currentProject)}
+          />
+        )}
       </RightPane>
     </PageContainer>
   )
@@ -182,6 +192,7 @@ export const pageQuery = graphql`
         node {
           slug
           title
+          type
           description
           descriptionHtml
           when

@@ -10,7 +10,7 @@ import {
   SimpleLinkList,
   SimpleLinkListItem,
 } from './emotion-base'
-import { projectLink, imageFilepath } from '../util'
+import { imageFilepath } from '../util'
 
 const Container = styled.section`
   margin-top: 20px;

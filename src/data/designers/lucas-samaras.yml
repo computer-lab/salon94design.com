@@ -48,17 +48,4 @@ works:
       - jewelry
     title: Necklace 48
     when: 1996-1998
-  - dimensions: 11.1 ounces
-    images:
-      - file: >-
-          /public/static/images/works/lucas-samaras/necklace-51-SklltV3jjh-/large.jpg
-    medium: 22 Karat gold
-    price: ''
-    projects:
-      - slug: gold-chicken-wire
-    slug: necklace-51
-    tags:
-      - jewelry
-    title: Necklace 51
-    when: 1996-1998
-status: Available
+status: Represented
