@@ -14,6 +14,8 @@ import {
 } from '../layouts/emotion-base'
 import Logo from '../layouts/logo'
 import Press from '../components/Press'
+import SimpleImageList from '../components/SimpleImageList'
+import { imageInfo } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -92,6 +94,10 @@ const MailingListSignup = styled.div`
   }
 `
 
+const Images = styled.div`
+  margin-top: 40px;
+`
+
 const Info = ({ data }) => {
   const { allInfoYaml } = data
   const {
@@ -101,7 +107,12 @@ const Info = ({ data }) => {
     social,
     mailingList,
     press,
+    hydratedImages,
   } = allInfoYaml.edges[0].node
+
+  const images = (hydratedImages || []).map(image =>
+    Object.assign({}, image, imageInfo(image))
+  )
 
   const socialLinks = social.map(item => (
     <SectionListItem key={item.link}>
@@ -149,6 +160,12 @@ const Info = ({ data }) => {
           <MailingListSignup>
             <a href={mailingList}>Sign Up For Mailing List</a>
           </MailingListSignup>
+
+          {images.length > 0 && (
+            <Images>
+              <SimpleImageList images={images} />
+            </Images>
+          )}
         </Section>
       </SectionWrapper>
     </Container>
@@ -173,6 +190,17 @@ export const pageQuery = graphql`
           press {
             title
             link
+          }
+          hydratedImages {
+            file
+            title
+            width
+            height
+            resized {
+              file
+              width
+              height
+            }
           }
         }
       }

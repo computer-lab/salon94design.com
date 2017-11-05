@@ -42,3 +42,8 @@ press:
   - link: >-
       http://www.artnews.com/2017/03/02/salon-94-gallery-to-launch-design-program/
     title: Salon 94 Gallery to Launch Design Program
+images:
+  - title: 'Sample Info Image #1'
+    file: /public/static/images/info/ryHHJPIpZ/large.jpg
+  - title: null
+    file: /public/static/images/info/SydgpFoCb/large.jpg

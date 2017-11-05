@@ -185,11 +185,19 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const markdownToHtml = util.promisify(remark().use(html).process)
 
+  const hydrateImages = async node => {
+    if (node.images) {
+      node.hydratedImages = await Promise.all(node.images.map(hydrateImage))
+    }
+  }
+
   switch (node.internal.type) {
     case 'InfoYaml':
       {
         const html = await markdownToHtml(node.aboutText)
         node.aboutHtml = html.contents
+
+        await hydrateImages(node)
       }
       break
 
@@ -199,15 +207,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         node.bioHtml = html.contents
 
         const works = node.works || []
-        await Promise.all(
-          works.map(async work => {
-            if (work.images) {
-              work.hydratedImages = await Promise.all(
-                work.images.map(hydrateImage)
-              )
-            }
-          })
-        )
+        await Promise.all(works.map(work => hydrateImages(work)))
       }
       break
 
@@ -216,9 +216,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         const html = await markdownToHtml(node.description)
         node.descriptionHtml = html.contents
 
-        if (node.images) {
-          node.hydratedImages = await Promise.all(node.images.map(hydrateImage))
-        }
+        await hydrateImages(node)
       }
       break
   }

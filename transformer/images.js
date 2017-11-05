@@ -3,7 +3,14 @@ const path = require('path')
 const shortid = require('shortid')
 const sharp = require('sharp')
 
-const { getDesigners, updateDesignerFile, getProjects, updateProjectFile } = require('./data')
+const {
+  getDesigners,
+  updateDesignerFile,
+  getProjects,
+  updateProjectFile,
+  getInfo,
+  updateInfoFile,
+} = require('./data')
 
 module.exports = {
   processImages: main,
@@ -15,7 +22,8 @@ const imageDir = path.join(__dirname, '../static/images')
 async function main () {
   await Promise.all([
     processDesigners(),
-    processProjects()
+    processProjects(),
+    processInfo(),
   ])
 }
 
@@ -45,6 +53,12 @@ async function processProjects () {
   await Promise.all(projects.map((project, index) =>
     updateProject(project, processedProjectImages[index])
   ))
+}
+
+async function processInfo () {
+  const info = await getInfo()
+  const processedImages = await processInfoImages(info)
+  await updateInfo(info, processedImages)
 }
 
 async function processDesignerWorks (data) {
@@ -88,6 +102,25 @@ async function processProjectImages (project) {
   }))
 }
 
+async function processInfoImages (info) {
+  // find images that need processing
+  const images = info.images || []
+  const imagesToProcess = images.filter(image =>
+    !image.file.includes('static/images/info/')
+  )
+
+  // process them
+  const processedImages = await Promise.all(imagesToProcess.map(image => {
+    const newFilename = infoImageFilename(image)
+    return processImage(image, newFilename)
+  }))
+
+  // return relevant info
+  return processedImages.map((item, i) => Object.assign({}, item, {
+    originalImageIndex: images.indexOf(imagesToProcess[i])
+  }))
+}
+
 async function updateDesigner (data, processedWorks) {
   const dataWorks = data.works || []
   const works = await Promise.all(dataWorks.map(async (work, index) => {
@@ -121,11 +154,25 @@ async function updateProject (project, processedImages) {
   await updateProjectFile(updatedProject)
 }
 
+async function updateInfo (info, processedImages) {
+  if (processedImages.length === 0) {
+    return
+  }
+
+  const images = await Promise.all(info.images.map(async (image, index) => {
+    const processedItem = processedImages.find(item => item.originalImageIndex === index)
+    return processedItem ? getProcessedImageData(image, processedItem) : image
+  }))
+
+  // write updated project to same file
+  const updatedInfo = Object.assign({}, info, { images })
+  await updateInfoFile(updatedInfo)
+}
+
 async function getProcessedImageData (image, processedImageItem) {
-  const { newImage, resizedImages } = processedImageItem
-  const primaryImageData = await getImageData(newImage)
-  return Object.assign({}, image, primaryImageData, {
-    resized: await Promise.all(resizedImages.map(getImageData))
+  const { newImage } = processedImageItem
+  return Object.assign({}, image, {
+    file: imageDataFilename(newImage)
   })
 }
 
@@ -152,6 +199,12 @@ function workImageFilename (designer, work, image) {
 
 function projectImageFilename (project, image) {
   const newDirectory = path.resolve(imageDir, 'projects', project.slug, shortid.generate())
+  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
+  return newFilename
+}
+
+function infoImageFilename (image) {
+  const newDirectory = path.resolve(imageDir, 'info', shortid.generate())
   const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
   return newFilename
 }

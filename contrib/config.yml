@@ -198,6 +198,16 @@ collections:
           - name: file
             label: PDF
             widget: file
+      - name: images
+        label: Images
+        widget: list
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: file
+            label: File
+            widget: image
   - name: landingPage
     label: Landing Page
     folder: src/data/landing-page
