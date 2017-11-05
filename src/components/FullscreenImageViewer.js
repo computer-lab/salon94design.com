@@ -163,10 +163,11 @@ class FullscreenImageViewer extends Component {
   }
 
   render() {
-    const { image, closeHandler } = this.props
+    const { image, closeHandler, disableMagnifier } = this.props
     const { smallImageSize, largeImageSize, mouse, zoomOffset } = this.state
 
     const showMagnifier =
+      !disableMagnifier &&
       largeImageSize &&
       (largeImageSize.width > smallImageSize.width ||
         largeImageSize.height > smallImageSize.height)
@@ -207,6 +208,7 @@ FullscreenImageViewer.propTypes = {
   image: PropTypes.object.isRequired,
   closeHandler: PropTypes.func.isRequired,
   changeHandler: PropTypes.func.isRequired,
+  disableMagnifier: PropTypes.bool,
 }
 
 export default FullscreenImageViewer
