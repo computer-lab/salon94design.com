@@ -16,7 +16,7 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
   const title = `${type}s`
 
   const listItems = projects.map(project => {
-    const projectDesigners = (project.designers || []).map(getDesigner)
+    const projectDesigners = (project.designers || []).map(getDesigner).filter(d => !!d)
 
     return {
       title: project.title,
