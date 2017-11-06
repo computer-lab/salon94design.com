@@ -1,6 +1,6 @@
-slug: 'midtown-lever-house'
-title: 'Midtown Lever House'
-type: Art Fair
+slug: midtown-lever-house
+title: Midtown Lever House
+type: Exhibition
 when: 'May 03, 2017–June 09, 2017'
 groupingYear: '2017'
 designers:
@@ -112,6 +112,8 @@ description: >-
 
   MIDTOWN will be open May 3-June 9, Tuesday-Friday 11am-6pm, or by appointment,
   at 390 Park Avenue, 2nd Floor.
+images:
+  - file: /public/static/LEVER_HOUSE_INSTALL_1_620_414.jpg
 video:
   caption: ''
   vimeoId: ''
