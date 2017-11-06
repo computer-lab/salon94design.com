@@ -158,7 +158,9 @@ const Info = ({ data }) => {
             </SectionListItem>
           </SectionList>
           <MailingListSignup>
-            <a href={mailingList} target="_blank">Sign Up For Mailing List</a>
+            <a href={mailingList} target="_blank">
+              Sign Up For Mailing List
+            </a>
           </MailingListSignup>
 
           {images.length > 0 && (
