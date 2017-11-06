@@ -4,7 +4,6 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import {
-  monofont,
   monoFontFamily,
   sansfont,
   sansFontFamily,

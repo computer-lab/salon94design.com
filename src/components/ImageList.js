@@ -35,7 +35,7 @@ const SetTitle = styled.h3`
   margin: 0 72px 28px 0;
   font-weight: 400;
   font-size: 28px;
-  text-align: right;
+  text-align: left;
 
   @media (${breakpoint1}) {
     text-align: left;

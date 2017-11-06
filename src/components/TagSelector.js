@@ -3,39 +3,26 @@ import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 import cx from 'classnames'
-import { monofont, selectorList, breakpoint1 } from '../layouts/emotion-base'
+import { sansfont, selectorList, breakpoint1 } from '../layouts/emotion-base'
 import { workTagLink, capitalize } from '../util'
 
 const Container = styled.div`
-  width: 370px;
-  padding: 24px 20px;
-  border: 2px solid #000;
+  padding: 0;
   z-index: 1;
 
   @media (${breakpoint1}) {
-    width: auto;
-    margin-bottom: 40px;
+    display: none;
   }
 `
 
 const TagList = styled.ul`
-  composes: ${selectorList}, ${monofont};
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 24px;
-  margin-bottom: -24px;
+  composes: ${selectorList}, ${sansfont};
+  display: block;
+  font-size: 16px;
 
   & li {
-    margin: 0 0 24px 0;
+    margin: 0;
     padding: 2px;
-    width: 50%;
-  }
-
-  @media (${breakpoint1}) {
-    & li {
-      margin: 0 18px 24px 0;
-      width: auto;
-    }
   }
 `
 

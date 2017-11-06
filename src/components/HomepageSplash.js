@@ -59,7 +59,6 @@ class HomepageSplash extends Component {
     // when the homepage is visited, but only once
     const homepage = props.location.pathname === '/'
     this.state = {
-      hasVisitedHomepage: homepage,
       visible: homepage,
       active: homepage,
     }
@@ -70,19 +69,6 @@ class HomepageSplash extends Component {
   }
 
   componentDidUpdate() {
-    const { hasVisitedHomepage } = this.state
-
-    if (!hasVisitedHomepage) {
-      const homepage = this.props.location.pathname === '/'
-      if (homepage) {
-        this.setState({
-          hasVisitedHomepage: true,
-          visible: true,
-          active: true,
-        })
-      }
-    }
-
     this.updateBodyStyle()
   }
 
