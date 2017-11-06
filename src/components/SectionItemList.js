@@ -6,6 +6,7 @@ import cx from 'classnames'
 import {
   sansfont,
   baseUl,
+  breakpoint1,
   breakpoint2,
   breakpoint3,
 } from '../layouts/emotion-base'
@@ -61,8 +62,9 @@ const List = styled.ul`
 `
 
 const ListItem = styled.li`
-  margin: 0 48px 64px 0;
+  margin: 0 44px 64px 0;
   width: 320px;
+  height: 268px;
 
   & a {
     color: inherit;
@@ -78,33 +80,23 @@ const ListItem = styled.li`
     background-color: #eee;
     margin: 0;
     padding: 0;
-    max-width: 320px;
-    max-height: 280px;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
-  &.no-image img {
-    min-width: 320px;
-    min-height: 200px;
-  }
-
-  @media (${breakpoint2}) {
+  @media (${breakpoint1}) {
     width: 240px;
-    margin: 0 40px 64px 0;
-
-    & img {
-      max-width: 240px;
-      max-height: 200px;
-    }
-
-    &.no-image img {
-      min-width: 240px;
-      min-height: 150px;
-    }
+    height: 200px;
+    margin: 0 20px 64px 0;
   }
 
   @media (${breakpoint3}) {
     margin: 0 0 32px 0;
     width: auto;
+    height: auto;
     min-width: 50%;
 
     &.full-width-mobile {
@@ -158,7 +150,6 @@ const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
               <ListItem
                 key={i}
                 className={cx({
-                  'no-image': !image,
                   'full-width-mobile': fullWidthMobile,
                 })}
               >
@@ -166,7 +157,7 @@ const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
                   <img
                     src={imageLargePath(image)}
                     srcSet={imageSrcSet(image)}
-                    sizes={'400w'}
+                    sizes={`320px, (${breakpoint1}): 240px`}
                     alt={alt}
                   />
                   <ItemTitle>

@@ -8,10 +8,13 @@ export const imageSrcSet = image => {
   if (!image || !image.resized) {
     return ''
   }
-  const resized = image.resized.map(
-    ({ file, width }) => `${imageFilepath(file)} ${width}w`
-  )
+
+  const resized = image.resized
+    .sort((a, b) => a.width - b.width)
+    .map(({ file, width }) => `${imageFilepath(file)} ${width}w`)
+
   const large = `${imageLargePath(image)} ${image.width}w`
+
   return resized.concat([large]).join(', ')
 }
 
