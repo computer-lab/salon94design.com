@@ -22,21 +22,8 @@ bio: >
   corporeal, and organic
 
   design.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
-  - dimensions: 96.46 x 53.54 x 39.37 inches
-    images:
-      - file: >-
-          /public/static/images/works/gaetano-pesce/tornando-dal-circo-cabinet-2016-B1-Y4njin-/large.jpg
-    medium: 'resin, wood, steel'
-    projects: []
-    slug: tornando-dal-circo-cabinet-2016
-    tags:
-      - storage
-    title: Tornando dal Circo Cabinet
-    when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches / 55 x 80 x 80 cm
     images:
       - file: >-
@@ -50,25 +37,6 @@ works:
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/large.jpg
-        width: 6769
-        height: 4549
-        resized:
-          - file: >-
-              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w200.jpg
-            width: 200
-            height: 134
-          - file: >-
-              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w400.jpg
-            width: 400
-            height: 269
-          - file: >-
-              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w800.jpg
-            width: 800
-            height: 538
-          - file: >-
-              /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/resized-w1440.jpg
-            width: 1440
-            height: 968
     medium: 'papier maché, resin, and polyurethane foam'
     slug: swamp-coffee-table
     tags:
