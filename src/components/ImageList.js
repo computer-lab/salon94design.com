@@ -433,6 +433,7 @@ class ImageList extends Component {
   render() {
     const {
       imageSets,
+      imageHoverEnabled = false,
       hoverImageRenderer,
       alwaysExpand,
       unexpandable,
@@ -445,7 +446,7 @@ class ImageList extends Component {
       mobileWidth,
     } = this.state
 
-    const hoverInfoClass = cx({ hidden: !hoverImage || !hoverImageRenderer })
+    const hoverInfoClass = cx({ hidden: !imageHoverEnabled || !hoverImage || !hoverImageRenderer })
 
     const fullscreenImage = fullscreenImageIndices
       ? imageSets[fullscreenImageIndices.setIndex].images[
@@ -568,7 +569,7 @@ class ImageList extends Component {
         ))}
 
         <HoverInfo className={hoverInfoClass}>
-          {hoverImage && hoverImageRenderer && hoverImageRenderer(hoverImage)}
+          {hoverImage && imageHoverEnabled && hoverImageRenderer && hoverImageRenderer(hoverImage)}
         </HoverInfo>
 
         {fullscreenImage && (
@@ -585,6 +586,7 @@ class ImageList extends Component {
 
 ImageList.propTypes = {
   imageSets: PropTypes.array.isRequired,
+  imageHoverEnabled: PropTypes.bool,
   hoverImageRenderer: PropTypes.func,
   alwaysExpand: PropTypes.bool,
   unexpandable: PropTypes.bool,
