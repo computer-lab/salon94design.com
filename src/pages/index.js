@@ -36,7 +36,9 @@ export default function Designers({ data }) {
       link: designerLink(designer.slug),
     }))
 
-    return { title: status, items }
+    const title = status === 'Represented' ? null : 'Also Available'
+
+    return { title, items }
   })
 
   return (
