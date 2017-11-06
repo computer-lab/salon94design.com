@@ -225,16 +225,5 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 }
 
 async function hydrateImage(image) {
-  return createFileNode(image.file)
-
-
-  const localFilename = path.resolve(image.file.replace('/public/', ''))
-
-  const images = await readdirAbsolute(path.dirname(localFilename))
-  const resizedImages = images.filter(n => n !== localFilename)
-
-  const imageData = await getImageData(localFilename)
-  return Object.assign({}, image, imageData, {
-    resized: await Promise.all(resizedImages.map(getImageData)),
-  })
+  return createFileNode(path.resolve('src', image.file))
 }

@@ -16,7 +16,7 @@ works:
     dimensions: ''
     images:
       - file: >-
-          /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
+          data-images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -28,20 +28,20 @@ works:
     dimensions: '36 x 15 x 20 inches '
     images:
       - file: >-
-          /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
+          data-images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
         width: 930
         height: 1054
         resized:
           - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h300.jpg
+              data-images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h300.jpg
             width: 265
             height: 300
           - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h600.jpg
+              data-images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h600.jpg
             width: 529
             height: 600
           - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h900.jpg
+              data-images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h900.jpg
             width: 794
             height: 900
     medium: 'bronze, marble'

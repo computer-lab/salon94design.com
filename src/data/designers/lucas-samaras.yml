@@ -12,7 +12,7 @@ works:
   - dimensions: 13.2 ounces
     images:
       - file: >-
-          /public/static/images/works/lucas-samaras/necklace-49-S1aFN2iin-/large.jpg
+          data-images/works/lucas-samaras/necklace-49-S1aFN2iin-/large.jpg
     medium: 22 Karat gold
     price: ''
     projects:
@@ -25,7 +25,7 @@ works:
   - dimensions: ''
     images:
       - file: >-
-          /public/static/images/works/lucas-samaras/necklace-44-Bk0F42js2b/large.jpg
+          data-images/works/lucas-samaras/necklace-44-Bk0F42js2b/large.jpg
     medium: 22 Karat gold
     price: ''
     projects:
@@ -38,7 +38,7 @@ works:
   - dimensions: 11.2 ounces
     images:
       - file: >-
-          /public/static/images/works/lucas-samaras/necklace-48-HykxFEhos3-/large.jpg
+          data-images/works/lucas-samaras/necklace-48-HykxFEhos3-/large.jpg
     medium: 22 Karat gold
     price: ''
     projects:

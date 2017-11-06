@@ -16,9 +16,9 @@ works:
   - dimensions: 5-10 feet long (1.5-3 m long)
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
+          data-images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
       - file: >-
-          /public/static/images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
+          data-images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
     medium: Silk
     price: ''
     projects:
@@ -31,7 +31,7 @@ works:
   - dimensions: 15-20 feet long (4.5-6 m long)
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
+          data-images/works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
     medium: Nylon
     price: ''
     projects:
@@ -44,9 +44,9 @@ works:
   - dimensions: Up to 8 feet (up to 2.4 m)
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
+          data-images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
+          data-images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
     medium: PVC
     price: ''
     projects:

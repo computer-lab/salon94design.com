@@ -13,7 +13,7 @@ works:
   - dimensions: 20.5 x 18 x 100 inches
     images:
       - file: >-
-          /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
+          data-images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
     medium: 'poured concrete, steel '
     slug: bench-on-84s
     tags:

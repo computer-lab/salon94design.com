@@ -44,6 +44,6 @@ press:
     title: Salon 94 Gallery to Launch Design Program
 images:
   - title: 'Sample Info Image #1'
-    file: /public/static/images/info/ryHHJPIpZ/large.jpg
+    file: data-images/info/ryHHJPIpZ/large.jpg
   - title: null
-    file: /public/static/images/info/SydgpFoCb/large.jpg
+    file: data-images/info/SydgpFoCb/large.jpg

@@ -13,24 +13,24 @@ works:
   - caption: ''
     dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
     images:
-      - file: /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
+      - file: data-images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
         width: 2400
         height: 3600
         resized:
           - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h300.jpg
+              data-images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h300.jpg
             width: 200
             height: 300
           - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h600.jpg
+              data-images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h600.jpg
             width: 400
             height: 600
           - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h900.jpg
+              data-images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h900.jpg
             width: 600
             height: 900
           - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h1600.jpg
+              data-images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h1600.jpg
             width: 1067
             height: 1600
     medium: 'french elm wood, moose antler'

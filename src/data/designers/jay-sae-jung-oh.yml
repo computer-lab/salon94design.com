@@ -8,11 +8,11 @@ works:
   - dimensions: 70 x 35 x 45
     images:
       - file: >-
-          /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
+          data-images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
       - file: >-
-          /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/large.jpg
+          data-images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/large.jpg
       - file: >-
-          /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
+          data-images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
     medium: 'leather cord, various plastics'
     projects: []
     slug: savage-series-black-leather-sofa

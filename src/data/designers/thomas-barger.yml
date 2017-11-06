@@ -15,7 +15,7 @@ works:
   - dimensions: 27.5 x 36 x 21
     images:
       - file: >-
-          /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
+          data-images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects:
