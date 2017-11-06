@@ -25,20 +25,20 @@ const Logo = styled.div`
   left: 28px;
   background-image: url(${logoImageUrl});
   background-size: 100% 100%;
-  width: 120px;
-  height: ${getLogoHeight(120)}px;
+  width: 136px;
+  height: ${getLogoHeight(136)}px;
   transform: translateY(-50%);
 
   @media (${menuBreakpoint1}) {
-    width: 80px;
-    height: ${getLogoHeight(80)}px;
+    width: 120px;
+    height: ${getLogoHeight(120)}px;
   }
 
   @media (${menuBreakpoint3}) {
     left: 5px;
     top: 5px;
-    width: 60px;
-    height: ${getLogoHeight(60)}px;
+    width: 72px;
+    height: ${getLogoHeight(72)}px;
     transform: none;
   }
 `
@@ -47,7 +47,7 @@ const Nav = styled.ul`
   composes: ${baseUl} ${sansfont};
   position: absolute;
   right: 40px;
-  top: 51%;
+  top: 46%;
   display: flex;
   font-size: 28px;
   font-weight: 300;
@@ -62,7 +62,7 @@ const Nav = styled.ul`
   @media (${menuBreakpoint3}) {
     right: auto;
     left: 50%;
-    top: 40px;
+    top: 42px;
     transform: translateX(-50%);
     font-size: 16px;
     padding-right: 30px;
@@ -78,6 +78,10 @@ const NavItem = styled.li`
 
   &:not(:first-child) {
     margin-left: 25px;
+
+    @media (${menuBreakpoint1}) {
+      margin-left: 15px;
+    }
 
     @media (${menuBreakpoint3}) {
       margin-left: 10px;
@@ -113,7 +117,7 @@ const Menu = ({ location }) => {
     <Wrapper>
       {includeLogo && (
         <Link to={'/'}>
-          <Logo width={120} />
+          <Logo />
         </Link>
       )}
 
