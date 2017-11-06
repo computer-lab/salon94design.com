@@ -2,6 +2,8 @@ const path = require('path')
 const util = require('util')
 const remark = require('remark')
 const html = require('remark-html')
+const { createFileNode } = require('gatsby-source-filesystem/create-file-node')
+
 const { projectLink } = require('./src/util/path')
 const { getAllTags } = require('./src/util/tag')
 const { readdirAbsolute } = require('./transformer/data')
@@ -223,6 +225,9 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 }
 
 async function hydrateImage(image) {
+  return createFileNode(image.file)
+
+
   const localFilename = path.resolve(image.file.replace('/public/', ''))
 
   const images = await readdirAbsolute(path.dirname(localFilename))

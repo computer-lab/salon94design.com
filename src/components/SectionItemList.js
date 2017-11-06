@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import Link from 'gatsby-link'
+import Img from 'gatsby-image'
 import styled from 'emotion/react'
 import cx from 'classnames'
+
 import {
   sansfont,
   baseUl,
@@ -163,10 +165,8 @@ const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
                 })}
               >
                 <Link to={link}>
-                  <img
-                    src={imageLargePath(image)}
-                    srcSet={imageSrcSet(image)}
-                    sizes={'400w'}
+                  <Img
+                    sizes={image.file.childImageSharp.sizes}
                     alt={alt}
                   />
                   <ItemTitle>
