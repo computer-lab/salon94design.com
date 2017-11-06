@@ -163,11 +163,6 @@ const DesignerTemplate = ({ data, pathContext }) => {
       </LeftPane>
       <RightPane className="selectable">
         <Header1>{currentDesigner.name}</Header1>
-        <StatusTagWrapper>
-          <StatusTag className={statusClass}>
-            {currentDesigner.status}
-          </StatusTag>
-        </StatusTagWrapper>
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
