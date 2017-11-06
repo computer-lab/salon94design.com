@@ -485,7 +485,7 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
-                let sizes = isExpanded || mobileWidth ? '' : '200w'
+                let sizes = isExpanded || mobileWidth ? '' : '200px'
 
                 const onMouseEnter = isExpanded
                   ? null

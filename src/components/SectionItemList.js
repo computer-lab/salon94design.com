@@ -157,7 +157,7 @@ const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
                   <img
                     src={imageLargePath(image)}
                     srcSet={imageSrcSet(image)}
-                    sizes={'400w'}
+                    sizes={`320px, (${breakpoint1}): 240px`}
                     alt={alt}
                   />
                   <ItemTitle>

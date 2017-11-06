@@ -64,7 +64,7 @@ class SimpleImageList extends Component {
   }
 
   render() {
-    const { images = [], sizes = `50vw, (${breakpoint3}): 300px` } = this.props
+    const { images = [], sizes = `400px, (${breakpoint3}): 300px` } = this.props
 
     const { fullscreenImageIndex } = this.state
     const fullscreenImage = images[fullscreenImageIndex]
