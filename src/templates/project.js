@@ -132,7 +132,11 @@ const ProjectTemplate = ({ data, pathContext }) => {
     })),
   }))
 
-  const currentProjectDesigners = currentProject.designers || []
+  const currentProjectDesigners = (
+    currentProject.designers
+      ? currentProject.designers.filter(designer => getDesigner(designer.slug))
+      : []
+  )
 
   const hoverImageRenderer = hoverImage =>
     hoverImage.work && hoverImage.designer ? (
