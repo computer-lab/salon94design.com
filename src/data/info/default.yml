@@ -1,9 +1,8 @@
 email: ryan@salon94design.com
 social:
-  -
+  - link: 'https://www.instagram.com/salon94design'
     title: Instagram
-    link: 'https://www.instagram.com/johnson_trading'
-phone: 212-979-0001
+phone: (646) 672-9212
 mailingList: 'http://eepurl.com/b_K5f'
 aboutText: >-
   Salon 94 Design was established in 2017 by Jeanne Greenberg Rohatyn and Paul
@@ -15,8 +14,8 @@ aboutText: >-
   Design. With an inaugural show named _Ghost Dog _after Jim Jarmusch’s 1999
   cult samurai film, Salon 94 Design combined pieces by Gaetano Pesce and
   Seoul-based Kwangho Lee, as well as newer talents like Jack Craig who
-  contributed lamps of marble blocks covered with hand-dripped bronze.
-  _MIDTOWN_, the second exhibition of Salon 94 Design, in collaboration with
+  contributed lamps of marble blocks covered with hand-dripped bronze_.
+  MIDTOWN_, the second exhibition of Salon 94 Design, in collaboration with
   Maccarone, took place this June at the historic Lever House in Midtown
   Manhattan. The exhibition encompassed the building’s second floor office
   space, with its glass windows offering views inside and out. Defying the
@@ -43,7 +42,6 @@ press:
       http://www.artnews.com/2017/03/02/salon-94-gallery-to-launch-design-program/
     title: Salon 94 Gallery to Launch Design Program
 images:
-  - title: 'Sample Info Image #1'
-    file: /public/static/images/info/ryHHJPIpZ/large.jpg
-  - title: null
-    file: /public/static/images/info/SydgpFoCb/large.jpg
+  - file: /public/static/images/info/ryHHJPIpZ/large.jpg
+    title: 'Sample Info Image #1'
+  - file: /public/static/images/info/SydgpFoCb/large.jpg
