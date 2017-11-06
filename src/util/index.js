@@ -3,6 +3,8 @@ export * from './image'
 export * from './path'
 export * from './tag'
 
+export const SHOW_SELECTORS = false
+
 export const capitalize = str =>
   str
     .split(' ')

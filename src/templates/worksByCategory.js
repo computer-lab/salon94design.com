@@ -18,7 +18,7 @@ import {
   byLastName,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('370px')
+const { LeftPane, RightPane } = createPanes('180px')
 
 const WorksTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data

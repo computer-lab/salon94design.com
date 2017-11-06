@@ -21,6 +21,7 @@ import {
   projectLink,
   workImageTexts,
   workLink,
+  SHOW_SELECTORS
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
@@ -105,7 +106,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   })
 
   const imageSets = [
-    { images: projectImages, title: 'Exhibition Images' },
+    { images: projectImages, title: null },
     { images: workImages, title: 'Included Works' },
   ].filter(item => item.images.length > 0)
 
@@ -171,7 +172,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
           />
         </ProjectHeader>
 
-        {currentTypeProjects.length > 1 && (
+        {SHOW_SELECTORS && currentTypeProjects.length > 1 && (
           <HiddenSelector
             title={`All ${typeTitle}`}
             sections={selectorSections}

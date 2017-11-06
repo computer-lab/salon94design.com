@@ -19,13 +19,13 @@ import DesignerProjects from '../components/DesignerProjects'
 import Press from '../components/Press'
 import ImageList from '../components/ImageList'
 import WorkSummary from '../components/WorkSummary'
-import { imageInfo, workImageTexts, designerLink, workLink } from '../util'
+import { SHOW_SELECTORS, imageInfo, workImageTexts, designerLink, workLink } from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
 const WorksHeader = styled.h2`
   composes: ${sansfont};
-  margin: 0 0 16px 0;
+  margin: 0 0 28px 0;
   padding: 0;
   font-weight: 500;
   font-size: 36px;
@@ -116,7 +116,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   // include works w/o project
   const projectSlugs = projects.map(p => p.slug)
-  imagesByProject.push({
+  imagesByProject.splice(0, 0, {
     project: null,
     images: images.filter(
       image =>
@@ -127,8 +127,8 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   const imageSets = imagesByProject
     .filter(item => item.images.length > 0)
-    .map(({ project, images }) => ({
-      title: project ? project.title : null,
+    .map(({ project, images }, idx) => ({
+      title: idx !== 0 && project ? project.title : null,
       images,
     }))
 
@@ -166,11 +166,13 @@ const DesignerTemplate = ({ data, pathContext }) => {
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
-        <HiddenSelector
-          title="All Designers"
-          sections={selectorSections}
-          currentItemLink={designerLink(currentDesigner.slug)}
-        />
+          {SHOW_SELECTORS &&
+            <HiddenSelector
+              title="All Designers"
+              sections={selectorSections}
+              currentItemLink={designerLink(currentDesigner.slug)}
+            />
+          }
       </RightPane>
     </PageContainer>
   )
