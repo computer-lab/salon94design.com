@@ -7,7 +7,7 @@
     "babel-plugin-emotion": "^7.3.2",
     "classnames": "^2.2.5",
     "emotion-server": "^7.3.2",
-    "gatsby": "^1.8.12",
+    "gatsby": "^1.9.101",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-emotion": "^1.1.2",
     "gatsby-plugin-react-helmet": "^1.0.3",
