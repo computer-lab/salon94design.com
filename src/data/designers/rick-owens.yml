@@ -14,32 +14,22 @@ works:
     dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
     images:
       - file: /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
-        width: 2400
-        height: 3600
-        resized:
-          - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h300.jpg
-            width: 200
-            height: 300
-          - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h600.jpg
-            width: 400
-            height: 600
-          - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h900.jpg
-            width: 600
-            height: 900
-          - file: >-
-              /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/resized-h1600.jpg
-            width: 1067
-            height: 1600
     medium: 'french elm wood, moose antler'
     price: ''
     projects: []
     slug: stag-stool
     tags:
       - seating
+      - chairs
       - ''
     title: 'Stag Stool, 2015'
     when: '2015'
+  - images:
+      - file: /public/static/images/Owens_RO81_TombStagChairLeft-1LR_333_500.jpg
+    slug: Tomb Stag Chair
+    tags:
+      - chairs
+      - seating
+    title: Tomb Stag Chair
+    when: '2012'
 status: Represented
