@@ -26,9 +26,10 @@ works:
     when: '2015'
   - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '
     images:
-      - file: /public/static/images/Owens_RO81_TombStagChairLeft-1LR_333_500.jpg
+      - file: >-
+          /public/static/images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
     medium: 'raw plywood, moose antler'
-    slug: Tomb Stag Chair
+    slug: tomb-stag-chair
     tags:
       - chairs
       - seating

@@ -9,18 +9,22 @@ press: []
 works:
   - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
     images:
-      - file: /public/static/images/026_IMG_0060.jpg
-      - file: /public/static/images/027_IMG_0068.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
-    slug: 'Tonalite Boulder Chair #8 '
+    slug: tonalite-boulder-chair-8
     title: 'Tonalite Boulder Chair #8 '
     when: '2017'
   - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
     images:
-      - file: /public/static/images/052_IMG_8557.jpg
-      - file: /public/static/images/051_IMG_8555.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
     medium: raw and polished Tonalite granite & leather
-    slug: 'Tonalite Boulder Chair #5'
+    slug: tonalite-boulder-chair-5
     tags:
       - chairs
       - ''
@@ -28,11 +32,13 @@ works:
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 inches / 47 x 46 x 75 cm
     images:
-      - file: /public/static/images/021_IMG_0049.jpg
-      - file: /public/static/images/022_IMG_0053.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
     medium: 'raw and polished Tonalite granite, leather '
     projects: []
-    slug: 'Tonalite Boulder Chair #9'
+    slug: tonalite-boulder-chair-9
     tags:
       - chairs
       - seating
@@ -68,10 +74,12 @@ works:
     when: '2017'
   - dimensions: 20.08 x 18.11 x 11.81 inches / 51 x 46 x 30 cm
     images:
-      - file: /public/static/images/ML_TS_Vase_Copper_2.jpg
-      - file: /public/static/images/ML_TS_Vase_Copper_3.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
-    slug: 'Thermal Spray Vase Copper '
+    slug: thermal-spray-vase-copper
     tags:
       - miscellaneous
       - ''
