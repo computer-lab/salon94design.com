@@ -31,7 +31,7 @@ export default function Designers({ data }) {
 
   const listSections = sortedStatuses.map(status => {
     const items = designersByStatus[status].map(designer => ({
-      title: designer.title // title === name
+      title: designer.title,
       image: chooseDesignerImage(designer),
       link: designerLink(designer.slug),
     }))
