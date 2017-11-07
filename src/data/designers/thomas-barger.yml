@@ -11,7 +11,7 @@ bio: |
 press: []
 works:
   - dimensions: 27.5 x 36 x 21 inches
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
@@ -26,6 +26,7 @@ works:
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
   - dimensions: 15 x 144 x 108 inches / 38.1 x 365.8 x 274.3 cm
+    hero: true
     images:
       - file: /public/static/images/laundry.png
     medium: 'paper pulp, carpet '
