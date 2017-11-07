@@ -7,9 +7,7 @@ bio: >-
   understatement and improvisation. Their first 'Five Stars Cardboard'
   installations at the Salone Satellite in 2007 went on to show in South Korea,
   Basel and New York.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
   - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm cm
     images:
@@ -28,4 +26,13 @@ works:
     slug: Marble Stool White
     title: Marble Stool White
     when: '2015'
+  - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
+    images:
+      - file: /public/static/images/KuCa 30.jpg
+    slug: Sand Chair
+    tags:
+      - chairs
+      - ''
+    title: Sand Chair
+    when: '2012'
 status: Represented
