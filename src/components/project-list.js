@@ -22,7 +22,7 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
   const listItems = projects.map(project => {
     return {
       title: project.title,
-      subtitle: project.designers.map(d => d.name).join(' / '),
+      subtitle: project.designers.map(d => d.name).join(', '),
       image: chooseProjectImage(project, project.designers),
       link: projectLink(project),
     }
