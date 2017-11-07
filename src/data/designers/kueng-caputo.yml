@@ -7,29 +7,11 @@ bio: >-
   understatement and improvisation. Their first 'Five Stars Cardboard'
   installations at the Salone Satellite in 2007 went on to show in South Korea,
   Basel and New York.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
-  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm
+  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm cm
     images:
-      - file: >-
-          /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/large.jpg
-        width: 1399
-        height: 1540
-        resized:
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h300.jpg
-            width: 273
-            height: 300
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h600.jpg
-            width: 545
-            height: 600
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h900.jpg
-            width: 818
-            height: 900
+      - file: /public/static/images/Caputo_KuCa144.jpg
     medium: marble
     price: ''
     projects: []
@@ -37,6 +19,20 @@ works:
     tags:
       - seating
       - ''
-    title: 'Marble Stool, 2016'
-    when: '2016'
+    title: 'Marble Stool Red '
+    when: '2015'
+  - dimensions: 16 x 13/25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
+    medium: marble
+    slug: Marble Stool White
+    title: Marble Stool White
+    when: '2015'
+  - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
+    images:
+      - file: /public/static/images/KuCa 30.jpg
+    slug: Sand Chair
+    tags:
+      - chairs
+      - ''
+    title: Sand Chair
+    when: '2012'
 status: Represented
