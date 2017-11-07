@@ -12,7 +12,7 @@ bio: >-
 press: []
 works:
   - dimensions: 5-10 feet long (1.5-3 m long)
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
@@ -55,4 +55,15 @@ works:
       - benches
     title: Small PVC Bench
     when: '2006'
+  - caption: Frieze NY
+    hero: true
+    images:
+      - file: /public/static/images/IMG_0324.JPG
+    slug: red-silk-bench
+    tags:
+      - benches
+      - seating
+      - ''
+    title: 'Red Silk Bench '
+    when: '2016'
 status: Represented
