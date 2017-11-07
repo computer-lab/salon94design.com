@@ -73,4 +73,15 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
+  - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
+    images:
+      - file: /public/static/images/051_IMG_8555.jpg
+      - file: /public/static/images/052_IMG_8557.jpg
+    medium: raw and polished Tonalite granite & leather
+    slug: 'Tonalite Boulder Chair #5'
+    tags:
+      - chairs
+      - ''
+    title: 'Tonalite Boulder Chair #5'
+    when: '2017'
 status: Represented
