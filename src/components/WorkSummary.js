@@ -6,11 +6,11 @@ import cx from 'classnames'
 import {
   monoFontFamily,
   sansfont,
-  sansFontFamily,
   childLink,
   breakpoint1,
   breakpoint2,
   breakpoint3,
+  baseUl,
 } from '../layouts/emotion-base'
 import { designerLink, workTagLink, projectLink, capitalize } from '../util'
 
@@ -22,58 +22,25 @@ const Container = styled.div`
   &.detailed {
     margin-bottom: 20px;
     max-width: none;
-
-    @media (${breakpoint1}) {
-      display: flex;
-    }
-
-    @media (${breakpoint3}) {
-      display: block;
-    }
   }
 `
 
-const PrimaryInfo = styled.div`
-  @media (${breakpoint1}) {
-    margin-right: 80px;
-  }
-
-  @media (${breakpoint2}) {
-    margin-right: 40px;
-  }
-`
-
-const Details = styled.div`
-  @media (${breakpoint1}) {
-    margin-top: 4px;
-  }
-
-  @media (${breakpoint3}) {
-    margin-top: 0;
-  }
-`
-
-const Title = styled.div`
-  margin-bottom: 10px;
-  font-size: 28px;
-
-  @media (${breakpoint1}) {
-    margin-bottom: 8px;
-  }
-`
-
-const When = styled.div`
-  margin-bottom: 24px;
-  font-size: 22px;
+const DetailSection = styled.ul`
+  composes: ${baseUl};
+  margin-bottom: 20px;
 
   @media (${breakpoint1}) {
     margin-bottom: 16px;
   }
+
+  @media (${breakpoint3}) {
+    margin-top: 8px;
+  }
 `
 
-const SummaryItem = styled.div`
+const SummaryItem = styled.li`
   composes: ${childLink};
-  margin: 0 0 8px 0;
+  margin: 0 0 6px 0;
   line-height: 1.25;
   font-size: 24px;
 
@@ -82,22 +49,13 @@ const SummaryItem = styled.div`
   }
 
   &.designer {
-    font-size: 26px;
     font-weight: 500;
-    margin: 0 0 16px 0;
-
-    @media (${breakpoint1}) {
-      margin-bottom: 12px;
-    }
   }
 
+  &.project,
   &.tag {
-    font-family: ${monoFontFamily};
+    font-size: 22px;
     font-weight: 500;
-
-    & a {
-      border-bottom: 2px solid #000;
-    }
   }
 
   @media (${breakpoint1}) {
@@ -107,20 +65,24 @@ const SummaryItem = styled.div`
 
 const WorkSummary = ({ designer, work, detailed, projects }) => (
   <Container className={cx({ detailed })}>
-    <PrimaryInfo>
+    <DetailSection>
       {designer && (
         <SummaryItem className="designer">
           <Link to={designerLink(designer.slug)}>{designer.name}</Link>
         </SummaryItem>
       )}
-      <Title>{work.title}</Title>
-      <When>{work.when}</When>
-    </PrimaryInfo>
-    <Details>
+
+      <SummaryItem>
+        {work.title}, {work.when}
+      </SummaryItem>
+      <SummaryItem>{work.caption}</SummaryItem>
       <SummaryItem>{work.medium}</SummaryItem>
       <SummaryItem>{work.dimensions}</SummaryItem>
+      <SummaryItem>{work.edition}</SummaryItem>
       <SummaryItem>{work.price}</SummaryItem>
-      <SummaryItem>{work.caption}</SummaryItem>
+    </DetailSection>
+
+    <DetailSection>
       {projects &&
         work.projects &&
         work.projects
@@ -133,17 +95,15 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
             ) : null
           })
           .filter(project => project !== null)}
-      {detailed && (
-        <div>
-          {work.tags &&
-            work.tags.map(tag => (
-              <SummaryItem key={tag} className="tag">
-                <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
-              </SummaryItem>
-            ))}
-        </div>
-      )}
-    </Details>
+
+      {detailed &&
+        work.tags &&
+        work.tags.map(tag => (
+          <SummaryItem key={tag} className="tag">
+            <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
+          </SummaryItem>
+        ))}
+    </DetailSection>
   </Container>
 )
 

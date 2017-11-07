@@ -21,13 +21,19 @@ const infoDir = path.join(__dirname, '../src/data/info')
 async function getDesigners () {
   const designerFiles = await readdirAbsolute(designerDir)
   const designers = await getYamlDatas(designerFiles)
-  return designers
+
+  return designers.map((item, i) =>
+    Object.assign({ _processData: { originalFile: designerFiles[i] } }, item)
+  )
 }
 
 async function getProjects () {
   const projectFiles = await readdirAbsolute(projectDir)
   const projects = await getYamlDatas(projectFiles)
-  return projects
+
+  return projects.map((item, i) =>
+    Object.assign({ _processData: { originalFile: projectFiles[i] } }, item)
+  )
 }
 
 async function getInfo () {
@@ -74,25 +80,28 @@ async function updateInfoFile (data) {
   await writeYamlFile(data, infoFileName(data))
 }
 
-async function resetDesignerFile (oldData, data) {
-  await resetYamlFile(oldData, data, designerFileName)
+async function resetDesignerFile (data) {
+  await resetYamlFile(data, designerFileName)
 }
 
-async function resetProjectFile (oldData, data) {
-  await resetYamlFile(oldData, data, projectFileName)
+async function resetProjectFile (data) {
+  await resetYamlFile(data, projectFileName)
 }
 
 async function writeYamlFile (data, file) {
-  const yamlData = yaml.safeDump(data)
+  const cleanData = Object.assign({}, data)
+  // remove unnecessary transformer data
+  delete cleanData._processData
+
+  const yamlData = yaml.safeDump(cleanData)
   await fs.writeFile(file, yamlData)
 }
 
-async function resetYamlFile (oldData, data, fileMaker) {
+async function resetYamlFile (data, fileMaker) {
   const newDataFile = fileMaker(data)
 
   // remove old duplicate file if necessary
-  const oldDataFile = fileMaker(oldData)
-  console.log(oldDataFile, newDataFile)
+  const oldDataFile = data._processData.originalFile
   if (oldDataFile !== newDataFile) {
     await fs.remove(oldDataFile)
   }

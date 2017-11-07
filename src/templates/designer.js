@@ -7,7 +7,6 @@ import cx from 'classnames'
 import { createPanes, PageContainer } from '../layouts/containers'
 import {
   sansfont,
-  monofont,
   Header1,
   breakpoint1,
   breakpoint2,
@@ -19,7 +18,13 @@ import DesignerProjects from '../components/DesignerProjects'
 import Press from '../components/Press'
 import ImageList from '../components/ImageList'
 import WorkSummary from '../components/WorkSummary'
-import { SHOW_SELECTORS, imageInfo, workImageTexts, designerLink, workLink } from '../util'
+import {
+  SHOW_SELECTORS,
+  imageInfo,
+  workImageTexts,
+  designerLink,
+  workLink,
+} from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -49,7 +54,6 @@ const StatusTagWrapper = styled.div`
 `
 
 const StatusTag = styled.div`
-  composes: ${monofont};
   display: inline-block;
   padding: 5px;
   font-size: 15px;
@@ -98,7 +102,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           projects,
           smallText: (
             <Link to={workLink(currentDesigner.slug, work.slug)}>
-              {work.title}{' '}
+              {work.title}, {work.when}
             </Link>
           ),
         }),
@@ -166,13 +170,13 @@ const DesignerTemplate = ({ data, pathContext }) => {
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
-          {SHOW_SELECTORS &&
-            <HiddenSelector
-              title="All Designers"
-              sections={selectorSections}
-              currentItemLink={designerLink(currentDesigner.slug)}
-            />
-          }
+        {SHOW_SELECTORS && (
+          <HiddenSelector
+            title="All Designers"
+            sections={selectorSections}
+            currentItemLink={designerLink(currentDesigner.slug)}
+          />
+        )}
       </RightPane>
     </PageContainer>
   )
@@ -207,29 +211,7 @@ export const pageQuery = graphql`
             link
             file
           }
-          works {
-            slug
-            title
-            when
-            projects {
-              slug
-            }
-            tags
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-            caption
-            price
-            medium
-            dimensions
-          }
+          ...fullWorkFields
         }
       }
     }

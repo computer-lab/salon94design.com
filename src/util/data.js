@@ -5,16 +5,21 @@ import { choice } from './index'
 import { designerLink, projectLink, workLink } from './path'
 import { categoryTags } from './tag'
 
-export const chooseDesignerImage = designer => {
-  let image = null
-
-  const work = choice(designer.works)
-  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
-    image = work.hydratedImages[0]
+export const chooseWorksImage = works => {
+  let heroWorks = works.filter(w => w.hero)
+  if (heroWorks.length === 0) {
+    heroWorks = works
   }
+  heroWorks = heroWorks.filter(
+    w => w.hydratedImages && w.hydratedImages.length > 0
+  )
 
-  return image
+  const work = heroWorks[0]
+  return work ? work.hydratedImages[0] : null
 }
+
+export const chooseDesignerImage = designer =>
+  chooseWorksImage(designer.works || [])
 
 export const chooseCategoryImage = (works, tag) => {
   const tagSet = new Set(categoryTags(tag))
@@ -28,32 +33,36 @@ export const chooseCategoryImage = (works, tag) => {
     return null
   }
 
-  const work = choice(worksInCategory)
+  const heroWorks = worksInCategory.filter(w => w.hero)
+  const work = heroWorks.length > 0 ? heroWorks[0] : choice(worksInCategory)
   const image = work.hydratedImages[0]
   return image
 }
 
 export const chooseProjectImage = (project, designers) => {
-  let image = null
-  designers = designers.filter(d => !!d)
-
-  const work = designers.reduce((work, designer) => {
-    if (work || !designer.works) return work
-    const projectWorks = designer.works.filter(work => {
-      return work.projects && work.projects.find(p => p.slug === project.slug)
-    })
-    return choice(projectWorks)
-  }, null)
-
-  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
-    image = work.hydratedImages[0]
+  if (project.hydratedImages && project.hydratedImages.length > 0) {
+    const heroImages = project.hydratedImages.filter(i => i.hero)
+    return heroImages.length > 0 ? heroImages[0] : project.hydratedImages[0]
   }
 
-  if (!image && designers.length > 0) {
-    image = chooseDesignerImage(designers[0])
+  const projectWorks = designers.filter(d => !!d).reduce((works, designer) => {
+    return works.concat(
+      designer.works.filter(work => {
+        return work.projects && work.projects.find(p => p.slug === project.slug)
+      })
+    )
+  }, [])
+
+  const workImage = chooseWorksImage(projectWorks)
+  if (workImage) {
+    return workImage
   }
 
-  return image
+  if (designers.length > 0) {
+    return chooseDesignerImage(designers[0])
+  }
+
+  return null
 }
 
 export const workImageTexts = ({
@@ -62,9 +71,21 @@ export const workImageTexts = ({
   projects,
   smallText = null,
 }) => {
-  let data = [work.medium, work.dimensions, work.price, work.when].filter(
-    item => item && item.length > 0
-  )
+  let data = [
+    <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
+  ]
+
+  const elements = [
+    work.when,
+    work.caption,
+    work.medium,
+    work.dimensions,
+    work.edition,
+    work.price,
+  ]
+  data = data.concat(elements.filter(item => item && item.length > 0))
+
   if (projects && work.projects) {
     data = data.concat(
       work.projects
@@ -81,11 +102,8 @@ export const workImageTexts = ({
   }
 
   return {
-    data,
     smallText,
-    title: <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
-    caption: work.caption,
-    credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    items: data,
   }
 }
 

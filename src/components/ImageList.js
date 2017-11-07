@@ -15,17 +15,18 @@ import {
   breakpoint2,
   breakpoint3,
   isMobileWidth,
+  baseUl,
 } from '../layouts/emotion-base'
 import Helmet from './helmet'
 import HoverInfo from './HoverInfo'
 import FullscreenImageViewer from './FullscreenImageViewer'
 
 const ImageSet = styled.div`
-  &:not(:last-child) {
-    margin-bottom: 60px;
+  &.not-first {
+    margin-top: 60px;
 
     @media (${breakpoint1}) {
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 `
@@ -76,6 +77,7 @@ const ImageItem = styled.div`
     max-width: 100%;
     max-height: 288px;
     cursor: pointer;
+    user-select: none;
   }
 
   &.with-small-text {
@@ -97,8 +99,9 @@ const ImageItem = styled.div`
       cursor: crosshair;
       cursor: nesw-resize;
       cursor: zoom-in;
+      min-width: 400px;
       max-width: 100%;
-      max-height: calc(100vh - 200px);
+      max-height: calc(100vh - 160px);
     }
   }
 
@@ -126,6 +129,7 @@ const ImageItem = styled.div`
 
     & img,
     &.expanded img {
+      min-width: none;
       max-height: none;
       width: 100%;
       cursor: default;
@@ -162,37 +166,21 @@ const ImageTextWrapper = styled.div`
   }
 `
 
-const ImageTextContainer = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
+const ImageTextItems = styled.ul`
+  composes: ${baseUl};
   text-align: left;
 `
 
-const ImageText = styled.div`
+const ImageText = styled.li`
   composes: ${childLink};
   text-align: left;
   min-width: 50%;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 300;
   line-height: 28px;
-
-  &.right {
-    text-align: right;
-  }
-
-  &.primary {
-    font-size: 24px;
-    width: 50%;
-    margin-bottom: 4px;
-  }
-
-  &.credit {
-    width: 50%;
-  }
+  margin-bottom: 6px;
 
   &.small {
-    width: 100%;
     font-size: 13px;
     line-height: 1;
   }
@@ -201,73 +189,39 @@ const ImageText = styled.div`
     font-size: 16px;
     line-height: 24px;
     width: auto;
-
-    &.caption {
-      width: 75%;
-      text-align: right;
-    }
-
-    &.data-texts {
-      width: 75%;
-      text-align: right;
-      margin-top: 2px;
-    }
   }
 
   @media (${breakpoint3}) {
     line-height: 24px;
-
-    &.primary {
-      font-size: 19px;
-    }
-
-    &.data-texts {
-      width: 100%;
-      text-align: left;
-      margin-top: 2px;
-    }
   }
 `
 
 const ImageTextData = styled.span`
-  display: inline-block;
-
-  @media (${breakpoint3}) {
-    display: block;
-  }
-
-  &:not(:first-child) {
-    margin-left: 24px;
-
-    @media (${breakpoint1}) {
-      margin-left: 18px;
-    }
-
-    @media (${breakpoint3}) {
-      margin-left: 0 !important;
-    }
-  }
+  display: block;
 `
 
 const ExpansionButton = styled.button`
   composes: ${monofont};
   position: fixed;
   z-index: 10;
-  height: 72px;
-  right: 15px;
-  bottom: 20px;
+  top: 22px;
+  left: 33%;
   cursor: pointer;
-  font-size: 96px;
+  font-size: 16px;
+  line-height: 1.25;
   background: none;
   border: none;
   outline: none;
   user-select: none;
+  border-radius: 0;
+  padding: 0;
+  border-bottom: 2px solid #000;
 
   @media (${breakpoint1}) {
-    bottom: 0;
-    right: 0;
-    font-size: 48px;
-    height: 48px;
+    left: auto;
+    top: 48px;
+    right: 10px;
+    font-size: 14px;
   }
 
   @media (${breakpoint3}) {
@@ -279,8 +233,10 @@ class ImageList extends Component {
   constructor(props) {
     super(props)
 
+    this.setContainerEl = this.setContainerEl.bind(this)
     this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
+    this.onDocumentClick = this.onDocumentClick.bind(this)
     this.onResize = this.onResize.bind(this)
     this.fullscreenImageViewerCloseHandler = this.fullscreenImageViewerCloseHandler.bind(
       this
@@ -299,12 +255,18 @@ class ImageList extends Component {
 
   componentDidMount() {
     window.addEventListener('keydown', this.onKeyDown)
+    document.addEventListener('click', this.onDocumentClick)
     window.addEventListener('resize', this.onResize)
   }
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.onKeyDown)
+    document.removeEventListener('click', this.onDocumentClick)
     window.removeEventListener('resize', this.onResize)
+  }
+
+  setContainerEl(el) {
+    this.containerEl = el
   }
 
   onImageHover(hoverImage) {
@@ -322,6 +284,18 @@ class ImageList extends Component {
     }
   }
 
+  onDocumentClick(ev) {
+    const canUnexpand =
+      this.state.isExpanded && !this.state.fullscreenImageIndices
+    if (
+      canUnexpand &&
+      this.containerEl &&
+      !this.containerEl.contains(ev.target)
+    ) {
+      this.unexpand()
+    }
+  }
+
   onResize() {
     const mobileWidth = isMobileWidth()
     if (mobileWidth !== this.state.mobileWidth) {
@@ -330,9 +304,11 @@ class ImageList extends Component {
   }
 
   fullscreenImageViewerCloseHandler() {
-    this.setState({
-      fullscreenImageIndices: null,
-    })
+    setTimeout(() => {
+      this.setState({
+        fullscreenImageIndices: null,
+      })
+    }, 10)
   }
 
   fullscreenImageViewerChangeHandler(delta) {
@@ -371,6 +347,8 @@ class ImageList extends Component {
   }
 
   renderExpansionButton() {
+    return null
+
     const { isExpanded } = this.state
 
     if (!isExpanded) {
@@ -387,18 +365,22 @@ class ImageList extends Component {
 
     return (
       <ExpansionButton onClick={onClick}>
-        {isExpanded ? 'x' : 'o'}
+        {isExpanded ? 'zoom out' : 'zoom in'}
       </ExpansionButton>
     )
   }
 
-  onImageClick(setIndex, imageIndex) {
+  onImageClick(ev, setIndex, imageIndex) {
     if (this.props.unexpandable) return
 
     if (this.state.isExpanded) {
-      return this.setState({
-        fullscreenImageIndices: { setIndex, imageIndex },
-      })
+      if (ev.target.nodeName === 'IMG') {
+        this.setState({
+          fullscreenImageIndices: { setIndex, imageIndex },
+        })
+      }
+
+      return
     }
 
     this.setState(
@@ -446,7 +428,9 @@ class ImageList extends Component {
       mobileWidth,
     } = this.state
 
-    const hoverInfoClass = cx({ hidden: !imageHoverEnabled || !hoverImage || !hoverImageRenderer })
+    const hoverInfoClass = cx({
+      hidden: !imageHoverEnabled || !hoverImage || !hoverImageRenderer,
+    })
 
     const fullscreenImage = fullscreenImageIndices
       ? imageSets[fullscreenImageIndices.setIndex].images[
@@ -460,7 +444,7 @@ class ImageList extends Component {
         : null
 
     return (
-      <section>
+      <section ref={this.setContainerEl}>
         {firstImage && (
           <Helmet
             meta={[
@@ -472,7 +456,10 @@ class ImageList extends Component {
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) => (
-          <ImageSet key={setIndex} className={cx({ unexpandable })}>
+          <ImageSet
+            key={setIndex}
+            className={cx({ unexpandable, 'not-first': setIndex !== 0 })}
+          >
             {title && <SetTitle>{title}</SetTitle>}
 
             <ImageContainer className={cx({ center: centerImages })}>
@@ -526,7 +513,7 @@ class ImageList extends Component {
                   >
                     <ImageItem
                       className={imageItemClass}
-                      onClick={() => this.onImageClick(setIndex, i)}
+                      onClick={ev => this.onImageClick(ev, setIndex, i)}
                     >
                       {isExpanded || !unexpandedLink ? (
                         img
@@ -536,28 +523,21 @@ class ImageList extends Component {
 
                       {texts && (
                         <ImageTextWrapper className={textContainerClass}>
-                          <ImageTextContainer>
-                            {texts.smallText && (
+                          {texts.smallText && (
+                            <ImageTextItems>
                               <ImageText className="small">
                                 {texts.smallText}
                               </ImageText>
-                            )}
+                            </ImageTextItems>
+                          )}
 
-                            <ImageText className="expanded-text left primary">
-                              {texts.title}
-                            </ImageText>
-                            <ImageText className="expanded-text right credit">
-                              {texts.credit}
-                            </ImageText>
-                            <ImageText className="expanded-text left caption">
-                              {texts.caption}
-                            </ImageText>
-                            <ImageText className="expanded-text right data-texts">
-                              {(texts.data || []).map(txt => (
-                                <ImageTextData key={txt}>{txt}</ImageTextData>
-                              ))}
-                            </ImageText>
-                          </ImageTextContainer>
+                          <ImageTextItems>
+                            {texts.items.map((text, i) => (
+                              <ImageText className="expanded-text" key={i}>
+                                {text}
+                              </ImageText>
+                            ))}
+                          </ImageTextItems>
                         </ImageTextWrapper>
                       )}
                     </ImageItem>
@@ -569,7 +549,10 @@ class ImageList extends Component {
         ))}
 
         <HoverInfo className={hoverInfoClass}>
-          {hoverImage && imageHoverEnabled && hoverImageRenderer && hoverImageRenderer(hoverImage)}
+          {hoverImage &&
+            imageHoverEnabled &&
+            hoverImageRenderer &&
+            hoverImageRenderer(hoverImage)}
         </HoverInfo>
 
         {fullscreenImage && (

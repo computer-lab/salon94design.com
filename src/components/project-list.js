@@ -6,22 +6,26 @@ import SectionItemList from '../components/SectionItemList'
 import { chooseProjectImage, projectLink } from '../util'
 
 function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
+  const designers = allDesignersYaml.edges.map(edge => edge.node)
+  const getDesigner = designer => designers.find(d => d.slug === designer.slug)
+
   const projects = allProjectsYaml.edges
     .map(edge => edge.node)
     .filter(d => d.type === type)
-
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const getDesigner = designer => designers.find(d => d.slug === designer.slug)
+    .map(node =>
+      Object.assign({}, node, {
+        designers: (node.designers || []).map(getDesigner).filter(d => !!d),
+      })
+    )
+    .filter(p => p.designers.length > 0)
 
   const title = `${type}s`
 
   const listItems = projects.map(project => {
-    const projectDesigners = (project.designers || []).map(getDesigner).filter(d => !!d)
-
     return {
       title: project.title,
-      subtitle: projectDesigners.map(d => d.name).join(' / '),
-      image: chooseProjectImage(project, projectDesigners),
+      subtitle: project.designers.map(d => d.name).join(', '),
+      image: chooseProjectImage(project, project.designers),
       link: projectLink(project),
     }
   })

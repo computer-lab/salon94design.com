@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { PageContainer, createPanes } from '../layouts/containers'
-import { sansfont, monofont, breakpoint1 } from '../layouts/emotion-base'
+import { sansfont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
@@ -62,16 +62,8 @@ export const pageQuery = graphql`
           works {
             when
             tags
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
+            hero
+            ...baseHydratedImages
           }
         }
       }

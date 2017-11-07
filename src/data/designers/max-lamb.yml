@@ -5,24 +5,45 @@ bio: >-
   design methods with digital design. He is known for employing highly unusual
   approaches to using natural materials, including pouring pewter onto sand, and
   volcanic rock.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
-  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+  - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
+    hero: true
     images:
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/large.jpg
-    medium: Polystyrene and stainless steel
-    price: ''
-    projects:
-      - slug: thermal-spray-furniture
-    slug: thermal-spray-dining-table-stainless
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
+    medium: 'raw and polished Tonalite granite, leather'
+    slug: tonalite-boulder-chair-8
+    title: 'Tonalite Boulder Chair #8 '
+    when: '2017'
+  - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
+    medium: raw and polished Tonalite granite & leather
+    slug: tonalite-boulder-chair-5
     tags:
-      - tables
-    title: Thermal Spray Dining Table Stainless
+      - chairs
+      - ''
+    title: 'Tonalite Boulder Chair #5'
+    when: '2017'
+  - dimensions: 18.5 x 22 x 29.5 inches / 47 x 46 x 75 cm
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
+    medium: 'raw and polished Tonalite granite, leather '
+    projects: []
+    slug: tonalite-boulder-chair-9
+    tags:
+      - chairs
+      - seating
+    title: 'Tonalite Boulder Chair #9'
     when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
@@ -52,36 +73,30 @@ works:
       - storage
     title: Thermal Spray Shelf Bronze
     when: '2017'
-  - dimensions: >-
-      Table: 90 x 42 x 29 inches / 228.6 x 106.7 cm x 73.7  Chairs: 14 x 18 x
-      27.5 inches
+  - dimensions: 20.08 x 18.11 x 11.81 inches / 51 x 46 x 30 cm
     images:
       - file: >-
-          /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/large.jpg
-        width: 2708
-        height: 2033
-        resized:
-          - file: >-
-              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w200.jpg
-            width: 200
-            height: 150
-          - file: >-
-              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w400.jpg
-            width: 400
-            height: 300
-          - file: >-
-              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w800.jpg
-            width: 800
-            height: 601
-          - file: >-
-              /public/static/images/works/max-lamb/poly-dining-set-SJhSvvcRb/resized-w1440.jpg
-            width: 1440
-            height: 1081
-    medium: 'polystyrene, rubber polymer'
-    slug: poly-dining-set
+          /public/static/images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
+    medium: 'polystyrene, copper '
+    slug: thermal-spray-vase-copper
+    tags:
+      - miscellaneous
+      - ''
+    title: 'Thermal Spray Vase Copper '
+    when: '2017'
+  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
+    slug: thermal-spray-dining-table-stainless
     tags:
       - tables
-      - ''
-    title: 'Poly Dining Set, 2010'
-    when: '2010'
+    title: Thermal Spray Dining Table Stainless
+    when: '2017'
 status: Represented

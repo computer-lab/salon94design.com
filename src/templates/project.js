@@ -6,7 +6,6 @@ import styled from 'emotion/react'
 import { createPanes, PageContainer } from '../layouts/containers'
 import {
   sansfont,
-  monofont,
   childLink,
   Header1,
   breakpoint1,
@@ -21,7 +20,7 @@ import {
   projectLink,
   workImageTexts,
   workLink,
-  SHOW_SELECTORS
+  SHOW_SELECTORS,
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
@@ -35,7 +34,7 @@ const ProjectDesigner = styled.span`
   composes: ${childLink};
 
   &:not(:first-child)::before {
-    content: ' / ';
+    content: ', ';
   }
 
   &:last-child::after {
@@ -44,19 +43,25 @@ const ProjectDesigner = styled.span`
 `
 
 const ProjectWhen = styled.div`
-  composes: ${monofont};
-  margin-top: 8px;
-  font-size: 24px;
+  composes: ${sansfont};
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 100;
 `
 
 const ProjectDescription = styled.div`
+  composes: ${sansfont};
   max-width: 320px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
 
+  & p {
+    margin-bottom: 20px;
+  }
+
   @media (${breakpoint1}) {
-    max-width: 480px;
+    max-width: none;
   }
 `
 
@@ -95,7 +100,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
               designer,
               smallText: (
                 <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}{' '}
+                  {work.title}, {work.when}
                 </Link>
               ),
             }),
@@ -132,11 +137,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
     })),
   }))
 
-  const currentProjectDesigners = (
-    currentProject.designers
-      ? currentProject.designers.filter(designer => getDesigner(designer.slug))
-      : []
-  )
+  const currentProjectDesigners = (currentProject.designers || []
+  ).filter(designer => getDesigner(designer.slug))
 
   const hoverImageRenderer = hoverImage =>
     hoverImage.work && hoverImage.designer ? (
@@ -176,13 +178,14 @@ const ProjectTemplate = ({ data, pathContext }) => {
           />
         </ProjectHeader>
 
-        {SHOW_SELECTORS && currentTypeProjects.length > 1 && (
-          <HiddenSelector
-            title={`All ${typeTitle}`}
-            sections={selectorSections}
-            currentItemLink={projectLink(currentProject)}
-          />
-        )}
+        {SHOW_SELECTORS &&
+          currentTypeProjects.length > 1 && (
+            <HiddenSelector
+              title={`All ${typeTitle}`}
+              sections={selectorSections}
+              currentItemLink={projectLink(currentProject)}
+            />
+          )}
       </RightPane>
     </PageContainer>
   )
@@ -227,29 +230,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          works {
-            slug
-            title
-            when
-            projects {
-              slug
-            }
-            tags
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-            caption
-            price
-            medium
-            dimensions
-          }
+          ...fullWorkFields
         }
       }
     }
