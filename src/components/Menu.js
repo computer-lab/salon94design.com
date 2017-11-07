@@ -98,7 +98,7 @@ const Menu = ({ location }) => {
     { name: 'Designers', path: '/', activePath: '/designers' },
     { name: 'Exhibitions', path: '/exhibitions' },
     { name: 'Works', path: '/works' },
-    { name: 'Art Fairs', path: '/art-fairs' },
+    { name: 'Fairs', path: '/fairs' },
     { name: 'Info', path: '/info' },
   ].map(item => {
     const active =
