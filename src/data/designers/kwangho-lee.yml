@@ -55,10 +55,10 @@ works:
       - benches
     title: Small PVC Bench
     when: '2006'
-  - hero: true
+  - caption: Frieze NY
+    hero: true
     images:
-      - file: >-
-          /public/static/images/works/kwangho-lee/red-silk-bench-S1EIo3yyM/large.jpg
+      - file: /public/static/images/IMG_0324.JPG
     slug: red-silk-bench
     tags:
       - benches
