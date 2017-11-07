@@ -4,7 +4,7 @@ import { breakpoint1, breakpoint2, breakpoint3 } from './emotion-base'
 
 export const ContentContainer = styled.div`
   margin: 0 auto;
-  padding: 108px 24px 100px 24px;
+  padding: 108px 24px 24px 24px;
   box-sizing: border-box;
 
   @media (${breakpoint2}) {
@@ -35,9 +35,11 @@ export const createPanes = (rightPaneWidth = '360px') => {
   const RightPane = styled.div`
     width: ${rightPaneWidth};
     position: fixed;
+    top: 72px;
     right: 24px;
-    max-height: calc(100vh - 124px);
+    max-height: calc(100vh - 72px);
     overflow-y: auto;
+    padding-top: 36px;
 
     @media (${breakpoint1}) {
       position: static;
@@ -46,6 +48,7 @@ export const createPanes = (rightPaneWidth = '360px') => {
       max-height: none;
       order: -1;
       padding-bottom: 0;
+      padding-top: 0;
 
       &.selectable {
         margin-right: 24px;

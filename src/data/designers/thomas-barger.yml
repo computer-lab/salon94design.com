@@ -8,11 +8,10 @@ bio: |
   around wooden frames, the works take on unusual shapes reminiscent of
   childhood cartoons or papier-mâchéd fantasy balloon animals. He loves to
   drink green tea and his favorite animals are dogs and pygmy goats.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
-  - dimensions: 27.5 x 36 x 21
+  - dimensions: 27.5 x 36 x 21 inches
+    hero: false
     images:
       - file: >-
           /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
@@ -24,6 +23,41 @@ works:
     tags:
       - storage
       - miscellaneous
-    title: 'Underwear Armoire, 2016'
+    title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
+  - dimensions: 15 x 144 x 108 inches / 38.1 x 365.8 x 274.3 cm
+    hero: true
+    images:
+      - file: /public/static/images/laundry.png
+    medium: 'paper pulp, carpet '
+    projects:
+      - slug: midtown-lever-house
+    slug: sorting-laundry-for-a-family-of-5
+    tags:
+      - storage
+      - miscellaneous
+    title: Sorting Laundry For a Family of 5
+    when: '2017'
+  - dimensions: 31 x 39 x 19 inches / 78.7 x 99.1 x 48.3 cm
+    images:
+      - file: >-
+          /public/static/images/works/thomas-barger/underwear-armoire-2-rkABkqhAR-/large.jpg
+    medium: 'paper pulp, plywood, styrofoam, cardboard'
+    slug: underwear-armoire-2
+    tags:
+      - storage
+      - ''
+    title: Underwear Armoire 2
+    when: '2017'
+  - dimensions: 32.5 x 22 x 22 inches / 82.6 x 55.9 x 55.9 cm
+    images:
+      - file: >-
+          /public/static/images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    slug: aleksandr-rodchenko-snack-chair-with-harness
+    tags:
+      - chairs
+      - ''
+    title: Aleksandr Rodchenko snack chair (with harness)
+    when: '2017'
 status: Represented

@@ -187,7 +187,19 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const hydrateImages = async node => {
     if (node.images) {
-      node.hydratedImages = await Promise.all(node.images.map(hydrateImage))
+      node.hydratedImages = await Promise.all(
+        node.images.map(hydrateImage).filter(item => !!item)
+      )
+    }
+  }
+
+  const processPress = node => {
+    if (node.press && node.press.length > 0) {
+      node.press = node.press.map(item =>
+        Object.assign({ file: '', link: '', title: '' }, item)
+      )
+    } else {
+      node.press = [{ file: '', link: '', title: '' }]
     }
   }
 
@@ -197,6 +209,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         const html = await markdownToHtml(node.aboutText)
         node.aboutHtml = html.contents
 
+        processPress(node)
+
         await hydrateImages(node)
       }
       break
@@ -205,6 +219,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
       {
         const html = await markdownToHtml(node.bio)
         node.bioHtml = html.contents
+
+        processPress(node)
 
         const works = node.works || []
         await Promise.all(works.map(work => hydrateImages(work)))
@@ -223,13 +239,24 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 }
 
 async function hydrateImage(image) {
+  if (!image || !image.file) {
+    return null
+  }
+
   const localFilename = path.resolve(image.file.replace('/public/', ''))
 
   const images = await readdirAbsolute(path.dirname(localFilename))
   const resizedImages = images.filter(n => n !== localFilename)
 
-  const imageData = await getImageData(localFilename)
-  return Object.assign({}, image, imageData, {
-    resized: await Promise.all(resizedImages.map(getImageData)),
-  })
+  try {
+    const imageData = await getImageData(localFilename)
+    return Object.assign({}, image, imageData, {
+      resized: await Promise.all(resizedImages.map(getImageData)),
+    })
+  } catch (err) {
+    console.error('error hydrating image')
+    console.error(image)
+    console.error(err)
+    return null
+  }
 }

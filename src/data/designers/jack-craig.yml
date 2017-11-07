@@ -8,44 +8,31 @@ bio: |-
   leaving to pursue an Industrial Design degree (Bachelor of Art, University of
   Illinois, 2010). He continued studies at Cranbrook Academy of Art, earning a
   Master of Fine Art in 3D Design in 2012.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
-  - slug: bronze-stool
-    dimensions: ''
+  - dimensions: ''
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
+    slug: bronze-stool
     tags:
       - chairs
     title: 'Bronze Stool, 2016'
     when: '2016'
-  - slug: large-marble-table-lamp
-    dimensions: '36 x 15 x 20 inches '
+  - dimensions: '36 x 15 x 20 inches '
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
-        width: 930
-        height: 1054
-        resized:
-          - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h300.jpg
-            width: 265
-            height: 300
-          - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h600.jpg
-            width: 529
-            height: 600
-          - file: >-
-              /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/resized-h900.jpg
-            width: 794
-            height: 900
     medium: 'bronze, marble'
     price: ''
+    projects:
+      - slug: ghost-dog
+    slug: large-marble-table-lamp
     tags:
       - lighting
     title: 'Large Marble Table Lamp, 2017'

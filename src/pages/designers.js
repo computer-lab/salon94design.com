@@ -46,20 +46,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          works {
-            slug
-            title
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-          }
+          ...baseWorkFields
         }
       }
     }

@@ -6,15 +6,16 @@ bio: |-
   world of design, Kanu is driven by a predilection for subverting norms, an
   insatiable urge to create, and a love of melding street culture with design
   sensibilities.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
   - dimensions: 20.5 x 18 x 100 inches
+    hero: true
     images:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
     medium: 'poured concrete, steel '
+    projects:
+      - slug: midtown-lever-house
     slug: bench-on-84s
     tags:
       - seating

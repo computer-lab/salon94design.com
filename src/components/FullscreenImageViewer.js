@@ -20,31 +20,12 @@ const Container = styled.div`
   }
 `
 
-const CloseButton = styled.button`
-  composes: ${monofont};
-  position: fixed;
-  z-index: 10;
-  right: 15px;
-  bottom: 20px;
-  cursor: pointer;
-  font-size: 96px;
-  height: 72px;
-  background: none;
-  border: none;
-  outline: none;
-  user-select: none;
-
-  @media (${breakpoint1}) {
-    bottom: 30px;
-    right: 0;
-  }
-`
-
 const ImageWrapper = styled.div`
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  user-select: none;
 `
 
 const smallImageClass = css`
@@ -57,6 +38,8 @@ class FullscreenImageViewer extends Component {
   constructor(props) {
     super(props)
 
+    this.setContainerEl = this.setContainerEl.bind(this)
+    this.onContainerClick = this.onContainerClick.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
     this.onMouseMove = this.onMouseMove.bind(this)
     this.onResize = this.onResize.bind(this)
@@ -97,6 +80,16 @@ class FullscreenImageViewer extends Component {
     window.removeEventListener('keydown', this.onKeyDown)
     window.removeEventListener('mousemove', this.onMouseMove)
     window.removeEventListener('resize', this.onResize)
+  }
+
+  setContainerEl(el) {
+    this.containerEl = el
+  }
+
+  onContainerClick(ev) {
+    if (ev.target === this.containerEl) {
+      this.props.closeHandler()
+    }
   }
 
   onKeyDown(ev) {
@@ -173,7 +166,7 @@ class FullscreenImageViewer extends Component {
         largeImageSize.height > smallImageSize.height)
 
     return (
-      <Container>
+      <Container onClick={this.onContainerClick} innerRef={this.setContainerEl}>
         <ImageWrapper>
           <img
             className={smallImageClass}
@@ -197,8 +190,6 @@ class FullscreenImageViewer extends Component {
             offset={zoomOffset}
           />
         )}
-
-        <CloseButton onClick={closeHandler}>x</CloseButton>
       </Container>
     )
   }

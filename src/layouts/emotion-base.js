@@ -59,14 +59,14 @@ export const selectorList = css`
 
 export const Header1 = styled.h1`
   composes: ${sansfont};
-  margin: 0 0 28px 0;
+  margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 48px;
 
   & .subheader {
-    margin-top: 6px;
+    margin-top: 8px;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 24px;
   }
 
   @media (${breakpoint1}) {
