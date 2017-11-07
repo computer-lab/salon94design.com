@@ -1,0 +1,33 @@
+slug: philippe-malouin
+title: Philippe Malouin
+bio: >-
+  Philippe Malouin holds a bachelor’s degree in Design from the Design Academy
+  Eindhoven and also studied at the École Nationale Supérieure de Création
+  Industrielle in Paris and University of Montreal. He set up his studio in 2009
+  after working for English designer Tom Dixon. The director of POST-OFFICE, the
+  architectural and interiors design practice, Philippe’s diverse portfolio
+  includes tables, rugs, chairs, lights, art objects and installations.
+  Philippe’s client list includes: Marsotto Edizioni, Resident, OTHR, Hem, Ace
+  hotel, Matter- Made, Established & Sons, Roll & Hill, 1882 ltd., Kvadrat,
+  Umbra Shift, Caesarstone, IZÉ, Swarovski, Bloomberg, Aesop, Touch Digital.
+  Philippe has won the W Hotels ‘Designer of the Future’ Award and the Wallpaper
+  ‘Best Use of Material’ Award. Philippe lives and works in London, where he
+  operates his design studio.
+press: []
+works:
+  - dimensions: 137.8 H x 98.4 in dia / 3.5 m H x 2.5 m dia
+    edition: Ed. of 8 + 2 AP
+    hero: true
+    images:
+      - file: >-
+          /public/static/images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
+    medium: 'cast concrete, exposed aggregate'
+    projects:
+      - slug: design-miami-philippe-malouin-core
+    slug: pm-core
+    tags:
+      - outdoor
+      - ''
+    title: core
+    when: '2017'
+status: Available
