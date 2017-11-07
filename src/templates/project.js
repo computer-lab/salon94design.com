@@ -121,13 +121,19 @@ const ProjectTemplate = ({ data, pathContext }) => {
   )
 
   const projectsByYear = Array.from(
-    new Set(currentTypeProjects.map(p => p.groupingYear))
-  ) // years
-    .sort((a, b) => b - a) // sort reverse-chronologically
-    .map(year => ({
-      year,
-      projects: currentTypeProjects.filter(p => p.groupingYear === year),
-    }))
+    new Set(currentTypeProjects.map(p => p.date))
+  )
+    .sort((a, b) => Date.parse(b) - Date.parse(a)) // sort reverse-chronologically
+    .map(date => {
+      const dateYear = function (date) {
+        return (new Date(date)).getFullYear()
+      }
+      const year = dateYear(date)
+      return {
+        year,
+        projects: currentTypeProjects.filter(p => dateYear(p.date) === year),
+      }
+    })
 
   const selectorSections = projectsByYear.map(({ year, projects }) => ({
     title: year,
@@ -204,7 +210,7 @@ export const pageQuery = graphql`
           description
           descriptionHtml
           when
-          groupingYear
+          date
           hydratedImages {
             file
             width
