@@ -67,6 +67,9 @@ function createProjects({ boundActionCreators, graphql }) {
             slug
             when
             type
+            designers {
+              slug
+            }
           }
         }
       }
@@ -80,7 +83,10 @@ function createProjects({ boundActionCreators, graphql }) {
       createPage({
         path: projectLink(node),
         component: template,
-        context: { slug: node.slug },
+        context: {
+          slug: node.slug,
+          designersRegex: getSlugsRegex(node.designers),
+        },
       })
     })
   })
@@ -133,6 +139,9 @@ function createWorks({ boundActionCreators, graphql }) {
               slug
               tags
               when
+              projects {
+                slug
+              }
             }
           }
         }
@@ -161,10 +170,19 @@ function createWorks({ boundActionCreators, graphql }) {
       createPage({
         path: `/designers/${work.designer.slug}/${work.slug}`,
         component: workTemplate,
-        context: { designerSlug: work.designer.slug, workSlug: work.slug },
+        context: {
+          designerSlug: work.designer.slug,
+          workSlug: work.slug,
+          projectsRegex: getSlugsRegex(work.projects),
+        },
       })
     })
   })
+}
+
+function getSlugsRegex(items) {
+  const slugs = (items || []).map(item => item.slug).filter(el => !!el)
+  return slugs.length > 0 ? `/(${slugs.join('|')})/` : `/null/`
 }
 
 exports.onCreatePage = async ({ page, boundActionCreators }) => {

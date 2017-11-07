@@ -31,6 +31,12 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.sort(byLastName)
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
+  const getWorkProjects = work => {
+    return (work.projects || [])
+      .map(({ slug }) => projects.find(p => p.slug === slug))
+      .filter(item => !!item)
+  }
+
   const filterWork = w => {
     if (!w.hydratedImages || w.hydratedImages.length === 0) {
       return false
@@ -60,7 +66,7 @@ const WorksTemplate = ({ data, pathContext }) => {
           texts: workImageTexts({
             designer,
             work,
-            projects,
+            projects: getWorkProjects(work),
             smallText: (
               <div>
                 <Link to={workLink(designer.slug, work.slug)}>
@@ -102,13 +108,7 @@ export default WorksTemplate
 export const pageQuery = graphql`
   query WorksTemplateQuery {
     allProjectsYaml {
-      edges {
-        node {
-          slug
-          title
-          type
-        }
-      }
+      ...linkProjectEdges
     }
     allDesignersYaml {
       edges {

@@ -76,32 +76,30 @@ const StatusTag = styled.div`
 `
 
 const DesignerTemplate = ({ data, pathContext }) => {
-  const { allProjectsYaml, allDesignersYaml } = data
-  const { slug: currentDesignerSlug } = pathContext
+  const { designer, allProjectsYaml, allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const currentDesigner = designers.find(d => d.slug === currentDesignerSlug)
 
   const projects = allProjectsYaml.edges
     .map(edge => edge.node)
     .filter(project =>
       (project.designers || [])
         .map(designer => designer.slug)
-        .includes(currentDesignerSlug)
+        .includes(designer.slug)
     )
 
-  const works = currentDesigner.works || []
+  const works = designer.works || []
   const images = works
     .filter(work => work.hydratedImages && work.hydratedImages.length > 0)
     .map(work =>
       Object.assign(imageInfo(work.hydratedImages[0]), {
         work,
         texts: workImageTexts({
-          designer: currentDesigner,
+          designer,
           work,
           projects,
           smallText: (
-            <Link to={workLink(currentDesigner.slug, work.slug)}>
+            <Link to={workLink(designer.slug, work.slug)}>
               {work.title}, {work.when}
             </Link>
           ),
@@ -148,15 +146,15 @@ const DesignerTemplate = ({ data, pathContext }) => {
   const selectorSections = [{ items: selectorItems }]
 
   const statusClass = cx({
-    available: currentDesigner.status === 'Available',
-    represented: currentDesigner.status === 'Represented',
+    available: designer.status === 'Available',
+    represented: designer.status === 'Represented',
   })
 
   return (
     <PageContainer>
       <Helmet
-        title={`${currentDesigner.name} - Salon 94 Design`}
-        description={`Exhibitions, projects and works by ${currentDesigner.name}. ${currentDesigner.bio}`}
+        title={`${designer.name} - Salon 94 Design`}
+        description={`Exhibitions, projects and works by ${designer.name}. ${designer.bio}`}
       />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
@@ -166,15 +164,15 @@ const DesignerTemplate = ({ data, pathContext }) => {
         />
       </LeftPane>
       <RightPane className="selectable">
-        <Header1>{currentDesigner.name}</Header1>
-        <DesignerBio bioHtml={currentDesigner.bioHtml} />
+        <Header1>{designer.name}</Header1>
+        <DesignerBio bioHtml={designer.bioHtml} />
         <DesignerProjects projects={projects} />
-        <Press press={currentDesigner.press} />
+        <Press press={designer.press} />
         {SHOW_SELECTORS && (
           <HiddenSelector
             title="All Designers"
             sections={selectorSections}
-            currentItemLink={designerLink(currentDesigner.slug)}
+            currentItemLink={designerLink(designer.slug)}
           />
         )}
       </RightPane>
@@ -185,35 +183,25 @@ const DesignerTemplate = ({ data, pathContext }) => {
 export default DesignerTemplate
 
 export const pageQuery = graphql`
-  query DesignerTemplateQuery {
-    allProjectsYaml {
-      edges {
-        node {
-          slug
-          title
-          type
-          designers {
-            slug
-          }
-        }
+  query DesignerTemplateQuery($slug: String!) {
+    designer: designersYaml(slug: { eq: $slug }) {
+      slug
+      name
+      status
+      bio
+      bioHtml
+      press {
+        title
+        link
+        file
       }
+      ...fullWorkFields
+    }
+    allProjectsYaml(sort: { order: ASC, fields: [title] }) {
+      ...linkProjectEdges
     }
     allDesignersYaml(sort: { order: ASC, fields: [name] }) {
-      edges {
-        node {
-          slug
-          name
-          status
-          bio
-          bioHtml
-          press {
-            title
-            link
-            file
-          }
-          ...fullWorkFields
-        }
-      }
+      ...linkDesignerEdges
     }
   }
 `

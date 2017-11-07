@@ -14,15 +14,15 @@ import { imageInfo, workLink } from '../util'
 const { LeftPane, RightPane } = createPanes()
 
 const WorkTemplate = ({ data, pathContext }) => {
-  const { allProjectsYaml, allDesignersYaml } = data
-  const { designerSlug, workSlug } = pathContext
+  const { designer, allProjectsYaml } = data
+  const { workSlug } = pathContext
 
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const currentDesigner = designers.find(d => d.slug === designerSlug)
-  const works = currentDesigner.works
+  const works = designer.works || []
   const currentWork = works.find(p => p.slug === workSlug)
 
-  const projects = allProjectsYaml.edges.map(edge => edge.node)
+  const projects = allProjectsYaml
+    ? allProjectsYaml.edges.map(edge => edge.node)
+    : []
 
   const images = (currentWork.hydratedImages || []).map(image =>
     imageInfo(image)
@@ -32,7 +32,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   const selectorItems = works
     .map(work => ({
       title: `${work.title}, ${work.when}`,
-      link: workLink(currentDesigner.slug, work.slug),
+      link: workLink(designer.slug, work.slug),
     }))
     .sort((a, b) => a.title.localeCompare(b.title))
 
@@ -41,7 +41,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - ${currentWork.title}, ${currentDesigner.name}`}
+        title={`Salon 94 Design - ${currentWork.title}, ${designer.name}`}
       />
       <LeftPane>
         {currentWork.video && <Video video={currentWork.video} />}
@@ -50,14 +50,14 @@ const WorkTemplate = ({ data, pathContext }) => {
       <RightPane className="selectable">
         <WorkSummary
           work={currentWork}
-          designer={currentDesigner}
+          designer={designer}
           projects={projects}
           detailed={true}
         />
         <HiddenSelector
-          title={`All Works by ${currentDesigner.name}`}
+          title={`All Works by ${designer.name}`}
           sections={selectorSections}
-          currentItemLink={workLink(currentDesigner.slug, currentWork.slug)}
+          currentItemLink={workLink(designer.slug, currentWork.slug)}
         />
       </RightPane>
     </PageContainer>
@@ -67,24 +67,14 @@ const WorkTemplate = ({ data, pathContext }) => {
 export default WorkTemplate
 
 export const pageQuery = graphql`
-  query WorkTemplateQuery {
-    allProjectsYaml {
-      edges {
-        node {
-          slug
-          title
-          type
-        }
-      }
+  query WorkTemplateQuery($designerSlug: String!, $projectsRegex: String!) {
+    allProjectsYaml(filter: { slug: { regex: $projectsRegex } }) {
+      ...linkProjectEdges
     }
-    allDesignersYaml {
-      edges {
-        node {
-          slug
-          name
-          ...fullWorkFields
-        }
-      }
+    designer: designersYaml(slug: { eq: $designerSlug }) {
+      slug
+      name
+      ...fullWorkFields
     }
   }
 `

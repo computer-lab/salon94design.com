@@ -56,6 +56,29 @@ export default function Designers({ data }) {
 
 // I include the gql fragments in the index just to colocate them
 export const pageQuery = graphql`
+  fragment linkDesignerEdges on DesignersYamlConnection {
+    edges {
+      node {
+        slug
+        name
+        status
+      }
+    }
+  }
+
+  fragment linkProjectEdges on ProjectsYamlConnection {
+    edges {
+      node {
+        slug
+        title
+        type
+        designers {
+          slug
+        }
+      }
+    }
+  }
+
   fragment baseHydratedImages on works_2 {
     hydratedImages {
       file
