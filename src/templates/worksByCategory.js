@@ -63,11 +63,11 @@ const WorksTemplate = ({ data, pathContext }) => {
             projects,
             smallText: (
               <div>
-                <Link to={designerLink(designer.slug)}>{designer.name}{' '}</Link>
-                - {' '}
                 <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}, {work.when}
+                  {work.title}, {work.when}{' '}
                 </Link>
+                - {' '}
+                <Link to={designerLink(designer.slug)}>{designer.name}</Link>
               </div>
             ),
           }),

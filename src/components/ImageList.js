@@ -22,11 +22,11 @@ import HoverInfo from './HoverInfo'
 import FullscreenImageViewer from './FullscreenImageViewer'
 
 const ImageSet = styled.div`
-  &:not(:last-child) {
-    margin-bottom: 60px;
+  &.not-first {
+    margin-top: 60px;
 
     @media (${breakpoint1}) {
-      margin-bottom: 30px;
+      margin-top: 30px;
     }
   }
 `
@@ -100,7 +100,7 @@ const ImageItem = styled.div`
       cursor: zoom-in;
       min-width: 400px;
       max-width: 100%;
-      max-height: calc(100vh - 200px);
+      max-height: calc(100vh - 160px);
     }
   }
 
@@ -422,7 +422,7 @@ class ImageList extends Component {
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) => (
-          <ImageSet key={setIndex} className={cx({ unexpandable })}>
+          <ImageSet key={setIndex} className={cx({ unexpandable, 'not-first': setIndex !== 0 })}>
             {title && <SetTitle>{title}</SetTitle>}
 
             <ImageContainer className={cx({ center: centerImages })}>
