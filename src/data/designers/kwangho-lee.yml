@@ -55,4 +55,14 @@ works:
       - benches
     title: Small PVC Bench
     when: '2006'
+  - hero: true
+    images:
+      - file: /public/static/images/IMG_0324.JPG
+    slug: red-silk-bench
+    tags:
+      - benches
+      - seating
+      - ''
+    title: 'Red Silk Bench '
+    when: '2016'
 status: Represented
