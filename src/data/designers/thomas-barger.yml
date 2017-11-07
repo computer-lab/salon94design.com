@@ -26,7 +26,8 @@ works:
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
   - dimensions: 15 x 144 x 108 inches / 38.1 x 365.8 x 274.3 cm
-    images: []
+    images:
+      - file: /public/static/images/laundry.png
     medium: 'paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
