@@ -70,7 +70,8 @@ works:
   - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
     edition: Unique
     images:
-      - file: /public/static/images/redche.png
+      - file: >-
+          /public/static/images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
     medium: PVC tubing
     projects:
       - slug: ghost-dog
