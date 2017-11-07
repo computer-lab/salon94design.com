@@ -20,7 +20,7 @@ import {
   projectLink,
   workImageTexts,
   workLink,
-  SHOW_SELECTORS
+  SHOW_SELECTORS,
 } from '../util'
 
 const { LeftPane, RightPane } = createPanes()
@@ -137,8 +137,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
     })),
   }))
 
-  const currentProjectDesigners = (currentProject.designers || [])
-    .filter(designer => getDesigner(designer.slug))
+  const currentProjectDesigners = (currentProject.designers || []
+  ).filter(designer => getDesigner(designer.slug))
 
   const hoverImageRenderer = hoverImage =>
     hoverImage.work && hoverImage.designer ? (
@@ -178,13 +178,14 @@ const ProjectTemplate = ({ data, pathContext }) => {
           />
         </ProjectHeader>
 
-        {SHOW_SELECTORS && currentTypeProjects.length > 1 && (
-          <HiddenSelector
-            title={`All ${typeTitle}`}
-            sections={selectorSections}
-            currentItemLink={projectLink(currentProject)}
-          />
-        )}
+        {SHOW_SELECTORS &&
+          currentTypeProjects.length > 1 && (
+            <HiddenSelector
+              title={`All ${typeTitle}`}
+              sections={selectorSections}
+              currentItemLink={projectLink(currentProject)}
+            />
+          )}
       </RightPane>
     </PageContainer>
   )
@@ -224,7 +225,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
     allDesignersYaml {
       edges {
         node {

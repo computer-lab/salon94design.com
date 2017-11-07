@@ -187,9 +187,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const hydrateImages = async node => {
     if (node.images) {
-      node.hydratedImages = await Promise.all(node.images
-        .map(hydrateImage)
-        .filter(item => !!item)
+      node.hydratedImages = await Promise.all(
+        node.images.map(hydrateImage).filter(item => !!item)
       )
     }
   }

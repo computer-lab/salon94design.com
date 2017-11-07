@@ -18,7 +18,13 @@ import DesignerProjects from '../components/DesignerProjects'
 import Press from '../components/Press'
 import ImageList from '../components/ImageList'
 import WorkSummary from '../components/WorkSummary'
-import { SHOW_SELECTORS, imageInfo, workImageTexts, designerLink, workLink } from '../util'
+import {
+  SHOW_SELECTORS,
+  imageInfo,
+  workImageTexts,
+  designerLink,
+  workLink,
+} from '../util'
 
 const { LeftPane, RightPane } = createPanes('370px')
 
@@ -164,13 +170,13 @@ const DesignerTemplate = ({ data, pathContext }) => {
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
-          {SHOW_SELECTORS &&
-            <HiddenSelector
-              title="All Designers"
-              sections={selectorSections}
-              currentItemLink={designerLink(currentDesigner.slug)}
-            />
-          }
+        {SHOW_SELECTORS && (
+          <HiddenSelector
+            title="All Designers"
+            sections={selectorSections}
+            currentItemLink={designerLink(currentDesigner.slug)}
+          />
+        )}
       </RightPane>
     </PageContainer>
   )
@@ -192,7 +198,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
     allDesignersYaml(sort: { order: ASC, fields: [name] }) {
       edges {
         node {

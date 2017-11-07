@@ -15,7 +15,7 @@ import {
   breakpoint2,
   breakpoint3,
   isMobileWidth,
-  baseUl
+  baseUl,
 } from '../layouts/emotion-base'
 import Helmet from './helmet'
 import HoverInfo from './HoverInfo'
@@ -396,7 +396,9 @@ class ImageList extends Component {
       mobileWidth,
     } = this.state
 
-    const hoverInfoClass = cx({ hidden: !imageHoverEnabled || !hoverImage || !hoverImageRenderer })
+    const hoverInfoClass = cx({
+      hidden: !imageHoverEnabled || !hoverImage || !hoverImageRenderer,
+    })
 
     const fullscreenImage = fullscreenImageIndices
       ? imageSets[fullscreenImageIndices.setIndex].images[
@@ -422,7 +424,10 @@ class ImageList extends Component {
         {!alwaysExpand && !unexpandable && this.renderExpansionButton()}
 
         {imageSets.map(({ images, title }, setIndex) => (
-          <ImageSet key={setIndex} className={cx({ unexpandable, 'not-first': setIndex !== 0 })}>
+          <ImageSet
+            key={setIndex}
+            className={cx({ unexpandable, 'not-first': setIndex !== 0 })}
+          >
             {title && <SetTitle>{title}</SetTitle>}
 
             <ImageContainer className={cx({ center: centerImages })}>
@@ -495,11 +500,11 @@ class ImageList extends Component {
                           )}
 
                           <ImageTextItems>
-                            {texts.items.map((text, i) =>
+                            {texts.items.map((text, i) => (
                               <ImageText className="expanded-text" key={i}>
                                 {text}
                               </ImageText>
-                            )}
+                            ))}
                           </ImageTextItems>
                         </ImageTextWrapper>
                       )}
@@ -512,7 +517,10 @@ class ImageList extends Component {
         ))}
 
         <HoverInfo className={hoverInfoClass}>
-          {hoverImage && imageHoverEnabled && hoverImageRenderer && hoverImageRenderer(hoverImage)}
+          {hoverImage &&
+            imageHoverEnabled &&
+            hoverImageRenderer &&
+            hoverImageRenderer(hoverImage)}
         </HoverInfo>
 
         {fullscreenImage && (

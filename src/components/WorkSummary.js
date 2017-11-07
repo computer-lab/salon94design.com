@@ -72,7 +72,9 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
         </SummaryItem>
       )}
 
-      <SummaryItem>{work.title}, {work.when}</SummaryItem>
+      <SummaryItem>
+        {work.title}, {work.when}
+      </SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
       <SummaryItem>{work.medium}</SummaryItem>
       <SummaryItem>{work.dimensions}</SummaryItem>
@@ -84,16 +86,15 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       {projects &&
         work.projects &&
         work.projects
-            .map(project => {
-              let fullProject = projects.find(p => p.slug === project.slug)
-              return fullProject ? (
-                <SummaryItem key={project.slug} className="project">
-                  <Link to={projectLink(project)}>{fullProject.title}</Link>
-                </SummaryItem>
-              ) : null
-            })
-            .filter(project => project !== null)
-      }
+          .map(project => {
+            let fullProject = projects.find(p => p.slug === project.slug)
+            return fullProject ? (
+              <SummaryItem key={project.slug} className="project">
+                <Link to={projectLink(project)}>{fullProject.title}</Link>
+              </SummaryItem>
+            ) : null
+          })
+          .filter(project => project !== null)}
 
       {detailed &&
         work.tags &&
