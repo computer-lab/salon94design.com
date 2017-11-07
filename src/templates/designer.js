@@ -141,7 +141,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
   )
 
   const selectorItems = designers.map(item => ({
-    title: item.name,
+    title: item.title,
     link: designerLink(item.slug),
   }))
 
@@ -155,8 +155,8 @@ const DesignerTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`${currentDesigner.name} - Salon 94 Design`}
-        description={`Exhibitions, projects and works by ${currentDesigner.name}. ${currentDesigner.bio}`}
+        title={`${currentDesigner.title} - Salon 94 Design`}
+        description={`Exhibitions, projects and works by ${currentDesigner.title}. ${currentDesigner.bio}`}
       />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
@@ -166,7 +166,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
         />
       </LeftPane>
       <RightPane className="selectable">
-        <Header1>{currentDesigner.name}</Header1>
+        <Header1>{currentDesigner.title}</Header1>
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={currentDesigner.press} />
@@ -198,11 +198,11 @@ export const pageQuery = graphql`
         }
       }
     }
-    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+    allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       edges {
         node {
           slug
-          name
+          title
           status
           bio
           bioHtml

@@ -41,7 +41,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - ${currentWork.title}, ${currentDesigner.name}`}
+        title={`Salon 94 Design - ${currentWork.title}, ${currentDesigner.title}`}
       />
       <LeftPane>
         {currentWork.video && <Video video={currentWork.video} />}
@@ -55,7 +55,7 @@ const WorkTemplate = ({ data, pathContext }) => {
           detailed={true}
         />
         <HiddenSelector
-          title={`All Works by ${currentDesigner.name}`}
+          title={`All Works by ${currentDesigner.title}`}
           sections={selectorSections}
           currentItemLink={workLink(currentDesigner.slug, currentWork.slug)}
         />
@@ -81,7 +81,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...fullWorkFields
         }
       }

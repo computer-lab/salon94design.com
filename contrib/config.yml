@@ -17,7 +17,7 @@ collections:
       - name: slug
         label: Slug
         widget: string
-      - name: name
+      - name: title
         label: Name
         widget: string
       - name: bio

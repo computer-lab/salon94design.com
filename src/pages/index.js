@@ -31,7 +31,7 @@ export default function Designers({ data }) {
 
   const listSections = sortedStatuses.map(status => {
     const items = designersByStatus[status].map(designer => ({
-      title: designer.name,
+      title: designer.title // title === name
       image: chooseDesignerImage(designer),
       link: designerLink(designer.slug),
     }))
@@ -125,11 +125,11 @@ export const pageQuery = graphql`
   }
 
   query HomepageQuery {
-    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+    allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       edges {
         node {
           slug
-          name
+          title
           status
           ...baseWorkFields
         }

@@ -166,7 +166,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
               {currentProjectDesigners.map(designer => (
                 <ProjectDesigner key={designer.slug}>
                   <Link to={designerLink(designer.slug)}>
-                    {getDesigner(designer.slug).name}
+                    {getDesigner(designer.slug).title}
                   </Link>
                 </ProjectDesigner>
               ))}
@@ -229,7 +229,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...fullWorkFields
         }
       }
