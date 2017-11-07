@@ -10,8 +10,8 @@ export default function ArtFairs({ data }) {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - Art Fairs`}
-        description={`List of Salon 94 Design Art Fairs`}
+        title={`Salon 94 Design - Fairs`}
+        description={`List of Salon 94 Design Fairs`}
       />
       <ProjectList
         allProjectsYaml={allProjectsYaml}
