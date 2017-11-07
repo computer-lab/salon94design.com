@@ -92,7 +92,6 @@ async function resetYamlFile (oldData, data, fileMaker) {
 
   // remove old duplicate file if necessary
   const oldDataFile = fileMaker(oldData)
-  console.log(oldDataFile, newDataFile)
   if (oldDataFile !== newDataFile) {
     await fs.remove(oldDataFile)
   }

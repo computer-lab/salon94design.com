@@ -67,7 +67,7 @@ async function processDesignerWorks (data) {
     // find images that need processing
     const images = work.images || []
     const imagesToProcess = images.filter(image =>
-      !image.file.includes('static/images/works')
+      image.file && !image.file.includes('static/images/works')
     )
 
     // process them
@@ -77,7 +77,9 @@ async function processDesignerWorks (data) {
     }))
 
     // return relevant info
-    return processedImages.map((item, i) => Object.assign({}, item, {
+    return processedImages
+      .filter(item => !!item)
+      .map((item, i) => Object.assign({}, item, {
       originalImageIndex: images.indexOf(imagesToProcess[i])
     }))
   }))
@@ -87,7 +89,7 @@ async function processProjectImages (project) {
   // find images that need processing
   const images = project.images || []
   const imagesToProcess = images.filter(image =>
-    !image.file.includes('static/images/projects')
+    image.file && !image.file.includes('static/images/projects')
   )
 
   // process them
@@ -97,7 +99,9 @@ async function processProjectImages (project) {
   }))
 
   // return relevant info
-  return processedImages.map((item, i) => Object.assign({}, item, {
+  return processedImages
+    .filter(item => !!item)
+    .map((item, i) => Object.assign({}, item, {
     originalImageIndex: images.indexOf(imagesToProcess[i])
   }))
 }
@@ -106,7 +110,7 @@ async function processInfoImages (info) {
   // find images that need processing
   const images = info.images || []
   const imagesToProcess = images.filter(image =>
-    !image.file.includes('static/images/info/')
+    image.file && !image.file.includes('static/images/info/')
   )
 
   // process them
@@ -210,19 +214,26 @@ function infoImageFilename (image) {
 }
 
 async function processImage (image, newFilename) {
-  // move from root static folder to correct subdirectory, and rename
-  const movedImage = await moveImage(image, newFilename)
+  try {
+    // move from root static folder to correct subdirectory, and rename
+    const movedImage = await moveImage(image, newFilename)
 
-  // convert other image formats to jpg
-  const jpegImage = await makeImageJpeg(movedImage)
+    // convert other image formats to jpg
+    const jpegImage = await makeImageJpeg(movedImage)
 
-  // create necessary sizes
-  const resizedImages = await resizeImage(jpegImage)
+    // create necessary sizes
+    const resizedImages = await resizeImage(jpegImage)
 
-  // return relevant info
-  return {
-    newImage: jpegImage,
-    resizedImages
+    // return relevant info
+    return {
+      newImage: jpegImage,
+      resizedImages
+    }
+  } catch (err) {
+    console.error('err processing file:', image.file)
+    console.error(err)
+
+    return null
   }
 }
 
@@ -231,10 +242,6 @@ function moveImage (image, newFilename) {
   const oldFilename = path.join(imageDir, path.basename(image.file))
   return fs.move(oldFilename, newFilename)
     .then(() => newFilename)
-    .catch(err => {
-      console.error('err moving file: ', oldFilename)
-      console.error(err)
-    })
 }
 
 function makeImageJpeg (imageFilename) {
@@ -253,10 +260,6 @@ function makeImageJpeg (imageFilename) {
         .catch() // ignore non-critical error
     )
     .then(() => jpegFilename)
-    .catch(err => {
-      console.error('err making image jpeg: ', imageFilename)
-      console.error(err)
-    })
 }
 
 async function resizeImage (jpegFilename) {
@@ -293,9 +296,5 @@ async function resizeImage (jpegFilename) {
       .resize(size.width, size.height)
       .toFile(resizedFilename)
       .then(() => resizedFilename)
-      .catch(err => {
-        console.error('err resizing image: ', jpegFilename)
-        console.error(err)
-      })
   }))
 }
