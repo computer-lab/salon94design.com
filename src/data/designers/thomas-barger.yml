@@ -8,9 +8,7 @@ bio: |
   around wooden frames, the works take on unusual shapes reminiscent of
   childhood cartoons or papier-mâchéd fantasy balloon animals. He loves to
   drink green tea and his favorite animals are dogs and pygmy goats.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
   - dimensions: 27.5 x 36 x 21
     images:
@@ -24,6 +22,6 @@ works:
     tags:
       - storage
       - miscellaneous
-    title: 'Underwear Armoire, 2016'
+    title: Underwear Armoire
     when: '2016'
 status: Represented
