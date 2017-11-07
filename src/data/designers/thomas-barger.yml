@@ -11,6 +11,7 @@ bio: |
 press: []
 works:
   - dimensions: 27.5 x 36 x 21 inches
+    hero: true
     images:
       - file: >-
           /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg

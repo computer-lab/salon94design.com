@@ -236,7 +236,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 }
 
 async function hydrateImage(image) {
-  if (!image.file) {
+  if (!image || !image.file) {
     return null
   }
 

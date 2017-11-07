@@ -12,6 +12,7 @@ bio: >-
 press: []
 works:
   - dimensions: 5-10 feet long (1.5-3 m long)
+    hero: true
     images:
       - file: >-
           /public/static/images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg

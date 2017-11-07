@@ -6,6 +6,7 @@ press:
     title: NYTimes - Press Coverage of Design
 works:
   - dimensions: 70 x 35 x 45
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg

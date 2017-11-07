@@ -14,6 +14,7 @@ press:
 works:
   - slug: bronze-stool
     dimensions: ''
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg

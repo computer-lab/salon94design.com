@@ -192,6 +192,7 @@ export const pageQuery = graphql`
         }
       }
     }
+
     allDesignersYaml(sort: { order: ASC, fields: [name] }) {
       edges {
         node {
@@ -205,30 +206,7 @@ export const pageQuery = graphql`
             link
             file
           }
-          works {
-            slug
-            title
-            when
-            projects {
-              slug
-            }
-            tags
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-            caption
-            price
-            medium
-            dimensions
-            edition
-          }
+          ...fullWorkFields
         }
       }
     }

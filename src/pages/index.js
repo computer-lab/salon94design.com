@@ -54,7 +54,77 @@ export default function Designers({ data }) {
   )
 }
 
+
+// I include the gql fragments in the index just to colocate them
 export const pageQuery = graphql`
+  fragment baseHydratedImages on works_2 {
+    hydratedImages {
+      file
+      width
+      height
+      resized {
+        file
+        width
+        height
+      }
+    }
+  }
+
+  fragment baseWorkFields on DesignersYaml {
+    works {
+      slug
+      title
+      hero
+      ...baseHydratedImages
+    }
+  }
+
+  fragment fullWorkFields on DesignersYaml {
+    works {
+      slug
+      title
+      when
+      hero
+      projects {
+        slug
+      }
+      video {
+        vimeoId
+        caption
+      }
+      tags
+      caption
+      price
+      medium
+      dimensions
+      edition
+      ...baseHydratedImages
+    }
+  }
+
+  fragment fullProjectFields on ProjectsYaml {
+    slug
+    title
+    type
+    description
+    when
+    groupingYear
+    designers {
+      slug
+    }
+    hydratedImages {
+      hero
+      file
+      width
+      height
+      resized {
+        file
+        width
+        height
+      }
+    }
+  }
+
   query HomepageQuery {
     allDesignersYaml(sort: { order: ASC, fields: [name] }) {
       edges {
@@ -62,20 +132,7 @@ export const pageQuery = graphql`
           slug
           name
           status
-          works {
-            slug
-            title
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-          }
+          ...baseWorkFields
         }
       }
     }

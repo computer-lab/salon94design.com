@@ -62,6 +62,10 @@ collections:
           - name: tags
             label: Tags
             widget: list
+          - name: hero
+            label: Hero
+            widget: boolean
+            default: false
           - name: images
             label: Images
             widget: list
@@ -150,6 +154,10 @@ collections:
           - name: caption
             label: Caption
             widget: string
+          - name: hero
+            label: Hero
+            widget: boolean
+            default: false
       - name: video
         label: Video
         widget: object
