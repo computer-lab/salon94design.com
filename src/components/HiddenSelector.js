@@ -13,8 +13,7 @@ import {
 
 const Selector = styled.div`
   margin-top: 60px;
-  padding: 8px 8px 16px 8px;
-  border: 2px solid #000;
+  padding: 0;
   background: #fff;
   transition: transform 0.2s ease;
 
@@ -68,19 +67,17 @@ const OptionSectionTitle = styled.h3`
 `
 
 const OptionList = styled.ul`
-  composes: ${selectorList}, ${monofont};
+  composes: ${selectorList}, ${sansfont};
   font-size: 16px;
-  display: flex;
-  flex-wrap: wrap;
+  font-weight: 100;
 
   & li {
-    margin: 12px 0 0 0;
+    margin: 8px 0 0 0;
     padding: 0 20px 0 0;
     line-height: 1.25;
   }
 
   @media (${breakpoint1}) {
-    display: block;
     font-size: 14px;
 
     & li {

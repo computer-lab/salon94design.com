@@ -6,7 +6,6 @@ import styled from 'emotion/react'
 import { createPanes, PageContainer } from '../layouts/containers'
 import {
   sansfont,
-  monofont,
   childLink,
   Header1,
   breakpoint1,
@@ -44,9 +43,10 @@ const ProjectDesigner = styled.span`
 `
 
 const ProjectWhen = styled.div`
-  composes: ${monofont};
-  margin-top: 8px;
-  font-size: 24px;
+  composes: ${sansfont};
+  margin-top: 16px;
+  font-size: 22px;
+  font-weight: 100;
 `
 
 const ProjectDescription = styled.div`
@@ -95,7 +95,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
               designer,
               smallText: (
                 <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}{' '}
+                  {work.title}, {work.when}
                 </Link>
               ),
             }),
@@ -132,11 +132,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
     })),
   }))
 
-  const currentProjectDesigners = (
-    currentProject.designers
-      ? currentProject.designers.filter(designer => getDesigner(designer.slug))
-      : []
-  )
+  const currentProjectDesigners = (currentProject.designers || [])
+    .filter(designer => getDesigner(designer.slug))
 
   const hoverImageRenderer = hoverImage =>
     hoverImage.work && hoverImage.designer ? (

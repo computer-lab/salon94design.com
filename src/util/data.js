@@ -35,9 +35,8 @@ export const chooseCategoryImage = (works, tag) => {
 
 export const chooseProjectImage = (project, designers) => {
   let image = null
-  designers = designers.filter(d => !!d)
 
-  const work = designers.reduce((work, designer) => {
+  const work = designers.filter(d => !!d).reduce((work, designer) => {
     if (work || !designer.works) return work
     const projectWorks = designer.works.filter(work => {
       return work.projects && work.projects.find(p => p.slug === project.slug)
