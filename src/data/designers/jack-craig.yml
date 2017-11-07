@@ -10,20 +10,21 @@ bio: |-
   Master of Fine Art in 3D Design in 2012.
 press: []
 works:
-  - slug: bronze-stool
-    dimensions: ''
-    hero: true
+  - dimensions: ''
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
+    slug: bronze-stool
     tags:
       - chairs
     title: 'Bronze Stool, 2016'
     when: '2016'
   - dimensions: '36 x 15 x 20 inches '
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
