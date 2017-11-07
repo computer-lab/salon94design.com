@@ -30,6 +30,8 @@ works:
           /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
     medium: 'bronze, marble'
     price: ''
+    projects:
+      - slug: ghost-dog
     slug: large-marble-table-lamp
     tags:
       - lighting
