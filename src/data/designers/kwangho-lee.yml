@@ -49,7 +49,7 @@ works:
     medium: PVC
     price: ''
     projects:
-      - slug: woven-furniture
+      - slug: ghost-dog
     slug: kwangho-small-pvc-bench
     tags:
       - benches
@@ -67,4 +67,18 @@ works:
       - ''
     title: 'Red Silk Bench '
     when: '2016'
+  - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
+    edition: Unique
+    images:
+      - file: /public/static/images/redche.png
+    medium: PVC tubing
+    projects:
+      - slug: ghost-dog
+    slug: kwangholeechair
+    tags:
+      - seating
+      - chairs
+      - ''
+    title: Chair
+    when: '2017'
 status: Represented
