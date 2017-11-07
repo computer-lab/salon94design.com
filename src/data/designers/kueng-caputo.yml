@@ -27,6 +27,7 @@ works:
     slug: marble-stool-white
     title: Marble Stool White
     when: '2015'
+    images: []
   - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
     images:
       - file: >-
