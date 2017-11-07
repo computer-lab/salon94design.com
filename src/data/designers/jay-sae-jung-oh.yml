@@ -24,11 +24,12 @@ works:
     edition: 'Unique '
     hero: true
     images:
-      - file: /public/static/images/JaO_2.jpg
+      - file: >-
+          /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-chair-SkfvwTkJz/large.jpg
     medium: 'leather cord, various plastics'
     projects:
       - slug: ghost-dog
-    slug: Savage Series Black Leather Chair
+    slug: savage-series-black-leather-chair
     tags:
       - seating
       - ''
