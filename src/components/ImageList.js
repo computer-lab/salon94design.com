@@ -77,6 +77,7 @@ const ImageItem = styled.div`
     max-width: 100%;
     max-height: 288px;
     cursor: pointer;
+    user-select: none;
   }
 
   &.with-small-text {
@@ -203,21 +204,24 @@ const ExpansionButton = styled.button`
   composes: ${monofont};
   position: fixed;
   z-index: 10;
-  height: 72px;
-  right: 15px;
-  bottom: 20px;
+  top: 22px;
+  left: 33%;
   cursor: pointer;
-  font-size: 96px;
+  font-size: 16px;
+  line-height: 1.25;
   background: none;
   border: none;
   outline: none;
   user-select: none;
+  border-radius: 0;
+  padding: 0;
+  border-bottom: 2px solid #000;
 
   @media (${breakpoint1}) {
-    bottom: 0;
-    right: 0;
-    font-size: 48px;
-    height: 48px;
+    left: auto;
+    top: 48px;
+    right: 10px;
+    font-size: 14px;
   }
 
   @media (${breakpoint3}) {
@@ -229,8 +233,10 @@ class ImageList extends Component {
   constructor(props) {
     super(props)
 
+    this.setContainerEl = this.setContainerEl.bind(this)
     this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
+    this.onDocumentClick = this.onDocumentClick.bind(this)
     this.onResize = this.onResize.bind(this)
     this.fullscreenImageViewerCloseHandler = this.fullscreenImageViewerCloseHandler.bind(
       this
@@ -249,12 +255,18 @@ class ImageList extends Component {
 
   componentDidMount() {
     window.addEventListener('keydown', this.onKeyDown)
+    document.addEventListener('click', this.onDocumentClick)
     window.addEventListener('resize', this.onResize)
   }
 
   componentWillUnmount() {
     window.removeEventListener('keydown', this.onKeyDown)
+    document.removeEventListener('click', this.onDocumentClick)
     window.removeEventListener('resize', this.onResize)
+  }
+
+  setContainerEl(el) {
+    this.containerEl = el
   }
 
   onImageHover(hoverImage) {
@@ -272,6 +284,18 @@ class ImageList extends Component {
     }
   }
 
+  onDocumentClick(ev) {
+    const canUnexpand =
+      this.state.isExpanded && !this.state.fullscreenImageIndices
+    if (
+      canUnexpand &&
+      this.containerEl &&
+      !this.containerEl.contains(ev.target)
+    ) {
+      this.unexpand()
+    }
+  }
+
   onResize() {
     const mobileWidth = isMobileWidth()
     if (mobileWidth !== this.state.mobileWidth) {
@@ -280,9 +304,11 @@ class ImageList extends Component {
   }
 
   fullscreenImageViewerCloseHandler() {
-    this.setState({
-      fullscreenImageIndices: null,
-    })
+    setTimeout(() => {
+      this.setState({
+        fullscreenImageIndices: null,
+      })
+    }, 10)
   }
 
   fullscreenImageViewerChangeHandler(delta) {
@@ -321,6 +347,8 @@ class ImageList extends Component {
   }
 
   renderExpansionButton() {
+    return null
+
     const { isExpanded } = this.state
 
     if (!isExpanded) {
@@ -337,18 +365,22 @@ class ImageList extends Component {
 
     return (
       <ExpansionButton onClick={onClick}>
-        {isExpanded ? 'x' : 'o'}
+        {isExpanded ? 'zoom out' : 'zoom in'}
       </ExpansionButton>
     )
   }
 
-  onImageClick(setIndex, imageIndex) {
+  onImageClick(ev, setIndex, imageIndex) {
     if (this.props.unexpandable) return
 
     if (this.state.isExpanded) {
-      return this.setState({
-        fullscreenImageIndices: { setIndex, imageIndex },
-      })
+      if (ev.target.nodeName === 'IMG') {
+        this.setState({
+          fullscreenImageIndices: { setIndex, imageIndex },
+        })
+      }
+
+      return
     }
 
     this.setState(
@@ -412,7 +444,7 @@ class ImageList extends Component {
         : null
 
     return (
-      <section>
+      <section ref={this.setContainerEl}>
         {firstImage && (
           <Helmet
             meta={[
@@ -481,7 +513,7 @@ class ImageList extends Component {
                   >
                     <ImageItem
                       className={imageItemClass}
-                      onClick={() => this.onImageClick(setIndex, i)}
+                      onClick={ev => this.onImageClick(ev, setIndex, i)}
                     >
                       {isExpanded || !unexpandedLink ? (
                         img

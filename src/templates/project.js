@@ -61,7 +61,7 @@ const ProjectDescription = styled.div`
   }
 
   @media (${breakpoint1}) {
-    max-width: 480px;
+    max-width: none;
   }
 `
 
