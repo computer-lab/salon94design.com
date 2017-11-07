@@ -90,7 +90,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
     )
 
     works.forEach(work => {
-      if (work.hydratedImages && work.hydratedImages.length > 0) {
+      if (work.hydratedImages && work.hydratedImages.length > 0 && work.hydratedImages[0]) {
         workImages.push(
           Object.assign(imageInfo(work.hydratedImages[0]), {
             work,
