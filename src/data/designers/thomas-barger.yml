@@ -26,11 +26,12 @@ works:
     when: '2016'
   - dimensions: 15 x 144 x 108 inches 38.1 x 365.8 x 274.3 cm
     images:
-      - file: /public/static/images/Screen Shot 2017-11-06 at 9.48.02 PM.png
+      - file: >-
+          /public/static/images/works/thomas-barger/sorting-laundry-for-a-family-of-5-rkkeZiR0Z/large.jpg
     medium: 'paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
-    slug: Sorting Laundry For a Family of 5
+    slug: sorting-laundry-for-a-family-of-5
     tags:
       - storage
       - miscellaneous
