@@ -4,7 +4,7 @@ import { breakpoint1, breakpoint2, breakpoint3 } from './emotion-base'
 
 export const ContentContainer = styled.div`
   margin: 0 auto;
-  padding: 108px 24px 100px 24px;
+  padding: 108px 24px 24px 24px;
   box-sizing: border-box;
 
   @media (${breakpoint2}) {
