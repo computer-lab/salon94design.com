@@ -1,9 +1,7 @@
 slug: anton-alvarez
 name: Anton Alvarez
-bio: Anton Alvarez is a designer.
-press:
-  - file: /public/static/images/anton-alvarez-cv.pdf
-    title: CV Press Coverage
+bio: 'Born 1980, Uppsala, Sweden.'
+press: []
 works:
   - dimensions: 18.11 x 82.28 x 10.24 inches
     images:
@@ -20,7 +18,19 @@ works:
       - benches
     title: The Thread Wrapping Machine Bench 271115
     video:
-      caption: Anton Alvarez Timelapse
+      caption: ''
       vimeoId: ''
+    when: '2015'
+  - dimensions: 1.5 x 16.5 inches / 94 x 54.6 x 41.9 cm
+    images:
+      - file: /public/static/images/AA 28.jpg
+    medium: >-
+      Polyester thread, fabric, fake-fur, pva glue, color pigment, mdf, plywood,
+      osb, wood, plastic and metal
+    slug: The Thread Wrapping Machine Chair 090415
+    tags:
+      - chairs
+      - seating
+    title: The Thread Wrapping Machine Chair 090415
     when: '2015'
 status: Represented
