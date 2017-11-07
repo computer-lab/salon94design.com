@@ -57,7 +57,8 @@ works:
     when: '2006'
   - hero: true
     images:
-      - file: /public/static/images/IMG_0324.JPG
+      - file: >-
+          /public/static/images/works/kwangho-lee/red-silk-bench-S1EIo3yyM/large.jpg
     slug: red-silk-bench
     tags:
       - benches
