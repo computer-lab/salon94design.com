@@ -19,7 +19,7 @@ export default class Designers extends Component {
 
     const listItems = designers.map(designer => {
       return {
-        title: designer.title // title === name
+        title: designer.title,
         image: chooseDesignerImage(designer),
         link: designerLink(designer.slug),
       }
