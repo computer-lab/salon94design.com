@@ -28,7 +28,8 @@ works:
     images:
       - file: /public/static/images/Screen Shot 2017-11-06 at 9.48.02 PM.png
     medium: 'paper pulp, carpet '
-    projects: []
+    projects:
+      - slug: midtown-lever-house
     slug: Sorting Laundry For a Family of 5
     tags:
       - storage
