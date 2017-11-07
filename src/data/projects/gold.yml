@@ -3,7 +3,8 @@ title: 'Gold, Lucas Samaras'
 type: Exhibition
 when: September 19–November 03
 groupingYear: '2017'
-designers: []
+designers:
+  - slug: lucas-samaras
 description: >-
   _The farther you go into your past, meaning as close as possible to your
   birth, the more impossible it is to remember anything. However, I remember as
