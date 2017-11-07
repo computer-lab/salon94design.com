@@ -19,7 +19,7 @@ export default class Designers extends Component {
 
     const listItems = designers.map(designer => {
       return {
-        title: designer.name,
+        title: designer.title // title === name
         image: chooseDesignerImage(designer),
         link: designerLink(designer.slug),
       }
@@ -41,11 +41,11 @@ export default class Designers extends Component {
 
 export const pageQuery = graphql`
   query DesignersQuery {
-    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+    allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       edges {
         node {
           slug
-          name
+          title
           ...baseWorkFields
         }
       }

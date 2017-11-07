@@ -67,7 +67,7 @@ const WorksTemplate = ({ data, pathContext }) => {
                   <Link to={workLink(designer.slug, work.slug)}>
                     {work.title}, {work.when}{' '}
                   </Link>
-                  - <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+                  - <Link to={designerLink(designer.slug)}>{designer.title}</Link>
                 </div>
               ),
             }),
@@ -116,7 +116,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...fullWorkFields
         }
       }

@@ -35,7 +35,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...baseWorkFields
         }
       }

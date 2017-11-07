@@ -72,7 +72,7 @@ export const workImageTexts = ({
   smallText = null,
 }) => {
   let data = [
-    <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    <Link to={designerLink(designer.slug)}>{designer.title}</Link>,
     <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
   ]
 
@@ -109,8 +109,8 @@ export const workImageTexts = ({
 
 export const byLastName = (designerA, designerB) => {
   const getLastName = designer => {
-    return designer.name
-      ? designer.name
+    return designer.title
+      ? designer.title
           .trim()
           .split(' ')
           .pop()

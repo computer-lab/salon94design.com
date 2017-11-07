@@ -93,11 +93,11 @@ function createDesigners({ boundActionCreators, graphql }) {
 
   return graphql(`
     {
-      allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+      allDesignersYaml(sort: { order: ASC, fields: [title] }) {
         edges {
           node {
             slug
-            name
+            title
           }
         }
       }
