@@ -9,21 +9,8 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
-    images:
-      - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
-      - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BkMeY42io2Z/large.jpg
-    medium: Polystyrene and stainless steel
-    price: ''
-    projects:
-      - slug: thermal-spray-furniture
-    slug: thermal-spray-dining-table-stainless
-    tags:
-      - tables
-    title: Thermal Spray Dining Table Stainless
-    when: '2017'
+  - images:
+      - file: /public/static/images/021_IMG_0049.jpg
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
       - file: >-
@@ -63,6 +50,17 @@ works:
       - ''
     title: 'Thermal Spray Vase Copper '
     when: '2017'
-  - images:
-      - file: /public/static/images/021_IMG_0049.jpg
+  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
+    slug: thermal-spray-dining-table-stainless
+    tags:
+      - tables
+    title: Thermal Spray Dining Table Stainless
+    when: '2017'
 status: Represented
