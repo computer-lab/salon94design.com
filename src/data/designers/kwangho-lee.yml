@@ -58,7 +58,8 @@ works:
   - caption: Frieze NY
     hero: true
     images:
-      - file: /public/static/images/red.JPG
+      - file: >-
+          /public/static/images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
     slug: red-silk-bench
     tags:
       - benches
