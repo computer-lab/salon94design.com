@@ -63,4 +63,6 @@ works:
       - ''
     title: 'Thermal Spray Vase Copper '
     when: '2017'
+  - images:
+      - file: /public/static/images/021_IMG_0049.jpg
 status: Represented
