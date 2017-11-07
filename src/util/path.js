@@ -3,7 +3,7 @@ const designerLink = slug => `/designers/${slug}`
 const projectLink = project => {
   switch (project.type) {
     case 'Art Fair':
-      return `/art-fairs/${project.slug}`
+      return `/fairs/${project.slug}`
     case 'Exhibition':
     default:
       return `/exhibitions/${project.slug}`
