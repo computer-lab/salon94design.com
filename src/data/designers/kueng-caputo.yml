@@ -11,25 +11,9 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm
+  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm cm
     images:
-      - file: >-
-          /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/large.jpg
-        width: 1399
-        height: 1540
-        resized:
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h300.jpg
-            width: 273
-            height: 300
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h600.jpg
-            width: 545
-            height: 600
-          - file: >-
-              /public/static/images/works/kueng-caputo/marble-stool-ByqyivqC-/resized-h900.jpg
-            width: 818
-            height: 900
+      - file: /public/static/images/Caputo_KuCa144.jpg
     medium: marble
     price: ''
     projects: []
@@ -37,6 +21,6 @@ works:
     tags:
       - seating
       - ''
-    title: 'Marble Stool, 2016'
-    when: '2016'
+    title: 'Marble Stool 13 '
+    when: '2015'
 status: Represented
