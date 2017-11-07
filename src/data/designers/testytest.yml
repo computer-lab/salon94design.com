@@ -4,5 +4,8 @@ bio: ms testertesting
 press:
   - link: sdfgdfgdsf
     title: asdf
-works: []
+works:
+  - slug: abcdefg
+    title: sdfgsdf
+    when: '1234'
 status: Available
