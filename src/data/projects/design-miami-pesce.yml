@@ -20,15 +20,15 @@ description: >-
   humor, Pesce modernizes the Japanese gold leaf and red lacquer cabinetry in
   his 2006 Horse Cabinet.
 images:
-  - file: /public/static/images/projects/design-miami-pesce/rygWRh31yz/large.jpg
-    hero: true
+  - caption: Puglia Cabinet
+    file: /public/static/images/projects/design-miami-pesce/rkzvfj3RCZ/large.jpg
   - caption: Do You Still Love Me? Cabinet
     file: /public/static/images/projects/design-miami-pesce/S1xvfi3C0-/large.jpg
     hero: false
   - caption: Horse Cabinet
     file: /public/static/images/projects/design-miami-pesce/rkZwfi3CC-/large.jpg
-  - caption: Puglia Cabinet
-    file: /public/static/images/projects/design-miami-pesce/rkzvfj3RCZ/large.jpg
+  - file: /public/static/images/puglia.png
+    hero: true
 video:
   caption: ''
   vimeoId: ''
