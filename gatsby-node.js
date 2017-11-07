@@ -195,9 +195,13 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
   }
 
   const processPress = node => {
-    node.press = (node.press || []).map(item =>
-      Object.assign({ file: '' }, item)
-    )
+    if (node.press && node.press.length > 0) {
+      node.press = node.press.map(item =>
+        Object.assign({ file: '', link: '', title: '' }, item)
+      )
+    } else {
+      node.press = [{ file: '', link: '', title: '' }]
+    }
   }
 
   switch (node.internal.type) {

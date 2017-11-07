@@ -26,6 +26,7 @@ works:
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
   - dimensions: 15 x 144 x 108 inches / 38.1 x 365.8 x 274.3 cm
+    images: []
     medium: 'paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
@@ -35,7 +36,6 @@ works:
       - miscellaneous
     title: Sorting Laundry For a Family of 5
     when: '2017'
-    images: []
   - dimensions: 31 x 39 x 19 inches / 78.7 x 99.1 x 48.3 cm
     images:
       - file: >-
