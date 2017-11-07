@@ -22,10 +22,12 @@ works:
       - seating
       - chairs
       - ''
-    title: 'Stag Stool, 2015'
+    title: Stag Stool
     when: '2015'
-  - images:
+  - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '
+    images:
       - file: /public/static/images/Owens_RO81_TombStagChairLeft-1LR_333_500.jpg
+    medium: 'raw plywood, moose antler'
     slug: Tomb Stag Chair
     tags:
       - chairs
