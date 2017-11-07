@@ -52,26 +52,28 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.forEach(designer => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
-      const image = work.hydratedImages[0]
-      images.push(
-        Object.assign(imageInfo(image), {
-          work,
-          designer,
-          texts: workImageTexts({
-            designer,
+      const image = work.hydratedImages.length > 0 && work.hydratedImages[0]
+      if (image) {
+        images.push(
+          Object.assign(imageInfo(image), {
             work,
-            projects,
-            smallText: (
-              <div>
-                <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}, {work.when}{' '}
-                </Link>
-                - <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-              </div>
-            ),
-          }),
-        })
-      )
+            designer,
+            texts: workImageTexts({
+              designer,
+              work,
+              projects,
+              smallText: (
+                <div>
+                  <Link to={workLink(designer.slug, work.slug)}>
+                    {work.title}, {work.when}{' '}
+                  </Link>
+                  - <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+                </div>
+              ),
+            }),
+          })
+        )
+      }
     })
   })
 
