@@ -17,7 +17,9 @@ const Container = styled.section`
 `
 
 const Press = ({ press }) => {
-  const filteredPress = (press || []).filter(p => (p.file && p.file.length > 0) || (p.link && p.link.length > 0))
+  const filteredPress = (press || []).filter(
+    p => (p.file && p.file.length > 0) || (p.link && p.link.length > 0)
+  )
 
   if (filteredPress.length === 0) {
     return null

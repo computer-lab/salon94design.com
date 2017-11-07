@@ -12,9 +12,11 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
   const projects = allProjectsYaml.edges
     .map(edge => edge.node)
     .filter(d => d.type === type)
-    .map(node => Object.assign({}, node, {
-      designers: (node.designers || []).map(getDesigner).filter(d => !!d)
-    }))
+    .map(node =>
+      Object.assign({}, node, {
+        designers: (node.designers || []).map(getDesigner).filter(d => !!d),
+      })
+    )
     .filter(p => p.designers.length > 0)
 
   const title = `${type}s`

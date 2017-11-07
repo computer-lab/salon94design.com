@@ -31,7 +31,6 @@ export const pageQuery = graphql`
         }
       }
     }
-
     allDesignersYaml {
       edges {
         node {
