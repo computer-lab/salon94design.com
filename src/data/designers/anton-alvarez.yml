@@ -33,7 +33,7 @@ works:
       - seating
     title: The Thread Wrapping Machine Chair 090415
     when: '2015'
-  - dimensions: 11.81 x 9.84 x 8.66 inches 30 x 25 x 22 cm
+  - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
     images:
       - file: /public/static/images/SALON_94_FRIEZE_1017_491-V2.jpg
     medium: glazed stoneware
