@@ -12,6 +12,10 @@ const Bio = styled.div`
   font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
+
+  & p {
+    margin-bottom: 24px;
+  }
 `
 
 const DesignerProjects = ({ bioHtml }) => {

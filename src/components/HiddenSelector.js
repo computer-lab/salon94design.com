@@ -41,7 +41,7 @@ const Selector = styled.div`
 
 const SelectorTitle = styled.div`
   composes: ${sansfont};
-  margin: 0 0 16px 0;
+  margin: 0 0 10px 0;
   padding: 0;
   font-weight: 400;
   font-size: 20px;

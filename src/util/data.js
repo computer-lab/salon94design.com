@@ -61,9 +61,16 @@ export const workImageTexts = ({
   projects,
   smallText = null,
 }) => {
-  let data = [work.medium, work.dimensions, work.price, work.when].filter(
+  let data = [
+    <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
+  ]
+
+  const elements = [work.when, work.caption, work.medium, work.dimensions, work.edition, work.price]
+  data = data.concat(elements.filter(
     item => item && item.length > 0
-  )
+  ))
+
   if (projects && work.projects) {
     data = data.concat(
       work.projects
@@ -80,11 +87,8 @@ export const workImageTexts = ({
   }
 
   return {
-    data,
     smallText,
-    title: <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
-    caption: work.caption,
-    credit: <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    items: data
   }
 }
 

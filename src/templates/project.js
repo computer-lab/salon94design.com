@@ -34,7 +34,7 @@ const ProjectDesigner = styled.span`
   composes: ${childLink};
 
   &:not(:first-child)::before {
-    content: ' / ';
+    content: ', ';
   }
 
   &:last-child::after {
@@ -44,16 +44,21 @@ const ProjectDesigner = styled.span`
 
 const ProjectWhen = styled.div`
   composes: ${sansfont};
-  margin-top: 16px;
+  margin-top: 20px;
   font-size: 22px;
   font-weight: 100;
 `
 
 const ProjectDescription = styled.div`
+  composes: ${sansfont};
   max-width: 320px;
   font-size: 20px;
   font-weight: 300;
   line-height: 1.4;
+
+  & p {
+    margin-bottom: 20px;
+  }
 
   @media (${breakpoint1}) {
     max-width: 480px;
@@ -246,6 +251,7 @@ export const pageQuery = graphql`
             price
             medium
             dimensions
+            edition
           }
         }
       }

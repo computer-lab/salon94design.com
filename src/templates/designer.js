@@ -227,6 +227,7 @@ export const pageQuery = graphql`
             price
             medium
             dimensions
+            edition
           }
         }
       }
