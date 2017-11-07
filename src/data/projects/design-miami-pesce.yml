@@ -22,8 +22,6 @@ description: >-
 images:
   - file: /public/static/images/projects/design-miami-pesce/rygWRh31yz/large.jpg
     hero: true
-  - file: /public/static/images/projects/design-miami-pesce/By-ZAhhkJz/large.jpg
-    hero: false
   - caption: Do You Still Love Me? Cabinet
     file: /public/static/images/projects/design-miami-pesce/S1xvfi3C0-/large.jpg
     hero: false
