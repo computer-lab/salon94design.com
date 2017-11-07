@@ -5,10 +5,27 @@ bio: >-
   design methods with digital design. He is known for employing highly unusual
   approaches to using natural materials, including pouring pewter onto sand, and
   volcanic rock.
-press:
-  - link: 'https://google.com'
-    title: NYTimes - Press Coverage of Design
+press: []
 works:
+  - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
+    images:
+      - file: /public/static/images/026_IMG_0060.jpg
+      - file: /public/static/images/027_IMG_0068.jpg
+    medium: 'raw and polished Tonalite granite, leather'
+    slug: 'Tonalite Boulder Chair #8 '
+    title: 'Tonalite Boulder Chair #8 '
+    when: '2017'
+  - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
+    images:
+      - file: /public/static/images/052_IMG_8557.jpg
+      - file: /public/static/images/051_IMG_8555.jpg
+    medium: raw and polished Tonalite granite & leather
+    slug: 'Tonalite Boulder Chair #5'
+    tags:
+      - chairs
+      - ''
+    title: 'Tonalite Boulder Chair #5'
+    when: '2017'
   - dimensions: 18.5 x 22 x 29.5 inches / 47 x 46 x 75 cm
     images:
       - file: /public/static/images/021_IMG_0049.jpg
@@ -72,16 +89,5 @@ works:
     tags:
       - tables
     title: Thermal Spray Dining Table Stainless
-    when: '2017'
-  - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
-    images:
-      - file: /public/static/images/051_IMG_8555.jpg
-      - file: /public/static/images/052_IMG_8557.jpg
-    medium: raw and polished Tonalite granite & leather
-    slug: 'Tonalite Boulder Chair #5'
-    tags:
-      - chairs
-      - ''
-    title: 'Tonalite Boulder Chair #5'
     when: '2017'
 status: Represented
