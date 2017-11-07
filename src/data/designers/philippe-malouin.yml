@@ -1,4 +1,4 @@
-slug: malouin-philippe
+slug: philippe-malouin
 title: Philippe Malouin
 bio: >-
   Philippe Malouin holds a bachelor’s degree in Design from the Design Academy
@@ -19,7 +19,8 @@ works:
     edition: Ed. of 8 + 2 AP
     hero: true
     images:
-      - file: /public/static/images/CORE.jpg
+      - file: >-
+          /public/static/images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
     medium: 'cast concrete, exposed aggregate'
     projects:
       - slug: design-miami-philippe-malouin-core
