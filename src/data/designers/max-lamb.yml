@@ -9,8 +9,18 @@ press:
   - link: 'https://google.com'
     title: NYTimes - Press Coverage of Design
 works:
-  - images:
+  - dimensions: 18.5 x 22 x 29.5 inches / 47 x 46 x 75 cm
+    images:
       - file: /public/static/images/021_IMG_0049.jpg
+      - file: /public/static/images/022_IMG_0053.jpg
+    medium: 'raw and polished Tonalite granite, leather '
+    projects: []
+    slug: 'Tonalite Boulder Chair #9'
+    tags:
+      - chairs
+      - seating
+    title: 'Tonalite Boulder Chair #9'
+    when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
       - file: >-
