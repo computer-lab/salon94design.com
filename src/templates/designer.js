@@ -7,7 +7,6 @@ import cx from 'classnames'
 import { createPanes, PageContainer } from '../layouts/containers'
 import {
   sansfont,
-  monofont,
   Header1,
   breakpoint1,
   breakpoint2,
@@ -49,7 +48,6 @@ const StatusTagWrapper = styled.div`
 `
 
 const StatusTag = styled.div`
-  composes: ${monofont};
   display: inline-block;
   padding: 5px;
   font-size: 15px;
@@ -98,7 +96,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           projects,
           smallText: (
             <Link to={workLink(currentDesigner.slug, work.slug)}>
-              {work.title}{' '}
+              {work.title}, {work.when}
             </Link>
           ),
         }),

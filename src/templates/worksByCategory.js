@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import { sansfont } from '../layouts/emotion-base'
 import ImageList from '../components/ImageList'
 import TagSelector from '../components/TagSelector'
 import WorkSummary from '../components/WorkSummary'
@@ -63,11 +63,11 @@ const WorksTemplate = ({ data, pathContext }) => {
             projects,
             smallText: (
               <div>
+                <Link to={designerLink(designer.slug)}>{designer.name}{' '}</Link>
+                - {' '}
                 <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}{' '}
+                  {work.title}, {work.when}
                 </Link>
-                – <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-                , {work.when}
               </div>
             ),
           }),

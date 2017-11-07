@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import { sansfont, monofont } from '../layouts/emotion-base'
+import { sansfont } from '../layouts/emotion-base'
 import ImageList from '../components/ImageList'
 import Video from '../components/Video'
 import HiddenSelector from '../components/HiddenSelector'
@@ -29,10 +29,12 @@ const WorkTemplate = ({ data, pathContext }) => {
   )
   const imageSets = [{ images }]
 
-  const selectorItems = works.map(work => ({
-    title: work.title,
-    link: workLink(currentDesigner.slug, work.slug),
-  }))
+  const selectorItems = works
+    .map(work => ({
+      title: `${work.title}, ${work.when}`,
+      link: workLink(currentDesigner.slug, work.slug),
+    }))
+    .sort((a, b) => a.title.localeCompare(b.title))
 
   const selectorSections = [{ items: selectorItems }]
 

@@ -19,6 +19,7 @@ const TagList = styled.ul`
   composes: ${selectorList}, ${sansfont};
   display: block;
   font-size: 16px;
+  font-weight: 100;
 
   & li {
     margin: 0;
