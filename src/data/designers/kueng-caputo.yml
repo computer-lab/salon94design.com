@@ -10,6 +10,7 @@ bio: >-
 press: []
 works:
   - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm cm
+    hero: true
     images:
       - file: >-
           /public/static/images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg

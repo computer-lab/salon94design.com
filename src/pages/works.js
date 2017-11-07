@@ -62,16 +62,8 @@ export const pageQuery = graphql`
           works {
             when
             tags
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
+            hero
+            ...baseHydratedImages
           }
         }
       }

@@ -5,16 +5,18 @@ import { choice } from './index'
 import { designerLink, projectLink, workLink } from './path'
 import { categoryTags } from './tag'
 
-export const chooseDesignerImage = designer => {
-  let image = null
-
-  const work = choice(designer.works)
-  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
-    image = work.hydratedImages[0]
+export const chooseWorksImage = works => {
+  let heroWorks = works.filter(w => w.hero)
+  if (heroWorks.length === 0) {
+    heroWorks = works
   }
+  heroWorks = heroWorks.filter(w => w.hydratedImages && w.hydratedImages.length > 0)
 
-  return image
+  const work = heroWorks[0]
+  return work ? work.hydratedImages[0] : null
 }
+
+export const chooseDesignerImage = designer => chooseWorksImage(designer.works || [])
 
 export const chooseCategoryImage = (works, tag) => {
   const tagSet = new Set(categoryTags(tag))
@@ -28,31 +30,34 @@ export const chooseCategoryImage = (works, tag) => {
     return null
   }
 
-  const work = choice(worksInCategory)
+  const heroWorks = worksInCategory.filter(w => w.hero)
+  const work =  heroWorks.length > 0 ? heroWorks[0] : choice(worksInCategory)
   const image = work.hydratedImages[0]
   return image
 }
 
 export const chooseProjectImage = (project, designers) => {
-  let image = null
+  if (project.hydratedImages && project.hydratedImages.length > 0) {
+    const heroImages = project.hydratedImages.filter(i => i.hero)
+    return heroImages.length > 0 ? heroImages[0] : project.hydratedImages[0]
+  }
 
-  const work = designers.filter(d => !!d).reduce((work, designer) => {
-    if (work || !designer.works) return work
-    const projectWorks = designer.works.filter(work => {
+  const projectWorks = designers.filter(d => !!d).reduce((works, designer) => {
+    return works.concat(designer.works.filter(work => {
       return work.projects && work.projects.find(p => p.slug === project.slug)
-    })
-    return choice(projectWorks)
-  }, null)
+    }))
+  }, [])
 
-  if (work && work.hydratedImages && work.hydratedImages.length > 0) {
-    image = work.hydratedImages[0]
+  const workImage = chooseWorksImage(projectWorks)
+  if (workImage) {
+    return workImage
   }
 
-  if (!image && designers.length > 0) {
-    image = chooseDesignerImage(designers[0])
+  if (designers.length > 0) {
+    return chooseDesignerImage(designers[0])
   }
 
-  return image
+  return null
 }
 
 export const workImageTexts = ({

@@ -12,6 +12,7 @@ press: []
 works:
   - caption: ''
     dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
+    hero: true
     images:
       - file: /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
     medium: 'french elm wood, moose antler'

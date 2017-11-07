@@ -25,6 +25,7 @@ bio: >
 press: []
 works:
   - dimensions: 21.65 x 31.5 x 31.5 inches / 55 x 80 x 80 cm
+    hero: true
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/large.jpg

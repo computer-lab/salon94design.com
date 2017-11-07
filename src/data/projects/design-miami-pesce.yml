@@ -22,6 +22,7 @@ description: >-
 images:
   - caption: Do You Still Love Me? Cabinet
     file: /public/static/images/projects/design-miami-pesce/S1xvfi3C0-/large.jpg
+    hero: true
   - caption: Horse Cabinet
     file: /public/static/images/projects/design-miami-pesce/rkZwfi3CC-/large.jpg
   - caption: Puglia Cabinet

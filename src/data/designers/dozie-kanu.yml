@@ -11,6 +11,7 @@ press:
     title: NYTimes - Press Coverage of Design
 works:
   - dimensions: 20.5 x 18 x 100 inches
+    hero: true
     images:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg

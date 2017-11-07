@@ -27,37 +27,17 @@ export const pageQuery = graphql`
     allProjectsYaml(sort: { order: DESC, fields: [groupingYear, title] }) {
       edges {
         node {
-          slug
-          title
-          type
-          description
-          when
-          groupingYear
-          designers {
-            slug
-          }
+          ...fullProjectFields
         }
       }
     }
+
     allDesignersYaml {
       edges {
         node {
           slug
           name
-          works {
-            slug
-            title
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-          }
+          ...baseWorkFields
         }
       }
     }

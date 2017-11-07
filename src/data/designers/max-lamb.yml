@@ -8,6 +8,7 @@ bio: >-
 press: []
 works:
   - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
+    hero: true
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg

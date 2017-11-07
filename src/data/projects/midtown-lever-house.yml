@@ -109,6 +109,7 @@ description: >-
   please contact t info@salon94design.com.
 images:
   - file: /public/static/images/projects/midtown-lever-house/HkXgSJ92RCb/large.jpg
+    hero: true
   - file: /public/static/images/projects/midtown-lever-house/ry3TLWAAZ/large.jpg
   - file: /public/static/images/projects/midtown-lever-house/rJx3aLbR0-/large.jpg
   - file: /public/static/images/projects/midtown-lever-house/HyH4D-CAW/large.jpg

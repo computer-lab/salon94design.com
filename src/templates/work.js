@@ -82,34 +82,7 @@ export const pageQuery = graphql`
         node {
           slug
           name
-          works {
-            slug
-            title
-            when
-            projects {
-              slug
-            }
-            tags
-            video {
-              vimeoId
-              caption
-            }
-            hydratedImages {
-              file
-              width
-              height
-              resized {
-                file
-                width
-                height
-              }
-            }
-            caption
-            price
-            medium
-            dimensions
-            edition
-          }
+          ...fullWorkFields
         }
       }
     }
