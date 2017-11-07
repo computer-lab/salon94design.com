@@ -133,9 +133,9 @@ collections:
       - name: when
         label: When
         widget: string
-      - name: groupingYear
-        label: Year for grouping / sorting
-        widget: number
+      - name: date
+        label: Start Date
+        widget: datetime
       - name: designers
         label: Designers
         widget: list
