@@ -4,7 +4,7 @@ bio: 'Born 1980, Uppsala, Sweden.'
 press: []
 works:
   - dimensions: 18.11 x 82.28 x 10.24 inches
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
@@ -23,6 +23,7 @@ works:
       vimeoId: ''
     when: '2015'
   - dimensions: 1.5 x 16.5 inches / 94 x 54.6 x 41.9 cm
+    hero: true
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-chair-090415-SkB1ch00-/large.jpg
