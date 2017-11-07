@@ -3,7 +3,10 @@ const { getDesigners, getProjects, resetDesignerFile, resetProjectFile } = requi
 
 module.exports = main
 
-const slugifyLower = str => slugify(str, { lower: true })
+const slugifyLower = str => slugify(str, {
+  lower: true,
+  remove: /[$*+~.()'"!\:@]/g
+})
 
 async function main () {
   await processProjects()
@@ -22,7 +25,7 @@ async function processProjects () {
       slug: slugifyLower(project.slug)
     })
 
-    return resetProjectFile(project, pureProject)
+    return resetProjectFile(pureProject)
   }))
 }
 
@@ -44,6 +47,6 @@ async function processDesigners () {
       }))
     })
 
-    return resetDesignerFile(designer, pureDesigner)
+    return resetDesignerFile(pureDesigner)
   }))
 }
