@@ -14,6 +14,8 @@ works:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
     medium: 'poured concrete, steel '
+    projects:
+      - slug: midtown-lever-house
     slug: bench-on-84s
     tags:
       - seating
