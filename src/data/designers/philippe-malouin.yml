@@ -14,5 +14,19 @@ bio: >-
   ‘Best Use of Material’ Award. Philippe lives and works in London, where he
   operates his design studio.
 press: []
-works: []
+works:
+  - dimensions: 137.8 H x 98.4 in dia / 3.5 m H x 2.5 m dia
+    edition: Ed. of 8 + 2 AP
+    hero: true
+    images:
+      - file: /public/static/images/CORE.jpg
+    medium: 'cast concrete, exposed aggregate'
+    projects:
+      - slug: design-miami-philippe-malouin-core
+    slug: pm-core
+    tags:
+      - outdoor
+      - ''
+    title: core
+    when: '2017'
 status: Available
