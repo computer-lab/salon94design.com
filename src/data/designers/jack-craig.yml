@@ -14,8 +14,10 @@ works:
     edition: 'Unique '
     hero: true
     images:
-      - file: /public/static/images/_MG_2911 copy.jpg
-      - file: /public/static/images/_MG_2913 copy.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/bronze-stool-BJer0Helkf/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
