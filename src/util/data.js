@@ -77,12 +77,15 @@ export const workImageTexts = ({
   work,
   designer,
   projects,
+  includeDesigner = true,
   smallText = null,
 }) => {
-  let data = [
-    <Link to={designerLink(designer.slug)}>{designer.title}</Link>,
-    <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
-  ]
+  let data = []
+  if (includeDesigner) {
+    data.push(<Link to={designerLink(designer.slug)}>{designer.title}</Link>)
+  }
+
+  data.push(<Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>)
 
   const elements = [
     work.when,
@@ -95,18 +98,26 @@ export const workImageTexts = ({
   data = data.concat(elements.filter(item => item && item.length > 0))
 
   if (projects && work.projects) {
-    data = data.concat(
-      work.projects
-        .map(workProject => {
-          const project = projects.find(p => p.slug === workProject.slug)
-          return project ? (
-            <Link to={projectLink(workProject)} key={workProject.slug}>
-              {project.title}
-            </Link>
-          ) : null
-        })
-        .filter(project => project !== null)
-    )
+    const projectLinks = work.projects
+      .filter(p => p && p.slug)
+      .map(workProject => {
+        const project = projects.find(p => p && p.slug === workProject.slug)
+        return project ? (
+          <Link to={projectLink(workProject)} key={workProject.slug}>
+            {project.title}
+          </Link>
+        ) : null
+      })
+      .filter(project => project !== null)
+
+    if (projectLinks.length > 0) {
+      const projectLabel = projectLinks.length > 1 ? 'Projects' : 'Project'
+      data.push(
+        <div>
+          {projectLabel} – {projectLinks}
+        </div>
+      )
+    }
   }
 
   return {

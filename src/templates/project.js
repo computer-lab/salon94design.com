@@ -44,10 +44,10 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const projectImages = (project.hydratedImages || [])
     .filter(i => !!i)
     .map(image =>
-    Object.assign(imageInfo(image), {
-      texts: image.caption ? { title: image.caption } : null,
-    })
-  )
+      Object.assign(imageInfo(image), {
+        texts: image.caption ? { title: image.caption } : null,
+      })
+    )
 
   const workImages = []
   designers.forEach(designer => {
@@ -133,10 +133,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
           <Header1>
             {project.title}
             <div className="subheader">
-              <ProjectDesigners
-                project={project}
-                designers={designers}
-              />
+              <ProjectDesigners project={project} designers={designers} />
               <ProjectWhen>{project.when}</ProjectWhen>
             </div>
           </Header1>

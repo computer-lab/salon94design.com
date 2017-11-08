@@ -222,7 +222,8 @@ function createWorks({ boundActionCreators, graphql }) {
 function getSlugsRegex(items) {
   const slugs = (items || [])
     .filter(item => item && item.slug)
-    .map(item => item.slug).filter(el => !!el)
+    .map(item => item.slug)
+    .filter(el => !!el)
   return slugs.length > 0 ? `/(${slugs.join('|')})/` : `/null/`
 }
 
