@@ -8,5 +8,16 @@ bio: >-
   "Samaras's almost obsessional self-observation extends past narcissism toward
   a physical understanding of himself."
 press: []
-works: []
+works:
+  - hero: true
+    images:
+      - file: /public/static/images/Salon94-Samaras-jewelry-253-2.png
+    projects:
+      - slug: gold
+    slug: bracelet 7
+    tags:
+      - jewelry
+      - ''
+    title: 'Bracelet #7'
+    when: '1996'
 status: Represented
