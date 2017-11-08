@@ -9,10 +9,13 @@ bio: >-
   a physical understanding of himself."
 press: []
 works:
-  - hero: true
+  - dimensions: 4.2 ounces
+    edition: Unique
+    hero: true
     images:
       - file: >-
           /public/static/images/works/lucas-samaras/bracelet-7-SyaHnpJ1z/large.jpg
+    medium: 22 karat gold
     projects:
       - slug: gold
     slug: bracelet-7
