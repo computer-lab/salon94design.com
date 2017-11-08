@@ -28,6 +28,10 @@ const ImageSet = styled.div`
     @media (${breakpoint1}) {
       margin-top: 30px;
     }
+
+    @media (${breakpoint3}) {
+      margin-top: 10px;
+    }
   }
 `
 
@@ -250,7 +254,7 @@ class ImageList extends Component {
       isExpanded: props.alwaysExpand ? true : false,
       hoverImage: null,
       fullscreenImageIndices: null,
-      mobileWidth: false,
+      mobileWidth: isMobileWidth(),
     }
   }
 
@@ -474,7 +478,14 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
-                let sizes = isExpanded || mobileWidth ? '' : '200px'
+                let sizes
+                if (mobileWidth) {
+                  sizes = '100vw'
+                } else if (isExpanded) {
+                  sizes = 'calc(100vw - 400px)'
+                } else {
+                  sizes = '200px'
+                }
 
                 const onMouseEnter = isExpanded
                   ? null
