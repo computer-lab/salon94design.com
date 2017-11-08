@@ -3,7 +3,6 @@ import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
-import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../components/SectionItemList'
 import { chooseDesignerImage, designerLink, byLastName } from '../util'
 
@@ -42,7 +41,7 @@ export default function Designers({ data }) {
   })
 
   return (
-    <PageContainer>
+    <div>
       <Helmet
         title={`Salon 94 Design - Designers`}
         description={`List of designers represented by Salon 94 Design.`}
@@ -50,7 +49,7 @@ export default function Designers({ data }) {
       <div>
         <SectionItemList title="Designers" sections={listSections} />
       </div>
-    </PageContainer>
+    </div>
   )
 }
 

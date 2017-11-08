@@ -5,7 +5,6 @@ import { css } from 'emotion'
 import styled from 'emotion/react'
 
 import { sansfont, childLink } from '../layouts/emotion-base'
-import { PageContainer } from '../layouts/containers'
 import ProjectDescription from '../components/ProjectDescription'
 import ProjectDesigners from '../components/ProjectDesigners'
 import { chooseProjectImage, imageInfo, projectLink } from '../util'
@@ -87,7 +86,7 @@ export default function Homepage({ data }) {
   const link = projectLink(project)
 
   return (
-    <PageContainer>
+    <div>
       <Helmet
         title={`Salon 94 Design - ${project.title}`}
         description={`${project.title} is Salon 94 Design's current exhibition`}
@@ -113,7 +112,7 @@ export default function Homepage({ data }) {
         <When>{project.when}</When>
         <ProjectDescription project={project} />
       </FeaturedWrapper>
-    </PageContainer>
+    </div>
   )
 }
 

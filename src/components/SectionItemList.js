@@ -13,11 +13,7 @@ import {
 import { imageLargePath, imageSrcSet } from '../util'
 
 const Container = styled.div`
-  padding: 0 24px 0 24px;
-
-  @media (${breakpoint3}) {
-    padding: 0;
-  }
+  padding: 0;
 `
 
 const Section = styled.div`
@@ -51,20 +47,30 @@ const List = styled.ul`
   composes: ${baseUl}, ${sansfont};
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-end;
+  justify-content: center;
+  align-items: flex-start;
   box-sizing: border-box;
-  margin-right: -48px;
+  margin-right: -44px;
+  max-width: 1600px;
+  position: relative;
+  left: 50%;
+  transform: translateX(calc(-50% + 22px));
+
+  @media (${breakpoint1}) {
+    margin-right: -20px;
+    transform: translateX(calc(-50% + 10px));
+  }
 
   @media (${breakpoint3}) {
     margin-right: 0;
+    position: static;
+    transform: none;
   }
 `
 
 const ListItem = styled.li`
-  margin: 0 44px 64px 0;
+  margin: 0 44px 44px 0;
   width: 320px;
-  height: 268px;
 
   & a {
     color: inherit;
@@ -81,7 +87,7 @@ const ListItem = styled.li`
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100%;
+    height: 268px;
     min-width: 100%;
     min-height: 100%;
     object-fit: cover;
@@ -89,14 +95,24 @@ const ListItem = styled.li`
 
   @media (${breakpoint1}) {
     width: 240px;
-    height: 200px;
-    margin: 0 20px 64px 0;
+    margin: 0 20px 44px 0;
+
+    & img {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    width: 384px;
+
+    & img {
+      height: 320px;
+    }
   }
 
   @media (${breakpoint3}) {
     margin: 0 0 32px 0;
     width: auto;
-    height: auto;
     min-width: 50%;
 
     &.full-width-mobile {
