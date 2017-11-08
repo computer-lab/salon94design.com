@@ -1,4 +1,4 @@
-hero: /public/static/images/white.png
+hero: /public/static/images/pesce image.jpg
 emails:
   - email: info@salon94design.com
     title: General Inquiries
@@ -50,6 +50,4 @@ press:
   - link: >-
       http://www.artnews.com/2017/03/02/salon-94-gallery-to-launch-design-program/
     title: Salon 94 Gallery to Launch Design Program
-images:
-  - file: /public/static/images/info/ByPHR5CCW/large.jpg
-    title: Paul Johnson & Jeanne Greenberg Rohatyn
+images: []
