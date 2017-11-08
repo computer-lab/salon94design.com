@@ -65,11 +65,12 @@ works:
   - dimensions: 80 x 84 x 18 inches / 203.2 x 213.4 x 45.7 cm
     edition: Unique
     images:
-      - file: /public/static/images/4F7A0119 copy.jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
     medium: 'polyurethane resin and steel '
     projects:
       - slug: ghost-dog
-    slug: rug wall lamp
+    slug: rug-wall-lamp
     tags:
       - lighting
       - ''
