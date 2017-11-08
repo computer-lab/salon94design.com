@@ -110,7 +110,7 @@ const Info = ({ data }) => {
     hydratedImages,
   } = allInfoYaml.edges[0].node
 
-  const formatTel = (n) => {
+  const formatTel = n => {
     return `+1${n.replace(/[\(\)\-\s]/g, '')}`
   }
 
