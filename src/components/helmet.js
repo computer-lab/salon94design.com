@@ -39,7 +39,7 @@ const Salon94Helmet = ({
     })
   }
 
-  props.links = props.links.concat([
+  props.links = (props.links || []).concat([
     { rel: 'shortcut icon', href: icons.favicon },
     { rel: 'apple-touch-icon', href: icons.appleTouch.regular },
     { rel: 'apple-touch-icon', sizes: '57x57', href: icons.appleTouch.w57 },
