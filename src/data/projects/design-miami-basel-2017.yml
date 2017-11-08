@@ -1,4 +1,4 @@
-slug: design-miami-basel-2017
+slug: Design-Miami-Basel-2017
 title: Design Miami/Basel 2017
 type: Art Fair
 when: '2017 '
@@ -10,7 +10,8 @@ description: |-
   Max Lamb – Thermal Spray Furniture
 
   Lucas Samaras – Gold Jewelry
-images: []
+images:
+  - file: /public/static/images/Screen Shot 2017-11-07 at 9.43.31 PM.png
 video:
   caption: ''
   vimeoId: ''
