@@ -3,7 +3,6 @@ import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
-import { PageContainer, createPanes } from '../layouts/containers'
 import { sansfont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
@@ -44,15 +43,15 @@ export default function Works({ data }) {
   }))
 
   return (
-    <PageContainer>
+    <div>
       <Helmet
         title={`Salon 94 Design - Works by Category`}
         description={`Filter works by tagged categories.`}
       />
       <div>
-        <SectionItemList items={listItems} fullWidthMobile={false} />
+        <SectionItemList items={listItems} />
       </div>
-    </PageContainer>
+    </div>
   )
 }
 

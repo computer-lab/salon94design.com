@@ -1,14 +1,13 @@
 import React, { Component } from 'react'
 import Helmet from '../components/helmet'
 
-import { PageContainer } from '../layouts/containers'
 import ProjectList from '../components/project-list'
 
 export default function ArtFairs({ data }) {
   const { allProjectsYaml, allDesignersYaml } = data
 
   return (
-    <PageContainer>
+    <div>
       <Helmet
         title={`Salon 94 Design - Fairs`}
         description={`List of Salon 94 Design Fairs`}
@@ -18,7 +17,7 @@ export default function ArtFairs({ data }) {
         allDesignersYaml={allDesignersYaml}
         type="Art Fair"
       />
-    </PageContainer>
+    </div>
   )
 }
 
