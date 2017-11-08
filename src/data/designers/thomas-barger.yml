@@ -61,4 +61,15 @@ works:
       - ''
     title: Aleksandr Rodchenko snack chair (with harness)
     when: '2017'
+  - hero: true
+    images:
+      - file: /public/static/images/TBar-6.jpg
+    projects:
+      - slug: ghost-dog
+    slug: Underwear Armoire 3
+    tags:
+      - storage
+      - miscellaneous
+    title: Underwear Armoire 3
+    when: '2017'
 status: Represented
