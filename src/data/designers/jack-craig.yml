@@ -10,7 +10,8 @@ bio: |-
   Master of Fine Art in 3D Design in 2012.
 press: []
 works:
-  - dimensions: ''
+  - dimensions: '22 x 24 x 16.5 in '
+    edition: 'Unique '
     hero: false
     images:
       - file: >-
@@ -21,9 +22,12 @@ works:
     slug: bronze-stool
     tags:
       - chairs
-    title: 'Bronze Stool, 2016'
+      - seating
+      - tables
+    title: Dripped Bronze Stool
     when: '2016'
-  - dimensions: '36 x 15 x 20 inches '
+  - dimensions: 36 x 15 x 20 in
+    edition: Unique
     hero: true
     images:
       - file: >-
@@ -35,6 +39,20 @@ works:
     slug: large-marble-table-lamp
     tags:
       - lighting
-    title: 'Large Marble Table Lamp, 2017'
+    title: Dripped Bronze & Marble Table Lamp
     when: '2017'
+  - dimensions: 69 x 39 x 18 in
+    edition: Unique
+    images:
+      - file: >-
+          /public/static/images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/dripped-bronze-shelf-HygF7fJe1f/large.jpg
+    medium: 'bronze, concrete'
+    slug: dripped-bronze-shelf
+    tags:
+      - storage
+      - ''
+    title: Dripped Bronze Shelf
+    when: '2015'
 status: Represented

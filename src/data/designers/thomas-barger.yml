@@ -44,6 +44,8 @@ works:
       - file: >-
           /public/static/images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects:
+      - slug: ghost-dog
     slug: aleksandr-rodchenko-snack-chair-with-harness
     tags:
       - chairs
