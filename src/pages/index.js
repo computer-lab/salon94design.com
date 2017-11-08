@@ -48,7 +48,7 @@ export default function Designers({ data }) {
         description={`List of designers represented by Salon 94 Design.`}
       />
       <div>
-        <SectionItemList title="Designers" sections={listSections} />
+        <SectionItemList sections={listSections} />
       </div>
     </PageContainer>
   )
