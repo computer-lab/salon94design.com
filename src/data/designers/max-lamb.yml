@@ -16,6 +16,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-8
     title: 'Tonalite Boulder Chair #8 '
     when: '2017'
@@ -27,6 +29,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
     medium: 'raw and polished Tonalite granite & bridle leather '
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-5
     tags:
       - chairs
@@ -56,7 +60,7 @@ works:
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design
     slug: thermal-spray-chair-stainless
     tags:
       - chairs
@@ -116,7 +120,7 @@ works:
           /public/static/images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
-      - {}
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-stool-9
     tags:
       - seating
