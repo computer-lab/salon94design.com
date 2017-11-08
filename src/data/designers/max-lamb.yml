@@ -110,12 +110,14 @@ works:
     edition: 'Initials carved on side, unique'
     hero: true
     images:
-      - file: /public/static/images/062_IMG_8568.jpg
-      - file: /public/static/images/063_IMG_8570.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-#9-rkkOKJgJM/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-#9-B1eJOYylkM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - {}
-    slug: 'Tonalite Boulder Stool #9'
+    slug: 'tonalite-boulder-stool-#9'
     tags:
       - seating
       - ''
