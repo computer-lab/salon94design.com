@@ -63,7 +63,7 @@ collections:
                 searchFields: [slug, title]
                 valueField: slug
           - name: tags
-            label: Tags
+            label: Tags — F: beds, benches, chairs, outdoor, seating, storage, tables | L: lighting | M: all other tags (miscellaneous, ceramics, fashion, etc)
             widget: list
             default: []
           - name: hero

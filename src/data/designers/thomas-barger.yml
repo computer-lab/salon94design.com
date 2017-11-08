@@ -47,7 +47,6 @@ works:
     slug: underwear-armoire-2
     tags:
       - storage
-      - ''
     title: Underwear Armoire 2
     when: '2017'
   - dimensions: 32.5 x 22 x 22 inches / 82.6 x 55.9 x 55.9 cm
@@ -58,7 +57,6 @@ works:
     slug: aleksandr-rodchenko-snack-chair-with-harness
     tags:
       - chairs
-      - ''
     title: Aleksandr Rodchenko snack chair (with harness)
     when: '2017'
   - hero: true

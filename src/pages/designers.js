@@ -32,7 +32,7 @@ export default class Designers extends Component {
           description={`List of designers represented by Salon 94 Design.`}
         />
         <div>
-          <SectionItemList title="Designers" items={listItems} />
+          <SectionItemList items={listItems} />
         </div>
       </PageContainer>
     )
