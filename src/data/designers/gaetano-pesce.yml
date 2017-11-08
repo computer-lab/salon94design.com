@@ -62,4 +62,17 @@ works:
       - ''
     title: Horse Cabinet
     when: '2006'
+  - dimensions: 80 x 84 x 18 inches / 203.2 x 213.4 x 45.7 cm
+    edition: Unique
+    images:
+      - file: /public/static/images/4F7A0119 copy.jpg
+    medium: 'polyurethane resin and steel '
+    projects:
+      - slug: ghost-dog
+    slug: rug wall lamp
+    tags:
+      - lighting
+      - ''
+    title: Rug Wall Lamp
+    when: '2017'
 status: Represented
