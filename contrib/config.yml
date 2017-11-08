@@ -15,7 +15,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug
+        label: Slug (for url - all lowercase, no spaces)
         widget: string
       - name: title
         label: Name
@@ -46,7 +46,7 @@ collections:
             label: Title
             widget: string
           - name: slug
-            label: Slug
+            label: Slug (for url - all lowercase, no spaces)
             widget: string
           - name: when
             label: Year
@@ -118,7 +118,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug
+        label: Slug (for url - all lowercase, no spaces)
         widget: string
       - name: title
         label: Title
@@ -134,7 +134,7 @@ collections:
         label: When
         widget: string
       - name: date
-        label: Start Date
+        label: Start Date (for sorting)
         widget: datetime
       - name: designers
         label: Designers
