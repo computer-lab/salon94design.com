@@ -83,10 +83,11 @@ works:
   - dimensions: 7.87 x 3.94 x 3.94 in / 20 x 10 x 10 cm
     hero: false
     images:
-      - file: /public/static/images/Screen Shot 2017-11-06 at 10.58.24 PM.png
+      - file: >-
+          /public/static/images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
     projects:
       - slug: design-miami-pesce
-    slug: mini stracci vases
+    slug: mini-stracci-vases
     tags:
       - miscellaneous
       - ''
@@ -95,9 +96,10 @@ works:
   - dimensions: 86.61 x 43.31 x 17.72 in / 220 x 110 x 45 cm
     hero: true
     images:
-      - file: /public/static/images/GAETANO_PESCE-10A.jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/do-you-still-love-me?-SJxi3Uyg1z/large.jpg
     medium: polyurethane resin and metal structure
-    slug: Do You Still Love Me?
+    slug: do-you-still-love-me?
     tags:
       - storage
       - ''
