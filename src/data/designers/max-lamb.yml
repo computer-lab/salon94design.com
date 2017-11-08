@@ -91,6 +91,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
+    projects:
+      - {}
     slug: thermal-spray-vase-copper
     tags:
       - miscellaneous
@@ -105,7 +107,7 @@ works:
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design-miami-basel-2017
     slug: thermal-spray-dining-table-stainless
     tags:
       - tables
