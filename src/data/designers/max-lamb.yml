@@ -9,13 +9,15 @@ press: []
 works:
   - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
     edition: 'Initials carved on side, unique'
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-8
     title: 'Tonalite Boulder Chair #8 '
     when: '2017'
@@ -27,6 +29,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
     medium: 'raw and polished Tonalite granite & bridle leather '
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-5
     tags:
       - chairs
@@ -34,13 +38,15 @@ works:
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 in / 47 x 46 x 75 cm
     edition: 'Initials carved on side, unique'
+    hero: true
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather '
-    projects: []
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-9
     tags:
       - chairs
@@ -55,7 +61,7 @@ works:
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design-miami-basel-2017
     slug: thermal-spray-chair-stainless
     tags:
       - chairs
@@ -85,6 +91,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
+    projects:
+      - slug: design-miami-basel-2017
     slug: thermal-spray-vase-copper
     tags:
       - miscellaneous
@@ -98,7 +106,7 @@ works:
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design-miami-basel-2017
     slug: thermal-spray-dining-table-stainless
     tags:
       - tables
@@ -108,15 +116,17 @@ works:
     edition: 'Initials carved on side, unique'
     hero: true
     images:
-      - file: /public/static/images/062_IMG_8568.jpg
-      - file: /public/static/images/063_IMG_8570.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
-      - {}
-    slug: 'Tonalite Boulder Stool #9'
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-9
     tags:
       - seating
       - ''
-    title: 'Tonalite Boulder Stool #9'
+    title: Tonalite Boulder Stool 9
     when: '2017'
 status: Represented

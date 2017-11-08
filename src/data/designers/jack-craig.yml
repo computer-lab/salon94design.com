@@ -15,7 +15,9 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
+          /public/static/images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/bronze-stool-BJer0Helkf/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -28,7 +30,7 @@ works:
     when: '2016'
   - dimensions: 36 x 15 x 20 in
     edition: Unique
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
@@ -43,6 +45,7 @@ works:
     when: '2017'
   - dimensions: 69 x 39 x 18 in
     edition: Unique
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg

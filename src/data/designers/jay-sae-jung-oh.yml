@@ -5,7 +5,7 @@ press: []
 works:
   - dimensions: 70 x 35 x 45 in
     edition: Unique
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
