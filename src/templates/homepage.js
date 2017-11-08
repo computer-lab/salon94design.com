@@ -75,7 +75,8 @@ export default function Homepage({ data }) {
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
 
-  const image = imageInfo(chooseProjectImage(project, designers))
+  const imageSelection = chooseProjectImage(project, designers)
+  const image = imageSelection ? imageInfo(imageSelection) : null
 
   const titleLabel =
     project.type === 'Exhibition' ? `Current Exhibition` : `Current Fair`
@@ -100,8 +101,8 @@ export default function Homepage({ data }) {
         <ImageWrapper>
           <Link to={link}>
             <img
-              src={image.src}
-              srcSet={image.srcSet}
+              src={image && image.src}
+              srcSet={image && image.srcSet}
               sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
             />
           </Link>
