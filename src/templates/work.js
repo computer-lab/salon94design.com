@@ -24,9 +24,9 @@ const WorkTemplate = ({ data, pathContext }) => {
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
 
-  const images = (currentWork.hydratedImages || []).filter(i => !!i).map(image =>
-    imageInfo(image)
-  )
+  const images = (currentWork.hydratedImages || [])
+    .filter(i => !!i)
+    .map(image => imageInfo(image))
   const imageSets = [{ images }]
 
   const selectorItems = works

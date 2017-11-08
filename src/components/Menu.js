@@ -5,7 +5,13 @@ import styled from 'emotion/react'
 import cx from 'classnames'
 
 import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from '../layouts/logo'
-import { baseUl, sansfont, childLink, breakpoint2, breakpoint3 } from '../layouts/emotion-base'
+import {
+  baseUl,
+  sansfont,
+  childLink,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 
 const menuBreakpoint2 = breakpoint2 // `max-width: 740px`
 const menuBreakpoint3 = breakpoint3
