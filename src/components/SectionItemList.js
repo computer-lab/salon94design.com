@@ -56,6 +56,10 @@ const List = styled.ul`
   left: 50%;
   transform: translateX(calc(-50% + 22px));
 
+  @media (max-width: 1648px) {
+    max-width: calc(100vw - 48px);
+  }
+
   @media (${breakpoint1}) {
     margin-right: -20px;
     transform: translateX(calc(-50% + 10px));
