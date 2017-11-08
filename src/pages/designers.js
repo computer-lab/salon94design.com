@@ -44,7 +44,7 @@ export default function Designers({ data }) {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design`}
+        title={`Salon 94 Design - Designers`}
         description={`List of designers represented by Salon 94 Design.`}
       />
       <div>

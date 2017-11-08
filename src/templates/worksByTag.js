@@ -13,18 +13,15 @@ import {
   workImageTexts,
   workLink,
   designerLink,
-  categoryTags,
   getAllTags,
   byLastName,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('180px')
+const { LeftPane, RightPane } = createPanes('195px')
 
 const WorksTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data
-  const { currentCategory } = pathContext
-
-  const currentTags = categoryTags(currentCategory)
+  const { category, tag } = pathContext
 
   // Technically this can be `const` but that's a lie right ;p
   let designers = allDesignersYaml.edges.map(edge => edge.node)
@@ -37,13 +34,7 @@ const WorksTemplate = ({ data, pathContext }) => {
     }
 
     let tags = (w.tags || []).concat(w.when)
-    for (let i = 0; i < currentTags.length; i++) {
-      if (tags.includes(currentTags[i])) {
-        return true
-      }
-    }
-
-    return false
+    return tags.includes(tag)
   }
 
   const tags = getAllTags(designers)
@@ -86,7 +77,7 @@ const WorksTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Works - ${currentCategory}`} />
+      <Helmet title={`Salon 94 Design - Works - ${category}`} />
       <LeftPane>
         <ImageList
           imageSets={imageSets}
@@ -94,7 +85,11 @@ const WorksTemplate = ({ data, pathContext }) => {
         />
       </LeftPane>
       <RightPane>
-        <TagSelector tags={tags} currentTag={currentCategory} />
+        <TagSelector
+          classifiedTags={tags}
+          currentCategory={category}
+          currentTag={tag}
+        />
       </RightPane>
     </PageContainer>
   )

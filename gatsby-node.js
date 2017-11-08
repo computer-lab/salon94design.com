@@ -2,7 +2,12 @@ const path = require('path')
 const util = require('util')
 const remark = require('remark')
 const html = require('remark-html')
-const { projectLink } = require('./src/util/path')
+const {
+  projectLink,
+  workTagLink,
+  categoryLink,
+  workLink,
+} = require('./src/util/path')
 const { getAllTags } = require('./src/util/tag')
 const { readdirAbsolute } = require('./transformer/data')
 const { getImageData } = require('./transformer/images')
@@ -145,7 +150,8 @@ function createDesigners({ boundActionCreators, graphql }) {
 function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
 
-  const categoryTemplate = path.resolve(`src/templates/worksByCategory.js`)
+  const categoryTemplate = path.resolve(`src/templates/workCategoryTags.js`)
+  const worksByTagTemplate = path.resolve(`src/templates/worksByTag.js`)
   const workTemplate = path.resolve(`src/templates/work.js`)
 
   return graphql(`
@@ -171,20 +177,28 @@ function createWorks({ boundActionCreators, graphql }) {
       .map(d => d.works.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
-    const tags = getAllTags(designers)
-    // create page for each category
-    tags.forEach(category => {
+    const classifiedTags = getAllTags(designers)
+    // create page for each category and tag
+    classifiedTags.forEach(({ category, tags }) => {
       createPage({
-        path: `/works/${category}`,
+        path: categoryLink(category),
         component: categoryTemplate,
-        context: { currentCategory: category },
+        context: { category },
+      })
+
+      tags.forEach(tag => {
+        createPage({
+          path: workTagLink(tag),
+          component: worksByTagTemplate,
+          context: { category, tag },
+        })
       })
     })
 
     // create page for each work
     works.forEach(work => {
       createPage({
-        path: `/designers/${work.designer.slug}/${work.slug}`,
+        path: workLink(work.designer.slug, work.slug),
         component: workTemplate,
         context: { designerSlug: work.designer.slug, workSlug: work.slug },
       })

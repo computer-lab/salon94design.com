@@ -9,6 +9,7 @@ bio: |-
 press: []
 works:
   - dimensions: 20.5 x 18 x 100 inches
+    edition: Unique
     hero: true
     images:
       - file: >-
