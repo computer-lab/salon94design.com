@@ -26,12 +26,13 @@ press: []
 works:
   - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
     edition: 'Unique '
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
     medium: 'wood, papier maché'
-    projects: []
+    projects:
+      - slug: design-miami-pesce
     slug: puglia-cabinet
     tags:
       - storage
@@ -44,6 +45,7 @@ works:
       - file: >-
           /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/large.jpg
     medium: 'papier maché, resin, and polyurethane foam'
+    projects: []
     slug: swamp-coffee-table
     tags:
       - tables
@@ -56,6 +58,8 @@ works:
       - file: >-
           /public/static/images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
     medium: 'laminated plywood, gold leaf doors'
+    projects:
+      - slug: design-miami-pesce
     slug: horse-cabinet
     tags:
       - storage
@@ -76,4 +80,27 @@ works:
       - ''
     title: Rug Wall Lamp
     when: '2017'
+  - dimensions: 7.87 x 3.94 x 3.94 in / 20 x 10 x 10 cm
+    hero: false
+    images:
+      - file: /public/static/images/Screen Shot 2017-11-06 at 10.58.24 PM.png
+    projects:
+      - slug: design-miami-pesce
+    slug: mini stracci vases
+    tags:
+      - miscellaneous
+      - ''
+    title: Mini Stracci Vases
+    when: '2015'
+  - dimensions: 86.61 x 43.31 x 17.72 in / 220 x 110 x 45 cm
+    hero: true
+    images:
+      - file: /public/static/images/GAETANO_PESCE-10A.jpg
+    medium: polyurethane resin and metal structure
+    slug: Do You Still Love Me?
+    tags:
+      - storage
+      - ''
+    title: Do You Still Love Me?
+    when: '2007'
 status: Represented
