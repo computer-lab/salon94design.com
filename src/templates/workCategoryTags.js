@@ -9,10 +9,8 @@ import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
   capitalize,
-  categories,
   getCategoryTags,
-  chooseCategoryImage,
-  categoryLink,
+  chooseTagImage,
   workTagLink,
 } from '../util'
 
@@ -26,38 +24,44 @@ const Instructions = styled.div`
   }
 `
 
-export default function Works({ data }) {
+export default function WorkCategoryTags({ data, pathContext }) {
   const { allDesignersYaml } = data
+  const { category } = pathContext
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const works = designers.reduce((items, d) => items.concat(d.works || []), [])
 
-  const listItems = categories.map(category => ({
-    title: capitalize(category),
-    image: chooseCategoryImage(designers, works, category),
-
-    // if only 1 tag, skip straight to tag page
-    link:
-      getCategoryTags(designers, category).length > 1
-        ? categoryLink(category)
-        : workTagLink(category),
+  const tags = getCategoryTags(designers, category)
+  const listItems = tags.map(tag => ({
+    title: capitalize(tag),
+    link: workTagLink(tag),
+    image: chooseTagImage(works, tag),
   }))
+
+  const title = capitalize(category)
+
+  const listSections = [
+    {
+      title: `${title} Categories`,
+      items: listItems,
+    },
+  ]
 
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - Works by Category`}
-        description={`Filter works by tagged categories.`}
+        title={`Salon 94 Design - Works by Category - ${title}`}
+        description={`Filter ${category} works by tags.`}
       />
       <div>
-        <SectionItemList items={listItems} fullWidthMobile={false} />
+        <SectionItemList sections={listSections} fullWidthMobile={false} />
       </div>
     </PageContainer>
   )
 }
 
 export const pageQuery = graphql`
-  query WorksQuery {
+  query WorksCategoryTagsQuery {
     allDesignersYaml {
       edges {
         node {

@@ -65,7 +65,6 @@ works:
     tags:
       - benches
       - seating
-      - ''
     title: 'Red Silk Bench (Frieze NY 2017) '
     when: '2016'
   - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
@@ -81,7 +80,6 @@ works:
     tags:
       - seating
       - chairs
-      - ''
     title: Red & Grey PVC Chair
     when: '2017'
 status: Represented

@@ -1,41 +1,56 @@
-// convert categories to their subcategory tags
-const categoryTags = category => {
-  if (category === 'seating') {
-    return ['seating', 'benches', 'chairs']
-  }
-
-  return [category]
-}
-
-const getAllTags = designers => {
-  const requiredTags = [
+const categoryTagMap = {
+  furniture: new Set([
+    'furniture',
     'beds',
     'benches',
-    'ceramics',
     'chairs',
-    'fashion',
-    'jewelry',
-    'lighting',
     'outdoor',
     'seating',
     'storage',
     'tables',
+  ]),
+  lighting: new Set(['lighting']),
+  miscellaneous: new Set([
+    'ceramics',
+    'fashion',
+    'jewelry',
     'textiles',
     'miscellaneous',
-  ]
+  ]),
+}
+const categories = Object.keys(categoryTagMap)
 
+const getTagCategory = tag => {
+  for (let i = 0; i < categories.length; i++) {
+    const category = categories[i]
+    if (categoryTagMap[category].has(tag)) {
+      return category
+    }
+  }
+
+  // default to last category (misc.)
+  return categories[categories.length - 1]
+}
+
+const getCategoryTags = (designers, category) => {
+  const classifiedTags = getAllTags(designers)
+  const item = classifiedTags.find(item => item.category === category)
+  return item ? item.tags : []
+}
+
+const getAllTags = designers => {
   const tagSortValue = tag => {
     // miscellaneous should always be sorted at the bottom of the list
     return tag === 'miscellaneous' ? 'zzz' : tag
   }
 
-  const tagSet = new Set(requiredTags)
+  const tagSet = new Set()
   designers.forEach(designer => {
     const works = designer.works || []
     works.forEach(work => {
       const tags = (work.tags || [])
         .filter(t => !!t)
-        .map(t => t.trim())
+        .map(t => t.trim().toLowerCase())
         .filter(t => t.length > 0)
 
       tags.forEach(t => tagSet.add(t))
@@ -46,8 +61,20 @@ const getAllTags = designers => {
     tagSortValue(a).localeCompare(tagSortValue(b))
   )
 
-  return tags
+  const classifiedTags = {}
+  tags.forEach(tag => {
+    const category = getTagCategory(tag)
+    if (!classifiedTags[category]) {
+      classifiedTags[category] = []
+    }
+
+    classifiedTags[category].push(tag)
+  })
+
+  return categories.map(category => ({
+    category,
+    tags: classifiedTags[category] || [],
+  }))
 }
 
-module.exports.categoryTags = categoryTags
-module.exports.getAllTags = getAllTags
+module.exports = { categories, getTagCategory, getCategoryTags, getAllTags }
