@@ -12,7 +12,6 @@ import {
   breakpoint2,
   breakpoint3,
 } from '../layouts/emotion-base'
-import Logo from '../layouts/logo'
 import Press from '../components/Press'
 import SimpleImageList from '../components/SimpleImageList'
 import { imageInfo, imageFilepath } from '../util'
@@ -28,6 +27,18 @@ const Container = styled.div`
 
   & a {
     color: inherit;
+  }
+`
+
+const LogoImage = styled.img`
+  display: block;
+  margin: 0 auto 60px auto;
+  width: 600px;
+  user-select: none;
+
+  @media (${breakpoint2}) {
+    margin-bottom: 20px;
+    width: 300px;
   }
 `
 
@@ -150,7 +161,7 @@ const Info = ({ data }) => {
       <Helmet title={`Salon 94 Design - Info`} />
 
       <Link to={'/'}>
-        <Logo width={600} imageUrl={imageFilepath(hero)} />
+        <LogoImage src={imageFilepath(hero)} />
       </Link>
 
       <SectionWrapper>
