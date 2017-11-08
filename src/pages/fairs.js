@@ -24,7 +24,7 @@ export default function ArtFairs({ data }) {
 
 export const pageQuery = graphql`
   query ArtFairsQuery {
-    allProjectsYaml(sort: { order: DESC, fields: [groupingYear, title] }) {
+    allProjectsYaml(sort: { order: DESC, fields: [date, title] }) {
       edges {
         node {
           ...fullProjectFields
