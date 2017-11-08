@@ -63,10 +63,11 @@ works:
     when: '2017'
   - hero: true
     images:
-      - file: /public/static/images/TBar-6.jpg
+      - file: >-
+          /public/static/images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
     projects:
       - slug: ghost-dog
-    slug: Underwear Armoire 3
+    slug: underwear-armoire-3
     tags:
       - storage
       - miscellaneous
