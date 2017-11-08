@@ -15,7 +15,7 @@ import {
 import Logo from '../layouts/logo'
 import Press from '../components/Press'
 import SimpleImageList from '../components/SimpleImageList'
-import { imageInfo } from '../util'
+import { imageInfo, imageFilepath } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -101,6 +101,7 @@ const Images = styled.div`
 const Info = ({ data }) => {
   const { allInfoYaml } = data
   const {
+    hero,
     aboutHtml,
     emails,
     phones,
@@ -149,7 +150,7 @@ const Info = ({ data }) => {
       <Helmet title={`Salon 94 Design - Info`} />
 
       <Link to={'/'}>
-        <Logo width={600} />
+        <Logo width={600} imageUrl={imageFilepath(hero)} />
       </Link>
 
       <SectionWrapper>
@@ -193,6 +194,7 @@ export const pageQuery = graphql`
     allInfoYaml {
       edges {
         node {
+          hero
           aboutHtml
           emails {
             title
