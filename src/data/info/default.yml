@@ -1,8 +1,12 @@
-email: info@salon94design.com
+emails:
+  - email: info@salon94design.com
+    title: General Inquiries
 social:
   - link: 'https://www.instagram.com/salon94design'
     title: Instagram
-phone: (646) 672-9212
+phones:
+  - number: (646) 672-9212
+    title: Office
 mailingList: 'http://eepurl.com/b_K5f'
 aboutText: >-
   Salon 94 Design was established in 2017 by Jeanne Greenberg Rohatyn and Paul

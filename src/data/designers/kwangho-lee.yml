@@ -22,6 +22,7 @@ works:
     price: ''
     projects:
       - slug: woven-furniture
+      - slug: midtown-lever-house
     slug: silk-bench-1
     tags:
       - benches
@@ -56,7 +57,7 @@ works:
     title: Small PVC Bench
     when: '2006'
   - caption: Frieze NY
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
@@ -64,22 +65,21 @@ works:
     tags:
       - benches
       - seating
-      - ''
-    title: 'Red Silk Bench '
+    title: 'Red Silk Bench (Frieze NY 2017) '
     when: '2016'
   - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
     edition: Unique
+    hero: true
     images:
       - file: >-
           /public/static/images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
     medium: PVC tubing
     projects:
       - slug: ghost-dog
-    slug: kwangholeechair
+    slug: red-and-grey-pvc-chair
     tags:
       - seating
       - chairs
-      - ''
-    title: Chair
+    title: Red & Grey PVC Chair
     when: '2017'
 status: Represented
