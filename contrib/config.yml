@@ -181,6 +181,9 @@ collections:
     create: false
     format: yaml
     fields:
+      - name: hero
+        label: Hero Image
+        widget: image
       - name: emails
         label: Emails
         widget: list
