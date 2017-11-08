@@ -12,7 +12,7 @@ press: []
 works:
   - dimensions: '22 x 24 x 16.5 in '
     edition: 'Unique '
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
@@ -45,6 +45,7 @@ works:
     when: '2017'
   - dimensions: 69 x 39 x 18 in
     edition: Unique
+    hero: true
     images:
       - file: >-
           /public/static/images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
