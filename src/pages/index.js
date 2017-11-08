@@ -107,7 +107,7 @@ export const pageQuery = graphql`
     type
     description
     when
-    groupingYear
+    date
     designers {
       slug
     }
