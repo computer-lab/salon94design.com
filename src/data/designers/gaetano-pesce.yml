@@ -24,18 +24,21 @@ bio: >
   design.
 press: []
 works:
-  - dimensions: 21.65 x 31.5 x 31.5 inches / 55 x 80 x 80 cm
+  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
+    edition: 'Unique '
     hero: true
     images:
-      - file: >-
-          /public/static/images/works/gaetano-pesce/tree-vase-SysIzPqR-/large.jpg
-    medium: polyurethane resin and papier maché
+      - file: /public/static/images/puglia.png
+    medium: 'wood, papier maché'
     projects: []
-    slug: tree-vase
-    title: 'Tree Vase, 2017'
-    when: '2017'
+    slug: puglia cabinet
+    tags:
+      - storage
+      - ''
+    title: Puglia Cabinet
+    when: '2007'
   - dimensions: 18.5 x 51.8 x 36.22 inches / 47 x 130 x 92 cm
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/large.jpg
@@ -46,4 +49,15 @@ works:
       - ''
     title: 'Swamp Coffee Table, 2015'
     when: '2015'
+  - dimensions: 81.89 x 39.37 x 13.78 in / 208 x 100 x 35 cm
+    edition: Unique
+    images:
+      - file: /public/static/images/GAETANO_PESCE-2A.jpg
+    medium: 'laminated plywood, gold leaf doors'
+    slug: horse cabinet
+    tags:
+      - storage
+      - ''
+    title: Horse Cabinet
+    when: '2006'
 status: Represented
