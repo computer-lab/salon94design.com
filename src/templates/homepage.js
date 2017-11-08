@@ -28,6 +28,10 @@ const ProjectTitle = styled.h2`
   font-size: 28px;
   text-align: center;
 
+  & .light {
+    font-weight: 100;
+  }
+
   @media (${homepageBreakpoint1}) {
     font-size: 24px;
   }
@@ -38,8 +42,13 @@ const ImageWrapper = styled.div`
 
   & img {
     max-width: 100%;
+    max-height: 70vh;
     user-select: none;
     margin-bottom: 20px;
+
+    @media (max-height: 600px) {
+      max-height: 420px;
+    }
   }
 `
 
@@ -85,7 +94,7 @@ export default function Homepage({ data }) {
       <FeaturedWrapper>
         <ProjectTitle>
           <Link to={link}>
-            {titleLabel} – {project.title}
+            <span className="light">{titleLabel} –</span> {project.title}
           </Link>
         </ProjectTitle>
         <ImageWrapper>
