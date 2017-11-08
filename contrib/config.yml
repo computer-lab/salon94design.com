@@ -15,7 +15,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug (for url - all lowercase, no spaces)
+        label: Slug (for url - all lowercase, no spaces or special characters)
         widget: string
       - name: title
         label: Name
@@ -46,7 +46,7 @@ collections:
             label: Title
             widget: string
           - name: slug
-            label: Slug (for url - all lowercase, no spaces)
+            label: Slug (for url - all lowercase, no spaces or special characters)
             widget: string
           - name: when
             label: Year
@@ -71,7 +71,7 @@ collections:
             widget: boolean
             default: false
           - name: images
-            label: Images
+            label: Images (filename all lowercase, no spaces or special characters)
             widget: list
             default: []
             fields:
@@ -118,7 +118,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug (for url - all lowercase, no spaces)
+        label: Slug (for url - all lowercase, no spaces or special characters)
         widget: string
       - name: title
         label: Title
@@ -151,7 +151,7 @@ collections:
         label: Description
         widget: markdown
       - name: images
-        label: Images
+        label: Images (filename all lowercase, no spaces or special characters)
         widget: list
         default: []
         fields:
@@ -219,7 +219,7 @@ collections:
             label: PDF
             widget: file
       - name: images
-        label: Images
+        label: Images (filename all lowercase, no spaces or special characters)
         widget: list
         default: []
         fields:
@@ -236,5 +236,5 @@ collections:
     format: yaml
     fields:
       - name: splashImage
-        label: Splash Image
+        label: Splash Image (filename all lowercase, no spaces or special characters)
         widget: image
