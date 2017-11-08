@@ -18,9 +18,9 @@ const Salon94Helmet = ({
   description,
   location,
   meta = [],
-  links = [],
+  link = [],
 }) => {
-  const props = { meta, links }
+  const props = { meta, link }
 
   if (title && title.length > 0) {
     props.meta.push({ name: 'og:title', content: title })
@@ -39,7 +39,7 @@ const Salon94Helmet = ({
     })
   }
 
-  props.links = (props.links || []).concat([
+  props.link = (props.link || []).concat([
     { rel: 'shortcut icon', href: icons.favicon },
     { rel: 'apple-touch-icon', href: icons.appleTouch.regular },
     { rel: 'apple-touch-icon', sizes: '57x57', href: icons.appleTouch.w57 },
