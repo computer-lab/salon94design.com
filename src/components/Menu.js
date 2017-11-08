@@ -106,7 +106,7 @@ const NavItem = styled.li`
 
 const Menu = ({ location }) => {
   let navItems = [
-    { name: 'Designers', path: '/', activePath: '/designers' },
+    { name: 'Designers', path: '/designers' },
     { name: 'Exhibitions', path: '/exhibitions' },
     { name: 'Works', path: '/works' },
     { name: 'Fairs', path: '/fairs' },
