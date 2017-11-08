@@ -45,7 +45,8 @@ works:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather '
-    projects: []
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-9
     tags:
       - chairs
