@@ -94,4 +94,19 @@ works:
       - ''
     title: Do You Still Love Me?
     when: '2007'
+  - dimensions: 37.4 x 61.02 x 61.02 in / 95 x 155 x 155 cm
+    edition: Unique
+    images:
+      - file: /public/static/images/4F7A8184 copy.jpg
+    medium: Polyurethane resin and steel
+    projects:
+      - slug: ghost-dog
+    slug: rug-lamp
+    tags:
+      - lighting
+    title: Rug Lamp
+    video:
+      caption: ''
+      vimeoId: ''
+    when: '2017'
 status: Represented
