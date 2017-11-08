@@ -131,8 +131,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
   )
     .sort((a, b) => Date.parse(b) - Date.parse(a)) // sort reverse-chronologically
     .map(date => {
-      const dateYear = function (date) {
-        return (new Date(date)).getFullYear()
+      const dateYear = function(date) {
+        return new Date(date).getFullYear()
       }
       const year = dateYear(date)
       return {
