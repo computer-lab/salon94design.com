@@ -11,10 +11,11 @@ press: []
 works:
   - hero: true
     images:
-      - file: /public/static/images/Salon94-Samaras-jewelry-253-2.png
+      - file: >-
+          /public/static/images/works/lucas-samaras/bracelet-7-SyaHnpJ1z/large.jpg
     projects:
       - slug: gold
-    slug: bracelet 7
+    slug: bracelet-7
     tags:
       - jewelry
       - ''
