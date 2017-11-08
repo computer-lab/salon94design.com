@@ -10,8 +10,8 @@ export default function ArtFairs({ data }) {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - Art Fairs`}
-        description={`List of Salon 94 Design Art Fairs`}
+        title={`Salon 94 Design - Fairs`}
+        description={`List of Salon 94 Design Fairs`}
       />
       <ProjectList
         allProjectsYaml={allProjectsYaml}
@@ -24,10 +24,10 @@ export default function ArtFairs({ data }) {
 
 export const pageQuery = graphql`
   query ArtFairsQuery {
-    allProjectsYaml(sort: { order: DESC, fields: [groupingYear, title] }) {
+    allProjectsYaml(sort: { order: DESC, fields: [date, title] }) {
       edges {
         node {
-          ...fullProjectFields
+          ...projectListFields
         }
       }
     }
@@ -35,7 +35,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...baseWorkFields
         }
       }

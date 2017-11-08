@@ -102,13 +102,17 @@ const Info = ({ data }) => {
   const { allInfoYaml } = data
   const {
     aboutHtml,
-    email,
-    phone,
+    emails,
+    phones,
     social,
     mailingList,
     press,
     hydratedImages,
   } = allInfoYaml.edges[0].node
+
+  const formatTel = n => {
+    return `+1${n.replace(/[\(\)\-\s]/g, '')}`
+  }
 
   const images = (hydratedImages || []).map(image =>
     Object.assign({}, image, imageInfo(image))
@@ -118,6 +122,24 @@ const Info = ({ data }) => {
     <SectionListItem key={item.link}>
       <a href={item.link} target="_blank">
         {item.title}
+      </a>
+    </SectionListItem>
+  ))
+
+  const emailLinks = emails.map(item => (
+    <SectionListItem key={item.email}>
+      {item.title}:{' '}
+      <a href={`mailto:${item.email}`} target="_blank">
+        {item.email}
+      </a>
+    </SectionListItem>
+  ))
+
+  const phoneLinks = phones.map(item => (
+    <SectionListItem key={item.number}>
+      {item.title}:{' '}
+      <a href={`tel:${formatTel(item.number)}`} target="_blank">
+        {item.number}
       </a>
     </SectionListItem>
   ))
@@ -144,18 +166,8 @@ const Info = ({ data }) => {
           <Header2>Contact</Header2>
           <SectionList>
             {socialLinks}
-            <SectionListItem>
-              Phone:{' '}
-              <a href={`tel:${phone}`} target="_blank">
-                {phone}
-              </a>
-            </SectionListItem>
-            <SectionListItem>
-              Email:{' '}
-              <a href={`mailto:${email}`} target="_blank">
-                {email}
-              </a>
-            </SectionListItem>
+            {phoneLinks}
+            {emailLinks}
           </SectionList>
           <MailingListSignup>
             <a href={mailingList} target="_blank">
@@ -182,8 +194,14 @@ export const pageQuery = graphql`
       edges {
         node {
           aboutHtml
-          email
-          phone
+          emails {
+            title
+            email
+          }
+          phones {
+            title
+            number
+          }
           social {
             title
             link

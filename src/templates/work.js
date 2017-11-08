@@ -24,9 +24,9 @@ const WorkTemplate = ({ data, pathContext }) => {
     ? allProjectsYaml.edges.map(edge => edge.node)
     : []
 
-  const images = (currentWork.hydratedImages || []).map(image =>
-    imageInfo(image)
-  )
+  const images = (currentWork.hydratedImages || [])
+    .filter(i => !!i)
+    .map(image => imageInfo(image))
   const imageSets = [{ images }]
 
   const selectorItems = works
@@ -41,7 +41,7 @@ const WorkTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`Salon 94 Design - ${currentWork.title}, ${designer.name}`}
+        title={`Salon 94 Design - ${currentWork.title}, ${designer.title}`}
       />
       <LeftPane>
         {currentWork.video && <Video video={currentWork.video} />}
@@ -55,7 +55,7 @@ const WorkTemplate = ({ data, pathContext }) => {
           detailed={true}
         />
         <HiddenSelector
-          title={`All Works by ${designer.name}`}
+          title={`All Works by ${designer.title}`}
           sections={selectorSections}
           currentItemLink={workLink(designer.slug, currentWork.slug)}
         />
@@ -73,7 +73,7 @@ export const pageQuery = graphql`
     }
     designer: designersYaml(slug: { eq: $designerSlug }) {
       slug
-      name
+      title
       ...fullWorkFields
     }
   }

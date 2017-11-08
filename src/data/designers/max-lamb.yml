@@ -1,5 +1,5 @@
 slug: max-lamb
-name: Max Lamb
+title: Max Lamb
 bio: >-
   Max Lamb is a British designer who combines traditional - if not prehistoric -
   design methods with digital design. He is known for employing highly unusual
@@ -8,57 +8,67 @@ bio: >-
 press: []
 works:
   - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
-    hero: true
+    edition: 'Initials carved on side, unique'
+    hero: false
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-8
     title: 'Tonalite Boulder Chair #8 '
     when: '2017'
   - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
+    edition: 'Initials carved on side, unique'
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
-    medium: raw and polished Tonalite granite & leather
+    medium: 'raw and polished Tonalite granite & bridle leather '
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-5
     tags:
       - chairs
-      - ''
     title: 'Tonalite Boulder Chair #5'
     when: '2017'
-  - dimensions: 18.5 x 22 x 29.5 inches / 47 x 46 x 75 cm
+  - dimensions: 18.5 x 22 x 29.5 in / 47 x 46 x 75 cm
+    edition: 'Initials carved on side, unique'
+    hero: true
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
-    medium: 'raw and polished Tonalite granite, leather '
-    projects: []
+    medium: 'raw and polished Tonalite granite, bridle leather '
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-9
     tags:
       - chairs
       - seating
     title: 'Tonalite Boulder Chair #9'
     when: '2017'
-  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
+  - dimensions: 38.78 x 12.6 x 18.9 in / 98.5 x 32 x 48 cm
+    edition: Unique
     images:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design-miami-basel-2017
     slug: thermal-spray-chair-stainless
     tags:
       - chairs
     title: Thermal Spray Chair Stainless
     when: '2017'
-  - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
+  - dimensions: 64.17 x 52.36 x 17.72 in / 163 x 133 x 45 cm
+    edition: Unique
     images:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
@@ -74,29 +84,49 @@ works:
     title: Thermal Spray Shelf Bronze
     when: '2017'
   - dimensions: 20.08 x 18.11 x 11.81 inches / 51 x 46 x 30 cm
+    edition: Unique
     images:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
+    projects:
+      - slug: design-miami-basel-2017
     slug: thermal-spray-vase-copper
     tags:
       - miscellaneous
-      - ''
     title: 'Thermal Spray Vase Copper '
     when: '2017'
-  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+  - dimensions: 29.13 x 83.46 x 52.36 in / 74 x 212 x 133 cm
+    edition: Unique
     images:
       - file: >-
           /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
     medium: Polystyrene and stainless steel
     price: ''
     projects:
-      - slug: thermal-spray-furniture
+      - slug: design-miami-basel-2017
     slug: thermal-spray-dining-table-stainless
     tags:
       - tables
     title: Thermal Spray Dining Table Stainless
+    when: '2017'
+  - dimensions: 26.8 x 14.6 x 15.7 in / 68 x 37 x 40 cm
+    edition: 'Initials carved on side, unique'
+    hero: true
+    images:
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-9
+    tags:
+      - seating
+      - ''
+    title: Tonalite Boulder Stool 9
     when: '2017'
 status: Represented

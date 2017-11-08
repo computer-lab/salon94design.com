@@ -1,5 +1,5 @@
 slug: rick-owens
-name: Rick Owens
+title: Rick Owens
 bio: >-
   Born in 1961 in California, Rick Owens founded his own fashion label in 1994.
   In 2002 he won the Council of Fashion Designers of America Perry Ellis
@@ -22,7 +22,6 @@ works:
     tags:
       - seating
       - chairs
-      - ''
     title: Stag Stool
     when: '2015'
   - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '

@@ -13,18 +13,15 @@ import {
   workImageTexts,
   workLink,
   designerLink,
-  categoryTags,
   getAllTags,
   byLastName,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('180px')
+const { LeftPane, RightPane } = createPanes('195px')
 
 const WorksTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data
-  const { currentCategory } = pathContext
-
-  const currentTags = categoryTags(currentCategory)
+  const { category, tag } = pathContext
 
   // Technically this can be `const` but that's a lie right ;p
   let designers = allDesignersYaml.edges.map(edge => edge.node)
@@ -33,6 +30,7 @@ const WorksTemplate = ({ data, pathContext }) => {
   const projects = allProjectsYaml.edges.map(edge => edge.node)
   const getWorkProjects = work => {
     return (work.projects || [])
+      .filter(item => item && item.slug)
       .map(({ slug }) => projects.find(p => p.slug === slug))
       .filter(item => !!item)
   }
@@ -43,13 +41,7 @@ const WorksTemplate = ({ data, pathContext }) => {
     }
 
     let tags = (w.tags || []).concat(w.when)
-    for (let i = 0; i < currentTags.length; i++) {
-      if (tags.includes(currentTags[i])) {
-        return true
-      }
-    }
-
-    return false
+    return tags.includes(tag)
   }
 
   const tags = getAllTags(designers)
@@ -58,26 +50,29 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.forEach(designer => {
     const works = (designer.works || []).filter(filterWork)
     works.forEach(work => {
-      const image = work.hydratedImages[0]
-      images.push(
-        Object.assign(imageInfo(image), {
-          work,
-          designer,
-          texts: workImageTexts({
-            designer,
+      const image = work.hydratedImages.length > 0 && work.hydratedImages[0]
+      if (image) {
+        images.push(
+          Object.assign(imageInfo(image), {
             work,
-            projects: getWorkProjects(work),
-            smallText: (
-              <div>
-                <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}, {work.when}{' '}
-                </Link>
-                - <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-              </div>
-            ),
-          }),
-        })
-      )
+            designer,
+            texts: workImageTexts({
+              designer,
+              work,
+              projects: getWorkProjects(work),
+              smallText: (
+                <div>
+                  <Link to={workLink(designer.slug, work.slug)}>
+                    {work.title}, {work.when}{' '}
+                  </Link>
+                  -{' '}
+                  <Link to={designerLink(designer.slug)}>{designer.title}</Link>
+                </div>
+              ),
+            }),
+          })
+        )
+      }
     })
   })
 
@@ -89,7 +84,7 @@ const WorksTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Works - ${currentCategory}`} />
+      <Helmet title={`Salon 94 Design - Works - ${category}`} />
       <LeftPane>
         <ImageList
           imageSets={imageSets}
@@ -97,7 +92,11 @@ const WorksTemplate = ({ data, pathContext }) => {
         />
       </LeftPane>
       <RightPane>
-        <TagSelector tags={tags} currentTag={currentCategory} />
+        <TagSelector
+          classifiedTags={tags}
+          currentCategory={category}
+          currentTag={tag}
+        />
       </RightPane>
     </PageContainer>
   )
@@ -114,7 +113,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...fullWorkFields
         }
       }

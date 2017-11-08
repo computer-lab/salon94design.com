@@ -5,18 +5,28 @@ import styled from 'emotion/react'
 import cx from 'classnames'
 
 import { LOGO_ASPECT_RATIO, getLogoHeight, logoImageUrl } from '../layouts/logo'
-import { baseUl, sansfont, childLink } from '../layouts/emotion-base'
+import {
+  baseUl,
+  sansfont,
+  childLink,
+  breakpoint2,
+  breakpoint3,
+} from '../layouts/emotion-base'
 
-const menuBreakpoint1 = `max-width: 740px`
-const menuBreakpoint3 = `max-width: 520px`
+const menuBreakpoint2 = breakpoint2 // `max-width: 740px`
+const menuBreakpoint3 = breakpoint3
 
 const Wrapper = styled.div`
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 72px;
+  height: 84px;
   background: #fff;
+
+  @media (${menuBreakpoint2}) {
+    height: 72px;
+  }
 `
 
 const Logo = styled.div`
@@ -25,13 +35,14 @@ const Logo = styled.div`
   left: 28px;
   background-image: url(${logoImageUrl});
   background-size: 100% 100%;
-  width: 136px;
-  height: ${getLogoHeight(136)}px;
+  width: 150px;
+  height: ${getLogoHeight(150)}px;
   transform: translateY(-50%);
 
-  @media (${menuBreakpoint1}) {
-    width: 120px;
-    height: ${getLogoHeight(120)}px;
+  @media (${menuBreakpoint2}) {
+    left: 12px;
+    width: 100px;
+    height: ${getLogoHeight(100)}px;
   }
 
   @media (${menuBreakpoint3}) {
@@ -47,14 +58,15 @@ const Nav = styled.ul`
   composes: ${baseUl} ${sansfont};
   position: absolute;
   right: 40px;
-  top: 46%;
+  top: 50%;
   display: flex;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 300;
+  line-height: 1;
   color: #000;
   transform: translateY(-50%);
 
-  @media (${menuBreakpoint1}) {
+  @media (${menuBreakpoint2}) {
     right: 24px;
     font-size: 18px;
   }
@@ -62,10 +74,9 @@ const Nav = styled.ul`
   @media (${menuBreakpoint3}) {
     right: auto;
     left: 50%;
-    top: 42px;
+    top: 48px;
     transform: translateX(-50%);
     font-size: 16px;
-    padding-right: 30px;
   }
 `
 
@@ -77,9 +88,9 @@ const NavItem = styled.li`
   flex-shrink: 0;
 
   &:not(:first-child) {
-    margin-left: 25px;
+    margin-left: 24px;
 
-    @media (${menuBreakpoint1}) {
+    @media (${menuBreakpoint2}) {
       margin-left: 15px;
     }
 
@@ -95,10 +106,10 @@ const NavItem = styled.li`
 
 const Menu = ({ location }) => {
   let navItems = [
-    { name: 'Designers', path: '/', activePath: '/designers' },
+    { name: 'Designers', path: '/designers' },
     { name: 'Exhibitions', path: '/exhibitions' },
     { name: 'Works', path: '/works' },
-    { name: 'Art Fairs', path: '/art-fairs' },
+    { name: 'Fairs', path: '/fairs' },
     { name: 'Info', path: '/info' },
   ].map(item => {
     const active =

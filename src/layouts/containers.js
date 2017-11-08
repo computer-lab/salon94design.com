@@ -8,7 +8,7 @@ export const ContentContainer = styled.div`
   box-sizing: border-box;
 
   @media (${breakpoint2}) {
-    padding: 96px 24px 24px 24px;
+    padding: 84px 24px 24px 24px;
   }
 `
 
@@ -20,7 +20,7 @@ export const PageContainer = styled.div`
   }
 `
 
-export const createPanes = (rightPaneWidth = '360px') => {
+export const createPanes = (rightPaneWidth = '420px') => {
   const LeftPane = styled.div`
     width: calc(100% - ${rightPaneWidth});
     height: 100%;
@@ -35,11 +35,11 @@ export const createPanes = (rightPaneWidth = '360px') => {
   const RightPane = styled.div`
     width: ${rightPaneWidth};
     position: fixed;
-    top: 72px;
+    top: 84px;
     right: 24px;
-    max-height: calc(100vh - 72px);
+    max-height: calc(100vh - 84px);
     overflow-y: auto;
-    padding-top: 36px;
+    padding: 0 10px 0 0;
 
     @media (${breakpoint1}) {
       position: static;
@@ -47,8 +47,7 @@ export const createPanes = (rightPaneWidth = '360px') => {
       right: auto;
       max-height: none;
       order: -1;
-      padding-bottom: 0;
-      padding-top: 0;
+      padding: 0;
 
       &.selectable {
         margin-right: 24px;
