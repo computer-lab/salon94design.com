@@ -17,7 +17,8 @@ works:
           /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
-    projects: []
+    projects:
+      - slug: ghost-dog
     slug: underwear-armoire
     tags:
       - storage
@@ -30,7 +31,8 @@ works:
       - file: >-
           /public/static/images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
     medium: 'paper pulp, carpet '
-    projects: []
+    projects:
+      - slug: midtown-lever-house
     slug: sorting-laundry-for-a-family-of-5
     tags:
       - storage
@@ -42,6 +44,8 @@ works:
       - file: >-
           /public/static/images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects:
+      - slug: ghost-dog
     slug: aleksandr-rodchenko-snack-chair-with-harness
     tags:
       - chairs
@@ -52,7 +56,8 @@ works:
     images:
       - file: >-
           /public/static/images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
-    projects: []
+    projects:
+      - slug: ghost-dog
     slug: underwear-armoire-3
     tags:
       - storage
