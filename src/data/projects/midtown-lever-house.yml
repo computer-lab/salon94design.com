@@ -2,11 +2,15 @@ slug: midtown-lever-house
 title: Midtown Lever House
 type: Exhibition
 when: 'May 03, 2017–June 09, 2017'
-groupingYear: '2017'
+date: '2017-05-03T00:00:00'
 designers:
   - slug: anton-alvarez
   - slug: kwangho-lee
   - slug: jay-sae-jung-oh
+  - slug: thomas-barger
+  - slug: dozie-kanu
+  - slug: max-lamb
+  - slug: gaetano-pesce
 description: >-
   Maccarone, Salon 94 Design, and Salon 94 are pleased to announce their
   exhibition _MIDTOWN_, which will take place from May 3-June 9, 2017, at the
@@ -108,7 +112,7 @@ description: >-
   Kung at victoria.kung@suttonpr.com. For all other inquiries about _MIDTOWN_,
   please contact  info@salon94design.com.
 images:
-  - file: /public/static/images/projects/midtown-lever-house/HkXgSJ92RCb/large.jpg
+  - file: /public/static/images/projects/midtown-lever-house/BkWjgARJkz/large.jpg
     hero: true
   - file: /public/static/images/projects/midtown-lever-house/ry3TLWAAZ/large.jpg
   - file: /public/static/images/projects/midtown-lever-house/rJx3aLbR0-/large.jpg
