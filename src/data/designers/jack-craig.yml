@@ -43,6 +43,9 @@ works:
     when: '2017'
   - dimensions: 69 x 39 x 18 in
     edition: Unique
+    images:
+      - file: /public/static/images/_MG_2946 copy.jpg
+      - file: /public/static/images/_MG_2949 copy.jpg
     medium: 'bronze, concrete'
     slug: dripped bronze shelf
     tags:
