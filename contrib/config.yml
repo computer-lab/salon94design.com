@@ -254,3 +254,9 @@ collections:
       - name: splashImage
         label: Splash Image (filename all lowercase, no spaces or special characters)
         widget: image
+      - name: featuredProjectSlug
+        label: Featured Exhibition
+        widget: relation
+        collection: project
+        searchFields: [slug, title]
+        valueField: slug

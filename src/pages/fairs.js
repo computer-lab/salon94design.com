@@ -27,7 +27,7 @@ export const pageQuery = graphql`
     allProjectsYaml(sort: { order: DESC, fields: [date, title] }) {
       edges {
         node {
-          ...fullProjectFields
+          ...projectListFields
         }
       }
     }

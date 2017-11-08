@@ -26,7 +26,7 @@ import {
   workLink,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('370px')
+const { LeftPane, RightPane } = createPanes()
 
 const WorksHeader = styled.h2`
   composes: ${sansfont};
@@ -170,7 +170,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           hoverImageRenderer={hoverImageRenderer}
         />
       </LeftPane>
-      <RightPane className="selectable">
+      <RightPane>
         <Header1>{currentDesigner.title}</Header1>
         <DesignerBio bioHtml={currentDesigner.bioHtml} />
         <DesignerProjects projects={projects} />
