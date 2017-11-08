@@ -12,6 +12,7 @@ const Container = styled.div`
   left: 0;
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
   background-color: #fff;
   display: none;
   opacity: 0;
@@ -32,11 +33,6 @@ const Content = styled.div`
   cursor: pointer;
 `
 
-const SplashImage = styled.img`
-  margin: 0;
-  max-height: 75vh;
-`
-
 const Logo = styled.div`
   margin: 24px auto 36px auto;
   background-image: url(${logoImageUrl});
@@ -48,6 +44,21 @@ const Logo = styled.div`
     margin-top: 16px;
     width: 160px;
     height: ${getLogoHeight(160)}px;
+  }
+`
+
+const SplashImage = styled.img`
+  margin: 0;
+  padding-bottom: 24px;
+  box-sizing: border-box;
+  max-height: calc(100vh - 84px - ${getLogoHeight(280)}px);
+
+  @media (max-height: 600px) {
+    max-height: 400px;
+  }
+
+  @media (${breakpoint3}) {
+    max-height: none;
   }
 `
 
