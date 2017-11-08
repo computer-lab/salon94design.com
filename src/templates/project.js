@@ -34,15 +34,14 @@ const ProjectWhen = styled.div`
 `
 
 const ProjectTemplate = ({ data, pathContext }) => {
-  const { allProjectsYaml, allDesignersYaml } = data
-  const { slug: currentProjectSlug } = pathContext
+  const { project, allProjectsYaml, allDesignersYaml } = data
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
-  const currentProject = projects.find(p => p.slug === currentProjectSlug)
+  const designers = allDesignersYaml
+    ? allDesignersYaml.edges.map(edge => edge.node)
+    : []
 
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
-
-  const projectImages = (currentProject.hydratedImages || [])
+  const projectImages = (project.hydratedImages || [])
     .filter(i => !!i)
     .map(image =>
       Object.assign(imageInfo(image), {
@@ -55,31 +54,28 @@ const ProjectTemplate = ({ data, pathContext }) => {
     const works = (designer.works || []).filter(
       work =>
         work.projects &&
-        work.projects.map(project => project.slug).includes(currentProjectSlug)
-    )
-
-    works.forEach(work => {
-      if (
+        work.projects.map(project => project.slug).includes(project.slug) &&
         work.hydratedImages &&
         work.hydratedImages.length > 0 &&
         work.hydratedImages[0]
-      ) {
-        workImages.push(
-          Object.assign(imageInfo(work.hydratedImages[0]), {
+    )
+
+    works.forEach(work => {
+      workImages.push(
+        Object.assign(imageInfo(work.hydratedImages[0]), {
+          work,
+          designer,
+          texts: workImageTexts({
             work,
             designer,
-            texts: workImageTexts({
-              work,
-              designer,
-              smallText: (
-                <Link to={workLink(designer.slug, work.slug)}>
-                  {work.title}, {work.when}
-                </Link>
-              ),
-            }),
-          })
-        )
-      }
+            smallText: (
+              <Link to={workLink(designer.slug, work.slug)}>
+                {work.title}, {work.when}
+              </Link>
+            ),
+          }),
+        })
+      )
     })
   })
 
@@ -88,10 +84,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
     { images: workImages, title: 'Included Works' },
   ].filter(item => item.images.length > 0)
 
-  const typeTitle = `${currentProject.type}s`
-  const currentTypeProjects = projects.filter(
-    p => p.type === currentProject.type
-  )
+  const typeTitle = `${project.type}s`
+  const currentTypeProjects = projects.filter(p => p.type === project.type)
 
   const projectsByYear = Array.from(
     new Set(currentTypeProjects.map(p => p.date))
@@ -124,11 +118,11 @@ const ProjectTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`${currentProject.title} - Salon 94 Design`}
-        description={currentProject.description}
+        title={`${project.title} - Salon 94 Design`}
+        description={project.description}
       />
       <LeftPane>
-        {currentProject.video && <Video video={currentProject.video} />}
+        {project.video && <Video video={project.video} />}
         <ImageList
           imageSets={imageSets}
           hoverImageRenderer={hoverImageRenderer}
@@ -137,16 +131,13 @@ const ProjectTemplate = ({ data, pathContext }) => {
       <RightPane>
         <ProjectHeader>
           <Header1>
-            {currentProject.title}
+            {project.title}
             <div className="subheader">
-              <ProjectDesigners
-                project={currentProject}
-                designers={designers}
-              />
-              <ProjectWhen>{currentProject.when}</ProjectWhen>
+              <ProjectDesigners project={project} designers={designers} />
+              <ProjectWhen>{project.when}</ProjectWhen>
             </div>
           </Header1>
-          <ProjectDescription project={currentProject} />
+          <ProjectDescription project={project} />
         </ProjectHeader>
 
         {SHOW_SELECTORS &&
@@ -154,7 +145,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
             <HiddenSelector
               title={`All ${typeTitle}`}
               sections={selectorSections}
-              currentItemLink={projectLink(currentProject)}
+              currentItemLink={projectLink(project)}
             />
           )}
       </RightPane>
@@ -165,15 +156,14 @@ const ProjectTemplate = ({ data, pathContext }) => {
 export default ProjectTemplate
 
 export const pageQuery = graphql`
-  query ProjectsTemplateQuery {
-    allProjectsYaml {
-      edges {
-        node {
-          ...fullProjectFields
-        }
-      }
+  query ProjectsTemplateQuery($slug: String!, $designersRegex: String!) {
+    project: projectsYaml(slug: { eq: $slug }) {
+      ...fullProjectFields
     }
-    allDesignersYaml {
+    allProjectsYaml(sort: { order: ASC, fields: [title] }) {
+      ...linkProjectEdges
+    }
+    allDesignersYaml(filter: { slug: { regex: $designersRegex } }) {
       edges {
         node {
           slug
