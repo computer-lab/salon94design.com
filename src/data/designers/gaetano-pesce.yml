@@ -39,19 +39,6 @@ works:
       - ''
     title: Puglia Cabinet
     when: '2007'
-  - dimensions: 18.5 x 51.8 x 36.22 inches / 47 x 130 x 92 cm
-    hero: false
-    images:
-      - file: >-
-          /public/static/images/works/gaetano-pesce/swamp-coffee-table-rJoeED9A-/large.jpg
-    medium: 'papier maché, resin, and polyurethane foam'
-    projects: []
-    slug: swamp-coffee-table
-    tags:
-      - tables
-      - ''
-    title: 'Swamp Coffee Table, 2015'
-    when: '2015'
   - dimensions: 81.89 x 39.37 x 13.78 in / 208 x 100 x 35 cm
     edition: Unique
     images:
@@ -59,7 +46,7 @@ works:
           /public/static/images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
     medium: 'laminated plywood, gold leaf doors'
     projects:
-      - slug: design-miami-pesce
+      - slug: design-miami-2016-pesce
     slug: horse-cabinet
     tags:
       - storage
@@ -86,7 +73,7 @@ works:
       - file: >-
           /public/static/images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
     projects:
-      - slug: design-miami-pesce
+      - slug: design-miami-2016-pesce
     slug: mini-stracci-vases
     tags:
       - miscellaneous
@@ -99,6 +86,8 @@ works:
       - file: >-
           /public/static/images/works/gaetano-pesce/do-you-still-love-me?-SJxi3Uyg1z/large.jpg
     medium: polyurethane resin and metal structure
+    projects:
+      - slug: design-miami-2016-pesce
     slug: do-you-still-love-me?
     tags:
       - storage
