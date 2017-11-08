@@ -15,6 +15,13 @@ const Container = styled.div`
   }
 `
 
+const CategoryHeader = styled.div`
+  composes: ${sansfont};
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 5px;
+`
+
 const TagList = styled.ul`
   composes: ${selectorList}, ${sansfont};
   display: block;
@@ -27,20 +34,24 @@ const TagList = styled.ul`
   }
 `
 
-const TagSelector = ({ tags, currentTag }) => (
+const TagSelector = ({ classifiedTags, currentCategory, currentTag }) => (
   <Container>
-    <TagList>
-      {tags.map(tag => (
-        <li
-          key={tag}
-          className={cx({
-            active: tag === currentTag,
-          })}
-        >
-          <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
-        </li>
-      ))}
-    </TagList>
+    {classifiedTags.map(({ category, tags }) => (
+      <div key={category}>
+        <TagList>
+          {tags.map(tag => (
+            <li
+              key={tag}
+              className={cx({
+                active: tag === currentTag,
+              })}
+            >
+              <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
+            </li>
+          ))}
+        </TagList>
+      </div>
+    ))}
   </Container>
 )
 

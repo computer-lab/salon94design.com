@@ -64,7 +64,6 @@ works:
     tags:
       - benches
       - seating
-      - ''
     title: 'Red Silk Bench '
     when: '2016'
   - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
@@ -79,7 +78,6 @@ works:
     tags:
       - seating
       - chairs
-      - ''
     title: Chair
     when: '2017'
 status: Represented
