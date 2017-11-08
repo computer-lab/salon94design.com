@@ -12,10 +12,9 @@ import {
   breakpoint2,
   breakpoint3,
 } from '../layouts/emotion-base'
-import Logo from '../layouts/logo'
 import Press from '../components/Press'
 import SimpleImageList from '../components/SimpleImageList'
-import { imageInfo } from '../util'
+import { imageInfo, imageFilepath } from '../util'
 
 const Container = styled.div`
   composes: ${sansfont};
@@ -28,6 +27,18 @@ const Container = styled.div`
 
   & a {
     color: inherit;
+  }
+`
+
+const LogoImage = styled.img`
+  display: block;
+  margin: 0 auto 60px auto;
+  width: 600px;
+  user-select: none;
+
+  @media (${breakpoint2}) {
+    margin-bottom: 20px;
+    width: 300px;
   }
 `
 
@@ -101,6 +112,7 @@ const Images = styled.div`
 const Info = ({ data }) => {
   const { allInfoYaml } = data
   const {
+    hero,
     aboutHtml,
     emails,
     phones,
@@ -149,7 +161,7 @@ const Info = ({ data }) => {
       <Helmet title={`Salon 94 Design - Info`} />
 
       <Link to={'/'}>
-        <Logo width={600} />
+        <LogoImage src={imageFilepath(hero)} />
       </Link>
 
       <SectionWrapper>
@@ -193,6 +205,7 @@ export const pageQuery = graphql`
     allInfoYaml {
       edges {
         node {
+          hero
           aboutHtml
           emails {
             title
