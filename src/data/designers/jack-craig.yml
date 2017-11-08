@@ -12,10 +12,10 @@ press: []
 works:
   - dimensions: '22 x 24 x 16.5 in '
     edition: 'Unique '
-    hero: false
+    hero: true
     images:
-      - file: >-
-          /public/static/images/works/jack-craig/bronze-stool-H1GY4hjs2b/large.jpg
+      - file: /public/static/images/_MG_2911 copy.jpg
+      - file: /public/static/images/_MG_2913 copy.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -28,7 +28,7 @@ works:
     when: '2016'
   - dimensions: 36 x 15 x 20 in
     edition: Unique
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
