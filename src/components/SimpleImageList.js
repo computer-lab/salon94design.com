@@ -29,8 +29,9 @@ const List = styled.ul`
   }
 `
 
-const ImageCaption = styled.caption`
+const ImageCaption = styled.div`
   composes: ${sansfont};
+  display: table-caption;
   text-align: left;
   caption-side: bottom;
   font-size: 16px;
