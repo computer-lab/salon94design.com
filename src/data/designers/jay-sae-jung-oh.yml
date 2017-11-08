@@ -3,9 +3,9 @@ title: Jay Sae Jung Oh
 bio: "Jae Say Jung Oh describes her interests as lying\nat the intersection of art and design, particularly as reconciling the two\nideas is an ongoing challenge for her. “I am always trying to combine them\nwithout losing the essence of each field,” she says. Oh was trained in\nsculpture and 3D design, and has worked with the artist Gaetano Pesce on\nprojects including furniture installations and product design. Her best-known\nproject, “Savage,” is comprised of a series of functional seating units and\nside tables. The earliest of these were made using mundane, mass-produced\nobjects affixed together with epoxy and adhesive, after which the entire volume\nwas wrapped with jute string. Each takes about four months to complete. In the\nnewer iteration of “Savage,” Oh produces the objects in leather.\n\n\_\n\n\_\n\n\_\n\n\_"
 press: []
 works:
-  - dimensions: 70 x 35 x 45
+  - dimensions: 70 x 35 x 45 in
+    edition: Unique
     hero: true
-    edition: ''
     images:
       - file: >-
           /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
@@ -18,6 +18,21 @@ works:
     slug: savage-series-black-leather-sofa
     tags:
       - seating
-    title: 'Savage Series Black Leather Sofa, 2016'
+    title: Savage Series Black Leather Sofa
     when: '2016'
+  - dimensions: 55 x 42 x 44 in / 139.7 x 106.7 x 111.8 cm
+    edition: 'Unique '
+    hero: true
+    images:
+      - file: >-
+          /public/static/images/works/jay-sae-jung-oh/savage-series-black-leather-chair-SkfvwTkJz/large.jpg
+    medium: 'leather cord, various plastics'
+    projects:
+      - slug: ghost-dog
+    slug: savage-series-black-leather-chair
+    tags:
+      - seating
+      - ''
+    title: Savage Series Black Leather Chair
+    when: '2014'
 status: Represented

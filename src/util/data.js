@@ -41,7 +41,7 @@ export const chooseCategoryImage = (works, tag) => {
 
 export const chooseProjectImage = (project, designers) => {
   if (project.hydratedImages && project.hydratedImages.length > 0) {
-    const heroImages = project.hydratedImages.filter(i => i.hero)
+    const heroImages = project.hydratedImages.filter(i => i && i.hero)
     return heroImages.length > 0 ? heroImages[0] : project.hydratedImages[0]
   }
 
