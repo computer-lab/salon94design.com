@@ -23,11 +23,7 @@ import FullscreenImageViewer from './FullscreenImageViewer'
 
 const ImageSet = styled.div`
   &.not-first {
-    margin-top: 60px;
-
-    @media (${breakpoint1}) {
-      margin-top: 30px;
-    }
+    margin-top: 30px;
 
     @media (${breakpoint3}) {
       margin-top: 10px;
@@ -57,7 +53,7 @@ const ImageContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-end;
+  align-items: flex-start;
   box-sizing: border-box;
 
   &.center {
@@ -72,25 +68,23 @@ const scrollElementExpanded = css`
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
   display: inline-block;
-  max-width: 144px;
+  width: 172px;
   text-align: center;
 
   & img {
     margin: 0;
     padding: 0;
-    max-width: 100%;
-    max-height: 288px;
     cursor: pointer;
     user-select: none;
+    width: 100%;
+    height: 129px;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
   }
 
   &.with-small-text {
     text-align: left;
-    max-width: 172px;
-
-    & img {
-      max-height: 300px;
-    }
   }
 
   &.expanded {
@@ -98,14 +92,20 @@ const ImageItem = styled.div`
     margin: 0 0 20px 0;
     padding-right: 20px;
     max-width: none;
+    width: auto;
 
     & img {
       cursor: default;
       cursor: crosshair;
       cursor: nesw-resize;
       cursor: zoom-in;
+
+      object-fit: fill;
+      width: auto;
       min-width: 400px;
       max-width: 100%;
+      height: auto;
+      min-height: 0;
       max-height: calc(100vh - 160px);
     }
   }
@@ -121,22 +121,17 @@ const ImageItem = styled.div`
     max-width: none;
     width: 100%;
 
-    &.with-small-text {
-      max-width: none;
-      & img {
-        max-height: none;
-      }
-    }
-
     &.expanded {
       padding-right: 0;
     }
 
     & img,
     &.expanded img {
+      object-fit: fill;
       min-width: none;
       max-height: none;
       width: 100%;
+      height: auto;
       cursor: default;
     }
   }
@@ -484,7 +479,7 @@ class ImageList extends Component {
                 } else if (isExpanded) {
                   sizes = 'calc(100vw - 400px)'
                 } else {
-                  sizes = '200px'
+                  sizes = '172px'
                 }
 
                 const onMouseEnter = isExpanded
