@@ -9,7 +9,7 @@ press: []
 works:
   - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
     edition: 'Initials carved on side, unique'
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
@@ -39,6 +39,7 @@ works:
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 in / 47 x 46 x 75 cm
     edition: 'Initials carved on side, unique'
+    hero: true
     images:
       - file: >-
           /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
