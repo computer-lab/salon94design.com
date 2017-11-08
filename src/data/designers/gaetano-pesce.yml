@@ -28,10 +28,11 @@ works:
     edition: 'Unique '
     hero: true
     images:
-      - file: /public/static/images/puglia.png
+      - file: >-
+          /public/static/images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
     medium: 'wood, papier maché'
     projects: []
-    slug: puglia cabinet
+    slug: puglia-cabinet
     tags:
       - storage
       - ''
@@ -52,9 +53,10 @@ works:
   - dimensions: 81.89 x 39.37 x 13.78 in / 208 x 100 x 35 cm
     edition: Unique
     images:
-      - file: /public/static/images/GAETANO_PESCE-2A.jpg
+      - file: >-
+          /public/static/images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
     medium: 'laminated plywood, gold leaf doors'
-    slug: horse cabinet
+    slug: horse-cabinet
     tags:
       - storage
       - ''
