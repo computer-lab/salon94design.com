@@ -15,9 +15,9 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug
+        label: Slug (for url - all lowercase, no spaces or special characters)
         widget: string
-      - name: name
+      - name: title
         label: Name
         widget: string
       - name: bio
@@ -26,6 +26,7 @@ collections:
       - name: press
         label: Press
         widget: list
+        default: []
         fields:
           - name: title
             label: Title
@@ -39,12 +40,13 @@ collections:
       - name: works
         label: Works
         widget: list
+        default: []
         fields:
           - name: title
             label: Title
             widget: string
           - name: slug
-            label: Slug
+            label: Slug (for url - all lowercase, no spaces or special characters)
             widget: string
           - name: when
             label: Year
@@ -52,6 +54,7 @@ collections:
           - name: projects
             label: Projects
             widget: list
+            default: []
             fields:
               - name: slug
                 label: Project
@@ -60,15 +63,17 @@ collections:
                 searchFields: [slug, title]
                 valueField: slug
           - name: tags
-            label: Tags
+            label: Tags — F: beds, benches, chairs, outdoor, seating, storage, tables | L: lighting | M: all other tags (miscellaneous, ceramics, fashion, etc) - Please do not leave comma at end of list.
             widget: list
+            default: []
           - name: hero
             label: Hero
             widget: boolean
             default: false
           - name: images
-            label: Images
+            label: Images (filename all lowercase, no spaces or special characters)
             widget: list
+            default: []
             fields:
               - name: file
                 label: File
@@ -113,7 +118,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug
+        label: Slug (for url - all lowercase, no spaces or special characters)
         widget: string
       - name: title
         label: Title
@@ -128,12 +133,13 @@ collections:
       - name: when
         label: When
         widget: string
-      - name: groupingYear
-        label: Year for grouping / sorting
-        widget: number
+      - name: date
+        label: Start Date (for sorting)
+        widget: datetime
       - name: designers
         label: Designers
         widget: list
+        default: []
         fields:
           - name: slug
             label: Designer
@@ -145,8 +151,9 @@ collections:
         label: Description
         widget: markdown
       - name: images
-        label: Images
+        label: Images (filename all lowercase, no spaces or special characters)
         widget: list
+        default: []
         fields:
           - name: file
             label: File
@@ -174,12 +181,21 @@ collections:
     create: false
     format: yaml
     fields:
-      - name: email
-        label: Email
-        widget: string
+      - name: emails
+        label: Emails
+        widget: list
+        default: []
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: email
+            label: Email
+            widget: string
       - name: social
         label: Social
         widget: list
+        default: []
         fields:
           - name: title
             label: Title
@@ -187,9 +203,17 @@ collections:
           - name: link
             label: Link
             widget: string
-      - name: phone
-        label: Phone
-        widget: string
+      - name: phones
+        label: Phones
+        widget: list
+        default: []
+        fields:
+          - name: title
+            label: Title
+            widget: string
+          - name: number
+            label: Phone Number
+            widget: string
       - name: mailingList
         label: Mailing List
         widget: string
@@ -199,6 +223,7 @@ collections:
       - name: press
         label: Press
         widget: list
+        default: []
         fields:
           - name: title
             label: Title
@@ -210,8 +235,9 @@ collections:
             label: PDF
             widget: file
       - name: images
-        label: Images
+        label: Images (filename all lowercase, no spaces or special characters)
         widget: list
+        default: []
         fields:
           - name: title
             label: Title
@@ -226,5 +252,11 @@ collections:
     format: yaml
     fields:
       - name: splashImage
-        label: Splash Image
+        label: Splash Image (filename all lowercase, no spaces or special characters)
         widget: image
+      - name: featuredProjectSlug
+        label: Featured Exhibition
+        widget: relation
+        collection: project
+        searchFields: [slug, title]
+        valueField: slug

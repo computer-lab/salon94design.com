@@ -1,5 +1,5 @@
 slug: dozie-kanu
-name: Dozie Kanu
+title: Dozie Kanu
 bio: |-
   Born in 1993, the Houston native effortlessly floats between
   design, hip-hop, and fashion's various microcosms. At home in the post-Tumblr
@@ -9,11 +9,14 @@ bio: |-
 press: []
 works:
   - dimensions: 20.5 x 18 x 100 inches
+    edition: Unique
     hero: true
     images:
       - file: >-
           /public/static/images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
     medium: 'poured concrete, steel '
+    projects:
+      - slug: midtown-lever-house
     slug: bench-on-84s
     tags:
       - seating

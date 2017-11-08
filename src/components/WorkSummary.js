@@ -85,7 +85,7 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
     <DetailSection>
       {projects &&
         projects.length > 0 &&
-        projects.map(project => (
+        projects.filter(p => !!p).map(project => (
           <SummaryItem key={project.slug} className="project">
             <Link to={projectLink(project)}>{project.title}</Link>
           </SummaryItem>

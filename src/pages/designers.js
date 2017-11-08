@@ -1,51 +1,67 @@
 import React, { Component } from 'react'
 import Helmet from '../components/helmet'
-import Link, { navigateTo } from 'gatsby-link'
+import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { PageContainer } from '../layouts/containers'
 import SectionItemList from '../components/SectionItemList'
-import { chooseDesignerImage, designerLink } from '../util'
+import { chooseDesignerImage, designerLink, byLastName } from '../util'
 
-export default class Designers extends Component {
-  componentDidMount() {
-    navigateTo('/')
-  }
+const prefferedStatusOrder = ['Represented', 'Available']
 
-  render() {
-    const { allDesignersYaml } = this.props.data
+export default function Designers({ data }) {
+  const { allDesignersYaml } = data
 
-    const designers = allDesignersYaml.edges.map(edge => edge.node)
+  // Technically this can be `const` but that's a lie right ;p
+  let designers = allDesignersYaml.edges.map(edge => edge.node)
+  designers.sort(byLastName)
 
-    const listItems = designers.map(designer => {
-      return {
-        title: designer.name,
-        image: chooseDesignerImage(designer),
-        link: designerLink(designer.slug),
-      }
-    })
+  const designersByStatus = {}
+  designers.forEach(d => {
+    if (!designersByStatus[d.status]) {
+      designersByStatus[d.status] = [d]
+    } else {
+      designersByStatus[d.status].push(d)
+    }
+  })
 
-    return (
-      <PageContainer>
-        <Helmet
-          title={`Salon 94 Design - Designers`}
-          description={`List of designers represented by Salon 94 Design.`}
-        />
-        <div>
-          <SectionItemList title="Designers" items={listItems} />
-        </div>
-      </PageContainer>
-    )
-  }
+  const sortedStatuses = Object.keys(designersByStatus).sort(
+    (a, b) => prefferedStatusOrder.indexOf(a) - prefferedStatusOrder.indexOf(b)
+  )
+
+  const listSections = sortedStatuses.map(status => {
+    const items = designersByStatus[status].map(designer => ({
+      title: designer.title,
+      image: chooseDesignerImage(designer),
+      link: designerLink(designer.slug),
+    }))
+
+    const title = status === 'Represented' ? null : 'Also Available'
+
+    return { title, items }
+  })
+
+  return (
+    <PageContainer>
+      <Helmet
+        title={`Salon 94 Design - Designers`}
+        description={`List of designers represented by Salon 94 Design.`}
+      />
+      <div>
+        <SectionItemList title="Designers" sections={listSections} />
+      </div>
+    </PageContainer>
+  )
 }
 
 export const pageQuery = graphql`
   query DesignersQuery {
-    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+    allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       edges {
         node {
           slug
-          name
+          title
+          status
           ...baseWorkFields
         }
       }

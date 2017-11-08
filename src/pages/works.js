@@ -8,9 +8,11 @@ import { sansfont, breakpoint1 } from '../layouts/emotion-base'
 import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
-  getAllTags,
   capitalize,
+  categories,
+  getCategoryTags,
   chooseCategoryImage,
+  categoryLink,
   workTagLink,
 } from '../util'
 
@@ -29,12 +31,16 @@ export default function Works({ data }) {
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const works = designers.reduce((items, d) => items.concat(d.works || []), [])
-  const tags = getAllTags(designers)
 
-  const listItems = tags.map(tag => ({
-    title: capitalize(tag),
-    link: workTagLink(tag),
-    image: chooseCategoryImage(works, tag),
+  const listItems = categories.map(category => ({
+    title: capitalize(category),
+    image: chooseCategoryImage(designers, works, category),
+
+    // if only 1 tag, skip straight to tag page
+    link:
+      getCategoryTags(designers, category).length > 1
+        ? categoryLink(category)
+        : workTagLink(category),
   }))
 
   return (
@@ -44,11 +50,7 @@ export default function Works({ data }) {
         description={`Filter works by tagged categories.`}
       />
       <div>
-        <SectionItemList
-          title="Works by Category"
-          items={listItems}
-          fullWidthMobile={false}
-        />
+        <SectionItemList items={listItems} fullWidthMobile={false} />
       </div>
     </PageContainer>
   )

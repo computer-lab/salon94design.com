@@ -91,6 +91,7 @@ const ImageItem = styled.div`
 
   &.expanded {
     display: table;
+    margin: 0 0 20px 0;
     padding-right: 20px;
     max-width: none;
 
@@ -389,7 +390,7 @@ class ImageList extends Component {
         hoverImage: null,
       },
       () => {
-        this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
+        this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -90)
       }
     )
   }

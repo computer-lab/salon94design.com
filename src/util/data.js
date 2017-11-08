@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 
 import { choice } from './index'
 import { designerLink, projectLink, workLink } from './path'
-import { categoryTags } from './tag'
+import { getCategoryTags } from './tag'
 
 export const chooseWorksImage = works => {
   let heroWorks = works.filter(w => w.hero)
@@ -14,15 +14,22 @@ export const chooseWorksImage = works => {
     w => w.hydratedImages && w.hydratedImages.length > 0
   )
 
-  const work = heroWorks[0]
+  const work = choice(heroWorks)
   return work ? work.hydratedImages[0] : null
 }
 
 export const chooseDesignerImage = designer =>
   chooseWorksImage(designer.works || [])
 
-export const chooseCategoryImage = (works, tag) => {
-  const tagSet = new Set(categoryTags(tag))
+export const chooseCategoryImage = (designers, works, category) => {
+  const tagSet = new Set(getCategoryTags(designers, category))
+  return chooseTagSetImage(works, tagSet)
+}
+
+export const chooseTagImage = (works, tag) =>
+  chooseTagSetImage(works, new Set([tag]))
+
+export const chooseTagSetImage = (works, tagSet) => {
   const worksInCategory = works
     .filter(
       work => work.tags && work.tags.filter(t => tagSet.has(t)).length > 0
@@ -34,14 +41,15 @@ export const chooseCategoryImage = (works, tag) => {
   }
 
   const heroWorks = worksInCategory.filter(w => w.hero)
-  const work = heroWorks.length > 0 ? heroWorks[0] : choice(worksInCategory)
+  const work =
+    heroWorks.length > 0 ? choice(heroWorks) : choice(worksInCategory)
   const image = work.hydratedImages[0]
   return image
 }
 
 export const chooseProjectImage = (project, designers) => {
   if (project.hydratedImages && project.hydratedImages.length > 0) {
-    const heroImages = project.hydratedImages.filter(i => i.hero)
+    const heroImages = project.hydratedImages.filter(i => i && i.hero)
     return heroImages.length > 0 ? heroImages[0] : project.hydratedImages[0]
   }
 
@@ -72,7 +80,7 @@ export const workImageTexts = ({
   smallText = null,
 }) => {
   let data = [
-    <Link to={designerLink(designer.slug)}>{designer.name}</Link>,
+    <Link to={designerLink(designer.slug)}>{designer.title}</Link>,
     <Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>,
   ]
 
@@ -109,8 +117,8 @@ export const workImageTexts = ({
 
 export const byLastName = (designerA, designerB) => {
   const getLastName = designer => {
-    return designer.name
-      ? designer.name
+    return designer.title
+      ? designer.title
           .trim()
           .split(' ')
           .pop()

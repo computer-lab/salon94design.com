@@ -2,20 +2,24 @@ slug: midtown-lever-house
 title: Midtown Lever House
 type: Exhibition
 when: 'May 03, 2017–June 09, 2017'
-groupingYear: '2017'
+date: '2017-05-03T00:00:00'
 designers:
   - slug: anton-alvarez
   - slug: kwangho-lee
   - slug: jay-sae-jung-oh
+  - slug: thomas-barger
+  - slug: dozie-kanu
+  - slug: max-lamb
+  - slug: gaetano-pesce
 description: >-
   Maccarone, Salon 94 Design, and Salon 94 are pleased to announce their
-  exhibition MIDTOWN, which will take place from May 3-June 9, 2017, at the
+  exhibition _MIDTOWN_, which will take place from May 3-June 9, 2017, at the
   historic Lever House, in Midtown Manhattan. The exhibition encompasses the
   building’s second floor office space, with its glass windows offering views
   inside and out. Defying the hierarchies between art and design, this show
   features sculpture, furniture, vessels, baskets, tapestries, and paintings, by
   more than 40 artists. Together these works co-mingle in the openness and
-  emptiness of the space. MIDTOWN celebrates the dialogue and collaborative
+  emptiness of the space. _MIDTOWN_ celebrates the dialogue and collaborative
   spirit of art-making practices, and posits collegial collaboration, as artists
   and galleries have enthusiastically allowed for the reimagining of the context
   of their works.
@@ -30,7 +34,7 @@ description: >-
   and design blurred. This dialogue took place and was bought and sold in
   midtown Manhattan. Yet, there has been an uneven relationship between these
   disciplines. Art has traditionally trumped functionality. A tapestry placed on
-  the floor is drained of value. Attempting to upset this distinction, MIDTOWN
+  the floor is drained of value. Attempting to upset this distinction, _MIDTOWN_
   regards objects equally, irrespective of their functionality or method of
   creation.
 
@@ -105,10 +109,10 @@ description: >-
   produced as part of Creative Time's _Pledges of Allegiance_ project launching
   on Flag Day, June 14. For all press inquiries, please contact Sophie Wise at
   sophie@companyagenda.com. For performance inquiries please contact Victoria
-  Kung at victoria.kung@suttonpr.com. For all other inquiries about MIDTOWN,
-  please contact t info@salon94design.com.
+  Kung at victoria.kung@suttonpr.com. For all other inquiries about _MIDTOWN_,
+  please contact  info@salon94design.com.
 images:
-  - file: /public/static/images/projects/midtown-lever-house/HkXgSJ92RCb/large.jpg
+  - file: /public/static/images/projects/midtown-lever-house/BkWjgARJkz/large.jpg
     hero: true
   - file: /public/static/images/projects/midtown-lever-house/ry3TLWAAZ/large.jpg
   - file: /public/static/images/projects/midtown-lever-house/rJx3aLbR0-/large.jpg

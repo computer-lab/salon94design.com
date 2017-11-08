@@ -26,7 +26,7 @@ import {
   workLink,
 } from '../util'
 
-const { LeftPane, RightPane } = createPanes('370px')
+const { LeftPane, RightPane } = createPanes()
 
 const WorksHeader = styled.h2`
   composes: ${sansfont};
@@ -90,7 +90,12 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   const works = designer.works || []
   const images = works
-    .filter(work => work.hydratedImages && work.hydratedImages.length > 0)
+    .filter(
+      work =>
+        work.hydratedImages &&
+        work.hydratedImages.length > 0 &&
+        work.hydratedImages[0]
+    )
     .map(work =>
       Object.assign(imageInfo(work.hydratedImages[0]), {
         work,
@@ -139,7 +144,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
   )
 
   const selectorItems = designers.map(item => ({
-    title: item.name,
+    title: item.title,
     link: designerLink(item.slug),
   }))
 
@@ -153,8 +158,8 @@ const DesignerTemplate = ({ data, pathContext }) => {
   return (
     <PageContainer>
       <Helmet
-        title={`${designer.name} - Salon 94 Design`}
-        description={`Exhibitions, projects and works by ${designer.name}. ${designer.bio}`}
+        title={`${designer.title} - Salon 94 Design`}
+        description={`Exhibitions, projects and works by ${designer.title}. ${designer.bio}`}
       />
       <LeftPane>
         <WorksHeader>Works</WorksHeader>
@@ -164,7 +169,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
         />
       </LeftPane>
       <RightPane className="selectable">
-        <Header1>{designer.name}</Header1>
+        <Header1>{designer.title}</Header1>
         <DesignerBio bioHtml={designer.bioHtml} />
         <DesignerProjects projects={projects} />
         <Press press={designer.press} />
@@ -186,7 +191,7 @@ export const pageQuery = graphql`
   query DesignerTemplateQuery($slug: String!) {
     designer: designersYaml(slug: { eq: $slug }) {
       slug
-      name
+      title
       status
       bio
       bioHtml
@@ -200,7 +205,7 @@ export const pageQuery = graphql`
     allProjectsYaml(sort: { order: ASC, fields: [title] }) {
       ...linkProjectEdges
     }
-    allDesignersYaml(sort: { order: ASC, fields: [name] }) {
+    allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       ...linkDesignerEdges
     }
   }

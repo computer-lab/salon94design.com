@@ -4,19 +4,15 @@ import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
 import { createPanes, PageContainer } from '../layouts/containers'
-import {
-  sansfont,
-  childLink,
-  Header1,
-  breakpoint1,
-} from '../layouts/emotion-base'
+import { sansfont, Header1, breakpoint1 } from '../layouts/emotion-base'
+import ProjectDescription from '../components/ProjectDescription'
+import ProjectDesigners from '../components/ProjectDesigners'
 import ImageList from '../components/ImageList'
 import HiddenSelector from '../components/HiddenSelector'
 import WorkSummary from '../components/WorkSummary'
 import Video from '../components/Video'
 import {
   imageInfo,
-  designerLink,
   projectLink,
   workImageTexts,
   workLink,
@@ -30,39 +26,11 @@ const ProjectHeader = styled.div`
   margin-bottom: 40px;
 `
 
-const ProjectDesigner = styled.span`
-  composes: ${childLink};
-
-  &:not(:first-child)::before {
-    content: ', ';
-  }
-
-  &:last-child::after {
-    content: ' ';
-  }
-`
-
 const ProjectWhen = styled.div`
   composes: ${sansfont};
   margin-top: 20px;
   font-size: 22px;
   font-weight: 100;
-`
-
-const ProjectDescription = styled.div`
-  composes: ${sansfont};
-  max-width: 320px;
-  font-size: 20px;
-  font-weight: 300;
-  line-height: 1.4;
-
-  & p {
-    margin-bottom: 20px;
-  }
-
-  @media (${breakpoint1}) {
-    max-width: none;
-  }
 `
 
 const ProjectTemplate = ({ data, pathContext }) => {
@@ -73,7 +41,9 @@ const ProjectTemplate = ({ data, pathContext }) => {
     ? allDesignersYaml.edges.map(edge => edge.node)
     : []
 
-  const projectImages = (project.hydratedImages || []).map(image =>
+  const projectImages = (project.hydratedImages || [])
+    .filter(i => !!i)
+    .map(image =>
     Object.assign(imageInfo(image), {
       texts: image.caption ? { title: image.caption } : null,
     })
@@ -86,7 +56,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
         work.projects &&
         work.projects.map(project => project.slug).includes(project.slug) &&
         work.hydratedImages &&
-        work.hydratedImages.length > 0
+        work.hydratedImages.length > 0 &&
+        work.hydratedImages[0]
     )
 
     works.forEach(work => {
@@ -117,13 +88,19 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const currentTypeProjects = projects.filter(p => p.type === project.type)
 
   const projectsByYear = Array.from(
-    new Set(currentTypeProjects.map(p => p.groupingYear))
-  ) // years
-    .sort((a, b) => b - a) // sort reverse-chronologically
-    .map(year => ({
-      year,
-      projects: currentTypeProjects.filter(p => p.groupingYear === year),
-    }))
+    new Set(currentTypeProjects.map(p => p.date))
+  )
+    .sort((a, b) => Date.parse(b) - Date.parse(a)) // sort reverse-chronologically
+    .map(date => {
+      const dateYear = function(date) {
+        return new Date(date).getFullYear()
+      }
+      const year = dateYear(date)
+      return {
+        year,
+        projects: currentTypeProjects.filter(p => dateYear(p.date) === year),
+      }
+    })
 
   const selectorSections = projectsByYear.map(({ year, projects }) => ({
     title: year,
@@ -151,22 +128,19 @@ const ProjectTemplate = ({ data, pathContext }) => {
           hoverImageRenderer={hoverImageRenderer}
         />
       </LeftPane>
-      <RightPane className="selectable">
+      <RightPane>
         <ProjectHeader>
           <Header1>
             {project.title}
             <div className="subheader">
-              {designers.map(designer => (
-                <ProjectDesigner key={designer.slug}>
-                  <Link to={designerLink(designer.slug)}>{designer.name}</Link>
-                </ProjectDesigner>
-              ))}
+              <ProjectDesigners
+                project={project}
+                designers={designers}
+              />
               <ProjectWhen>{project.when}</ProjectWhen>
             </div>
           </Header1>
-          <ProjectDescription
-            dangerouslySetInnerHTML={{ __html: project.descriptionHtml }}
-          />
+          <ProjectDescription project={project} />
         </ProjectHeader>
 
         {SHOW_SELECTORS &&
@@ -187,30 +161,7 @@ export default ProjectTemplate
 export const pageQuery = graphql`
   query ProjectsTemplateQuery($slug: String!, $designersRegex: String!) {
     project: projectsYaml(slug: { eq: $slug }) {
-      slug
-      title
-      type
-      description
-      descriptionHtml
-      when
-      groupingYear
-      hydratedImages {
-        file
-        width
-        height
-        resized {
-          file
-          width
-          height
-        }
-      }
-      video {
-        vimeoId
-        caption
-      }
-      designers {
-        slug
-      }
+      ...fullProjectFields
     }
     allProjectsYaml(sort: { order: ASC, fields: [title] }) {
       ...linkProjectEdges
@@ -219,7 +170,7 @@ export const pageQuery = graphql`
       edges {
         node {
           slug
-          name
+          title
           ...fullWorkFields
         }
       }

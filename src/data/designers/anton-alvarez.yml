@@ -1,10 +1,10 @@
 slug: anton-alvarez
-name: Anton Alvarez
+title: Anton Alvarez
 bio: 'Born 1980, Uppsala, Sweden.'
 press: []
 works:
   - dimensions: 18.11 x 82.28 x 10.24 inches
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
@@ -23,6 +23,7 @@ works:
       vimeoId: ''
     when: '2015'
   - dimensions: 1.5 x 16.5 inches / 94 x 54.6 x 41.9 cm
+    hero: true
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-chair-090415-SkB1ch00-/large.jpg
@@ -36,6 +37,7 @@ works:
     title: The Thread Wrapping Machine Chair 090415
     when: '2015'
   - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
+    hero: false
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
@@ -55,7 +57,6 @@ works:
     slug: the-thread-wrapping-machine-untitled-280415
     tags:
       - chairs
-      - ''
     title: The Thread Wrapping Machine Untitled 280415
     when: '2015'
 status: Represented

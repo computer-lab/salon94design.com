@@ -19,12 +19,10 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
     )
     .filter(p => p.designers.length > 0)
 
-  const title = `${type}s`
-
   const listItems = projects.map(project => {
     return {
       title: project.title,
-      subtitle: project.designers.map(d => d.name).join(', '),
+      subtitle: project.designers.map(d => d.title).join(', '),
       image: chooseProjectImage(project, project.designers),
       link: projectLink(project),
     }
@@ -32,7 +30,7 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
 
   return (
     <div>
-      <SectionItemList title={title} items={listItems} />
+      <SectionItemList items={listItems} />
     </div>
   )
 }
