@@ -9,7 +9,7 @@ const { getImageData } = require('./transformer/images')
 
 exports.createPages = props => {
   return Promise.all([
-    // createBlogPosts(props),
+    createIndex(props),
     createProjects(props),
     createDesigners(props),
     createWorks(props),
@@ -50,6 +50,31 @@ function createBlogPosts({ boundActionCreators, graphql }) {
         component: postTemplate,
         context: {}, // additional data can be passed via context
       })
+    })
+  })
+}
+
+function createIndex({ boundActionCreators, graphql }) {
+  const { createPage } = boundActionCreators
+
+  return graphql(`
+    {
+      allLandingPageYaml {
+        edges {
+          node {
+            featuredProjectSlug
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) return Promise.reject(result.errors)
+
+    const { featuredProjectSlug } = result.data.allLandingPageYaml.edges[0].node
+    createPage({
+      path: '/',
+      component: path.resolve(`src/templates/homepage.js`),
+      context: { featuredProjectSlug },
     })
   })
 }
