@@ -389,7 +389,7 @@ class ImageList extends Component {
         hoverImage: null,
       },
       () => {
-        this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -24)
+        this.scrollTo(`set-${setIndex}-image-${imageIndex}`, -90)
       }
     )
   }
