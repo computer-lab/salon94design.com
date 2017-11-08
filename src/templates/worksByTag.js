@@ -28,12 +28,6 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.sort(byLastName)
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
-  const getWorkProjects = work => {
-    return (work.projects || [])
-      .filter(item => item && item.slug)
-      .map(({ slug }) => projects.find(p => p.slug === slug))
-      .filter(item => !!item)
-  }
 
   const filterWork = w => {
     if (!w.hydratedImages || w.hydratedImages.length === 0) {
@@ -59,7 +53,7 @@ const WorksTemplate = ({ data, pathContext }) => {
             texts: workImageTexts({
               designer,
               work,
-              projects: getWorkProjects(work),
+              projects,
               smallText: (
                 <div>
                   <Link to={workLink(designer.slug, work.slug)}>

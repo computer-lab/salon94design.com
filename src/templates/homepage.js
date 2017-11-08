@@ -118,6 +118,7 @@ export const pageQuery = graphql`
       }
     }
   }
+
   fragment linkProjectEdges on ProjectsYamlConnection {
     edges {
       node {
@@ -130,6 +131,7 @@ export const pageQuery = graphql`
       }
     }
   }
+
   fragment baseHydratedImages on works_2 {
     hydratedImages {
       file

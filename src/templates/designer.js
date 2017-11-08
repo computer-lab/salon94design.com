@@ -103,6 +103,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           designer,
           work,
           projects,
+          includeDesigner: false,
           smallText: (
             <Link to={workLink(designer.slug, work.slug)}>
               {work.title}, {work.when}
@@ -168,7 +169,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           hoverImageRenderer={hoverImageRenderer}
         />
       </LeftPane>
-      <RightPane className="selectable">
+      <RightPane>
         <Header1>{designer.title}</Header1>
         <DesignerBio bioHtml={designer.bioHtml} />
         <DesignerProjects projects={projects} />
