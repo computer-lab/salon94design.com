@@ -24,11 +24,12 @@ works:
     title: 'Marble Stool Red '
     when: '2015'
   - dimensions: 16 x 13/25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
+    images:
+      - file: /public/static/images/KUCA_152-A.jpg
     medium: marble
     slug: marble-stool-white
     title: Marble Stool White
     when: '2015'
-    images: []
   - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
     images:
       - file: >-
@@ -38,4 +39,15 @@ works:
       - chairs
     title: Sand Chair
     when: '2012'
+  - dimensions: 16 x 13.25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
+    edition: Unique
+    images:
+      - file: /public/static/images/KuCa 142.jpg
+    medium: marble
+    slug: marble stool orange
+    tags:
+      - seating
+      - ''
+    title: Marble Stool Orange
+    when: '2014'
 status: Represented
