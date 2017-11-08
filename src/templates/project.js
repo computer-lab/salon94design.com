@@ -170,7 +170,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
           hoverImageRenderer={hoverImageRenderer}
         />
       </LeftPane>
-      <RightPane className="selectable">
+      <RightPane>
         <ProjectHeader>
           <Header1>
             {currentProject.title}
