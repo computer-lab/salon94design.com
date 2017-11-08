@@ -44,10 +44,12 @@ works:
   - dimensions: 69 x 39 x 18 in
     edition: Unique
     images:
-      - file: /public/static/images/_MG_2946 copy.jpg
-      - file: /public/static/images/_MG_2949 copy.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
+      - file: >-
+          /public/static/images/works/jack-craig/dripped-bronze-shelf-HygF7fJe1f/large.jpg
     medium: 'bronze, concrete'
-    slug: dripped bronze shelf
+    slug: dripped-bronze-shelf
     tags:
       - storage
       - ''
