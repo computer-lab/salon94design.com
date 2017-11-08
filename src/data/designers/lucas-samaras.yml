@@ -1,0 +1,27 @@
+slug: lucas-samaras
+title: Lucas Samaras
+bio: >-
+  Lucas Samaras was already known as a sculptor, painter, and performance artist
+  when he began experimenting with photography. In his early work, which
+  includes multi-media assemblages, he often included images of himself. The
+  persistent use of himself as a subject has led one critic to remark that
+  "Samaras's almost obsessional self-observation extends past narcissism toward
+  a physical understanding of himself."
+press: []
+works:
+  - dimensions: 4.2 ounces
+    edition: Unique
+    hero: true
+    images:
+      - file: >-
+          /public/static/images/works/lucas-samaras/bracelet-7-SyaHnpJ1z/large.jpg
+    medium: 22 karat gold
+    projects:
+      - slug: gold
+    slug: bracelet-7
+    tags:
+      - jewelry
+      - ''
+    title: 'Bracelet #7'
+    when: '1996'
+status: Represented

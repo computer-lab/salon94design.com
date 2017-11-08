@@ -75,7 +75,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const getDesigner = slug => designers.find(d => d.slug === slug)
 
-  const projectImages = (currentProject.hydratedImages || []).map(image =>
+  const projectImages = (currentProject.hydratedImages || []).filter(i => !!i).map(image =>
     Object.assign(imageInfo(image), {
       texts: image.caption ? { title: image.caption } : null,
     })
