@@ -92,7 +92,7 @@ works:
           /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
     projects:
-      - {}
+      - slug: design-miami-basel-2017
     slug: thermal-spray-vase-copper
     tags:
       - miscellaneous
