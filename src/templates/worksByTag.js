@@ -28,6 +28,7 @@ const WorksTemplate = ({ data, pathContext }) => {
   designers.sort(byLastName)
 
   const projects = allProjectsYaml.edges.map(edge => edge.node)
+
   const filterWork = w => {
     if (!w.hydratedImages || w.hydratedImages.length === 0) {
       return false
@@ -100,13 +101,7 @@ export default WorksTemplate
 export const pageQuery = graphql`
   query WorksTemplateQuery {
     allProjectsYaml {
-      edges {
-        node {
-          slug
-          title
-          type
-        }
-      }
+      ...linkProjectEdges
     }
     allDesignersYaml {
       edges {
