@@ -1,12 +1,22 @@
 slug: lucas-samaras
 title: Lucas Samaras
 bio: >-
-  Lucas Samaras was already known as a sculptor, painter, and performance artist
-  when he began experimenting with photography. In his early work, which
-  includes multi-media assemblages, he often included images of himself. The
-  persistent use of himself as a subject has led one critic to remark that
-  "Samaras's almost obsessional self-observation extends past narcissism toward
-  a physical understanding of himself."
+  Lucas Samaras has painted with gold and silver since the late 50s. The
+  metallic found in the radiators around his studio and the metal paint tubes he
+  was using at the time. More, gold imitates value. Known as his Wound
+  paintings, they conjure trauma and pain. They are akin to contemporary icon
+  paintings and Fontana’s slashes.
+
+
+  The 22 karat gold jewelry is intentionally heavy, in the tradition of ancient
+  ritualistic jewelry. Resisting gold’s long, serious "gold standard" history,
+  Samaras chose a more playful, modest material from which to cast- chicken and
+  hardware wire. A trademark, as are his rainbow yarn and tiny beads (Samaras
+  has collected beaded necklaces for decades), Samaras has used the chicken wire
+  for chairs and boxes since the 70s. The perfect material to manipulate and
+  cut, the wire was also easily filled in with thick paint before casting. Each
+  gold piece is unique, and there are approximately 60 pieces in his gold
+  collection.
 press: []
 works:
   - dimensions: 4.2 ounces
@@ -14,7 +24,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/lucas-samaras/bracelet-7-SyaHnpJ1z/large.jpg
+          /public/static/images/works/lucas-samaras/bracelet-7-SkZHCrexJG/large.jpg
     medium: 22 karat gold
     projects:
       - slug: gold
