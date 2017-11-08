@@ -75,11 +75,13 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const getDesigner = slug => designers.find(d => d.slug === slug)
 
-  const projectImages = (currentProject.hydratedImages || []).filter(i => !!i).map(image =>
-    Object.assign(imageInfo(image), {
-      texts: image.caption ? { title: image.caption } : null,
-    })
-  )
+  const projectImages = (currentProject.hydratedImages || [])
+    .filter(i => !!i)
+    .map(image =>
+      Object.assign(imageInfo(image), {
+        texts: image.caption ? { title: image.caption } : null,
+      })
+    )
 
   const workImages = []
   designers.forEach(designer => {
@@ -90,7 +92,11 @@ const ProjectTemplate = ({ data, pathContext }) => {
     )
 
     works.forEach(work => {
-      if (work.hydratedImages && work.hydratedImages.length > 0 && work.hydratedImages[0]) {
+      if (
+        work.hydratedImages &&
+        work.hydratedImages.length > 0 &&
+        work.hydratedImages[0]
+      ) {
         workImages.push(
           Object.assign(imageInfo(work.hydratedImages[0]), {
             work,

@@ -92,7 +92,12 @@ const DesignerTemplate = ({ data, pathContext }) => {
 
   const works = currentDesigner.works || []
   const images = works
-    .filter(work => work.hydratedImages && work.hydratedImages.length > 0 && work.hydratedImages[0])
+    .filter(
+      work =>
+        work.hydratedImages &&
+        work.hydratedImages.length > 0 &&
+        work.hydratedImages[0]
+    )
     .map(work =>
       Object.assign(imageInfo(work.hydratedImages[0]), {
         work,
