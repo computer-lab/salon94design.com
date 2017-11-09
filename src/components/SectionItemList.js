@@ -116,15 +116,10 @@ const ListItem = styled.li`
 
   @media (${breakpoint3}) {
     margin: 0 0 32px 0;
-    width: auto;
-    min-width: 50%;
-
-    &.full-width-mobile {
-      width: 100%;
-    }
+    width: 100%;
 
     & img {
-      display: none;
+      height: auto;
     }
   }
 `
@@ -139,8 +134,8 @@ const ItemTitle = styled.div`
 
   @media (${breakpoint3}) {
     margin: 0;
-    font-size: 32px;
-    line-height: 48px;
+    font-size: 24px;
+    line-height: 36px;
   }
 `
 
@@ -155,7 +150,7 @@ const ItemSubtitle = styled.div`
   }
 `
 
-const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
+const SectionItemList = ({ sections, items }) => {
   if (!sections) {
     sections = [{ title: null, items }]
   }
@@ -167,12 +162,7 @@ const SectionItemList = ({ sections, items, fullWidthMobile = true }) => {
           {title && <SectionTitle>{title}</SectionTitle>}
           <List>
             {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-              <ListItem
-                key={i}
-                className={cx({
-                  'full-width-mobile': fullWidthMobile,
-                })}
-              >
+              <ListItem key={i}>
                 <Link to={link}>
                   <img
                     src={imageLargePath(image)}
