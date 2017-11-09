@@ -23,6 +23,7 @@ const Wrapper = styled.div`
   width: 100%;
   height: 84px;
   background: #fff;
+  z-index: 100;
 
   @media (${menuBreakpoint2}) {
     height: 72px;
