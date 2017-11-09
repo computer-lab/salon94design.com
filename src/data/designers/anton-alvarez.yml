@@ -23,7 +23,7 @@ works:
       vimeoId: ''
     when: '2015'
   - dimensions: 1.5 x 16.5 inches / 94 x 54.6 x 41.9 cm
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-chair-090415-SkB1ch00-/large.jpg
@@ -48,9 +48,9 @@ works:
     title: ​Z-0308172026
     when: '2017'
   - dimensions: 34 x 22 x 7 in / 86.4 x 55.9 x 17.8 cm
+    hero: true
     images:
-      - file: >-
-          /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-untitled-280415-H1Wrkqn0Ab/large.jpg
+      - file: /public/static/images/large2.jpg
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
