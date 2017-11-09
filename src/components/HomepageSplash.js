@@ -16,6 +16,7 @@ const Container = styled.div`
   background-color: #fff;
   display: none;
   opacity: 0;
+  z-index: 200;
 
   &.active {
     display: block;
