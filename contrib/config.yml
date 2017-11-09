@@ -191,7 +191,7 @@ collections:
         fields:
           - name: name
             label: Name
-            widget: String
+            widget: string
           - name: title
             label: Title
             widget: string
