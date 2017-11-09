@@ -23,8 +23,7 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: >-
-          /public/static/images/works/lucas-samaras/bracelet-7-SkZHCrexJG/large.jpg
+      - file: /public/static/images/bracelet.png
     medium: 22 karat gold
     projects:
       - slug: gold
