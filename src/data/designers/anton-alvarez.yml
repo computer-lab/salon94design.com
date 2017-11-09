@@ -50,7 +50,8 @@ works:
   - dimensions: 34 x 22 x 7 in / 86.4 x 55.9 x 17.8 cm
     hero: true
     images:
-      - file: /public/static/images/large2.jpg
+      - file: >-
+          /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-untitled-280415-HJZbb4ZJG/large.jpg
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
