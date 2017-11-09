@@ -10,12 +10,12 @@ const categoryTagMap = {
     'tables',
   ]),
   lighting: new Set(['lighting']),
-  miscellaneous: new Set([
+  other: new Set([
     'ceramics',
     'fashion',
     'jewelry',
     'textiles',
-    'miscellaneous',
+    'other',
   ]),
 }
 const categories = Object.keys(categoryTagMap)
@@ -28,7 +28,7 @@ const getTagCategory = tag => {
     }
   }
 
-  // default to last category (misc.)
+  // default to last category (other)
   return categories[categories.length - 1]
 }
 
@@ -40,8 +40,8 @@ const getCategoryTags = (designers, category) => {
 
 const getAllTags = designers => {
   const tagSortValue = tag => {
-    // miscellaneous should always be sorted at the bottom of the list
-    return tag === 'miscellaneous' ? 'zzz' : tag
+    // other should always be sorted at the bottom of the list
+    return tag === 'other' ? 'zzz' : tag
   }
 
   const tagSet = new Set()
