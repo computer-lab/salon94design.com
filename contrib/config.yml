@@ -201,10 +201,13 @@ collections:
         default: []
         fields:
           - name: title
-            label: Title
+            label: Title (ie, Instagram)
+            widget: string
+          - name: label
+            label: Label / Handle (ie, @salon94design)
             widget: string
           - name: link
-            label: Link
+            label: Link (ie, https://www.instagram.com/salon94design)
             widget: string
       - name: phones
         label: Phones

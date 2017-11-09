@@ -38,33 +38,32 @@ const LogoImage = styled.img`
 
   @media (${breakpoint2}) {
     margin-bottom: 20px;
-    width: 300px;
+    width: calc(100vw - 48px);
   }
 `
 
 const SectionWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 840px;
-  margin: 0 auto;
+  justify-content: center;
+  padding-bottom: 24px;
 `
 
 const Section = styled.section`
-  margin: 40px 0 0 0;
+  margin: 40px 0 0 60px;
   max-width: 400px;
 
-  @media (${breakpoint2}) {
-    margin: 40px 0 0 24px;
-  }
-
   @media (${breakpoint3}) {
-    margin: 40px 0 0 12px;
+    margin: 20px 0;
   }
 `
 
 const AboutWrapper = styled.div`
   margin-bottom: 40px;
+
+  @media (${breakpoint3}) {
+    margin-bottom: 20px;
+  }
 `
 
 const sectionContent = css`
@@ -134,15 +133,16 @@ const Info = ({ data }) => {
 
   const socialLinks = social.map(item => (
     <SectionListItem key={item.link}>
+      {item.title.trim()}:{' '}
       <a href={item.link} target="_blank">
-        {item.title}
+        {item.label}
       </a>
     </SectionListItem>
   ))
 
   const emailLinks = emails.map(item => (
     <SectionListItem key={item.email}>
-      {item.title}:{' '}
+      {item.title.trim()}:{' '}
       <a href={`mailto:${item.email}`} target="_blank">
         {item.email}
       </a>
@@ -219,6 +219,7 @@ export const pageQuery = graphql`
           }
           social {
             title
+            label
             link
           }
           mailingList

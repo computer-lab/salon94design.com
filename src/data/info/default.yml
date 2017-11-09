@@ -11,9 +11,10 @@ emails:
   - email: renee@salon94design.com
     title: 'Renee Rockefeller, Designer Liasion'
   - email: ryan@salon94design.com
-    title: 'General Inquiries '
+    title: 'General Inquiries'
 social:
   - link: 'https://www.instagram.com/salon94design'
+    label: '@salon94design'
     title: Instagram
 phones:
   - number: (646) 672-9212
