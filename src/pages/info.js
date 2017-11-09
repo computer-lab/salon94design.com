@@ -175,7 +175,7 @@ const Info = ({ data }) => {
 
   const staffLinks = staff.map(item => (
     <SectionListItem key={item.title + item.name}>
-      <StaffLabel>{item.name.trim()}</StaffLabel>
+      <StaffLabel>{(item.name || '').trim()}</StaffLabel>
       <StaffLabel>{item.title.trim()}</StaffLabel>
       <StaffLabel>
         <a href={`mailto:${item.email}`} target="_blank">
