@@ -255,14 +255,16 @@ class ImageList extends Component {
       isExpanded: props.alwaysExpand ? true : false,
       hoverImage: null,
       fullscreenImageIndices: null,
-      mobileWidth: isMobileWidth(),
-      windowSize: { width: window.innerWidth, height: window.innerHeight },
+      mobileWidth: false,
+      windowSize: { width: 1200, height: 800 },
     }
   }
 
   componentDidMount() {
     window.addEventListener('keydown', this.onKeyDown)
     document.addEventListener('click', this.onDocumentClick)
+
+    this.onResize()
     window.addEventListener('resize', this.onResize)
   }
 
