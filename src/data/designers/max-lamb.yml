@@ -127,6 +127,15 @@ works:
     tags:
       - seating
       - ''
-    title: Tonalite Boulder Stool 9
+    title: 'Tonalite Boulder Stool #9'
+    when: '2017'
+  - images: []
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-10
+    tags:
+      - chairs
+      - ''
+    title: 'Tonalite Boulder Chair #10'
     when: '2017'
 status: Represented
