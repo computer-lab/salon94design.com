@@ -132,9 +132,12 @@ works:
   - dimensions: ' 21.7 x 35.4 x 27.6 in / 55 x 90 x 70 cm'
     edition: 'Unique, initials carved on side'
     images:
-      - file: /public/static/images/016_IMG_0036.jpg
-      - file: /public/static/images/017_IMG_0042.jpg
-      - file: /public/static/images/018_AS1_8456.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
+      - file: >-
+          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather'
     projects:
       - slug: boulders-max-lamb
