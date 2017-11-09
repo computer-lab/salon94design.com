@@ -184,6 +184,20 @@ collections:
       - name: hero
         label: Hero Image
         widget: image
+      - name: staff
+        label: Staff
+        widget: list
+        default: []
+        fields:
+          - name: name
+            label: Name
+            widget: String
+          - name: title
+            label: Title
+            widget: string
+          - name: email
+            label: Email
+            widget: string
       - name: emails
         label: Emails
         widget: list

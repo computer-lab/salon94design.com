@@ -53,12 +53,17 @@ const Section = styled.section`
   margin: 40px 0 0 60px;
   max-width: 400px;
 
+  @media (${breakpoint2}) {
+    max-width: none;
+    width: 100%;
+  }
+
   @media (${breakpoint3}) {
     margin: 20px 0;
   }
 `
 
-const AboutWrapper = styled.div`
+const SubSection = styled.div`
   margin-bottom: 40px;
 
   @media (${breakpoint3}) {
@@ -69,7 +74,6 @@ const AboutWrapper = styled.div`
 const sectionContent = css`
   margin: 0;
   padding: 0;
-  max-width: 400px;
   font-size: 18px;
   line-height: 1.4;
 `
@@ -90,6 +94,17 @@ const SectionList = styled.ul`
 const SectionListItem = styled.li`
   composes: ${childLink};
   margin: 0 0 16px 0;
+`
+
+const SectionListItemLabel = styled.span`
+  &::after {
+    content: ' – ';
+  }
+`
+
+const StaffLabel = styled.div`
+  font-weight: 400;
+  line-height: 1.4;
 `
 
 const MailingListSignup = styled.div`
@@ -116,6 +131,7 @@ const Info = ({ data }) => {
     emails,
     phones,
     social,
+    staff,
     mailingList,
     press,
     hydratedImages,
@@ -129,30 +145,43 @@ const Info = ({ data }) => {
     .filter(item => item && item.file && item.file.length > 0)
     .map(image => Object.assign({}, image, imageInfo(image)))
 
-  const socialLinks = social.map(item => (
-    <SectionListItem key={item.link}>
-      {item.title.trim()}:{' '}
-      <a href={item.link} target="_blank">
-        {item.label}
-      </a>
-    </SectionListItem>
-  ))
+  const renderListItems = items =>
+    items.map(item => (
+      <SectionListItem key={item.title + item.link}>
+        <SectionListItemLabel>{item.title.trim()}</SectionListItemLabel>
+        <a href={item.link} target="_blank">
+          {item.label}
+        </a>
+      </SectionListItem>
+    ))
 
-  const emailLinks = emails.map(item => (
-    <SectionListItem key={item.email}>
-      {item.title.trim()}:{' '}
-      <a href={`mailto:${item.email}`} target="_blank">
-        {item.email}
-      </a>
-    </SectionListItem>
-  ))
+  const socialLinks = renderListItems(social)
 
-  const phoneLinks = phones.map(item => (
-    <SectionListItem key={item.number}>
-      {item.title}:{' '}
-      <a href={`tel:${formatTel(item.number)}`} target="_blank">
-        {item.number}
-      </a>
+  const emailLinks = renderListItems(
+    emails.map(item => ({
+      title: item.title,
+      label: item.email,
+      link: `mailto:${item.email}`,
+    }))
+  )
+
+  const phoneLinks = renderListItems(
+    phones.map(item => ({
+      title: item.title,
+      label: item.number,
+      link: `tel:${formatTel(item.number)}`,
+    }))
+  )
+
+  const staffLinks = staff.map(item => (
+    <SectionListItem key={item.title + item.name}>
+      <StaffLabel>{item.name.trim()}</StaffLabel>
+      <StaffLabel>{item.title.trim()}</StaffLabel>
+      <StaffLabel>
+        <a href={`mailto:${item.email}`} target="_blank">
+          {item.email}
+        </a>
+      </StaffLabel>
     </SectionListItem>
   ))
 
@@ -166,21 +195,27 @@ const Info = ({ data }) => {
 
       <SectionWrapper>
         <Section>
-          <AboutWrapper>
+          <SubSection>
             <Header2>About</Header2>
             <SectionText dangerouslySetInnerHTML={{ __html: aboutHtml }} />
-          </AboutWrapper>
+          </SubSection>
 
           <Press press={press} />
         </Section>
 
         <Section>
-          <Header2>Contact</Header2>
-          <SectionList>
-            {socialLinks}
-            {phoneLinks}
-            {emailLinks}
-          </SectionList>
+          <SubSection>
+            <Header2>Contact</Header2>
+            <SectionList>
+              {socialLinks}
+              {phoneLinks}
+              {emailLinks}
+            </SectionList>
+          </SubSection>
+          <SubSection>
+            <Header2>Staff</Header2>
+            <SectionList>{staffLinks}</SectionList>
+          </SubSection>
           <MailingListSignup>
             <a href={mailingList} target="_blank">
               Sign Up For Mailing List
@@ -207,6 +242,11 @@ export const pageQuery = graphql`
         node {
           hero
           aboutHtml
+          staff {
+            name
+            title
+            email
+          }
           emails {
             title
             email
