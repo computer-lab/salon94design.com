@@ -245,11 +245,16 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const markdownToHtml = util.promisify(remark().use(html).process)
 
-  const hydrateImages = async node => {
+  const hydrateImages = async (node, addDummyImages = false) => {
     if (node.images) {
       node.hydratedImages = await Promise.all(
         node.images.map(hydrateImage).filter(item => !!item)
       )
+    }
+
+    if (addDummyImages && (!node.hydratedImages || node.hydratedImages.length === 0)) {
+      const nullImage = { file: '', width: 0, height: 0 }
+      node.hydratedImages = [{...nullImage, title: '', resized: [{...nullImage}]}]
     }
   }
 
@@ -271,7 +276,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
         processPress(node)
 
-        await hydrateImages(node)
+        await hydrateImages(node, true)
       }
       break
 
