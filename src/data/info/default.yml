@@ -1,7 +1,14 @@
 hero: /public/static/images/pesce image.jpg
 emails:
-  - email: info@salon94design.com
-    title: General Inquiries
+  - email: jeanne@salon94design.com
+    title: 'Jeanne Greenberg Rohatyn, Founder'
+  - email: paul@salon94design.com
+    title: 'Paul Johnson, Founder'
+  - email: maxime@salon94design.com
+    title: 'Maxime Van Melkebeke, Director'
+  - email: jackie@salon94design.com
+    title: 'Jackie Greenberg, Associate Director/ Design Liaison'
+  - {}
 social:
   - link: 'https://www.instagram.com/salon94design'
     title: Instagram
