@@ -10,13 +10,7 @@ const categoryTagMap = {
     'tables',
   ]),
   lighting: new Set(['lighting']),
-  other: new Set([
-    'ceramics',
-    'fashion',
-    'jewelry',
-    'textiles',
-    'other',
-  ]),
+  other: new Set(['ceramics', 'fashion', 'jewelry', 'textiles', 'other']),
 }
 const categories = Object.keys(categoryTagMap)
 

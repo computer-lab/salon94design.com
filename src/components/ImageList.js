@@ -5,6 +5,7 @@ import { css } from 'emotion'
 import styled from 'emotion/react'
 import cx from 'classnames'
 import Scroll from 'react-scroll'
+import throttle from 'lodash.throttle'
 
 import { ROOT_URL } from '../util'
 import {
@@ -102,7 +103,7 @@ const ImageItem = styled.div`
 
       object-fit: fill;
       width: auto;
-      min-width: 400px;
+      min-width: 0;
       max-width: 100%;
       height: auto;
       min-height: 0;
@@ -113,6 +114,10 @@ const ImageItem = styled.div`
   @media (${breakpoint1}) {
     &.expanded {
       margin: 0 0 20px 0;
+
+      & img {
+        max-height: none;
+      }
     }
   }
 
@@ -186,13 +191,14 @@ const ImageText = styled.li`
   }
 
   @media (${breakpoint2}) {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     width: auto;
   }
 
   @media (${breakpoint3}) {
-    line-height: 24px;
+    font-size: 16px;
+    line-height: 18px;
   }
 `
 
@@ -237,7 +243,7 @@ class ImageList extends Component {
     this.onImageHover = this.onImageHover.bind(this)
     this.onKeyDown = this.onKeyDown.bind(this)
     this.onDocumentClick = this.onDocumentClick.bind(this)
-    this.onResize = this.onResize.bind(this)
+    this.onResize = throttle(this.onResize.bind(this), 100)
     this.fullscreenImageViewerCloseHandler = this.fullscreenImageViewerCloseHandler.bind(
       this
     )
@@ -250,6 +256,7 @@ class ImageList extends Component {
       hoverImage: null,
       fullscreenImageIndices: null,
       mobileWidth: isMobileWidth(),
+      windowSize: { width: window.innerWidth, height: window.innerHeight },
     }
   }
 
@@ -298,9 +305,10 @@ class ImageList extends Component {
 
   onResize() {
     const mobileWidth = isMobileWidth()
-    if (mobileWidth !== this.state.mobileWidth) {
-      this.setState({ mobileWidth })
-    }
+    this.setState({
+      mobileWidth: isMobileWidth(),
+      windowSize: { width: window.innerWidth, height: window.innerHeight },
+    })
   }
 
   fullscreenImageViewerCloseHandler() {
@@ -426,6 +434,7 @@ class ImageList extends Component {
       hoverImage,
       fullscreenImageIndices,
       mobileWidth,
+      windowSize,
     } = this.state
 
     const hoverInfoClass = cx({
@@ -467,7 +476,7 @@ class ImageList extends Component {
                 const {
                   src,
                   srcSet,
-                  width,
+                  largeSize,
                   texts,
                   unexpandedLink,
                   alt = '',
@@ -477,7 +486,12 @@ class ImageList extends Component {
                 if (mobileWidth) {
                   sizes = '100vw'
                 } else if (isExpanded) {
-                  sizes = 'calc(100vw - 400px)'
+                  const { width, height } = largeSize
+                  if (width > height) {
+                    sizes = 'calc(100vw - 400px)'
+                  } else {
+                    sizes = `${(windowSize.height - 160) * (width / height)}px`
+                  }
                 } else {
                   sizes = '172px'
                 }
