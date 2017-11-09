@@ -252,9 +252,14 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
       )
     }
 
-    if (addDummyImages && (!node.hydratedImages || node.hydratedImages.length === 0)) {
+    if (
+      addDummyImages &&
+      (!node.hydratedImages || node.hydratedImages.length === 0)
+    ) {
       const nullImage = { file: '', width: 0, height: 0 }
-      node.hydratedImages = [{...nullImage, title: '', resized: [{...nullImage}]}]
+      node.hydratedImages = [
+        { ...nullImage, title: '', resized: [{ ...nullImage }] },
+      ]
     }
   }
 

@@ -127,9 +127,7 @@ const Info = ({ data }) => {
 
   const images = (hydratedImages || [])
     .filter(item => item && item.file && item.file.length > 0)
-    .map(image =>
-      Object.assign({}, image, imageInfo(image))
-    )
+    .map(image => Object.assign({}, image, imageInfo(image)))
 
   const socialLinks = social.map(item => (
     <SectionListItem key={item.link}>
