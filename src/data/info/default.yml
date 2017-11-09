@@ -14,6 +14,7 @@ emails:
     title: General Inquiries
 social:
   - link: 'https://www.instagram.com/salon94design'
+    label: '@salon94design'
     title: Instagram
 phones:
   - number: (646) 672-9212
