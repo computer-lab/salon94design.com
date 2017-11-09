@@ -1,20 +1,19 @@
 hero: /public/static/images/pesce image.jpg
 emails:
   - email: jeanne@salon94design.com
-    title: 'Jeanne Greenberg Rohatyn, Founder'
+    title: Jeanne Greenberg Rohatyn – Founder
   - email: paul@salon94design.com
-    title: 'Paul Johnson, Founder'
+    title: Paul Johnson – Founder
   - email: maxime@salon94design.com
-    title: 'Maxime Van Melkebeke, Associate Director'
+    title: Maxime Van Melkebeke – Associate Director
   - email: jackie@salon94design.com
-    title: 'Jackie Greenberg, Designer Liasion '
+    title: 'Jackie Greenberg – Designer Liaison '
   - email: renee@salon94design.com
-    title: 'Renee Rockefeller, Designer Liasion'
+    title: 'Renee Rockefeller – Exhibition Liaison '
   - email: ryan@salon94design.com
-    title: 'General Inquiries'
+    title: General Inquiries
 social:
   - link: 'https://www.instagram.com/salon94design'
-    label: '@salon94design'
     title: Instagram
 phones:
   - number: (646) 672-9212
