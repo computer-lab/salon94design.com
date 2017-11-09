@@ -14,6 +14,7 @@ import { imageFilepath } from '../util'
 
 const Container = styled.section`
   margin-top: 20px;
+  font-style: italic;
 `
 
 const Press = ({ press }) => {

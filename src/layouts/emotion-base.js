@@ -59,6 +59,7 @@ export const selectorList = css`
 
 export const Header1 = styled.h1`
   composes: ${sansfont};
+  font-style: normal;
   margin: 0 0 20px 0;
   font-weight: 600;
   font-size: 48px;
@@ -84,6 +85,7 @@ export const Header1 = styled.h1`
 
 export const Header2 = styled.h2`
   composes: ${sansfont};
+  font-style: normal;
   margin: 0 0 16px 0;
   padding: 0;
   font-weight: 500;
