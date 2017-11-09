@@ -37,7 +37,7 @@ works:
     title: The Thread Wrapping Machine Chair 090415
     when: '2015'
   - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
-    hero: false
+    hero: true
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
@@ -48,7 +48,7 @@ works:
     title: ​Z-0308172026
     when: '2017'
   - dimensions: 34 x 22 x 7 in / 86.4 x 55.9 x 17.8 cm
-    hero: true
+    hero: false
     images:
       - file: >-
           /public/static/images/works/anton-alvarez/the-thread-wrapping-machine-untitled-280415-HJZbb4ZJG/large.jpg
