@@ -126,9 +126,11 @@ const Info = ({ data }) => {
     return `+1${n.replace(/[\(\)\-\s]/g, '')}`
   }
 
-  const images = (hydratedImages || []).map(image =>
-    Object.assign({}, image, imageInfo(image))
-  )
+  const images = (hydratedImages || [])
+    .filter(item => item && item.file && item.file.length > 0)
+    .map(image =>
+      Object.assign({}, image, imageInfo(image))
+    )
 
   const socialLinks = social.map(item => (
     <SectionListItem key={item.link}>
