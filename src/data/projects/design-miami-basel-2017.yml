@@ -1,7 +1,7 @@
 slug: design-miami-basel-2017
 title: 'Design Miami/Basel 2017 Max Lamb, Lucas Samaras'
 type: Art Fair
-when: 'June 2017'
+when: June 2017
 date: '2017-06-01T00:00:00'
 designers:
   - slug: max-lamb
@@ -11,7 +11,11 @@ description: |-
 
   Lucas Samaras – Gold Jewelry
 images:
-  - file: /public/static/images/projects/design-miami-basel-2017/rkuCkgx1z/large.jpg
+  - file: /public/static/images/Design Miami Basel 2017 Install 04.jpg
+  - file: /public/static/images/Design Miami Basel 2017 Install 01.jpg
+  - file: /public/static/images/Design Miami Basel 2017 Install 11.jpg
+    hero: true
+  - file: /public/static/images/Design Miami Basel 2017 Install 05.jpg
 video:
   caption: ''
   vimeoId: ''
