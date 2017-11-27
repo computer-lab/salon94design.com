@@ -3,7 +3,7 @@ import Helmet from 'react-helmet'
 import { ROOT_URL } from '../util'
 
 const icons = {
-  favicon: require('../assets/icons/favicon.ico'),
+  favicon: require('../assets/icons/favicon.png'),
   appleTouch: {
     regular: require('../assets/icons/apple-touch-icon.png'),
     w57: require('../assets/icons/apple-touch-icon-57x57.png'),
