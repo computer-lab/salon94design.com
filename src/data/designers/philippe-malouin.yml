@@ -20,7 +20,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
+          /images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
     medium: 'cast concrete, exposed aggregate'
     projects:
       - slug: design-miami-philippe-malouin-core
