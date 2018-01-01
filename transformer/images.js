@@ -176,23 +176,17 @@ async function updateInfo (info, processedImages) {
 async function getProcessedImageData (image, processedImageItem) {
   const { newImage } = processedImageItem
   return Object.assign({}, image, {
-    file: imageDataFilename(newImage)
+    file: newImage
   })
 }
 
 async function getImageData (filename) {
   const { width, height } = await sharp(filename).metadata()
   return {
-    file: imageDataFilename(filename),
+    file: filename,
     width,
     height
   }
-}
-
-function imageDataFilename (filename) {
-  // References to images in the data need to be prefixed with /public/static/ to show up in the CMS
-  const prefix = 'images/'
-  return path.join('/public/static', filename.substr(filename.indexOf(prefix)))
 }
 
 function workImageFilename (designer, work, image) {

@@ -14,7 +14,7 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
+          /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects:
@@ -29,7 +29,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
+          /images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
     medium: 'paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
@@ -42,7 +42,7 @@ works:
   - dimensions: 32.5 x 22 x 22 inches / 82.6 x 55.9 x 55.9 cm
     images:
       - file: >-
-          /public/static/images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
+          /images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
       - slug: ghost-dog
@@ -54,7 +54,7 @@ works:
   - hero: false
     images:
       - file: >-
-          /public/static/images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
+          /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
     projects:
       - slug: ghost-dog
     slug: underwear-armoire-3

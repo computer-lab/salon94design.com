@@ -15,9 +15,9 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
+          /images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
       - file: >-
-          /public/static/images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
+          /images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
     medium: Silk
     price: ''
     projects:
@@ -31,7 +31,7 @@ works:
   - dimensions: 15-20 feet long (4.5-6 m long)
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
+          /images/works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
     medium: Nylon
     price: ''
     projects:
@@ -44,9 +44,9 @@ works:
   - dimensions: Up to 8 feet (up to 2.4 m)
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
+          /images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
+          /images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
     medium: PVC
     price: ''
     projects:
@@ -60,7 +60,7 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
+          /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
     slug: red-silk-bench
     tags:
       - benches
@@ -72,7 +72,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
+          /images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
     medium: PVC tubing
     projects:
       - slug: ghost-dog
