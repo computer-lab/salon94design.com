@@ -176,17 +176,22 @@ async function updateInfo (info, processedImages) {
 async function getProcessedImageData (image, processedImageItem) {
   const { newImage } = processedImageItem
   return Object.assign({}, image, {
-    file: newImage
+    file: imageDataFilename(newImage)
   })
 }
 
 async function getImageData (filename) {
   const { width, height } = await sharp(filename).metadata()
   return {
-    file: filename,
+    file: imageDataFilename(filename),
     width,
     height
   }
+}
+
+function imageDataFilename (filename) {
+  const prefix = '/images/';
+  return filename.substr(filename.indexOf(prefix))
 }
 
 function workImageFilename (designer, work, image) {
