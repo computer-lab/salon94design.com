@@ -313,7 +313,7 @@ async function hydrateImage(image) {
     return null
   }
 
-  const localFilename = path.resolve(image.file.replace('/public/', ''))
+  const localFilename = path.resolve(path.join('static/', image.file))
 
   const images = await readdirAbsolute(path.dirname(localFilename))
   const resizedImages = images.filter(n => n !== localFilename)
