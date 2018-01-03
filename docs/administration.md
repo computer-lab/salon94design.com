@@ -59,6 +59,109 @@ Once you have successfully logged in, you will be redirected to the CMS.
 
 ## Using the CMS
 
+**XXX This section will change slightly if we opt to use the latest UI**
+
+After logging in the CMS interface will be displayed. On the left is a sidebar
+listing each type of editable object:
+
+**Designer** A designer that is displayed in a list at `/designers/` and in
+             detail at `/designers/{slug}/`. A designer also has **Works** that
+             are displayed in the lists at `/works/{category}/{subcategory}/`.
+
+**Project**  A *fair* or *exhibition* that is displayed in the list at `/fairs/`
+             or `/exhibitions/` and in detail at `/fairs/{slug}/` and
+             `/exhibitions/{slug}/` respectively.
+
+**Info**     A singleton object representing the page at `/info/`. Includes
+             contact info, mailing list, press and other generic info.
+
+**Landing Page** A singleton object that controls the splash image and homepage
+                 content.
+
+### Creating or editing an object
+
+To create a new **Designer** or **Project**, click on the *plus* icon next to
+the target collection. New **Info** and **Landing Page** objects cannot be
+created. You can also use the *plus* button on the top menu bar.
+
+To edit an object, click the target collection. You will see a grid of editable
+objects. By clicking on a particular object in the grid you will be presented
+with an interface where you can make changes to that object.
+
+### Deleting an object
+
+To delete an object, first click on the target collection and object to arrive
+at the editor interface. Then click the *Delete* button on the bottom menu bar
+and confirm your intention to delete the object.
+
+### Using the editor interface
+
+The editor interface consists of two columns. The column on the left contains
+editable fields for each aspect of the object. The column on the right displays
+a rough preview of the changes you have made in the left column. Please note
+that this column is only an approximation of how the object will appear in
+different contexts on the live site.
+
+To make changes to an object, edit the content in the fields on the left
+column. When you are satisfied with your changes, click the *Save* button on
+the bottom menu bar and confirm your intention to save the object.
+
+### Finding a particular object
+
+For a collection with many objects (e.g: **Designer**) it may be easier to
+search for the object you want to edit instead of finding it in the collection
+grid. In this case you can use the search bar in the top menu bar. The search
+bar is case-insensitive and will return any matching object in a grid.
+
+### Verifying your changes
+
+Once you click the *Save* button on a new object, the following process takes
+place:
+
+* The object is updated on GitHub
+* Any added images are pre-processed to multiple sizes
+* The entire site is re-deployed to Netlify
+
+This process can take anywhere from 1-5 minutes. In the meantime the old version
+of the site will still be displayed. You can track the progress of the site
+deployment in the Netlify console.
+
 ## Logging in to the Netlify console
 
+You can use your GitHub account to login to the netlify console. Your GitHub
+user must be listed in the [site administrators](https://app.netlify.com/sites/tank-commander-melody-70755/settings/general#site-administrators)
+section of the console in order to log in. Visit the [login page](https://app.netlify.com/)
+and log in with GitHub.
+
 ## Using the Netlify console
+
+You can use the Netlify console to track the status of a deployment following
+your edits or manage DNS for salon94design.com.
+
+### Tracking the status of a deployment
+
+On the left-hand side of the [overview page](https://app.netlify.com/sites/tank-commander-melody-70755/overview)
+you will see a section called **Production deploys**. Any deploys resulting from
+your site changes will be displayed here. Your deploy can be in one of the
+following states:
+
+**Published** The deploy is complete
+
+**Building**  The deploy is in progress
+
+**Failed**    The deploy has failed
+
+Once the deploy is in a **Published** state you will be able to see your changes
+reflected on `www.salon94design.com`.
+
+### Managing DNS
+
+Netlify requires the use of its own nameservers for certain features to work
+(e.g: custom domain, free SSL certificate). This means that any DNS changes
+for salon94design.com such as adding a subdomain or changing email providers
+will take place in the Netlify console.
+
+To make DNS changes, navigate to the [Domain Management](https://app.netlify.com/sites/tank-commander-melody-70755/settings/domain)
+section of the Netlify settings. There you will be able to manage DNS records
+for the bare domain `salon94design.com` and the primary domain
+`www.salon94design.com`.
