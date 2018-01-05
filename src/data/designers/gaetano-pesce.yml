@@ -75,11 +75,11 @@ works:
   - dimensions: 86.61 x 43.31 x 17.72 in / 220 x 110 x 45 cm
     hero: true
     images:
-      - file: /images/works/gaetano-pesce/do-you-still-love-me?-SJxi3Uyg1z/large.jpg
+      - file: /images/works/gaetano-pesce/do-you-still-love-me-SJxi3Uyg1z/large.jpg
     medium: polyurethane resin and metal structure
     projects:
       - slug: design-miami-2016-pesce
-    slug: do-you-still-love-me?
+    slug: do-you-still-love-me
     tags:
       - storage
     title: Do You Still Love Me?
