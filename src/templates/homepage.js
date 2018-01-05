@@ -65,7 +65,7 @@ const Designers = styled.div`
 
 const When = styled.div`
   composes: ${subHeader};
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 100;
 `
 

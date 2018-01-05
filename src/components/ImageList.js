@@ -180,25 +180,25 @@ const ImageText = styled.li`
   composes: ${childLink};
   text-align: left;
   min-width: 50%;
-  font-size: 24px;
+  font-size: 16px;
   font-weight: 300;
-  line-height: 28px;
+  line-height: 22px;
   margin-bottom: 6px;
 
   &.small {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1;
   }
 
   @media (${breakpoint2}) {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 12px;
+    line-height: 16px;
     width: auto;
   }
 
   @media (${breakpoint3}) {
-    font-size: 16px;
-    line-height: 18px;
+    font-size: 8px;
+    line-height: 10px;
   }
 `
 

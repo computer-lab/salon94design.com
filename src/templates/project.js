@@ -29,7 +29,7 @@ const ProjectHeader = styled.div`
 const ProjectWhen = styled.div`
   composes: ${sansfont};
   margin-top: 20px;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 100;
 `
 
