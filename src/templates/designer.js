@@ -113,27 +113,21 @@ const DesignerTemplate = ({ data, pathContext }) => {
       })
     )
 
-  const imagesByProject = projects.map(project => ({
-    project,
-    images: images.filter(
-      image =>
-        image.work.projects &&
-        image.work.projects.map(p => p.slug).includes(project.slug)
-    ),
-  }))
+  // Lexicographic work image sort
+  // images.sort((a, b) => a.work.title.localeCompare(b.work.title));
 
-  // include works w/o project
-  const projectSlugs = projects.map(p => p.slug)
-  imagesByProject.splice(0, 0, {
+  // When work image sort
+  // images.sort((a, b) => a.work.when.localeCompare(b.work.when));
+
+  // Reverse-when work image sort
+  images.sort((a, b) => -1 * a.work.when.localeCompare(b.work.when));
+
+  const allImages = [{
     project: null,
-    images: images.filter(
-      image =>
-        !image.work.projects ||
-        !image.work.projects.find(p => projectSlugs.includes(p.slug))
-    ),
-  })
+    images
+  }];
 
-  const imageSets = imagesByProject
+  const imageSets = allImages
     .filter(item => item.images.length > 0)
     .map(({ project, images }, idx) => ({
       title: idx !== 0 && project ? project.title : null,
