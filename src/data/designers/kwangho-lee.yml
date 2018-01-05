@@ -14,10 +14,8 @@ works:
   - dimensions: 5-10 feet long (1.5-3 m long)
     hero: false
     images:
-      - file: >-
-          /images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
-      - file: >-
-          /images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
+      - file: /images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
+      - file: /images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
     medium: Silk
     price: ''
     projects:
@@ -43,10 +41,8 @@ works:
     when: '2006'
   - dimensions: Up to 8 feet (up to 2.4 m)
     images:
-      - file: >-
-          /images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
-      - file: >-
-          /images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
+      - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
+      - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
     medium: PVC
     price: ''
     projects:
@@ -59,8 +55,7 @@ works:
   - caption: Frieze NY
     hero: false
     images:
-      - file: >-
-          /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
+      - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
     slug: red-silk-bench
     tags:
       - benches
@@ -71,8 +66,7 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: >-
-          /images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
+      - file: /images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
     medium: PVC tubing
     projects:
       - slug: ghost-dog

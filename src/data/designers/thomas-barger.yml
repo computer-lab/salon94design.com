@@ -13,8 +13,7 @@ works:
   - dimensions: 27.5 x 36 x 21 inches
     hero: false
     images:
-      - file: >-
-          /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
+      - file: /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
     medium: 'paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects:
@@ -53,8 +52,7 @@ works:
     when: '2017'
   - hero: false
     images:
-      - file: >-
-          /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
+      - file: /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
     projects:
       - slug: ghost-dog
     slug: underwear-armoire-3

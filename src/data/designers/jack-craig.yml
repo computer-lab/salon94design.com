@@ -14,10 +14,8 @@ works:
     edition: 'Unique '
     hero: false
     images:
-      - file: >-
-          /images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
-      - file: >-
-          /images/works/jack-craig/bronze-stool-BJer0Helkf/large.jpg
+      - file: /images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
+      - file: /images/works/jack-craig/bronze-stool-BJer0Helkf/large.jpg
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -32,8 +30,7 @@ works:
     edition: Unique
     hero: false
     images:
-      - file: >-
-          /images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
+      - file: /images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
     medium: 'bronze, marble'
     price: ''
     projects:
@@ -47,10 +44,8 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: >-
-          /images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
-      - file: >-
-          /images/works/jack-craig/dripped-bronze-shelf-HygF7fJe1f/large.jpg
+      - file: /images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
+      - file: /images/works/jack-craig/dripped-bronze-shelf-HygF7fJe1f/large.jpg
     medium: 'bronze, concrete'
     slug: dripped-bronze-shelf
     tags:

@@ -19,8 +19,7 @@ works:
     edition: Ed. of 8 + 2 AP
     hero: true
     images:
-      - file: >-
-          /images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
+      - file: /images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
     medium: 'cast concrete, exposed aggregate'
     projects:
       - slug: design-miami-philippe-malouin-core
