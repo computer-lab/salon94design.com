@@ -13,7 +13,7 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
+          /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
     medium: marble
     price: ''
     projects: []
@@ -25,7 +25,7 @@ works:
   - dimensions: 16 x 13/25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
     images:
       - file: >-
-          /public/static/images/works/kueng-caputo/marble-stool-white-BkyH_AkJG/large.jpg
+          /images/works/kueng-caputo/marble-stool-white-BkyH_AkJG/large.jpg
     medium: marble
     slug: marble-stool-white
     title: Marble Stool White
@@ -34,7 +34,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/kueng-caputo/sand-chair-rJifzEbJf/large.jpg
+          /images/works/kueng-caputo/sand-chair-rJifzEbJf/large.jpg
     slug: sand-chair
     tags:
       - chairs
@@ -44,7 +44,7 @@ works:
     edition: Unique
     images:
       - file: >-
-          /public/static/images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
+          /images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
     medium: marble
     slug: marble-stool-orange
     tags:

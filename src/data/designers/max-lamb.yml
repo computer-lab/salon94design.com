@@ -12,9 +12,9 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
     projects:
       - slug: boulders-max-lamb
@@ -25,9 +25,9 @@ works:
     edition: 'Initials carved on side, unique'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
     medium: 'raw and polished Tonalite granite & bridle leather '
     projects:
       - slug: boulders-max-lamb
@@ -41,9 +41,9 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather '
     projects:
       - slug: boulders-max-lamb
@@ -57,7 +57,7 @@ works:
     edition: 'Unique, initials carved on bottom'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
+          /images/works/max-lamb/thermal-spray-chair-stainless-HyXlFEnij3b/large.jpg
     medium: Polystyrene and stainless steel
     price: ''
     projects:
@@ -71,9 +71,9 @@ works:
     edition: 'Unique, initials carved on bottom'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
+          /images/works/max-lamb/thermal-spray-shelf-bronze-rJ4gFVnoj3W/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
+          /images/works/max-lamb/thermal-spray-shelf-bronze-HyBxYN2oo3W/large.jpg
     medium: Polystyrene and bronze
     price: ''
     projects:
@@ -87,9 +87,9 @@ works:
     edition: 'Unique, initials carved on bottom'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
+          /images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
+          /images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
     projects:
       - slug: design-miami-basel-2017
@@ -102,7 +102,7 @@ works:
     edition: 'Unique, initials carved on side'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
+          /images/works/max-lamb/thermal-spray-dining-table-stainless-BJWeYNnsohb/large.jpg
     medium: Polystyrene and stainless steel
     price: ''
     projects:
@@ -117,9 +117,9 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
+          /images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
+          /images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -133,11 +133,11 @@ works:
     edition: 'Unique, initials carved on side'
     images:
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
       - file: >-
-          /public/static/images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
+          /images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather'
     projects:
       - slug: boulders-max-lamb

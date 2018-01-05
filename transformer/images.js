@@ -190,9 +190,8 @@ async function getImageData (filename) {
 }
 
 function imageDataFilename (filename) {
-  // References to images in the data need to be prefixed with /public/static/ to show up in the CMS
-  const prefix = 'images/'
-  return path.join('/public/static', filename.substr(filename.indexOf(prefix)))
+  const prefix = '/images/';
+  return filename.substr(filename.indexOf(prefix))
 }
 
 function workImageFilename (designer, work, image) {

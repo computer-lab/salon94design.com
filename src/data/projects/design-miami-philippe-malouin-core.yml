@@ -15,11 +15,11 @@ description: >-
   multidisciplinary interior design company, POST- OFFICE.
 images:
   - file: >-
-      /public/static/images/projects/design-miami-philippe-malouin-core/BJlaVaACZ/large.jpg
+      /images/projects/design-miami-philippe-malouin-core/BJlaVaACZ/large.jpg
     hero: true
   - file: >-
-      /public/static/images/projects/design-miami-philippe-malouin-core/H1lxTETCR-/large.jpg
+      /images/projects/design-miami-philippe-malouin-core/H1lxTETCR-/large.jpg
   - file: >-
-      /public/static/images/projects/design-miami-philippe-malouin-core/HJblaN6C0-/large.jpg
+      /images/projects/design-miami-philippe-malouin-core/HJblaN6C0-/large.jpg
 video:
   vimeoId: ''

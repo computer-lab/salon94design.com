@@ -11,14 +11,14 @@ description: |-
 
   Lucas Samaras – Gold Jewelry
 images:
-  - file: /public/static/images/projects/design-miami-basel-2017/B190OjO1M/large.jpg
+  - file: /images/projects/design-miami-basel-2017/B190OjO1M/large.jpg
   - file: >-
-      /public/static/images/projects/design-miami-basel-2017/Hyx5CusOyG/large.jpg
+      /images/projects/design-miami-basel-2017/Hyx5CusOyG/large.jpg
   - file: >-
-      /public/static/images/projects/design-miami-basel-2017/ryb9ROiuyf/large.jpg
+      /images/projects/design-miami-basel-2017/ryb9ROiuyf/large.jpg
     hero: true
   - file: >-
-      /public/static/images/projects/design-miami-basel-2017/HkGcRds_kM/large.jpg
+      /images/projects/design-miami-basel-2017/HkGcRds_kM/large.jpg
 video:
   caption: ''
   vimeoId: ''

@@ -29,7 +29,7 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
+          /images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
     medium: 'wood, papier maché'
     projects:
       - slug: design-miami-2016-pesce
@@ -42,7 +42,7 @@ works:
     edition: Unique
     images:
       - file: >-
-          /public/static/images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
+          /images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
     medium: 'laminated plywood, gold leaf doors'
     projects:
       - slug: design-miami-2016-pesce
@@ -55,7 +55,7 @@ works:
     edition: Unique
     images:
       - file: >-
-          /public/static/images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
+          /images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
     medium: 'polyurethane resin and steel '
     projects:
       - slug: ghost-dog
@@ -68,7 +68,7 @@ works:
     hero: false
     images:
       - file: >-
-          /public/static/images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
+          /images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
     projects:
       - slug: design-miami-2016-pesce
     slug: mini-stracci-vases
@@ -80,7 +80,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/gaetano-pesce/do-you-still-love-me?-SJxi3Uyg1z/large.jpg
+          /images/works/gaetano-pesce/do-you-still-love-me?-SJxi3Uyg1z/large.jpg
     medium: polyurethane resin and metal structure
     projects:
       - slug: design-miami-2016-pesce
@@ -92,7 +92,7 @@ works:
   - dimensions: 37.4 x 61.02 x 61.02 in / 95 x 155 x 155 cm
     edition: Unique
     images:
-      - file: /public/static/images/works/gaetano-pesce/rug-lamp-rky_nflJM/large.jpg
+      - file: /images/works/gaetano-pesce/rug-lamp-rky_nflJM/large.jpg
     medium: Polyurethane resin and steel
     projects:
       - slug: ghost-dog
