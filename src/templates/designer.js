@@ -113,12 +113,6 @@ const DesignerTemplate = ({ data, pathContext }) => {
       })
     )
 
-  // Lexicographic work image sort
-  // images.sort((a, b) => a.work.title.localeCompare(b.work.title));
-
-  // When work image sort
-  // images.sort((a, b) => a.work.when.localeCompare(b.work.when));
-
   // Reverse-when work image sort
   images.sort((a, b) => -1 * a.work.when.localeCompare(b.work.when));
 
