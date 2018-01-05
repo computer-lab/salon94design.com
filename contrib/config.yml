@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: computer-lab/salon94design.com
-  branch: r1b-netlify-latest
+  branch: master
 
 media_folder: static/images
 public_folder: /images
