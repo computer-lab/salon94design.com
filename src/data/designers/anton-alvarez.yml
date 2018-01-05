@@ -39,8 +39,7 @@ works:
   - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
     hero: true
     images:
-      - file: >-
-          /images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
+      - file: /images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
     medium: glazed stoneware
     slug: z-0308172026
     tags:

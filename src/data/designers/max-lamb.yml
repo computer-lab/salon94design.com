@@ -11,10 +11,8 @@ works:
     edition: 'Unique, initials carved on side'
     hero: false
     images:
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
     medium: 'raw and polished Tonalite granite, leather'
     projects:
       - slug: boulders-max-lamb
@@ -24,10 +22,8 @@ works:
   - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
     edition: 'Initials carved on side, unique'
     images:
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-5-HyUrJ5hCR-/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
     medium: 'raw and polished Tonalite granite & bridle leather '
     projects:
       - slug: boulders-max-lamb
@@ -40,10 +36,8 @@ works:
     edition: 'Unique, initials carved on side'
     hero: true
     images:
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather '
     projects:
       - slug: boulders-max-lamb
@@ -86,10 +80,8 @@ works:
   - dimensions: 20.08 x 18.11 x 11.81 inches / 51 x 46 x 30 cm
     edition: 'Unique, initials carved on bottom'
     images:
-      - file: >-
-          /images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
-      - file: >-
-          /images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
+      - file: /images/works/max-lamb/thermal-spray-vase-copper-H1cHJc200W/large.jpg
+      - file: /images/works/max-lamb/thermal-spray-vase-copper-rJjr1qn0CZ/large.jpg
     medium: 'polystyrene, copper '
     projects:
       - slug: design-miami-basel-2017
@@ -116,10 +108,8 @@ works:
     edition: 'Initials carved on side, unique'
     hero: true
     images:
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -132,12 +122,9 @@ works:
   - dimensions: ' 21.7 x 35.4 x 27.6 in / 55 x 90 x 70 cm'
     edition: 'Unique, initials carved on side'
     images:
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
-      - file: >-
-          /images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
     medium: 'raw and polished Tonalite granite, bridle leather'
     projects:
       - slug: boulders-max-lamb
