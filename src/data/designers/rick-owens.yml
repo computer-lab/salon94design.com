@@ -14,7 +14,7 @@ works:
     dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
     hero: true
     images:
-      - file: /public/static/images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
+      - file: /images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
     medium: 'french elm wood, moose antler'
     price: ''
     projects: []
@@ -27,7 +27,7 @@ works:
   - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '
     images:
       - file: >-
-          /public/static/images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
+          /images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
     medium: 'raw plywood, moose antler'
     slug: tomb-stag-chair
     tags:

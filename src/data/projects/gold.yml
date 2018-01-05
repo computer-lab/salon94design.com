@@ -57,9 +57,9 @@ description: >-
   information, please contact Samuel Zients at sam@salon94design.com. For press
   inquiries, please contact Sophie Wise at sophie@companyagenda.com.
 images:
-  - file: /public/static/images/projects/gold/BklW_2h11z/large.jpg
+  - file: /images/projects/gold/BklW_2h11z/large.jpg
     hero: true
-  - file: /public/static/images/projects/gold/H1WW_22yJf/large.jpg
+  - file: /images/projects/gold/H1WW_22yJf/large.jpg
 video:
   caption: ''
   vimeoId: ''

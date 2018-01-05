@@ -24,7 +24,7 @@ works:
     hero: true
     images:
       - file: >-
-          /public/static/images/works/lucas-samaras/bracelet-7-HJMovBbyz/large.jpg
+          /images/works/lucas-samaras/bracelet-7-HJMovBbyz/large.jpg
     medium: 22 karat gold
     projects:
       - slug: gold
