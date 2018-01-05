@@ -9,7 +9,7 @@ const Container = styled.section``
 
 const Bio = styled.div`
   composes: ${childLink}, ${sansfont};
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.4;
 

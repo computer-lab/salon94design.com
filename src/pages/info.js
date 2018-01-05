@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const LogoImage = styled.img`
   display: block;
-  margin: 0 auto 60px auto;
+  margin: 0 auto 30px auto;
   width: 600px;
   user-select: none;
 
@@ -74,7 +74,7 @@ const SubSection = styled.div`
 const sectionContent = css`
   margin: 0;
   padding: 0;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.4;
 `
 
