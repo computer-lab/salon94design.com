@@ -42,7 +42,7 @@ const SummaryItem = styled.li`
   composes: ${childLink};
   margin: 0 0 6px 0;
   line-height: 1.25;
-  font-size: 24px;
+  font-size: 18px;
 
   &:last-child {
     margin-bottom: 0;
@@ -54,12 +54,12 @@ const SummaryItem = styled.li`
 
   &.project,
   &.tag {
-    font-size: 22px;
+    font-size: 16px;
     font-weight: 500;
   }
 
   @media (${breakpoint1}) {
-    font-size: 22px;
+    font-size: 16px;
   }
 `
 

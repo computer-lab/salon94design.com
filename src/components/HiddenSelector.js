@@ -12,7 +12,7 @@ import {
 } from '../layouts/emotion-base'
 
 const Selector = styled.div`
-  margin-top: 60px;
+  margin-top: 20px;
   padding: 0;
   background: #fff;
   transition: transform 0.2s ease;

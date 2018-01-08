@@ -94,7 +94,7 @@ export const Header2 = styled.h2`
 
 export const SimpleLinkList = styled.ul`
   composes: ${baseUl}, ${sansfont};
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 300;
   display: flex;
   flex-wrap: wrap;
