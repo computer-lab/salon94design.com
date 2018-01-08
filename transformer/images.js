@@ -67,7 +67,7 @@ async function processDesignerWorks (data) {
     // find images that need processing
     const images = work.images || []
     const imagesToProcess = images.filter(image =>
-      image.file && !image.file.includes('static/images/works')
+      image.file && !image.file.includes('images/works')
     )
 
     // process them
@@ -89,7 +89,7 @@ async function processProjectImages (project) {
   // find images that need processing
   const images = project.images || []
   const imagesToProcess = images.filter(image =>
-    image.file && !image.file.includes('static/images/projects')
+    image.file && !image.file.includes('images/projects')
   )
 
   // process them
@@ -110,7 +110,7 @@ async function processInfoImages (info) {
   // find images that need processing
   const images = info.images || []
   const imagesToProcess = images.filter(image =>
-    image.file && !image.file.includes('static/images/info/')
+    image.file && !image.file.includes('images/info/')
   )
 
   // process them
