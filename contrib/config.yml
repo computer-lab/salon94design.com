@@ -85,9 +85,11 @@ collections:
               - name: vimeoId
                 label: Vimeo ID
                 widget: string
+                default: ''
               - name: caption
                 label: Caption
                 widget: string
+                default: ''
           - name: caption
             label: Caption
             widget: string
@@ -172,9 +174,11 @@ collections:
           - name: vimeoId
             label: Vimeo ID
             widget: string
+            default: ''
           - name: caption
             label: Caption
             widget: string
+            default: ''
   - name: info
     label: Info
     folder: src/data/info
