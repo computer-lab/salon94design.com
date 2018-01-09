@@ -136,8 +136,8 @@ collections:
         label: When
         widget: string
       - name: date
-        label: Start Date (for sorting)
-        widget: datetime
+        label: Start Date (for sorting, use YYYY-MM-DD format)
+        widget: text
       - name: designers
         label: Designers
         widget: list
