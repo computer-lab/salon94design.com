@@ -80,6 +80,7 @@ collections:
                 widget: image
           - name: video
             label: Video
+            default: {vimeoId: '', caption: ''}
             widget: object
             fields:
               - name: vimeoId
@@ -169,6 +170,7 @@ collections:
             default: false
       - name: video
         label: Video
+        default: {vimeoId: '', caption: ''}
         widget: object
         fields:
           - name: vimeoId
