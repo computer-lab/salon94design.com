@@ -80,7 +80,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   })
 
   const imageSets = [
-    { images: projectImages, title: !project.video.vimeoId ? 'Installation View' : null },
+    { images: projectImages, title: !project.video.vimeoId && 'Installation View'},
     { images: workImages, title: 'Included Works' },
   ].filter(item => item.images.length > 0)
 
