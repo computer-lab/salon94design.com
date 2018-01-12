@@ -40,15 +40,3 @@ TemplateWrapper.propTypes = {
 }
 
 export default TemplateWrapper
-
-export const pageQuery = graphql`
-  query LayoutHomepageSplashQuery {
-    allLandingPageYaml {
-      edges {
-        node {
-          splashImage
-        }
-      }
-    }
-  }
-`
