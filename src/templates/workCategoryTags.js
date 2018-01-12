@@ -8,7 +8,7 @@ import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
   capitalize,
-  getCategoryTags,
+  getAllTags,
   chooseTagImage,
   workTagLink,
 } from '../util'
@@ -25,7 +25,7 @@ const Instructions = styled.div`
 
 export default function WorkCategoryTags({ data, pathContext }) {
   const { allDesignersYaml } = data
-  const { category } = pathContext
+  const { tag } = pathContext
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
   const works = designers.reduce((items, d) => items.concat(d.works || []), [])

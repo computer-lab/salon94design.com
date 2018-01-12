@@ -34,29 +34,25 @@ const TagList = styled.ul`
   }
 `
 
-const TagSelector = ({ classifiedTags, currentCategory, currentTag }) => (
+const TagSelector = ({ allTags , currentTag }) => (
   <Container>
-    {classifiedTags.map(({ category, tags }) => (
-      <div key={category}>
-        <TagList>
-          {tags.map(tag => (
-            <li
-              key={tag}
-              className={cx({
-                active: tag === currentTag,
-              })}
-            >
-              <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
-            </li>
-          ))}
-        </TagList>
-      </div>
-    ))}
+    <TagList>
+      {allTags.map(tag => (
+        <li
+          key={tag}
+          className={cx({
+            active: tag === currentTag,
+          })}
+        >
+          <Link to={workTagLink(tag)}>{capitalize(tag)}</Link>
+        </li>
+      ))}
+    </TagList>
   </Container>
 )
 
 TagSelector.propTypes = {
-  tags: PropTypes.array.isRequired,
+  allTags: PropTypes.array.isRequired,
   currentTag: PropTypes.string,
 }
 

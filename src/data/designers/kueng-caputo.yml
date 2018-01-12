@@ -34,7 +34,7 @@ works:
       - file: /images/works/kueng-caputo/sand-chair-rJifzEbJf/large.jpg
     slug: sand-chair
     tags:
-      - chairs
+      - seating
     title: Sand Chair
     when: '2012'
   - dimensions: 16 x 13.25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
@@ -45,7 +45,6 @@ works:
     slug: marble-stool-orange
     tags:
       - seating
-      - ''
     title: Marble Stool Orange
     when: '2014'
 status: Represented

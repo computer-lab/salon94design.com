@@ -29,7 +29,7 @@ works:
       - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-5
     tags:
-      - chairs
+      - seating
     title: 'Tonalite Boulder Chair #5'
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 in / 47 x 46 x 75 cm
@@ -43,7 +43,6 @@ works:
       - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-9
     tags:
-      - chairs
       - seating
     title: 'Tonalite Boulder Chair #9'
     when: '2017'
@@ -58,7 +57,7 @@ works:
       - slug: design-miami-basel-2017
     slug: thermal-spray-chair-stainless
     tags:
-      - chairs
+      - seating
     title: Thermal Spray Chair Stainless
     when: '2017'
   - dimensions: 64.17 x 52.36 x 17.72 in / 163 x 133 x 45 cm
@@ -116,7 +115,6 @@ works:
     slug: tonalite-boulder-stool-9
     tags:
       - seating
-      - ''
     title: 'Tonalite Boulder Stool #9'
     when: '2017'
   - dimensions: ' 21.7 x 35.4 x 27.6 in / 55 x 90 x 70 cm'
@@ -130,8 +128,7 @@ works:
       - slug: boulders-max-lamb
     slug: tonalite-boulder-chair-10
     tags:
-      - chairs
-      - ''
+      - seating
     title: 'Tonalite Boulder Chair #10'
     when: '2017'
 status: Represented

@@ -21,7 +21,6 @@ works:
     slug: stag-stool
     tags:
       - seating
-      - chairs
     title: Stag Stool
     when: '2015'
   - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '
@@ -30,7 +29,6 @@ works:
     medium: 'raw plywood, moose antler'
     slug: tomb-stag-chair
     tags:
-      - chairs
       - seating
     title: Tomb Stag Chair
     when: '2012'
