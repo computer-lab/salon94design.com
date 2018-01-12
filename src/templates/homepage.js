@@ -85,6 +85,8 @@ export default function Homepage({ data }) {
 
   const link = projectLink(project)
 
+  const projectDesigners = project.designers.map(d => designers.find(designer => d.slug == designer.slug));
+
   return (
     <div>
       <Helmet
@@ -94,7 +96,7 @@ export default function Homepage({ data }) {
       <FeaturedWrapper>
         <ProjectTitle>
           <Link to={link}>
-            <span className="light">{titleLabel} –</span> {project.title}
+            {project.title} – {projectDesigners.map(d => d.title).join(', ')}
           </Link>
         </ProjectTitle>
         <ImageWrapper>
@@ -106,11 +108,6 @@ export default function Homepage({ data }) {
             />
           </Link>
         </ImageWrapper>
-        <Designers>
-          <ProjectDesigners project={project} designers={designers} />
-        </Designers>
-        <When>{project.when}</When>
-        <ProjectDescription project={project} />
       </FeaturedWrapper>
     </div>
   )
