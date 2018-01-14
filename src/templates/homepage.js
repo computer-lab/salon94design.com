@@ -191,11 +191,16 @@ export const pageQuery = graphql`
     title
     type
     description
+    descriptionHtml
     when
     date
     designers {
       slug
     }
+  }
+
+  fragment fullProjectFields on ProjectsYaml {
+    ...projectListFields
     hydratedImages {
       hero
       file
@@ -207,11 +212,6 @@ export const pageQuery = graphql`
         height
       }
     }
-  }
-
-  fragment fullProjectFields on ProjectsYaml {
-    ...projectListFields
-    descriptionHtml
     video {
       vimeoId
       caption

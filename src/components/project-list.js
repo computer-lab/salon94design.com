@@ -20,10 +20,14 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
     .filter(p => p.designers.length > 0)
 
   const listItems = projects.map(project => {
+    const subtitle = type === 'Art Fair' || project.designers.length > 3
+      ? null
+      : project.designers.map(d => d.title).join(', ')
+
     return {
       title: project.title,
-      // subtitle: project.designers.map(d => d.title).join(', '),
-      image: chooseProjectImage(project, project.designers),
+      subtitle,
+      description: project.descriptionHtml,
       link: projectLink(project),
     }
   })

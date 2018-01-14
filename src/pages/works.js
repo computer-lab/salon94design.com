@@ -33,7 +33,6 @@ export default function Works({ data }) {
 
   const listItems = categories.map(category => ({
     title: capitalize(category),
-    image: chooseCategoryImage(designers, works, category),
 
     // if only 1 tag, skip straight to tag page
     link:
@@ -49,7 +48,7 @@ export default function Works({ data }) {
         description={`Filter works by tagged categories.`}
       />
       <div>
-        <SectionItemList items={listItems} />
+        <SectionItemList items={listItems} disableColumns={true} />
       </div>
     </div>
   )
@@ -64,7 +63,6 @@ export const pageQuery = graphql`
             when
             tags
             hero
-            ...baseHydratedImages
           }
         }
       }
