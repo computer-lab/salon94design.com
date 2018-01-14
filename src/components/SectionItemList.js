@@ -12,6 +12,9 @@ import {
 } from '../layouts/emotion-base'
 import { imageLargePath, imageSrcSet } from '../util'
 
+const customBreakpoint1 = `max-width: 848px`
+const customBreakpoint3 = `max-width: 600px`
+
 const Container = styled.div`
   padding: 0;
 `
@@ -47,79 +50,65 @@ const List = styled.ul`
   composes: ${baseUl}, ${sansfont};
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;
-  margin-right: -44px;
   max-width: 1600px;
   position: relative;
-  left: 50%;
-  transform: translateX(calc(-50% + 22px));
 
   @media (max-width: 1648px) {
     max-width: calc(100vw - 48px);
   }
 
-  @media (${breakpoint1}) {
-    margin-right: -20px;
-    transform: translateX(calc(-50% + 10px));
-  }
-
   @media (${breakpoint3}) {
-    margin-right: 0;
     position: static;
-    transform: none;
   }
 `
 
 const ListItem = styled.li`
-  margin: 0 44px 44px 0;
-  width: 320px;
+  margin: 0 0 44px 0;
+  width: 33%;
+  box-sizing: border-box;
 
-  & a {
-    color: inherit;
-    text-decoration: none;
+  & .content {
+    margin: 0 22px;
 
     &:hover,
     &:focus {
-      font-weight: 500;
+      & .title {
+        text-decoration: underline;
+      }
+    }
+
+    & a {
+      color: inherit;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
+        font-weight: 500;
+      }
     }
   }
 
-  & img {
-    background-color: #eee;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 268px;
-    min-width: 100%;
-    min-height: 100%;
-    object-fit: cover;
+  @media (${customBreakpoint1}) {
+    width: 50%;
   }
 
-  @media (${breakpoint1}) {
-    width: 240px;
-    margin: 0 20px 44px 0;
-
-    & img {
-      height: 200px;
-    }
-  }
-
-  @media (max-width: 600px) {
-    width: 384px;
-
-    & img {
-      height: 320px;
-    }
-  }
-
-  @media (${breakpoint3}) {
-    margin: 0 0 32px 0;
+  @media (${customBreakpoint3}) {
+    margin-bottom: 32px;
     width: 100%;
 
-    & img {
-      height: auto;
+    & .content {
+      margin: 0;
+    }
+  }
+
+  &.no-columns {
+    width: 100%;
+
+    & .content {
+      margin: 0;
     }
   }
 `
@@ -128,53 +117,72 @@ const ItemTitle = styled.div`
   margin-top: 4px;
   font-size: 24px;
 
-  @media (${breakpoint2}) {
-    font-size: 22px;
-  }
-
-  @media (${breakpoint3}) {
-    margin: 0;
-    font-size: 24px;
+  @media (${customBreakpoint3}) {
     line-height: 36px;
   }
 `
 
 const ItemSubtitle = styled.div`
-  margin-top: 2px;
-  font-size: 18px;
+  margin: 4px 0;
+  font-size: 16px;
+  line-height: 1.2;
+`
+
+const ItemDescription = styled.div`
+  margin-top: 6px;
+  font-size: 15px;
   font-weight: 300;
   line-height: 1.28;
+  max-width: 350px;
 
-  @media (${breakpoint3}) {
+  @media (max-width: ${customBreakpoint1}) {
+    max-width: 400px;
+  }
+
+  @media (${customBreakpoint3}) {
+    max-width: none;
+    margin-top: 0;
     font-size: 16px;
   }
 `
 
-const SectionItemList = ({ sections, items }) => {
+const MaxSubtitleLength = 140
+const clipDescription = text => {
+  const cleanText = text.replace(/<[^>]+>/g, '') // strip html tags
+
+  if (cleanText.length <= MaxSubtitleLength) {
+    return cleanText
+  }
+
+  const firstClippedSpaceIdx = cleanText.indexOf(' ', MaxSubtitleLength)
+  const substrIdx = firstClippedSpaceIdx >= 0 ? firstClippedSpaceIdx : MaxSubtitleLength
+  return `${cleanText.substr(0, substrIdx)}...`
+}
+
+const SectionItemList = ({ sections, items, disableColumns = false }) => {
   if (!sections) {
     sections = [{ title: null, items }]
   }
+
+  const noColumnsClass = cx({ 'no-columns': disableColumns })
 
   return (
     <Container>
       {sections.map(({ title, items }, i) => (
         <Section key={i}>
           {title && <SectionTitle>{title}</SectionTitle>}
-          <List>
-            {items.map(({ image, alt = '', title, subtitle, link }, i) => (
-              <ListItem key={i}>
-                <Link to={link}>
-                  <img
-                    src={imageLargePath(image)}
-                    srcSet={imageSrcSet(image)}
-                    sizes={`320px, (${breakpoint1}): 240px`}
-                    alt={alt}
-                  />
-                  <ItemTitle>
-                    {title}
-                    {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
-                  </ItemTitle>
-                </Link>
+          <List className={noColumnsClass}>
+            {items.map(({ title, subtitle, description, link }, i) => (
+              <ListItem key={i} className={noColumnsClass}>
+                <div className="content">
+                  <Link to={link}>
+                    <ItemTitle>
+                      <span className="title">{title}</span>
+                      {subtitle && <ItemSubtitle>{subtitle}</ItemSubtitle>}
+                      {description && <ItemDescription>{clipDescription(description)}</ItemDescription>}
+                    </ItemTitle>
+                  </Link>
+                </div>
               </ListItem>
             ))}
           </List>
@@ -187,6 +195,7 @@ const SectionItemList = ({ sections, items }) => {
 SectionItemList.propTypes = {
   items: PropTypes.array,
   sections: PropTypes.array,
+  disableColumns: PropTypes.bool
 }
 
 export default SectionItemList

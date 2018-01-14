@@ -31,7 +31,7 @@ export default function Designers({ data }) {
   const listSections = sortedStatuses.map(status => {
     const items = designersByStatus[status].map(designer => ({
       title: designer.title,
-      image: chooseDesignerImage(designer),
+      description: designer.bioHtml,
       link: designerLink(designer.slug),
     }))
 
@@ -61,7 +61,7 @@ export const pageQuery = graphql`
           slug
           title
           status
-          ...baseWorkFields
+          bioHtml
         }
       }
     }
