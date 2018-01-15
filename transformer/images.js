@@ -274,15 +274,17 @@ async function resizeImage (jpegFilename) {
   const { width, height } = info
 
   const sizes = []
+  sizes.push({ width: 200 })
+  sizes.push({ width: 400 })
+  if (width > 768) sizes.push({ width: 768 })
+  if (width > 948) sizes.push({ width: 948 })
+  if (width > 1068) sizes.push({ width: 1068 })
+
   if (width >= height) {
-    sizes.push({ width: 200 })
-    sizes.push({ width: 400 })
-    if (width > 800) sizes.push({ width: 800 })
     if (width > 1440) sizes.push({ width: 1440 })
   } else {
     sizes.push({ height: 300 })
     if (height > 600) sizes.push({ height: 600 })
-    if (height > 900) sizes.push({ height: 900 })
     if (height > 1600) sizes.push({ height: 1600 })
   }
 
@@ -290,6 +292,11 @@ async function resizeImage (jpegFilename) {
     const ext = path.extname(jpegFilename)
     let resizedFilename = `resized-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
     resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
+
+    // if resized file exists, don't overwrite
+    if (fs.existsSync(resizedFilename)) {
+      return Promise.resolve(resizedFilename)
+    }
 
     return sharp(jpegFilename)
       .resize(size.width, size.height)
