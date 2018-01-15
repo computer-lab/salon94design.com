@@ -186,13 +186,6 @@ function createWorks({ boundActionCreators, graphql }) {
 
     const tags = getAllTags(designers)
 
-    // root will be first tag (?)
-    createPage({
-      path: `/works/`,
-      component: worksByTagTemplate,
-      context: { tag: tags[0] },
-    })
-
     // create page for each tag
     tags.forEach(tag => {
       createPage({
