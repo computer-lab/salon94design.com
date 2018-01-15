@@ -16,7 +16,7 @@ works:
       - slug: midtown-lever-house
     slug: the-thread-wrapping-machine-bench-271115-2015
     tags:
-      - benches
+      - seating
     title: The Thread Wrapping Machine Bench 271115
     video:
       caption: ''
@@ -32,7 +32,6 @@ works:
       osb, wood, plastic and metal
     slug: the-thread-wrapping-machine-chair-090415
     tags:
-      - chairs
       - seating
     title: The Thread Wrapping Machine Chair 090415
     when: '2015'
@@ -56,7 +55,7 @@ works:
       wood, plastic and metal
     slug: the-thread-wrapping-machine-untitled-280415
     tags:
-      - chairs
+      - seating
     title: The Thread Wrapping Machine Untitled 280415
     when: '2015'
 status: Represented
