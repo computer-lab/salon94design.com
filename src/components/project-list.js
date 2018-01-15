@@ -26,15 +26,15 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
 
     return {
       title: project.title,
-      subtitle,
-      description: project.descriptionHtml,
+      // subtitle,
+      // description: project.descriptionHtml,
       link: projectLink(project),
     }
   })
 
   return (
     <div>
-      <SectionItemList items={listItems} />
+      <SectionItemList items={listItems} disableColumns={true} />
     </div>
   )
 }

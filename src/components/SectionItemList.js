@@ -106,10 +106,7 @@ const ListItem = styled.li`
 
   &.no-columns {
     width: 100%;
-
-    & .content {
-      margin: 0;
-    }
+    margin-bottom: 32px;
   }
 `
 
