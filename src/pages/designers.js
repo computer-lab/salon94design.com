@@ -31,7 +31,7 @@ export default function Designers({ data }) {
   const listSections = sortedStatuses.map(status => {
     const items = designersByStatus[status].map(designer => ({
       title: designer.title,
-      description: designer.bioHtml,
+      // description: designer.bioHtml,
       link: designerLink(designer.slug),
     }))
 
@@ -47,7 +47,7 @@ export default function Designers({ data }) {
         description={`List of designers represented by Salon 94 Design.`}
       />
       <div>
-        <SectionItemList title="Designers" sections={listSections} />
+        <SectionItemList sections={listSections} disableColumns={true} />
       </div>
     </div>
   )
