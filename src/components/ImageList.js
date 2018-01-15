@@ -135,7 +135,7 @@ const ImageItem = styled.div`
       object-fit: fill;
       min-width: none;
       max-height: none;
-      width: 100%;
+      width: 100vw;
       height: auto;
       cursor: default;
     }
@@ -486,13 +486,14 @@ class ImageList extends Component {
 
                 let sizes
                 if (mobileWidth) {
-                  sizes = '100vw'
+                  sizes = `calc(100vw - 48px)` // remove margin
                 } else if (isExpanded) {
                   const { width, height } = largeSize
                   if (width > height) {
                     sizes = 'calc(100vw - 400px)'
                   } else {
-                    sizes = `${(windowSize.height - 160) * (width / height)}px`
+                    const w = (windowSize.height - 160) * (width / height)
+                    sizes = `${Number(w.toFixed(2))}px` // 2 decimal precision
                   }
                 } else {
                   sizes = '172px'
