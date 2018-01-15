@@ -23,7 +23,7 @@ works:
       - slug: midtown-lever-house
     slug: silk-bench-1
     tags:
-      - benches
+      - seating
     title: Silk Bench 1
     when: '2006'
   - dimensions: 15-20 feet long (4.5-6 m long)
@@ -36,7 +36,7 @@ works:
       - slug: woven-furniture
     slug: kwangho-large-nylon-bench
     tags:
-      - benches
+      - seating
     title: Large Nylon Bench
     when: '2006'
   - dimensions: Up to 8 feet (up to 2.4 m)
@@ -49,7 +49,7 @@ works:
       - slug: ghost-dog
     slug: kwangho-small-pvc-bench
     tags:
-      - benches
+      - seating
     title: Small PVC Bench
     when: '2006'
   - caption: Frieze NY
@@ -58,7 +58,7 @@ works:
       - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
     slug: red-silk-bench
     tags:
-      - benches
+      - seating
       - seating
     title: 'Red Silk Bench (Frieze NY 2017) '
     when: '2016'
@@ -73,7 +73,6 @@ works:
     slug: red-and-grey-pvc-chair
     tags:
       - seating
-      - chairs
     title: Red & Grey PVC Chair
     when: '2017'
 status: Represented

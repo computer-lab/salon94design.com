@@ -8,10 +8,7 @@ import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
   capitalize,
-  categories,
-  getCategoryTags,
-  chooseCategoryImage,
-  categoryLink,
+  getAllTags,
   workTagLink,
 } from '../util'
 
@@ -29,16 +26,11 @@ export default function Works({ data }) {
   const { allDesignersYaml } = data
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
-  const works = designers.reduce((items, d) => items.concat(d.works || []), [])
+  const tags = getAllTags(designers)
 
-  const listItems = categories.map(category => ({
-    title: capitalize(category),
-
-    // if only 1 tag, skip straight to tag page
-    link:
-      getCategoryTags(designers, category).length > 1
-        ? categoryLink(category)
-        : workTagLink(category),
+  const listItems = tags.map(tag => ({
+    title: capitalize(tag),
+    link: workTagLink(tag)
   }))
 
   return (
@@ -62,7 +54,6 @@ export const pageQuery = graphql`
           works {
             when
             tags
-            hero
           }
         }
       }

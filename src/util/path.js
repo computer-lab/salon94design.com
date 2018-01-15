@@ -14,18 +14,11 @@ const projectLink = project => {
 
 const workLink = (dslug, pslug) => `/designers/${dslug}/${pslug}`
 
-const categoryLink = category => `/works/${category}`
-const workTagLink = tag => {
-  const category = getTagCategory(tag)
-  return category === tag
-    ? `/works/${category}/all`
-    : `/works/${category}/${tag}`
-}
+const workTagLink = tag => `/works/${tag}`
 
 module.exports = {
   designerLink,
   projectLink,
   workLink,
   workTagLink,
-  categoryLink,
 }

@@ -21,9 +21,7 @@ works:
     projects: []
     slug: bronze-stool
     tags:
-      - chairs
       - seating
-      - tables
     title: Dripped Bronze Stool
     when: '2016'
   - dimensions: 36 x 15 x 20 in
@@ -50,7 +48,6 @@ works:
     slug: dripped-bronze-shelf
     tags:
       - storage
-      - ''
     title: Dripped Bronze Shelf
     when: '2015'
 status: Represented

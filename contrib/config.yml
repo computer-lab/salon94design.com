@@ -277,9 +277,6 @@ collections:
     create: false
     format: yaml
     fields:
-      - name: splashImage
-        label: Splash Image (filename all lowercase, no spaces or special characters)
-        widget: image
       - name: featuredProjectSlug
         label: Featured Exhibition
         widget: relation
