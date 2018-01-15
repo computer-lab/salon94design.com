@@ -155,8 +155,6 @@ function createDesigners({ boundActionCreators, graphql }) {
 
 function createWorks({ boundActionCreators, graphql }) {
   const { createPage } = boundActionCreators
-
-  const categoryTemplate = path.resolve(`src/templates/workCategoryTags.js`)
   const worksByTagTemplate = path.resolve(`src/templates/worksByTag.js`)
   const workTemplate = path.resolve(`src/templates/work.js`)
 
@@ -186,23 +184,23 @@ function createWorks({ boundActionCreators, graphql }) {
       .map(d => d.works.map(p => Object.assign({}, p, { designer: d })))
       .reduce((arr, p) => arr.concat(p), [])
 
-    const classifiedTags = getAllTags(designers)
-    // create page for each category and tag
-    classifiedTags.forEach(({ category, tags }) => {
-      createPage({
-        path: categoryLink(category),
-        component: categoryTemplate,
-        context: { category },
-      })
+    const tags = getAllTags(designers)
 
-      tags.forEach(tag => {
-        createPage({
-          path: workTagLink(tag),
-          component: worksByTagTemplate,
-          context: { category, tag },
-        })
-      })
+    // root will be first tag (?)
+    createPage({
+      path: `/works/`,
+      component: worksByTagTemplate,
+      context: { tag: tags[0] },
     })
+
+    // create page for each tag
+    tags.forEach(tag => {
+      createPage({
+        path: workTagLink(tag),
+        component: worksByTagTemplate,
+        context: { tag },
+      })
+    });
 
     // create page for each work
     works.forEach(work => {
