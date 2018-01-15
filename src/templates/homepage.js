@@ -85,7 +85,11 @@ export default function Homepage({ data }) {
 
   const link = projectLink(project)
 
-  const projectDesigners = project.designers.map(d => designers.find(designer => d.slug == designer.slug));
+  const projectDesigners = (
+    project.designers
+      .map(d => designers.find(designer => d.slug == designer.slug))
+      .filter(d => !!d)
+  );
 
   return (
     <div>
