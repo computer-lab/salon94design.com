@@ -80,7 +80,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   })
 
   const imageSets = [
-    { images: projectImages, title: !project.video.vimeoId && 'Installation View'},
+    { images: projectImages, title: 'Installation View'},
     { images: workImages, title: 'Included Works' },
   ].filter(item => item.images.length > 0)
 
@@ -122,7 +122,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
         description={project.description}
       />
       <LeftPane>
-        {project.video.vimeoId && <Video video={project.video} />}
+        {project.video && project.video.vimeoId && <Video video={project.video} />}
         <ImageList
           imageSets={imageSets}
           hoverImageRenderer={hoverImageRenderer}
