@@ -21,7 +21,7 @@ const { LeftPane, RightPane } = createPanes('195px')
 
 const WorksTemplate = ({ data, pathContext }) => {
   const { allProjectsYaml, allDesignersYaml } = data
-  const { category, tag } = pathContext
+  const { tag } = pathContext
 
   // Technically this can be `const` but that's a lie right ;p
   let designers = allDesignersYaml.edges.map(edge => edge.node)
@@ -78,7 +78,7 @@ const WorksTemplate = ({ data, pathContext }) => {
 
   return (
     <PageContainer>
-      <Helmet title={`Salon 94 Design - Works - ${category}`} />
+      <Helmet title={`Salon 94 Design - Works - ${tag}`} />
       <LeftPane>
         <ImageList
           imageSets={imageSets}
@@ -87,8 +87,7 @@ const WorksTemplate = ({ data, pathContext }) => {
       </LeftPane>
       <RightPane>
         <TagSelector
-          classifiedTags={tags}
-          currentCategory={category}
+          allTags={tags}
           currentTag={tag}
         />
       </RightPane>
