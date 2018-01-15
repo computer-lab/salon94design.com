@@ -26,7 +26,7 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
 
     return {
       title: project.title,
-      // subtitle,
+      subtitle,
       // description: project.descriptionHtml,
       link: projectLink(project),
     }
