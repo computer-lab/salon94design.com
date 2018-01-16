@@ -15,6 +15,7 @@ import {
   breakpoint1,
   breakpoint2,
   breakpoint3,
+  minBreakpoint3,
   isMobileWidth,
   baseUl,
 } from '../layouts/emotion-base'
@@ -88,26 +89,28 @@ const ImageItem = styled.div`
     text-align: left;
   }
 
-  &.expanded {
-    display: table;
-    margin: 0 0 20px 0;
-    padding-right: 20px;
-    max-width: none;
-    width: auto;
-
-    & img {
-      cursor: default;
-      cursor: crosshair;
-      cursor: nesw-resize;
-      cursor: zoom-in;
-
-      object-fit: fill;
+  @media (${minBreakpoint3}) {
+    &.expanded {
+      display: table;
+      margin: 0 0 20px 0;
+      padding-right: 20px;
+      max-width: none;
       width: auto;
-      min-width: 0;
-      max-width: 100%;
-      height: auto;
-      min-height: 0;
-      max-height: calc(100vh - 160px);
+
+      & img {
+        cursor: default;
+        cursor: crosshair;
+        cursor: nesw-resize;
+        cursor: zoom-in;
+
+        object-fit: fill;
+        width: auto;
+        min-width: 0;
+        max-width: 100%;
+        height: auto;
+        min-height: 0;
+        max-height: calc(100vh - 160px);
+      }
     }
   }
 
@@ -126,12 +129,7 @@ const ImageItem = styled.div`
     max-width: none;
     width: 100%;
 
-    &.expanded {
-      padding-right: 0;
-    }
-
-    & img,
-    &.expanded img {
+    & img {
       object-fit: fill;
       min-width: none;
       max-height: none;
@@ -145,28 +143,26 @@ const ImageItem = styled.div`
 const ImageTextWrapper = styled.div`
   composes: ${sansfont};
 
-  &.compact {
-    & .expanded-text {
-      display: none;
+  @media (${minBreakpoint3}) {
+    &.compact {
+      & .expanded-text {
+        display: none;
+      }
     }
-  }
 
-  &.expanded {
-    display: table-caption;
-    caption-side: bottom;
-    padding: 0 20px 0 0;
-    & .small {
-      display: none;
+    &.expanded {
+      display: table-caption;
+      caption-side: bottom;
+      padding: 0 20px 0 0;
+      & .small {
+        display: none;
+      }
     }
   }
 
   @media (${breakpoint3}) {
     & .small {
       display: none;
-    }
-
-    &.compact .expanded-text {
-      display: block;
     }
   }
 `
@@ -383,6 +379,10 @@ class ImageList extends Component {
   onImageClick(ev, setIndex, imageIndex) {
     if (this.props.unexpandable) return
 
+    if (this.state.mobileWidth) {
+      return
+    }
+
     if (this.state.isExpanded) {
       if (ev.target.nodeName === 'IMG') {
         this.setState({
@@ -484,12 +484,18 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
+                const { width, height } = largeSize
+                const landscape = width > height
+
                 let sizes
                 if (mobileWidth) {
-                  sizes = `calc(100vw - 48px)` // remove margin
+                  const maxPixelRatio = landscape ? 2 : 1 // for tall images on mobile, don't load a large retina image
+                  const devicePixelRatio = typeof window !== undefined ? window.devicePixelRatio : 1
+                  const widthDampingFactor = devicePixelRatio > maxPixelRatio ? (devicePixelRatio / maxPixelRatio) : 1
+                  const w = (windowSize.width - 48) / widthDampingFactor // -48 to remove margin
+                  sizes = `${w}px`
                 } else if (isExpanded) {
-                  const { width, height } = largeSize
-                  if (width > height) {
+                  if (landscape) {
                     sizes = 'calc(100vw - 400px)'
                   } else {
                     const w = (windowSize.height - 160) * (width / height)
@@ -579,7 +585,7 @@ class ImageList extends Component {
             hoverImageRenderer(hoverImage)}
         </HoverInfo>
 
-        {fullscreenImage && (
+        {fullscreenImage && !mobileWidth && (
           <FullscreenImageViewer
             image={fullscreenImage}
             closeHandler={this.fullscreenImageViewerCloseHandler}

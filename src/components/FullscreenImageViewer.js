@@ -165,6 +165,14 @@ class FullscreenImageViewer extends Component {
       (largeImageSize.width > smallImageSize.width ||
         largeImageSize.height > smallImageSize.height)
 
+    let sizes = '95vw'
+    const { width, height } = largeImageSize
+    if (height > width) {
+      const windowHeight = typeof window !== 'undefined' ? window.innerHeight : 800
+      const w = (windowHeight * 0.95) * (width / height)
+      sizes = `${Number(w.toFixed(2))}px` // 2 decimal precision
+    }
+
     return (
       <Container onClick={this.onContainerClick} innerRef={this.setContainerEl}>
         <ImageWrapper>
@@ -173,7 +181,7 @@ class FullscreenImageViewer extends Component {
             src={image.src}
             alt={image.alt}
             srcSet={image.srcSet}
-            sizes={'100vw'}
+            sizes={sizes}
             onLoad={this.onSmallImageLoad}
             ref={el => {
               this.smallImageEl = el
