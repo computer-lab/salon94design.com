@@ -4,6 +4,17 @@ export const imageFilepath = file =>
 export const imageLargePath = image =>
   image ? imageFilepath(image.file) : null
 
+export const smallestImagePath = image => {
+  if (!image.resized || image.resized.length === 0) {
+    return null
+  }
+
+  const sizeSortedImages = image.resized
+    .sort((a, b) => a.width - b.width)
+
+  return imageFilepath(sizeSortedImages[0].file)
+}
+
 export const imageSrcSet = image => {
   if (!image || !image.resized) {
     return ''
