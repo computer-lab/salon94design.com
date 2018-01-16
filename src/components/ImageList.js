@@ -247,12 +247,15 @@ class ImageList extends Component {
       this
     )
 
+    const windowSize = typeof window !== 'undefined'
+      ? { width: window.innerWidth, height: window.innerHeight }
+      : { width: 414, height: 736 } // default to phone size
     this.state = {
       isExpanded: props.alwaysExpand ? true : false,
       hoverImage: null,
       fullscreenImageIndices: null,
-      mobileWidth: false,
-      windowSize: { width: 1200, height: 800 },
+      mobileWidth: isMobileWidth(windowSize.width),
+      windowSize
     }
   }
 
@@ -302,9 +305,8 @@ class ImageList extends Component {
   }
 
   onResize() {
-    const mobileWidth = isMobileWidth()
     this.setState({
-      mobileWidth: isMobileWidth(),
+      mobileWidth: isMobileWidth(window.innerWidth),
       windowSize: { width: window.innerWidth, height: window.innerHeight },
     })
   }
@@ -490,7 +492,7 @@ class ImageList extends Component {
                 let sizes
                 if (mobileWidth) {
                   const maxPixelRatio = landscape ? 2 : 1 // for tall images on mobile, don't load a large retina image
-                  const devicePixelRatio = typeof window !== undefined ? window.devicePixelRatio : 1
+                  const devicePixelRatio = typeof window !== 'undefined' ? window.devicePixelRatio : 1
                   const widthDampingFactor = devicePixelRatio > maxPixelRatio ? (devicePixelRatio / maxPixelRatio) : 1
                   const w = (windowSize.width - 48) / widthDampingFactor // -48 to remove margin
                   sizes = `${w}px`
