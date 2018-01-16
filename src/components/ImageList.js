@@ -484,12 +484,18 @@ class ImageList extends Component {
                   alt = '',
                 } = image
 
+                const { width, height } = largeSize
+                const landscape = width > height
+
                 let sizes
                 if (mobileWidth) {
-                  sizes = `calc(100vw - 48px)` // remove margin
+                  const maxPixelRatio = landscape ? 2 : 1 // for tall images on mobile, don't load a large retina image
+                  const devicePixelRatio = typeof window !== undefined ? window.devicePixelRatio : 1
+                  const widthDampingFactor = devicePixelRatio > maxPixelRatio ? (devicePixelRatio / maxPixelRatio) : 1
+                  const w = (windowSize.width - 48) / widthDampingFactor // -48 to remove margin
+                  sizes = `${w}px`
                 } else if (isExpanded) {
-                  const { width, height } = largeSize
-                  if (width > height) {
+                  if (landscape) {
                     sizes = 'calc(100vw - 400px)'
                   } else {
                     const w = (windowSize.height - 160) * (width / height)
