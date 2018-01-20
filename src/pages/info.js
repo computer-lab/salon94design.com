@@ -44,8 +44,11 @@ const LogoImage = styled.img`
 
 const SectionWrapper = styled.div`
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: center;
+  -webkit-justify-content: center;
   padding-bottom: 24px;
 `
 

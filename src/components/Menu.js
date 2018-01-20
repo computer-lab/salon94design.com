@@ -61,6 +61,7 @@ const Nav = styled.ul`
   right: 40px;
   top: 50%;
   display: flex;
+  display: -webkit-flex;
   font-size: 22px;
   font-weight: 300;
   line-height: 1;
