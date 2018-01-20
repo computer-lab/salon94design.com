@@ -14,6 +14,7 @@ export const ContentContainer = styled.div`
 
 export const PageContainer = styled.div`
   display: flex;
+  display: -webkit-flex;
 
   @media (${breakpoint1}) {
     flex-wrap: wrap;
