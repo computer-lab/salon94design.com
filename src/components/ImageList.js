@@ -85,8 +85,6 @@ const ImageItem = styled.div`
     user-select: none;
     width: 100%;
     height: 129px;
-    min-width: 100%;
-    min-height: 100%;
     object-fit: cover;
   }
 
