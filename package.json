@@ -5,6 +5,7 @@
   "author": "Computer Lab <hi@computerlab.io>",
   "dependencies": {
     "babel-plugin-emotion": "^7.3.2",
+    "babel-polyfill": "^6.26.0",
     "classnames": "^2.2.5",
     "emotion-server": "^7.3.2",
     "fs-extra": "^4.0.2",
