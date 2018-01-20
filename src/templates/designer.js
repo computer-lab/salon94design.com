@@ -85,7 +85,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
     .filter(project =>
       (project.designers || [])
         .map(designer => designer.slug)
-        .includes(designer.slug)
+        .indexOf(designer.slug) !== -1
     )
 
   const works = designer.works || []

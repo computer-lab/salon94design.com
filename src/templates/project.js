@@ -54,7 +54,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
     const works = (designer.works || []).filter(
       work =>
         work.projects &&
-        work.projects.map(project => project.slug).includes(project.slug) &&
+        work.projects.map(project => project.slug).indexOf(project.slug) !== -1 &&
         work.hydratedImages &&
         work.hydratedImages.length > 0 &&
         work.hydratedImages[0]
