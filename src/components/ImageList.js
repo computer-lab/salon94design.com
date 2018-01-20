@@ -57,11 +57,14 @@ const ImageContainer = styled.div`
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   justify-content: flex-start;
+  -webkit-justify-content: flex-start;
   align-items: flex-start;
+  -webkit-align-items: flex-start;
   box-sizing: border-box;
 
   &.center {
     justify-content: center;
+    -webkit-justify-content: center;
   }
 `
 

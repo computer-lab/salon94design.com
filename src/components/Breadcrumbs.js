@@ -21,6 +21,7 @@ const BreadcrumbList = styled.ul`
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   justify-content: flex-end;
+  -webkit-justify-content: flex-end;
   font-size: 12px;
 
   @media (${breakpoint3}) {

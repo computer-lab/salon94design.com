@@ -48,6 +48,7 @@ const SectionWrapper = styled.div`
   flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
   justify-content: center;
+  -webkit-justify-content: center;
   padding-bottom: 24px;
 `
 
