@@ -53,6 +53,7 @@ const SetTitle = styled.h3`
 
 const ImageContainer = styled.div`
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;

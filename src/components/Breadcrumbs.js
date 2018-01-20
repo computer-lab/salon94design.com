@@ -17,6 +17,7 @@ const BreadcrumbList = styled.ul`
   composes: ${baseUl}, ${monofont};
   max-width: calc(100vw - 120px);
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: flex-end;
   font-size: 12px;

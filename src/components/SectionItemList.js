@@ -49,6 +49,7 @@ const SectionTitle = styled.h1`
 const List = styled.ul`
   composes: ${baseUl}, ${sansfont};
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
