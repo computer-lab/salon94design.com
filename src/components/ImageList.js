@@ -53,13 +53,18 @@ const SetTitle = styled.h3`
 
 const ImageContainer = styled.div`
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: flex-start;
+  -webkit-justify-content: flex-start;
   align-items: flex-start;
+  -webkit-align-items: flex-start;
   box-sizing: border-box;
 
   &.center {
     justify-content: center;
+    -webkit-justify-content: center;
   }
 `
 
@@ -80,8 +85,6 @@ const ImageItem = styled.div`
     user-select: none;
     width: 100%;
     height: 129px;
-    min-width: 100%;
-    min-height: 100%;
     object-fit: cover;
   }
 

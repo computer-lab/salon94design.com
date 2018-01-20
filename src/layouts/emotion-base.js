@@ -97,7 +97,9 @@ export const SimpleLinkList = styled.ul`
   font-size: 16px;
   font-weight: 300;
   display: flex;
+  display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 `
 
 export const SimpleLinkListItem = styled.li`
