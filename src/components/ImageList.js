@@ -75,7 +75,6 @@ const scrollElementExpanded = css`
 const ImageItem = styled.div`
   margin: 0 20px 20px 0;
   display: inline-block;
-  height: 129px;
   width: 172px;
   text-align: center;
 
