@@ -116,7 +116,7 @@ const Menu = ({ location }) => {
   ].map(item => {
     const active =
       location.pathname === item.path ||
-      location.pathname.includes(item.activePath || item.path)
+      location.pathname.indexOf(item.activePath || item.path) !== -1
 
     return {
       ...item,
