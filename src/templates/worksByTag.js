@@ -35,7 +35,7 @@ const WorksTemplate = ({ data, pathContext }) => {
     }
 
     let tags = (w.tags || []).concat(w.when)
-    return tags.indexOf(tag) !== -1
+    return tags.includes(tag)
   }
 
   const tags = getAllTags(designers)
