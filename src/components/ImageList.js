@@ -55,6 +55,7 @@ const ImageContainer = styled.div`
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
   box-sizing: border-box;

@@ -99,6 +99,7 @@ export const SimpleLinkList = styled.ul`
   display: flex;
   display: -webkit-flex;
   flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
 `
 
 export const SimpleLinkListItem = styled.li`
