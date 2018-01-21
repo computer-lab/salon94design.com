@@ -20,6 +20,14 @@ const Container = styled.div`
 `
 
 const Section = styled.div`
+  :first-child {
+    margin-top: 12px;
+
+    @media (${breakpoint3}) {
+      margin-top: 20px;
+    }
+  }
+
   &:not(:first-child) {
     margin-top: 60px;
 
@@ -109,6 +117,7 @@ const ListItem = styled.li`
   }
 
   &.no-columns {
+    text-align: center;
     width: 100%;
     margin-bottom: 32px;
   }
