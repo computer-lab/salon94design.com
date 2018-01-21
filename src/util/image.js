@@ -4,6 +4,16 @@ export const imageFilepath = file =>
 export const imageLargePath = image =>
   image ? imageFilepath(image.file) : null
 
+export const imageMediumPath = image => {
+  const mediumTransformedImageWidth = 948
+  const altMediumTransformedImageWidth = 768
+  const medium = image.resized.find(image => image.width === mediumTransformedImageWidth)
+    || image.resized.find(image => image.width === altMediumTransformedImageWidth)
+    || image.resized.sort((a, b) => a.width - b.width)[Math.floor(image.resized.length / 2)] // median
+
+  return medium ? imageFilepath(medium.file) : null
+}
+
 export const smallestImagePath = image => {
   if (!image.resized || image.resized.length === 0) {
     return null
@@ -35,7 +45,8 @@ export const imageLargeSize = image => ({
 })
 
 export const imageInfo = image => ({
-  src: imageLargePath(image),
+  src: imageMediumPath(image),
   srcSet: imageSrcSet(image),
+  largeSrc: imageLargePath(image),
   largeSize: imageLargeSize(image),
 })
