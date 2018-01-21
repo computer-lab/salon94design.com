@@ -65,12 +65,8 @@ const List = styled.ul`
   align-items: flex-start;
   -webkit-align-items: flex-start;
   box-sizing: border-box;
-  max-width: 1600px;
+  max-width: calc(100vw - 48px);
   position: relative;
-
-  @media (max-width: 1648px) {
-    max-width: calc(100vw - 48px);
-  }
 
   @media (${breakpoint3}) {
     position: static;
