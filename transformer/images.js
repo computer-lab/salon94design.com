@@ -273,19 +273,25 @@ async function resizeImage (jpegFilename) {
 
   const { width, height } = info
 
-  const sizes = []
-  sizes.push({ width: 200 })
-  sizes.push({ width: 400 })
-  if (width > 768) sizes.push({ width: 768 })
-  if (width > 948) sizes.push({ width: 948 })
-  if (width > 1068) sizes.push({ width: 1068 })
+  const sizes = [{ width: 200 }, { width: 400 }]
+
+  const mediumWidths = [768, 948, 1068]
+  mediumWidths.forEach(mediumWidth => {
+    if (width > mediumWidth) sizes.push({ width: mediumWidth })
+  })
 
   if (width >= height) {
-    if (width > 1440) sizes.push({ width: 1440 })
+    const largeWidths = [1440, 2400, 3200]
+    largeWidths.forEach(largeWidth => {
+      if (width > largeWidth) sizes.push({ width: largeWidth })
+    })
   } else {
     sizes.push({ height: 300 })
-    if (height > 600) sizes.push({ height: 600 })
-    if (height > 1600) sizes.push({ height: 1600 })
+
+    const largeHeights = [600, 1600, 2400, 3200]
+    largeHeights.forEach(largeHeight => {
+      if (height > largeHeight) sizes.push({ height: largeHeight })
+    })
   }
 
   return Promise.all(sizes.map(size => {
