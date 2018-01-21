@@ -10,7 +10,6 @@ import {
   breakpoint2,
   breakpoint3,
 } from '../layouts/emotion-base'
-import { imageLargePath, imageSrcSet } from '../util'
 
 const customBreakpoint1 = `max-width: 848px`
 const customBreakpoint3 = `max-width: 600px`
