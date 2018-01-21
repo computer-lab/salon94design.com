@@ -178,7 +178,7 @@ class FullscreenImageViewer extends Component {
         <ImageWrapper>
           <img
             className={smallImageClass}
-            src={image.src}
+            src={image.largeSrc || image.src}
             alt={image.alt}
             srcSet={image.srcSet}
             sizes={sizes}
