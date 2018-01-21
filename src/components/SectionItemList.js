@@ -16,10 +16,15 @@ const customBreakpoint1 = `max-width: 848px`
 const customBreakpoint3 = `max-width: 600px`
 
 const Container = styled.div`
+  min-height: calc(100vh - 84px - 24px - 24px - 15px);
+  display: flex;
+  display: -webkit-flex;
   padding: 0;
 `
 
 const Section = styled.div`
+  margin: auto;
+
   :first-child {
     margin-top: 12px;
 
