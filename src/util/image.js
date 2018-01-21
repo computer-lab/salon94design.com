@@ -1,18 +1,35 @@
+const MaxImageLength = 3200
+
+const getSizeSortedImages = image =>
+  image.resized.sort((a, b) => a.width - b.width)
+
 export const imageFilepath = file =>
   __PATH_PREFIX__ + `${file}`
 
-export const imageLargePath = image =>
-  image ? imageFilepath(image.file) : null
+const getLargestImage = image => {
+  if (!image) return null
+
+  const length = Math.max(image.width, image.height)
+  if (length > MaxImageLength) {
+    // find the largest image that is <= max length
+    const sizeSorted = getSizeSortedImages(image)
+    for (let i = sizeSorted.length - 1; i >= 0; i--) {
+      const resizedImage = sizeSorted[i]
+      if (Math.max(resizedImage.width, resizedImage.height) <= MaxImageLength) {
+        return resizedImage
+      }
+    }
+  }
+
+  return image // return original image
+}
 
 export const smallestImagePath = image => {
   if (!image.resized || image.resized.length === 0) {
     return null
   }
 
-  const sizeSortedImages = image.resized
-    .sort((a, b) => a.width - b.width)
-
-  return imageFilepath(sizeSortedImages[0].file)
+  return imageFilepath(getSizeSortedImages(image)[0].file)
 }
 
 export const imageSrcSet = image => {
@@ -20,13 +37,16 @@ export const imageSrcSet = image => {
     return ''
   }
 
-  const resized = image.resized
-    .sort((a, b) => a.width - b.width)
+  const resized = getSizeSortedImages(image)
     .map(({ file, width }) => `${imageFilepath(file)} ${width}w`)
 
-  const large = `${imageLargePath(image)} ${image.width}w`
+  const largest = getLargestImage(image)
+  if (largest) {
+    const large = `${imageFilepath(largest.file)} ${largest.width}w`
+    resized.push(large)
+  }
 
-  return resized.concat([large]).join(', ')
+  return resized.join(', ')
 }
 
 export const imageLargeSize = image => ({
@@ -34,8 +54,11 @@ export const imageLargeSize = image => ({
   height: image.height,
 })
 
-export const imageInfo = image => ({
-  src: imageLargePath(image),
-  srcSet: imageSrcSet(image),
-  largeSize: imageLargeSize(image),
-})
+export const imageInfo = image => {
+  const largest = getLargestImage(image)
+  return {
+    src: largest ? imageFilepath(largest.file) : null,
+    srcSet: imageSrcSet(image),
+    largeSize: imageLargeSize(image),
+  }
+}
