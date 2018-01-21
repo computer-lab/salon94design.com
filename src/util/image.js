@@ -24,6 +24,16 @@ const getLargestImage = image => {
   return image // return original image
 }
 
+export const imageMediumPath = image => {
+  const mediumTransformedImageWidth = 948
+  const altMediumTransformedImageWidth = 768
+  const medium = image.resized.find(image => image.width === mediumTransformedImageWidth)
+    || image.resized.find(image => image.width === altMediumTransformedImageWidth)
+    || image.resized.sort((a, b) => a.width - b.width)[Math.floor(image.resized.length / 2)] // median
+
+  return medium ? imageFilepath(medium.file) : null
+}
+
 export const smallestImagePath = image => {
   if (!image.resized || image.resized.length === 0) {
     return null
@@ -57,8 +67,10 @@ export const imageLargeSize = image => ({
 export const imageInfo = image => {
   const largest = getLargestImage(image)
   return {
+    src: imageMediumPath(image),
     src: largest ? imageFilepath(largest.file) : null,
     srcSet: imageSrcSet(image),
+    largeSrc: largest ? imageFilepath(largest.file) : null,
     largeSize: imageLargeSize(image),
   }
 }
