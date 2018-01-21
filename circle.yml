@@ -9,7 +9,7 @@ test:
     - exit 0
 deployment:
   release:
-    branch: master
+    branch: kevin-prevent-superlarge-image
     owner: computer-lab
     commands:
       - ./contrib/resize-images.sh
