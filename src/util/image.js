@@ -71,6 +71,6 @@ export const imageInfo = image => {
     src: largest ? imageFilepath(largest.file) : null,
     srcSet: imageSrcSet(image),
     largeSrc: largest ? imageFilepath(largest.file) : null,
-    largeSize: imageLargeSize(image),
+    largeSize: largest ? imageLargeSize(largest) : imageLargeSize(image),
   }
 }
