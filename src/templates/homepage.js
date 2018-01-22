@@ -4,7 +4,7 @@ import Link from 'gatsby-link'
 import { css } from 'emotion'
 import styled from 'emotion/react'
 
-import { sansfont, childLink } from '../layouts/emotion-base'
+import { sansfont, childLink, CenterContainer } from '../layouts/emotion-base'
 import ProjectDescription from '../components/ProjectDescription'
 import ProjectDesigners from '../components/ProjectDesigners'
 import { chooseProjectImage, imageInfo, projectLink } from '../util'
@@ -12,7 +12,7 @@ import { chooseProjectImage, imageInfo, projectLink } from '../util'
 const homepageBreakpoint1 = `max-width: 1000px`
 
 const FeaturedWrapper = styled.div`
-  margin: 0 auto;
+  margin: auto;
   max-width: 960px;
 
   @media (${homepageBreakpoint1}) {
@@ -97,22 +97,24 @@ export default function Homepage({ data }) {
         title={`Salon 94 Design - ${project.title}`}
         description={`${project.title} is Salon 94 Design's current exhibition`}
       />
-      <FeaturedWrapper>
-        <ProjectTitle>
-          <Link to={link}>
-            {project.title} – {projectDesigners.map(d => d.title).join(', ')}
-          </Link>
-        </ProjectTitle>
-        <ImageWrapper>
-          <Link to={link}>
-            <img
-              src={image && image.src}
-              srcSet={image && image.srcSet}
-              sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
-            />
-          </Link>
-        </ImageWrapper>
-      </FeaturedWrapper>
+      <CenterContainer>
+        <FeaturedWrapper>
+          <ProjectTitle>
+            <Link to={link}>
+              {project.title} – {projectDesigners.map(d => d.title).join(', ')}
+            </Link>
+          </ProjectTitle>
+          <ImageWrapper>
+            <Link to={link}>
+              <img
+                src={image && image.src}
+                srcSet={image && image.srcSet}
+                sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
+              />
+            </Link>
+          </ImageWrapper>
+        </FeaturedWrapper>
+      </CenterContainer>
     </div>
   )
 }

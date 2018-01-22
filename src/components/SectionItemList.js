@@ -21,7 +21,7 @@ const Container = styled.div`
 
 const Section = styled.div`
   :first-child {
-    margin-top: 12px;
+    margin: auto;
 
     @media (${breakpoint3}) {
       margin-top: 20px;
@@ -165,7 +165,7 @@ const clipDescription = text => {
   return `${cleanText.substr(0, substrIdx)}...`
 }
 
-const SectionItemList = ({ sections, items, disableColumns = false }) => {
+const SectionItemList = ({ sections, items, disableColumns = false, centered = false }) => {
   if (!sections) {
     sections = [{ title: null, items }]
   }
@@ -173,7 +173,7 @@ const SectionItemList = ({ sections, items, disableColumns = false }) => {
   const noColumnsClass = cx({ 'no-columns': disableColumns })
 
   return (
-    <Container>
+    <Container style={ centered ? {margin: 'auto'} : null}>
       {sections.map(({ title, items }, i) => (
         <Section key={i}>
           {title && <SectionTitle>{title}</SectionTitle>}
@@ -201,7 +201,8 @@ const SectionItemList = ({ sections, items, disableColumns = false }) => {
 SectionItemList.propTypes = {
   items: PropTypes.array,
   sections: PropTypes.array,
-  disableColumns: PropTypes.bool
+  disableColumns: PropTypes.bool,
+  centered: PropTypes.bool
 }
 
 export default SectionItemList
