@@ -4,6 +4,7 @@ import Link from 'gatsby-link'
 
 import SectionItemList from '../components/SectionItemList'
 import { chooseProjectImage, projectLink } from '../util'
+import { CenterContainer } from '../layouts/emotion-base'
 
 function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
   const designers = allDesignersYaml.edges.map(edge => edge.node)
@@ -33,9 +34,9 @@ function ProjectList({ allProjectsYaml, allDesignersYaml, type }) {
   })
 
   return (
-    <div>
-      <SectionItemList items={listItems} disableColumns={true} />
-    </div>
+    <CenterContainer>
+      <SectionItemList centered items={listItems} disableColumns={true} />
+    </CenterContainer>
   )
 }
 

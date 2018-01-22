@@ -5,6 +5,7 @@ import styled from 'emotion/react'
 
 import SectionItemList from '../components/SectionItemList'
 import { chooseDesignerImage, designerLink, byLastName } from '../util'
+import { CenterContainer } from '../layouts/emotion-base'
 
 const prefferedStatusOrder = ['Represented', 'Available']
 
@@ -46,9 +47,9 @@ export default function Designers({ data }) {
         title={`Salon 94 Design - Designers`}
         description={`List of designers represented by Salon 94 Design.`}
       />
-      <div>
-        <SectionItemList sections={listSections} disableColumns={true} />
-      </div>
+      <CenterContainer>
+        <SectionItemList centered sections={listSections} disableColumns={true} />
+      </CenterContainer>
     </div>
   )
 }

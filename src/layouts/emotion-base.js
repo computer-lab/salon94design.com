@@ -111,3 +111,9 @@ export const SimpleLinkListItem = styled.li`
     margin-bottom: 0;
   }
 `
+
+export const CenterContainer = styled.div`
+  min-height: calc(100vh - 108px - 24px);
+  display: flex;
+  display: -webkit-flex;
+`
