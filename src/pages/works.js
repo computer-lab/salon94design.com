@@ -22,6 +22,12 @@ const Instructions = styled.div`
   }
 `
 
+const CenterContainer = styled.div`
+  min-height: calc(100vh - 84px - 24px - 24px - 15px);
+  display: flex;
+  display: -webkit-flex;
+`
+
 export default function Works({ data }) {
   const { allDesignersYaml } = data
 
@@ -39,9 +45,9 @@ export default function Works({ data }) {
         title={`Salon 94 Design - Works by Category`}
         description={`Filter works by tagged categories.`}
       />
-      <div>
-        <SectionItemList items={listItems} disableColumns={true} />
-      </div>
+      <CenterContainer>
+        <SectionItemList centered items={listItems} disableColumns={true} />
+      </CenterContainer>
     </div>
   )
 }
