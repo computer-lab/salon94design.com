@@ -3,7 +3,7 @@ import Helmet from '../components/helmet'
 import Link from 'gatsby-link'
 import styled from 'emotion/react'
 
-import { sansfont, breakpoint1 } from '../layouts/emotion-base'
+import { sansfont, breakpoint1, CenterContainer } from '../layouts/emotion-base'
 import TagSelector from '../components/TagSelector'
 import SectionItemList from '../components/SectionItemList'
 import {
@@ -22,11 +22,6 @@ const Instructions = styled.div`
   }
 `
 
-const CenterContainer = styled.div`
-  min-height: calc(100vh - 84px - 24px - 24px - 15px);
-  display: flex;
-  display: -webkit-flex;
-`
 
 export default function Works({ data }) {
   const { allDesignersYaml } = data
