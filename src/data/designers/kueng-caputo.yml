@@ -21,13 +21,6 @@ works:
       - seating
     title: 'Marble Stool Red '
     when: '2015'
-  - dimensions: 16 x 13/25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
-    images:
-      - file: /images/works/kueng-caputo/marble-stool-white-BkyH_AkJG/large.jpg
-    medium: marble
-    slug: marble-stool-white
-    title: Marble Stool White
-    when: '2015'
   - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
     hero: true
     images:
