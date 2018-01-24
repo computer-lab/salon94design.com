@@ -27,5 +27,11 @@ module.exports = {
       },
     },
     `gatsby-transformer-yaml-netlify`,
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-112529591-1',
+      }
+    }
   ],
 }
