@@ -16,6 +16,9 @@ export default function Designers({ data }) {
   let designers = allDesignersYaml.edges.map(edge => edge.node)
   designers.sort(byLastName)
 
+/*
+  XXX : Removing this for demo - need to come up with a way to style this
+
   const designersByStatus = {}
   designers.forEach(d => {
     if (!designersByStatus[d.status]) {
@@ -40,6 +43,11 @@ export default function Designers({ data }) {
 
     return { title, items }
   })
+*/
+  const listSections = [{
+    title: null,
+    items: designers.map(designer => ({ title: designer.title, link: designerLink(designer.slug)}))
+  }];
 
   return (
     <div>
