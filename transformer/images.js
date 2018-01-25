@@ -239,7 +239,7 @@ async function processImage (image, newFilename) {
 function moveImage (image, newFilename) {
   // move image to correct directory
   const oldFilename = path.join(imageDir, path.basename(image.file))
-  return fs.move(oldFilename, newFilename)
+  return fs.copy(oldFilename, newFilename)
     .then(() => newFilename)
 }
 
