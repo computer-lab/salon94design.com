@@ -7,18 +7,6 @@ bio: >-
   volcanic rock.
 press: []
 works:
-  - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
-    edition: 'Unique, initials carved on side'
-    hero: false
-    images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
-      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
-    medium: 'raw and polished Tonalite granite, leather'
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-8
-    title: 'Tonalite Boulder Chair #8 '
-    when: '2017'
   - dimensions: 14.2 x 23.6 x 22.4 in / 36 x 60 x 57 cm
     edition: 'Initials carved on side, unique'
     images:
@@ -31,6 +19,18 @@ works:
     tags:
       - seating
     title: 'Tonalite Boulder Chair #5'
+    when: '2017'
+  - dimensions: 22 x 22.8 x 25.6 in / 56 x 58 x 65 cm
+    edition: 'Unique, initials carved on side'
+    hero: false
+    images:
+      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HJVr1530C-/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-8-HyHSkc3RRZ/large.jpg
+    medium: 'raw and polished Tonalite granite, leather'
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-8
+    title: 'Tonalite Boulder Chair #8 '
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 in / 47 x 46 x 75 cm
     edition: 'Unique, initials carved on side'
@@ -45,6 +45,34 @@ works:
     tags:
       - seating
     title: 'Tonalite Boulder Chair #9'
+    when: '2017'
+  - dimensions: ' 21.7 x 35.4 x 27.6 in / 55 x 90 x 70 cm'
+    edition: 'Unique, initials carved on side'
+    images:
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
+    medium: 'raw and polished Tonalite granite, bridle leather'
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-10
+    tags:
+      - seating
+    title: 'Tonalite Boulder Chair #10'
+    when: '2017'
+  - dimensions: 26.8 x 14.6 x 15.7 in / 68 x 37 x 40 cm
+    edition: 'Initials carved on side, unique'
+    hero: true
+    images:
+      - file: /images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-9
+    tags:
+      - seating
+    title: 'Tonalite Boulder Stool #9'
     when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 in / 98.5 x 32 x 48 cm
     edition: 'Unique, initials carved on bottom'
@@ -102,33 +130,5 @@ works:
     tags:
       - tables
     title: Thermal Spray Dining Table Stainless
-    when: '2017'
-  - dimensions: 26.8 x 14.6 x 15.7 in / 68 x 37 x 40 cm
-    edition: 'Initials carved on side, unique'
-    hero: true
-    images:
-      - file: /images/works/max-lamb/tonalite-boulder-stool-9-rkkOKJgJM/large.jpg
-      - file: /images/works/max-lamb/tonalite-boulder-stool-9-B1eJOYylkM/large.jpg
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-9
-    tags:
-      - seating
-    title: 'Tonalite Boulder Stool #9'
-    when: '2017'
-  - dimensions: ' 21.7 x 35.4 x 27.6 in / 55 x 90 x 70 cm'
-    edition: 'Unique, initials carved on side'
-    images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-10-SyILEWGyz/large.jpg
-      - file: /images/works/max-lamb/tonalite-boulder-chair-10-rylUIVbGJz/large.jpg
-      - file: /images/works/max-lamb/tonalite-boulder-chair-10-BJ-ILEbz1G/large.jpg
-    medium: 'raw and polished Tonalite granite, bridle leather'
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-10
-    tags:
-      - seating
-    title: 'Tonalite Boulder Chair #10'
     when: '2017'
 status: Represented
