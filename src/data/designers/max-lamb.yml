@@ -249,7 +249,7 @@ works:
   - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-stool-3-ryubPveFHz/large.jpg
+      - file: /images/salon94designmaxlambtonaliteboulderstool32017.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -258,5 +258,42 @@ works:
       - seating
       - chair
     title: 'Tonalite Boulder Stool #3'
+    when: '2017'
+  - dimensions: 16.5 x 15.7 x 17.7 inches (42 x 40 x 45 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderstool42017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-4
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Stool #4'
+    when: '2017'
+  - dimensions: 18.1 x 11 x 18.5 inches (46 x 28 x 47 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderstool52017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-5
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Stool #5'
+    when: '2017'
+  - dimensions: 12.6 x 9.5 x 18.1 inches (32 x 24 x 46 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderstool62017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    slug: tonalite-boulder-stool-6
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Stool #6'
     when: '2017'
 status: Represented
