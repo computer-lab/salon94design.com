@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: computer-lab/salon94design.com
-  branch: master
+  branch: r1b-broken-image-upload-testing
 
 media_folder: static/images
 public_folder: /images
