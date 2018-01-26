@@ -5,7 +5,7 @@ press: []
 works:
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     images:
-      - file: /images/salon94designtomsachsxchairno32017.jpg
+      - file: /images/works/tom-sachs/x-chair-3-HygxJ5tGYSG/large.jpg
     medium: 'Polycarbonate, plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -17,7 +17,8 @@ works:
     when: '2017'
   - dimensions: 32 x 25 x 21.75 inches (81.3 x 63.5 x 55.2 cm)
     images:
-      - file: /images/salon94designtomsachsxchairwithtitaniumarmsno12017.jpg
+      - file: >-
+          /images/works/tom-sachs/x-chair-with-arms-prototype-S1Zly9KzYHG/large.jpg
     medium: 'Polycarbonate, plywood, latex paint, steel, epoxy resin'
     projects:
       - slug: design-miami-basel-2017
@@ -29,7 +30,7 @@ works:
     when: '2017'
   - dimensions: 31.5 x 22 x 21.75 inches (80 x 55.9 x 55.2 cm)
     images:
-      - file: /images/salon94designtomsachslcwprototype2017.jpg
+      - file: /images/works/tom-sachs/lcw-prototype-S1fl19YftSG/large.jpg
     medium: 'Plywood, Latex Paint, Steel Hardware, Epoxy Resin, Urethane'
     projects:
       - slug: design-miami-basel-2017
@@ -38,7 +39,7 @@ works:
     when: '2017'
   - dimensions: 33 x 31 x 34 inches (83.8 x 78.7 x 86.4 cm)
     images:
-      - file: /images/salon94designtomsachsloungechairno22017.jpg
+      - file: /images/works/tom-sachs/lounge-chair-2-r1QgkcFGFrG/large.jpg
     medium: >-
       Plywood, latex paint, neoprene rubber, steel hardware, leather, latex
       foam, polyester mesh, ripstop nylon
@@ -52,7 +53,7 @@ works:
     when: '2017'
   - dimensions: 32 x 19.25 x 21 inches (81.3 x 48.9 x 53.3 cm)
     images:
-      - file: /images/salon94designtomsachsadirondack2017.jpg
+      - file: /images/works/tom-sachs/adirondack-B14ey5YGKSf/large.jpg
     medium: 'ConEd Barrier, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -69,6 +70,7 @@ works:
       - chair
     title: Crate Chair
     when: '2015'
+    images: []
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
     medium: >-
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
@@ -82,6 +84,7 @@ works:
       - chair
     title: Ottoman No.1
     when: '2017'
+    images: []
   - dimensions: 28.25 x 43.5 x 43.5 inches (71.8 x 110.5 x 110.5 cm)
     images:
       - file: /images/salon94designtomsachsmediumroundtableno12017.jpg
