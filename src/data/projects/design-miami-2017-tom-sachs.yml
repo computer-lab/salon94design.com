@@ -1,0 +1,18 @@
+slug: design-miami-2017-tom-sachs
+title: Design Miami 2017 Tom Sachs
+type: Art Fair
+when: December 2017
+date: '2017-12-01'
+designers:
+  - slug: 'tom-sachs '
+description: Tom Sachs exhibition at Design Miami 2017.
+images:
+  - file: /images/A.jpg
+  - file: /images/B.jpg
+  - file: /images/C.jpg
+  - file: /images/D.jpg
+  - file: /images/E.jpg
+  - file: /images/F.jpg
+video:
+  caption: ''
+  vimeoId: ''
