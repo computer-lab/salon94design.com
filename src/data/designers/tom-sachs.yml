@@ -5,7 +5,7 @@ press: []
 works:
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     images:
-      - file: /images/1.jpg
+      - file: /images/works/tom-sachs/x-chair-3-BkxxMYafYrf/large.jpg
     medium: 'Polycarbonate, plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -69,6 +69,7 @@ works:
       - chair
     title: Crate Chair
     when: '2015'
+    images: []
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
     medium: >-
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
@@ -82,6 +83,7 @@ works:
       - chair
     title: Ottoman No.1
     when: '2017'
+    images: []
   - dimensions: 28.25 x 43.5 x 43.5 inches (71.8 x 110.5 x 110.5 cm)
     images:
       - file: /images/salon94designtomsachsmediumroundtableno12017.jpg
