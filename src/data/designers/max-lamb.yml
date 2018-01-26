@@ -33,6 +33,19 @@ works:
       - chair
     title: 'Tonalite Boulder Chair #2'
     when: '2017'
+  - dimensions: 20 x 25.6 x 25.2 inches (50.8 x 65 x 64 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderchair42017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-4
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Chair #4'
+    when: '2017'
   - dimensions: 14.2 x 23.6 x 22.4 inches (36 x 60 x 57 cm)
     edition: 'unique, initials carved on side'
     images:
@@ -59,20 +72,6 @@ works:
     slug: tonalite-boulder-chair-8
     title: 'Tonalite Boulder Chair #8 '
     when: '2017'
-  - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
-    edition: 'unique, initials carved on side'
-    hero: true
-    images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
-      - file: /images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
-    medium: 'raw and polished Tonalite granite, bridle leather '
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-9
-    tags:
-      - seating
-    title: 'Tonalite Boulder Chair #9'
-    when: '2017'
   - dimensions: 21.7 x 35.4 x 27.6 inches (55 x 90 x 70 cm)
     edition: 'unique, initials carved on side'
     images:
@@ -87,6 +86,20 @@ works:
       - seating
       - chair
     title: 'Tonalite Boulder Chair #10'
+    when: '2017'
+  - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
+    edition: 'unique, initials carved on side'
+    hero: true
+    images:
+      - file: /images/works/max-lamb/tonalite-boulder-chair-9-rJ_BkqhCAZ/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-9-BkKS1qnCAb/large.jpg
+    medium: 'raw and polished Tonalite granite, bridle leather '
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-9
+    tags:
+      - seating
+    title: 'Tonalite Boulder Chair #9'
     when: '2017'
   - dimensions: 26.8 x 14.6 x 15.7 inches (68 x 37 x 40 cm)
     edition: 'unique, initials carved on side'
@@ -160,18 +173,14 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
-  - {}
-  - dimensions: 20 x 25.6 x 25.2 inches (50.8 x 65 x 64 cm)
+  - dimensions: 24.4 x 23.6 x 33.9 inches (62 x 59.9 x 86.1 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/salon94designmaxlambtonaliteboulderchair42017.jpg
+      - file: /images/salon94designmaxlambtonaliteboulderchair32017.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-4
-    tags:
-      - seating
-      - chair
-    title: 'Tonalite Boulder Chair #4'
+    slug: tonalite-boulder-chair-3
+    title: 'Tonalite Boulder Chair #3'
     when: '2017'
 status: Represented
