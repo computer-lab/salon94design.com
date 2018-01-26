@@ -17,7 +17,8 @@ works:
     when: '2017'
   - dimensions: 32 x 25 x 21.75 inches (81.3 x 63.5 x 55.2 cm)
     images:
-      - file: /images/works/tom-sachs/x-chair-with-arms-prototype-BkWlgeDfFBM/large.jpg
+      - file: >-
+          /images/works/tom-sachs/x-chair-with-arms-prototype-BkWlgeDfFBM/large.jpg
     medium: 'Polycarbonate, plywood, latex paint, steel, epoxy resin'
     projects:
       - slug: design-miami-basel-2017
@@ -118,7 +119,7 @@ works:
     when: '2017'
   - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
     images:
-      - file: /images/salon94designtomsachseileengraylamp2003.jpg
+      - file: /images/works/tom-sachs/eileen-gray-lamp-HyMXPQFHM/large.jpg
     medium: 'ConEd Barrier, steel hardware, incandescent bulb'
     projects:
       - slug: design-miami-basel-2017
