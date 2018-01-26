@@ -228,7 +228,7 @@ works:
   - dimensions: 15.7 x 11.8 x 15 inches (40 x 30 x 38 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-stool-7-Bk3Ub0eYSM/large.jpg
+      - file: /images/salon94designmaxlambtonaliteboulderstool72017.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -253,6 +253,30 @@ works:
       - chair
     title: 'Tonalite Boulder Stool #9'
     when: '2017'
+  - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
+    images:
+      - file: /images/mltsarmchairbronze1.jpg
+    medium: Polystyrene and bronze
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-armchair-bronze
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Armchair Bronze
+    when: '2017'
+  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
+    images:
+      - file: /images/mltsarmchaircopper1.jpg
+    medium: Polystyrene and copper
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-armchair-copper
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Armchair Copper
+    when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     edition: 'unique, initials carved on bottom'
     images:
@@ -266,6 +290,18 @@ works:
     tags:
       - seating
     title: Thermal Spray Chair Stainless
+    when: '2017'
+  - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
+    images:
+      - file: /images/mltsbenchcopper1.jpg
+    medium: Polystyrene and copper
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-bench-copper
+    tags:
+      - bench
+      - seating
+    title: Thermal Spray Bench Copper
     when: '2017'
   - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
     edition: 'unique, initials carved on bottom'
@@ -310,43 +346,40 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
-  - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
+  - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
     images:
-      - file: >-
-          /images/works/max-lamb/thermal-spray-armchair-bronze-S1aUbClYSG/large.jpg
-    medium: Polystyrene and bronze
+      - file: /images/mltschairaluminium1.jpg
+    medium: Polystyrene and aluminium
     projects:
       - slug: design-miami-basel-2017
-    slug: thermal-spray-armchair-bronze
+    slug: thermal-spray-chair-aluminum
     tags:
       - seating
       - chair
-    title: Thermal Spray Armchair Bronze
+    title: Thermal Spray Chair Aluminium
     when: '2017'
-  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
+  - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
     images:
-      - file: >-
-          /images/works/max-lamb/thermal-spray-armchair-copper-BkA8ZRlYBz/large.jpg
-    medium: Polystyrene and copper
+      - file: /images/mltschairbrass2.jpg
+    medium: Polystyrene and brass
     projects:
       - slug: design-miami-basel-2017
-    slug: thermal-spray-armchair-copper
+    slug: thermal-spray-chair-brass
     tags:
       - seating
       - chair
-    title: Thermal Spray Armchair Copper
+    title: Thermal Spray Chair Brass
     when: '2017'
-  - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
+  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
-      - file: >-
-          /images/works/max-lamb/thermal-spray-bench-copper-ryygU-CgYHM/large.jpg
-    medium: Polystyrene and copper
+      - file: /images/mltschairstainless1.jpg
+    medium: Polystyrene and stainless steel
     projects:
       - slug: design-miami-basel-2017
-    slug: thermal-spray-bench-copper
+    slug: thermal-spray-chair-stainless
     tags:
-      - bench
       - seating
-    title: Thermal Spray Bench Copper
+      - chair
+    title: Thermal Spray Chair Stainless
     when: '2017'
 status: Represented
