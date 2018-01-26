@@ -235,5 +235,15 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
-  - {}
+  - dimensions: 16.5 x 10.2 x 15.7 inches (42 x 26 x 40 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderstool22017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    slug: tonalite-boulder-stool-2
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Stool #2'
+    when: '2017'
 status: Represented
