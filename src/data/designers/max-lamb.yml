@@ -150,6 +150,19 @@ works:
       - chair
     title: 'Tonalite Boulder Chair #11'
     when: '2017'
+  - dimensions: 18.9 x 10.2 x 9.1 inches (48 x 26 x 23 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: /images/salon94designmaxlambtonaliteboulderstool12017.jpg
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-1
+    tags:
+      - seating
+      - chair
+    title: 'Tonalite Boulder Stool #1'
+    when: '2017'
   - dimensions: 26.8 x 14.6 x 15.7 inches (68 x 37 x 40 cm)
     edition: 'unique, initials carved on side'
     hero: true
@@ -222,16 +235,5 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
-  - dimensions: 18.9 x 10.2 x 9.1 inches (48 x 26 x 23 cm)
-    edition: 'unique, inscribed on side'
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-1
-    tags:
-      - seating
-      - chair
-    title: 'Tonalite Boulder Stool #1'
-    when: '2017'
-    images: []
+  - {}
 status: Represented
