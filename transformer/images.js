@@ -5,11 +5,8 @@ const sharp = require('sharp')
 
 const {
   getDesigners,
-  updateDesignerFile,
   getProjects,
-  updateProjectFile,
   getInfo,
-  updateInfoFile,
 } = require('./data')
 
 module.exports = {
@@ -31,13 +28,8 @@ async function processDesigners () {
   const designers = await getDesigners()
 
   // process works of all designers
-  const processedWorks = await Promise.all(designers.map(designer =>
+  await Promise.all(designers.map(designer =>
     processDesignerWorks(designer)
-  ))
-
-  // update yaml files of all designers
-  await Promise.all(designers.map((designer, index) =>
-    updateDesigner(designer, processedWorks[index])
   ))
 }
 
@@ -45,20 +37,14 @@ async function processProjects () {
   const projects = await getProjects()
 
   // process project images
-  const processedProjectImages = await Promise.all(projects.map(project =>
+  await Promise.all(projects.map(project =>
     processProjectImages(project)
-  ))
-
-  // update yaml files of all designers
-  await Promise.all(projects.map((project, index) =>
-    updateProject(project, processedProjectImages[index])
   ))
 }
 
 async function processInfo () {
   const info = await getInfo()
-  const processedImages = await processInfoImages(info)
-  await updateInfo(info, processedImages)
+  await processInfoImages(info)
 }
 
 async function processDesignerWorks (data) {
@@ -123,54 +109,6 @@ async function processInfoImages (info) {
   return processedImages.map((item, i) => Object.assign({}, item, {
     originalImageIndex: images.indexOf(imagesToProcess[i])
   }))
-}
-
-async function updateDesigner (data, processedWorks) {
-  const dataWorks = data.works || []
-  const works = await Promise.all(dataWorks.map(async (work, index) => {
-    const processedWorkItems = processedWorks[index]
-    const workImages = work.images || []
-    const images = await Promise.all(workImages.map(async (image, index) => {
-      const processedWorkItem = processedWorkItems.find(item => item.originalImageIndex === index)
-      return processedWorkItem ? getProcessedImageData(image, processedWorkItem) : image
-    }))
-
-    return Object.assign({}, work, { images })
-  }))
-
-  // write updated designer to same file
-  const updatedDesigner = Object.assign({}, data, { works })
-  await updateDesignerFile(updatedDesigner)
-}
-
-async function updateProject (project, processedImages) {
-  if (!project.images || processedImages.length === 0) {
-    return
-  }
-
-  const images = await Promise.all(project.images.map(async (image, index) => {
-    const processedItem = processedImages.find(item => item.originalImageIndex === index)
-    return processedItem ? getProcessedImageData(image, processedItem) : image
-  }))
-
-  // write updated project to same file
-  const updatedProject = Object.assign({}, project, { images })
-  await updateProjectFile(updatedProject)
-}
-
-async function updateInfo (info, processedImages) {
-  if (processedImages.length === 0) {
-    return
-  }
-
-  const images = await Promise.all(info.images.map(async (image, index) => {
-    const processedItem = processedImages.find(item => item.originalImageIndex === index)
-    return processedItem ? getProcessedImageData(image, processedItem) : image
-  }))
-
-  // write updated project to same file
-  const updatedInfo = Object.assign({}, info, { images })
-  await updateInfoFile(updatedInfo)
 }
 
 async function getProcessedImageData (image, processedImageItem) {
