@@ -265,18 +265,6 @@ works:
       - chair
     title: Thermal Spray Armchair Bronze
     when: '2017'
-  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
-    images:
-      - file: /images/mltsarmchaircopper1.jpg
-    medium: Polystyrene and copper
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-armchair-copper
-    tags:
-      - seating
-      - chair
-    title: Thermal Spray Armchair Copper
-    when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     edition: 'unique, initials carved on bottom'
     images:
@@ -290,6 +278,54 @@ works:
     tags:
       - seating
     title: Thermal Spray Chair Stainless
+    when: '2017'
+  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
+    images:
+      - file: /images/mltsarmchaircopper1.jpg
+    medium: Polystyrene and copper
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-armchair-copper
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Armchair Copper
+    when: '2017'
+  - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
+    images:
+      - file: /images/mltschairbrass2.jpg
+    medium: Polystyrene and brass
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-brass
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Chair Brass
+    when: '2017'
+  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
+    images:
+      - file: /images/mltschairstainless1.jpg
+    medium: Polystyrene and stainless steel
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-stainless
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Chair Stainless
+    when: '2017'
+  - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
+    images:
+      - file: /images/mltschairaluminium1.jpg
+    medium: Polystyrene and aluminium
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-aluminum
+    tags:
+      - seating
+      - chair
+    title: Thermal Spray Chair Aluminium
     when: '2017'
   - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
     images:
@@ -345,41 +381,5 @@ works:
     tags:
       - tables
     title: Thermal Spray Dining Table Stainless
-    when: '2017'
-  - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
-    images:
-      - file: /images/mltschairaluminium1.jpg
-    medium: Polystyrene and aluminium
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-aluminum
-    tags:
-      - seating
-      - chair
-    title: Thermal Spray Chair Aluminium
-    when: '2017'
-  - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
-    images:
-      - file: /images/mltschairbrass2.jpg
-    medium: Polystyrene and brass
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-brass
-    tags:
-      - seating
-      - chair
-    title: Thermal Spray Chair Brass
-    when: '2017'
-  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
-    images:
-      - file: /images/mltschairstainless1.jpg
-    medium: Polystyrene and stainless steel
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-stainless
-    tags:
-      - seating
-      - chair
-    title: Thermal Spray Chair Stainless
     when: '2017'
 status: Represented
