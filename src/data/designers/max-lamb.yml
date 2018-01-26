@@ -293,7 +293,7 @@ works:
     when: '2017'
   - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
     images:
-      - file: /images/mltschairbrass2.jpg
+      - file: /images/works/max-lamb/thermal-spray-chair-brass-H1yeR0-WFrf/large.jpg
     medium: Polystyrene and brass
     projects:
       - slug: design-miami-basel-2017
@@ -305,7 +305,8 @@ works:
     when: '2017'
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     images:
-      - file: /images/mltschairstainless1.jpg
+      - file: >-
+          /images/works/max-lamb/thermal-spray-chair-stainless-S1lxRCZWtBz/large.jpg
     medium: Polystyrene and stainless steel
     projects:
       - slug: design-miami-basel-2017
@@ -317,7 +318,8 @@ works:
     when: '2017'
   - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
     images:
-      - file: /images/mltschairaluminium1.jpg
+      - file: >-
+          /images/works/max-lamb/thermal-spray-chair-aluminum-SJZe0CbWtSz/large.jpg
     medium: Polystyrene and aluminium
     projects:
       - slug: design-miami-basel-2017
