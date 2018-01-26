@@ -60,6 +60,7 @@ works:
     title: Adirondack
     when: '2017'
   - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
+    images: []
     medium: 'ConEd Barrier, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -69,8 +70,8 @@ works:
       - chair
     title: Crate Chair
     when: '2015'
-    images: []
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
+    images: []
     medium: >-
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
       ripstop nylon
@@ -83,7 +84,6 @@ works:
       - chair
     title: Ottoman No.1
     when: '2017'
-    images: []
   - dimensions: 28.25 x 43.5 x 43.5 inches (71.8 x 110.5 x 110.5 cm)
     images:
       - file: /images/salon94designtomsachsmediumroundtableno12017.jpg
@@ -107,6 +107,7 @@ works:
     title: Side Table No.1
     when: '2017'
   - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
+    images: []
     medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -115,5 +116,15 @@ works:
       - table
     title: ConEd Pedestal Table
     when: '2017'
-    images: []
+  - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
+    images:
+      - file: /images/salon94designtomsachseileengraylamp2003.jpg
+    medium: 'ConEd Barrier, steel hardware, incandescent bulb'
+    projects:
+      - slug: design-miami-basel-2017
+    slug: eileen-gray-lamp
+    tags:
+      - 'L:'
+    title: Eileen Gray Lamp
+    when: '2003'
 status: Represented
