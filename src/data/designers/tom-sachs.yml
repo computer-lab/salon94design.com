@@ -71,7 +71,8 @@ works:
     title: Crate Chair
     when: '2015'
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
-    images: []
+    images:
+      - file: /images/salon94designtomsachsottomanno12017.jpg
     medium: >-
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
       ripstop nylon
@@ -129,7 +130,7 @@ works:
     when: '2003'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
     images:
-      - file: /images/works/tom-sachs/brick-vase-S1wZFvmtBz/large.jpg
+      - file: /images/salon94designtomsachsbrickvase2017.jpg
     medium: 'Plywood, latex paint, epoxy resin, porcelain and steel hardware'
     projects:
       - slug: design-miami-basel-2017
