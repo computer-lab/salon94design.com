@@ -29,6 +29,7 @@ works:
     images:
       - file: >-
           /images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
+      - file: /images/cartoon-desktop-2.png
     medium: 'paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
