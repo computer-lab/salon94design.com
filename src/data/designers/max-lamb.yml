@@ -47,7 +47,7 @@ works:
   - dimensions: 20 x 25.6 x 25.2 inches (50.8 x 65 x 64 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-4-BkbgRVyYSf//large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-4-BkbgRVyYSf/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -60,7 +60,7 @@ works:
   - dimensions: 14.2 x 23.6 x 22.4 inches (36 x 60 x 57 cm)
     edition: 'unique, initials carved on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-5-BJvBy5200b/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-5-B1ETrAdHf/large.jpg
     medium: 'raw and polished Tonalite granite & bridle leather '
     projects:
       - slug: boulders-max-lamb
@@ -86,7 +86,7 @@ works:
   - dimensions: 15 x 25.6 x 31.5 inches (38 x 65 x 80 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-7-rkV_Wq1tHM/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-6-BJmDNuktBM/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -190,7 +190,7 @@ works:
   - dimensions: 16.5 x 15.7 x 17.7 inches (42 x 40 x 45 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-stool-4-ryFmy5eKBG/large.jpg
+      - file: /images/works/max-lamb/tonalite-boulder-chair-4-BkbgRVyYSf/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb

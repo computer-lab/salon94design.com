@@ -225,8 +225,8 @@ async function resizeImage (jpegFilename) {
     resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
 
     // TODO / rob note: I removed this check for existing files becuase if images are re-ordered then
-    // there will be collisions in the filenames. I think a potential solution (if the builds are too slow) is to have a
-    // modified_timestamp in the image directory name as well.
+    // there will be collisions in the filenames. I think a potential solution (if the builds are too slow) is to have an
+    // ever-incrementing modification_index in the yml that we use to build the image directory name as well.
 
     // if resized file exists, don't overwrite
     // if (fs.existsSync(resizedFilename)) {
