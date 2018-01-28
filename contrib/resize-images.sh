@@ -1,2 +1,2 @@
 #!/bin/bash -e
-node transformer
+node transformer/resize-images.js

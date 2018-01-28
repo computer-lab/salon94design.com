@@ -1,6 +1,5 @@
 const fs = require('fs-extra')
 const path = require('path')
-const shortid = require('shortid')
 const sharp = require('sharp')
 
 const {
@@ -11,10 +10,14 @@ const {
 
 module.exports = {
   processImages: main,
-  getImageData
+  getImageData,
+  getWorkImageFilename,
+  getProjectImageFilename,
+  getInfoImageFilename,
 }
 
-const imageDir = path.join(__dirname, '../static/images')
+const baseDir = path.join(__dirname, '../static')
+const imageDir = path.join(baseDir, 'images')
 
 async function main () {
   await Promise.all([
@@ -47,26 +50,19 @@ async function processInfo () {
   await processInfoImages(info)
 }
 
-async function processDesignerWorks (data) {
-  const { works } = data
+async function processDesignerWorks (designer) {
+  const { works } = designer
   return Promise.all(works.map(async (work) => {
     // find images that need processing
     const images = work.images || []
     const imagesToProcess = images.filter(image =>
-      image.file && !image.file.includes('images/works')
+      image.file
     )
 
     // process them
-    const processedImages = await Promise.all(imagesToProcess.map(image => {
-      const newFilename = workImageFilename(data, work, image)
+    const processedImages = await Promise.all(imagesToProcess.map((image, idx) => {
+      const newFilename = getWorkImageFilename(designer, work, image, idx)
       return processImage(image, newFilename)
-    }))
-
-    // return relevant info
-    return processedImages
-      .filter(item => !!item)
-      .map((item, i) => Object.assign({}, item, {
-      originalImageIndex: images.indexOf(imagesToProcess[i])
     }))
   }))
 }
@@ -75,20 +71,13 @@ async function processProjectImages (project) {
   // find images that need processing
   const images = project.images || []
   const imagesToProcess = images.filter(image =>
-    image.file && !image.file.includes('images/projects')
+    image.file
   )
 
   // process them
-  const processedImages = await Promise.all(imagesToProcess.map(image => {
-    const newFilename = projectImageFilename(project, image)
+  const processedImages = await Promise.all(imagesToProcess.map((image, idx) => {
+    const newFilename = getProjectImageFilename(project, image, idx)
     return processImage(image, newFilename)
-  }))
-
-  // return relevant info
-  return processedImages
-    .filter(item => !!item)
-    .map((item, i) => Object.assign({}, item, {
-    originalImageIndex: images.indexOf(imagesToProcess[i])
   }))
 }
 
@@ -96,18 +85,13 @@ async function processInfoImages (info) {
   // find images that need processing
   const images = info.images || []
   const imagesToProcess = images.filter(image =>
-    image.file && !image.file.includes('images/info/')
+    image.file
   )
 
   // process them
-  const processedImages = await Promise.all(imagesToProcess.map(image => {
-    const newFilename = infoImageFilename(image)
+  const processedImages = await Promise.all(imagesToProcess.map((image, idx) => {
+    const newFilename = getInfoImageFilename(image, idx)
     return processImage(image, newFilename)
-  }))
-
-  // return relevant info
-  return processedImages.map((item, i) => Object.assign({}, item, {
-    originalImageIndex: images.indexOf(imagesToProcess[i])
   }))
 }
 
@@ -132,22 +116,25 @@ function imageDataFilename (filename) {
   return filename.substr(filename.indexOf(prefix))
 }
 
-function workImageFilename (designer, work, image) {
-  const newDirectory = path.resolve(imageDir, 'works', designer.slug,  `${work.slug}-${shortid.generate()}`)
-  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
-  return newFilename
+function getWorkImageFilename (designer, work, image, idx, extname) {
+  return getNewFilename(image, ['works', designer.slug, work.slug], idx, extname)
 }
 
-function projectImageFilename (project, image) {
-  const newDirectory = path.resolve(imageDir, 'projects', project.slug, shortid.generate())
-  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
-  return newFilename
+function getProjectImageFilename (project, image, idx, extname) {
+  return getNewFilename(image, ['projects', project.slug], idx, extname)
 }
 
-function infoImageFilename (image) {
-  const newDirectory = path.resolve(imageDir, 'info', shortid.generate())
-  const newFilename = path.join(newDirectory, `large${path.extname(image.file)}`)
-  return newFilename
+function getInfoImageFilename (image, idx, extname) {
+  return getNewFilename(image, ['info'], idx, extname)
+}
+
+function getNewFilename (image, pathComponents, index, extname) {
+  if (!extname) {
+    extname = path.extname(image.file)
+  }
+
+  const newDirectory = path.resolve(imageDir, ...pathComponents, String(index))
+  return path.join(newDirectory, `large${extname}`)
 }
 
 async function processImage (image, newFilename) {
@@ -176,7 +163,7 @@ async function processImage (image, newFilename) {
 
 function moveImage (image, newFilename) {
   // move image to correct directory
-  const oldFilename = path.join(imageDir, path.basename(image.file))
+  const oldFilename = path.join(baseDir, imageDataFilename(image.file))
   return fs.copy(oldFilename, newFilename)
     .then(() => newFilename)
 }
@@ -237,10 +224,14 @@ async function resizeImage (jpegFilename) {
     let resizedFilename = `resized-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
     resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
 
+    // TODO / rob note: I removed this check for existing files becuase if images are re-ordered then
+    // there will be collisions in the filenames. I think a potential solution (if the builds are too slow) is to have an
+    // ever-incrementing modification_index in the yml that we use to build the image directory name as well.
+
     // if resized file exists, don't overwrite
-    if (fs.existsSync(resizedFilename)) {
-      return Promise.resolve(resizedFilename)
-    }
+    // if (fs.existsSync(resizedFilename)) {
+    //   return Promise.resolve(resizedFilename)
+    // }
 
     return sharp(jpegFilename)
       .resize(size.width, size.height)
