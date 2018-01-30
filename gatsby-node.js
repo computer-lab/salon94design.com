@@ -10,7 +10,7 @@ const {
 } = require('./src/util/path')
 const { getAllTags } = require('./src/util/tag')
 const { readdirAbsolute } = require('./transformer/data')
-const { getImageData } = require('./transformer/images')
+const { getImageData, getWorkImageFilename, getProjectImageFilename, getInfoImageFilename } = require('./transformer/images')
 
 exports.createPages = props => {
   return Promise.all([
@@ -236,13 +236,13 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const markdownToHtml = util.promisify(remark().use(html).process)
 
-  const hydrateImages = async (node, addDummyImages = false) => {
+  const hydrateImages = async (node, nameProvider, addDummyImages = false) => {
     if (node.images) {
-      node.hydratedImages = await Promise.all(
-        node.images.map(hydrateImage).filter(item => !!item)
-      )
+      node.hydratedImages = await Promise.all(node.images.map((image, idx) => hydrateImage(image, idx, nameProvider)))
+        .filter(item => !!item)
     }
 
+    // necessary for some graphql queries
     if (
       addDummyImages &&
       (!node.hydratedImages || node.hydratedImages.length === 0)
@@ -272,7 +272,8 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
         processPress(node)
 
-        await hydrateImages(node, true)
+        const nameProvider = (img, idx) => getInfoImageFilename(img, idx, '.jpg')
+        await hydrateImages(node, nameProvider, true)
       }
       break
 
@@ -284,7 +285,10 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         processPress(node)
 
         const works = node.works || []
-        await Promise.all(works.map(work => hydrateImages(work)))
+        await Promise.all(works.map(async work => {
+          const nameProvider = (img, idx) => getWorkImageFilename(node, work, img, idx, '.jpg')
+          await hydrateImages(work, nameProvider)
+        }))
       }
       break
 
@@ -293,18 +297,19 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         const html = await markdownToHtml(node.description)
         node.descriptionHtml = html.contents
 
-        await hydrateImages(node)
+        const nameProvider = (img, idx) => getProjectImageFilename(node, img, idx, '.jpg')
+        await hydrateImages(node, nameProvider)
       }
       break
   }
 }
 
-async function hydrateImage(image) {
-  if (!image || !image.file) {
+async function hydrateImage(image, idx, nameProvider) {
+  if (!image || !image.file || !nameProvider) {
     return null
   }
 
-  const localFilename = path.resolve(path.join('static/', image.file))
+  const localFilename = nameProvider(image, idx)
 
   const images = await readdirAbsolute(path.dirname(localFilename))
   const resizedImages = images.filter(n => n !== localFilename)
