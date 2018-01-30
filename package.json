@@ -35,10 +35,9 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build --prefix-paths && ./contrib/build-admin.sh",
+    "build": "./contrib/resize-images.sh && gatsby build --prefix-paths && ./contrib/build-admin.sh",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' gatsby-node.js gatsby-config.js",
-    "git-user": "git config user.name \"CircleCI\" && git config user.email \"noreply@circleci.com\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {

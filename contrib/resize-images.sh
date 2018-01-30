@@ -1,3 +1,2 @@
 #!/bin/bash -e
-npm run git-user
-node transformer
+node transformer/resize-images.js
