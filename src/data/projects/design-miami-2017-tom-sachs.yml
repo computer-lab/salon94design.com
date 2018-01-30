@@ -8,6 +8,7 @@ designers:
 description: Tom Sachs exhibition at Design Miami 2017.
 images:
   - file: /images/projects/design-miami-2017-tom-sachs/Sye9t2QYBf/large.jpg
+    hero: true
   - file: /images/projects/design-miami-2017-tom-sachs/SkbqFhmFrz/large.jpg
   - file: /images/projects/design-miami-2017-tom-sachs/Byz5KhmFBM/large.jpg
   - file: /images/projects/design-miami-2017-tom-sachs/HJ7cFn7tSG/large.jpg
