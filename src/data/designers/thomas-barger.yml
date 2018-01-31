@@ -10,7 +10,7 @@ bio: |
   drink green tea and his favorite animals are dogs and pygmy goats.
 press: []
 works:
-  - dimensions: 27.5 x 36 x 21 inches
+  - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
     hero: false
     images:
       - file: /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
@@ -24,7 +24,7 @@ works:
       - other
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
-  - dimensions: 15 x 144 x 108 inches / 38.1 x 365.8 x 274.3 cm
+  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
     hero: true
     images:
       - file: >-
@@ -38,7 +38,7 @@ works:
       - other
     title: Sorting Laundry For a Family of 5
     when: '2017'
-  - dimensions: 32.5 x 22 x 22 inches / 82.6 x 55.9 x 55.9 cm
+  - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
     images:
       - file: >-
           /images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
@@ -50,9 +50,11 @@ works:
       - seating
     title: Aleksandr Rodchenko snack chair (with harness)
     when: '2017'
-  - hero: false
+  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
+    hero: false
     images:
       - file: /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
       - slug: ghost-dog
     slug: underwear-armoire-3
@@ -60,6 +62,18 @@ works:
       - storage
       - other
     title: Underwear Armoire 3
+    when: '2017'
+  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
+    images:
+      - file: /images/tbar4.jpg
+    medium: Paper pulp and Styrofoam
+    projects:
+      - slug: Bowery Design 2017
+    slug: dont-forget-me-on-the-train-chair
+    tags:
+      - chair
+      - seating
+    title: Don't forget me on the train chair
     when: '2017'
   - images:
       - file: /images/tbar2.jpg
@@ -79,18 +93,6 @@ works:
       - seating
     title: Chair
     when: '2016'
-  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
-    images:
-      - file: /images/tbar4.jpg
-    medium: Paper pulp and Styrofoam
-    projects:
-      - slug: Bowery Design 2017
-    slug: dont-forget-me-on-the-train-chair
-    tags:
-      - chair
-      - seating
-    title: Don't forget me on the train chair
-    when: '2017'
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
     images:
       - file: /images/tbar11.jpg
