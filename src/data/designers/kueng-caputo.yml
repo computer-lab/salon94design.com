@@ -40,4 +40,28 @@ works:
       - seating
     title: Marble Stool Orange
     when: '2014'
+  - dimensions: 29.92 x 49.21 x 21.65 inches (76 x 125 x 55 cm)
+    images:
+      - file: /images/kuca178.jpg
+    medium: Wood and iron chloride paint
+    projects:
+      - slug: art-basel-2016
+    slug: desk-table-der-entwurf-series
+    tags:
+      - Table
+    title: 'Desk Table, Der Entwurf series'
+    when: '2016'
+  - dimensions: >-
+      27.56 x 17.72 x 17.72 inches (70 x 45 x 45 cm) Surface height: 22.83
+      inches (58 cm)
+    images:
+      - file: /images/kuca179.jpg
+    medium: Wood and iron chloride paint
+    projects:
+      - slug: Art Basel 2016
+    slug: salon-table-der-entwurf-series
+    tags:
+      - table
+    title: 'Salon table, Der Entwurf series'
+    when: '2016'
 status: Represented
