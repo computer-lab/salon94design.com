@@ -396,11 +396,11 @@ works:
       wood, plastic and metal
     projects:
       - slug: Frieze London 2017
-    slug: thread-wrapped-stool
+    slug: thread-wrapped-stool-1
     tags:
       - chairs
       - seating
-    title: Thread Wrapped Stool
+    title: Thread Wrapped Stool 1
     when: '2017'
   - dimensions: 18 x 20 3/4 x 9 3/4 inches (45.7 x 52.7 x 24.8 cm)
     images:
@@ -410,11 +410,11 @@ works:
       wood, plastic and metal
     projects:
       - slug: Frieze London 2017
-    slug: thread-wrapped-stool
+    slug: thread-wrapped-stool-2
     tags:
       - chair
       - seating
-    title: Thread Wrapped Stool
+    title: Thread Wrapped Stool 2
     when: '2017'
   - dimensions: 19 x 17 1/2 x 13 1/4 inches (48.3 x 44.5 x 33.7 cm)
     images:
@@ -424,11 +424,11 @@ works:
       wood, plastic and metal
     projects:
       - slug: Frieze London 2017
-    slug: thread-wrapped-stool
+    slug: thread-wrapped-stool-3
     tags:
       - chair
       - seating
-    title: Thread Wrapped Stool
+    title: Thread Wrapped Stool 3
     when: '2017'
   - dimensions: 18 1/2 x 14 3/4 x 14 3/4 inches (47 x 37.5 x 37.5 cm)
     images:
