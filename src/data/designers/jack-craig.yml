@@ -1,12 +1,17 @@
 slug: jack-craig
 title: Jack Craig
-bio: |-
-  Jack
-  Craig currently lives and works in Detroit, Michigan. He was trained first
+bio: >-
+  Jack Craig currently lives and works in Detroit, Michigan. He was trained
+  first
+
   as an engineer (Bachelor and Master of Science, University of Maryland, 2001
+
   and 2003). Later he worked for the US Navy in the infrared division before
+
   leaving to pursue an Industrial Design degree (Bachelor of Art, University of
+
   Illinois, 2010). He continued studies at Cranbrook Academy of Art, earning a
+
   Master of Fine Art in 3D Design in 2012.
 press: []
 works:
@@ -80,5 +85,27 @@ works:
     tags:
       - lighting
     title: Cube Granite Table Lamp
+    when: '2017'
+  - dimensions: 22 x 12 x 26 inches (55.9 x 30.5 x 66 cm)
+    images:
+      - file: /images/jcr7.jpg
+    medium: Bronze and marble
+    projects:
+      - slug: Bowery Design 2017
+    slug: hot-dog-grey-marble-table-lamp
+    tags:
+      - lighting
+    title: Hot Dog Grey Marble Table Lamp
+    when: '2017'
+  - dimensions: 22 x 20 x 20 inches (55.9 x 50.8 x 50.8 cm)
+    images:
+      - file: /images/jcr9.jpg
+    medium: Bronze and granite
+    projects:
+      - slug: Bowery Design 2017
+    slug: disk-granite-table-lamp
+    tags:
+      - lighting
+    title: Disk Granite Table Lamp
     when: '2017'
 status: Represented
