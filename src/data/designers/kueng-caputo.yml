@@ -9,7 +9,7 @@ bio: >-
   Basel and New York.
 press: []
 works:
-  - dimensions: 16 x 13.25 x 13.25 inches / 40.6 x 33.7 x 33.7 cm cm
+  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     hero: false
     images:
       - file: /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
@@ -18,6 +18,7 @@ works:
     projects: []
     slug: marble-stool
     tags:
+      - chair
       - seating
     title: 'Marble Stool Red '
     when: '2015'
@@ -64,4 +65,14 @@ works:
       - table
     title: 'Salon table, Der Entwurf series'
     when: '2016'
+  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: /images/kuca143.jpg
+    medium: Marble
+    slug: marble-stool-12
+    tags:
+      - chair
+      - seating
+    title: Marble Stool 12
+    when: '2015'
 status: Represented
