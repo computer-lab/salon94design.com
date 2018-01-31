@@ -75,4 +75,79 @@ works:
       - seating
     title: Marble Stool 12
     when: '2015'
+  - dimensions: 16 x 13.25 x 13.25 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: /images/kuca176.jpg
+    medium: Marble
+    projects:
+      - slug: Art Basel 2016
+    slug: marble-stool
+    tags:
+      - chair
+      - seating
+    title: Marble Stool
+    when: '2017'
+  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: /images/kuca155.jpg
+    medium: 'Travertine with colored lacquer '
+    projects:
+      - slug: Frieze London 2016
+    slug: travertine-stool
+    tags:
+      - chair
+      - seating
+    title: Travertine Stool
+    when: '2015'
+  - dimensions: 16 x 13 1/4 x 14 1/4 inches (40.6 x 33.7 x 36.2 cm)
+    images:
+      - file: /images/kuca156.jpg
+    medium: Travertine with colored lacquer
+    slug: travertine-stool
+    tags:
+      - chair
+      - seating
+    title: Travertine Stool
+    when: '2015'
+  - dimensions: 16 x 13 1/4  x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: /images/kuca157.jpg
+    medium: Travertine with colored lacquer
+    slug: travertine-stool
+    tags:
+      - chair
+      - seating
+    title: Travertine Stool
+    when: '2015'
+  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: /images/kuca158.jpg
+    medium: Travertine with colored lacquer
+    slug: travertine-stool
+    tags:
+      - chair
+      - seating
+    title: Travertine Stool
+    when: '2015'
+  - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
+    images:
+      - file: /images/kuca118.jpg
+    medium: Marble with colored lacquer
+    slug: charger-1
+    title: Charger 1
+    when: '2014'
+  - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
+    images:
+      - file: /images/kuca120.jpg
+    medium: Marble with colored lacquer
+    slug: charger-2
+    title: Charger 2
+    when: '2014'
+  - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
+    images:
+      - file: /images/kuca121.jpg
+    medium: Marble with colored lacquer
+    slug: charger-3
+    title: Charger 3
+    when: '2014'
 status: Represented
