@@ -153,4 +153,24 @@ works:
       - seating
     title: Buttery Tall Boy 1
     when: '2017'
+  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    images:
+      - file: /images/tbar17.jpg
+    medium: Paper pulp
+    slug: buttery-tall-boy-2
+    tags:
+      - chair
+      - seating
+    title: Buttery Tall Boy 2
+    when: '2017'
+  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    images:
+      - file: /images/tbar18.jpg
+    medium: Paper pulp
+    slug: buttery-tall-boy-3
+    tags:
+      - chair
+      - seating
+    title: Buttery Tall Boy 3
+    when: '2017'
 status: Represented
