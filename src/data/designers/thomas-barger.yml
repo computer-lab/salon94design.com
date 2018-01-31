@@ -61,4 +61,94 @@ works:
       - other
     title: Underwear Armoire 3
     when: '2017'
+  - images:
+      - file: /images/tbar2.jpg
+    medium: Paper pulp
+    slug: chair
+    tags:
+      - chair
+      - seating
+    title: Chair
+    when: '2016'
+  - images:
+      - file: /images/tbar3.jpg
+    medium: Paper pulp
+    slug: chair
+    tags:
+      - chair
+      - seating
+    title: Chair
+    when: '2016'
+  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
+    images:
+      - file: /images/tbar4.jpg
+    medium: Paper pulp and Styrofoam
+    projects:
+      - slug: Bowery Design 2017
+    slug: dont-forget-me-on-the-train-chair
+    tags:
+      - chair
+      - seating
+    title: Don't forget me on the train chair
+    when: '2017'
+  - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
+    images:
+      - file: /images/tbar11.jpg
+    medium: Paper pulp
+    slug: love-me-chair
+    tags:
+      - chair
+      - seating
+    title: Love Me Chair
+    when: '2017'
+  - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+    images:
+      - file: /images/tbar12.jpg
+    medium: Paper pulp
+    slug: butter-chair-1
+    tags:
+      - chair
+      - seating
+    title: Butter Chair 1
+    when: '2017'
+  - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+    images:
+      - file: /images/tbar13.jpg
+    medium: Paper pulp
+    slug: butter-chair-2
+    tags:
+      - chair
+      - seating
+    title: Butter Chair 2
+    when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    images:
+      - file: /images/tbar14.jpg
+    medium: Paper pulp
+    slug: s-o-s-green-goblin-spidey-please-save-me
+    tags:
+      - chair
+      - seating
+    title: 'S.O.S. Green Goblin, Spidey Please Save Me'
+    when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    images:
+      - file: /images/tbar15.jpg
+    medium: Paper pulp
+    slug: protect-me-chair
+    tags:
+      - chair
+      - seating
+    title: Protect Me Chair
+    when: '2017'
+  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    images:
+      - file: /images/tbar16.jpg
+    medium: Paper pulp
+    slug: buttery-tall-boy-1
+    tags:
+      - chair
+      - seating
+    title: Buttery Tall Boy 1
+    when: '2017'
 status: Represented
