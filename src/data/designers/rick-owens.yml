@@ -45,4 +45,38 @@ works:
     tags:
       - table
     title: Plug Table
+  - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
+    images:
+      - file: /images/ro26.jpg
+    medium: 'petrified wood base, black plywood, plan top'
+    slug: plug-table
+    tags:
+      - table
+    title: Plug Table
+  - dimensions: 110.24 x 110.24 x 78.74 inches (280 x 280 x 200 cm)
+    images:
+      - file: /images/ro17.jpg
+    medium: Alabaster
+    slug: large-bed
+    tags:
+      - Bed
+    title: Large Bed
+    when: '2012'
+  - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
+    images:
+      - file: /images/ro113.jpg
+    medium: 'Styrofoam, Gorilla gaffer tape'
+    slug: prong-totem-foam
+    title: Prong Totem Foam
+    when: '2016'
+  - dimensions: 31.89 x 23.62 x 23.62 inches (81 x 60 x 60 cm)
+    images:
+      - file: /images/ro117.jpeg
+    medium: 'Bronze, Camel Skin'
+    slug: rick-alchemy-chair
+    tags:
+      - chair
+      - seating
+    title: Rick Alchemy Chair
+    when: '2015'
 status: Represented
