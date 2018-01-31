@@ -36,7 +36,7 @@ works:
     slug: large-marble-table-lamp
     tags:
       - lighting
-    title: Dripped Bronze & Marble Table Lamp
+    title: Large Marble Table Lamp
     when: '2017'
   - dimensions: 69 x 39 x 18 in
     edition: Unique
@@ -50,4 +50,35 @@ works:
       - storage
     title: Dripped Bronze Shelf
     when: '2015'
+  - dimensions: 25 x 16 x 16 inches (63.5 x 40.6 x 40.6 cm)
+    images:
+      - file: /images/jcr2.jpg
+    medium: Bronze and marble
+    slug: sphere-marble-table-lamp
+    tags:
+      - lighting
+    title: Sphere Marble Table Lamp
+    when: '2017'
+  - dimensions: 34 x 20 x 16 inches (86.4 x 50.8 x 40.6 cm)
+    images:
+      - file: /images/jcr3.jpg
+    medium: Bronze and granite
+    projects:
+      - slug: Bowery Design 2017
+    slug: donut-granite-table-lamp
+    tags:
+      - lighting
+    title: Donut Granite Table Lamp
+    when: '2017'
+  - dimensions: 22 x 16 x 16 inches (55.9 x 40.6 x 40.6 cm)
+    images:
+      - file: /images/jcr5.jpg
+    medium: Bronze and granite
+    projects:
+      - slug: Bowery Design 2017
+    slug: cube-granite-table-lamp
+    tags:
+      - lighting
+    title: Cube Granite Table Lamp
+    when: '2017'
 status: Represented
