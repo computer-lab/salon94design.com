@@ -151,4 +151,14 @@ works:
       - couch
     title: Double Récamier
     when: '2007'
+  - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
+    images:
+      - file: /images/bstagstool.jpg
+    medium: 'plywood, antlers'
+    slug: black-stag-stool
+    tags:
+      - chair
+      - seating
+    title: Black Stag Stool
+    when: '2009'
 status: Represented
