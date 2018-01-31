@@ -1,6 +1,27 @@
 slug: tom-sachs
 title: Tom Sachs
-bio: Tom Sachs
+bio: >-
+  Tom Sachs is a sculptor best known for his work inspired by icons of modernism
+  and design. Using modest studio materials, Sachs creates parallel universes
+  incorporating semi-functional sculpture, sometimes deployed by the artist and
+  his studio assistants for interactive projects, as in _Nutsy’s_(2001-3) and
+  _Space Program_(2007, 2012, 2016-17). He has had solo exhibitions at the
+  Nasher Sculpture Center, Dallas (2017-18), Yerba Buena Center for the Arts,
+  San Francisco (2016-17), Noguchi Museum, New York (2016), the Brooklyn Museum,
+  New York (2016), the Contemporary Austin, Texas (2015), the Park Avenue
+  Armory, New York (2012), Aldrich Contemporary Art Museum, Ridgefield, CT
+  (2009), Lever House, New York (2008), Fondazione Prada, Milan (2006), and the
+  Deutsche Guggenheim, Berlin (2003), the Bohen Foundation, New York (2002),
+  SITE Santa Fe (1999) among others.His work is in the collections of the Museum
+  of Modern Art, New York; the Metropolitan Museum of Art, New York; the Solomon
+  R. Guggenheim Museum, New York; the Whitney Museum of American Art, New York;
+  the J. Paul Getty Museum, Los Angeles; and the Centre Georges Pompidou, Paris,
+  San Francisco Museum of Modern Art, San Francisco; and the Astrup Fearnley
+  Museet for Moderne Kunst, Oslo, Norway among others.His film_A Space
+  Program_was released by Zeitgeist in 2016, offering viewers a glimpse into the
+  artist’s studio practice, philosophy, and the narrative surrounding his 2012
+  project with Creative Time at the Park Avenue Armory. Sachs was born in New
+  York in 1966, he lives and works in New York.
 press: []
 works:
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
@@ -126,7 +147,7 @@ works:
       - slug: design-miami-basel-2017
     slug: eileen-gray-lamp
     tags:
-      - 'lighting'
+      - lighting
     title: Eileen Gray Lamp
     when: '2003'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
