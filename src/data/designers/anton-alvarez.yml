@@ -3,6 +3,30 @@ title: Anton Alvarez
 bio: 'Born 1980, Uppsala, Sweden.'
 press: []
 works:
+  - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
+    images:
+      - file: /images/aa116.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: f-3107171744
+    tags:
+      - ceramics
+      - other
+    title: F-3107171744
+    when: '2017'
+  - dimensions: 20.08 x 8.27 x 7.09 inches (51 x 21 x 18 cm)
+    images:
+      - file: /images/aa117.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: s-0308170926
+    tags:
+      - Ceramics
+      - other
+    title: S-0308170926
+    when: '2017'
   - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
     hero: true
     images:
@@ -12,6 +36,18 @@ works:
     tags:
       - other
     title: ​Z-0308172026
+    when: '2017'
+  - dimensions: 12.6 x 7.87 x 12.99 inches (32 x 20 x 33 cm)
+    images:
+      - file: /images/aa118.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​l-0208171150
+    tags:
+      - ceramics
+      - other
+    title: ​L-0208171150
     when: '2017'
   - dimensions: 18.11 x 82.28 x 10.24 inches
     hero: false
@@ -58,6 +94,7 @@ works:
       - seating
     title: The Thread Wrapping Machine Untitled 280415
     when: '2015'
+  - {}
   - dimensions: 14.17 x 11.42 x 9.06 inches (36 x 29 x 23 cm)
     images:
       - file: /images/aa124.jpg
@@ -92,40 +129,172 @@ works:
       - 0ther
     title: ​B-0108171209
     when: '2017'
-  - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
+  - dimensions: 9.06 x 10.63 x 9.06 inches (23 x 27 x 23 cm)
     images:
-      - file: /images/aa116.jpg
+      - file: /images/aa119.jpg
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
-    slug: f-3107171744
+    slug: '​y-0308171921 '
     tags:
       - ceramics
       - other
-    title: F-3107171744
+    title: '​Y-0308171921 '
     when: '2017'
-  - dimensions: 20.08 x 8.27 x 7.09 inches (51 x 21 x 18 cm)
+  - dimensions: 11.81 x 9.84 x 8.66 inches (30 x 25 x 22 cm)
     images:
-      - file: /images/aa117.jpg
+      - file: /images/aa120.jpg
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
-    slug: s-0308170926
+    slug: ​z-0308172026
+    tags:
+      - ceramics
+      - other
+    title: ​Z-0308172026
+    when: '2017'
+  - dimensions: 14.96 x 11.02 x 9.06 inches (38 x 28 x 23 cm)
+    images:
+      - file: /images/aa121.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​w-0308171536
+    tags:
+      - ceramics
+      - other
+    title: ​W-0308171536
+    when: '2017'
+  - dimensions: 20.08 x 9.84 x 9.84 inches (51 x 25 x 25 cm)
+    images:
+      - file: /images/aa122.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​c-0308171010
+    tags:
+      - ceramics
+      - other
+    title: ​C-0308171010
+    when: '2017'
+  - dimensions: 18.5 x 10.63 x 6.69 inches (47 x 27 x 17 cm)
+    images:
+      - file: /images/aa123.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​q-0208171905
+    tags:
+      - ceramics
+      - other
+    title: ​Q-0208171905
+    when: '2017'
+  - dimensions: 15.75 x 12.6 x 12.6 inches (40 x 32 x 32 cm)
+    images:
+      - file: /images/aa125.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​g-0108171432
     tags:
       - Ceramics
       - other
-    title: S-0308170926
+    title: ​G-0108171432
     when: '2017'
-  - dimensions: 12.6 x 7.87 x 12.99 inches (32 x 20 x 33 cm)
+  - dimensions: 15.35 x 9.45 x 9.45 inches (39 x 24 x 24 cm)
     images:
-      - file: /images/aa118.jpg
+      - file: /images/aa126.jpg
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
-    slug: ​l-0208171150
+    slug: ​k-0208171010
     tags:
       - ceramics
       - other
-    title: ​L-0208171150
+    title: ​K-0208171010
+    when: '2017'
+  - dimensions: 15.75 x 9.06 x 8.66 inches (40 x 23 x 22 cm)
+    images:
+      - file: /images/aa127.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​h-0108171951
+    tags:
+      - ceramics
+      - other
+    title: ​H-0108171951
+    when: '2017'
+  - dimensions: 13.39 x 10.63 x 9.84 inches (34 x 27 x 25 cm)
+    images:
+      - file: /images/aa128.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​v-0308171456
+    tags:
+      - ceramics
+      - other
+    title: ​V-0308171456
+    when: '2017'
+  - dimensions: 14.96 x 11.02 x 8.27 inches (38 x 28 x 21 cm)
+    images:
+      - file: /images/aa129.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​p-0208171705
+    tags:
+      - ceramics
+      - other
+    title: ​P-0208171705
+    when: '2017'
+  - dimensions: 15.75 x 12.6 x 12.6 inches (46 x 30 x 19 cm)
+    images:
+      - file: /images/aa130.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​i-0208170831
+    tags:
+      - ceramics
+      - other
+    title: ​I-0208170831
+    when: '2017'
+  - dimensions: 19.69 x 8.27 x 7.48 inches (50 x 21 x 19 cm)
+    images:
+      - file: /images/aa131.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​m-0208171400
+    tags:
+      - ceramics
+      - other
+    title: ​M-0208171400
+    when: '2017'
+  - dimensions: 15.75 x 10.24 x 7.87 inches (40 x 26 x 20 cm)
+    images:
+      - file: /images/aa133.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​d-0108170800
+    tags:
+      - Ceramics
+      - other
+    title: ​D-0108170800
+    when: '2017'
+  - dimensions: 17.72 x 9.84 x 7.48 inches (45 x 25 x 19 cm)
+    images:
+      - file: /images/aa134.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​r-0208171953
+    tags:
+      - ceramics
+      - other
+    title: ​R-0208171953
     when: '2017'
 status: Represented
