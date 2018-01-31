@@ -77,4 +77,27 @@ works:
       - seating
     title: Red & Grey PVC Chair
     when: '2017'
+  - dimensions: 19.5 x 13.5 x 29.5 inches (49.5 x 34.3 x 74.9 cm)
+    images:
+      - file: /images/klee2.jpg
+    medium: PVC tubing
+    projects:
+      - slug: Bowery Design 2017
+      - slug: Frieze New York 2017
+    slug: stool
+    tags:
+      - chair
+      - seating
+      - bench
+    title: Stool
+    when: '2017'
+  - dimensions: 57.5 x 41.5 x 29 inches (146.1 x 105.4 x 73.7 cm)
+    images:
+      - file: /images/klee4.jpg
+    medium: PVC tubing and copper pipe
+    slug: lamp
+    tags:
+      - lighting
+    title: Lamp
+    when: '2017'
 status: Represented
