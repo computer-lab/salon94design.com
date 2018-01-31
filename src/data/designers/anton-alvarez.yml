@@ -3,6 +3,16 @@ title: Anton Alvarez
 bio: 'Born 1980, Uppsala, Sweden.'
 press: []
 works:
+  - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
+    hero: true
+    images:
+      - file: /images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
+    medium: glazed stoneware
+    slug: z-0308172026
+    tags:
+      - other
+    title: ​Z-0308172026
+    when: '2017'
   - dimensions: 18.11 x 82.28 x 10.24 inches
     hero: false
     images:
@@ -35,16 +45,6 @@ works:
       - seating
     title: The Thread Wrapping Machine Chair 090415
     when: '2015'
-  - dimensions: 11.81 x 9.84 x 8.66 in / 30 x 25 x 22 cm
-    hero: true
-    images:
-      - file: /images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
-    medium: glazed stoneware
-    slug: z-0308172026
-    tags:
-      - other
-    title: ​Z-0308172026
-    when: '2017'
   - dimensions: 34 x 22 x 7 in / 86.4 x 55.9 x 17.8 cm
     hero: false
     images:
@@ -58,4 +58,75 @@ works:
       - seating
     title: The Thread Wrapping Machine Untitled 280415
     when: '2015'
+  - {}
+  - dimensions: 14.17 x 11.42 x 9.06 inches (36 x 29 x 23 cm)
+    images:
+      - file: /images/aa124.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: a-3107171531
+    tags:
+      - Ceramics
+      - other
+    title: ​A-3107171531
+    when: '2017'
+  - dimensions: Dimensions variable
+    images:
+      - file: /images/aa142.jpg
+    medium: Glazed stoneware
+    slug: alphabet-aerobics
+    tags:
+      - Ceramics
+      - other
+    title: Alphabet Aerobics
+    when: '2017'
+  - dimensions: 20.47 x 9.06 x 8.27 inches (52 x 23 x 21 cm)
+    images:
+      - file: /images/aa140.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​b-0108171209
+    tags:
+      - ceramics
+      - 0ther
+    title: ​B-0108171209
+    when: '2017'
+  - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
+    images:
+      - file: /images/aa116.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: f-3107171744
+    tags:
+      - ceramics
+      - other
+    title: F-3107171744
+    when: '2017'
+  - dimensions: 20.08 x 8.27 x 7.09 inches (51 x 21 x 18 cm)
+    images:
+      - file: /images/aa117.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: s-0308170926
+    tags:
+      - Ceramics
+      - other
+    title: S-0308170926
+    when: '2017'
+  - dimensions: 12.6 x 7.87 x 12.99 inches (32 x 20 x 33 cm)
+    images:
+      - file: /images/aa118.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​l-0208171150
+    tags:
+      - ceramics
+      - other
+    title: ​L-0208171150
+    when: '2017'
 status: Represented
