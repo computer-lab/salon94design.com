@@ -74,6 +74,12 @@ description: >-
 images:
   - file: /images/projects/boulders-max-lamb/Hysbqxzkz/large.jpg
     hero: true
+  - file: /images/1instal.jpg
+  - file: /images/2instal.jpg
+  - file: /images/3instal.jpg
+  - file: /images/4instal.jpg
+  - file: /images/5instal.jpg
+  - file: /images/6instal.jpg
 video:
   caption: ''
   vimeoId: ''
