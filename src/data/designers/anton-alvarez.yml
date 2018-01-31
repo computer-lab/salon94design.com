@@ -297,4 +297,88 @@ works:
       - other
     title: ​R-0208171953
     when: '2017'
+  - dimensions: 14.57 x 9.06 x 9.84 inches (37 x 23 x 25 cm)
+    images:
+      - file: /images/aa135.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​e-0108171905
+    tags:
+      - ceramics
+      - other
+    title: ​E-0108171905
+    when: '2017'
+  - dimensions: 12.2 x 9.84 x 7.87 inches (31 x 25 x 20 cm)
+    images:
+      - file: /images/aa136.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​n-0208171607
+    tags:
+      - ceramics
+      - other
+    title: ​N-0208171607
+    when: '2017'
+  - dimensions: 18.11 x 11.81 x 13.39 inches (46 x 30 x 34 cm)
+    images:
+      - file: /images/aa137.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​o-0108171114
+    tags:
+      - ceramics
+      - other
+    title: ​O-0108171114
+    when: '2017'
+  - dimensions: 15.35 x 7.48 x 8.66 inches (39 x 19 x 22 cm)
+    images:
+      - file: /images/aa138.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​x-0308171710
+    tags:
+      - ceramics
+      - other
+    title: ​X-0308171710
+    when: '2017'
+  - dimensions: 15.75 x 9.45 x 10.63 inches (40 x 24 x 27 cm)
+    images:
+      - file: /images/aa139.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​u-0108171600
+    tags:
+      - ceramics
+      - other
+    title: ​U-0108171600
+    when: '2017'
+  - dimensions: 20.47 x 9.06 x 8.27 inches (52 x 23 x 21 cm)
+    images:
+      - file: /images/aa140.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​b-0108171209
+    tags:
+      - ceramics
+      - other
+    title: ​B-0108171209
+    when: '2017'
+  - dimensions: 17.32 x 9.45 x 9.45 inches (44 x 24 x 24 cm)
+    images:
+      - file: /images/aa141.jpg
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​j-3107171959
+    tags:
+      - ceramics
+      - other
+    title: ​J-3107171959
+    when: '2017'
 status: Represented
