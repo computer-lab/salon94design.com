@@ -86,7 +86,7 @@ works:
   - dimensions: 15 x 25.6 x 31.5 inches (38 x 65 x 80 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: /images/works/max-lamb/tonalite-boulder-chair-6-BJmDNuktBM/large.jpg
+      - file: /images/salon94designmaxlambtonaliteboulderchair72017.jpg
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -254,7 +254,8 @@ works:
     when: '2017'
   - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
     images:
-      - file: /images/works/max-lamb/thermal-spray-armchair-bronze-S1aUbClYSG/large.jpg
+      - file: >-
+          /images/works/max-lamb/thermal-spray-armchair-bronze-S1aUbClYSG/large.jpg
     medium: Polystyrene and bronze
     projects:
       - slug: design-miami-basel-2017
@@ -280,7 +281,8 @@ works:
     when: '2017'
   - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
     images:
-      - file: /images/works/max-lamb/thermal-spray-armchair-copper-BkA8ZRlYBz/large.jpg
+      - file: >-
+          /images/works/max-lamb/thermal-spray-armchair-copper-BkA8ZRlYBz/large.jpg
     medium: Polystyrene and copper
     projects:
       - slug: design-miami-basel-2017
@@ -330,7 +332,8 @@ works:
     when: '2017'
   - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
     images:
-      - file: /images/works/max-lamb/thermal-spray-bench-copper-ryygU-CgYHM/large.jpg
+      - file: >-
+          /images/works/max-lamb/thermal-spray-bench-copper-ryygU-CgYHM/large.jpg
     medium: Polystyrene and copper
     projects:
       - slug: design-miami-basel-2017
