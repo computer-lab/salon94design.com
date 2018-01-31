@@ -129,4 +129,26 @@ works:
       - couch
     title: Double Récamier
     when: '2007'
+  - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
+    edition: '4'
+    images:
+      - file: /images/ro36.jpg
+    medium: petrified wood
+    slug: half-box-chair
+    tags:
+      - chair
+      - seating
+    title: Half Box Chair
+    when: '2011'
+  - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
+    edition: '3'
+    images:
+      - file: /images/ro37.jpg
+    medium: Ox-bone
+    slug: half-box-chair
+    tags:
+      - chair
+      - seating
+    title: Half Box Chair
+    when: '2012'
 status: Represented
