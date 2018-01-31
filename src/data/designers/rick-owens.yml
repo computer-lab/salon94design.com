@@ -11,7 +11,10 @@ bio: >-
 press: []
 works:
   - caption: ''
-    dimensions: 33.86 x 22.05 x 24.8 in / 86 x 56 x 63 cm
+    dimensions: >-
+      33.86 x 22.05 x 24.8 inches (86 x 56 x 63 cm) Seat height: 19.5 inches
+      (49.5 cm)
+    edition: Total Edition of 40
     hero: true
     images:
       - file: /images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
@@ -23,7 +26,8 @@ works:
       - seating
     title: Stag Stool
     when: '2015'
-  - dimensions: '35.43 x 23.6 x 29.92 inches / 90 x 60 x 76 cm '
+  - dimensions: 35.43 x 23.6 x 29.92 inches (90 x 60 x 76 cm)
+    edition: Total Edition of 12
     images:
       - file: /images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
     medium: 'raw plywood, moose antler'
@@ -32,4 +36,13 @@ works:
       - seating
     title: Tomb Stag Chair
     when: '2012'
+  - dimensions: 43 x 120 x 42 inches (109.2 x 304.8 x 106.7 cm) CUSTOM SIZE
+    edition: '8'
+    images:
+      - file: /images/ro74.jpg
+    medium: 'alabaster base, natural plywood top'
+    slug: plug-table
+    tags:
+      - table
+    title: Plug Table
 status: Represented
