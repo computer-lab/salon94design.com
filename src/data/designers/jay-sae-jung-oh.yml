@@ -1,9 +1,22 @@
 slug: jay-sae-jung-oh
 title: Jay Sae Jung Oh
-bio: "Jae Say Jung Oh describes her interests as lying\nat the intersection of art and design, particularly as reconciling the two\nideas is an ongoing challenge for her. “I am always trying to combine them\nwithout losing the essence of each field,” she says. Oh was trained in\nsculpture and 3D design, and has worked with the artist Gaetano Pesce on\nprojects including furniture installations and product design. Her best-known\nproject, “Savage,” is comprised of a series of functional seating units and\nside tables. The earliest of these were made using mundane, mass-produced\nobjects affixed together with epoxy and adhesive, after which the entire volume\nwas wrapped with jute string. Each takes about four months to complete. In the\nnewer iteration of “Savage,” Oh produces the objects in leather.\n\n\_\n\n\_\n\n\_\n\n\_"
+bio: >-
+  Jae Say Jung Oh describes her interests as lying at the intersection of art
+  and design, particularly as reconciling the two ideas is an ongoing challenge
+  for her. “I am always trying to combine them
+
+  without losing the essence of each field,” she says. Oh was trained in
+  sculpture and 3D design, and has worked with the artist Gaetano Pesce on
+  projects including furniture installations and product design. Her best-known
+  project, “Savage,” is comprised of a series of functional seating units and
+
+  side tables. The earliest of these were made using mundane, mass-produced
+  objects affixed together with epoxy and adhesive, after which the entire
+  volumes wrapped with jute string. Each takes about four months to complete. In
+  the newer iteration of “Savage,” Oh produces the objects in leather.
 press: []
 works:
-  - dimensions: 70 x 35 x 45 in
+  - dimensions: 70 x 35 x 45 inches (177.8 x 88.9 x 114.3 cm)
     edition: Unique
     hero: false
     images:
@@ -13,25 +26,55 @@ works:
           /images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/large.jpg
       - file: >-
           /images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
-    medium: 'leather cord, various plastics'
+    medium: 'Various plastics, leather cord'
     projects: []
-    slug: savage-series-black-leather-sofa
+    slug: savage-series-black-edition-sofa
     tags:
       - seating
-    title: Savage Series Black Leather Sofa
+    title: Savage Series Black Edition Sofa
     when: '2016'
-  - dimensions: 55 x 42 x 44 in / 139.7 x 106.7 x 111.8 cm
+  - dimensions: 55 x 42 x 44 inches (139.7 x 106.7 x 111.8 cm)
     edition: 'Unique '
     hero: true
     images:
       - file: >-
           /images/works/jay-sae-jung-oh/savage-series-black-leather-chair-SkfvwTkJz/large.jpg
-    medium: 'leather cord, various plastics'
+    medium: 'Various plastics, leather cord'
     projects:
       - slug: ghost-dog
-    slug: savage-series-black-leather-chair
+    slug: savage-series-black-edition-chair
     tags:
       - seating
-    title: Savage Series Black Leather Chair
+    title: Savage Series Black Edition Chair
+    when: '2014'
+  - dimensions: 44 x 48 x 37 inches (111.8 x 121.9 x 94 cm)
+    images:
+      - file: /images/ja01.jpg
+    medium: Found objects covered in Jute
+    slug: savage-chair
+    tags:
+      - chair
+      - seating
+    title: 'Savage Chair '
+    when: '2015'
+  - dimensions: 25 x 30 x 15 inches (63.5 x 76.2 x 38.1 cm)
+    images:
+      - file: /images/jao3.jpg
+    medium: 'Various plastics, leather cord'
+    projects:
+      - slug: Bowery Design 2017
+    slug: savage-series-black-edition-lamp
+    tags:
+      - lighting
+    title: Savage Series Black Edition Lamp
+    when: '2015'
+  - dimensions: 38 x 38 x 18 inches (96.5 x 96.5 x 45.7 cm)
+    images:
+      - file: /images/jao5.jpg
+    medium: 'Various plastics, cast iron skillet, leather cord'
+    slug: savage-series-black-edition-side-table
+    tags:
+      - table
+    title: Savage Series Black Edition Side Table
     when: '2014'
 status: Represented
