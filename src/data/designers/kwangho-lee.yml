@@ -11,7 +11,7 @@ bio: >-
   from woven garden hoses, PVC, leather and silk, titled Obsession.
 press: []
 works:
-  - dimensions: 5-10 feet long (1.5-3 m long)
+  - dimensions: 16 x 79 x 79 inches (40.6 x 200.7 x 200.7 cm)
     hero: false
     images:
       - file: /images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
@@ -39,11 +39,11 @@ works:
       - seating
     title: Large Nylon Bench
     when: '2006'
-  - dimensions: Up to 8 feet (up to 2.4 m)
+  - dimensions: 16.5 x 89 x 12.5 inches (41.9 x 226.1 x 31.8 cm)
     images:
       - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
       - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
-    medium: PVC
+    medium: 'PVC '
     price: ''
     projects:
       - slug: ghost-dog
@@ -53,16 +53,18 @@ works:
     title: Small PVC Bench
     when: '2006'
   - caption: Frieze NY
+    dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
     hero: false
     images:
       - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
+    medium: Custom silk rope
     slug: red-silk-bench
     tags:
       - seating
       - seating
     title: 'Red Silk Bench (Frieze NY 2017) '
     when: '2016'
-  - dimensions: 25.5 × 21 × 31 inches / 65 × 53 × 79 cm
+  - dimensions: 25.5 x 21 x 31 inches (64.8 x 53.3 x 78.7 cm)
     edition: Unique
     hero: true
     images:
