@@ -26,6 +26,16 @@ works:
       - seating
     title: Stag Stool
     when: '2015'
+  - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
+    images:
+      - file: /images/bstagstool.jpg
+    medium: 'plywood, antlers'
+    slug: black-stag-stool
+    tags:
+      - chair
+      - seating
+    title: Black Stag Stool
+    when: '2009'
   - dimensions: 35.43 x 23.6 x 29.92 inches (90 x 60 x 76 cm)
     edition: Total Edition of 12
     images:
@@ -151,14 +161,4 @@ works:
       - couch
     title: Double Récamier
     when: '2007'
-  - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
-    images:
-      - file: /images/bstagstool.jpg
-    medium: 'plywood, antlers'
-    slug: black-stag-stool
-    tags:
-      - chair
-      - seating
-    title: Black Stag Stool
-    when: '2009'
 status: Represented
