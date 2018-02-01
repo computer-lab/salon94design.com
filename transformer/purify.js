@@ -35,7 +35,7 @@ async function processDesigners () {
   const impureDesigners = designers.filter(designer =>
     designer.slug !== slugifyLower(designer.slug) ||
     (designer.works || []).filter(work =>
-      work.slug !== slugifyLower(work.slug)
+      work.slug && work.slug !== slugifyLower(work.slug)
     ).length > 0
   )
 

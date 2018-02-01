@@ -113,6 +113,15 @@ search for the object you want to edit instead of finding it in the collection
 grid. In this case you can use the search bar in the top menu bar. The search
 bar is case-insensitive and will return any matching object in a grid.
 
+### Adding images
+
+**XXX may be subject to change**
+
+Uploaded images should have either a 4:3 or 3:4 aspect ratio with the work
+centered in the image. Wide images are preferred - tall images may be cut off
+depending on their height. Images should be no bigger than 1MB. Any image format
+is supported, however, ultimately the images will be converted to JPEGs.
+
 ### Verifying your changes
 
 Once you click the *Save* button on a new object, the following process takes
