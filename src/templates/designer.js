@@ -113,9 +113,6 @@ const DesignerTemplate = ({ data, pathContext }) => {
       })
     )
 
-  // Reverse-when work image sort
-  images.sort((a, b) => -1 * a.work.when.localeCompare(b.work.when));
-
   const allImages = [{
     project: null,
     images
