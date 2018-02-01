@@ -15,7 +15,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug (for url - all lowercase, no spaces or special characters)
+        label: Slug (for url - unique, all lowercase, no spaces or special characters, no leading / trailing whitespace)
         widget: string
       - name: title
         label: Name
@@ -46,7 +46,7 @@ collections:
             label: Title
             widget: string
           - name: slug
-            label: Slug (for url - all lowercase, no spaces or special characters)
+            label: Slug (for url - unique, all lowercase, no spaces or special characters, no leading / trailing whitespace)
             widget: string
           - name: when
             label: Year
@@ -63,7 +63,7 @@ collections:
                 searchFields: [slug, title]
                 valueField: slug
           - name: tags
-            label: "Tags — F: beds, benches, chairs, outdoor, seating, storage, tables | L: lighting | M: all other tags (other, ceramics, fashion, etc)."
+            label: "ceramics, jewlery, lighting, other, seating, storage, tables - any tag can be added, all lowercase"
             widget: list
             default: []
           - name: hero
@@ -121,7 +121,7 @@ collections:
     format: yaml
     fields:
       - name: slug
-        label: Slug (for url - all lowercase, no spaces or special characters)
+        label: Slug (for url - unique, all lowercase, no spaces or special characters, no leading / trailing whitespace)
         widget: string
       - name: title
         label: Title
