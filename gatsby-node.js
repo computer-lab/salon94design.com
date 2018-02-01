@@ -238,8 +238,14 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const hydrateImages = async (node, nameProvider, addDummyImages = false) => {
     if (node.images) {
-      node.hydratedImages = await Promise.all(node.images.map((image, idx) => hydrateImage(image, idx, nameProvider)))
+      node.hydratedImages = await (
+        Promise.all(
+          node.images
+            .filter(image => image.file)
+            .map((image, idx) => hydrateImage(image, idx, nameProvider))
+        )
         .filter(item => !!item)
+      )
     }
 
     // necessary for some graphql queries
