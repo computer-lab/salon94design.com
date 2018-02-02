@@ -26,6 +26,18 @@ works:
       - seating
     title: Silk Bench 1
     when: '2006'
+  - caption: Frieze NY
+    dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
+    hero: false
+    images:
+      - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
+    medium: Custom silk rope
+    slug: red-silk-bench
+    tags:
+      - seating
+      - seating
+    title: 'Red Silk Bench (Frieze NY 2017) '
+    when: '2016'
   - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
     images:
       - file: >-
@@ -52,18 +64,6 @@ works:
       - seating
     title: Small PVC Bench
     when: '2006'
-  - caption: Frieze NY
-    dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
-    hero: false
-    images:
-      - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
-    medium: Custom silk rope
-    slug: red-silk-bench
-    tags:
-      - seating
-      - seating
-    title: 'Red Silk Bench (Frieze NY 2017) '
-    when: '2016'
   - dimensions: 25.5 x 21 x 31 inches (64.8 x 53.3 x 78.7 cm)
     edition: Unique
     hero: true
