@@ -9,38 +9,6 @@ bio: >-
   Basel and New York.
 press: []
 works:
-  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
-    hero: false
-    images:
-      - file: /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
-    medium: marble
-    price: ''
-    projects: []
-    slug: marble-stool
-    tags:
-      - chair
-      - seating
-    title: 'Marble Stool Red '
-    when: '2015'
-  - dimensions: 17 x 12 x 12 in / 43.2 x 30.5 x 30.5 cm
-    hero: true
-    images:
-      - file: /images/works/kueng-caputo/sand-chair-rJifzEbJf/large.jpg
-    slug: sand-chair
-    tags:
-      - seating
-    title: Sand Chair
-    when: '2012'
-  - dimensions: 16 x 13.25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
-    edition: Unique
-    images:
-      - file: /images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
-    medium: marble
-    slug: marble-stool-orange
-    tags:
-      - seating
-    title: Marble Stool Orange
-    when: '2014'
   - dimensions: 29.92 x 49.21 x 21.65 inches (76 x 125 x 55 cm)
     images:
       - file: /images/kuca178.jpg
@@ -65,6 +33,29 @@ works:
       - table
     title: 'Salon table, Der Entwurf series'
     when: '2016'
+  - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
+    hero: false
+    images:
+      - file: /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
+    medium: marble
+    price: ''
+    projects: []
+    slug: marble-stool
+    tags:
+      - chair
+      - seating
+    title: 'Marble Stool Red '
+    when: '2015'
+  - dimensions: 16 x 13.25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
+    edition: Unique
+    images:
+      - file: /images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
+    medium: marble
+    slug: marble-stool-orange
+    tags:
+      - seating
+    title: Marble Stool Orange
+    when: '2014'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
       - file: /images/kuca143.jpg
@@ -107,7 +98,7 @@ works:
     tags:
       - chair
       - seating
-    title: Travertine Stool
+    title: Travertine Stool 1
     when: '2015'
   - dimensions: 16 x 13 1/4  x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
@@ -117,7 +108,7 @@ works:
     tags:
       - chair
       - seating
-    title: Travertine Stool
+    title: Travertine Stool 2
     when: '2015'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
@@ -127,7 +118,7 @@ works:
     tags:
       - chair
       - seating
-    title: Travertine Stool
+    title: Travertine Stool 3
     when: '2015'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
