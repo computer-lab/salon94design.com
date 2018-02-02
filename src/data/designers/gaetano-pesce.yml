@@ -99,4 +99,42 @@ works:
       caption: ''
       vimeoId: ''
     when: '2017'
+  - images:
+      - file: /images/gpe58.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-black
+    tags:
+      - Jewlery
+    title: Bracelet (Black)
+  - images:
+      - file: /images/gpe59.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-blue-black
+    title: Bracelet (Blue and Black)
+    when: ''
+  - images:
+      - file: /images/gpe62.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-blue-woven
+    tags:
+      - Jewlery
+    title: Bracelet (Blue Woven)
+    when: ''
+  - images:
+      - file: /images/gpe56.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-green
+    tags:
+      - Jewlery
+    title: Bracelet (Green)
+    when: ''
+  - images:
+      - file: /images/gpe63.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-orange
+    tags:
+      - Jewlery
+    title: Bracelet (Orange)
+    when: ''
+  - {}
 status: Represented
