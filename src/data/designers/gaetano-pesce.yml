@@ -284,4 +284,50 @@ works:
       - Chair
     title: Jeanne Chair 2
     when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: /images/gpe20.jpg
+    medium: Polyurethane resin
+    slug: jeanne-chair-3
+    tags:
+      - Chair
+    title: Jeanne Chair 3
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe21.jpg
+    medium: Polyurethane resin
+    slug: trash-can
+    tags:
+      - other
+    title: Trash Can
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe22.jpg
+    medium: Polyurethane resin
+    slug: trash-can-2
+    tags:
+      - other
+    title: Trash Can 2
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe24.jpg
+    medium: Polyurethane resin
+    slug: trash-can-3
+    tags:
+      - other
+    title: Trash Can 3
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe25.jpg
+    medium: Polyurethane resin
+    slug: trash-can-4
+    tags:
+      - other
+    title: Trash Can 4
+    when: '2016'
+  - {}
 status: Represented
