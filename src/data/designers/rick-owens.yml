@@ -56,6 +56,12 @@ works:
       - seating
     title: Rick Alchemy Chair
     when: '2015'
+  - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
+    images:
+      - file: /images/ro50.jpg
+    medium: Bronze
+    slug: alchemy-chair
+    title: Alchemy Chair
   - dimensions: 23.23 x 33.07 x 25.98 inches (59 x 84 x 66 cm)
     images:
       - file: /images/ro38.jpg
@@ -74,7 +80,7 @@ works:
     tags:
       - chair
       - seating
-    title: Curial Chair
+    title: Curial Chair 1
     when: '2014'
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
     edition: '4'
@@ -87,6 +93,15 @@ works:
       - seating
     title: Half Box Chair
     when: '2011'
+  - dimensions: 33.46 x 22.83 x 29.92 inches (85 x 58 x 76 cm)
+    images:
+      - file: /images/ro6.jpg
+    medium: 'Plywood, mink '
+    slug: fisher-box
+    tags:
+      - Chair
+    title: 'Fisher Box '
+    when: '2009'
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
     edition: '3'
     images:
@@ -96,7 +111,7 @@ works:
     tags:
       - chair
       - seating
-    title: Half Box Chair
+    title: Half Box Chair 1
     when: '2012'
   - dimensions: 43 x 120 x 42 inches (109.2 x 304.8 x 106.7 cm) CUSTOM SIZE
     edition: '8'
@@ -114,7 +129,7 @@ works:
     slug: plug-table
     tags:
       - table
-    title: Plug Table
+    title: Plug Table 1
   - dimensions: 110.24 x 110.24 x 78.74 inches (280 x 280 x 200 cm)
     images:
       - file: /images/ro17.jpg
@@ -124,13 +139,6 @@ works:
       - Bed
     title: Large Bed
     when: '2012'
-  - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
-    images:
-      - file: /images/ro113.jpg
-    medium: 'Styrofoam, Gorilla gaffer tape'
-    slug: prong-totem-foam
-    title: Prong Totem Foam
-    when: '2016'
   - dimensions: 137.8 x 47.24 x 39.37 inches (350 x 120 x 100 cm)
     images:
       - file: /images/ro16.jpg
@@ -159,6 +167,33 @@ works:
       - bed
       - bench
       - couch
-    title: Double Récamier
+    title: Double Récamier 1
     when: '2007'
+  - dimensions: 118.11 x 47.24 x 47.24 inches (300 x 120 x 120 cm)
+    images:
+      - file: /images/ro95.jpg
+    medium: 'Black plywood, with plywood clogs'
+    slug: boudeuse
+    tags:
+      - Bench
+      - Daybed
+      - Couch
+    title: Boudeuse
+    when: '2015'
+  - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
+    images:
+      - file: /images/ro113.jpg
+    medium: 'Styrofoam, Gorilla gaffer tape'
+    slug: prong-totem-foam
+    title: Prong Totem Foam
+    when: '2016'
+  - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
+    images:
+      - file: /images/rostag.jpg
+    medium: White Marble and Moose antler
+    slug: stag-stool-white
+    tags:
+      - Chair
+    title: 'Stag Stool White '
+    when: '2012'
 status: Represented
