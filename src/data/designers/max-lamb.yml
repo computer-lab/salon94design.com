@@ -237,6 +237,15 @@ works:
       - chair
     title: 'Tonalite Boulder Stool #7'
     when: '2017'
+  - dimensions: 15.7 x 13.8 x 25.6 inches (40 x 35 x 65 cm)
+    images:
+      - file: /images/mla 76.jpg
+    medium: Raw and Polished Tonalite granite & bridle leather
+    slug: tonalite-boulder-stool-8
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Stool #8'
+    when: '2017'
   - dimensions: 26.8 x 14.6 x 15.7 inches (68 x 37 x 40 cm)
     edition: 'unique, initials carved on side'
     hero: true
@@ -373,5 +382,4 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
-  - {}
 status: Represented
