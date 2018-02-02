@@ -304,19 +304,6 @@ works:
       - chair
     title: Thermal Spray Chair Brass
     when: '2017'
-  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
-    images:
-      - file: >-
-          /images/works/max-lamb/thermal-spray-chair-stainless-S1lxRCZWtBz/large.jpg
-    medium: Polystyrene and stainless steel
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-stainless
-    tags:
-      - seating
-      - chair
-    title: Thermal Spray Chair Stainless
-    when: '2017'
   - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
     images:
       - file: >-
@@ -386,4 +373,5 @@ works:
       - tables
     title: Thermal Spray Dining Table Stainless
     when: '2017'
+  - {}
 status: Represented
