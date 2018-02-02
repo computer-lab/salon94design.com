@@ -36,6 +36,24 @@ works:
       - seating
     title: Black Stag Stool
     when: '2009'
+  - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
+    images:
+      - file: /images/rostag.jpg
+    medium: White Marble and Moose antler
+    slug: white-stag-stool
+    tags:
+      - Chair
+    title: White Stag Stool
+    when: '2012'
+  - dimensions: 47.83 x 25.98 x 32.68 inches (121.5 x 66 x 83 cm)
+    images:
+      - file: /images/ro66.jpg
+    medium: Ox bone and Stag Antler
+    slug: stag-chair
+    tags:
+      - Chair
+    title: Stag Chair
+    when: '2013'
   - dimensions: 35.43 x 23.6 x 29.92 inches (90 x 60 x 76 cm)
     edition: Total Edition of 12
     images:
@@ -45,6 +63,24 @@ works:
     tags:
       - seating
     title: Tomb Stag Chair
+    when: '2012'
+  - dimensions: 35.43 x 19.69 x 29.92 inches (90 x 50 x 76 cm)
+    images:
+      - file: /images/ro33.jpg
+    medium: 'White Sivec Marble, stag antler'
+    slug: tomb-stag-chair
+    tags:
+      - Chair
+    title: Tomb Stag Chair (left)
+    when: '2012'
+  - dimensions: 29.72 x 35.43 x 23.62 inches (75.5 x 90 x 60 cm)
+    images:
+      - file: /images/ro72.jpg
+    medium: Black Marble and Moose Antler
+    slug: tomb-stag-chair
+    tags:
+      - Chair
+    title: Tomb Stag Chair (right)
     when: '2012'
   - dimensions: 31.89 x 23.62 x 23.62 inches (81 x 60 x 60 cm)
     images:
@@ -62,6 +98,15 @@ works:
     medium: Bronze
     slug: alchemy-chair
     title: Alchemy Chair
+  - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
+    images:
+      - file: /images/158.jpg
+    medium: Bronze with Gold Patina and Leather
+    slug: alchemy-chair-1
+    tags:
+      - Chair
+    title: Alchemy Chair 1
+    when: '2012'
   - dimensions: 23.23 x 33.07 x 25.98 inches (59 x 84 x 66 cm)
     images:
       - file: /images/ro38.jpg
@@ -187,13 +232,4 @@ works:
     slug: prong-totem-foam
     title: Prong Totem Foam
     when: '2016'
-  - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
-    images:
-      - file: /images/rostag.jpg
-    medium: White Marble and Moose antler
-    slug: stag-stool-white
-    tags:
-      - Chair
-    title: 'Stag Stool White '
-    when: '2012'
 status: Represented
