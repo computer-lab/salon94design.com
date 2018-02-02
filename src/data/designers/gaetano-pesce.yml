@@ -136,5 +136,37 @@ works:
       - Jewlery
     title: Bracelet (Orange)
     when: ''
-  - {}
+  - images:
+      - file: /images/gpe61.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-pink
+    tags:
+      - Jewlery
+    title: Bracelet (Pink)
+    when: ''
+  - images:
+      - file: /images/gpe60.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-red-and-black
+    tags:
+      - Jewlery
+    title: Bracelet (Red and Black)
+    when: ''
+  - images:
+      - file: /images/gpe57.jpg
+    medium: Polyurethane Resin
+    slug: bracelet-yellow
+    tags:
+      - Jewlery
+    title: Bracelet (Yellow)
+    when: ''
+  - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
+    images:
+      - file: /images/gpe126.jpg
+    medium: 'Epoxy Resin, Dacron'
+    slug: cloud-lamp
+    tags:
+      - Lighting
+    title: Cloud Lamp
+    when: '2013'
 status: Represented
