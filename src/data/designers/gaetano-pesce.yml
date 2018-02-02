@@ -24,31 +24,6 @@ bio: >
   design.
 press: []
 works:
-  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
-    edition: 'Unique '
-    hero: false
-    images:
-      - file: /images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
-    medium: 'wood, papier maché'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: puglia-cabinet
-    tags:
-      - storage
-    title: Puglia Cabinet
-    when: '2007'
-  - dimensions: 81.89 x 39.37 x 13.78 in / 208 x 100 x 35 cm
-    edition: Unique
-    images:
-      - file: /images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
-    medium: 'laminated plywood, gold leaf doors'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: horse-cabinet
-    tags:
-      - storage
-    title: Horse Cabinet
-    when: '2006'
   - dimensions: 80 x 84 x 18 inches / 203.2 x 213.4 x 45.7 cm
     edition: Unique
     images:
@@ -72,18 +47,6 @@ works:
       - other
     title: Mini Stracci Vases
     when: '2015'
-  - dimensions: 86.61 x 43.31 x 17.72 in / 220 x 110 x 45 cm
-    hero: true
-    images:
-      - file: /images/works/gaetano-pesce/do-you-still-love-me-SJxi3Uyg1z/large.jpg
-    medium: polyurethane resin and metal structure
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: do-you-still-love-me
-    tags:
-      - storage
-    title: Do You Still Love Me?
-    when: '2007'
   - dimensions: 37.4 x 61.02 x 61.02 in / 95 x 155 x 155 cm
     edition: Unique
     images:
@@ -169,4 +132,131 @@ works:
       - Lighting
     title: Cloud Lamp
     when: '2013'
+  - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
+    hero: true
+    images:
+      - file: /images/works/gaetano-pesce/do-you-still-love-me-SJxi3Uyg1z/large.jpg
+    medium: polyurethane resin and metal structure
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: do-you-still-love-me
+    tags:
+      - storage
+    title: Do You Still Love Me?
+    when: '2007'
+  - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
+    edition: Unique
+    images:
+      - file: /images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
+    medium: 'laminated plywood, gold leaf doors'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: horse-cabinet
+    tags:
+      - storage
+    title: Horse Cabinet
+    when: '2006'
+  - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
+    images:
+      - file: /images/gp26.jpg
+    medium: Laminated plywood and polyurethane resin
+    slug: face-cabinet
+    tags:
+      - Storage
+    title: Face Cabinet
+    when: '2015'
+  - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
+    images:
+      - file: /images/gpe7.jpg
+    medium: 'Plywood, MDF, polyurethane resin, papier maché'
+    slug: ritratto-dell-uomo-contento-cabinet
+    tags:
+      - Storage
+    title: Ritratto Dell'Uomo Contento Cabinet
+    when: '2016'
+  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
+    edition: 'Unique '
+    hero: false
+    images:
+      - file: /images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
+    medium: 'wood, papier maché'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: puglia-cabinet
+    tags:
+      - storage
+    title: Puglia Cabinet
+    when: '2007'
+  - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
+    images:
+      - file: /images/gpe 9.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-xxl
+    tags:
+      - Vase
+    title: Tree Vase XXL
+    when: '2016'
+  - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
+    images:
+      - file: /images/gpe10.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-medium
+    tags:
+      - Vase
+    title: Tree Vase Medium
+    when: '2016'
+  - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
+    images:
+      - file: /images/gpe11.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-small
+    tags:
+      - Vase
+    title: Tree Vase Small
+    when: ''
+  - dimensions: 11.81 x 10.63 x 10.63 inches (30 x 27 x 27 cm)
+    images:
+      - file: /images/gpe12.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-small
+    tags:
+      - Vase
+    title: Tree Vase small
+    when: ''
+  - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
+    images:
+      - file: /images/gpe13.jpg
+    medium: Polyurethane Resin and Papier Maché
+    slug: tree-vase-small
+    tags:
+      - Vase
+    title: Tree Vase Small
+    when: ''
+  - dimensions: 39.37 x 9.84 x 9.84 inches (100 x 25 x 25 cm)
+    images:
+      - file: /images/gpe14.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-cirpresso
+    tags:
+      - Vase
+    title: Tree Vase Cirpresso
+    when: '2016'
+  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
+    images:
+      - file: /images/gpe15.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-big-4-legs
+    tags:
+      - Vase
+    title: Tree Vase Big (4 legs)
+    when: '2015'
+  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
+    images:
+      - file: /images/gpe16.jpg
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-big-4-legs-2
+    tags:
+      - Vase
+    title: Tree Vase big (4 legs) 2
+    when: '2015'
 status: Represented
