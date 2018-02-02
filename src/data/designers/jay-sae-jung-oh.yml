@@ -47,16 +47,6 @@ works:
       - seating
     title: Savage Series Black Edition Chair
     when: '2014'
-  - dimensions: 44 x 48 x 37 inches (111.8 x 121.9 x 94 cm)
-    images:
-      - file: /images/ja01.jpg
-    medium: Found objects covered in Jute
-    slug: savage-chair
-    tags:
-      - chair
-      - seating
-    title: 'Savage Chair '
-    when: '2015'
   - dimensions: 25 x 30 x 15 inches (63.5 x 76.2 x 38.1 cm)
     images:
       - file: /images/jao3.jpg
@@ -77,4 +67,14 @@ works:
       - table
     title: Savage Series Black Edition Side Table
     when: '2014'
+  - dimensions: 44 x 48 x 37 inches (111.8 x 121.9 x 94 cm)
+    images:
+      - file: /images/ja01.jpg
+    medium: Found objects covered in Jute
+    slug: savage-chair
+    tags:
+      - chair
+      - seating
+    title: 'Savage Chair '
+    when: '2015'
 status: Represented
