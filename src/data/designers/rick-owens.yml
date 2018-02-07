@@ -66,7 +66,7 @@ works:
     edition: Total Edition of 12
     images:
       - file: /images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
-    medium: 'raw plywood, moose antler'
+    medium: 'Raw plywood, moose antler'
     slug: tomb-stag-chair
     tags:
       - Chair
@@ -75,8 +75,8 @@ works:
   - dimensions: 35.43 x 19.69 x 29.92 inches (90 x 50 x 76 cm)
     images:
       - file: /images/ro33.jpg
-    medium: 'White Sivec Marble, stag antler'
-    slug: tomb-stag-chair
+    medium: 'White Sivec Marble, Stag Antler'
+    slug: tomb-stag-chair-left
     tags:
       - Chair
     title: Tomb Stag Chair (left)
@@ -85,7 +85,7 @@ works:
     images:
       - file: /images/ro72.jpg
     medium: Black Marble and Moose Antler
-    slug: tomb-stag-chair
+    slug: tomb-stag-chair-right
     tags:
       - Chair
     title: Tomb Stag Chair (right)
@@ -119,7 +119,7 @@ works:
   - dimensions: 23.23 x 33.07 x 25.98 inches (59 x 84 x 66 cm)
     images:
       - file: /images/ro38.jpg
-    medium: petrified wood
+    medium: Petrified Wood
     slug: curial-chair
     tags:
       - Chair
@@ -128,8 +128,8 @@ works:
   - dimensions: 23.62 x 32.68 x 25.98 inches (60 x 83 x 66 cm)
     images:
       - file: /images/ro79.jpg
-    medium: natural plywood
-    slug: curial-chair
+    medium: Natural Plywood
+    slug: curial-chair-1
     tags:
       - Chair
     title: Curial Chair 1
@@ -138,7 +138,7 @@ works:
     edition: '4'
     images:
       - file: /images/ro36.jpg
-    medium: petrified wood
+    medium: Petrified Wood
     slug: half-box-chair
     tags:
       - Chair
@@ -147,7 +147,7 @@ works:
   - dimensions: 33.46 x 22.83 x 29.92 inches (85 x 58 x 76 cm)
     images:
       - file: /images/ro6.jpg
-    medium: 'Plywood, mink '
+    medium: 'Plywood, Mink '
     slug: fisher-box
     tags:
       - Chair
@@ -158,7 +158,7 @@ works:
     images:
       - file: /images/ro37.jpg
     medium: Ox-bone
-    slug: half-box-chair
+    slug: half-box-chair-1
     tags:
       - Chair
     title: Half Box Chair 1
@@ -167,7 +167,7 @@ works:
     edition: '8'
     images:
       - file: /images/ro74.jpg
-    medium: 'alabaster base, natural plywood top'
+    medium: 'Alabaster Base, Natural Plywood Top'
     slug: plug-table
     tags:
       - Table
@@ -175,8 +175,8 @@ works:
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
     images:
       - file: /images/ro26.jpg
-    medium: 'petrified wood base, black plywood, plan top'
-    slug: plug-table
+    medium: 'Petrified Wood Base, Black Plywood top'
+    slug: plug-table-1
     tags:
       - Table
     title: Plug Table 1
@@ -192,7 +192,7 @@ works:
   - dimensions: 137.8 x 47.24 x 39.37 inches (350 x 120 x 100 cm)
     images:
       - file: /images/ro16.jpg
-    medium: 'headboard: petrified wood, platform: black plywood'
+    medium: 'Headboard: Petrified Wood, Platform: Black Plywood'
     slug: daybed
     tags:
       - Bed
@@ -202,7 +202,7 @@ works:
     edition: '8'
     images:
       - file: /images/ro87.jpg
-    medium: natural plywood with cushions
+    medium: Natural Plywood With Cushions
     slug: double-recamier
     tags:
       - Sofa
@@ -211,8 +211,8 @@ works:
   - dimensions: 118.11 x 33.86 x 30.31 inches (300 x 86 x 77 cm)
     images:
       - file: /images/ro5.jpg
-    medium: 'plywood, leather'
-    slug: double-recamier
+    medium: 'Plywood, Leather'
+    slug: double-recamier-1
     tags:
       - Sofa
     title: Double Récamier 1
@@ -220,7 +220,7 @@ works:
   - dimensions: 118.11 x 47.24 x 47.24 inches (300 x 120 x 120 cm)
     images:
       - file: /images/ro95.jpg
-    medium: 'Black plywood, with plywood clogs'
+    medium: 'Black Plywood, with Plywood Clogs'
     slug: boudeuse
     tags:
       - Sofa
