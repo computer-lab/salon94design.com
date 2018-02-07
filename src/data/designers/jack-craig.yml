@@ -26,7 +26,7 @@ works:
     projects: []
     slug: bronze-stool
     tags:
-      - seating
+      - Chair
     title: Dripped Bronze Stool
     when: '2016'
   - dimensions: 36 x 15 x 20 inches (91.44 x 38.1 x 50.8cm)
@@ -40,7 +40,7 @@ works:
       - slug: ghost-dog
     slug: large-marble-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Large Marble Table Lamp
     when: '2017'
   - dimensions: 69 x 39 x 18 inches ( 175.26 x 99.06 x 45.72cm)
@@ -52,7 +52,7 @@ works:
     medium: 'bronze, concrete'
     slug: dripped-bronze-shelf
     tags:
-      - storage
+      - Storage
     title: Dripped Bronze Shelf
     when: '2015'
   - dimensions: 25 x 16 x 16 inches (63.5 x 40.6 x 40.6 cm)
@@ -61,7 +61,7 @@ works:
     medium: Bronze and marble
     slug: sphere-marble-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Sphere Marble Table Lamp
     when: '2017'
   - dimensions: 34 x 20 x 16 inches (86.4 x 50.8 x 40.6 cm)
@@ -72,7 +72,7 @@ works:
       - slug: Bowery Design 2017
     slug: donut-granite-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Donut Granite Table Lamp
     when: '2017'
   - dimensions: 22 x 16 x 16 inches (55.9 x 40.6 x 40.6 cm)
@@ -83,7 +83,7 @@ works:
       - slug: Bowery Design 2017
     slug: cube-granite-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Cube Granite Table Lamp
     when: '2017'
   - dimensions: 22 x 12 x 26 inches (55.9 x 30.5 x 66 cm)
@@ -94,7 +94,7 @@ works:
       - slug: Bowery Design 2017
     slug: hot-dog-grey-marble-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Hot Dog Grey Marble Table Lamp
     when: '2017'
   - dimensions: 22 x 20 x 20 inches (55.9 x 50.8 x 50.8 cm)
@@ -105,7 +105,7 @@ works:
       - slug: Bowery Design 2017
     slug: disk-granite-table-lamp
     tags:
-      - lighting
+      - Lighting
     title: Disk Granite Table Lamp
     when: '2017'
 status: Represented
