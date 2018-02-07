@@ -8,7 +8,7 @@ bio: |-
   sensibilities.
 press: []
 works:
-  - dimensions: 20.5 x 18 x 100 inches
+  - dimensions: 20.5 x 104 x 18 inches (52.1 x 264.2 x 45.7 cm)
     edition: Unique
     hero: true
     images:
@@ -18,7 +18,7 @@ works:
       - slug: midtown-lever-house
     slug: bench-on-84s
     tags:
-      - seating
+      - Bench
     title: Bench on 84s
     when: '2017'
 status: Represented
