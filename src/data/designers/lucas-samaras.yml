@@ -193,14 +193,6 @@ works:
     title: 'Ring #6 (2.8 ounces)'
     when: ''
   - images:
-      - file: /images/lusa26.jpg
-    medium: 22 Karat Gold
-    slug: bracelet-4
-    tags:
-      - Jewelry
-    title: 'Bracelet #4'
-    when: ''
-  - images:
       - file: /images/lusa27.jpg
     medium: 22 Karat Gold
     slug: bracelet-9
@@ -233,88 +225,6 @@ works:
     title: 'Bracelet #26'
     when: ''
   - images:
-      - file: /images/lusa32.jpg
-    medium: 22 Karet Gold
-    slug: ring-a-group-5
-    tags:
-      - Jewelry
-    title: Ring A (Group 5)
-    when: ''
-  - images:
-      - file: /images/lusa33.jpg
-    medium: 22 Karat Gold
-    slug: ring-9
-    tags:
-      - Jewelry
-    title: 'Ring #9'
-    when: ''
-  - images:
-      - file: /images/lusa34.jpg
-    medium: 22 Karat Gold
-    slug: ring-15
-    tags:
-      - Jewelry
-    title: 'Ring #15'
-    when: ''
-  - images:
-      - file: /images/lusa35.jpg
-    medium: 22 Karat Gold
-    slug: ring-11
-    tags:
-      - Jewelry
-    title: 'Ring #11'
-    when: ''
-  - images:
-      - file: /images/lusa36.jpg
-    medium: 22 Karat Gold
-    slug: ring-14
-    tags:
-      - Jewelry
-    title: 'Ring #14'
-    when: ''
-  - images:
-      - file: /images/lusa37.jpg
-    medium: 22 Karat Gold
-    slug: ring-19
-    tags:
-      - Jewelry
-    title: 'Ring #19'
-    when: ''
-  - images:
-      - file: /images/lusa38.jpg
-    medium: 22 Karat Gold
-    slug: ring-8
-    tags:
-      - Jewelry
-    title: 'Ring #8'
-    when: ''
-  - images:
-      - file: /images/lusa40.jpg
-    medium: 22 Karet Gold
-    slug: ring-35
-    tags:
-      - Jewelry
-    title: 'Ring #35'
-    when: ''
-  - dimensions: 1.5 x 2.5 x .25 inches (3.8 x 6.4 x .6 cm)
-    images:
-      - file: /images/lusa41.jpg
-    medium: 22 Karat Gold
-    slug: pin-30
-    tags:
-      - Jewelry
-    title: 'Pin #30'
-    when: ''
-  - dimensions: 1.5 x 2.75 x .25 inches (3.8 x 7 x .6 cm)
-    images:
-      - file: /images/lusa42.jpg
-    medium: 22 Karat Gold
-    slug: pin-2-baroque
-    tags:
-      - Jewelry
-    title: 'Pin #2 (Baroque)'
-    when: ''
-  - images:
       - file: /images/lusa43.jpg
     medium: 22 Karat Gold
     slug: necklace-52
@@ -329,14 +239,6 @@ works:
     tags:
       - Jewelry
     title: 'Necklace #45'
-    when: ''
-  - images:
-      - file: /images/lusa45.jpg
-    medium: 22 Karat Gold
-    slug: necklace-4
-    tags:
-      - Jewelry
-    title: 'Necklace #4'
     when: ''
   - images:
       - file: /images/lusa46.jpg
@@ -371,12 +273,100 @@ works:
     title: 'Necklace #19'
     when: ''
   - images:
+      - file: /images/lusa77.jpg
+    medium: 22 Karat Gold
+    slug: necklace
+    tags:
+      - Jewelry
+    title: Necklace
+    when: ''
+  - images:
+      - file: /images/lusa79.jpg
+    medium: 22 Karat Gold
+    slug: necklace-1
+    tags:
+      - Jewelry
+    title: Necklace 1
+    when: ''
+  - images:
+      - file: /images/lusa80.jpg
+    medium: 22 Karat Gold
+    slug: necklace-3
+    tags:
+      - Jewelry
+    title: Necklace 3
+    when: ''
+  - images:
+      - file: /images/lusa45.jpg
+    medium: 22 Karat Gold
+    slug: necklace-4
+    tags:
+      - Jewelry
+    title: 'Necklace #4'
+    when: ''
+  - images:
+      - file: /images/lusa84.jpg
+    medium: 22 Karat Gold
+    slug: necklace-4
+    tags:
+      - Jewelry
+    title: Necklace 4
+    when: ''
+  - images:
+      - file: /images/lusa85.jpg
+    medium: 22 Karat Gold
+    slug: necklace-5
+    tags:
+      - Jewelry
+    title: Necklace 5
+    when: ''
+  - images:
+      - file: /images/lusa86.jpg
+    medium: 22 Karat Gold
+    slug: necklace-6
+    tags:
+      - Jewelry
+    title: Necklace 6
+    when: ''
+  - dimensions: 1.5 x 2.5 x .25 inches (3.8 x 6.4 x .6 cm)
+    images:
+      - file: /images/lusa41.jpg
+    medium: 22 Karat Gold
+    slug: pin-30
+    tags:
+      - Jewelry
+    title: 'Pin #30'
+    when: ''
+  - dimensions: 1.5 x 2.75 x .25 inches (3.8 x 7 x .6 cm)
+    images:
+      - file: /images/lusa42.jpg
+    medium: 22 Karat Gold
+    slug: pin-2-baroque
+    tags:
+      - Jewelry
+    title: 'Pin #2 (Baroque)'
+    when: ''
+  - images:
+      - file: /images/lusa32.jpg
+    medium: 22 Karet Gold
+    slug: ring-a-group-5
+    tags:
+      - Jewelry
+    title: Ring A (Group 5)
+    when: ''
+  - images:
       - file: /images/lusa73.jpg
     medium: 22 Karat Gold
     slug: bracelet
     tags:
       - Jewelry
     title: Bracelet
+    when: ''
+  - medium: 22 Karat Gold
+    slug: bracelet-1
+    tags:
+      - Jewelry
+    title: Bracelet 1
     when: ''
   - images:
       - file: /images/lusa74.jpg
@@ -403,84 +393,6 @@ works:
     title: Bracelet 4
     when: ''
   - images:
-      - file: /images/lusa77.jpg
-    medium: 22 Karat Gold
-    slug: necklace
-    tags:
-      - Jewelry
-    title: Necklace
-    when: ''
-  - images:
-      - file: /images/lusa79.jpg
-    medium: 22 Karat Gold
-    slug: necklace-1
-    tags:
-      - Jewelry
-    title: Necklace 1
-    when: ''
-  - images:
-      - file: /images/lusa80.jpg
-    medium: 22 Karat Gold
-    slug: necklace-3
-    tags:
-      - Jewelry
-    title: Necklace 3
-    when: ''
-  - medium: 22 Karat Gold
-    slug: bracelet
-    tags:
-      - Jewelry
-    title: Bracelet
-    when: ''
-  - images:
-      - file: /images/lusa82.jpg
-    medium: '20 Karat Gold, 24 Karat Gold and Emerald'
-    slug: ring-1-1.1-ounces
-    tags:
-      - Jewelry
-    title: 'Ring #1 (1.1 ounces)'
-    when: ''
-  - images:
-      - file: /images/lusa83.jpg
-    medium: 22 Karat Gold and Emerald
-    slug: ring
-    tags:
-      - Jewelry
-    title: Ring
-    when: ''
-  - images:
-      - file: /images/lusa84.jpg
-    medium: 22 Karat Gold
-    slug: necklace-4
-    tags:
-      - Jewelry
-    title: Necklace 4
-    when: ''
-  - images:
-      - file: /images/lusa85.jpg
-    medium: 22 Karat Gold
-    slug: necklace-5
-    tags:
-      - Jewelry
-    title: Necklace 5
-    when: ''
-  - images:
-      - file: /images/lusa86.jpg
-    medium: 22 Karat Gold
-    slug: necklace-6
-    tags:
-      - Jewelry
-    title: Necklace 6
-    when: ''
-  - images:
-      - file: /images/lusa87.jpg
-    medium: 22 Karat Gold
-    slug: ring-2
-    tags:
-      - Jewelry
-    title: Ring 2
-    when: ''
-  - images:
       - file: /images/lusa88.jpg
     medium: 22 Karat Gold
     slug: bracelet-5
@@ -495,5 +407,85 @@ works:
     tags:
       - Jewelry
     title: Bracelet 6
+    when: ''
+  - images:
+      - file: /images/lusa83.jpg
+    medium: 22 Karat Gold and Emerald
+    slug: ring
+    tags:
+      - Jewelry
+    title: Ring
+    when: ''
+  - images:
+      - file: /images/lusa82.jpg
+    medium: '20 Karat Gold, 24 Karat Gold and Emerald'
+    slug: ring-1-1.1-ounces
+    tags:
+      - Jewelry
+    title: 'Ring #1 (1.1 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa87.jpg
+    medium: 22 Karat Gold
+    slug: ring-2
+    tags:
+      - Jewelry
+    title: Ring 2
+    when: ''
+  - images:
+      - file: /images/lusa38.jpg
+    medium: 22 Karat Gold
+    slug: ring-8
+    tags:
+      - Jewelry
+    title: 'Ring #8'
+    when: ''
+  - images:
+      - file: /images/lusa33.jpg
+    medium: 22 Karat Gold
+    slug: ring-9
+    tags:
+      - Jewelry
+    title: 'Ring #9'
+    when: ''
+  - images:
+      - file: /images/lusa35.jpg
+    medium: 22 Karat Gold
+    slug: ring-11
+    tags:
+      - Jewelry
+    title: 'Ring #11'
+    when: ''
+  - images:
+      - file: /images/lusa36.jpg
+    medium: 22 Karat Gold
+    slug: ring-14
+    tags:
+      - Jewelry
+    title: 'Ring #14'
+    when: ''
+  - images:
+      - file: /images/lusa34.jpg
+    medium: 22 Karat Gold
+    slug: ring-15
+    tags:
+      - Jewelry
+    title: 'Ring #15'
+    when: ''
+  - images:
+      - file: /images/lusa37.jpg
+    medium: 22 Karat Gold
+    slug: ring-19
+    tags:
+      - Jewelry
+    title: 'Ring #19'
+    when: ''
+  - images:
+      - file: /images/lusa40.jpg
+    medium: 22 Karet Gold
+    slug: ring-35
+    tags:
+      - Jewelry
+    title: 'Ring #35'
     when: ''
 status: Represented
