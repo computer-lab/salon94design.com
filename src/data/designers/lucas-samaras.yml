@@ -112,4 +112,173 @@ works:
       - Jewelry
     title: 'Necklace #63 (5.9 ounces)'
     when: ''
+  - images:
+      - file: /images/lusa11.jpg
+    medium: 22 Karat Gold
+    slug: necklace-55-7.3-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #55 (7.3 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa12.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-17-2.7-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #17 (2.7 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa13.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-13-3.3-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #13 (3.3 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa14.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-7-4.2-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #7 (4.2 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa15.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-10-4.7-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #10 (4.7 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa16.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-21-5.2-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #21 (5.2 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa17.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-3-10-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet #3 (10 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa18.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-ring-2-2.4-ounces
+    tags:
+      - Jewelry
+    title: 'Bracelet/ Ring #2 ( 2.4 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa19.jpg
+    medium: 22 Karat Gold
+    slug: ring-41-0.8-ounces
+    tags:
+      - Jewelry
+    title: 'Ring #41 (0.8 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa21.jpg
+    medium: 22 Karat Gold
+    slug: ring-6-2.8-ounces
+    tags:
+      - Jewelry
+    title: 'Ring #6 (2.8 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa26.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-4
+    tags:
+      - Jewelry
+    title: 'Bracelet #4'
+    when: ''
+  - images:
+      - file: /images/lusa27.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-9
+    tags:
+      - Jewelry
+    title: 'Bracelet #9'
+    when: ''
+  - images:
+      - file: /images/lusa28.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-20
+    tags:
+      - Jewelry
+    title: 'Bracelet #20'
+    when: ''
+  - images:
+      - file: /images/lusa29.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-12
+    tags:
+      - Jewelry
+    title: 'Bracelet #12'
+    when: ''
+  - images:
+      - file: /images/lusa30.jpg
+    medium: 22 Karat Gold
+    slug: bracelet-26
+    tags:
+      - Jewelry
+    title: 'Bracelet #26'
+    when: ''
+  - images:
+      - file: /images/lusa32.jpg
+    medium: 22 Karet Gold
+    slug: ring-a-group-5
+    tags:
+      - Jewelry
+    title: Ring A (Group 5)
+    when: ''
+  - images:
+      - file: /images/lusa33.jpg
+    medium: 22 Karat Gold
+    slug: ring-9
+    tags:
+      - Jewelry
+    title: 'Ring #9'
+    when: ''
+  - images:
+      - file: /images/lusa34.jpg
+    medium: 22 Karat Gold
+    slug: ring-15
+    tags:
+      - Jewelry
+    title: 'Ring #15'
+    when: ''
+  - images:
+      - file: /images/lusa35.jpg
+    medium: 22 Karat Gold
+    slug: ring-11
+    tags:
+      - Jewelry
+    title: 'Ring #11'
+    when: ''
+  - images:
+      - file: /images/lusa36.jpg
+    medium: 22 Karat Gold
+    slug: ring-14
+    tags:
+      - Jewelry
+    title: 'Ring #14'
+    when: ''
+  - images:
+      - file: /images/lusa37.jpg
+    medium: 22 Karat Gold
+    slug: ring-19
+    tags:
+      - Jewelry
+    title: 'Ring #19'
+    when: ''
+  - title: 'Ring #8'
 status: Represented
