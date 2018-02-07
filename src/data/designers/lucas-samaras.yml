@@ -32,4 +32,84 @@ works:
       - jewelry
     title: 'Bracelet #7'
     when: '1996'
+  - images:
+      - file: /images/lusa1.jpg
+    medium: 22 Karat Gold
+    slug: necklace-41-8.8-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #41 (8.8 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa2.jpg
+    medium: 22 Karet Gold
+    slug: necklace-26-4.6-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #26 (4.6 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa3.jpg
+    medium: 22 Karat Gold
+    slug: necklace-3-7.2-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #3 (7.2 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa4.jpg
+    medium: 22 Karet Gold
+    slug: necklace-8-4.4-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #8 (4.4 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa5.jpg
+    medium: 22 Karat Gold
+    slug: necklace-5-6.7-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #5 (6.7 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa6.jpg
+    medium: 22 Karat Gold
+    slug: necklace-47-9.1-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #47 (9.1 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa7.jpg
+    medium: 22 Karat Gold
+    slug: necklace-49-13.2-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #49 (13.2 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa8.jpg
+    medium: 22 Karat Gold
+    slug: necklace-48-11.2-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #48 (11.2 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa9.jpg
+    medium: 22 Karat Gold
+    slug: necklace-60-6.9-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #60 (6.9 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa10.jpg
+    medium: 22 Karat Gold
+    slug: necklace-63-5.9-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #63 (5.9 ounces)'
+    when: ''
 status: Represented
