@@ -23,7 +23,7 @@ works:
     projects: []
     slug: stag-stool
     tags:
-      - seating
+      - Chair
     title: Stag Stool
     when: '2015'
   - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
@@ -32,8 +32,7 @@ works:
     medium: 'plywood, antlers'
     slug: black-stag-stool
     tags:
-      - chair
-      - seating
+      - Chair
     title: Black Stag Stool
     when: '2009'
   - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
@@ -59,6 +58,8 @@ works:
       - file: /images/ro29.jpg
     medium: 'Plywood, Antler'
     slug: stag-chair-natural
+    tags:
+      - Chair
     title: Stag Chair (natural)
     when: '2007'
   - dimensions: 35.43 x 23.6 x 29.92 inches (90 x 60 x 76 cm)
@@ -68,7 +69,7 @@ works:
     medium: 'raw plywood, moose antler'
     slug: tomb-stag-chair
     tags:
-      - seating
+      - Chair
     title: Tomb Stag Chair
     when: '2012'
   - dimensions: 35.43 x 19.69 x 29.92 inches (90 x 50 x 76 cm)
@@ -95,8 +96,7 @@ works:
     medium: 'Bronze, Camel Skin'
     slug: rick-alchemy-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: Rick Alchemy Chair
     when: '2015'
   - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
@@ -104,6 +104,8 @@ works:
       - file: /images/ro50.jpg
     medium: Bronze
     slug: alchemy-chair
+    tags:
+      - Chair
     title: Alchemy Chair
   - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
     images:
@@ -120,8 +122,7 @@ works:
     medium: petrified wood
     slug: curial-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: Curial chair
     when: '2011'
   - dimensions: 23.62 x 32.68 x 25.98 inches (60 x 83 x 66 cm)
@@ -130,8 +131,7 @@ works:
     medium: natural plywood
     slug: curial-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: Curial Chair 1
     when: '2014'
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
@@ -141,8 +141,7 @@ works:
     medium: petrified wood
     slug: half-box-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: Half Box Chair
     when: '2011'
   - dimensions: 33.46 x 22.83 x 29.92 inches (85 x 58 x 76 cm)
@@ -161,8 +160,7 @@ works:
     medium: Ox-bone
     slug: half-box-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: Half Box Chair 1
     when: '2012'
   - dimensions: 43 x 120 x 42 inches (109.2 x 304.8 x 106.7 cm) CUSTOM SIZE
@@ -172,7 +170,7 @@ works:
     medium: 'alabaster base, natural plywood top'
     slug: plug-table
     tags:
-      - table
+      - Table
     title: Plug Table
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
     images:
@@ -180,7 +178,7 @@ works:
     medium: 'petrified wood base, black plywood, plan top'
     slug: plug-table
     tags:
-      - table
+      - Table
     title: Plug Table 1
   - dimensions: 110.24 x 110.24 x 78.74 inches (280 x 280 x 200 cm)
     images:
@@ -196,6 +194,8 @@ works:
       - file: /images/ro16.jpg
     medium: 'headboard: petrified wood, platform: black plywood'
     slug: daybed
+    tags:
+      - Bed
     title: Daybed
     when: '2012'
   - dimensions: 30.3 x 33.8 x 140 inches (77 x 85.9 x 355.6 cm)
@@ -205,9 +205,7 @@ works:
     medium: natural plywood with cushions
     slug: double-recamier
     tags:
-      - bed
-      - couch
-      - bench
+      - Sofa
     title: Double Récamier
     when: '2014'
   - dimensions: 118.11 x 33.86 x 30.31 inches (300 x 86 x 77 cm)
@@ -216,9 +214,7 @@ works:
     medium: 'plywood, leather'
     slug: double-recamier
     tags:
-      - bed
-      - bench
-      - couch
+      - Sofa
     title: Double Récamier 1
     when: '2007'
   - dimensions: 118.11 x 47.24 x 47.24 inches (300 x 120 x 120 cm)
@@ -227,9 +223,7 @@ works:
     medium: 'Black plywood, with plywood clogs'
     slug: boudeuse
     tags:
-      - Bench
-      - Daybed
-      - Couch
+      - Sofa
     title: Boudeuse
     when: '2015'
   - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
