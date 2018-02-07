@@ -23,7 +23,7 @@ works:
       - slug: midtown-lever-house
     slug: silk-bench-1
     tags:
-      - seating
+      - Bench
     title: Silk Bench 1
     when: '2006'
   - caption: Frieze NY
@@ -34,8 +34,7 @@ works:
     medium: Custom silk rope
     slug: red-silk-bench
     tags:
-      - seating
-      - seating
+      - Bench
     title: 'Red Silk Bench (Frieze NY 2017) '
     when: '2016'
   - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
@@ -48,7 +47,7 @@ works:
       - slug: woven-furniture
     slug: kwangho-large-nylon-bench
     tags:
-      - seating
+      - Bench
     title: Large Nylon Bench
     when: '2006'
   - dimensions: 16.5 x 89 x 12.5 inches (41.9 x 226.1 x 31.8 cm)
@@ -61,7 +60,7 @@ works:
       - slug: ghost-dog
     slug: kwangho-small-pvc-bench
     tags:
-      - seating
+      - Bench
     title: Small PVC Bench
     when: '2006'
   - dimensions: 25.5 x 21 x 31 inches (64.8 x 53.3 x 78.7 cm)
@@ -74,7 +73,7 @@ works:
       - slug: ghost-dog
     slug: red-and-grey-pvc-chair
     tags:
-      - seating
+      - Chair
     title: Red & Grey PVC Chair
     when: '2017'
   - dimensions: 19.5 x 13.5 x 29.5 inches (49.5 x 34.3 x 74.9 cm)
@@ -86,9 +85,7 @@ works:
       - slug: Frieze New York 2017
     slug: stool
     tags:
-      - chair
-      - seating
-      - bench
+      - Chair
     title: Stool
     when: '2017'
   - dimensions: 57.5 x 41.5 x 29 inches (146.1 x 105.4 x 73.7 cm)
@@ -97,7 +94,7 @@ works:
     medium: PVC tubing and copper pipe
     slug: lamp
     tags:
-      - lighting
+      - Lighting
     title: Lamp
     when: '2017'
 status: Represented
