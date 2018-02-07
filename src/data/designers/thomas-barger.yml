@@ -14,7 +14,7 @@ works:
     hero: false
     images:
       - file: /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
-    medium: 'paper pulp, plywood, styrofoam, cardboard'
+    medium: 'Paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects:
       - slug: ghost-dog
@@ -28,7 +28,7 @@ works:
     images:
       - file: >-
           /images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
-    medium: 'paper pulp, carpet '
+    medium: 'Paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
     slug: sorting-laundry-for-a-family-of-5
