@@ -37,7 +37,7 @@ works:
     hero: false
     images:
       - file: /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
-    medium: marble
+    medium: Marble
     price: ''
     projects: []
     slug: marble-stool
@@ -45,11 +45,11 @@ works:
       - Chair
     title: 'Marble Stool Red '
     when: '2015'
-  - dimensions: 16 x 13.25 x 13.25 in / 40.6 x 33.7 x 33.7 cm
+  - dimensions: 16 x 13.25 x 13.25 inches (40.6 x 33.7 x 33.7 cm)
     edition: Unique
     images:
       - file: /images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
-    medium: marble
+    medium: Marble
     slug: marble-stool-orange
     tags:
       - Chair
@@ -90,7 +90,7 @@ works:
     images:
       - file: /images/kuca156.jpg
     medium: Travertine with colored lacquer
-    slug: travertine-stool
+    slug: travertine-stool-1
     tags:
       - Chair
     title: Travertine Stool 1
@@ -99,7 +99,7 @@ works:
     images:
       - file: /images/kuca157.jpg
     medium: Travertine with colored lacquer
-    slug: travertine-stool
+    slug: travertine-stool-2
     tags:
       - Chair
     title: Travertine Stool 2
@@ -108,7 +108,7 @@ works:
     images:
       - file: /images/kuca158.jpg
     medium: Travertine with colored lacquer
-    slug: travertine-stool
+    slug: travertine-stool-3
     tags:
       - Chair
     title: Travertine Stool 3
