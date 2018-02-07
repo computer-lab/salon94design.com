@@ -30,7 +30,7 @@ works:
     projects: []
     slug: savage-series-black-edition-sofa
     tags:
-      - seating
+      - Sofa
     title: Savage Series Black Edition Sofa
     when: '2016'
   - dimensions: 55 x 42 x 44 inches (139.7 x 106.7 x 111.8 cm)
@@ -44,7 +44,7 @@ works:
       - slug: ghost-dog
     slug: savage-series-black-edition-chair
     tags:
-      - seating
+      - Chair
     title: Savage Series Black Edition Chair
     when: '2014'
   - dimensions: 25 x 30 x 15 inches (63.5 x 76.2 x 38.1 cm)
@@ -55,7 +55,7 @@ works:
       - slug: Bowery Design 2017
     slug: savage-series-black-edition-lamp
     tags:
-      - lighting
+      - Lighting
     title: Savage Series Black Edition Lamp
     when: '2015'
   - dimensions: 38 x 38 x 18 inches (96.5 x 96.5 x 45.7 cm)
@@ -64,7 +64,7 @@ works:
     medium: 'Various plastics, cast iron skillet, leather cord'
     slug: savage-series-black-edition-side-table
     tags:
-      - table
+      - Table
     title: Savage Series Black Edition Side Table
     when: '2014'
   - dimensions: 44 x 48 x 37 inches (111.8 x 121.9 x 94 cm)
@@ -73,8 +73,7 @@ works:
     medium: Found objects covered in Jute
     slug: savage-chair
     tags:
-      - chair
-      - seating
+      - Chair
     title: 'Savage Chair '
     when: '2015'
 status: Represented
