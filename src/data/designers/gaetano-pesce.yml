@@ -24,7 +24,7 @@ bio: >
   design.
 press: []
 works:
-  - dimensions: 80 x 84 x 18 inches / 203.2 x 213.4 x 45.7 cm
+  - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
     images:
       - file: /images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
@@ -33,10 +33,10 @@ works:
       - slug: ghost-dog
     slug: rug-wall-lamp
     tags:
-      - lighting
+      - Lighting
     title: Rug Wall Lamp
     when: '2017'
-  - dimensions: 7.87 x 3.94 x 3.94 in / 20 x 10 x 10 cm
+  - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     hero: false
     images:
       - file: /images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
@@ -44,10 +44,10 @@ works:
       - slug: design-miami-2016-pesce
     slug: mini-stracci-vases
     tags:
-      - other
+      - Other
     title: Mini Stracci Vases
     when: '2015'
-  - dimensions: 37.4 x 61.02 x 61.02 in / 95 x 155 x 155 cm
+  - dimensions: 37.4 x 61.02 x 61.02 inches (95 x 155 x 155 cm)
     edition: Unique
     images:
       - file: /images/works/gaetano-pesce/rug-lamp-rky_nflJM/large.jpg
@@ -56,7 +56,7 @@ works:
       - slug: ghost-dog
     slug: rug-lamp
     tags:
-      - lighting
+      - Lighting
     title: Rug Lamp
     video:
       caption: ''
@@ -67,12 +67,14 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-black
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Black)
   - images:
       - file: /images/gpe59.jpg
     medium: Polyurethane Resin
     slug: bracelet-blue-black
+    tags:
+      - Jewelry
     title: Bracelet (Blue and Black)
     when: ''
   - images:
@@ -80,7 +82,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-blue-woven
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Blue Woven)
     when: ''
   - images:
@@ -88,7 +90,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-green
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Green)
     when: ''
   - images:
@@ -96,7 +98,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-orange
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Orange)
     when: ''
   - images:
@@ -104,7 +106,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-pink
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Pink)
     when: ''
   - images:
@@ -112,7 +114,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-red-and-black
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Red and Black)
     when: ''
   - images:
@@ -120,7 +122,7 @@ works:
     medium: Polyurethane Resin
     slug: bracelet-yellow
     tags:
-      - Jewlery
+      - Jewelry
     title: Bracelet (Yellow)
     when: ''
   - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
@@ -141,7 +143,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: do-you-still-love-me
     tags:
-      - storage
+      - Storage
     title: Do You Still Love Me?
     when: '2007'
   - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
@@ -153,7 +155,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: horse-cabinet
     tags:
-      - storage
+      - Storage
     title: Horse Cabinet
     when: '2006'
   - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
@@ -184,7 +186,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: puglia-cabinet
     tags:
-      - storage
+      - Storage
     title: Puglia Cabinet
     when: '2007'
   - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
@@ -193,7 +195,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-xxl
     tags:
-      - Vase
+      - Other
     title: Tree Vase XXL
     when: '2016'
   - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
@@ -202,7 +204,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-medium
     tags:
-      - Vase
+      - Other
     title: Tree Vase Medium
     when: '2016'
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
@@ -211,7 +213,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-small
     tags:
-      - Vase
+      - Other
     title: Tree Vase Small
     when: ''
   - dimensions: 11.81 x 10.63 x 10.63 inches (30 x 27 x 27 cm)
@@ -220,7 +222,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-small
     tags:
-      - Vase
+      - Other
     title: Tree Vase small
     when: ''
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
@@ -229,7 +231,7 @@ works:
     medium: Polyurethane Resin and Papier Maché
     slug: tree-vase-small
     tags:
-      - Vase
+      - Other
     title: Tree Vase Small
     when: ''
   - dimensions: 39.37 x 9.84 x 9.84 inches (100 x 25 x 25 cm)
@@ -238,7 +240,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-cirpresso
     tags:
-      - Vase
+      - Other
     title: Tree Vase Cirpresso
     when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
@@ -247,7 +249,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs
     tags:
-      - Vase
+      - Other
     title: Tree Vase Big (4 legs)
     when: '2015'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
@@ -256,7 +258,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs-2
     tags:
-      - Vase
+      - Other
     title: Tree Vase big (4 legs) 2
     when: '2015'
 status: Represented
