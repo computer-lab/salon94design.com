@@ -26,6 +26,7 @@ press: []
 works:
   - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
+    hero: true
     images:
       - file: /images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
     medium: 'polyurethane resin and steel '
@@ -260,5 +261,95 @@ works:
     tags:
       - Other
     title: Tree Vase big (4 legs) 2
+    when: '2015'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: /images/gpe18.jpg
+    medium: Polyurethane resin
+    slug: jeanne-chair-1
+    tags:
+      - Chair
+    title: Jeanne Chair 1
+    when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: /images/gpe19.jpg
+    medium: Polyurethane resin
+    slug: jeanne-chair-2
+    tags:
+      - Chair
+    title: Jeanne Chair 2
+    when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: /images/gpe20.jpg
+    medium: Polyurethane resin
+    slug: jeanne-chair-3
+    tags:
+      - Chair
+    title: Jeanne Chair 3
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe21.jpg
+    medium: Polyurethane resin
+    slug: trash-can-1
+    tags:
+      - other
+    title: Trash Can 1
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe22.jpg
+    medium: Polyurethane resin
+    slug: trash-can-2
+    tags:
+      - other
+    title: Trash Can 2
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe23.jpg
+    medium: Polyurethane resin
+    slug: trash-can-3
+    tags:
+      - other
+    title: Trash Can 3
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe 24.jpg
+    medium: Polyurethane resin
+    slug: trash-can-4
+    tags:
+      - other
+    title: Trash Can 4
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: /images/gpe25.jpg
+    medium: Polyurethane resin
+    slug: trash-can-5
+    tags:
+      - other
+    title: Trash Can 5
+    when: '2016'
+  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
+    images:
+      - file: /images/gpe73.jpg
+    medium: 'Bricks of Glass, foam and polyester resin'
+    slug: golgotha-table
+    tags:
+      - table
+    title: Golgotha Table
+    when: '1972'
+  - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
+    images:
+      - file: /images/gpe74.jpg
+    medium: "Papier maché, resin, and\_polyurethane\_foam"
+    slug: swamp-coffee-table
+    tags:
+      - table
+    title: Swamp Coffee Table
     when: '2015'
 status: Represented
