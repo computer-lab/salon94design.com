@@ -55,7 +55,7 @@ works:
     when: '2013'
   - dimensions: 47.83 x 25.98 x 32.68 inches (121.5 x 66 x 83 cm)
     images:
-      - file: /images/ro29.jpg
+      - file: /images/natural.jpg
     medium: 'Plywood, Antler'
     slug: stag-chair-natural
     tags:
