@@ -226,6 +226,33 @@ works:
       - Storage
     title: Puglia Cabinet
     when: '2007'
+  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+    images:
+      - file: /images/gpe99.jpg
+    medium: 'Resin, wood, steel'
+    slug: tornando-dal-circo-cabinet
+    tags:
+      - storage
+    title: Tornando dal Circo Cabinet
+    when: '2016'
+  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
+    images:
+      - file: /images/gpe73.jpg
+    medium: 'Bricks of Glass, foam and polyester resin'
+    slug: golgotha-table
+    tags:
+      - table
+    title: Golgotha Table
+    when: '1972'
+  - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
+    images:
+      - file: /images/gpe74.jpg
+    medium: "Papier maché, resin, and\_polyurethane\_foam"
+    slug: swamp-coffee-table
+    tags:
+      - table
+    title: Swamp Coffee Table
+    when: '2015'
   - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
     images:
       - file: /images/gpe 9.jpg
@@ -354,15 +381,6 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe 24.jpg
-    medium: Polyurethane resin
-    slug: trash-can-4
-    tags:
-      - other
-    title: Trash Can 4
-    when: '2016'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
       - file: /images/gpe25.jpg
     medium: Polyurethane resin
     slug: trash-can-5
@@ -370,31 +388,92 @@ works:
       - other
     title: Trash Can 5
     when: '2016'
-  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe73.jpg
-    medium: 'Bricks of Glass, foam and polyester resin'
-    slug: golgotha-table
+      - file: /images/gpe 24.jpg
+    medium: Polyurethane resin
+    slug: trash-can-4
     tags:
-      - table
-    title: Golgotha Table
-    when: '1972'
-  - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
-    images:
-      - file: /images/gpe74.jpg
-    medium: "Papier maché, resin, and\_polyurethane\_foam"
-    slug: swamp-coffee-table
-    tags:
-      - table
-    title: Swamp Coffee Table
-    when: '2015'
-  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
-    images:
-      - file: /images/gpe99.jpg
-    medium: 'Resin, wood, steel'
-    slug: tornando-dal-circo-cabinet
-    tags:
-      - storage
-    title: Tornando dal Circo Cabinet
+      - other
+    title: Trash Can 4
     when: '2016'
+  - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
+    images:
+      - file: /images/gpe36.jpg
+    medium: Polyurethane resin
+    slug: vase-with-red-legs
+    tags:
+      - Other
+    title: Vase with Red Legs
+    when: '2016'
+  - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
+    images:
+      - file: /images/gpe37.jpg
+    medium: Polyurethane resin
+    slug: mini-flame-vase
+    tags:
+      - Other
+    title: Mini Flame Vase
+    when: '2014'
+  - dimensions: 5.91 x 7.87 x 7.87 inches (15 x 20 x 20 cm)
+    images:
+      - file: /images/gpe38.jpg
+    medium: Polyurethane resin
+    slug: mini-flame-vase-2
+    tags:
+      - Other
+    title: Mini Flame Vase 2
+    when: '2014'
+  - dimensions: 9.45 x 6.69 x 6.69 inches (24 x 17 x 17 cm)
+    images:
+      - file: /images/gpe39.jpg
+    medium: Polyurethane resin
+    slug: amber-vase
+    tags:
+      - Other
+    title: Amber Vase
+    when: '2015'
+  - dimensions: 11.02 x 17.32 x 17.32 inches (28 x 44 x 44 cm)
+    images:
+      - file: /images/gpe40.jpg
+    medium: Polyurethane resin
+    slug: 3-leg-vase
+    tags:
+      - Other
+    title: 3 Leg Vase
+    when: '2016'
+  - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
+    images:
+      - file: /images/gpe41.jpg
+    medium: Polyurethane resin
+    slug: mini-medusa-vase
+    tags:
+      - Other
+    title: Mini Medusa Vase
+    when: '2015'
+  - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
+    images:
+      - file: /images/gpe42.jpg
+    medium: Polyurethane resin
+    slug: mini-stacci-vase
+    tags:
+      - Other
+    title: Mini Stracci Vase
+    when: '2015'
+  - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
+    images:
+      - file: /images/gpe44.jpg
+    medium: Polyurethane resin
+    slug: scaglie-vase-green
+    tags:
+      - Other
+    title: Scaglie Vase (green)
+    when: '2015'
+  - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
+    medium: Polyurethane resin
+    slug: scaglie-vase-pink
+    tags:
+      - Other
+    title: Scaglie Vase (pink)
+    when: '2015'
 status: Represented
