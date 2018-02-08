@@ -38,10 +38,10 @@ works:
   - images:
       - file: /images/lusa80.jpg
     medium: 22 Karat Gold
-    slug: necklace-3
+    slug: necklace-2
     tags:
       - Jewelry
-    title: Necklace 3
+    title: Necklace 2
     when: ''
   - images:
       - file: /images/lusa3.jpg
@@ -52,28 +52,12 @@ works:
     title: 'Necklace #3 (7.2 ounces)'
     when: ''
   - images:
-      - file: /images/lusa85.jpg
-    medium: 22 Karat Gold
-    slug: necklace-5
-    tags:
-      - Jewelry
-    title: Necklace 5
-    when: ''
-  - images:
       - file: /images/lusa45.jpg
     medium: 22 Karat Gold
     slug: necklace-4
     tags:
       - Jewelry
     title: 'Necklace #4'
-    when: ''
-  - images:
-      - file: /images/lusa84.jpg
-    medium: 22 Karat Gold
-    slug: necklace-4
-    tags:
-      - Jewelry
-    title: Necklace 4
     when: ''
   - images:
       - file: /images/lusa5.jpg
@@ -84,7 +68,7 @@ works:
     title: 'Necklace #5 (6.7 ounces)'
     when: ''
   - images:
-      - file: /images/lusa86.jpg
+      - file: /images/lusa84.jpg
     medium: 22 Karat Gold
     slug: necklace-6
     tags:
@@ -92,12 +76,12 @@ works:
     title: Necklace 6
     when: ''
   - images:
-      - file: /images/lusa47.jpg
+      - file: /images/lusa85.jpg
     medium: 22 Karat Gold
     slug: necklace-7
     tags:
       - Jewelry
-    title: 'Necklace #7'
+    title: Necklace 7
     when: ''
   - images:
       - file: /images/lusa4.jpg
@@ -108,12 +92,28 @@ works:
     title: 'Necklace #8 (4.4 ounces)'
     when: ''
   - images:
+      - file: /images/lusa47.jpg
+    medium: 22 Karat Gold
+    slug: necklace-9
+    tags:
+      - Jewelry
+    title: 'Necklace #9'
+    when: ''
+  - images:
       - file: /images/lusa46.jpg
     medium: 22 Karat Gold
     slug: necklace-10
     tags:
       - Jewelry
     title: 'Necklace #10'
+    when: ''
+  - images:
+      - file: /images/lusa86.jpg
+    medium: 22 Karat Gold
+    slug: necklace-11
+    tags:
+      - Jewelry
+    title: Necklace 11
     when: ''
   - images:
       - file: /images/lusa49.jpg
@@ -188,20 +188,20 @@ works:
     title: 'Necklace #52'
     when: ''
   - images:
-      - file: /images/lusa9.jpg
-    medium: 22 Karat Gold
-    slug: necklace-60-6.9-ounces
-    tags:
-      - Jewelry
-    title: 'Necklace #60 (6.9 ounces)'
-    when: ''
-  - images:
       - file: /images/lusa11.jpg
     medium: 22 Karat Gold
     slug: necklace-55-7.3-ounces
     tags:
       - Jewelry
     title: 'Necklace #55 (7.3 ounces)'
+    when: ''
+  - images:
+      - file: /images/lusa9.jpg
+    medium: 22 Karat Gold
+    slug: necklace-60-6.9-ounces
+    tags:
+      - Jewelry
+    title: 'Necklace #60 (6.9 ounces)'
     when: ''
   - images:
       - file: /images/lusa10.jpg
@@ -278,30 +278,22 @@ works:
   - images:
       - file: /images/lusa75.jpg
     medium: 22 Karet Gold
-    slug: bracelet-3
-    tags:
-      - Jewelry
-    title: Bracelet 3
-    when: ''
-  - images:
-      - file: /images/lusa76.jpg
-    medium: 22 Karat Gold and Emerald
     slug: bracelet-4
     tags:
       - Jewelry
     title: Bracelet 4
     when: ''
   - images:
-      - file: /images/lusa88.jpg
-    medium: 22 Karat Gold
+      - file: /images/lusa76.jpg
+    medium: 22 Karat Gold and Emerald
     slug: bracelet-5
     tags:
       - Jewelry
     title: Bracelet 5
     when: ''
   - images:
-      - file: /images/lusa89.jpg
-    medium: '22 Karat Gold '
+      - file: /images/lusa88.jpg
+    medium: 22 Karat Gold
     slug: bracelet-6
     tags:
       - Jewelry
@@ -315,19 +307,14 @@ works:
       - Jewelry
     title: 'Bracelet #7 (4.2 ounces)'
     when: ''
-  - dimensions: 4.2 ounces
-    edition: Unique
-    hero: true
-    images:
-      - file: /images/works/lucas-samaras/bracelet-7-HJMovBbyz/large.jpg
-    medium: 22 karat gold
-    projects:
-      - slug: gold
-    slug: bracelet-7
+  - images:
+      - file: /images/lusa89.jpg
+    medium: '22 Karat Gold '
+    slug: bracelet-8
     tags:
-      - jewelry
-    title: 'Bracelet #7'
-    when: '1996'
+      - Jewelry
+    title: Bracelet 8
+    when: ''
   - images:
       - file: /images/lusa27.jpg
     medium: 22 Karat Gold
