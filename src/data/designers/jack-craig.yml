@@ -86,17 +86,6 @@ works:
       - Lighting
     title: Cube Granite Table Lamp
     when: '2017'
-  - dimensions: 22 x 12 x 26 inches (55.9 x 30.5 x 66 cm)
-    images:
-      - file: /images/jcr7.jpg
-    medium: Bronze and marble
-    projects:
-      - slug: Bowery Design 2017
-    slug: hot-dog-grey-marble-table-lamp
-    tags:
-      - Lighting
-    title: Hot Dog Grey Marble Table Lamp
-    when: '2017'
   - dimensions: 22 x 20 x 20 inches (55.9 x 50.8 x 50.8 cm)
     images:
       - file: /images/jcr9.jpg
@@ -107,5 +96,16 @@ works:
     tags:
       - Lighting
     title: Disk Granite Table Lamp
+    when: '2017'
+  - dimensions: 22 x 12 x 26 inches (55.9 x 30.5 x 66 cm)
+    images:
+      - file: /images/jcr7.jpg
+    medium: Bronze and marble
+    projects:
+      - slug: Bowery Design 2017
+    slug: hot-dog-grey-marble-table-lamp
+    tags:
+      - Lighting
+    title: Hot Dog Grey Marble Table Lamp
     when: '2017'
 status: Represented
