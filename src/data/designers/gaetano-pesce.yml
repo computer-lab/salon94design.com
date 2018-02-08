@@ -476,4 +476,280 @@ works:
       - Other
     title: Scaglie Vase (pink)
     when: '2015'
+  - dimensions: 12.6 x 17.32 x 17.32 inches (32 x 44 x 44 cm)
+    images:
+      - file: /images/gpe52.jpg
+    medium: Polyurethane resin
+    slug: flame-vase-medium
+    tags:
+      - Other
+    title: Flame Vase Medium
+    when: '2014'
+  - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
+    images:
+      - file: /images/gpe53.jpg
+    medium: Polyurethane resin
+    slug: skinny-vase
+    tags:
+      - Other
+    title: Skinny Vase
+    when: '2015'
+  - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
+    images:
+      - file: /images/gpe54.jpg
+    medium: Polyurethane resin
+    slug: radici-vase-red
+    tags:
+      - Other
+    title: Radici Vase Red
+    when: '2010'
+  - dimensions: 8.66 x 9.84 x 9.84 inches (22 x 25 x 25 cm)
+    images:
+      - file: /images/gpe55.jpg
+    medium: Polyurethane resin
+    slug: radici-vase-red-black
+    tags:
+      - Other
+    title: Radici Vase Red/Black
+    when: '2010'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe33.jpg
+    medium: Polyurethane resin
+    slug: small-rock-vase
+    tags:
+      - Other
+    title: Small Rock Vase (Grey)
+    when: '2016'
+  - dimensions: 27.56 x 21.65 x 21.65 inches (70 x 55 x 55 cm)
+    images:
+      - file: /images/gpe34.jpg
+    medium: Polyurethane resin
+    slug: pebble-vase
+    tags:
+      - Other
+    title: Pebble Vase
+    when: '2016'
+  - dimensions: 28.35 x 21.65 x 21.65 inches (72 x 55 x 55 cm)
+    medium: Polyurethane resin
+    slug: pebble-vase-2
+    tags:
+      - Other
+    title: Pebble Vase 2
+    when: '2016'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe140.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase
+    tags:
+      - Other
+    title: Small Pebble Vase
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    medium: Polyurethane resin
+    slug: small-pebble-vase-1
+    tags:
+      - Other
+    title: Small Pebble Vase 1
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe142.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-2
+    tags:
+      - Other
+    title: Small Pebble Vase 2
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe143.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-3
+    tags:
+      - Other
+    title: Small Pebble Vase 3
+    when: '2017'
+  - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe144.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-4
+    tags:
+      - Other
+    title: Small Pebble Vase 4
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe145.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-5
+    tags:
+      - Other
+    title: Small Pebble Vase 5
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe146.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-6
+    tags:
+      - Other
+    title: Small Pebble Vase 6
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe147.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-7
+    tags:
+      - Other
+    title: Small Pebble Vase 7
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe148.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-8
+    tags:
+      - Other
+    title: Small Pebble Vase 8
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: /images/gpe149.jpg
+    medium: Polyurethane resin
+    slug: small-pebble-vase-9
+    tags:
+      - Other
+    title: Small Pebble Vase 9
+    when: '2017'
+  - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
+    images:
+      - file: /images/gpe150.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase
+    tags:
+      - Other
+    title: Ice Cream Vase
+    when: '2017'
+  - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
+    images:
+      - file: /images/gpe151.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-1
+    tags:
+      - Other
+    title: Ice Cream Vase 1
+    when: '2017'
+  - dimensions: 11.5 x 10.5 x 10 inches (29.2 x 26.7 x 25.4 cm)
+    images:
+      - file: /images/gpe152.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-2
+    tags:
+      - Other
+    title: Ice Cream Vase 2
+    when: '2017'
+  - dimensions: 8.5 x 7.5 x 6.5 inches (21.6 x 19.1 x 16.5 cm)
+    images:
+      - file: /images/gpe153.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-3
+    tags:
+      - Other
+    title: Ice Cream Vase 3
+    when: '2017'
+  - dimensions: 8.5 x 7 x 7 inches (21.6 x 17.8 x 17.8 cm)
+    images:
+      - file: /images/gpe154.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-4
+    tags:
+      - Other
+    title: Ice Cream Vase 4
+    when: '2017'
+  - dimensions: 9.75 x 8.5 x 8.5 inches (24.8 x 21.6 x 21.6 cm)
+    images:
+      - file: /images/gpe155.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-5
+    tags:
+      - Other
+    title: Ice Cream Vase 5
+    when: '2017'
+  - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
+    images:
+      - file: /images/gpe156.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-6
+    tags:
+      - Other
+    title: Ice Cream Vase 6
+    when: '2017'
+  - dimensions: 9.5 x 12 x 9.5 inches (24.1 x 30.5 x 24.1 cm)
+    images:
+      - file: /images/gpe157.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-7
+    tags:
+      - Other
+    title: Ice Cream Vase 7
+    when: '2017'
+  - dimensions: 8.25 x 7 x 7 inches (20.955 x 17.78 x 17.78 cm)
+    images:
+      - file: /images/gpe158.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-8
+    tags:
+      - Other
+    title: Ice Cream Vase 8
+    when: '2017'
+  - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
+    images:
+      - file: /images/gpe159.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-9
+    tags:
+      - Other
+    title: Ice Cream Vase 9
+    when: '2017'
+  - dimensions: 9.5 x 7.5 x 7.5 inches (24.13 x 19.05 x 19.05 cm)
+    images:
+      - file: /images/gpe160.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-10
+    tags:
+      - Other
+    title: Ice Cream Vase 10
+    when: '2017'
+  - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
+    images:
+      - file: /images/gpe162.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-11
+    tags:
+      - Other
+    title: Ice Cream Vase 11
+    when: '2017'
+  - dimensions: 8 x 7.25 x 7.25 inches (20.32 x 18.415 x 18.415 cm)
+    images:
+      - file: /images/gpe163.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-12
+    tags:
+      - Other
+    title: Ice Cream Vase 12
+    when: '2017'
+  - dimensions: 8.25 x 7 x 7 inches (20.955 x 17.78 x 17.78 cm)
+    images:
+      - file: /images/gpe164.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase-12
+    tags:
+      - Other
+    title: Ice Cream Vase 12
+    when: '2017'
+  - {}
 status: Represented
