@@ -63,6 +63,42 @@ works:
       caption: ''
       vimeoId: ''
     when: '2017'
+  - dimensions: 51.18 x 39.37 x 39.37 inches (130 x 100 x 100 cm)
+    images:
+      - file: /images/gpe101.jpg
+    medium: Polyurethane resin and steel
+    slug: rug-lamp-1
+    tags:
+      - Lighting
+    title: Rug Lamp 1
+    when: '2017'
+  - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
+    images:
+      - file: /images/gpe103.jpg
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-2
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 2
+    when: '2017'
+  - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
+    images:
+      - file: /images/gpe104.jpg
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-3
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 3
+    when: '2017'
+  - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
+    images:
+      - file: /images/gpe105.jpg
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-4
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 4
+    when: '2017'
   - images:
       - file: /images/gpe58.jpg
     medium: Polyurethane Resin
@@ -352,4 +388,13 @@ works:
       - table
     title: Swamp Coffee Table
     when: '2015'
+  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+    images:
+      - file: /images/gpe99.jpg
+    medium: 'Resin, wood, steel'
+    slug: tornando-dal-circo-cabinet
+    tags:
+      - storage
+    title: Tornando dal Circo Cabinet
+    when: '2016'
 status: Represented
