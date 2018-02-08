@@ -28,16 +28,16 @@ works:
     when: '2015'
   - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
     images:
-      - file: /images/bstagstool.jpg
+      - file: /images/1.jpg
     medium: 'plywood, antlers'
-    slug: black-stag-stool
+    slug: Natural-stag-stool
     tags:
       - Chair
-    title: Black Stag Stool
+    title: Natural Stag Stool
     when: '2009'
   - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
     images:
-      - file: /images/rostag.jpg
+      - file: /images/100.jpg
     medium: White Marble and Moose antler
     slug: white-stag-stool
     tags:
