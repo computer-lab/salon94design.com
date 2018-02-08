@@ -10,67 +10,6 @@ bio: |
   drink green tea and his favorite animals are dogs and pygmy goats.
 press: []
 works:
-  - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
-    hero: false
-    images:
-      - file: /images/works/thomas-barger/underwear-armoire-HydlYN3js3Z/large.jpg
-    medium: 'Paper pulp, plywood, styrofoam, cardboard'
-    price: ''
-    projects:
-      - slug: ghost-dog
-    slug: underwear-armoire
-    tags:
-      - Storage
-    title: 'Underwear Armoire, Connor''s Armoire'
-    when: '2016'
-  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
-    hero: true
-    images:
-      - file: >-
-          /images/works/thomas-barger/sorting-laundry-for-a-family-of-5-HkQi_F1kM/large.jpg
-    medium: 'Paper pulp, carpet '
-    projects:
-      - slug: midtown-lever-house
-    slug: sorting-laundry-for-a-family-of-5
-    tags:
-      - Storage
-    title: Sorting Laundry For a Family of 5
-    when: '2017'
-  - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
-    images:
-      - file: >-
-          /images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects:
-      - slug: ghost-dog
-    slug: aleksandr-rodchenko-snack-chair-with-harness
-    tags:
-      - Chair
-    title: Aleksandr Rodchenko snack chair (with harness)
-    when: '2017'
-  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
-    hero: false
-    images:
-      - file: /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects:
-      - slug: ghost-dog
-    slug: underwear-armoire-3
-    tags:
-      - Storage
-    title: Underwear Armoire 3
-    when: '2017'
-  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
-    images:
-      - file: /images/tbar4.jpg
-    medium: Paper pulp and Styrofoam
-    projects:
-      - slug: Bowery Design 2017
-    slug: dont-forget-me-on-the-train-chair
-    tags:
-      - Chair
-    title: Don't forget me on the train chair
-    when: '2017'
   - images:
       - file: /images/tbar2.jpg
     medium: Paper pulp
@@ -123,15 +62,6 @@ works:
       - Chair
     title: 'S.O.S. Green Goblin, Spidey Please Save Me'
     when: '2017'
-  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
-    images:
-      - file: /images/tbar15.jpg
-    medium: Paper pulp
-    slug: protect-me-chair
-    tags:
-      - Chair
-    title: Protect Me Chair
-    when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     images:
       - file: /images/tbar16.jpg
@@ -140,6 +70,15 @@ works:
     tags:
       - Chair
     title: Buttery Tall Boy 1
+    when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    images:
+      - file: /images/tbar15.jpg
+    medium: Paper pulp
+    slug: protect-me-chair
+    tags:
+      - Chair
+    title: Protect Me Chair
     when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     images:
@@ -158,5 +97,74 @@ works:
     tags:
       - Chair
     title: Buttery Tall Boy 3
+    when: '2017'
+  - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
+    images:
+      - file: /images/4F7A9960.jpg
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    slug: alesandr-rodchenko-snack-chair
+    tags:
+      - Chair
+    title: Aleksandr Rodchenko Snack Chair
+    when: '2017'
+  - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
+    images:
+      - file: >-
+          /images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects:
+      - slug: ghost-dog
+    slug: aleksandr-rodchenko-snack-chair-with-harness
+    tags:
+      - Chair
+    title: Aleksandr Rodchenko snack chair (with harness)
+    when: '2017'
+  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
+    hero: false
+    images:
+      - file: /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects:
+      - slug: ghost-dog
+    slug: underwear-armoire-3
+    tags:
+      - Storage
+    title: Underwear Armoire 3
+    when: '2017'
+  - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
+    hero: false
+    images:
+      - file: /images/49936.jpg
+    medium: 'Paper pulp, plywood, styrofoam, cardboard'
+    price: ''
+    projects:
+      - slug: ghost-dog
+    slug: underwear-armoire
+    tags:
+      - Storage
+    title: 'Underwear Armoire, Connor''s Armoire'
+    when: '2016'
+  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
+    hero: true
+    images:
+      - file: /images/6.jpg
+    medium: 'Paper pulp, carpet '
+    projects:
+      - slug: midtown-lever-house
+    slug: sorting-laundry-for-a-family-of-5
+    tags:
+      - Storage
+    title: Sorting Laundry For a Family of 5
+    when: '2017'
+  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
+    images:
+      - file: /images/tbar4.jpg
+    medium: Paper pulp and Styrofoam
+    projects:
+      - slug: Bowery Design 2017
+    slug: dont-forget-me-on-the-train-chair
+    tags:
+      - Chair
+    title: Don't forget me on the train chair
     when: '2017'
 status: Represented
