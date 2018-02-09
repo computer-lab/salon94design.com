@@ -746,10 +746,9 @@ works:
     images:
       - file: /images/gpe164.jpg
     medium: Polyurethane resin
-    slug: ice-cream-vase-12
+    slug: ice-cream-vase-13
     tags:
       - Other
-    title: Ice Cream Vase 12
+    title: Ice Cream Vase 13
     when: '2017'
-  - {}
 status: Represented
