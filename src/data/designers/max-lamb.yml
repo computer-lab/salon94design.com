@@ -163,6 +163,8 @@ works:
     images:
       - file: /images/works/max-lamb/tonalite-boulder-stool-2-HJDULQlYHG/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-stool-2
     tags:
       - Chair
@@ -209,6 +211,8 @@ works:
     images:
       - file: /images/works/max-lamb/tonalite-boulder-stool-6-H1iXJqgKBf/large.jpg
     medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-stool-6
     tags:
       - Chair
@@ -230,6 +234,8 @@ works:
     images:
       - file: /images/mla 76.jpg
     medium: Raw and Polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
     slug: tonalite-boulder-stool-8
     tags:
       - Chair
