@@ -22,6 +22,8 @@ works:
   - images:
       - file: /images/lusa77.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace
     tags:
       - Jewelry
@@ -30,6 +32,8 @@ works:
   - images:
       - file: /images/lusa79.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-1
     tags:
       - Jewelry
@@ -38,6 +42,8 @@ works:
   - images:
       - file: /images/lusa80.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-2
     tags:
       - Jewelry
@@ -46,6 +52,8 @@ works:
   - images:
       - file: /images/lusa3.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-3-7.2-ounces
     tags:
       - Jewelry
@@ -54,6 +62,8 @@ works:
   - images:
       - file: /images/lusa45.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-4
     tags:
       - Jewelry
@@ -62,6 +72,8 @@ works:
   - images:
       - file: /images/lusa5.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-5-6.7-ounces
     tags:
       - Jewelry
@@ -70,6 +82,8 @@ works:
   - images:
       - file: /images/lusa84.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-6
     tags:
       - Jewelry
@@ -78,6 +92,8 @@ works:
   - images:
       - file: /images/lusa85.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-7
     tags:
       - Jewelry
@@ -86,6 +102,8 @@ works:
   - images:
       - file: /images/lusa4.jpg
     medium: 22 Karet Gold
+    projects:
+      - slug: gold
     slug: necklace-8-4.4-ounces
     tags:
       - Jewelry
@@ -94,6 +112,8 @@ works:
   - images:
       - file: /images/lusa47.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-9
     tags:
       - Jewelry
@@ -102,6 +122,8 @@ works:
   - images:
       - file: /images/lusa46.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-10
     tags:
       - Jewelry
@@ -110,6 +132,8 @@ works:
   - images:
       - file: /images/lusa86.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-11
     tags:
       - Jewelry
@@ -118,6 +142,8 @@ works:
   - images:
       - file: /images/lusa49.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-19
     tags:
       - Jewelry
@@ -126,6 +152,8 @@ works:
   - images:
       - file: /images/lusa2.jpg
     medium: 22 Karet Gold
+    projects:
+      - slug: gold
     slug: necklace-26-4.6-ounces
     tags:
       - Jewelry
@@ -134,6 +162,8 @@ works:
   - images:
       - file: /images/lusa48.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-37
     tags:
       - Jewelry
@@ -142,6 +172,8 @@ works:
   - images:
       - file: /images/lusa1.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-41-8.8-ounces
     tags:
       - Jewelry
@@ -150,6 +182,8 @@ works:
   - images:
       - file: /images/lusa44.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-45
     tags:
       - Jewelry
@@ -158,6 +192,8 @@ works:
   - images:
       - file: /images/lusa6.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-47-9.1-ounces
     tags:
       - Jewelry
@@ -166,6 +202,8 @@ works:
   - images:
       - file: /images/lusa8.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-48-11.2-ounces
     tags:
       - Jewelry
@@ -174,6 +212,8 @@ works:
   - images:
       - file: /images/lusa7.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-49-13.2-ounces
     tags:
       - Jewelry
@@ -182,6 +222,8 @@ works:
   - images:
       - file: /images/lusa43.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-52
     tags:
       - Jewelry
@@ -190,6 +232,8 @@ works:
   - images:
       - file: /images/lusa11.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-55-7.3-ounces
     tags:
       - Jewelry
@@ -198,6 +242,8 @@ works:
   - images:
       - file: /images/lusa9.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-60-6.9-ounces
     tags:
       - Jewelry
@@ -206,6 +252,8 @@ works:
   - images:
       - file: /images/lusa10.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: necklace-63-5.9-ounces
     tags:
       - Jewelry
@@ -214,6 +262,8 @@ works:
   - images:
       - file: /images/lusa18.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-ring-2-2.4-ounces
     tags:
       - Jewelry
@@ -223,6 +273,8 @@ works:
     images:
       - file: /images/lusa41.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: pin-30
     tags:
       - Jewelry
@@ -232,6 +284,8 @@ works:
     images:
       - file: /images/lusa42.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: pin-2-baroque
     tags:
       - Jewelry
