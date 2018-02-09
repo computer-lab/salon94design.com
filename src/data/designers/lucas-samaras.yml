@@ -294,6 +294,8 @@ works:
   - images:
       - file: /images/lusa32.jpg
     medium: 22 Karet Gold
+    projects:
+      - slug: gold
     slug: ring-a-group-5
     tags:
       - Jewelry
@@ -302,12 +304,16 @@ works:
   - images:
       - file: /images/lusa73.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet
     tags:
       - Jewelry
     title: Bracelet
     when: ''
   - medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-1
     tags:
       - Jewelry
@@ -316,6 +322,8 @@ works:
   - images:
       - file: /images/lusa74.jpg
     medium: 22 Karat Gold and Opal
+    projects:
+      - slug: gold
     slug: bracelet-2
     tags:
       - Jewelry
@@ -324,6 +332,8 @@ works:
   - images:
       - file: /images/lusa17.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-3-10-ounces
     tags:
       - Jewelry
@@ -332,6 +342,8 @@ works:
   - images:
       - file: /images/lusa75.jpg
     medium: 22 Karet Gold
+    projects:
+      - slug: gold
     slug: bracelet-4
     tags:
       - Jewelry
@@ -340,6 +352,8 @@ works:
   - images:
       - file: /images/lusa76.jpg
     medium: 22 Karat Gold and Emerald
+    projects:
+      - slug: gold
     slug: bracelet-5
     tags:
       - Jewelry
@@ -348,6 +362,8 @@ works:
   - images:
       - file: /images/lusa88.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-6
     tags:
       - Jewelry
@@ -356,6 +372,8 @@ works:
   - images:
       - file: /images/lusa14.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-7-4.2-ounces
     tags:
       - Jewelry
@@ -364,6 +382,8 @@ works:
   - images:
       - file: /images/lusa89.jpg
     medium: '22 Karat Gold '
+    projects:
+      - slug: gold
     slug: bracelet-8
     tags:
       - Jewelry
@@ -372,6 +392,8 @@ works:
   - images:
       - file: /images/lusa27.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-9
     tags:
       - Jewelry
@@ -380,6 +402,8 @@ works:
   - images:
       - file: /images/lusa15.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-10-4.7-ounces
     tags:
       - Jewelry
@@ -388,6 +412,8 @@ works:
   - images:
       - file: /images/lusa29.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-12
     tags:
       - Jewelry
@@ -396,6 +422,8 @@ works:
   - images:
       - file: /images/lusa13.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-13-3.3-ounces
     tags:
       - Jewelry
@@ -404,6 +432,8 @@ works:
   - images:
       - file: /images/lusa12.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-17-2.7-ounces
     tags:
       - Jewelry
@@ -412,6 +442,8 @@ works:
   - images:
       - file: /images/lusa28.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-20
     tags:
       - Jewelry
@@ -420,6 +452,8 @@ works:
   - images:
       - file: /images/lusa16.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-21-5.2-ounces
     tags:
       - Jewelry
@@ -428,6 +462,8 @@ works:
   - images:
       - file: /images/lusa30.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: bracelet-26
     tags:
       - Jewelry
@@ -436,6 +472,8 @@ works:
   - images:
       - file: /images/lusa83.jpg
     medium: 22 Karat Gold and Emerald
+    projects:
+      - slug: gold
     slug: ring
     tags:
       - Jewelry
@@ -444,6 +482,8 @@ works:
   - images:
       - file: /images/lusa82.jpg
     medium: '20 Karat Gold, 24 Karat Gold and Emerald'
+    projects:
+      - slug: gold
     slug: ring-1-1.1-ounces
     tags:
       - Jewelry
@@ -452,6 +492,8 @@ works:
   - images:
       - file: /images/lusa87.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-2
     tags:
       - Jewelry
@@ -460,6 +502,8 @@ works:
   - images:
       - file: /images/lusa21.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-6-2.8-ounces
     tags:
       - Jewelry
@@ -468,6 +512,8 @@ works:
   - images:
       - file: /images/lusa38.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-8
     tags:
       - Jewelry
@@ -476,6 +522,8 @@ works:
   - images:
       - file: /images/lusa33.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-9
     tags:
       - Jewelry
@@ -484,6 +532,8 @@ works:
   - images:
       - file: /images/lusa35.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-11
     tags:
       - Jewelry
@@ -492,6 +542,8 @@ works:
   - images:
       - file: /images/lusa36.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-14
     tags:
       - Jewelry
@@ -500,6 +552,8 @@ works:
   - images:
       - file: /images/lusa34.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-15
     tags:
       - Jewelry
@@ -508,6 +562,8 @@ works:
   - images:
       - file: /images/lusa37.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-19
     tags:
       - Jewelry
@@ -516,6 +572,8 @@ works:
   - images:
       - file: /images/lusa40.jpg
     medium: 22 Karet Gold
+    projects:
+      - slug: gold
     slug: ring-35
     tags:
       - Jewelry
@@ -524,6 +582,8 @@ works:
   - images:
       - file: /images/lusa19.jpg
     medium: 22 Karat Gold
+    projects:
+      - slug: gold
     slug: ring-41-0.8-ounces
     tags:
       - Jewelry
