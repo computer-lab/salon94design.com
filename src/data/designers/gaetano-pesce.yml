@@ -280,24 +280,6 @@ works:
       - Other
     title: Tree Vase Small
     when: ''
-  - dimensions: 11.81 x 10.63 x 10.63 inches (30 x 27 x 27 cm)
-    images:
-      - file: /images/gpe12.jpg
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-small
-    tags:
-      - Other
-    title: Tree Vase small
-    when: ''
-  - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
-    images:
-      - file: /images/gpe13.jpg
-    medium: Polyurethane Resin and Papier Maché
-    slug: tree-vase-small
-    tags:
-      - Other
-    title: Tree Vase Small
-    when: ''
   - dimensions: 39.37 x 9.84 x 9.84 inches (100 x 25 x 25 cm)
     images:
       - file: /images/gpe14.jpg
