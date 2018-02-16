@@ -13,7 +13,7 @@ import {
 
 const Selector = styled.div`
   margin-top: 20px;
-  padding: 0;
+  padding: 0 0 25px 0;
   background: #fff;
   transition: transform 0.2s ease;
 

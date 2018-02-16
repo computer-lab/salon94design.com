@@ -63,7 +63,7 @@ collections:
                 searchFields: [slug, title]
                 valueField: slug
           - name: tags
-            label: "ceramics, jewlery, lighting, other, seating, storage, tables - any tag can be added, all lowercase"
+            label: "Tags (ceramics, jewlery, lighting, other, seating, storage, tables, etc.) - any tag can be added, all lowercase"
             widget: list
             default: []
           - name: hero

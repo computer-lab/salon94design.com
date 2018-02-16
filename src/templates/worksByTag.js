@@ -34,7 +34,9 @@ const WorksTemplate = ({ data, pathContext }) => {
       return false
     }
 
-    let tags = (w.tags || []).concat(w.when)
+    let tags = (w.tags || []).concat(w.when).map(t => {
+      return t ? t.toLowerCase() : null
+    })
     return tags.includes(tag)
   }
 
@@ -57,7 +59,7 @@ const WorksTemplate = ({ data, pathContext }) => {
               smallText: (
                 <div>
                   <Link to={workLink(designer.slug, work.slug)}>
-                    {work.title}, {work.when}{' '}
+                    { work.when ? `${work.title}, ${work.when}` : work.title }{' '}
                   </Link>
                   -{' '}
                   <Link to={designerLink(designer.slug)}>{designer.title}</Link>

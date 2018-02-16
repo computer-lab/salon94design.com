@@ -106,7 +106,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
           includeDesigner: false,
           smallText: (
             <Link to={workLink(designer.slug, work.slug)}>
-              {work.title}, {work.when}
+              {work.when ? `${work.title}, ${work.when}` : work.title }
             </Link>
           ),
         }),
