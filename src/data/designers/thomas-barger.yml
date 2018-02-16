@@ -21,6 +21,17 @@ works:
       - Chair
     title: Love Me Chair
     when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    images:
+      - file: /images/tbar15.jpg
+    medium: Paper pulp
+    projects:
+      - slug: growing-up
+    slug: protect-me-chair
+    tags:
+      - Chair
+    title: Protect Me Chair
+    when: '2017'
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
     images:
       - file: /images/tbar12.jpg
@@ -64,17 +75,6 @@ works:
     tags:
       - Chair
     title: Buttery Tall Boy 1
-    when: '2017'
-  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
-    images:
-      - file: /images/tbar15.jpg
-    medium: Paper pulp
-    projects:
-      - slug: growing-up
-    slug: protect-me-chair
-    tags:
-      - Chair
-    title: Protect Me Chair
     when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     images:
