@@ -54,7 +54,7 @@ const SummaryItem = styled.li`
 
   &.project,
   &.tag {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
   }
 
@@ -73,7 +73,7 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
       )}
 
       <SummaryItem>
-        {work.title}, {work.when}
+        { work.when ? `${work.title}, ${work.when}` : work.title }
       </SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
       <SummaryItem>{work.medium}</SummaryItem>

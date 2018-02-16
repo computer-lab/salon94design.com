@@ -31,7 +31,7 @@ const WorkTemplate = ({ data, pathContext }) => {
 
   const selectorItems = works
     .map(work => ({
-      title: `${work.title}, ${work.when}`,
+      title: work.when ? `${work.title}, ${work.when}` : work.title,
       link: workLink(designer.slug, work.slug),
     }))
     .sort((a, b) => a.title.localeCompare(b.title))
