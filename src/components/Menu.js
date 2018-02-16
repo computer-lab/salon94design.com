@@ -88,6 +88,7 @@ const NavItem = styled.li`
   padding: 0;
   cursor: pointer;
   flex-shrink: 0;
+  user-select: none;
 
   &:not(:first-child) {
     margin-left: 24px;
