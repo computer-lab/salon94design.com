@@ -10,26 +10,12 @@ bio: |
   drink green tea and his favorite animals are dogs and pygmy goats.
 press: []
 works:
-  - images:
-      - file: /images/tbar2.jpg
-    medium: Paper pulp
-    slug: chair
-    tags:
-      - Chair
-    title: Chair
-    when: '2016'
-  - images:
-      - file: /images/tbar3.jpg
-    medium: Paper pulp
-    slug: chair-2
-    tags:
-      - Chair
-    title: Chair 2
-    when: '2016'
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
     images:
       - file: /images/tbar11.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: love-me-chair
     tags:
       - Chair
@@ -39,6 +25,8 @@ works:
     images:
       - file: /images/tbar12.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: butter-chair-1
     tags:
       - Chair
@@ -48,6 +36,8 @@ works:
     images:
       - file: /images/tbar13.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: butter-chair-2
     tags:
       - Chair
@@ -57,6 +47,8 @@ works:
     images:
       - file: /images/tbar14.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: s-o-s-green-goblin-spidey-please-save-me
     tags:
       - Chair
@@ -66,6 +58,8 @@ works:
     images:
       - file: /images/tbar16.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: buttery-tall-boy-1
     tags:
       - Chair
@@ -75,6 +69,8 @@ works:
     images:
       - file: /images/tbar15.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: protect-me-chair
     tags:
       - Chair
@@ -84,6 +80,8 @@ works:
     images:
       - file: /images/tbar17.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: buttery-tall-boy-2
     tags:
       - Chair
@@ -93,6 +91,8 @@ works:
     images:
       - file: /images/tbar18.jpg
     medium: Paper pulp
+    projects:
+      - slug: growing-up
     slug: buttery-tall-boy-3
     tags:
       - Chair
@@ -102,6 +102,7 @@ works:
     images:
       - file: /images/4F7A9960.jpg
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects: []
     slug: alesandr-rodchenko-snack-chair
     tags:
       - Chair
@@ -167,4 +168,20 @@ works:
       - Chair
     title: Don't forget me on the train chair
     when: '2017'
+  - images:
+      - file: /images/tbar2.jpg
+    medium: Paper pulp
+    slug: chair
+    tags:
+      - Chair
+    title: Chair
+    when: '2016'
+  - images:
+      - file: /images/tbar3.jpg
+    medium: Paper pulp
+    slug: chair-2
+    tags:
+      - Chair
+    title: Chair 2
+    when: '2016'
 status: Represented
