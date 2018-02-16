@@ -148,7 +148,6 @@ const DesignerTemplate = ({ data, pathContext }) => {
         description={`Exhibitions, projects and works by ${designer.title}. ${designer.bio}`}
       />
       <LeftPane>
-        <WorksHeader>Works</WorksHeader>
         <ImageList
           imageSets={imageSets}
           hoverImageRenderer={hoverImageRenderer}
