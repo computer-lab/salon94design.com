@@ -6,7 +6,9 @@ bio: |-
   world of design, Kanu is driven by a predilection for subverting norms, an
   insatiable urge to create, and a love of melding street culture with design
   sensibilities.
-press: []
+press:
+  - file: /images/201706-tmag-doziekanu.pdf
+    title: The New York Time Style Magazine
 works:
   - dimensions: 20.5 x 104 x 18 inches (52.1 x 264.2 x 45.7 cm)
     edition: Unique
