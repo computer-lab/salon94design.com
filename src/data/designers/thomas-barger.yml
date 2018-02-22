@@ -13,6 +13,9 @@ works:
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
     images:
       - file: /images/tbar11.jpg
+      - file: /images/tbarlmc1.jpg
+      - file: /images/tbarlmc2.jpg
+      - file: /images/tbarlmc3.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -24,6 +27,9 @@ works:
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
     images:
       - file: /images/tbar15.jpg
+      - file: /images/tbar15-a.jpg
+      - file: /images/tbar15-c.jpg
+      - file: /images/tbar15-d.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -35,6 +41,9 @@ works:
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
     images:
       - file: /images/tbar12.jpg
+      - file: /images/tbar12-a.jpg
+      - file: /images/tbar12-b.jpg
+      - file: /images/tbar12-c.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -46,6 +55,9 @@ works:
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
     images:
       - file: /images/tbar13.jpg
+      - file: /images/tbar13-a.jpg
+      - file: /images/tbar13-b.jpg
+      - file: /images/tbar13-c.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -57,6 +69,9 @@ works:
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
     images:
       - file: /images/tbar14.jpg
+      - file: /images/tbar14-a.jpg
+      - file: /images/tbar14-b.jpg
+      - file: /images/tbar14-d.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -68,6 +83,9 @@ works:
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     images:
       - file: /images/tbar16.jpg
+      - file: /images/tbar16-a.jpg
+      - file: /images/tbar16-b.jpg
+      - file: /images/tbar16-c.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -79,6 +97,9 @@ works:
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     images:
       - file: /images/tbar17.jpg
+      - file: /images/tbar17-a.jpg
+      - file: /images/tbar17-b.jpg
+      - file: /images/tbar17-c.jpg
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -151,6 +172,7 @@ works:
   - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
     hero: true
     images:
+      - file: /images/tbar10instal.jpg
       - file: /images/6.jpg
     medium: 'Paper pulp, carpet '
     projects:
