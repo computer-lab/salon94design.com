@@ -5,7 +5,9 @@ bio: >-
   design methods with digital design. He is known for employing highly unusual
   approaches to using natural materials, including pouring pewter onto sand, and
   volcanic rock.
-press: []
+press:
+  - file: /images/maxlamb-boulders pr.pdf
+    title: Press Release- Boulders- Max Lamb
 works:
   - dimensions: 16.1 x 33.5 x 15.75 inches (40.9 x 85.1 x 40 cm)
     edition: 'unique, initials carved on side'
