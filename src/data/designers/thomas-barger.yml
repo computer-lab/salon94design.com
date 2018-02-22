@@ -195,6 +195,9 @@ works:
     when: '2017'
   - images:
       - file: /images/tbar2.jpg
+      - file: /images/tbar2-a.jpg
+      - file: /images/tbar2-b.jpg
+      - file: /images/tbar2-c.jpg
     medium: Paper pulp
     slug: chair
     tags:
@@ -203,6 +206,9 @@ works:
     when: '2016'
   - images:
       - file: /images/tbar3.jpg
+      - file: /images/tbar3-a.jpg
+      - file: /images/tbar3-b.jpg
+      - file: /images/tbar3-d.jpg
     medium: Paper pulp
     slug: chair-2
     tags:
