@@ -22,10 +22,18 @@ works:
       - file: /images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
     medium: 'cast concrete, exposed aggregate'
     projects:
-      - slug: design-miami-philippe-malouin-core
+      - slug: design-miami-2017-philippe-malouin-core
     slug: pm-core
     tags:
       - other
     title: Core
     when: '2017'
+  - images:
+      - file: /images/philippemalouinstool.png
+    medium: 'cast concrete, exposed aggregate'
+    slug: pm-stool
+    tags:
+      - chair
+    title: Stool
+    when: '2018'
 status: Represented
