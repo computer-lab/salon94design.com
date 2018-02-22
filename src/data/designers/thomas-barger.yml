@@ -11,6 +11,7 @@ bio: |
 press: []
 works:
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
+    hero: true
     images:
       - file: /images/tbar11.jpg
       - file: /images/tbarlmc1.jpg
@@ -25,6 +26,7 @@ works:
     title: Love Me Chair
     when: '2017'
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    hero: true
     images:
       - file: /images/tbar15.jpg
       - file: /images/tbar15-a.jpg
@@ -39,6 +41,7 @@ works:
     title: Protect Me Chair
     when: '2017'
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+    hero: true
     images:
       - file: /images/tbar12.jpg
       - file: /images/tbar12-a.jpg
@@ -53,6 +56,7 @@ works:
     title: Butter Chair 1
     when: '2017'
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+    hero: true
     images:
       - file: /images/tbar13.jpg
       - file: /images/tbar13-a.jpg
@@ -67,6 +71,7 @@ works:
     title: Butter Chair 2
     when: '2017'
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    hero: true
     images:
       - file: /images/tbar14.jpg
       - file: /images/tbar14-a.jpg
@@ -81,6 +86,7 @@ works:
     title: 'S.O.S. Green Goblin, Spidey Please Save Me'
     when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    hero: true
     images:
       - file: /images/tbar16.jpg
       - file: /images/tbar16-a.jpg
@@ -95,6 +101,7 @@ works:
     title: Buttery Tall Boy 1
     when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    hero: true
     images:
       - file: /images/tbar17.jpg
       - file: /images/tbar17-a.jpg
@@ -109,6 +116,7 @@ works:
     title: Buttery Tall Boy 2
     when: '2017'
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+    hero: true
     images:
       - file: /images/tbar18.jpg
       - file: /images/tbar18l.jpg
@@ -136,6 +144,7 @@ works:
     title: Sorting Laundry For a Family of 5
     when: '2017'
   - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
+    hero: false
     images:
       - file: /images/4F7A9960.jpg
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
