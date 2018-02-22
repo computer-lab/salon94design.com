@@ -122,6 +122,19 @@ works:
       - Chair
     title: Buttery Tall Boy 3
     when: '2017'
+  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
+    hero: true
+    images:
+      - file: /images/tbar10instal.jpg
+      - file: /images/6.jpg
+    medium: 'Paper pulp, carpet '
+    projects:
+      - slug: midtown-lever-house
+    slug: sorting-laundry-for-a-family-of-5
+    tags:
+      - Storage
+    title: Sorting Laundry For a Family of 5
+    when: '2017'
   - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
     images:
       - file: /images/4F7A9960.jpg
@@ -169,19 +182,6 @@ works:
       - Storage
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
-  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
-    hero: true
-    images:
-      - file: /images/tbar10instal.jpg
-      - file: /images/6.jpg
-    medium: 'Paper pulp, carpet '
-    projects:
-      - slug: midtown-lever-house
-    slug: sorting-laundry-for-a-family-of-5
-    tags:
-      - Storage
-    title: Sorting Laundry For a Family of 5
-    when: '2017'
   - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
       - file: /images/tbar4.jpg
