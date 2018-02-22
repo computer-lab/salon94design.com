@@ -202,7 +202,8 @@ works:
       - Chair
     title: Don't forget me on the train chair
     when: '2017'
-  - images:
+  - hero: true
+    images:
       - file: /images/tbar2.jpg
       - file: /images/tbar2-a.jpg
       - file: /images/tbar2-b.jpg
@@ -213,7 +214,8 @@ works:
       - Chair
     title: Chair
     when: '2016'
-  - images:
+  - hero: true
+    images:
       - file: /images/tbar3.jpg
       - file: /images/tbar3-a.jpg
       - file: /images/tbar3-b.jpg
