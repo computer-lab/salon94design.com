@@ -22,7 +22,10 @@ bio: >
   corporeal, and organic
 
   design.
-press: []
+press:
+  - file: /images/gp-2017.pdf
+    title: Design Market - December 2016
+  - title: Wallpaper* - December 2016
 works:
   - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
