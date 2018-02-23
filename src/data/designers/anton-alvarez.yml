@@ -9,7 +9,17 @@ bio: >-
   internationally including solo shows at Salon94 in New York, Xue Xue institute
   in Taipei and Gallery Libby Sellers in London. Alvarez was born in Upsalla,
   Sweden in 1980, he lives and works in London and Stockholm.
-press: []
+press:
+  - file: /images/antonalvarez-wallp-2015.pdf
+    title: Wallpaper*
+  - file: /images/antonalvarez-w-2015.pdf
+    title: W Magazine
+  - file: /images/antonalvarez-paridust-2015.pdf
+    title: Paridust
+  - file: /images/antonalvarez-ad-2015.pdf
+    title: Architectural Digest
+  - file: /images/antonalvaraz-artsy-2015.pdf
+    title: ARTSY
 works:
   - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
     images:
