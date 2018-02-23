@@ -106,11 +106,13 @@ export default function Homepage({ data }) {
           </ProjectTitle>
           <ImageWrapper>
             <Link to={link}>
-              <img
+              {/* Temporary gif feature */}
+              <img src="/images/growing-up-feature.gif" />
+              {/*<img
                 src={image && image.src}
                 srcSet={image && image.srcSet}
                 sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
-              />
+              />*/}
             </Link>
           </ImageWrapper>
         </FeaturedWrapper>
