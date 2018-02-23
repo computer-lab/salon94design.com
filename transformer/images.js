@@ -61,7 +61,7 @@ async function processDesignerWorks (designer) {
 
     // process them
     const processedImages = await Promise.all(imagesToProcess.map((image, idx) => {
-      const newFilename = getWorkImageFilename(designer, work, image, idx)
+      const newFilename = getWorkImageFilename(designer, work, image, idx, '.jpg')
       return processImage(image, newFilename)
     }))
   }))
@@ -138,60 +138,54 @@ function getNewFilename (image, pathComponents, index, extname) {
 }
 
 async function processImage (image, newFilename) {
-  try {
-    // move from root static folder to correct subdirectory, and rename
-    const movedImage = await moveImage(image, newFilename)
+  const originalFilename = path.join(baseDir, imageDataFilename(image.file))
 
-    // convert other image formats to jpg
-    const jpegImage = await makeImageJpeg(movedImage)
+  try {
+    // read image & ensure jpg
+    const jpegImage = {
+      buf: await makeImageJpeg(originalFilename),
+      filename: newFilename
+    }
 
     // create necessary sizes
-    const resizedImages = await resizeImage(jpegImage)
+    const resizedImages = await resizeImage(jpegImage, originalFilename)
+
+    // write images to disk
+    await writeImages(jpegImage, resizedImages)
 
     // return relevant info
     return {
-      newImage: jpegImage,
-      resizedImages
+      newImage: jpegImage.filename,
+      resizedImages: resizedImages.map((image) => image.filename)
     }
   } catch (err) {
-    console.error('err processing file:', image.file)
+    console.error('err processing file:', originalFilename)
     console.error(err)
 
     return null
   }
 }
 
-function moveImage (image, newFilename) {
-  // move image to correct directory
-  const oldFilename = path.join(baseDir, imageDataFilename(image.file))
-  return fs.copy(oldFilename, newFilename)
-    .then(() => newFilename)
-}
-
-function makeImageJpeg (imageFilename) {
-  const ext = path.extname(imageFilename)
-  if (ext === '.jpg') {
-    return Promise.resolve(imageFilename)
-  }
-
-  let jpegFilename = path.basename(imageFilename, ext) + '.jpg'
-  jpegFilename = path.join(path.dirname(imageFilename), jpegFilename)
-  return sharp(imageFilename)
+async function makeImageJpeg (originalFilename) {
+  return sharp(originalFilename)
     .jpeg({ quality: 90 })
-    .toFile(jpegFilename)
+    .toBuffer()
+
+    /*
     .then(() =>
       fs.remove(imageFilename) // remove old non-jpeg file
         .catch() // ignore non-critical error
     )
     .then(() => jpegFilename)
+    */
 }
 
-async function resizeImage (jpegFilename) {
+async function resizeImage (jpegImage, originalFilename) {
   let info
   try {
-    info = await sharp(jpegFilename).metadata()
+    info = await sharp(jpegImage.buf).metadata()
   } catch (err) {
-    console.error('err reading image metadata: ', jpegFilename)
+    console.error('err reading image metadata: ', originalFilename)
     console.error(err)
     return []
   }
@@ -220,13 +214,27 @@ async function resizeImage (jpegFilename) {
   }
 
   return Promise.all(sizes.map(size => {
-    const ext = path.extname(jpegFilename)
+    const ext = path.extname(jpegImage.filename)
     let resizedFilename = `resized-${size.width ? `w${size.width}` : `h${size.height}`}${ext}`
-    resizedFilename = path.join(path.dirname(jpegFilename), resizedFilename)
+    resizedFilename = path.join(path.dirname(jpegImage.filename), resizedFilename)
 
-    return sharp(jpegFilename)
+    return sharp(jpegImage.buf)
       .resize(size.width, size.height)
-      .toFile(resizedFilename)
-      .then(() => resizedFilename)
+      .toBuffer()
+      .then((resizedImage) => (
+        { buf: resizedImage, filename: resizedFilename }
+      ))
   }))
+}
+
+async function writeImages(jpegImage, resizedImages) {
+  function writeImage(image) {
+    return sharp(image.buf).toFile(image.filename)
+  }
+
+  return (
+    fs.ensureFile(jpegImage.filename)
+      .then(() => writeImage(jpegImage))
+      .then(() => Promise.all(resizedImages.map(writeImage)))
+  )
 }
