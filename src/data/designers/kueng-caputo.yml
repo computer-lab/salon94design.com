@@ -7,7 +7,15 @@ bio: >-
   understatement and improvisation. Their first 'Five Stars Cardboard'
   installations at the Salone Satellite in 2007 went on to show in South Korea,
   Basel and New York.
-press: []
+press:
+  - file: /images/kuengcaputo-wmagazine-2014.pdf
+    title: W Magazine
+  - file: /images/kuengcaputo-wallpaper-2013.pdf
+    title: Wallpaper*
+  - file: /images/kuengcaputo-july2015.pdf
+    title: Stil
+  - file: /images/kuengcaputo-artinamerica-2014.pdf
+    title: Art in America
 works:
   - dimensions: 29.92 x 49.21 x 21.65 inches (76 x 125 x 55 cm)
     images:
