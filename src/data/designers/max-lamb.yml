@@ -377,4 +377,60 @@ works:
       - Table
     title: Thermal Spray Dining Table Stainless
     when: '2017'
+  - dimensions: 65 x 24 x 27 inches (165 x 60 x 68 cm)
+    hero: true
+    images:
+      - file: /images/mla-77-a.jpg
+      - file: /images/mla-77-b.jpg
+      - file: /images/mla-77-c.jpg
+      - file: /images/mla-77-d.jpg
+    medium: Copper
+    slug: thermal-spray-bench
+    tags:
+      - bench
+    title: Thermal Spray Bench
+    when: '2017'
+  - dimensions: 33 x 26 x 38 inches (85 x 65 x 97 cm)
+    hero: true
+    images:
+      - file: /images/mla-78-a.jpg
+      - file: /images/mla-78-b.jpg
+      - file: /images/mla-78-c.jpg
+      - file: /images/mla-78-d.jpg
+      - file: /images/mla-78-e.jpg
+      - file: /images/mla-78-f.jpg
+    medium: Bronze
+    slug: thermal-spray-chair
+    tags:
+      - chair
+    title: Thermal Spray Chair
+    when: '2017'
+  - hero: true
+    images:
+      - file: /images/mla-79-a.jpg
+      - file: /images/mla-79-b.jpg
+      - file: /images/mla-79-c.jpg
+      - file: /images/mla-79-d.jpg
+      - file: /images/mla-79-e.jpg
+      - file: /images/mla-79-f.jpg
+      - file: /images/mla-79-g.jpg
+      - file: /images/mla-79-h.jpg
+    medium: Copper
+    slug: thermal-spray-chair-2
+    tags:
+      - chair
+    title: Thermal Spray Chair 2
+    when: '2017'
+  - hero: true
+    images:
+      - file: /images/mla-80-a.jpg
+      - file: /images/mla-80-b.jpg
+      - file: /images/mla-80-c.jpg
+      - file: /images/mla-80-d.jpg
+      - file: /images/mla-80-e.jpg
+      - file: /images/mla-80-f.jpg
+    slug: thermal-spray-chair-3
+    tags:
+      - chair
+    title: Thermal Spray Chair 3
 status: Represented
