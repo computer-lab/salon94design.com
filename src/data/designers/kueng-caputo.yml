@@ -19,7 +19,7 @@ press:
 works:
   - dimensions: 29.92 x 49.21 x 21.65 inches (76 x 125 x 55 cm)
     images:
-      - file: /images/kuca178.jpg
+      - file: kuca178_p3f58y
     medium: Wood and iron chloride paint
     projects:
       - slug: art-basel-2016
@@ -32,7 +32,7 @@ works:
       27.56 x 17.72 x 17.72 inches (70 x 45 x 45 cm) Surface height: 22.83
       inches (58 cm)
     images:
-      - file: /images/kuca179.jpg
+      - file: kuca179_dpgjhi
     medium: Wood and iron chloride paint
     projects:
       - slug: Art Basel 2016
@@ -44,7 +44,7 @@ works:
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     hero: false
     images:
-      - file: /images/works/kueng-caputo/marble-stool-BJMryqhA0-/large.jpg
+      - file: large_b1glga
     medium: Marble
     price: ''
     projects: []
@@ -56,7 +56,7 @@ works:
   - dimensions: 16 x 13.25 x 13.25 inches (40.6 x 33.7 x 33.7 cm)
     edition: Unique
     images:
-      - file: /images/works/kueng-caputo/marble-stool-orange-rkx1ru01yG/large.jpg
+      - file: large_iouyi1
     medium: Marble
     slug: marble-stool-orange
     tags:
@@ -65,7 +65,7 @@ works:
     when: '2014'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
-      - file: /images/kuca143.jpg
+      - file: kuca143_luu0oo
     medium: Marble
     slug: marble-stool-12
     tags:
@@ -74,7 +74,7 @@ works:
     when: '2015'
   - dimensions: 16 x 13.25 x 13.25 inches (40.6 x 33.7 x 33.7 cm)
     images:
-      - file: /images/kuca176.jpg
+      - file: kuca176_udsnlm
     medium: Marble
     projects:
       - slug: Art Basel 2016
@@ -85,7 +85,7 @@ works:
     when: '2017'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
-      - file: /images/kuca155.jpg
+      - file: kuca155_fgdxvk
     medium: 'Travertine with colored lacquer '
     projects:
       - slug: Frieze London 2016
@@ -96,7 +96,7 @@ works:
     when: '2015'
   - dimensions: 16 x 13 1/4 x 14 1/4 inches (40.6 x 33.7 x 36.2 cm)
     images:
-      - file: /images/kuca156.jpg
+      - file: kuca156_fgeiei
     medium: Travertine with colored lacquer
     slug: travertine-stool-1
     tags:
@@ -105,7 +105,7 @@ works:
     when: '2015'
   - dimensions: 16 x 13 1/4  x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
-      - file: /images/kuca157.jpg
+      - file: kuca157_rrzuvj
     medium: Travertine with colored lacquer
     slug: travertine-stool-2
     tags:
@@ -114,7 +114,7 @@ works:
     when: '2015'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
-      - file: /images/kuca158.jpg
+      - file: kuca158_m2lnbq
     medium: Travertine with colored lacquer
     slug: travertine-stool-3
     tags:
@@ -123,7 +123,7 @@ works:
     when: '2015'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca118.jpg
+      - file: kuca118_pflqdb
     medium: Marble with colored lacquer
     slug: charger-1
     tags:
@@ -132,7 +132,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca120.jpg
+      - file: kuca120_gpqytg
     medium: Marble with colored lacquer
     slug: charger-2
     tags:
@@ -141,7 +141,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca121.jpg
+      - file: kuca121_pscnbc
     medium: Marble with colored lacquer
     slug: charger-3
     tags:
@@ -150,7 +150,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca122.jpg
+      - file: kuca122_xt01at
     medium: Marble with colored lacquer
     slug: charger-4
     tags:
@@ -159,7 +159,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca123.jpg
+      - file: kuca123_gykdrn
     medium: Marble with colored lacquer
     slug: charger-5
     tags:
@@ -168,7 +168,7 @@ works:
     when: '2015'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca124.jpg
+      - file: kuca124_eumsgk
     medium: Marble with colored lacquer
     slug: charger-6
     tags:
@@ -177,7 +177,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca125.jpg
+      - file: kuca125_acofyg
     medium: Marble with colored lacquer
     slug: charger-7
     tags:
@@ -186,7 +186,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca126.jpg
+      - file: kuca126_d3ewho
     medium: Marble with colored lacquer
     slug: charger-8
     tags:
@@ -195,7 +195,7 @@ works:
     when: '2014'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
-      - file: /images/kuca127.jpg
+      - file: kuca127_cj1djn
     medium: Marble with colored lacquer
     slug: charger-9
     tags:

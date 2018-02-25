@@ -31,7 +31,7 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: /images/works/gaetano-pesce/rug-wall-lamp-SJ7iLAyyf/large.jpg
+      - file: large_sqanh1
     medium: 'polyurethane resin and steel '
     projects:
       - slug: ghost-dog
@@ -43,7 +43,7 @@ works:
   - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     hero: false
     images:
-      - file: /images/works/gaetano-pesce/mini-stracci-vases-Bks28kgJG/large.jpg
+      - file: large_tcgnen
     projects:
       - slug: design-miami-2016-pesce
     slug: mini-stracci-vases
@@ -54,7 +54,7 @@ works:
   - dimensions: 37.4 x 61.02 x 61.02 inches (95 x 155 x 155 cm)
     edition: Unique
     images:
-      - file: /images/works/gaetano-pesce/rug-lamp-rky_nflJM/large.jpg
+      - file: large_etfkxv
     medium: Polyurethane resin and steel
     projects:
       - slug: ghost-dog
@@ -68,7 +68,7 @@ works:
     when: '2017'
   - dimensions: 51.18 x 39.37 x 39.37 inches (130 x 100 x 100 cm)
     images:
-      - file: /images/gpe101.jpg
+      - file: gpe101_qajomv
     medium: Polyurethane resin and steel
     slug: rug-lamp-1
     tags:
@@ -77,7 +77,7 @@ works:
     when: '2017'
   - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
     images:
-      - file: /images/gpe103.jpg
+      - file: gpe103_mhu2rq
     medium: Polyurethane resin and steel
     slug: rug-wall-lamp-2
     tags:
@@ -86,7 +86,7 @@ works:
     when: '2017'
   - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
     images:
-      - file: /images/gpe104.jpg
+      - file: gpe104_uqpwfl
     medium: Polyurethane resin and steel
     slug: rug-wall-lamp-3
     tags:
@@ -95,7 +95,7 @@ works:
     when: '2017'
   - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
     images:
-      - file: /images/gpe105.jpg
+      - file: gpe105_iyrohs
     medium: Polyurethane resin and steel
     slug: rug-wall-lamp-4
     tags:
@@ -103,14 +103,14 @@ works:
     title: Rug Wall Lamp 4
     when: '2017'
   - images:
-      - file: /images/gpe58.jpg
+      - file: gpe58_t7nobw
     medium: Polyurethane Resin
     slug: bracelet-black
     tags:
       - Jewelry
     title: Bracelet (Black)
   - images:
-      - file: /images/gpe59.jpg
+      - file: gpe59_j23qbk
     medium: Polyurethane Resin
     slug: bracelet-blue-black
     tags:
@@ -118,7 +118,7 @@ works:
     title: Bracelet (Blue and Black)
     when: ''
   - images:
-      - file: /images/gpe62.jpg
+      - file: gpe62_u79pkb
     medium: Polyurethane Resin
     slug: bracelet-blue-woven
     tags:
@@ -126,7 +126,7 @@ works:
     title: Bracelet (Blue Woven)
     when: ''
   - images:
-      - file: /images/gpe56.jpg
+      - file: gpe56_cwldy7
     medium: Polyurethane Resin
     slug: bracelet-green
     tags:
@@ -134,7 +134,7 @@ works:
     title: Bracelet (Green)
     when: ''
   - images:
-      - file: /images/gpe63.jpg
+      - file: gpe63_ashvvr
     medium: Polyurethane Resin
     slug: bracelet-orange
     tags:
@@ -142,7 +142,7 @@ works:
     title: Bracelet (Orange)
     when: ''
   - images:
-      - file: /images/gpe61.jpg
+      - file: gpe61_oh17gp
     medium: Polyurethane Resin
     slug: bracelet-pink
     tags:
@@ -150,7 +150,7 @@ works:
     title: Bracelet (Pink)
     when: ''
   - images:
-      - file: /images/gpe60.jpg
+      - file: gpe60_cvct3h
     medium: Polyurethane Resin
     slug: bracelet-red-and-black
     tags:
@@ -158,7 +158,7 @@ works:
     title: Bracelet (Red and Black)
     when: ''
   - images:
-      - file: /images/gpe57.jpg
+      - file: gpe57_njdptt
     medium: Polyurethane Resin
     slug: bracelet-yellow
     tags:
@@ -167,7 +167,7 @@ works:
     when: ''
   - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
     images:
-      - file: /images/gpe126.jpg
+      - file: gpe126_urhqpy
     medium: 'Epoxy Resin, Dacron'
     slug: cloud-lamp
     tags:
@@ -177,7 +177,7 @@ works:
   - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
     hero: true
     images:
-      - file: /images/works/gaetano-pesce/do-you-still-love-me-SJxi3Uyg1z/large.jpg
+      - file: large_l6nzoh
     medium: polyurethane resin and metal structure
     projects:
       - slug: design-miami-2016-pesce
@@ -189,7 +189,7 @@ works:
   - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
     edition: Unique
     images:
-      - file: /images/works/gaetano-pesce/horse-cabinet-ByxFy8AkJz/large.jpg
+      - file: large_m6d6hx
     medium: 'laminated plywood, gold leaf doors'
     projects:
       - slug: design-miami-2016-pesce
@@ -200,7 +200,7 @@ works:
     when: '2006'
   - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
     images:
-      - file: /images/gp26.jpg
+      - file: gp26_fnugdv
     medium: Laminated plywood and polyurethane resin
     slug: face-cabinet
     tags:
@@ -209,7 +209,7 @@ works:
     when: '2015'
   - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
     images:
-      - file: /images/gpe7.jpg
+      - file: gpe7_uukgce
     medium: 'Plywood, MDF, polyurethane resin, papier maché'
     slug: ritratto-dell-uomo-contento-cabinet
     tags:
@@ -220,7 +220,7 @@ works:
     edition: 'Unique '
     hero: false
     images:
-      - file: /images/works/gaetano-pesce/puglia-cabinet-ByFkIRyyG/large.jpg
+      - file: large_bh76wt
     medium: 'wood, papier maché'
     projects:
       - slug: design-miami-2016-pesce
@@ -231,7 +231,7 @@ works:
     when: '2007'
   - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
     images:
-      - file: /images/gpe99.jpg
+      - file: gpe99_tcmdje
     medium: 'Resin, wood, steel'
     slug: tornando-dal-circo-cabinet
     tags:
@@ -240,7 +240,7 @@ works:
     when: '2016'
   - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
     images:
-      - file: /images/gpe73.jpg
+      - file: gpe73_whcyfr
     medium: 'Bricks of Glass, foam and polyester resin'
     slug: golgotha-table
     tags:
@@ -249,7 +249,7 @@ works:
     when: '1972'
   - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
     images:
-      - file: /images/gpe74.jpg
+      - file: gpe74_ozhgrx
     medium: "Papier maché, resin, and\_polyurethane\_foam"
     slug: swamp-coffee-table
     tags:
@@ -258,7 +258,7 @@ works:
     when: '2015'
   - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
     images:
-      - file: /images/gpe 9.jpg
+      - file: gpe_9_j2jvzj
     medium: Polyurethane resin and papier maché
     slug: tree-vase-xxl
     tags:
@@ -267,7 +267,7 @@ works:
     when: '2016'
   - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
     images:
-      - file: /images/gpe10.jpg
+      - file: gpe10_whfx3a
     medium: Polyurethane resin and papier maché
     slug: tree-vase-medium
     tags:
@@ -276,7 +276,7 @@ works:
     when: '2016'
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
     images:
-      - file: /images/gpe11.jpg
+      - file: gpe11_lxwvro
     medium: Polyurethane resin and papier maché
     slug: tree-vase-small
     tags:
@@ -285,7 +285,7 @@ works:
     when: ''
   - dimensions: 39.37 x 9.84 x 9.84 inches (100 x 25 x 25 cm)
     images:
-      - file: /images/gpe14.jpg
+      - file: gpe14_go5nuk
     medium: Polyurethane resin and papier maché
     slug: tree-vase-cirpresso
     tags:
@@ -294,7 +294,7 @@ works:
     when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
     images:
-      - file: /images/gpe15.jpg
+      - file: gpe15_qbxbwc
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs
     tags:
@@ -303,7 +303,7 @@ works:
     when: '2015'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
     images:
-      - file: /images/gpe16.jpg
+      - file: gpe16_ixjhix
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs-2
     tags:
@@ -312,7 +312,7 @@ works:
     when: '2015'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: /images/gpe18.jpg
+      - file: gpe18_ojx8kn
     medium: Polyurethane resin
     slug: jeanne-chair-1
     tags:
@@ -321,7 +321,7 @@ works:
     when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: /images/gpe19.jpg
+      - file: gpe19_ns6buc
     medium: Polyurethane resin
     slug: jeanne-chair-2
     tags:
@@ -330,7 +330,7 @@ works:
     when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: /images/gpe20.jpg
+      - file: gpe20_wuxxqn
     medium: Polyurethane resin
     slug: jeanne-chair-3
     tags:
@@ -339,7 +339,7 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe21.jpg
+      - file: gpe21_tu12mk
     medium: Polyurethane resin
     slug: trash-can-1
     tags:
@@ -348,7 +348,7 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe22.jpg
+      - file: gpe22_xixpor
     medium: Polyurethane resin
     slug: trash-can-2
     tags:
@@ -357,7 +357,7 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe23.jpg
+      - file: gpe23_ypy8qv
     medium: Polyurethane resin
     slug: trash-can-3
     tags:
@@ -366,7 +366,7 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe25.jpg
+      - file: gpe25_pnqsfj
     medium: Polyurethane resin
     slug: trash-can-5
     tags:
@@ -375,7 +375,7 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: /images/gpe 24.jpg
+      - file: gpe_24_nur33k
     medium: Polyurethane resin
     slug: trash-can-4
     tags:
@@ -384,7 +384,7 @@ works:
     when: '2016'
   - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
     images:
-      - file: /images/gpe36.jpg
+      - file: gpe36_taw4ww
     medium: Polyurethane resin
     slug: vase-with-red-legs
     tags:
@@ -393,7 +393,7 @@ works:
     when: '2016'
   - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
     images:
-      - file: /images/gpe37.jpg
+      - file: gpe37_rum41u
     medium: Polyurethane resin
     slug: mini-flame-vase
     tags:
@@ -402,7 +402,7 @@ works:
     when: '2014'
   - dimensions: 5.91 x 7.87 x 7.87 inches (15 x 20 x 20 cm)
     images:
-      - file: /images/gpe38.jpg
+      - file: gpe38_wructw
     medium: Polyurethane resin
     slug: mini-flame-vase-2
     tags:
@@ -411,7 +411,7 @@ works:
     when: '2014'
   - dimensions: 9.45 x 6.69 x 6.69 inches (24 x 17 x 17 cm)
     images:
-      - file: /images/gpe39.jpg
+      - file: gpe39_yw4isf
     medium: Polyurethane resin
     slug: amber-vase
     tags:
@@ -420,7 +420,7 @@ works:
     when: '2015'
   - dimensions: 11.02 x 17.32 x 17.32 inches (28 x 44 x 44 cm)
     images:
-      - file: /images/gpe40.jpg
+      - file: gpe40_ljihta
     medium: Polyurethane resin
     slug: 3-leg-vase
     tags:
@@ -429,7 +429,7 @@ works:
     when: '2016'
   - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
     images:
-      - file: /images/gpe41.jpg
+      - file: gpe41_i3zcmk
     medium: Polyurethane resin
     slug: mini-medusa-vase
     tags:
@@ -438,7 +438,7 @@ works:
     when: '2015'
   - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     images:
-      - file: /images/gpe42.jpg
+      - file: gpe42_aobet8
     medium: Polyurethane resin
     slug: mini-stacci-vase
     tags:
@@ -447,7 +447,7 @@ works:
     when: '2015'
   - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
     images:
-      - file: /images/gpe44.jpg
+      - file: gpe44_uqi2cd
     medium: Polyurethane resin
     slug: scaglie-vase-green
     tags:
@@ -463,7 +463,7 @@ works:
     when: '2015'
   - dimensions: 12.6 x 17.32 x 17.32 inches (32 x 44 x 44 cm)
     images:
-      - file: /images/gpe52.jpg
+      - file: gpe52_cfiks3
     medium: Polyurethane resin
     slug: flame-vase-medium
     tags:
@@ -472,7 +472,7 @@ works:
     when: '2014'
   - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
     images:
-      - file: /images/gpe53.jpg
+      - file: gpe53_e3qsay
     medium: Polyurethane resin
     slug: skinny-vase
     tags:
@@ -481,7 +481,7 @@ works:
     when: '2015'
   - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
     images:
-      - file: /images/gpe54.jpg
+      - file: gpe54_lkvhza
     medium: Polyurethane resin
     slug: radici-vase-red
     tags:
@@ -490,7 +490,7 @@ works:
     when: '2010'
   - dimensions: 8.66 x 9.84 x 9.84 inches (22 x 25 x 25 cm)
     images:
-      - file: /images/gpe55.jpg
+      - file: gpe55_sqnbxn
     medium: Polyurethane resin
     slug: radici-vase-red-black
     tags:
@@ -499,7 +499,7 @@ works:
     when: '2010'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe33.jpg
+      - file: gpe33_mxcbd6
     medium: Polyurethane resin
     slug: small-rock-vase
     tags:
@@ -508,7 +508,7 @@ works:
     when: '2016'
   - dimensions: 27.56 x 21.65 x 21.65 inches (70 x 55 x 55 cm)
     images:
-      - file: /images/gpe34.jpg
+      - file: gpe34_fvxrcg
     medium: Polyurethane resin
     slug: pebble-vase
     tags:
@@ -524,7 +524,7 @@ works:
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe140.jpg
+      - file: gpe140_ubzllm
     medium: Polyurethane resin
     slug: small-pebble-vase
     tags:
@@ -540,7 +540,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe142.jpg
+      - file: gpe142_uddja4
     medium: Polyurethane resin
     slug: small-pebble-vase-2
     tags:
@@ -549,7 +549,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe143.jpg
+      - file: gpe143_d0zbbv
     medium: Polyurethane resin
     slug: small-pebble-vase-3
     tags:
@@ -558,7 +558,7 @@ works:
     when: '2017'
   - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe144.jpg
+      - file: gpe144_ix61s8
     medium: Polyurethane resin
     slug: small-pebble-vase-4
     tags:
@@ -567,7 +567,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe145.jpg
+      - file: gpe145_i4egec
     medium: Polyurethane resin
     slug: small-pebble-vase-5
     tags:
@@ -576,7 +576,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe146.jpg
+      - file: gpe146_m2bojn
     medium: Polyurethane resin
     slug: small-pebble-vase-6
     tags:
@@ -585,7 +585,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe147.jpg
+      - file: gpe147_au27az
     medium: Polyurethane resin
     slug: small-pebble-vase-7
     tags:
@@ -594,7 +594,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe148.jpg
+      - file: gpe148_dz7bf1
     medium: Polyurethane resin
     slug: small-pebble-vase-8
     tags:
@@ -603,7 +603,7 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe149.jpg
+      - file: gpe149_wazum0
     medium: Polyurethane resin
     slug: small-pebble-vase-9
     tags:
@@ -621,7 +621,7 @@ works:
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
     images:
-      - file: /images/gpe151.jpg
+      - file: gpe151_xgcf1m
     medium: Polyurethane resin
     slug: ice-cream-vase-1
     tags:
@@ -630,7 +630,7 @@ works:
     when: '2017'
   - dimensions: 11.5 x 10.5 x 10 inches (29.2 x 26.7 x 25.4 cm)
     images:
-      - file: /images/gpe152.jpg
+      - file: gpe152_k1iolz
     medium: Polyurethane resin
     slug: ice-cream-vase-2
     tags:
@@ -639,7 +639,7 @@ works:
     when: '2017'
   - dimensions: 8.5 x 7.5 x 6.5 inches (21.6 x 19.1 x 16.5 cm)
     images:
-      - file: /images/gpe153.jpg
+      - file: gpe153_nfaee7
     medium: Polyurethane resin
     slug: ice-cream-vase-3
     tags:
@@ -648,7 +648,7 @@ works:
     when: '2017'
   - dimensions: 8.5 x 7 x 7 inches (21.6 x 17.8 x 17.8 cm)
     images:
-      - file: /images/gpe154.jpg
+      - file: gpe154_hwqqsk
     medium: Polyurethane resin
     slug: ice-cream-vase-4
     tags:
@@ -657,7 +657,7 @@ works:
     when: '2017'
   - dimensions: 9.75 x 8.5 x 8.5 inches (24.8 x 21.6 x 21.6 cm)
     images:
-      - file: /images/gpe155.jpg
+      - file: gpe155_pqzxcr
     medium: Polyurethane resin
     slug: ice-cream-vase-5
     tags:
@@ -666,7 +666,7 @@ works:
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
     images:
-      - file: /images/gpe156.jpg
+      - file: gpe156_kpbbnz
     medium: Polyurethane resin
     slug: ice-cream-vase-6
     tags:
@@ -675,7 +675,7 @@ works:
     when: '2017'
   - dimensions: 9.5 x 12 x 9.5 inches (24.1 x 30.5 x 24.1 cm)
     images:
-      - file: /images/gpe157.jpg
+      - file: gpe157_yay3q0
     medium: Polyurethane resin
     slug: ice-cream-vase-7
     tags:
@@ -684,7 +684,7 @@ works:
     when: '2017'
   - dimensions: 8.25 x 7 x 7 inches (20.955 x 17.78 x 17.78 cm)
     images:
-      - file: /images/gpe158.jpg
+      - file: gpe158_d33kud
     medium: Polyurethane resin
     slug: ice-cream-vase-8
     tags:
@@ -693,7 +693,7 @@ works:
     when: '2017'
   - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
     images:
-      - file: /images/gpe159.jpg
+      - file: gpe159_splkj7
     medium: Polyurethane resin
     slug: ice-cream-vase-9
     tags:
@@ -702,7 +702,7 @@ works:
     when: '2017'
   - dimensions: 9.5 x 7.5 x 7.5 inches (24.13 x 19.05 x 19.05 cm)
     images:
-      - file: /images/gpe160.jpg
+      - file: gpe160_okhyar
     medium: Polyurethane resin
     slug: ice-cream-vase-10
     tags:
@@ -711,7 +711,7 @@ works:
     when: '2017'
   - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
     images:
-      - file: /images/gpe162.jpg
+      - file: gpe162_x3lywj
     medium: Polyurethane resin
     slug: ice-cream-vase-11
     tags:
@@ -720,7 +720,7 @@ works:
     when: '2017'
   - dimensions: 8 x 7.25 x 7.25 inches (20.32 x 18.415 x 18.415 cm)
     images:
-      - file: /images/gpe163.jpg
+      - file: gpe163_xxklbc
     medium: Polyurethane resin
     slug: ice-cream-vase-12
     tags:
@@ -729,7 +729,7 @@ works:
     when: '2017'
   - dimensions: 8.25 x 7 x 7 inches (20.955 x 17.78 x 17.78 cm)
     images:
-      - file: /images/gpe164.jpg
+      - file: gpe164_ozcanh
     medium: Polyurethane resin
     slug: ice-cream-vase-13
     tags:

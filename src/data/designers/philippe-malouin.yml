@@ -19,7 +19,7 @@ works:
     edition: Ed. of 8 + 2 AP
     hero: true
     images:
-      - file: /images/works/malouin-philippe/pm-core-SJjsF31JM/large.jpg
+      - file: large_ja0v9g
     medium: 'cast concrete, exposed aggregate'
     projects:
       - slug: design-miami-2017-philippe-malouin-core
@@ -29,7 +29,7 @@ works:
     title: Core
     when: '2017'
   - images:
-      - file: /images/philippemalouinstool.png
+      - file: philippemalouinstool_dv8svr
     medium: 'cast concrete, exposed aggregate'
     slug: pm-stool
     tags:
