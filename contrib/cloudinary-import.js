@@ -4,12 +4,10 @@ const fs = require('fs-extra')
 const yaml = require('js-yaml')
 const flatmap = require('lodash.flatmapdeep')
 
-// XXX : move 2 env b4 u commit
-
 cloudinary.config({
   cloud_name: 'salon94-design',
-  api_key: '174487771988143',
-  api_secret: 'W4zYq77yxMnQ2Gbpel10wC-0vjA'
+  api_key: 'plsdonthackme',
+  api_secret: 'plsdonthackme'
 });
 
 function parseDesignerImages (file) {
