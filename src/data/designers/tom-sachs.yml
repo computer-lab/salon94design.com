@@ -27,7 +27,7 @@ works:
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     hero: true
     images:
-      - file: /images/works/tom-sachs/x-chair-3-Hy0BcXtSG/large.jpg
+      - file: large_vupqfj
       - {}
     medium: 'Polycarbonate, plywood, latex paint, epoxy resin, steel hardware'
     projects:
@@ -40,7 +40,7 @@ works:
   - dimensions: 32 x 25 x 21.75 inches (81.3 x 63.5 x 55.2 cm)
     images:
       - file: >-
-          /images/works/tom-sachs/x-chair-with-arms-prototype-rJe0rcQKrG/large.jpg
+          large_wusjtc
     medium: 'Polycarbonate, plywood, latex paint, steel, epoxy resin'
     projects:
       - slug: design-miami-basel-2017
@@ -51,7 +51,7 @@ works:
     when: '2017'
   - dimensions: 31.5 x 22 x 21.75 inches (80 x 55.9 x 55.2 cm)
     images:
-      - file: /images/works/tom-sachs/lcw-prototype-r1bABqXKrf/large.jpg
+      - file: large_zkw2mh
     medium: 'Plywood, Latex Paint, Steel Hardware, Epoxy Resin, Urethane'
     projects:
       - slug: design-miami-basel-2017
@@ -62,7 +62,7 @@ works:
     when: '2017'
   - dimensions: 33 x 31 x 34 inches (83.8 x 78.7 x 86.4 cm)
     images:
-      - file: /images/works/tom-sachs/lounge-chair-2-HkG0H5QFHz/large.jpg
+      - file: large_iwsnc1
     medium: >-
       Plywood, latex paint, neoprene rubber, steel hardware, leather, latex
       foam, polyester mesh, ripstop nylon
@@ -75,7 +75,7 @@ works:
     when: '2017'
   - dimensions: 32 x 19.25 x 21 inches (81.3 x 48.9 x 53.3 cm)
     images:
-      - file: /images/works/tom-sachs/adirondack-BymCS5QYrz/large.jpg
+      - file: large_un30it
     medium: 'ConEd Barrier, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -96,7 +96,7 @@ works:
     when: '2015'
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
     images:
-      - file: /images/works/tom-sachs/ottoman-1-HkE1awmKSG/large.jpg
+      - file: large_syy08h
     medium: >-
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
       ripstop nylon
@@ -109,7 +109,7 @@ works:
     when: '2017'
   - dimensions: 28.25 x 43.5 x 43.5 inches (71.8 x 110.5 x 110.5 cm)
     images:
-      - file: /images/works/tom-sachs/medium-round-table-1-ByEAH9mKrM/large.jpg
+      - file: large_mqoofq
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -120,7 +120,7 @@ works:
     when: '2017'
   - dimensions: 20.375 x 18.125 x 18.125 inches (51.8 x 46 x 46 cm)
     images:
-      - file: /images/works/tom-sachs/side-table-1-B1S0S97Krz/large.jpg
+      - file: large_twxn2f
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-basel-2017
@@ -141,7 +141,7 @@ works:
     when: '2017'
   - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
     images:
-      - file: /images/works/tom-sachs/eileen-gray-lamp-HyMXPQFHM/large.jpg
+      - file: large_kvo346
     medium: 'ConEd Barrier, steel hardware, incandescent bulb'
     projects:
       - slug: design-miami-basel-2017
@@ -152,7 +152,7 @@ works:
     when: '2003'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
     images:
-      - file: /images/works/tom-sachs/brick-vase-ry_y6wQKrz/large.jpg
+      - file: large_ysnmbj
     medium: 'Plywood, latex paint, epoxy resin, porcelain and steel hardware'
     projects:
       - slug: design-miami-basel-2017
