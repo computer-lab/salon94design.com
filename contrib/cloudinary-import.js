@@ -4,12 +4,6 @@ const fs = require('fs-extra')
 const yaml = require('js-yaml')
 const flatmap = require('lodash.flatmapdeep')
 
-cloudinary.config({
-  cloud_name: 'salon94-design',
-  api_key: 'plsdonthackme',
-  api_secret: 'plsdonthackme'
-});
-
 function parseDesignerImages (file) {
   const obj = yaml.safeLoad(file)
   return obj.works.map((work) => (
