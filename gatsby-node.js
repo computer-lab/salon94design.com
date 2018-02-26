@@ -283,6 +283,10 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
         processPress(node)
 
+        if (node.hero) {
+          node.hero = cloudinary.url(node.hero, { secure: true })
+        }
+
         await hydrateImages(node, true)
       }
       break
@@ -356,9 +360,8 @@ function hydrateImage(image) {
       height: data.height,
       resized: sizes.map((size) => ({
         file: cloudinary.url(publicId, { secure: true, ...size, crop: 'fill' }),
-        width: data.width,
-        height: data.height,
-        ...size
+        width: size.width || Math.round((data.width / data.height) * size.height),
+        height: size.height || Math.round(size.width / (data.width / data.height))
       }))
     }
   }).catch((err) => {
