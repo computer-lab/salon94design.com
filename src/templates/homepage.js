@@ -69,13 +69,13 @@ const When = styled.div`
   font-weight: 100;
 `
 
-export default function Homepage({ data }) {
+export default function Homepage({ data, pathContext }) {
   const { project, allDesignersYaml } = data
+  const { featuredImage } = pathContext
 
   const designers = allDesignersYaml.edges.map(edge => edge.node)
 
-  const imageSelection = chooseProjectImage(project, designers)
-  const image = imageSelection ? imageInfo(imageSelection) : null
+  const image = featuredImage ? imageInfo(featuredImage) : null
 
   const titleLabel =
     project.type === 'Exhibition' ? `Current Exhibition` : `Current Fair`
@@ -106,13 +106,11 @@ export default function Homepage({ data }) {
           </ProjectTitle>
           <ImageWrapper>
             <Link to={link}>
-              {/* Temporary gif feature */}
-              <img src="/images/growing-up-feature.gif" />
-              {/*<img
+              <img
                 src={image && image.src}
                 srcSet={image && image.srcSet}
                 sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
-              />*/}
+              />
             </Link>
           </ImageWrapper>
         </FeaturedWrapper>

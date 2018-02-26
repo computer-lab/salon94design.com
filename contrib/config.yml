@@ -283,3 +283,6 @@ collections:
         collection: project
         searchFields: [slug, title]
         valueField: slug
+      - name: featuredImage
+        label: Featured exhibition image - Cloudinary public id
+        widget: string
