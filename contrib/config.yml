@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: computer-lab/salon94design.com
-  branch: master
+  branch: r1b-cloudinary
 
 media_folder: static/images
 public_folder: /images
@@ -76,8 +76,8 @@ collections:
             default: []
             fields:
               - name: file
-                label: File
-                widget: image
+                label: Cloudinary public id
+                widget: string
           - name: video
             label: Video
             default: {vimeoId: '', caption: ''}
@@ -159,8 +159,8 @@ collections:
         default: []
         fields:
           - name: file
-            label: File
-            widget: image
+            label: Cloudinary public id
+            widget: string
           - name: caption
             label: Caption
             widget: string
@@ -188,8 +188,8 @@ collections:
     format: yaml
     fields:
       - name: hero
-        label: Hero Image
-        widget: image
+        label: Hero image - Cloudinary public id
+        widget: string
       - name: staff
         label: Staff
         widget: list
@@ -269,8 +269,8 @@ collections:
             label: Title
             widget: string
           - name: file
-            label: File
-            widget: image
+            label: Cloudinary public id
+            widget: string
   - name: landingPage
     label: Landing Page
     folder: src/data/landing-page
@@ -283,3 +283,6 @@ collections:
         collection: project
         searchFields: [slug, title]
         valueField: slug
+      - name: featuredImage
+        label: Featured exhibition image - Cloudinary public id
+        widget: string

@@ -19,8 +19,8 @@ works:
     edition: 'Unique '
     hero: false
     images:
-      - file: /images/works/jack-craig/bronze-stool-ryS0Hlgkf/large.jpg
-      - file: /images/works/jack-craig/bronze-stool-BJer0Helkf/large.jpg
+      - file: large_r1ual2
+      - file: large_dyz0v6
     medium: 'bronze, concrete'
     price: ''
     projects: []
@@ -33,7 +33,7 @@ works:
     edition: Unique
     hero: false
     images:
-      - file: /images/works/jack-craig/large-marble-table-lamp-rJmt4nsj3Z/large.jpg
+      - file: large_qcdike
     medium: 'bronze, marble'
     price: ''
     projects:
@@ -47,8 +47,8 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: /images/works/jack-craig/dripped-bronze-shelf-rkKXM1g1z/large.jpg
-      - file: /images/works/jack-craig/dripped-bronze-shelf-HygF7fJe1f/large.jpg
+      - file: large_rkekzs
+      - file: large_shqe4z
     medium: 'bronze, concrete'
     slug: dripped-bronze-shelf
     tags:
@@ -57,7 +57,7 @@ works:
     when: '2015'
   - dimensions: 25 x 16 x 16 inches (63.5 x 40.6 x 40.6 cm)
     images:
-      - file: /images/jcr2.jpg
+      - file: jcr2_t4cvlp
     medium: Bronze and marble
     slug: sphere-marble-table-lamp
     tags:
@@ -66,7 +66,7 @@ works:
     when: '2017'
   - dimensions: 34 x 20 x 16 inches (86.4 x 50.8 x 40.6 cm)
     images:
-      - file: /images/jcr3.jpg
+      - file: jcr3_ikhxri
     medium: Bronze and granite
     projects:
       - slug: Bowery Design 2017
@@ -77,7 +77,7 @@ works:
     when: '2017'
   - dimensions: 22 x 16 x 16 inches (55.9 x 40.6 x 40.6 cm)
     images:
-      - file: /images/jcr5.jpg
+      - file: jcr5_gtwhe0
     medium: Bronze and granite
     projects:
       - slug: Bowery Design 2017
@@ -88,7 +88,7 @@ works:
     when: '2017'
   - dimensions: 22 x 20 x 20 inches (55.9 x 50.8 x 50.8 cm)
     images:
-      - file: /images/jcr9.jpg
+      - file: jcr9_zerhhg
     medium: Bronze and granite
     projects:
       - slug: Bowery Design 2017
@@ -99,7 +99,7 @@ works:
     when: '2017'
   - dimensions: 22 x 12 x 26 inches (55.9 x 30.5 x 66 cm)
     images:
-      - file: /images/jcr7.jpg
+      - file: jcr7_p2rntz
     medium: Bronze and marble
     projects:
       - slug: Bowery Design 2017

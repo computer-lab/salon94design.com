@@ -23,7 +23,7 @@ press:
 works:
   - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
     images:
-      - file: /images/aa116.jpg
+      - file: aa116_dazlnt
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -34,7 +34,7 @@ works:
     when: '2017'
   - dimensions: 20.08 x 8.27 x 7.09 inches (51 x 21 x 18 cm)
     images:
-      - file: /images/aa117.jpg
+      - file: aa117_s2fief
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -46,7 +46,7 @@ works:
   - dimensions: 11.81 x 9.84 x 8.66 inches (30 x 25 x 22 cm)
     hero: true
     images:
-      - file: /images/works/anton-alvarez/z-0308172026-HJgBk920Rb/large.jpg
+      - file: large_nupzav
     medium: glazed stoneware
     slug: z-0308172026
     tags:
@@ -55,7 +55,7 @@ works:
     when: '2017'
   - dimensions: 12.6 x 7.87 x 12.99 inches (32 x 20 x 33 cm)
     images:
-      - file: /images/aa118.jpg
+      - file: aa118_bfkbp2
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -66,7 +66,7 @@ works:
     when: '2017'
   - dimensions: 14.17 x 11.42 x 9.06 inches (36 x 29 x 23 cm)
     images:
-      - file: /images/aa124.jpg
+      - file: aa124_byjodn
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -77,7 +77,7 @@ works:
     when: '2017'
   - dimensions: Dimensions variable
     images:
-      - file: /images/aa142.jpg
+      - file: aa142_antv9b
     medium: Glazed stoneware
     slug: alphabet-aerobics
     tags:
@@ -86,7 +86,7 @@ works:
     when: '2017'
   - dimensions: 20.47 x 9.06 x 8.27 inches (52 x 23 x 21 cm)
     images:
-      - file: /images/aa140.jpg
+      - file: aa140_nvblxo
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -97,7 +97,7 @@ works:
     when: '2017'
   - dimensions: 9.06 x 10.63 x 9.06 inches (23 x 27 x 23 cm)
     images:
-      - file: /images/aa119.jpg
+      - file: aa119_jif8i9
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -108,7 +108,7 @@ works:
     when: '2017'
   - dimensions: 11.81 x 9.84 x 8.66 inches (30 x 25 x 22 cm)
     images:
-      - file: /images/aa120.jpg
+      - file: aa120_kj2zk2
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -119,7 +119,7 @@ works:
     when: '2017'
   - dimensions: 14.96 x 11.02 x 9.06 inches (38 x 28 x 23 cm)
     images:
-      - file: /images/aa121.jpg
+      - file: aa121_dkvsg5
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -130,7 +130,7 @@ works:
     when: '2017'
   - dimensions: 20.08 x 9.84 x 9.84 inches (51 x 25 x 25 cm)
     images:
-      - file: /images/aa122.jpg
+      - file: aa122_kstzjh
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -141,7 +141,7 @@ works:
     when: '2017'
   - dimensions: 18.5 x 10.63 x 6.69 inches (47 x 27 x 17 cm)
     images:
-      - file: /images/aa123.jpg
+      - file: aa123_rkd3mo
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -152,7 +152,7 @@ works:
     when: '2017'
   - dimensions: 15.75 x 12.6 x 12.6 inches (40 x 32 x 32 cm)
     images:
-      - file: /images/aa125.jpg
+      - file: aa125_bubzzj
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -163,7 +163,7 @@ works:
     when: '2017'
   - dimensions: 15.35 x 9.45 x 9.45 inches (39 x 24 x 24 cm)
     images:
-      - file: /images/aa126.jpg
+      - file: aa126_nthks9
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -174,7 +174,7 @@ works:
     when: '2017'
   - dimensions: 15.75 x 9.06 x 8.66 inches (40 x 23 x 22 cm)
     images:
-      - file: /images/aa127.jpg
+      - file: aa127_vh612o
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -185,7 +185,7 @@ works:
     when: '2017'
   - dimensions: 13.39 x 10.63 x 9.84 inches (34 x 27 x 25 cm)
     images:
-      - file: /images/aa128.jpg
+      - file: aa128_nqb9m9
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -196,7 +196,7 @@ works:
     when: '2017'
   - dimensions: 14.96 x 11.02 x 8.27 inches (38 x 28 x 21 cm)
     images:
-      - file: /images/aa129.jpg
+      - file: aa129_sldmjl
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -207,7 +207,7 @@ works:
     when: '2017'
   - dimensions: 15.75 x 12.6 x 12.6 inches (46 x 30 x 19 cm)
     images:
-      - file: /images/aa130.jpg
+      - file: aa130_ky1lnk
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -218,7 +218,7 @@ works:
     when: '2017'
   - dimensions: 19.69 x 8.27 x 7.48 inches (50 x 21 x 19 cm)
     images:
-      - file: /images/aa131.jpg
+      - file: aa131_blqfbe
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -229,7 +229,7 @@ works:
     when: '2017'
   - dimensions: 15.75 x 10.24 x 7.87 inches (40 x 26 x 20 cm)
     images:
-      - file: /images/aa133.jpg
+      - file: aa133_riklkh
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -240,7 +240,7 @@ works:
     when: '2017'
   - dimensions: 17.72 x 9.84 x 7.48 inches (45 x 25 x 19 cm)
     images:
-      - file: /images/aa134.jpg
+      - file: aa134_flalzg
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -251,7 +251,7 @@ works:
     when: '2017'
   - dimensions: 14.57 x 9.06 x 9.84 inches (37 x 23 x 25 cm)
     images:
-      - file: /images/aa135.jpg
+      - file: aa135_sowdja
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -262,7 +262,7 @@ works:
     when: '2017'
   - dimensions: 12.2 x 9.84 x 7.87 inches (31 x 25 x 20 cm)
     images:
-      - file: /images/aa136.jpg
+      - file: aa136_m8e671
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -273,7 +273,7 @@ works:
     when: '2017'
   - dimensions: 18.11 x 11.81 x 13.39 inches (46 x 30 x 34 cm)
     images:
-      - file: /images/aa137.jpg
+      - file: aa137_hs9cw2
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -284,7 +284,7 @@ works:
     when: '2017'
   - dimensions: 15.35 x 7.48 x 8.66 inches (39 x 19 x 22 cm)
     images:
-      - file: /images/aa138.jpg
+      - file: aa138_tkkcyl
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -295,7 +295,7 @@ works:
     when: '2017'
   - dimensions: 15.75 x 9.45 x 10.63 inches (40 x 24 x 27 cm)
     images:
-      - file: /images/aa139.jpg
+      - file: aa139_ydmdm3
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -306,7 +306,7 @@ works:
     when: '2017'
   - dimensions: 20.47 x 9.06 x 8.27 inches (52 x 23 x 21 cm)
     images:
-      - file: /images/aa140.jpg
+      - file: aa140_nvblxo
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -317,7 +317,7 @@ works:
     when: '2017'
   - dimensions: 17.32 x 9.45 x 9.45 inches (44 x 24 x 24 cm)
     images:
-      - file: /images/aa141.jpg
+      - file: aa141_ssq9r3
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
@@ -330,7 +330,7 @@ works:
     hero: false
     images:
       - file: >-
-          /images/works/anton-alvarez/the-thread-wrapping-machine-chair-090415-SkB1ch00-/large.jpg
+          large_edagem
     medium: >-
       Polyester thread, fabric, fake-fur, pva glue, color pigment, mdf, plywood,
       osb, wood, plastic and metal
@@ -343,7 +343,7 @@ works:
     hero: false
     images:
       - file: >-
-          /images/works/anton-alvarez/the-thread-wrapping-machine-bench-271115-2015-S1Y43ji3b/large.jpg
+          large_ja2zo4
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic, metal
@@ -362,7 +362,7 @@ works:
     hero: false
     images:
       - file: >-
-          /images/works/anton-alvarez/the-thread-wrapping-machine-untitled-280415-HJZbb4ZJG/large.jpg
+          large_nw6ikn
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -373,7 +373,7 @@ works:
     when: '2015'
   - dimensions: 17 3/4 x 13 x 13 inches (45.1 x 33 x 33 cm)
     images:
-      - file: /images/aa111.jpg
+      - file: aa111_wbnms7
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -386,7 +386,7 @@ works:
     when: '2017'
   - dimensions: 18 x 20 3/4 x 9 3/4 inches (45.7 x 52.7 x 24.8 cm)
     images:
-      - file: /images/aa113.jpg
+      - file: aa113_hlidrz
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -399,7 +399,7 @@ works:
     when: '2017'
   - dimensions: 19 x 17 1/2 x 13 1/4 inches (48.3 x 44.5 x 33.7 cm)
     images:
-      - file: /images/aa114.jpg
+      - file: aa114_v8b6n9
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -412,7 +412,7 @@ works:
     when: '2017'
   - dimensions: 18 1/2 x 14 3/4 x 14 3/4 inches (47 x 37.5 x 37.5 cm)
     images:
-      - file: /images/aa115.jpg
+      - file: aa115_ztjg1l
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -425,7 +425,7 @@ works:
     when: '2017'
   - dimensions: 32 1/2 x 49 1/4 x 32 inches (82.6 x 125.1 x 81.3 cm)
     images:
-      - file: /images/aa112.jpg
+      - file: aa112_itva5d
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal

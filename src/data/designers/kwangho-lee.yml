@@ -14,8 +14,8 @@ works:
   - dimensions: 16 x 79 x 79 inches (40.6 x 200.7 x 200.7 cm)
     hero: false
     images:
-      - file: /images/works/kwangho-lee/silk-bench-1-ry_t42iih-/large.jpg
-      - file: /images/works/kwangho-lee/silk-bench-1-B1tYNnii3b/large.jpg
+      - file: large_nyckqp
+      - file: large_ko1pk3
     medium: Silk
     price: ''
     projects:
@@ -30,7 +30,7 @@ works:
     dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
     hero: false
     images:
-      - file: /images/works/kwangho-lee/red-silk-bench-BkBeeT1yG/large.jpg
+      - file: large_d92map
     medium: Custom silk rope
     slug: red-silk-bench
     tags:
@@ -40,7 +40,7 @@ works:
   - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
     images:
       - file: >-
-          /images/works/kwangho-lee/kwangho-large-nylon-bench-SyqK42oi2Z/large.jpg
+          large_qlarv2
     medium: Nylon
     price: ''
     projects:
@@ -52,8 +52,8 @@ works:
     when: '2006'
   - dimensions: 16.5 x 89 x 12.5 inches (41.9 x 226.1 x 31.8 cm)
     images:
-      - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-BkoFNnssn-/large.jpg
-      - file: /images/works/kwangho-lee/kwangho-small-pvc-bench-S12tE2sshZ/large.jpg
+      - file: large_bqsrv7
+      - file: large_hg2jjt
     medium: 'PVC '
     price: ''
     projects:
@@ -67,7 +67,7 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: /images/works/kwangho-lee/kwangholeechair-rJnArpJkG/large.jpg
+      - file: large_hhnwac
     medium: PVC tubing
     projects:
       - slug: ghost-dog
@@ -78,7 +78,7 @@ works:
     when: '2017'
   - dimensions: 19.5 x 13.5 x 29.5 inches (49.5 x 34.3 x 74.9 cm)
     images:
-      - file: /images/klee2.jpg
+      - file: klee2_egyxge
     medium: PVC tubing
     projects:
       - slug: Bowery Design 2017
@@ -90,7 +90,7 @@ works:
     when: '2017'
   - dimensions: 57.5 x 41.5 x 29 inches (146.1 x 105.4 x 73.7 cm)
     images:
-      - file: /images/klee4.jpg
+      - file: klee4_xt11vn
     medium: PVC tubing and copper pipe
     slug: lamp
     tags:

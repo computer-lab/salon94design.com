@@ -193,7 +193,7 @@ const Info = ({ data }) => {
       <Helmet title={`Salon 94 Design - Info`} />
 
       <Link to={'/'}>
-        <LogoImage src={imageFilepath(hero)} />
+        <LogoImage src={hero} />
       </Link>
 
       <SectionWrapper>
