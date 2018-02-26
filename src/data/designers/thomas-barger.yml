@@ -8,10 +8,10 @@ works:
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
     hero: true
     images:
-      - file: /images/tbar11.jpg
-      - file: /images/tbarlmc1.jpg
-      - file: /images/tbarlmc2.jpg
-      - file: /images/tbarlmc3.jpg
+      - file: tbar11_nutaaa
+      - file: tbarlmc1_rzehpx
+      - file: tbarlmc2_jsqxkj
+      - file: tbarlmc3_byh5ks
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -23,10 +23,10 @@ works:
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
     hero: true
     images:
-      - file: /images/tbar12.jpg
-      - file: /images/tbar12-a.jpg
-      - file: /images/tbar12-b.jpg
-      - file: /images/tbar12-c.jpg
+      - file: tbar12_s8kgms
+      - file: tbar12-a_idadfv
+      - file: tbar12-b_ye0ang
+      - file: tbar12-c_hyyskk
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -38,10 +38,10 @@ works:
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
     hero: true
     images:
-      - file: /images/tbar14.jpg
-      - file: /images/tbar14-a.jpg
-      - file: /images/tbar14-b.jpg
-      - file: /images/tbar14-d.jpg
+      - file: tbar14_tvabau
+      - file: tbar14-a_n2wvbe
+      - file: tbar14-b_uexywd
+      - file: tbar14-d_pcezvm
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -53,10 +53,10 @@ works:
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     hero: true
     images:
-      - file: /images/tbar16.jpg
-      - file: /images/tbar16-a.jpg
-      - file: /images/tbar16-b.jpg
-      - file: /images/tbar16-c.jpg
+      - file: tbar16_msnr8d
+      - file: tbar16-a_sbj2xk
+      - file: tbar16-b_vre28q
+      - file: tbar16-c_ju4isp
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -68,10 +68,10 @@ works:
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
     hero: true
     images:
-      - file: /images/tbar15.jpg
-      - file: /images/tbar15-a.jpg
-      - file: /images/tbar15-c.jpg
-      - file: /images/tbar15-d.jpg
+      - file: tbar15_fzjv83
+      - file: tbar15-a_hn5mj6
+      - file: tbar15-c_szgwwk
+      - file: tbar15-d_linr5z
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -83,10 +83,10 @@ works:
   - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
     hero: true
     images:
-      - file: /images/tbar13.jpg
-      - file: /images/tbar13-a.jpg
-      - file: /images/tbar13-b.jpg
-      - file: /images/tbar13-c.jpg
+      - file: tbar13_y8c6pm
+      - file: tbar13-a_tdu7sc
+      - file: tbar13-b_fynks9
+      - file: tbar13-c_n2qjhv
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -98,7 +98,7 @@ works:
   - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
     hero: false
     images:
-      - file: /images/works/thomas-barger/underwear-armoire-3-HJfbTTJyG/large.jpg
+      - file: large_ai257t
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
       - slug: ghost-dog
@@ -110,10 +110,10 @@ works:
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     hero: true
     images:
-      - file: /images/tbar17.jpg
-      - file: /images/tbar17-a.jpg
-      - file: /images/tbar17-b.jpg
-      - file: /images/tbar17-c.jpg
+      - file: tbar17_qdkxli
+      - file: tbar17-a_y86nth
+      - file: tbar17-b_dx0flt
+      - file: tbar17-c_nizwza
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -125,8 +125,8 @@ works:
   - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
     hero: true
     images:
-      - file: /images/tbar10instal.jpg
-      - file: /images/6.jpg
+      - file: tbar10instal_fdeawl
+      - file: 6_estibm
     medium: 'Paper pulp, carpet '
     projects:
       - slug: midtown-lever-house
@@ -138,7 +138,7 @@ works:
   - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
     hero: false
     images:
-      - file: /images/49936.jpg
+      - file: 49936_zbqcxa
     medium: 'Paper pulp, plywood, styrofoam, cardboard'
     price: ''
     projects:
@@ -151,10 +151,10 @@ works:
   - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
     hero: true
     images:
-      - file: /images/tbar18.jpg
-      - file: /images/tbar18l.jpg
-      - file: /images/tbar18b.jpg
-      - file: /images/tbar18r.jpg
+      - file: tbar18_rmdpic
+      - file: tbar18l_ely4pf
+      - file: tbar18b_enzjnd
+      - file: tbar18r_acdioo
     medium: Paper pulp
     projects:
       - slug: growing-up
@@ -165,10 +165,10 @@ works:
     when: '2017'
   - hero: true
     images:
-      - file: /images/tbar2.jpg
-      - file: /images/tbar2-a.jpg
-      - file: /images/tbar2-b.jpg
-      - file: /images/tbar2-c.jpg
+      - file: tbar2_pa29nq
+      - file: tbar2-a_ntlqig
+      - file: tbar2-b_eox0ro
+      - file: tbar2-c_rvoues
     medium: Paper pulp
     slug: chair
     tags:
@@ -178,7 +178,7 @@ works:
   - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
     hero: false
     images:
-      - file: /images/4F7A9960.jpg
+      - file: 4F7A9960_fra5k9
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects: []
     slug: alesandr-rodchenko-snack-chair
@@ -189,7 +189,7 @@ works:
   - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
     images:
       - file: >-
-          /images/works/thomas-barger/aleksandr-rodchenko-snack-chair-with-harness-rJyxSyqhAR-/large.jpg
+          large_nbvblq
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
       - slug: ghost-dog
@@ -200,7 +200,7 @@ works:
     when: '2017'
   - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
-      - file: /images/tbar4.jpg
+      - file: tbar4_kgiqz9
     medium: Paper pulp and Styrofoam
     projects:
       - slug: Bowery Design 2017
@@ -211,10 +211,10 @@ works:
     when: '2017'
   - hero: true
     images:
-      - file: /images/tbar3.jpg
-      - file: /images/tbar3-a.jpg
-      - file: /images/tbar3-b.jpg
-      - file: /images/tbar3-d.jpg
+      - file: tbar3_rddvfo
+      - file: tbar3-a_rn8hpm
+      - file: tbar3-b_ochlxr
+      - file: tbar3-d_bxpftp
     medium: Paper pulp
     slug: chair-2
     tags:

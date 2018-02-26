@@ -1,5 +1,7 @@
 const path = require('path')
 const util = require('util')
+const cloudinary = require('cloudinary').v2
+const promiseRetry = require('promise-retry')
 const remark = require('remark')
 const html = require('remark-html')
 const {
@@ -9,8 +11,6 @@ const {
   workLink,
 } = require('./src/util/path')
 const { getAllTags } = require('./src/util/tag')
-const { readdirAbsolute } = require('./transformer/data')
-const { getImageData, getWorkImageFilename, getProjectImageFilename, getInfoImageFilename } = require('./transformer/images')
 
 exports.createPages = props => {
   return Promise.all([
@@ -68,18 +68,22 @@ function createIndex({ boundActionCreators, graphql }) {
         edges {
           node {
             featuredProjectSlug
+            featuredImage
           }
         }
       }
     }
-  `).then(result => {
+  `).then(async result => {
     if (result.errors) return Promise.reject(result.errors)
 
     const { featuredProjectSlug } = result.data.allLandingPageYaml.edges[0].node
+    let { featuredImage } = result.data.allLandingPageYaml.edges[0].node
+    featuredImage = await hydrateImage({ file: featuredImage })
+
     createPage({
       path: '/',
       component: path.resolve(`src/templates/homepage.js`),
-      context: { featuredProjectSlug },
+      context: { featuredProjectSlug, featuredImage },
     })
   })
 }
@@ -236,15 +240,15 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
   const markdownToHtml = util.promisify(remark().use(html).process)
 
-  const hydrateImages = async (node, nameProvider, addDummyImages = false) => {
+  const hydrateImages = async (node, addDummyImages = false) => {
     if (node.images) {
+      let hydratedImages = []
       node.hydratedImages = await (
-        Promise.all(
-          node.images
-            .filter(image => image.file)
-            .map((image, idx) => hydrateImage(image, idx, nameProvider))
-        )
-        .filter(item => !!item)
+        node.images
+          .filter(image => image.file)
+          .reduce((acc, image) => acc.then(() => hydrateImage(image).then((hydratedImage) => hydratedImages.push(hydratedImage))), Promise.resolve())
+          .then(() => hydratedImages)
+          .filter(item => !!item)
       )
     }
 
@@ -278,8 +282,11 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
 
         processPress(node)
 
-        const nameProvider = (img, idx) => getInfoImageFilename(img, idx, '.jpg')
-        await hydrateImages(node, nameProvider, true)
+        if (node.hero) {
+          node.hero = cloudinary.url(node.hero, { secure: true })
+        }
+
+        await hydrateImages(node, true)
       }
       break
 
@@ -291,10 +298,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         processPress(node)
 
         const works = node.works || []
-        await Promise.all(works.map(async work => {
-          const nameProvider = (img, idx) => getWorkImageFilename(node, work, img, idx, '.jpg')
-          await hydrateImages(work, nameProvider)
-        }))
+        await works.reduce((acc, work) => acc.then(() => hydrateImages(work)), Promise.resolve())
       }
       break
 
@@ -303,32 +307,71 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         const html = await markdownToHtml(node.description)
         node.descriptionHtml = html.contents
 
-        const nameProvider = (img, idx) => getProjectImageFilename(node, img, idx, '.jpg')
-        await hydrateImages(node, nameProvider)
+        await hydrateImages(node)
       }
       break
   }
 }
 
-async function hydrateImage(image, idx, nameProvider) {
-  if (!image || !image.file || !nameProvider) {
-    return null
-  }
+function hydrateImage(image) {
+  function getNewSizes(width, height) {
+    const sizes = [{ width: 200 }, { width: 400 }]
 
-  const localFilename = nameProvider(image, idx)
-
-  const images = await readdirAbsolute(path.dirname(localFilename))
-  const resizedImages = images.filter(n => n !== localFilename)
-
-  try {
-    const imageData = await getImageData(localFilename)
-    return Object.assign({}, image, imageData, {
-      resized: await Promise.all(resizedImages.map(getImageData)),
+    const mediumWidths = [768, 948, 1068]
+    mediumWidths.forEach(mediumWidth => {
+      if (width > mediumWidth) sizes.push({ width: mediumWidth })
     })
-  } catch (err) {
-    console.error('error hydrating image')
-    console.error(image)
-    console.error(err)
-    return null
+
+    if (width >= height) {
+      const largeWidths = [1440, 2400, 3200]
+      largeWidths.forEach(largeWidth => {
+        if (width > largeWidth) sizes.push({ width: largeWidth })
+      })
+    } else {
+      sizes.push({ height: 300 })
+
+      const largeHeights = [600, 1600, 2400, 3200]
+      largeHeights.forEach(largeHeight => {
+        if (height > largeHeight) sizes.push({ height: largeHeight })
+      })
+    }
+
+    return sizes
   }
+
+  const publicId = image.file
+
+  if (!publicId) {
+    return Promise.resolve(null)
+  }
+
+  return promiseRetry((retry, number) => {
+    return cloudinary.uploader.explicit(
+      publicId,
+      { type: 'upload' },
+    ).then((data) => {
+      const sizes = getNewSizes(data.width, data.height)
+      return {
+        ...image,
+        file: cloudinary.url(publicId, { secure: true }),
+        width: data.width,
+        height: data.height,
+        resized: sizes.map((size) => ({
+          file: cloudinary.url(publicId, { secure: true, ...size, crop: 'fill' }),
+          width: size.width || Math.round((data.width / data.height) * size.height),
+          height: size.height || Math.round(size.width / (data.width / data.height))
+        }))
+      }
+    }).catch((err) => {
+      switch (err.http_code) {
+        case 499:
+          // Request timeout
+          return retry(err)
+        default:
+          // Bad user input should be non-fatal
+          console.error(err)
+          return null
+      }
+    })
+  }, { retries: 3 })
 }

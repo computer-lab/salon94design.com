@@ -21,11 +21,11 @@ works:
     hero: false
     images:
       - file: >-
-          /images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-S14FN3is3Z/large.jpg
+          large_yac3fr
       - file: >-
-          /images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-SJSY42sjn-/large.jpg
+          large_gn29lf
       - file: >-
-          /images/works/jay-sae-jung-oh/savage-series-black-leather-sofa-rk8tEhjon-/large.jpg
+          large_ciaguq
     medium: 'Various plastics, leather cord'
     projects: []
     slug: savage-series-black-edition-sofa
@@ -38,7 +38,7 @@ works:
     hero: true
     images:
       - file: >-
-          /images/works/jay-sae-jung-oh/savage-series-black-leather-chair-SkfvwTkJz/large.jpg
+          large_e609wt
     medium: 'Various plastics, leather cord'
     projects:
       - slug: ghost-dog
@@ -49,7 +49,7 @@ works:
     when: '2014'
   - dimensions: 25 x 30 x 15 inches (63.5 x 76.2 x 38.1 cm)
     images:
-      - file: /images/jao3.jpg
+      - file: jao3_ch3upb
     medium: 'Various plastics, leather cord'
     projects:
       - slug: Bowery Design 2017
@@ -60,7 +60,7 @@ works:
     when: '2015'
   - dimensions: 38 x 38 x 18 inches (96.5 x 96.5 x 45.7 cm)
     images:
-      - file: /images/jao5.jpg
+      - file: jao5_cwjkzy
     medium: 'Various plastics, cast iron skillet, leather cord'
     slug: savage-series-black-edition-side-table
     tags:
@@ -69,7 +69,7 @@ works:
     when: '2014'
   - dimensions: 44 x 48 x 37 inches (111.8 x 121.9 x 94 cm)
     images:
-      - file: /images/ja01.jpg
+      - file: ja01_iaswbk
     medium: Found objects covered in Jute
     slug: savage-chair
     tags:

@@ -17,7 +17,7 @@ works:
     edition: Total Edition of 40
     hero: true
     images:
-      - file: /images/works/rick-owens/stag-stool-H1PA9uiAb/large.jpg
+      - file: large_xmlync
     medium: 'french elm wood, moose antler'
     price: ''
     projects: []
@@ -28,7 +28,7 @@ works:
     when: '2015'
   - dimensions: 24.8 x 22.05 x 33.86 inches (63 x 56 x 86 cm)
     images:
-      - file: /images/1.jpg
+      - file: 1_fkpakd
     medium: 'plywood, antlers'
     slug: Natural-stag-stool
     tags:
@@ -37,7 +37,7 @@ works:
     when: '2009'
   - dimensions: 32.7 x 24.8 x 22.1 inches (83 x 63 x 56 cm)
     images:
-      - file: /images/100.jpg
+      - file: 100_l5wurq
     medium: White Marble and Moose antler
     slug: white-stag-stool
     tags:
@@ -46,7 +46,7 @@ works:
     when: '2012'
   - dimensions: 47.83 x 25.98 x 32.68 inches (121.5 x 66 x 83 cm)
     images:
-      - file: /images/ro66.jpg
+      - file: ro66_cr5trd
     medium: Ox bone and Stag Antler
     slug: stag-chair
     tags:
@@ -55,7 +55,7 @@ works:
     when: '2013'
   - dimensions: 47.83 x 25.98 x 32.68 inches (121.5 x 66 x 83 cm)
     images:
-      - file: /images/natural.jpg
+      - file: natural_tli1ch
     medium: 'Plywood, Antler'
     slug: stag-chair-natural
     tags:
@@ -65,7 +65,7 @@ works:
   - dimensions: 35.43 x 23.6 x 29.92 inches (90 x 60 x 76 cm)
     edition: Total Edition of 12
     images:
-      - file: /images/works/rick-owens/tomb-stag-chair-SJnSyq3A0b/large.jpg
+      - file: large_r7cyki
     medium: 'Raw plywood, moose antler'
     slug: tomb-stag-chair
     tags:
@@ -74,7 +74,7 @@ works:
     when: '2012'
   - dimensions: 35.43 x 19.69 x 29.92 inches (90 x 50 x 76 cm)
     images:
-      - file: /images/ro33.jpg
+      - file: ro33_rjeh2n
     medium: 'White Sivec Marble, Stag Antler'
     slug: tomb-stag-chair-left
     tags:
@@ -83,7 +83,7 @@ works:
     when: '2012'
   - dimensions: 29.72 x 35.43 x 23.62 inches (75.5 x 90 x 60 cm)
     images:
-      - file: /images/ro72.jpg
+      - file: ro72_uv9ru0
     medium: Black Marble and Moose Antler
     slug: tomb-stag-chair-right
     tags:
@@ -92,7 +92,7 @@ works:
     when: '2012'
   - dimensions: 31.89 x 23.62 x 23.62 inches (81 x 60 x 60 cm)
     images:
-      - file: /images/ro117.jpeg
+      - file: ro117_a4zviw
     medium: 'Bronze, Camel Skin'
     slug: rick-alchemy-chair
     tags:
@@ -101,7 +101,7 @@ works:
     when: '2015'
   - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
     images:
-      - file: /images/ro50.jpg
+      - file: ro50_r6bbkc
     medium: Bronze
     slug: alchemy-chair
     tags:
@@ -109,7 +109,7 @@ works:
     title: Alchemy Chair
   - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
     images:
-      - file: /images/158.jpg
+      - file: 158_dwivpo
     medium: Bronze with Gold Patina and Leather
     slug: alchemy-chair-1
     tags:
@@ -118,7 +118,7 @@ works:
     when: '2012'
   - dimensions: 23.23 x 33.07 x 25.98 inches (59 x 84 x 66 cm)
     images:
-      - file: /images/ro38.jpg
+      - file: ro38_r2ti49
     medium: Petrified Wood
     slug: curial-chair
     tags:
@@ -127,7 +127,7 @@ works:
     when: '2011'
   - dimensions: 23.62 x 32.68 x 25.98 inches (60 x 83 x 66 cm)
     images:
-      - file: /images/ro79.jpg
+      - file: ro79_vbz16b
     medium: Natural Plywood
     slug: curial-chair-1
     tags:
@@ -137,7 +137,7 @@ works:
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
     edition: '4'
     images:
-      - file: /images/ro36.jpg
+      - file: ro36_ujfxfi
     medium: Petrified Wood
     slug: half-box-chair
     tags:
@@ -146,7 +146,7 @@ works:
     when: '2011'
   - dimensions: 33.46 x 22.83 x 29.92 inches (85 x 58 x 76 cm)
     images:
-      - file: /images/ro6.jpg
+      - file: ro6_tkazbc
     medium: 'Plywood, Mink '
     slug: fisher-box
     tags:
@@ -156,7 +156,7 @@ works:
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
     edition: '3'
     images:
-      - file: /images/ro37.jpg
+      - file: ro37_r4gx9l
     medium: Ox-bone
     slug: half-box-chair-1
     tags:
@@ -166,7 +166,7 @@ works:
   - dimensions: 43 x 120 x 42 inches (109.2 x 304.8 x 106.7 cm) CUSTOM SIZE
     edition: '8'
     images:
-      - file: /images/ro74.jpg
+      - file: ro74_neofou
     medium: 'Alabaster Base, Natural Plywood Top'
     slug: plug-table
     tags:
@@ -174,7 +174,7 @@ works:
     title: Plug Table
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
     images:
-      - file: /images/ro26.jpg
+      - file: ro26_zaqijl
     medium: 'Petrified Wood Base, Black Plywood top'
     slug: plug-table-1
     tags:
@@ -182,7 +182,7 @@ works:
     title: Plug Table 1
   - dimensions: 110.24 x 110.24 x 78.74 inches (280 x 280 x 200 cm)
     images:
-      - file: /images/ro17.jpg
+      - file: ro17_klyuek
     medium: Alabaster
     slug: large-bed
     tags:
@@ -191,7 +191,7 @@ works:
     when: '2012'
   - dimensions: 137.8 x 47.24 x 39.37 inches (350 x 120 x 100 cm)
     images:
-      - file: /images/ro16.jpg
+      - file: ro16_cll6vb
     medium: 'Headboard: Petrified Wood, Platform: Black Plywood'
     slug: daybed
     tags:
@@ -201,7 +201,7 @@ works:
   - dimensions: 30.3 x 33.8 x 140 inches (77 x 85.9 x 355.6 cm)
     edition: '8'
     images:
-      - file: /images/ro87.jpg
+      - file: ro87_i6pg8s
     medium: Natural Plywood With Cushions
     slug: double-recamier
     tags:
@@ -210,7 +210,7 @@ works:
     when: '2014'
   - dimensions: 118.11 x 33.86 x 30.31 inches (300 x 86 x 77 cm)
     images:
-      - file: /images/ro5.jpg
+      - file: ro5_xlb4pm
     medium: 'Plywood, Leather'
     slug: double-recamier-1
     tags:
@@ -219,7 +219,7 @@ works:
     when: '2007'
   - dimensions: 118.11 x 47.24 x 47.24 inches (300 x 120 x 120 cm)
     images:
-      - file: /images/ro95.jpg
+      - file: ro95_yf2axr
     medium: 'Black Plywood, with Plywood Clogs'
     slug: boudeuse
     tags:
@@ -228,7 +228,7 @@ works:
     when: '2015'
   - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
     images:
-      - file: /images/ro113.jpg
+      - file: ro113_gzxqpt
     medium: 'Styrofoam, Gorilla gaffer tape'
     slug: prong-totem-foam
     title: Prong Totem Foam

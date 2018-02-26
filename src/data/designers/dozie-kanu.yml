@@ -14,7 +14,7 @@ works:
     edition: Unique
     hero: true
     images:
-      - file: /images/works/dozie-kanu/bench-on-84s-HkxKVhji2b/large.jpg
+      - file: large_lhrpnx
     medium: 'poured concrete, steel '
     projects:
       - slug: midtown-lever-house
