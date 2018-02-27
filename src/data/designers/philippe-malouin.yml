@@ -36,4 +36,9 @@ works:
       - chair
     title: Stool
     when: '2018'
+  - images:
+      - file: pm-turntablemid
+    slug: pm-turntable
+    title: Nylon Turntable
+    when: '2017'
 status: Represented
