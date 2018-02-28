@@ -137,6 +137,7 @@ export const pageQuery = graphql`
         slug
         title
         type
+        date
         designers {
           slug
         }

@@ -92,6 +92,15 @@ export const Header2 = styled.h2`
   font-size: 24px;
 `
 
+export const Header3 = styled.h3`
+  composes: ${sansfont};
+  font-style: normal;
+  margin: 0 0 8px 0;
+  padding: 0;
+  font-weight: 400;
+  font-size: 18px;
+`
+
 export const SimpleLinkList = styled.ul`
   composes: ${baseUl}, ${sansfont};
   font-size: 16px;
@@ -107,6 +116,13 @@ export const SimpleLinkListItem = styled.li`
   margin: 0 24px 12px 0;
   padding: 0;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+`
+
+export const SimpleLinkListSection = styled.div`
+  margin-bottom: 8px;
   &:last-child {
     margin-bottom: 0;
   }
