@@ -188,8 +188,7 @@ works:
     when: '2017'
   - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
     images:
-      - file: >-
-          large_nbvblq
+      - file: large_nbvblq
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
       - slug: ghost-dog
@@ -221,4 +220,15 @@ works:
       - Chair
     title: Chair 2
     when: '2016'
+  - dimensions: 44 x 60 x 38 inches (111.8 x 152.4 x 96.5 cm)
+    images:
+      - file: S94D-ThomasBarger-lovemeprotectme
+    medium: 'Paper pulp, plywood, two wooden chairs, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: love-me-protect-me-chair
+    tags:
+      - chair
+    title: 'Love Me, Protect Me Chair'
+    when: '2018'
 status: Represented
