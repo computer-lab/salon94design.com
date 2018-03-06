@@ -68,13 +68,12 @@ const WorkSummary = ({ designer, work, detailed, projects }) => (
     <DetailSection>
       {designer && (
         <SummaryItem className="designer">
-          <Link to={designerLink(designer.slug)}>{designer.name}</Link>
+          <Link style={{'fontWeight': 500}} to={designerLink(designer.slug)}>{designer.name}</Link>
         </SummaryItem>
       )}
 
-      <SummaryItem>
-        { work.when ? `${work.title}, ${work.when}` : work.title }
-      </SummaryItem>
+      <SummaryItem style={{'fontStyle': 'italic'}}>{work.title}</SummaryItem>
+      <SummaryItem>{work.when}</SummaryItem>
       <SummaryItem>{work.caption}</SummaryItem>
       <SummaryItem>{work.medium}</SummaryItem>
       <SummaryItem>{work.dimensions}</SummaryItem>
