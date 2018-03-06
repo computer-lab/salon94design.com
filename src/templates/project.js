@@ -65,6 +65,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
         Object.assign(imageInfo(work.hydratedImages[0]), {
           work,
           designer,
+          mobileImageLink: workLink(designer.slug, work.slug),
           texts: workImageTexts({
             work,
             designer,
