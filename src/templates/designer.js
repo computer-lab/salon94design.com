@@ -99,6 +99,7 @@ const DesignerTemplate = ({ data, pathContext }) => {
     .map(work =>
       Object.assign(imageInfo(work.hydratedImages[0]), {
         work,
+        mobileImageLink: workLink(designer.slug, work.slug),
         texts: workImageTexts({
           designer,
           work,

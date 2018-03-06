@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import Link from 'gatsby-link'
+import Link, { navigateTo } from 'gatsby-link'
 import { css } from 'emotion'
 import styled from 'emotion/react'
 import cx from 'classnames'
@@ -381,10 +381,20 @@ class ImageList extends Component {
     )
   }
 
+  getImage(setIndex, imageIndex) {
+    const set = this.props.imageSets[setIndex]
+    const image = set ? set.images[imageIndex] : null
+    return image || null
+  }
+
   onImageClick(ev, setIndex, imageIndex) {
     if (this.props.unexpandable) return
 
     if (this.state.mobileWidth) {
+      const image = this.getImage(setIndex, imageIndex)
+      if (image && image.mobileImageLink) {
+        navigateTo(image.mobileImageLink)
+      }
       return
     }
 
@@ -449,9 +459,7 @@ class ImageList extends Component {
     })
 
     const fullscreenImage = fullscreenImageIndices
-      ? imageSets[fullscreenImageIndices.setIndex].images[
-          fullscreenImageIndices.imageIndex
-        ]
+      ? this.getImage(fullscreenImageIndices.setIndex, fullscreenImageIndices.imageIndex)
       : null
 
     const firstImage =
@@ -485,7 +493,6 @@ class ImageList extends Component {
                   srcSet,
                   largeSize,
                   texts,
-                  unexpandedLink,
                   alt = '',
                 } = image
 
@@ -550,11 +557,7 @@ class ImageList extends Component {
                       className={imageItemClass}
                       onClick={ev => this.onImageClick(ev, setIndex, i)}
                     >
-                      {isExpanded || !unexpandedLink ? (
-                        img
-                      ) : (
-                        <Link to={unexpandedLink}>{img}</Link>
-                      )}
+                      {img}
 
                       {texts && (
                         <ImageTextWrapper className={textContainerClass}>
