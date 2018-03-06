@@ -2,7 +2,8 @@ slug: design-miami-2017-philippe-malouin-core
 title: Design Miami 2017 Philippe Malouin
 type: Art Fair
 when: December 2017
-date: '2017-12-01'
+start_date: '2017-12-01'
+end_date: '2017-12-31'
 designers:
   - slug: philippe-malouin
 description: >-

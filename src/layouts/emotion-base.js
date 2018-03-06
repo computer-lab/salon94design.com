@@ -29,9 +29,10 @@ export const childLink = css`
     color: inherit;
     text-decoration: inherit;
 
-    &:hover,
-    &:focus {
-      border-bottom: 2px solid #000;
+    @media(${minBreakpoint3}) {
+      &:hover {
+        border-bottom: 2px solid #000;
+      }
     }
   }
 `

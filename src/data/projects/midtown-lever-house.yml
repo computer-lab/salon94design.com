@@ -2,7 +2,8 @@ slug: midtown-lever-house
 title: Midtown Lever House
 type: Exhibition
 when: 'May 03 – June 09, 2017'
-date: '2017-05-03'
+start_date: '2017-05-03'
+end_date: '2017-06-09'
 designers:
   - slug: anton-alvarez
   - slug: kwangho-lee
