@@ -80,8 +80,8 @@ const ProjectTemplate = ({ data, pathContext }) => {
   })
 
   const imageSets = [
-    { images: projectImages, title: 'Installation View'},
-    { images: workImages, title: 'Included Works' },
+    { images: projectImages, title: null },
+    { images: workImages, title: null },
   ].filter(item => item.images.length > 0)
 
   const typeTitle = `${project.type}s`
