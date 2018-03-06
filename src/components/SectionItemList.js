@@ -128,9 +128,9 @@ const ItemTitle = styled.div`
 `
 
 const ItemSubtitle = styled.div`
-  margin: 4px 0;
+  margin: 3px 0;
   font-size: 16px;
-  line-height: 1.2;
+  line-height: 1.4;
 `
 
 const ItemDescription = styled.div`

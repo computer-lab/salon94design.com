@@ -2,7 +2,8 @@ slug: gold
 title: Gold
 type: Exhibition
 when: September 19–November 03
-date: '2017-09-19'
+start_date: '2017-09-19'
+end_date: '2017-11-03'
 designers:
   - slug: lucas-samaras
 description: >-

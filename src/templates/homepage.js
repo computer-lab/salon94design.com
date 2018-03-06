@@ -137,7 +137,8 @@ export const pageQuery = graphql`
         slug
         title
         type
-        date
+        start_date
+        end_date
         designers {
           slug
         }
@@ -197,7 +198,8 @@ export const pageQuery = graphql`
     description
     descriptionHtml
     when
-    date
+    start_date
+    end_date
     designers {
       slug
     }

@@ -22,6 +22,7 @@
     "lodash.flatmap": "^4.5.0",
     "lodash.flatmapdeep": "^4.10.0",
     "lodash.throttle": "^4.1.1",
+    "moment": "^2.21.0",
     "promise-retry": "^1.1.1",
     "react-scroll": "^1.5.4",
     "remark": "^8.0.0",

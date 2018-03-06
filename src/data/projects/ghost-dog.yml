@@ -2,7 +2,8 @@ slug: ghost-dog
 title: Ghost Dog
 type: Exhibition
 when: 'March 03 – April 15, 2017'
-date: '2017-03-03'
+start_date: '2017-03-03'
+end_date: '2017-04-15'
 designers:
   - slug: thomas-barger
   - slug: gaetano-pesce

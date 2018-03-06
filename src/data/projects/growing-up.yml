@@ -2,7 +2,8 @@ slug: growing-up
 title: Growing Up
 type: Exhibition
 when: 'March 6 - March 31, 2018'
-date: '2018-03-06'
+start_date: '2018-03-06'
+end_date: '2018-03-31'
 designers:
   - slug: thomas-barger
 description: >-

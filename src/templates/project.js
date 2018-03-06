@@ -88,7 +88,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
   const currentTypeProjects = projects.filter(p => p.type === project.type)
 
   const projectsByYear = Array.from(
-    new Set(currentTypeProjects.map(p => p.date))
+    new Set(currentTypeProjects.map(p => p.start_date))
   )
     .sort((a, b) => Date.parse(b) - Date.parse(a)) // sort reverse-chronologically
     .map(date => {
@@ -98,7 +98,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
       const year = dateYear(date)
       return {
         year,
-        projects: currentTypeProjects.filter(p => dateYear(p.date) === year),
+        projects: currentTypeProjects.filter(p => dateYear(p.start_date) === year),
       }
     })
 

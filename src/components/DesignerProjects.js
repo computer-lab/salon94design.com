@@ -25,14 +25,20 @@ const DesignerProjects = ({ projects }) => {
   }
 
   // XXX: Projects with missing or invalid dates will not be displayed
-  projects = projects.filter((p) => p.date && !isNaN((new Date(p.date)).getTime()))
+  projects = projects
+    .map(p => {
+      const start_date = p.start_date ? new Date(p.start_date) : null
+      const end_date = p.end_date ? new Date(p.end_date) : null
+      return !isNaN(start_date.getTime()) ? { ...p, start_date, end_date } : null
+    })
+    .filter(p => p != null)
 
   // Sort by reverse-date
-  projects.sort((a, b) => (new Date(b.date)).getTime() - (new Date(a.date)).getTime())
+  projects.sort((a, b) => b.start_date.getTime() - a.start_date.getTime())
 
   // Group by year
   const projectsByYear = projects.reduce((acc, project) => {
-    const year = (new Date(project.date)).getFullYear()
+    const year = project.start_date.getFullYear()
     if (!acc[year]) {
       acc[year] = [project]
     }
@@ -48,7 +54,7 @@ const DesignerProjects = ({ projects }) => {
     <Container>
       <Header2>Exhibitions</Header2>
       {descendingYears.map(year => (
-        <SimpleLinkListSection>
+        <SimpleLinkListSection key={year}>
           <Header3>{year}</Header3>
           <SimpleLinkList>
             {projectsByYear[year].map(item => (
