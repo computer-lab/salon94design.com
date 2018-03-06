@@ -82,10 +82,10 @@ export const workImageTexts = ({
 }) => {
   let data = []
   if (includeDesigner) {
-    data.push(<Link to={designerLink(designer.slug)}>{designer.title}</Link>)
+    data.push(<Link style={{'fontWeight': 500}} to={designerLink(designer.slug)}>{designer.title}</Link>)
   }
 
-  data.push(<Link to={workLink(designer.slug, work.slug)}>{work.title}</Link>)
+  data.push(<Link style={{'fontStyle': 'italic'}} to={workLink(designer.slug, work.slug)}>{work.title}</Link>)
 
   const elements = [
     work.when,
