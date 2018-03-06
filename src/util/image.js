@@ -68,7 +68,6 @@ export const imageInfo = image => {
   const largest = getLargestImage(image)
   return {
     src: imageMediumPath(image),
-    src: largest ? imageFilepath(largest.file) : null,
     srcSet: imageSrcSet(image),
     largeSrc: largest ? imageFilepath(largest.file) : null,
     largeSize: largest ? imageLargeSize(largest) : imageLargeSize(image),
