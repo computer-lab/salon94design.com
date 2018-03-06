@@ -134,10 +134,13 @@ collections:
           - Art Fair
         default: Exhibition
       - name: when
-        label: When
+        label: When (text description of when project is open)
         widget: string
-      - name: date
+      - name: start_date
         label: Start Date (for sorting, use YYYY-MM-DD format)
+        widget: text
+      - name: end_date
+        label: End Date (for sorting, use YYYY-MM-DD format)
         widget: text
       - name: designers
         label: Designers

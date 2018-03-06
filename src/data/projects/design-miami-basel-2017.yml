@@ -2,7 +2,8 @@ slug: design-miami-basel-2017
 title: 'Design Miami/Basel 2017 Max Lamb, Lucas Samaras'
 type: Art Fair
 when: June 2017
-date: '2017-06-01'
+start_date: '2017-06-01'
+end_date: '2017-06-30'
 designers:
   - slug: max-lamb
   - slug: lucas-samaras
