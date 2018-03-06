@@ -195,7 +195,7 @@ works:
     slug: aleksandr-rodchenko-snack-chair-with-harness
     tags:
       - Chair
-    title: Aleksandr Rodchenko snack chair (with harness)
+    title: Aleksandr Rodchenko Snack Chair (with harness)
     when: '2017'
   - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
@@ -206,7 +206,7 @@ works:
     slug: dont-forget-me-on-the-train-chair
     tags:
       - Chair
-    title: Don't forget me on the train chair
+    title: Don't Forget Me on the Train Chair
     when: '2017'
   - hero: true
     images:
@@ -263,5 +263,27 @@ works:
     tags:
       - bench
     title: Dicks Creek Tractor Tire
+    when: '2018'
+  - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
+    images:
+      - file: S94D-ThomasBarger-lounger1
+    medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: lounger-1
+    tags:
+      - chair
+    title: Lounger 1
+    when: '2018'
+  - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
+    images:
+      - file: S94D-ThomasBarger-lounger2
+    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: lounger-2
+    tags:
+      - chair
+    title: Lounger 2
     when: '2018'
 status: Represented
