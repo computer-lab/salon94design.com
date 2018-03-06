@@ -253,4 +253,15 @@ works:
       - table
     title: My Family is Getting Bigger Table/Anti-open Floor Plan
     when: '2018'
+  - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
+    images:
+      - file: S94D-ThomasBarger-dickscreektractortire
+    medium: 'Rocks, wooden frame, and stucco'
+    projects:
+      - slug: growing-up
+    slug: dicks-creek-tractor-tire
+    tags:
+      - bench
+    title: Dicks Creek Tractor Tire
+    when: '2018'
 status: Represented
