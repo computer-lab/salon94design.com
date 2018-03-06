@@ -52,6 +52,7 @@ const WorksTemplate = ({ data, pathContext }) => {
           Object.assign(imageInfo(image), {
             work,
             designer,
+            mobileImageLink: workLink(designer.slug, work.slug),
             texts: workImageTexts({
               designer,
               work,
