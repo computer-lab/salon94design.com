@@ -231,4 +231,26 @@ works:
       - chair
     title: 'Love Me, Protect Me Chair'
     when: '2018'
+  - images:
+      - file: S94D-ThomasBarger-ineverhadaclosetcloset
+    projects:
+      - slug: growing-up
+    slug: i-never-had-a-closet-closet
+    tags:
+      - storage
+    title: I Never Had a Closet - Closet
+    when: '2018'
+  - dimensions: 68 x 79 x 90 inches (172.7 x 200.7 x 228.6 cm)
+    images:
+      - file: S94D-ThomasBarger-myfamilyisgettingbigger
+    medium: >-
+      Paper pulp, wooden frame, cardboard, polyurethane, formica, found foldable
+      picnic table, and paint
+    projects:
+      - slug: growing-up
+    slug: my-family-is-getting-bigger
+    tags:
+      - table
+    title: My Family is Getting Bigger Table/Anti-open Floor Plan
+    when: '2018'
 status: Represented
