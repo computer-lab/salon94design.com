@@ -12,7 +12,7 @@ works:
       - file: tbarlmc1_rzehpx
       - file: tbarlmc2_jsqxkj
       - file: tbarlmc3_byh5ks
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: love-me-chair
@@ -27,7 +27,7 @@ works:
       - file: tbar12-a_idadfv
       - file: tbar12-b_ye0ang
       - file: tbar12-c_hyyskk
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: butter-chair-1
@@ -42,7 +42,7 @@ works:
       - file: tbar14-a_n2wvbe
       - file: tbar14-b_uexywd
       - file: tbar14-d_pcezvm
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: s-o-s-green-goblin-spidey-please-save-me
@@ -57,7 +57,7 @@ works:
       - file: tbar16-a_sbj2xk
       - file: tbar16-b_vre28q
       - file: tbar16-c_ju4isp
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: buttery-tall-boy-1
@@ -72,7 +72,7 @@ works:
       - file: tbar15-a_hn5mj6
       - file: tbar15-c_szgwwk
       - file: tbar15-d_linr5z
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: protect-me-chair
@@ -87,7 +87,7 @@ works:
       - file: tbar13-a_tdu7sc
       - file: tbar13-b_fynks9
       - file: tbar13-c_n2qjhv
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: butter-chair-2
@@ -114,7 +114,7 @@ works:
       - file: tbar17-a_y86nth
       - file: tbar17-b_dx0flt
       - file: tbar17-c_nizwza
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: buttery-tall-boy-2
@@ -128,7 +128,7 @@ works:
       - file: tbar10_sortinglaundryforafamilyof5_hr
       - file: tbar10instal_fdeawl
       - file: 6_estibm
-    medium: 'Paper pulp, carpet '
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: midtown-lever-house
     slug: sorting-laundry-for-a-family-of-5
@@ -156,7 +156,7 @@ works:
       - file: tbar18l_ely4pf
       - file: tbar18b_enzjnd
       - file: tbar18r_acdioo
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: buttery-tall-boy-3
@@ -170,7 +170,7 @@ works:
       - file: tbar2-a_ntlqig
       - file: tbar2-b_eox0ro
       - file: tbar2-c_rvoues
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair
     tags:
       - Chair
@@ -215,7 +215,7 @@ works:
       - file: tbar3-a_rn8hpm
       - file: tbar3-b_ochlxr
       - file: tbar3-d_bxpftp
-    medium: Paper pulp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair-2
     tags:
       - Chair
@@ -232,8 +232,10 @@ works:
       - chair
     title: 'Love Me, Protect Me Chair'
     when: '2018'
-  - images:
+  - dimensions: 74 x 97 x 32 inches (188 x 246.4 x 81.3 cm)
+    images:
       - file: S94D-ThomasBarger-ineverhadaclosetcloset
+    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
     projects:
       - slug: growing-up
     slug: i-never-had-a-closet-closet
