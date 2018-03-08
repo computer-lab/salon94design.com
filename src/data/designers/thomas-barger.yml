@@ -344,4 +344,15 @@ works:
       - other
     title: Wall Drawing 2
     when: '2017'
+  - dimensions: 30 x 20 1/2 x 16 inches (76.2 x 52.1 x 40.6 cm)
+    images:
+      - file: TBar23
+    medium: 'Paper pulp, wooden frame, wood, rattan, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: hammer-chair
+    tags:
+      - chair
+    title: Hammer Chair
+    when: '2017'
 status: Represented
