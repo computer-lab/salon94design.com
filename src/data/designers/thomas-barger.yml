@@ -310,4 +310,37 @@ works:
       - other
     title: Dicks Creek Rock Planter
     when: '2018'
+  - dimensions: 32 x 44 x 20 inches (81.3 x 111.8 x 50.8 cm)
+    images:
+      - file: tbar38_boyfriendsunderweararmoire_hr
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: boyfriends-underwear-armoire
+    tags:
+      - other
+    title: Boyfriend's Underwear Armoire
+    when: '2018'
+  - dimensions: 39 x 23 x 13 inches (99.1 x 58.4 x 33 cm)
+    images:
+      - file: tbar37_walldrawing1_hr
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: growing-up
+    slug: wall-drawing-1
+    tags:
+      - other
+    title: Wall Drawing 1
+    when: ''
+  - dimensions: 33 x 26 x 11 inches (83.8 x 66 x 27.9 cm)
+    images:
+      - file: tbar36_walldrawing2_hr
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: growing-up
+    slug: wall-drawing-2
+    tags:
+      - other
+    title: Wall Drawing 2
+    when: '2017'
 status: Represented
