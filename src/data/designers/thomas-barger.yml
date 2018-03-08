@@ -6,7 +6,7 @@ press:
     title: Architectural Digest - February 2018
 works:
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
-    hero: true
+    hero: false
     images:
       - file: tbar11_nutaaa
       - file: tbarlmc1_rzehpx
@@ -285,5 +285,29 @@ works:
     tags:
       - chair
     title: Lounger 2
+    when: '2018'
+  - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
+    images:
+      - file: tbar32_dadstruckblanketchair_hr
+    medium: >-
+      Paper pulp, wooden and metal frame, cardboard, polyurethane, blanket, and
+      paint
+    projects:
+      - slug: growing-up
+    slug: dads-truck-blanket-chair
+    tags:
+      - chair
+    title: Dad's Truck Blanket Chair
+    when: '2018'
+  - dimensions: 11 1/2 x 27 x 22 inches (29.2 x 68.6 x 55.9 cm)
+    images:
+      - file: tbar35_dickscreekrockplanter_hr
+    medium: 'Rocks, wooden frame, and stucco'
+    projects:
+      - slug: growing-up
+    slug: dicks-creek-rock-planter
+    tags:
+      - other
+    title: Dicks Creek Rock Planter
     when: '2018'
 status: Represented
