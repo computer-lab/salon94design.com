@@ -125,7 +125,7 @@ works:
   - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
     hero: true
     images:
-      - file: tbar10_sortinglaundryforafamilyof5_hr
+      - file: S94D-TBar10-ThomasBarger-SortingLaundryforaFamilyof5-2017-A-HR
       - file: tbar10instal_fdeawl
       - file: 6_estibm
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
@@ -259,10 +259,7 @@ works:
     when: '2018'
   - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
     images:
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-A-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-B-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-C-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-D-HR
+      - file: S94D-TBar31-ThomasBarger-DicksCreekTractorTire-2018-A-HR
     medium: 'Rocks, wooden frame, and stucco'
     projects:
       - slug: growing-up
@@ -376,10 +373,65 @@ works:
       - chair
     title: Hammer Chair
     when: '2017'
-  - images:
-      - file: ' tbargif1'
-    projects:
-      - slug: growing-up
-    slug: tbargif1
-    title: tbargif1
+  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
+    images:
+      - file: S94D-TBar20-ThomasBarger-Chair1-2017-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-1-white
+    tags:
+      - chair
+    title: Chair 1 (White)
+    when: '2017'
+  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
+    images:
+      - file: S94D-TBar21-ThomasBarger-Chair2-2017-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-2-white
+    title: Chair 2 (White)
+    when: '2017'
+  - dimensions: 30.5 x 42 x 21 inches (77.5 x 106.7 x 53.3 cm )
+    images:
+      - file: S94D-TBar22-ThomasBarger-UnderwearArmoire4-2017-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: underwear-armoire-4
+    tags:
+      - other
+    title: Underwear Armoire 4
+    when: '2017'
+  - dimensions: 32.5 x 18 x 18 inches(82.6 x 45.7 x45.7cm)
+    images:
+      - file: S94D-TBar24-ThomasBarger-Chair1Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-1-pink
+    tags:
+      - chair
+    title: Chair 1 (Pink)
+    when: '2016'
+  - dimensions: 33 x 16.5 x 20 inches (83.8 x 41.9 x 50.8 cm)
+    images:
+      - file: S94D-TBar25-ThomasBarger-Chair2Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-2-pink
+    tags:
+      - chair
+    title: Chair 2 (Pink)
+    when: '2016'
+  - dimensions: 34 x 17.5 x 18 inches (86.4 x 44.5 x 45.7 cm)
+    images:
+      - file: ' S94D-TBar26-ThomasBarger-Chair3Pink-2016-HR'
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-3-pink
+    tags:
+      - chair
+    title: Chair 3 (Pink)
+    when: '2016'
+  - dimensions: 33 x 18 x 16 inches (83.8 x 45.7 x 40.6 cm)
+    images:
+      - file: ' S94D-TBar27-ThomasBarger-Chair4Pink-2016-HR'
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-4-pink
+    tags:
+      - chair
+    title: Chair 4 (Pink)
+    when: '2016'
 status: Represented
