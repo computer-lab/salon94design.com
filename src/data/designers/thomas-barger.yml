@@ -234,7 +234,8 @@ works:
     when: '2018'
   - dimensions: 74 x 97 x 32 inches (188 x 246.4 x 81.3 cm)
     images:
-      - file: S94D-ThomasBarger-ineverhadaclosetcloset
+      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-A-HR
+      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-B-HR
     medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
     projects:
       - slug: growing-up
@@ -245,7 +246,7 @@ works:
     when: '2018'
   - dimensions: 68 x 79 x 90 inches (172.7 x 200.7 x 228.6 cm)
     images:
-      - file: S94D-ThomasBarger-myfamilyisgettingbigger
+      - file: S94D-TBar30-ThomasBarger-MyFamilyIsGettingBigger-2018-A-HR
     medium: >-
       Paper pulp, wooden frame, cardboard, polyurethane, formica, found foldable
       picnic table, and paint
@@ -258,7 +259,10 @@ works:
     when: '2018'
   - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
     images:
-      - file: S94D-ThomasBarger-dickscreektractortire
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-A-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-B-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-C-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-D-HR
     medium: 'Rocks, wooden frame, and stucco'
     projects:
       - slug: growing-up
@@ -269,7 +273,10 @@ works:
     when: '2018'
   - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
     images:
-      - file: S94D-ThomasBarger-lounger1
+      - file: S94D-TBar33-ThomasBarger-Lounger1-2018-A-HR
+      - file: S94D-TBar33-ThomasBarger-Lounger1-2018-B-HR
+      - file: S94D-TBar33-ThomasBarger-Lounger1-2018-C-HR
+      - file: S94D-TBar33-ThomasBarger-Lounger1-2018-D-HR
     medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
@@ -280,7 +287,10 @@ works:
     when: '2018'
   - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
     images:
-      - file: S94D-ThomasBarger-lounger2
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-A-HR
+      - file: ' S94D-TBar34-ThomasBarger-Lounger2-2018-B-HR'
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-C-HR
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-D-HR
     medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
     projects:
       - slug: growing-up
@@ -291,7 +301,10 @@ works:
     when: '2018'
   - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
     images:
-      - file: tbar32_dadstruckblanketchair_hr
+      - file: S94D-TBar32-ThomasBarger-DadsTruckBlanketChair-2018-A-HR
+      - file: S94D-TBar32-ThomasBarger-DadsTruckBlanketChair-2018-B-HR
+      - file: S94D-TBar32-ThomasBarger-DadsTruckBlanketChair-2018-C-HR
+      - file: S94D-TBar32-ThomasBarger-DadsTruckBlanketChair-2018-D-HR
     medium: >-
       Paper pulp, wooden and metal frame, cardboard, polyurethane, blanket, and
       paint
@@ -304,7 +317,10 @@ works:
     when: '2018'
   - dimensions: 11 1/2 x 27 x 22 inches (29.2 x 68.6 x 55.9 cm)
     images:
-      - file: tbar35_dickscreekrockplanter_hr
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-A-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-B-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-C-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-D-HR
     medium: 'Rocks, wooden frame, and stucco'
     projects:
       - slug: growing-up
@@ -315,7 +331,10 @@ works:
     when: '2018'
   - dimensions: 32 x 44 x 20 inches (81.3 x 111.8 x 50.8 cm)
     images:
-      - file: tbar38_boyfriendsunderweararmoire_hr
+      - file: S94D-TBar29-ThomasBarger-BoyfriendsUnderwearArmoire-2018-A-HR
+      - file: S94D-TBar29-ThomasBarger-BoyfriendsUnderwearArmoire-2018-B-HR
+      - file: S94D-TBar29-ThomasBarger-BoyfriendsUnderwearArmoire-2018-C-HR
+      - file: S94D-TBar29-ThomasBarger-BoyfriendsUnderwearArmoire-2018-D-HR
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
@@ -326,7 +345,7 @@ works:
     when: '2018'
   - dimensions: 39 x 23 x 13 inches (99.1 x 58.4 x 33 cm)
     images:
-      - file: tbar37_walldrawing1_hr
+      - file: S94D-TBar37-ThomasBarger-WallDrawing1-2018-A-HR
     medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
     projects:
       - slug: growing-up
@@ -337,7 +356,7 @@ works:
     when: ''
   - dimensions: 33 x 26 x 11 inches (83.8 x 66 x 27.9 cm)
     images:
-      - file: tbar36_walldrawing2_hr
+      - file: S94D-TBar36-ThomasBarger-WallDrawing2-2018-A-HR
     medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
     projects:
       - slug: growing-up
