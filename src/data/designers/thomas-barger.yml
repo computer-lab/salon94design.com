@@ -204,7 +204,7 @@ works:
     when: '2017'
   - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
-      - file: tbar4_kgiqz9
+      - file: 18-02-23_SALON94_ThomasBarger_019
     medium: Paper pulp and Styrofoam
     projects:
       - slug: Bowery Design 2017
