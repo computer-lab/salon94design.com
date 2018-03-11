@@ -10,7 +10,7 @@ press:
     title: office magazine - March 2018
 works:
   - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
-    hero: false
+    hero: true
     images:
       - file: tbar11_nutaaa
       - file: tbarlmc1_rzehpx
@@ -379,7 +379,7 @@ works:
     when: '2017'
   - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
     images:
-      - file: S94D-TBar20-ThomasBarger-Chair1-2017-HR
+      - file: 18-02-23_SALON94_ThomasBarger_004
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair-1-white
     tags:
@@ -388,14 +388,14 @@ works:
     when: '2017'
   - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
     images:
-      - file: S94D-TBar21-ThomasBarger-Chair2-2017-HR
+      - file: 18-02-23_SALON94_ThomasBarger_006
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair-2-white
     title: Chair 2 (White)
     when: '2017'
   - dimensions: 30.5 x 42 x 21 inches (77.5 x 106.7 x 53.3 cm )
     images:
-      - file: S94D-TBar22-ThomasBarger-UnderwearArmoire4-2017-HR
+      - file: 18-02-23_SALON94_ThomasBarger_013
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: underwear-armoire-4
     tags:
