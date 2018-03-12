@@ -162,5 +162,7 @@ works:
     when: '2017'
   - images:
       - file: S94D-TomSachs-XChair1-2017-gif
+    projects:
+      - slug: design-miami-2017-tom-sachs
     slug: gif-1
 status: Represented
