@@ -6,7 +6,10 @@ start_date: '2017-12-01'
 end_date: '2017-12-31'
 designers:
   - slug: tom-sachs
-description: Tom Sachs exhibition at Design Miami 2017.
+description: >-
+  At Design Miami/ 2017 we are thrilled to present Tom Sachs's new X-chairs,
+  lounge chairs and tables in the Curio section. Tom's furniture is a Knoll line
+  - each hand made and numbered.
 images:
   - file: large_gbth2v
     hero: false
