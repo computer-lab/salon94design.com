@@ -129,16 +129,15 @@ works:
   - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
     hero: true
     images:
-      - file: S94D-TBar10-ThomasBarger-SortingLaundryforaFamilyof5-2017-A-HR
       - file: tbar10instal_fdeawl
       - file: 6_estibm
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: midtown-lever-house
-    slug: sorting-laundry-for-a-family-of-5
+    slug: sorting-laundry-for-a-family-of-5-floor
     tags:
       - Storage
-    title: Sorting Laundry For a Family of 5
+    title: Sorting Laundry For a Family of 5 (floor)
     when: '2017'
   - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
     hero: false
@@ -438,4 +437,15 @@ works:
       - chair
     title: Chair 4 (Pink)
     when: '2016'
+  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
+    images:
+      - file: S94D-TBar10-ThomasBarger-SortingLaundryforaFamilyof5-2017-A-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: sorting-laundry-for-a-family-of-5-wall
+    tags:
+      - storage
+    title: Sorting Laundry For a Family of 5 (wall)
+    when: '2017'
 status: Represented
