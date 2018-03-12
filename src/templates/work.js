@@ -34,6 +34,7 @@ const WorkTemplate = ({ data, pathContext }) => {
       title: work.when ? `${work.title}, ${work.when}` : work.title,
       link: workLink(designer.slug, work.slug),
     }))
+    .filter(work => !!work.title)
     .sort((a, b) => a.title.localeCompare(b.title))
 
   const selectorSections = [{ items: selectorItems }]
