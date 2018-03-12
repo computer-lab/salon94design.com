@@ -204,7 +204,7 @@ works:
     when: '2017'
   - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
-      - file: 18-02-23_SALON94_ThomasBarger_019
+      - file: S94D-TBar4-ThomasBarger-DontForgetMeOnTheTrainChair-2017-HR
     medium: Paper pulp and Styrofoam
     projects:
       - slug: Bowery Design 2017
@@ -289,7 +289,7 @@ works:
   - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
     images:
       - file: S94D-TBar34-ThomasBarger-Lounger2-2018-A-HR
-      - file: ' S94D-TBar34-ThomasBarger-Lounger2-2018-B-HR'
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-B-HR
       - file: S94D-TBar34-ThomasBarger-Lounger2-2018-C-HR
       - file: S94D-TBar34-ThomasBarger-Lounger2-2018-D-HR
     medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
@@ -422,7 +422,7 @@ works:
     when: '2016'
   - dimensions: 34 x 17.5 x 18 inches (86.4 x 44.5 x 45.7 cm)
     images:
-      - file: ' S94D-TBar26-ThomasBarger-Chair3Pink-2016-HR'
+      - file: S94D-TBar26-ThomasBarger-Chair3Pink-2016-HR
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair-3-pink
     tags:
@@ -431,7 +431,7 @@ works:
     when: '2016'
   - dimensions: 33 x 18 x 16 inches (83.8 x 45.7 x 40.6 cm)
     images:
-      - file: ' S94D-TBar27-ThomasBarger-Chair4Pink-2016-HR'
+      - file: S94D-TBar27-ThomasBarger-Chair4Pink-2016-HR
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     slug: chair-4-pink
     tags:
