@@ -22,7 +22,11 @@ bio: >-
   artist’s studio practice, philosophy, and the narrative surrounding his 2012
   project with Creative Time at the Park Avenue Armory. Sachs was born in New
   York in 1966, he lives and works in New York.
-press: []
+press:
+  - file: /images/20171111-TomSachs-ArchitecturalDigest-Digital.pdf
+    link: >-
+      https://www.architecturaldigest.com/story/tom-sachs-newest-project-has-us-over-the-moon
+    title: Architectural Digest - November 2017
 works:
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     hero: false
