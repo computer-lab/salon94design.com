@@ -457,4 +457,8 @@ works:
       - file: Vong-Salon94-Lamb-NOV17-3549
     projects:
       - slug: boulders-max-lamb
+  - images:
+      - file: ' Screen_Shot_2018-03-14_at_12.49.20_PM'
+    projects:
+      - slug: boulders-max-lamb
 status: Represented
