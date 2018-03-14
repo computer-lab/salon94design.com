@@ -20,12 +20,9 @@ works:
     edition: Unique
     hero: false
     images:
-      - file: >-
-          large_yac3fr
-      - file: >-
-          large_gn29lf
-      - file: >-
-          large_ciaguq
+      - file: large_yac3fr
+      - file: large_gn29lf
+      - file: large_ciaguq
     medium: 'Various plastics, leather cord'
     projects: []
     slug: savage-series-black-edition-sofa
@@ -37,8 +34,7 @@ works:
     edition: 'Unique '
     hero: true
     images:
-      - file: >-
-          large_e609wt
+      - file: large_e609wt
     medium: 'Various plastics, leather cord'
     projects:
       - slug: ghost-dog
@@ -76,4 +72,20 @@ works:
       - Chair
     title: 'Savage Chair '
     when: '2015'
+  - images:
+      - file: Ghost_Dog_Install_05
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_09
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_26
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_08
+    projects:
+      - slug: ghost-dog
 status: Represented
