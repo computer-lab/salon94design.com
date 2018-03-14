@@ -35,7 +35,7 @@ works:
       - {}
     medium: 'Polycarbonate, plywood, latex paint, epoxy resin, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: x-chair-3
     tags:
       - Chair
@@ -46,7 +46,7 @@ works:
       - file: large_wusjtc
     medium: 'Polycarbonate, plywood, latex paint, steel, epoxy resin'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: x-chair-with-arms-prototype
     tags:
       - Chair
@@ -57,7 +57,7 @@ works:
       - file: large_zkw2mh
     medium: 'Plywood, Latex Paint, Steel Hardware, Epoxy Resin, Urethane'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: lcw-prototype
     tags:
       - Chair
@@ -70,7 +70,7 @@ works:
       Plywood, latex paint, neoprene rubber, steel hardware, leather, latex
       foam, polyester mesh, ripstop nylon
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: lounge-chair-2
     tags:
       - Chair
@@ -81,7 +81,7 @@ works:
       - file: large_un30it
     medium: 'ConEd Barrier, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: adirondack
     tags:
       - Chair
@@ -91,7 +91,7 @@ works:
     images: []
     medium: 'ConEd Barrier, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: crate-chair
     tags:
       - Chair
@@ -104,7 +104,7 @@ works:
       Plywood, latex paint, steel hardware, leather, latex foam, polyester mesh,
       ripstop nylon
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: ottoman-1
     tags:
       - Ottoman
@@ -115,7 +115,7 @@ works:
       - file: large_mqoofq
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: medium-round-table-1
     tags:
       - Table
@@ -126,7 +126,7 @@ works:
       - file: large_twxn2f
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: side-table-1
     tags:
       - Table
@@ -136,7 +136,7 @@ works:
     images: []
     medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: coned-pedestal-table
     tags:
       - Table
@@ -147,7 +147,7 @@ works:
       - file: large_kvo346
     medium: 'ConEd Barrier, steel hardware, incandescent bulb'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: eileen-gray-lamp
     tags:
       - Lighting
@@ -158,7 +158,7 @@ works:
       - file: large_ysnmbj
     medium: 'Plywood, latex paint, epoxy resin, porcelain and steel hardware'
     projects:
-      - slug: design-miami-basel-2017
+      - slug: design-miami-2017-tom-sachs
     slug: brick-vase
     tags:
       - Other
