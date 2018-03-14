@@ -736,4 +736,20 @@ works:
       - Other
     title: Ice Cream Vase 13
     when: '2017'
+  - images:
+      - file: Ghost_Dog_Install_39
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_38
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_34
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_22
+    projects:
+      - slug: ghost-dog
 status: Represented
