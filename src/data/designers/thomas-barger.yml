@@ -452,4 +452,12 @@ works:
       - file: LEVER_HOUSE-4A
     projects:
       - slug: midtown-lever-house
+  - images:
+      - file: Ghost_Dog_Install_31
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_15
+    projects:
+      - slug: ghost-dog
 status: Represented
