@@ -448,14 +448,6 @@ works:
     title: Sorting Laundry For a Family of 5 (wall)
     when: '2017'
   - images:
-      - file: LEVER_HOUSE-4A
-    projects:
-      - slug: midtown-lever-house
-  - images:
-      - file: Ghost_Dog_Install_31
-    projects:
-      - slug: ghost-dog
-  - images:
       - file: Ghost_Dog_Install_15
     projects:
       - slug: ghost-dog
