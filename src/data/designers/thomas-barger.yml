@@ -460,4 +460,8 @@ works:
       - file: Ghost_Dog_Install_15
     projects:
       - slug: ghost-dog
+  - images:
+      - file: Tbar_3_chairs
+    projects:
+      - slug: growing-up
 status: Represented
