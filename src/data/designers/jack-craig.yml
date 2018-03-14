@@ -108,4 +108,20 @@ works:
       - Lighting
     title: Hot Dog Grey Marble Table Lamp
     when: '2017'
+  - images:
+      - file: Ghost_Dog_Install_30
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: ' Ghost_Dog_Install_29'
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_16
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_13
+    projects:
+      - slug: ghost-dog
 status: Represented
