@@ -41,4 +41,16 @@ works:
     slug: pm-turntable
     title: Nylon Turntable
     when: '2017'
+  - images:
+      - file: DSC_1604
+    projects:
+      - slug: design-miami-2017-philippe-malouin-core
+  - images:
+      - file: DSC_1613
+    projects:
+      - slug: design-miami-2017-philippe-malouin-core
+  - images:
+      - file: DSC_1624
+    projects:
+      - slug: design-miami-2017-philippe-malouin-core
 status: Represented
