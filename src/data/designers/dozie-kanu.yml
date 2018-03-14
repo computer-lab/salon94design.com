@@ -23,4 +23,8 @@ works:
       - Bench
     title: Bench on 84s
     when: '2017'
+  - images:
+      - file: LEVER_HOUSE_INSTALL_2
+    projects:
+      - slug: midtown-lever-house
 status: Represented
