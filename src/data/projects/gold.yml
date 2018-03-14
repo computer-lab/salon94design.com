@@ -1,7 +1,7 @@
 slug: gold
 title: Gold
 type: Exhibition
-when: September 19–November 03
+when: 'September 19, 2017–November 03, 2017'
 start_date: '2017-09-19'
 end_date: '2017-11-03'
 designers:
@@ -21,12 +21,12 @@ description: >-
   —Lucas Samaras, September 25, 2017
 
 
-  Salon 94 Design is pleased to present Lucas Samaras _Gold_, an exhibition of
+  Salon 94 Design is pleased to present _Lucas Samaras: Gold_, an exhibition of
   the pioneering Greek-American artist’s explorations in gold through sculpture,
   painting, and jewelry. The exhibition highlights three distinct bodies of
   work: a series of gold-plated bronze sculptures from 1980-81, 22 karat gold
-  jewelry cast from chicken wire made between 1996-98, and his gold _Wound_
-  paintings made between 1999-2000.
+  jewelry cast from chicken wire made between 1996-98, and his gold  __Wound_
+  _paintings made between 1999-2000.
 
 
   Samaras has painted with gold and silver since the late 50s. The metallic
@@ -54,13 +54,16 @@ description: >-
 
 
   The exhibition also features one of Samaras’ unique gold-plated bronze chairs
-  from 1983, and an iconic exploded _Stick Chair_ from 1989. For more
-  information, please contact Maxime Van Melkebeke at maxime@salon94design.com.
-  For press inquiries, please contact Sophie Wise at sophie@companyagenda.com.
+  from 1983, and an iconic exploded __Stick Chair_ _from 1989. For more
+  information, please contact Maxime Van Melkebeke at
+  <mailto:maxime@salon94design.com> For press inquiries, please contact Sophie
+  Wise at sophie@companyagenda.com.
 images:
-  - file: large_a4gkws
-    hero: true
-  - file: large_htggum
+  - file: LuSa_2017_Install_2
+  - file: LuSa_2017_Install_5
+  - file: ' LuSa_2017_Install_1'
+  - file: LuSa_2017_Install_3
+  - file: LuSa_2017_Install_4
 video:
   caption: ''
   vimeoId: ''
