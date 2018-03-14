@@ -145,8 +145,7 @@ works:
       - file: 49936_zbqcxa
     medium: 'Paper pulp, plywood, styrofoam, cardboard'
     price: ''
-    projects:
-      - slug: ghost-dog
+    projects: []
     slug: underwear-armoire
     tags:
       - Storage
