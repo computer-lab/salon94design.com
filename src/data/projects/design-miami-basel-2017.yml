@@ -11,15 +11,7 @@ description: |-
   Max Lamb – Thermal Spray Furniture
 
   Lucas Samaras – Gold Jewelry
-images:
-  - file: large_ggy8nw
-  - file: >-
-      large_apt6pq
-  - file: >-
-      large_s2ewoa
-    hero: true
-  - file: >-
-      large_u0vqog
+images: []
 video:
   caption: ''
   vimeoId: ''
