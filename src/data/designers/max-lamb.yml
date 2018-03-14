@@ -461,4 +461,10 @@ works:
       - file: ' Screen_Shot_2018-03-14_at_12.49.20_PM'
     projects:
       - slug: boulders-max-lamb
+  - images:
+      - file: S94D-MLa95-MaxLamb-NanocrystallineChair-2015-LR
+    medium: Nanocrystalline
+    slug: nanocrystalline-chair
+    title: Nanocrystalline Chair
+    when: '2015'
 status: Represented
