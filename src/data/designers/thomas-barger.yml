@@ -455,4 +455,60 @@ works:
       - file: Tbar_3_chairs
     projects:
       - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-01
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-02
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-03
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-04
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-05
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-06
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-07
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-08
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-09
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-10
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-11
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-12
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-13
+    projects:
+      - slug: growing-up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-14
+    projects:
+      - slug: growing-up
 status: Represented
