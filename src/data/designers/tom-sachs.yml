@@ -169,4 +169,8 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
     slug: gif-1
+  - images:
+      - {}
+    projects:
+      - slug: design-miami-2017-tom-sachs
 status: Represented
