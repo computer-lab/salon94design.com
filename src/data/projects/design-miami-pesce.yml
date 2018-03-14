@@ -20,19 +20,7 @@ description: >-
   tree-shaped Puglia Cabientis made using papier maché. With elegance and
   humor, Pesce modernizes the Japanese gold leaf and red lacquer cabinetry in
   his 2006 Horse Cabinet.
-images:
-  - caption: Puglia Cabinet
-    file: large_fwinno
-  - caption: Do You Still Love Me? Cabinet
-    file: large_l6gfyh
-    hero: false
-  - file: large_ybbxhh
-  - caption: Horse Cabinet
-    file: large_yvuyjj
-  - file: large_fynsy4
-    hero: false
-  - file: large_mekbzt
-    hero: true
+images: []
 video:
   caption: ''
   vimeoId: ''
