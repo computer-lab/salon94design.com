@@ -259,7 +259,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
     ) {
       const nullImage = { file: '', width: 0, height: 0 }
       node.hydratedImages = [
-        { ...nullImage, title: '', resized: [{ ...nullImage }] },
+        { ...nullImage, title: '', resized: [{ ...nullImage }], hero: false },
       ]
     }
   }
@@ -307,7 +307,7 @@ exports.onCreateNode = async ({ node, boundActionCreators }) => {
         const html = await markdownToHtml(node.description)
         node.descriptionHtml = html.contents
 
-        await hydrateImages(node)
+        await hydrateImages(node, true)
       }
       break
   }

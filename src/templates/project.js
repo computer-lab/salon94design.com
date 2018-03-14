@@ -42,7 +42,7 @@ const ProjectTemplate = ({ data, pathContext }) => {
     : []
 
   const projectImages = (project.hydratedImages || [])
-    .filter(i => !!i)
+    .filter(i => !!i && i.file !== '')
     .map(image =>
       Object.assign(imageInfo(image), {
         texts: image.caption ? { title: image.caption } : null,
