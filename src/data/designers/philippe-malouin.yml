@@ -53,4 +53,12 @@ works:
       - file: DSC_1624
     projects:
       - slug: design-miami-2017-philippe-malouin-core
+  - images:
+      - file: large_leeulc
+    projects:
+      - slug: design-miami-2017-philippe-malouin-core
+  - images:
+      - file: ' large_k5vdlp'
+    projects:
+      - slug: design-miami-2017-philippe-malouin-core
 status: Represented
