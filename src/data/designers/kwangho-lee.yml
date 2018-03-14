@@ -39,8 +39,7 @@ works:
     when: '2016'
   - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
     images:
-      - file: >-
-          large_qlarv2
+      - file: large_qlarv2
     medium: Nylon
     price: ''
     projects:
@@ -97,4 +96,16 @@ works:
       - Lighting
     title: Lamp
     when: '2017'
+  - images:
+      - file: Ghost_Dog_Install_37
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_12
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_35
+    projects:
+      - slug: ghost-dog
 status: Represented
