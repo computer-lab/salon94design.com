@@ -752,4 +752,36 @@ works:
       - file: Ghost_Dog_Install_22
     projects:
       - slug: ghost-dog
+  - images:
+      - file: Design_Miami_2016_01
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_09
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_06
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_03
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_16
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_11
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: ' Design_Miami_2016_38'
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_32
+    projects:
+      - slug: design-miami-2016-pesce
 status: Represented
