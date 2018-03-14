@@ -448,4 +448,8 @@ works:
       - storage
     title: Sorting Laundry For a Family of 5 (wall)
     when: '2017'
+  - images:
+      - file: LEVER_HOUSE-4A
+    projects:
+      - slug: midtown-lever-house
 status: Represented
