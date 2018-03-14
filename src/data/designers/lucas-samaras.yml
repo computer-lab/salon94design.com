@@ -589,4 +589,24 @@ works:
       - Jewelry
     title: 'Ring #41 (0.8 ounces)'
     when: ''
+  - images:
+      - file: LuSa_2017_Install_4
+    projects:
+      - slug: gold
+  - images:
+      - file: LuSa_2017_Install_3
+    projects:
+      - slug: gold
+  - images:
+      - file: LuSa_2017_Install_1
+    projects:
+      - slug: gold
+  - images:
+      - file: LuSa_2017_Install_5
+    projects:
+      - slug: gold
+  - images:
+      - file: LuSa_2017_Install_2
+    projects:
+      - slug: gold
 status: Represented
