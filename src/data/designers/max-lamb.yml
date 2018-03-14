@@ -263,8 +263,7 @@ works:
     when: '2017'
   - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
     images:
-      - file: >-
-          large_pgxeg2
+      - file: large_pgxeg2
     medium: Polystyrene and bronze
     projects:
       - slug: design-miami-basel-2017
@@ -276,8 +275,7 @@ works:
   - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
     edition: 'unique, initials carved on bottom'
     images:
-      - file: >-
-          large_pljzuy
+      - file: large_pljzuy
     medium: Polystyrene and stainless steel
     price: ''
     projects:
@@ -289,8 +287,7 @@ works:
     when: '2017'
   - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
     images:
-      - file: >-
-          large_xwtyvh
+      - file: large_xwtyvh
     medium: Polystyrene and copper
     projects:
       - slug: design-miami-basel-2017
@@ -312,8 +309,7 @@ works:
     when: '2017'
   - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
     images:
-      - file: >-
-          large_k86r9w
+      - file: large_k86r9w
     medium: Polystyrene and aluminium
     projects:
       - slug: design-miami-basel-2017
@@ -324,8 +320,7 @@ works:
     when: '2017'
   - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
     images:
-      - file: >-
-          large_h43oyo
+      - file: large_h43oyo
     medium: Polystyrene and copper
     projects:
       - slug: design-miami-basel-2017
@@ -337,10 +332,8 @@ works:
   - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
     edition: 'unique, initials carved on bottom'
     images:
-      - file: >-
-          large_byrxun
-      - file: >-
-          large_ujtm4i
+      - file: large_byrxun
+      - file: large_ujtm4i
     medium: Polystyrene and bronze
     price: ''
     projects:
@@ -366,8 +359,7 @@ works:
   - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
     edition: 'unique, initials carved on side'
     images:
-      - file: >-
-          large_uv121w
+      - file: large_uv121w
     medium: Polystyrene and stainless steel
     price: ''
     projects:
@@ -433,4 +425,8 @@ works:
     tags:
       - chair
     title: Thermal Spray Chair 3
+  - images:
+      - file: LEVER_HOUSE-9
+    projects:
+      - slug: midtown-lever-house
 status: Represented
