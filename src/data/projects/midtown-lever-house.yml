@@ -112,12 +112,7 @@ description: >-
   sophie@companyagenda.com. For performance inquiries please contact Victoria
   Kung at victoria.kung@suttonpr.com. For all other inquiries about _MIDTOWN_,
   please contact  info@salon94design.com.
-images:
-  - file: large_kw6si7
-    hero: true
-  - file: large_aya2ll
-  - file: large_qnl4vs
-  - file: large_keahhe
+images: []
 video:
   caption: 'FLUCT+ X PERFORMA NYC  '
   vimeoId: '243903238'
