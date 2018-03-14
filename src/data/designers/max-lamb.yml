@@ -467,4 +467,12 @@ works:
     slug: nanocrystalline-chair
     title: Nanocrystalline Chair
     when: '2015'
+  - images:
+      - file: large_apt6pq
+    projects:
+      - slug: design-miami-basel-2017
+  - images:
+      - file: large_u0vqog
+    projects:
+      - slug: design-miami-basel-2017
 status: Represented
