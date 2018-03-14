@@ -429,4 +429,32 @@ works:
       - file: LEVER_HOUSE-9
     projects:
       - slug: midtown-lever-house
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3543
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3540
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3533
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3529
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3517
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3516
+    projects:
+      - slug: boulders-max-lamb
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3549
+    projects:
+      - slug: boulders-max-lamb
 status: Represented
