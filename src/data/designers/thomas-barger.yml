@@ -194,8 +194,7 @@ works:
     images:
       - file: large_nbvblq
     medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects:
-      - slug: ghost-dog
+    projects: []
     slug: aleksandr-rodchenko-snack-chair-with-harness
     tags:
       - Chair
@@ -207,6 +206,7 @@ works:
     medium: Paper pulp and Styrofoam
     projects:
       - slug: Bowery Design 2017
+      - slug: ghost-dog
     slug: dont-forget-me-on-the-train-chair
     tags:
       - Chair
