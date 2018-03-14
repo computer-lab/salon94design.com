@@ -173,4 +173,32 @@ works:
       - {}
     projects:
       - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1634
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1628
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1637
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1644
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1648
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1651
+    projects:
+      - slug: design-miami-2017-tom-sachs
+  - images:
+      - file: DSC_1657
+    projects:
+      - slug: design-miami-2017-tom-sachs
 status: Represented
