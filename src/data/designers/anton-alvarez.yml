@@ -329,8 +329,7 @@ works:
   - dimensions: 1.5 x 16.5 inches ( 94 x 54.6 x 41.9 cm)
     hero: false
     images:
-      - file: >-
-          large_edagem
+      - file: large_edagem
     medium: >-
       Polyester thread, fabric, fake-fur, pva glue, color pigment, mdf, plywood,
       osb, wood, plastic and metal
@@ -342,8 +341,7 @@ works:
   - dimensions: 18.11 x 82.28 x 10.24 inches (46 x 209 x 26 cm)
     hero: false
     images:
-      - file: >-
-          large_ja2zo4
+      - file: large_ja2zo4
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic, metal
@@ -361,8 +359,7 @@ works:
   - dimensions: 34 x 22 x 7 inches ( 86.4 x 55.9 x 17.8 cm)
     hero: false
     images:
-      - file: >-
-          large_nw6ikn
+      - file: large_nw6ikn
     medium: >-
       polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
       wood, plastic and metal
@@ -436,4 +433,8 @@ works:
       - Table
     title: Thread Wrapped Table
     when: '2017'
+  - images:
+      - file: LEVER_HOUSE_INSTALL_1
+    projects:
+      - slug: midtown-lever-house
 status: Represented
