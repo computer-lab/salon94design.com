@@ -27,4 +27,16 @@ works:
       - file: LEVER_HOUSE_INSTALL_2
     projects:
       - slug: midtown-lever-house
+  - dimensions: 37 x 19 x 16.5 inches(94 x 48.3 x 41.9 cm)
+    images:
+      - file: S94D-DK4-DonzieKanu-Chairon84s-2018-HR
+    medium: poured concrete and steel
+    slug: chair-on-84s
+    title: Chair on 84s
+    when: '2018'
+  - images:
+      - file: S94D-DK3-DonzieKanu-TableOn84s-2018-HR
+    slug: table-on-84s
+    title: 'Table on 84s '
+    when: '2018'
 status: Represented

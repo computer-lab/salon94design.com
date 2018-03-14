@@ -609,4 +609,16 @@ works:
       - file: LuSa_2017_Install_2
     projects:
       - slug: gold
+  - images:
+      - file: large_ggy8nw
+    projects:
+      - slug: design-miami-basel-2017
+  - images:
+      - file: Design_Miami_Basel_2017_Install_02
+    projects:
+      - slug: design-miami-basel-2017
+  - images:
+      - file: Design_Miami_Basel_2017_Install_03
+    projects:
+      - slug: design-miami-basel-2017
 status: Represented
