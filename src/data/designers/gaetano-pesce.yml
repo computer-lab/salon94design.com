@@ -82,13 +82,6 @@ works:
       - Lighting
     title: Rug Wall Lamp 3
     when: '2017'
-  - images:
-      - file: gpe58_t7nobw
-    medium: Polyurethane Resin
-    slug: bracelet-black
-    tags:
-      - Jewelry
-    title: Bracelet (Black)
   - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
     images:
       - file: gpe105_iyrohs
@@ -98,62 +91,13 @@ works:
       - Lighting
     title: Rug Wall Lamp 4
     when: '2017'
-  - images:
-      - file: gpe59_j23qbk
-    medium: Polyurethane Resin
-    slug: bracelet-blue-black
-    tags:
-      - Jewelry
-    title: Bracelet (Blue and Black)
-    when: ''
-  - images:
-      - file: gpe62_u79pkb
-    medium: Polyurethane Resin
-    slug: bracelet-blue-woven
-    tags:
-      - Jewelry
-    title: Bracelet (Blue Woven)
-    when: ''
-  - images:
-      - file: gpe56_cwldy7
-    medium: Polyurethane Resin
-    slug: bracelet-green
-    tags:
-      - Jewelry
-    title: Bracelet (Green)
-    when: ''
-  - images:
-      - file: gpe63_ashvvr
-    medium: Polyurethane Resin
-    slug: bracelet-orange
-    tags:
-      - Jewelry
-    title: Bracelet (Orange)
-    when: ''
-  - images:
-      - file: gpe61_oh17gp
-    medium: Polyurethane Resin
-    slug: bracelet-pink
-    tags:
-      - Jewelry
-    title: Bracelet (Pink)
-    when: ''
-  - images:
-      - file: gpe60_cvct3h
-    medium: Polyurethane Resin
-    slug: bracelet-red-and-black
-    tags:
-      - Jewelry
-    title: Bracelet (Red and Black)
-    when: ''
-  - images:
-      - file: gpe57_njdptt
-    medium: Polyurethane Resin
-    slug: bracelet-yellow
-    tags:
-      - Jewelry
-    title: Bracelet (Yellow)
-    when: ''
+  - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
+    images:
+      - file: ' gpe129'
+    medium: 'Resin, metal graphite'
+    slug: friend-lamp
+    title: Friend Lamp
+    when: '2014'
   - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
     images:
       - file: gpe126_urhqpy
@@ -313,21 +257,21 @@ works:
     when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: gpe18_ojx8kn
-    medium: Polyurethane resin
-    slug: jeanne-chair-1
-    tags:
-      - Chair
-    title: Jeanne Chair 1
-    when: '2016'
-  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
-    images:
       - file: gpe20_wuxxqn
     medium: Polyurethane resin
     slug: jeanne-chair-3
     tags:
       - Chair
     title: Jeanne Chair 3
+    when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: gpe18_ojx8kn
+    medium: Polyurethane resin
+    slug: jeanne-chair-1
+    tags:
+      - Chair
+    title: Jeanne Chair 1
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
@@ -337,24 +281,6 @@ works:
     tags:
       - other
     title: Trash Can 2
-    when: '2016'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe21_tu12mk
-    medium: Polyurethane resin
-    slug: trash-can-1
-    tags:
-      - other
-    title: Trash Can 1
-    when: '2016'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe23_ypy8qv
-    medium: Polyurethane resin
-    slug: trash-can-3
-    tags:
-      - other
-    title: Trash Can 3
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
@@ -374,6 +300,37 @@ works:
       - other
     title: Trash Can 4
     when: '2016'
+  - images:
+      - file: gpe56_cwldy7
+    medium: Polyurethane Resin
+    slug: bracelet-green
+    tags:
+      - Jewelry
+    title: Bracelet (Green)
+    when: ''
+  - images:
+      - file: gpe61_oh17gp
+    medium: Polyurethane Resin
+    slug: bracelet-pink
+    tags:
+      - Jewelry
+    title: Bracelet (Pink)
+    when: ''
+  - images:
+      - file: gpe62_u79pkb
+    medium: Polyurethane Resin
+    slug: bracelet-blue-woven
+    tags:
+      - Jewelry
+    title: Bracelet (Blue Woven)
+    when: ''
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: GPe_46_LR
+    medium: Polyurethane resin
+    slug: gold-vase
+    title: Gold Vase
+    when: '2016'
   - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     hero: false
     images:
@@ -385,13 +342,15 @@ works:
       - Other
     title: Mini Stracci Vases
     when: '2015'
-  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+  - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     images:
-      - file: GPe_46_LR
+      - file: gpe42_aobet8
     medium: Polyurethane resin
-    slug: gold-vase
-    title: Gold Vase
-    when: '2016'
+    slug: mini-stacci-vase
+    tags:
+      - Other
+    title: Mini Stracci Vase
+    when: '2015'
   - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
     images:
       - file: gpe37_rum41u
@@ -419,15 +378,6 @@ works:
       - Other
     title: 3 Leg Vase
     when: '2016'
-  - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
-    images:
-      - file: gpe36_taw4ww
-    medium: Polyurethane resin
-    slug: vase-with-red-legs
-    tags:
-      - Other
-    title: Vase with Red Legs
-    when: '2016'
   - dimensions: 9.45 x 6.69 x 6.69 inches (24 x 17 x 17 cm)
     images:
       - file: gpe39_yw4isf
@@ -445,15 +395,6 @@ works:
     tags:
       - Other
     title: Mini Medusa Vase
-    when: '2015'
-  - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
-    images:
-      - file: gpe42_aobet8
-    medium: Polyurethane resin
-    slug: mini-stacci-vase
-    tags:
-      - Other
-    title: Mini Stracci Vase
     when: '2015'
   - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
     images:
@@ -480,15 +421,6 @@ works:
       - Other
     title: Flame Vase Medium
     when: '2014'
-  - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
-    images:
-      - file: gpe53_e3qsay
-    medium: Polyurethane resin
-    slug: skinny-vase
-    tags:
-      - Other
-    title: Skinny Vase
-    when: '2015'
   - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
     images:
       - file: gpe54_lkvhza
@@ -507,6 +439,24 @@ works:
       - Other
     title: Radici Vase Red/Black
     when: '2010'
+  - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
+    images:
+      - file: gpe53_e3qsay
+    medium: Polyurethane resin
+    slug: skinny-vase
+    tags:
+      - Other
+    title: Skinny Vase
+    when: '2015'
+  - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
+    images:
+      - file: gpe36_taw4ww
+    medium: Polyurethane resin
+    slug: vase-with-red-legs
+    tags:
+      - Other
+    title: Vase with Red Legs
+    when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: GAETANO_PESCE-37
@@ -566,15 +516,6 @@ works:
       - Other
     title: Small Pebble Vase 9
     when: '2017'
-  - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
-    images:
-      - file: /images/gpe150.jpg
-    medium: Polyurethane resin
-    slug: ice-cream-vase
-    tags:
-      - Other
-    title: Ice Cream Vase
-    when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: gpe148_dz7bf1
@@ -583,6 +524,15 @@ works:
     tags:
       - Other
     title: Small Pebble Vase 8
+    when: '2017'
+  - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
+    images:
+      - file: /images/gpe150.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase
+    tags:
+      - Other
+    title: Ice Cream Vase
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
     images:
@@ -612,11 +562,11 @@ works:
     title: Ice Cream Vase 1
     when: '2017'
   - images:
-      - file: Ghost_Dog_Install_38
+      - file: Ghost_Dog_Install_34
     projects:
       - slug: ghost-dog
   - images:
-      - file: Ghost_Dog_Install_34
+      - file: Ghost_Dog_Install_38
     projects:
       - slug: ghost-dog
   - images:
@@ -627,21 +577,12 @@ works:
       - file: Design_Miami_2016_09
     projects:
       - slug: design-miami-2016-pesce
-  - dimensions: 8.25 x 7 x 7 inches (20.955 x 17.78 x 17.78 cm)
-    images:
-      - file: gpe164_ozcanh
-    medium: Polyurethane resin
-    slug: ice-cream-vase-13
-    tags:
-      - Other
-    title: Ice Cream Vase 13
-    when: '2017'
   - images:
-      - file: Design_Miami_2016_06
+      - file: Design_Miami_2016_01
     projects:
       - slug: design-miami-2016-pesce
   - images:
-      - file: Design_Miami_2016_01
+      - file: Design_Miami_2016_06
     projects:
       - slug: design-miami-2016-pesce
   - images:
@@ -660,13 +601,6 @@ works:
       - file: Design_Miami_2016_16
     projects:
       - slug: design-miami-2016-pesce
-  - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
-    images:
-      - file: ' gpe129'
-    medium: 'Resin, metal graphite'
-    slug: friend-lamp
-    title: Friend Lamp
-    when: '2014'
   - images:
       - file: Design_Miami_2016_32
     projects:
