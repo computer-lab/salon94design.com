@@ -13,6 +13,11 @@ press:
   - file: /images/20171110-designboom-maxlamb-boulders.pdf
     title: 'designboom  '
 works:
+  - images:
+      - file: Screen_Shot_2018-03-14_at_12.49.20_PM
+    projects:
+      - slug: boulders-max-lamb
+    title: '1'
   - dimensions: 16.1 x 33.5 x 15.75 inches (40.9 x 85.1 x 40 cm)
     edition: 'unique, initials carved on side'
     hero: true
