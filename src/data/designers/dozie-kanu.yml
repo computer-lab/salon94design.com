@@ -23,10 +23,6 @@ works:
       - Bench
     title: Bench on 84s
     when: '2017'
-  - images:
-      - file: LEVER_HOUSE_INSTALL_2
-    projects:
-      - slug: midtown-lever-house
   - dimensions: 37 x 19 x 16.5 inches(94 x 48.3 x 41.9 cm)
     images:
       - file: S94D-DK4-DonzieKanu-Chairon84s-2018-HR
@@ -39,4 +35,8 @@ works:
     slug: table-on-84s
     title: 'Table on 84s '
     when: '2018'
+  - images:
+      - file: LEVER_HOUSE_INSTALL_2
+    projects:
+      - slug: midtown-lever-house
 status: Represented
