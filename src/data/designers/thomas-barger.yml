@@ -456,10 +456,6 @@ works:
     projects:
       - slug: growing-up
   - images:
-      - file: S94D-ThomasBarger-growingup-install-01
-    projects:
-      - slug: growing-up
-  - images:
       - file: S94D-ThomasBarger-growingup-install-02
     projects:
       - slug: growing-up
