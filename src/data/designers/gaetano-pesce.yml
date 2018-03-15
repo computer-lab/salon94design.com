@@ -737,10 +737,6 @@ works:
     title: Ice Cream Vase 13
     when: '2017'
   - images:
-      - file: Ghost_Dog_Install_39
-    projects:
-      - slug: ghost-dog
-  - images:
       - file: Ghost_Dog_Install_38
     projects:
       - slug: ghost-dog
@@ -784,4 +780,27 @@ works:
       - file: Design_Miami_2016_32
     projects:
       - slug: design-miami-2016-pesce
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: GAETANO_PESCE-37
+    medium: Polyurethane resin
+    slug: small-rock-vases
+    title: Small Rock Vases
+    when: '2016'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: GPe_46_LR
+    medium: Polyurethane resin
+    slug: gold-vase
+    title: Gold Vase
+    when: '2016'
+  - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
+    images:
+      - file: ' gpe129'
+    medium: 'Resin, metal graphite'
+    slug: friend-lamp
+    title: Friend Lamp
+    when: '2014'
+  - images:
+      - file: GPe_Cabinets
 status: Represented
