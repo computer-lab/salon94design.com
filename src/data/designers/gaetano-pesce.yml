@@ -29,7 +29,7 @@ press:
 works:
   - images:
       - file: GPe_Cabinets
-    title: '1'
+    title: ''
   - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
     images:
       - file: gp26_fnugdv
