@@ -1,18 +1,18 @@
 hero: pesce_image
 staff:
-  - email: jeanne@salon94design.com
+  - email: ''
     name: Jeanne Greenberg Rohatyn
     title: Founder
-  - email: paul@salon94design.com
+  - email: ''
     name: Paul Johnson
     title: Founder
-  - email: maxime@salon94design.com
+  - email: ''
     name: Maxime Van Melkebeke
     title: Associate Director
-  - email: jackie@salon94design.com
+  - email: ''
     name: Jackie Greenberg
-    title: Designer & Project Liaison
-  - email: renee@salon94design.com
+    title: Project Liaison
+  - email: ''
     name: Renee Rockefeller
     title: Exhibition Liaison
 emails:
