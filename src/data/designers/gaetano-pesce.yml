@@ -123,7 +123,7 @@ works:
     when: '2013'
   - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
     images:
-      - file: ' gpe129'
+      - file: gpe129
     medium: 'Resin, metal graphite'
     slug: friend-lamp
     title: Friend Lamp
