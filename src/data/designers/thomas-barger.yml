@@ -28,7 +28,7 @@ works:
       - Chair
     title: Love Me Chair
     when: '2017'
-  - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+  - dimensions: 31 x 18 x 18 inches (78.74 X 45.72 X 45.72 cm)
     hero: true
     images:
       - file: tbar12_s8kgms
@@ -58,7 +58,7 @@ works:
       - Chair
     title: 'S.O.S. Green Goblin, Spidey Please Save Me'
     when: '2017'
-  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
     hero: true
     images:
       - file: tbar16_msnr8d
@@ -88,7 +88,7 @@ works:
       - Chair
     title: Protect Me Chair
     when: '2017'
-  - dimensions: 12 x 12 x 36 inches (30.48 x 30.48 x 91.44 cm)
+  - dimensions: 31 x 18 x 18 inches (78.74 x 45.72 x 45.72 cm)
     hero: true
     images:
       - file: tbar13_y8c6pm
@@ -115,7 +115,7 @@ works:
       - Storage
     title: Underwear Armoire 3
     when: '2017'
-  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
     hero: true
     images:
       - file: tbar17_qdkxli
@@ -130,7 +130,7 @@ works:
       - Chair
     title: Buttery Tall Boy 2
     when: '2017'
-  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
+  - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
     hero: true
     images:
       - file: tbar10instal_fdeawl
@@ -155,7 +155,7 @@ works:
       - Storage
     title: 'Underwear Armoire, Connor''s Armoire'
     when: '2016'
-  - dimensions: 12 x 12 x 60 inches (30.48 x 30.48 x 152.4 cm)
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
     hero: true
     images:
       - file: tbar18_rmdpic
@@ -368,7 +368,7 @@ works:
       - other
     title: Wall Drawing 2
     when: '2017'
-  - dimensions: 30 x 20 1/2 x 16 inches (76.2 x 52.1 x 40.6 cm)
+  - dimensions: 30 x 20.5 x 16 inches (76.2 x 52.1 x 40.6 cm)
     images:
       - file: TBar23
     medium: 'Paper pulp, wooden frame, wood, rattan, polyurethane, and paint'
@@ -440,7 +440,7 @@ works:
       - chair
     title: Chair 4 (Pink)
     when: '2016'
-  - dimensions: 15 x 144 x 108 inches (38.1 x 365.8 x 274.3 cm)
+  - dimensions: 108 X 144 X 15 inches (274.3 X 365.8 X 38.1 cm)
     images:
       - file: S94D-TBar10-ThomasBarger-SortingLaundryforaFamilyof5-2017-A-HR
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
