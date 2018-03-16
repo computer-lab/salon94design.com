@@ -192,69 +192,6 @@ works:
       - Lighting
     title: Rug Wall Lamp 4
     when: '2017'
-  - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
-    images:
-      - file: gpe_9_j2jvzj
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-xxl
-    tags:
-      - Other
-    title: Tree Vase XXL
-    when: '2016'
-  - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
-    images:
-      - file: gpe10_whfx3a
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-medium
-    tags:
-      - Other
-    title: Tree Vase Medium
-    when: '2016'
-  - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
-    images:
-      - file: gpe11_lxwvro
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-small
-    tags:
-      - Other
-    title: Tree Vase Small
-    when: ''
-  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
-    images:
-      - file: gpe15_qbxbwc
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-big-4-legs
-    tags:
-      - Other
-    title: Tree Vase Big (4 legs)
-    when: '2015'
-  - dimensions: 39.37 x 9.84 x 9.84 inches (100 x 25 x 25 cm)
-    images:
-      - file: gpe14_go5nuk
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-cirpresso
-    tags:
-      - Other
-    title: Tree Vase Cirpresso
-    when: '2016'
-  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
-    images:
-      - file: gpe16_ixjhix
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-big-4-legs-2
-    tags:
-      - Other
-    title: Tree Vase big (4 legs) 2
-    when: '2015'
-  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
-    images:
-      - file: gpe19_ns6buc
-    medium: Polyurethane resin
-    slug: jeanne-chair-2
-    tags:
-      - Chair
-    title: Jeanne Chair 2
-    when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
       - file: gpe20_wuxxqn
@@ -266,12 +203,12 @@ works:
     when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: gpe18_ojx8kn
+      - file: gpe19_ns6buc
     medium: Polyurethane resin
-    slug: jeanne-chair-1
+    slug: jeanne-chair-2
     tags:
       - Chair
-    title: Jeanne Chair 1
+    title: Jeanne Chair 2
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
@@ -281,6 +218,15 @@ works:
     tags:
       - other
     title: Trash Can 2
+    when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: gpe18_ojx8kn
+    medium: Polyurethane resin
+    slug: jeanne-chair-1
+    tags:
+      - Chair
+    title: Jeanne Chair 1
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
@@ -300,30 +246,6 @@ works:
       - other
     title: Trash Can 4
     when: '2016'
-  - images:
-      - file: gpe56_cwldy7
-    medium: Polyurethane Resin
-    slug: bracelet-green
-    tags:
-      - Jewelry
-    title: Bracelet (Green)
-    when: ''
-  - images:
-      - file: gpe61_oh17gp
-    medium: Polyurethane Resin
-    slug: bracelet-pink
-    tags:
-      - Jewelry
-    title: Bracelet (Pink)
-    when: ''
-  - images:
-      - file: gpe62_u79pkb
-    medium: Polyurethane Resin
-    slug: bracelet-blue-woven
-    tags:
-      - Jewelry
-    title: Bracelet (Blue Woven)
-    when: ''
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: GPe_46_LR
@@ -342,15 +264,6 @@ works:
       - Other
     title: Mini Stracci Vases
     when: '2015'
-  - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
-    images:
-      - file: gpe37_rum41u
-    medium: Polyurethane resin
-    slug: mini-flame-vase
-    tags:
-      - Other
-    title: Mini Flame Vase
-    when: '2014'
   - dimensions: 5.91 x 7.87 x 7.87 inches (15 x 20 x 20 cm)
     images:
       - file: gpe38_wructw
@@ -403,6 +316,15 @@ works:
       - Other
     title: Scaglie Vase (pink)
     when: '2015'
+  - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
+    images:
+      - file: gpe37_rum41u
+    medium: Polyurethane resin
+    slug: mini-flame-vase
+    tags:
+      - Other
+    title: Mini Flame Vase
+    when: '2014'
   - dimensions: 12.6 x 17.32 x 17.32 inches (32 x 44 x 44 cm)
     images:
       - file: gpe52_cfiks3
@@ -421,6 +343,15 @@ works:
       - Other
     title: Radici Vase Red
     when: '2010'
+  - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
+    images:
+      - file: gpe36_taw4ww
+    medium: Polyurethane resin
+    slug: vase-with-red-legs
+    tags:
+      - Other
+    title: Vase with Red Legs
+    when: '2016'
   - dimensions: 8.66 x 9.84 x 9.84 inches (22 x 25 x 25 cm)
     images:
       - file: gpe55_sqnbxn
@@ -439,14 +370,50 @@ works:
       - Other
     title: Skinny Vase
     when: '2015'
-  - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
+  - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
     images:
-      - file: gpe36_taw4ww
-    medium: Polyurethane resin
-    slug: vase-with-red-legs
+      - file: gpe11_lxwvro
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-small
     tags:
       - Other
-    title: Vase with Red Legs
+    title: Tree Vase Small
+    when: ''
+  - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
+    images:
+      - file: gpe10_whfx3a
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-medium
+    tags:
+      - Other
+    title: Tree Vase Medium
+    when: '2016'
+  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
+    images:
+      - file: gpe16_ixjhix
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-big-4-legs-2
+    tags:
+      - Other
+    title: Tree Vase big (4 legs) 2
+    when: '2015'
+  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
+    images:
+      - file: gpe15_qbxbwc
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-big-4-legs
+    tags:
+      - Other
+    title: Tree Vase Big (4 legs)
+    when: '2015'
+  - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
+    images:
+      - file: gpe_9_j2jvzj
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-xxl
+    tags:
+      - Other
+    title: Tree Vase XXL
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
@@ -463,13 +430,6 @@ works:
     tags:
       - Other
     title: Pebble Vase
-    when: '2016'
-  - dimensions: 28.35 x 21.65 x 21.65 inches (72 x 55 x 55 cm)
-    medium: Polyurethane resin
-    slug: pebble-vase-2
-    tags:
-      - Other
-    title: Pebble Vase 2
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
@@ -489,6 +449,13 @@ works:
       - Other
     title: Small Pebble Vase 3
     when: '2017'
+  - dimensions: 28.35 x 21.65 x 21.65 inches (72 x 55 x 55 cm)
+    medium: Polyurethane resin
+    slug: pebble-vase-2
+    tags:
+      - Other
+    title: Pebble Vase 2
+    when: '2016'
   - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: gpe144_ix61s8
@@ -500,15 +467,6 @@ works:
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: gpe149_wazum0
-    medium: Polyurethane resin
-    slug: small-pebble-vase-9
-    tags:
-      - Other
-    title: Small Pebble Vase 9
-    when: '2017'
-  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
-    images:
       - file: gpe148_dz7bf1
     medium: Polyurethane resin
     slug: small-pebble-vase-8
@@ -516,14 +474,14 @@ works:
       - Other
     title: Small Pebble Vase 8
     when: '2017'
-  - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
-      - file: /images/gpe150.jpg
+      - file: gpe149_wazum0
     medium: Polyurethane resin
-    slug: ice-cream-vase
+    slug: small-pebble-vase-9
     tags:
       - Other
-    title: Ice Cream Vase
+    title: Small Pebble Vase 9
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
     images:
@@ -533,6 +491,15 @@ works:
     tags:
       - Other
     title: Ice Cream Vase 6
+    when: '2017'
+  - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
+    images:
+      - file: /images/gpe150.jpg
+    medium: Polyurethane resin
+    slug: ice-cream-vase
+    tags:
+      - Other
+    title: Ice Cream Vase
     when: '2017'
   - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
     images:
@@ -552,6 +519,30 @@ works:
       - Other
     title: Ice Cream Vase 1
     when: '2017'
+  - images:
+      - file: gpe56_cwldy7
+    medium: Polyurethane Resin
+    slug: bracelet-green
+    tags:
+      - Jewelry
+    title: Bracelet (Green)
+    when: ''
+  - images:
+      - file: gpe61_oh17gp
+    medium: Polyurethane Resin
+    slug: bracelet-pink
+    tags:
+      - Jewelry
+    title: Bracelet (Pink)
+    when: ''
+  - images:
+      - file: gpe62_u79pkb
+    medium: Polyurethane Resin
+    slug: bracelet-blue-woven
+    tags:
+      - Jewelry
+    title: Bracelet (Blue Woven)
+    when: ''
   - images:
       - file: Ghost_Dog_Install_34
     projects:
