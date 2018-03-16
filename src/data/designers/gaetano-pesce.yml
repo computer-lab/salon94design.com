@@ -27,6 +27,107 @@ press:
     title: Design Market - December 2016
   - title: Wallpaper* - December 2016
 works:
+  - images:
+      - file: GPe_Cabinets
+    title: '1'
+  - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
+    images:
+      - file: gp26_fnugdv
+    medium: Laminated plywood and polyurethane resin
+    slug: face-cabinet
+    tags:
+      - Storage
+    title: Face Cabinet
+    when: '2015'
+  - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
+    edition: Unique
+    images:
+      - file: large_m6d6hx
+    medium: 'laminated plywood, gold leaf doors'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: horse-cabinet
+    tags:
+      - Storage
+    title: Horse Cabinet
+    when: '2006'
+  - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
+    images:
+      - file: gpe7_uukgce
+    medium: 'Plywood, MDF, polyurethane resin, papier maché'
+    slug: ritratto-dell-uomo-contento-cabinet
+    tags:
+      - Storage
+    title: Ritratto Dell'Uomo Contento Cabinet
+    when: '2016'
+  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+    images:
+      - file: gpe99_tcmdje
+    medium: 'Resin, wood, steel'
+    slug: tornando-dal-circo-cabinet
+    tags:
+      - storage
+    title: Tornando dal Circo Cabinet
+    when: '2016'
+  - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
+    hero: true
+    images:
+      - file: large_l6nzoh
+    medium: polyurethane resin and metal structure
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: do-you-still-love-me
+    tags:
+      - Storage
+    title: Do You Still Love Me?
+    when: '2007'
+  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
+    edition: 'Unique '
+    hero: false
+    images:
+      - file: large_bh76wt
+    medium: 'wood, papier maché'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: puglia-cabinet
+    tags:
+      - Storage
+    title: Puglia Cabinet
+    when: '2007'
+  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
+    images:
+      - file: gpe73_whcyfr
+    medium: 'Bricks of Glass, foam and polyester resin'
+    slug: golgotha-table
+    tags:
+      - table
+    title: Golgotha Table
+    when: '1972'
+  - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
+    images:
+      - file: gpe74_ozhgrx
+    medium: "Papier maché, resin, and\_polyurethane\_foam"
+    slug: swamp-coffee-table
+    tags:
+      - table
+    title: Swamp Coffee Table
+    when: '2015'
+  - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
+    images:
+      - file: gpe126_urhqpy
+    medium: 'Epoxy Resin, Dacron'
+    slug: cloud-lamp
+    tags:
+      - Lighting
+    title: Cloud Lamp
+    when: '2013'
+  - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
+    images:
+      - file: ' gpe129'
+    medium: 'Resin, metal graphite'
+    slug: friend-lamp
+    title: Friend Lamp
+    when: '2014'
   - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
     hero: true
@@ -39,6 +140,15 @@ works:
     tags:
       - Lighting
     title: Rug Wall Lamp
+    when: '2017'
+  - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
+    images:
+      - file: gpe103_mhu2rq
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-2
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 2
     when: '2017'
   - dimensions: 37.4 x 61.02 x 61.02 inches (95 x 155 x 155 cm)
     edition: Unique
@@ -64,15 +174,6 @@ works:
       - Lighting
     title: Rug Lamp 1
     when: '2017'
-  - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
-    images:
-      - file: gpe103_mhu2rq
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-2
-    tags:
-      - Lighting
-    title: Rug Wall Lamp 2
-    when: '2017'
   - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
     images:
       - file: gpe104_uqpwfl
@@ -91,98 +192,6 @@ works:
       - Lighting
     title: Rug Wall Lamp 4
     when: '2017'
-  - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
-    images:
-      - file: ' gpe129'
-    medium: 'Resin, metal graphite'
-    slug: friend-lamp
-    title: Friend Lamp
-    when: '2014'
-  - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
-    images:
-      - file: gpe126_urhqpy
-    medium: 'Epoxy Resin, Dacron'
-    slug: cloud-lamp
-    tags:
-      - Lighting
-    title: Cloud Lamp
-    when: '2013'
-  - images:
-      - file: GPe_Cabinets
-    title: '1'
-  - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
-    hero: true
-    images:
-      - file: large_l6nzoh
-    medium: polyurethane resin and metal structure
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: do-you-still-love-me
-    tags:
-      - Storage
-    title: Do You Still Love Me?
-    when: '2007'
-  - dimensions: 90.55 x 86.61 x 17.72 inches (230 x 220 x 45 cm)
-    images:
-      - file: gp26_fnugdv
-    medium: Laminated plywood and polyurethane resin
-    slug: face-cabinet
-    tags:
-      - Storage
-    title: Face Cabinet
-    when: '2015'
-  - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
-    images:
-      - file: gpe7_uukgce
-    medium: 'Plywood, MDF, polyurethane resin, papier maché'
-    slug: ritratto-dell-uomo-contento-cabinet
-    tags:
-      - Storage
-    title: Ritratto Dell'Uomo Contento Cabinet
-    when: '2016'
-  - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
-    edition: Unique
-    images:
-      - file: large_m6d6hx
-    medium: 'laminated plywood, gold leaf doors'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: horse-cabinet
-    tags:
-      - Storage
-    title: Horse Cabinet
-    when: '2006'
-  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
-    images:
-      - file: gpe99_tcmdje
-    medium: 'Resin, wood, steel'
-    slug: tornando-dal-circo-cabinet
-    tags:
-      - storage
-    title: Tornando dal Circo Cabinet
-    when: '2016'
-  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
-    edition: 'Unique '
-    hero: false
-    images:
-      - file: large_bh76wt
-    medium: 'wood, papier maché'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: puglia-cabinet
-    tags:
-      - Storage
-    title: Puglia Cabinet
-    when: '2007'
-  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
-    images:
-      - file: gpe73_whcyfr
-    medium: 'Bricks of Glass, foam and polyester resin'
-    slug: golgotha-table
-    tags:
-      - table
-    title: Golgotha Table
-    when: '1972'
   - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
     images:
       - file: gpe_9_j2jvzj
@@ -201,15 +210,6 @@ works:
       - Other
     title: Tree Vase Medium
     when: '2016'
-  - dimensions: 18.5 x 51.18 x 36.22 inches (47 x 130 x 92 cm)
-    images:
-      - file: gpe74_ozhgrx
-    medium: "Papier maché, resin, and\_polyurethane\_foam"
-    slug: swamp-coffee-table
-    tags:
-      - table
-    title: Swamp Coffee Table
-    when: '2015'
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
     images:
       - file: gpe11_lxwvro
@@ -341,15 +341,6 @@ works:
     tags:
       - Other
     title: Mini Stracci Vases
-    when: '2015'
-  - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
-    images:
-      - file: gpe42_aobet8
-    medium: Polyurethane resin
-    slug: mini-stacci-vase
-    tags:
-      - Other
-    title: Mini Stracci Vase
     when: '2015'
   - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
     images:
