@@ -28,6 +28,12 @@ press:
       https://www.architecturaldigest.com/story/tom-sachs-newest-project-has-us-over-the-moon
     title: Architectural Digest - November 2017
 works:
+  - hero: true
+    images:
+      - file: S94D-TomSachs-XChair1-2017-gif
+    projects:
+      - slug: design-miami-2017-tom-sachs
+    slug: gif-1
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     hero: false
     images:
@@ -36,10 +42,10 @@ works:
     medium: 'Polycarbonate, plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2017-tom-sachs
-    slug: x-chair-3
+    slug: x-chair
     tags:
       - Chair
-    title: X Chair No.3
+    title: 'X Chair '
     when: '2017'
   - dimensions: 32 x 25 x 21.75 inches (81.3 x 63.5 x 55.2 cm)
     images:
@@ -52,6 +58,19 @@ works:
       - Chair
     title: X Chair with Arms Prototype
     when: '2017'
+  - dimensions: 33 x 31 x 34 inches (83.8 x 78.7 x 86.4 cm)
+    images:
+      - file: large_iwsnc1
+    medium: >-
+      Plywood, latex paint, neoprene rubber, steel hardware, leather, latex
+      foam, polyester mesh, ripstop nylon
+    projects:
+      - slug: design-miami-2017-tom-sachs
+    slug: lounge-chair
+    tags:
+      - Chair
+    title: 'Lounge Chair '
+    when: '2017'
   - dimensions: 31.5 x 22 x 21.75 inches (80 x 55.9 x 55.2 cm)
     images:
       - file: large_zkw2mh
@@ -62,19 +81,6 @@ works:
     tags:
       - Chair
     title: LCW Prototype
-    when: '2017'
-  - dimensions: 33 x 31 x 34 inches (83.8 x 78.7 x 86.4 cm)
-    images:
-      - file: large_iwsnc1
-    medium: >-
-      Plywood, latex paint, neoprene rubber, steel hardware, leather, latex
-      foam, polyester mesh, ripstop nylon
-    projects:
-      - slug: design-miami-2017-tom-sachs
-    slug: lounge-chair-2
-    tags:
-      - Chair
-    title: Lounge Chair No.2
     when: '2017'
   - dimensions: 32 x 19.25 x 21 inches (81.3 x 48.9 x 53.3 cm)
     images:
@@ -87,14 +93,13 @@ works:
       - Chair
     title: Adirondack
     when: '2017'
-  - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
-    images: []
+  - dimensions: 24.5 x 26.5 x 33 inches (62.2 x 67.3 x 83.8 cm)
+    images:
+      - file: ' TOS54_2015.393'
     medium: 'ConEd Barrier, steel hardware'
-    projects:
-      - slug: design-miami-2017-tom-sachs
     slug: crate-chair
     tags:
-      - Chair
+      - chair
     title: Crate Chair
     when: '2015'
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
@@ -116,10 +121,10 @@ works:
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2017-tom-sachs
-    slug: medium-round-table-1
+    slug: medium-round-table
     tags:
       - Table
-    title: Medium Round Table No.1
+    title: 'Medium Round Table '
     when: '2017'
   - dimensions: 20.375 x 18.125 x 18.125 inches (51.8 x 46 x 46 cm)
     images:
@@ -127,10 +132,10 @@ works:
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2017-tom-sachs
-    slug: side-table-1
+    slug: side-table
     tags:
       - Table
-    title: Side Table No.1
+    title: 'Side Table '
     when: '2017'
   - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
     images: []
@@ -164,11 +169,22 @@ works:
       - Other
     title: Brick Vase
     when: '2017'
-  - images:
-      - file: S94D-TomSachs-XChair1-2017-gif
-    projects:
-      - slug: design-miami-2017-tom-sachs
-    slug: gif-1
+  - dimensions: 48 x 90 x 5.25 inches (121.9 x 228.6 x 13.3 cm)
+    images:
+      - file: TOS48_2013.355_United_States
+    medium: 'Plywood, latex paint, steel hardware'
+    slug: united-states
+    title: United States
+    when: '2013'
+  - dimensions: 73.5 x 76 x 9 inches (186.7 x 193 x 22.9 cm)
+    images:
+      - file: Sachs_ToS11_LargeChawanCabinet
+    medium: >-
+      English porcelain, temple white glaze, Nasa Red engobe, reduction fired,
+      pine, latex, glass beads and museum glass
+    slug: large-chawan-cabinet
+    title: Large Chawan Cabinet
+    when: '2014'
   - images:
       - {}
     projects:
@@ -201,4 +217,39 @@ works:
       - file: DSC_1657
     projects:
       - slug: design-miami-2017-tom-sachs
+  - {}
+  - images:
+      - file: UPTOWN_INSTALL-01
+      - {}
+  - {}
+  - images:
+      - file: UPTOWN_INSTALL-02
+  - images:
+      - file: UPTOWN_INSTALL-03
+  - images:
+      - file: UPTOWN_INSTALL-04
+  - images:
+      - file: UPTOWN_INSTALL-05
+  - images:
+      - file: UPTOWN_INSTALL-06
+  - images:
+      - file: UPTOWN_INSTALL-07
+  - images:
+      - file: UPTOWN_INSTALL-08
+  - images:
+      - file: UPTOWN_INSTALL-09
+  - images:
+      - file: UPTOWN_INSTALL-10
+  - images:
+      - file: UPTOWN_INSTALL-11
+    projects:
+      - {}
+  - images:
+      - file: UPTOWN_INSTALL-12
+  - images:
+      - file: UPTOWN_INSTALL-13
+  - images:
+      - file: UPTOWN_INSTALL-14
+  - images:
+      - file: UPTOWN_INSTALL-15
 status: Represented
