@@ -35,10 +35,6 @@ works:
     slug: table-on-84s
     title: 'Table on 84s '
     when: '2018'
-  - images:
-      - file: LEVER_HOUSE_INSTALL_2
-    projects:
-      - slug: midtown-lever-house
   - dimensions: 20 1/2 x 18 x 68 inches (52.1 x 45.7 x 172.7 cm)
     images:
       - file: S94D-DK2-DonzieKanu-CommissionedBenchon84s-2017-HR
@@ -46,4 +42,8 @@ works:
     slug: commissioned-bench-on-84s
     title: Commissioned Bench on 84s
     when: '2018'
+  - images:
+      - file: LEVER_HOUSE_INSTALL_2
+    projects:
+      - slug: midtown-lever-house
 status: Represented
