@@ -483,4 +483,31 @@ works:
       - file: large_u0vqog
     projects:
       - slug: design-miami-basel-2017
+  - dimensions: 35 x 21 x 17 inches
+    images:
+      - file: S94D-MaxLamb-ForgedChair-2018-Aluminum
+    medium: Aluminum
+    slug: forged-chair-aluminum
+    tags:
+      - chair
+    title: Forged Chair
+    when: '2018'
+  - dimensions: 31 1/2 x 15 x 17 1/2 inches
+    images:
+      - file: S94D-MaxLamb-ForgedChair-2018-Steel
+    medium: Carbon steel
+    slug: forged-chair-steel
+    tags:
+      - chair
+    title: Forged Chair
+    when: '2018'
+  - dimensions: 17 1/8 x 11 3/4 x 11 3/4 inches
+    images:
+      - file: S94D-MaxLamb-ForgedStool-2018-Steel
+    medium: Carbon steel
+    slug: forged-stool
+    tags:
+      - chair
+    title: Forged Stool
+    when: '2018'
 status: Represented
