@@ -233,11 +233,6 @@ works:
     title: Nanocrystalline Chair
     when: '2015'
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3540
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-2
-  - images:
       - file: Vong-Salon94-Lamb-NOV17-3529
     projects:
       - slug: boulders-max-lamb
@@ -392,15 +387,15 @@ works:
     title: 'Tonalite Boulder Chair #11'
     when: '2017'
   - images:
+      - file: Vong-Salon94-Lamb-NOV17-3540
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-2
+  - images:
       - file: Vong-Salon94-Lamb-NOV17-3543
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-1
-  - images:
-      - file: Vong-Salon94-Lamb-NOV17-3549
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-7
   - images:
       - file: Vong-Salon94-Lamb-NOV17-3533
     projects:
@@ -520,4 +515,9 @@ works:
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-8
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3549
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-7
 status: Represented
