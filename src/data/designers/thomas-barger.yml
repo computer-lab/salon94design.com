@@ -72,10 +72,10 @@ works:
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: buttery-tall-boy-1
+    slug: tall-church-boy-1
     tags:
       - Chair
-    title: Buttery Tall Boy 1
+    title: Tall Church Boy 1
     when: '2017'
   - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
     hero: true
@@ -129,10 +129,10 @@ works:
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: buttery-tall-boy-2
+    slug: Tall-church-boy-2
     tags:
       - Chair
-    title: Buttery Tall Boy 2
+    title: Tall Church Boy 2
     when: '2017'
   - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
     hero: true
@@ -169,10 +169,10 @@ works:
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: buttery-tall-boy-3
+    slug: tall-church-boy-3
     tags:
       - Chair
-    title: Buttery Tall Boy 3
+    title: Tall Church Boy 3
     when: '2017'
   - hero: true
     images:
