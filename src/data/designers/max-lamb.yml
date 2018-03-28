@@ -527,6 +527,9 @@ works:
     edition: 'unique, inscribed on side'
     images:
       - file: large_jzs9oc
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-B-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-C-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-D-HR
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -539,6 +542,9 @@ works:
     edition: 'unique, inscribed on side'
     images:
       - file: large_z3gs4y
+      - file: S94D-MLa75-MaxLamb-TonaliteBoulderStool7-2017-B-HR
+      - file: S94D-MLa75-MaxLamb-TonaliteBoulderStool7-2017-C-HR
+      - file: S94D-MLa75-MaxLamb-TonaliteBoulderStool7-2017-D-HR
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
@@ -564,6 +570,7 @@ works:
     images:
       - file: large_tixhtr
       - file: large_z0jz4y
+      - file: S94D-MLa87-MaxLamb-TonaliteBoulderStool9-2017-B-HR
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
