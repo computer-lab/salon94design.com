@@ -103,7 +103,8 @@ works:
     projects:
       - slug: design-miami-basel-2017
     slug: s94d-designmiami-maxlamb-boulders-instal-1
-  - hero: true
+  - dimensions: 36 x 17.75 x 21 inches (91.4 x 45.1 x 53.3 cm)
+    hero: true
     images:
       - file: mla-80-a_hrpvdm
       - file: mla-80-b_opeuo6
@@ -111,10 +112,11 @@ works:
       - file: mla-80-d_o0vydh
       - file: mla-80-e_k4vpop
       - file: mla-80-f_wzn8ey
-    slug: thermal-spray-chair-3
+    medium: polystyrene and aluminum
+    slug: thermal-spray-chair-aluminum
     tags:
       - chair
-    title: Thermal Spray Chair 3
+    title: Thermal Spray Chair Aluminum
     when: '2017'
   - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
     images:
@@ -194,7 +196,8 @@ works:
       - Chair
     title: Thermal Spray Chair Brass
     when: '2017'
-  - hero: true
+  - dimensions: 30 x 14.5 x 19.5 inches (76.2 x 36.8 x 49.5 cm)
+    hero: true
     images:
       - file: mla-79-a_wciwmb
       - file: mla-79-b_innlzm
@@ -204,11 +207,11 @@ works:
       - file: mla-79-f_wp0puh
       - file: mla-79-g_vhxshz
       - file: mla-79-h_tmksjk
-    medium: Copper
-    slug: thermal-spray-chair-2
+    medium: polystyrene and copper
+    slug: thermal-spray-chair-Copper
     tags:
       - chair
-    title: Thermal Spray Chair 2
+    title: Thermal Spray Chair Copper
     when: '2017'
   - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
     images:
