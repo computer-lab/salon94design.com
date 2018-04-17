@@ -252,4 +252,12 @@ works:
       - file: UPTOWN_INSTALL-14
   - images:
       - file: UPTOWN_INSTALL-15
+  - dimensions: 32.1 x 18.8 x 20.6 inches (81.5 x 47.8 x 52.3 cm)
+    images:
+      - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
+    medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
+    tags:
+      - seating
+    title: British Racing Green X-Chair
+    when: '2018'
 status: Represented
