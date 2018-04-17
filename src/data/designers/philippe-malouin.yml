@@ -28,7 +28,8 @@ works:
       - other
     title: Core
     when: '2017'
-  - images:
+  - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
+    images:
       - file: philippemalouinstool_dv8svr
     medium: 'cast concrete, exposed aggregate'
     slug: pm-stool
@@ -57,4 +58,12 @@ works:
       - file: large_k5vdlp
     projects:
       - slug: design-miami-2017-philippe-malouin-core
+  - dimensions: 118.11 x 43.31 x 28.74 inches (300 x 110 x 73 cm)
+    images:
+      - file: PM6-Table-2018-LR-A
+    medium: Steel
+    tags:
+      - table
+    title: Table
+    when: '2018'
 status: Represented
