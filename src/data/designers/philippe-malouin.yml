@@ -62,7 +62,7 @@ works:
     images:
       - file: PM6-Table-2018-LR-A
     medium: Steel
-    slug: table-2018
+    slug: pm-table-2018
     tags:
       - table
     title: Table
