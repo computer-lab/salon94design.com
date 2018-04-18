@@ -587,4 +587,48 @@ works:
       - file: Design_Miami_2016_32
     projects:
       - slug: design-miami-2016-pesce
+  - dimensions: 86.61 x 66.14 x 28.35 inches (220 x 168 x 72 cm)
+    images:
+      - file: GPe170-GrownChair-2012-LR-A
+    medium: Fabric coated with epoxy resin
+    slug: grown-chair
+    tags:
+      - chair
+    title: Grown Chair
+    when: '2012'
+  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
+    images:
+      - file: GPe171-MobileVerde-2015-HR-A
+      - file: GPe171-MobileVerde-2015-LR-C
+    medium: 'Steel, wood, polyurethane resin '
+    slug: mobile-verde
+    title: Mobile Verde
+    when: '2015'
+  - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
+    images:
+      - file: GPe172-LaSmorfia-2003-LR-A
+    medium: Resin and PVC
+    slug: la-smorfia
+    tags:
+      - chair
+    title: La Smorfia
+    when: '2003'
+  - images:
+      - file: GPe173-54ArmChandelier-1998-LR
+    medium: Resin and copper
+    slug: 54-arm-chandelier
+    tags:
+      - lighting
+    title: 54 Arm Chandelier
+    when: '1998'
+  - images:
+      - file: GPe174-54ArmLamp-1998-LR-A
+      - file: GPe174-54ArmLamp-1998-LR-B
+      - file: GPe174-54ArmLamp-1998-LR-C
+    medium: 'resin copper and plastic '
+    slug: 54-arm-lamp
+    tags:
+      - lighting
+    title: 54 Arm Lamp
+    when: '1998'
 status: Represented
