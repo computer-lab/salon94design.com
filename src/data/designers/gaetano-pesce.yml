@@ -631,4 +631,11 @@ works:
       - lighting
     title: 54 Arm Lamp
     when: '1998'
+  - dimensions: 161.81 x 120.47 x 70.87 inches (411 x 306 x 180 cm)
+    images:
+      - file: GPe175-SediaPortaritratti-2016-LR
+    medium: 'Polystyrene, glass fiber, and polyester resin'
+    slug: sedia-portaritratti
+    title: Sedia Portaritratti
+    when: '2016'
 status: Represented
