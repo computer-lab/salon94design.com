@@ -256,6 +256,7 @@ works:
     images:
       - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
     medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
+    slug: british-racing-green-x-chair
     tags:
       - chair
     title: British Racing Green X-Chair
