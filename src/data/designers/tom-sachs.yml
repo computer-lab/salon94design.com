@@ -255,6 +255,10 @@ works:
   - dimensions: 32.1 x 18.8 x 20.6 inches (81.5 x 47.8 x 52.3 cm)
     images:
       - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-B-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-C-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-D-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-E-LR
     medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
     slug: british-racing-green-x-chair
     tags:
