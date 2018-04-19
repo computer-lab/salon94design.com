@@ -604,4 +604,92 @@ works:
       - bench
     title: Thermal Spray Bench Bronze
     when: '2018'
+  - dimensions: '57 x 27 x 28.5 inches (144 x 69 x 73)cm '
+    images:
+      - file: MLa101-ThermalSprayBench_Copper_2018_A
+      - file: MLa101-ThermalSprayBench_Copper_2018_B
+      - file: MLa101-ThermalSprayBench_Copper_2018_C
+      - file: MLa101-ThermalSprayBench_Copper_2018_D
+    slug: thermal-spray-bench-copper-2018
+    tags:
+      - bench
+    title: Thermal Spray Bench Copper
+    when: '2018'
+  - dimensions: 20 x 26 x 38 inches (51 x 66 x 96 cm)
+    images:
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_A
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_B
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_C
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_D
+    slug: thermal-spray-chair-aluminium-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Aluminium
+    when: '2018'
+  - dimensions: 19 x 23 x 40 inches (49 x 59 x 102 cm)
+    images:
+      - file: MLa103-ThermalSprayChair_Bronze_2018_A
+      - file: MLa103-ThermalSprayChair_Bronze_2018_B
+      - file: MLa103-ThermalSprayChair_Bronze_2018_C
+      - file: MLa103-ThermalSprayChair_Bronze_2018_D
+    slug: thermal-spray-chair-bronze-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Bronze
+    when: '2018'
+  - dimensions: 17 x 19 x 34.5 inches (44 x 48 x 88 cm)
+    images:
+      - file: MLa104-ThermalSprayChair_Copper1_2018_A
+      - file: MLa104-ThermalSprayChair_Copper1_2018_B
+      - file: MLa104-ThermalSprayChair_Copper1_2018_C
+      - file: MLa104-ThermalSprayChair_Copper1_2018_D
+    slug: thermal-spray-chair-copper-1-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Copper 1
+    when: '2018'
+  - dimensions: 20 x 24 x 39 inches (51 x 61 x 100 cm)
+    images:
+      - file: MLa105-ThermalSprayChair_Copper2_2018_A
+      - file: MLa105-ThermalSprayChair_Copper2_2018_B
+      - file: MLa105-ThermalSprayChair_Copper2_2018_C
+      - file: MLa105-ThermalSprayChair_Copper2_2018_D
+    slug: thermal-spray-chair-copper-2-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Copper 2
+    when: '2018'
+  - dimensions: '22 x 21 x 24.5 inches (56 x 53 x 62cm) '
+    images:
+      - file: MLa106-ThermalSprayPlanter_Copper_2018_A
+      - file: MLa106-ThermalSprayPlanter_Copper_B
+      - file: MLa106-ThermalSprayPlanter_Copper_C
+      - file: MLa106-ThermalSprayPlanter_Copper_D
+    slug: thermal-spray-planter-copper-2018
+    tags:
+      - planter
+    title: Thermal Spray Planter Copper
+    when: '2018'
+  - dimensions: '30 x 20 x 18 inches (77 x 51 x 45cm) '
+    images:
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_A
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_B
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_C
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_D
+    slug: thermal-spray-table-aluminium-2018
+    tags:
+      - table
+    title: Thermal Spray Table Aluminium
+    when: '2018'
+  - dimensions: '23 x 20 x 18 inches (59 x 61 x 46cm) '
+    images:
+      - file: MLa108-ThermalSprayTable_Bronze_2018_A
+      - file: MLa108-ThermalSprayTable_Bronze_2018_B
+      - file: MLa108-ThermalSprayTable_Bronze_2018_C
+      - file: MLa108-ThermalSprayTable_Bronze_2018_D
+    slug: thermal-spray-table-bronze-2018
+    tags:
+      - table
+    title: Thermal Spray Table Bronze
+    when: '2018'
 status: Represented
