@@ -202,4 +202,31 @@ works:
       - Other
     title: Charger 9
     when: '2014'
+  - dimensions: 16.93 x 11.81 x 11.81 inches (43 x 30 x 30 cm)
+    images:
+      - file: KuCa182-SandChair-PinkGreen-2018
+    medium: 'Mortar, sand, pigment paste, styrofoam'
+    slug: sand-chair-2018-pink-green
+    tags:
+      - chair
+    title: Sand Chair
+    when: '2018'
+  - dimensions: 16.93 x 11.81 x 11.81 inches (43 x 30 x 30 cm)
+    images:
+      - file: KuCa183-SandChair-WhiteBlue-2018
+    medium: 'Mortar, sand, pigment paste, styrofoam'
+    slug: sand-chair-2018-white-blue
+    tags:
+      - chair
+    title: Sand Chair
+    when: '2018'
+  - dimensions: 16.93 x 11.81 x 11.81 inches (43 x 30 x 30 cm)
+    images:
+      - file: KuCa184-SandChair-2018
+    medium: 'Mortar, sand, pigment paste, styrofoam'
+    slug: sand-chair-2018-kuca184
+    tags:
+      - chair
+    title: Sand Chair
+    when: '2018'
 status: Represented
