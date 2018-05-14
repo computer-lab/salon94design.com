@@ -229,4 +229,49 @@ works:
       - chair
     title: Sand Chair 3
     when: '2018'
+  - dimensions: 16.93 x 11.81 x 11.81 inches (43 x 30 x 30 cm)
+    images:
+      - file: KuCa191-SandChair5-2018
+    medium: 'Mortar, sand, pigment paste, styrofoam'
+    slug: sand-chair-5-2018
+    tags:
+      - chair
+    title: Sand Chair 5
+    when: '2018'
+  - dimensions: 66.14 x 52.76 inches (168 x 134 cm)
+    images:
+      - file: KuCa188-HomageCarpet-2018
+    medium: 'EPDM Granules, jute '
+    slug: homage-to-unknown-weaver-in-atlas-2018
+    tags:
+      - carpet
+    title: Homage to Unknown Weaver in Atlas
+    when: '2018'
+  - dimensions: 70.47 x 26.38 inches (179 x 67 cm) (
+    images:
+      - file: KuCa192-HomageToZahraKhouya-2018
+    medium: 'EPDM Granules, Jute '
+    slug: homage-to-zahra-khouya-2017
+    tags:
+      - carpet
+    title: Homage to Zahra Khouya
+    when: '2017'
+  - dimensions: 48.43 x 29.13 inches (123 x 74 cm)
+    images:
+      - file: KuCa193-HomageToUnknownWeaverOfBoujad1-2017
+    medium: 'EPDM Granules, Jute'
+    slug: homage-to-unknown-weaver-of-boujad-1-2017
+    tags:
+      - carpet
+    title: Homage to Unknown Weaver of Boujad 1
+    when: '2017'
+  - dimensions: 62.2 x 41.34 inches (158 x 105 cm)
+    images:
+      - file: ' KuCa194-HomageToUnknownWeaverOfBoujad2-2018'
+    medium: 'EPDM Granules, Jute'
+    slug: homage-to-unknown-weaver-of-boujad-2
+    tags:
+      - carpet
+    title: Homage to Unknown Weaver of Boujad 2
+    when: '2018'
 status: Represented
