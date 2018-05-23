@@ -267,7 +267,7 @@ works:
     when: '2017'
   - dimensions: 62.2 x 41.34 inches (158 x 105 cm)
     images:
-      - file: ' KuCa194-HomageToUnknownWeaverOfBoujad2-2018'
+      - file: kuca194-homageboujad2-2018
     medium: 'EPDM Granules, Jute'
     slug: homage-to-unknown-weaver-of-boujad-2
     tags:
