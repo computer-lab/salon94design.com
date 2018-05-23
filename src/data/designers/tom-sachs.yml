@@ -267,4 +267,22 @@ works:
       - chair
     title: British Racing Green X-Chair
     when: '2018'
+  - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
+    images:
+      - file: TOS90_2018_CrateChair
+    medium: 'ConEd Barrier, steel hardware'
+    slug: crate-chair-tom-sachs-2018
+    tags:
+      - chair
+    title: Crate Chair
+    when: '2018'
+  - dimensions: 31.5 x 17.25 x 21.5 inches (80 x 43.8 x 54.6 cm)
+    images:
+      - file: ToS91-SamsoniteModel2250-2018
+    medium: 'Latex paint, KRINK paint '
+    slug: samsonite-model-2250-2018-tos
+    tags:
+      - chair
+    title: Samsonite Model 2250
+    when: '2018'
 status: Represented
