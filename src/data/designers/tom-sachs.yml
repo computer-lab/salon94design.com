@@ -269,7 +269,7 @@ works:
     when: '2018'
   - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
     images:
-      - file: tos90-tomsachs-cratechair-2018
+      - file: tos90-2018-cratechair-lc
     medium: 'ConEd Barrier, steel hardware'
     slug: crate-chair-tom-sachs-2018
     tags:
@@ -278,7 +278,7 @@ works:
     when: '2018'
   - dimensions: 31.5 x 17.25 x 21.5 inches (80 x 43.8 x 54.6 cm)
     images:
-      - file: tos91-samsonitemodel2250-2018-tomsachs
+      - file: tos91-samsonitechair-hr
     medium: 'Latex paint, KRINK paint '
     slug: samsonite-model-2250-2018-tos
     tags:
