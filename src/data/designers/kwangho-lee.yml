@@ -110,7 +110,7 @@ works:
       - slug: ghost-dog
   - dimensions: 29.53 x 15.75 x 23.62 inches (75 x 40 x 60 cm)
     images:
-      - file: S94D-Klee12-KwanghoLee-CooperChair1-2018-A-HR
+      - file: s94d-klee12-copperchair1-2018-dmb
     medium: Copper
     slug: copper-chair-1-2018
     tags:
@@ -119,7 +119,7 @@ works:
     when: '2018'
   - dimensions: 11.81 x 15.75 x 12.99 inches (30 x 40 x 33 cm)
     images:
-      - file: S94D-KLee13-KwanghoLee-CopperVase1-2018-B-HR
+      - file: s94d-klee13-kwangholee-coppervase1-2018-dmb
     medium: Copper
     slug: copper-vase-1-2018
     tags:
@@ -128,7 +128,7 @@ works:
     when: '2018'
   - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
     images:
-      - file: S94D-KLee14-Kwangholee-CopperVase2-2018-A-HR
+      - file: s94d-klee14-kwangholee-coppervase2-2018-dmb
     medium: Copper
     slug: copper-vase-2-2018
     tags:
@@ -137,7 +137,7 @@ works:
     when: '2018'
   - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
     images:
-      - file: S94D-KLee15-Kwangholee-CopperVase3-2018-A-HR
+      - file: s94d-klee15-kwangholee-coppervase3-2018-dmb
     medium: Copper
     slug: copper-vase-3-2018
     tags:
@@ -146,7 +146,7 @@ works:
     when: '2018'
   - dimensions: 13.78 x 18.5 x 9.84 inches (35 x 47 x 25 cm)
     images:
-      - file: S94D-KLee16-Kwangholee-CopperVase4-2018-A-HR
+      - file: s94d-klee16-kwangholee-coppervase4-2018-dmb
     medium: Copper
     slug: copper-vase-4-2018
     tags:
@@ -155,25 +155,25 @@ works:
     when: '2018'
   - dimensions: 15.75 x 9.84 x 9.84 inches (40 x 25 x 25 cm)
     images:
-      - file: S94D-KLee17-Kwangholee-CopperVase5-2018-A-HR
+      - file: s94d-klee17-kwangholee-coppervase5-2018-dmb
     medium: Copper
-    slug: copper-vase-6-2018
+    slug: copper-vase-5-2018
     tags:
       - vase
     title: Copper Vase 5
     when: '2018'
   - dimensions: 177.17 x 157.48 x 236.22 inches (40 x 60 x 30 cm)
     images:
-      - file: ' S94D-KLee18-Kwangholee-CopperTable-2018-A-HR'
+      - file: s94d-klee18-kwangholee-coppersidetable1-2018-dmb
     medium: Copper
-    slug: copper-side-table-2-2018
+    slug: copper-side-table-1-2018
     tags:
       - table
     title: Copper Side Table 1
     when: '2018'
   - dimensions: 15.75 x 14.57 x 14.57 inches (40 x 37 x 37 cm)
     images:
-      - file: KLee28-2018
+      - file: klee28-coppersidetable2-2018-dmb
     medium: Copper
     slug: copper-side-table-2-2018
     tags:
@@ -182,7 +182,7 @@ works:
     when: '2018'
   - dimensions: 27.56 x 11.81 x 23.62 inches (70 x 30 x 60 cm)
     images:
-      - file: KLee29-2018
+      - file: klee29-copperchair2-kwangholee-2018-dmb
     medium: Copper
     slug: copper-chair-2-2018
     tags:
@@ -191,7 +191,7 @@ works:
     when: '2018'
   - dimensions: 29.53 x 23.62 x 23.62 inches (75 x 60 x 60 cm)
     images:
-      - file: KLee30-2018
+      - file: klee30-copperarmchair-kwangholee-2018-dmb
     medium: Copper
     slug: copper-arm-chair-2018
     tags:
@@ -200,7 +200,8 @@ works:
     when: '2018'
   - dimensions: 62.99 x 31.5 x 21.65 inches (160 x 80 x 55 cm)
     images:
-      - file: KLee31-2018-A
+      - file: klee31-coppercabinet-kwangholee-2018-dmb-a
+      - file: klee31-coppercabinet-kwangholee-2018-dmb-b
     medium: Copper
     slug: copper-cabinet-2018
     tags:
@@ -209,7 +210,7 @@ works:
     when: '2018'
   - dimensions: 15.75 x 31.5 x 19.69 inches (40 x 80 x 50 cm)
     images:
-      - file: KLee32-2018
+      - file: klee32-coppersidetable3-2018-dmb
     medium: Copper
     slug: copper-side-table-3-2018
     tags:
@@ -218,7 +219,7 @@ works:
     when: '2018'
   - dimensions: 29.53 x 13.78 x 15.75 inches (75 x 35 x 40 cm)
     images:
-      - file: KLee33-2018
+      - file: klee33-copperchair3-kwangholee-dmb-2018
     medium: Copper
     slug: copper-chair-3-2018
     tags:
@@ -227,8 +228,8 @@ works:
     when: '2018'
   - dimensions: 24.21 x 26.3 x 22.05 inches (61.5 x 66.8 x 56 cm)
     images:
-      - file: KLee19-2018-A
-      - file: KLee19-2018-B
+      - file: klee19-redarmchair-kwangholee-2018-a
+      - file: ' klee19-redarmchair-kwangholee-2018-b  '
     medium: 'Enamel, wood'
     slug: red-arm-chair-2018
     tags:
@@ -237,9 +238,9 @@ works:
     when: '2018'
   - dimensions: 62.99 x 31.5 x 19.69 inches (160 x 80 x 50 cm)
     images:
-      - file: KLee20-2018-A
-      - file: KLee20-2018-B
-      - file: KLee20-2018-C
+      - file: klee20-kwangholee-bluecabinet-2018-a
+      - file: klee20-kwangholee-bluecabinet-2018-b
+      - file: klee20-kwangholee-bluecabinet-2018-c
     medium: 'Enamel, wood'
     slug: blue-cabinet-2018
     tags:
@@ -248,9 +249,9 @@ works:
     when: '2018'
   - dimensions: 24.21 x 29.92 x 22.05 inches (61.5 x 76 x 56 cm)
     images:
-      - file: KLee21-2018-A
-      - file: KLee21-2018-B
-      - file: KLee21-2018-C
+      - file: klee21-orangearmchair-kwangholee-2018-a
+      - file: klee21-orangearmchair-kwangholee-2018-b
+      - file: klee21-orangearmchair-kwangholee-2018-c
     medium: 'Enamel, wood'
     slug: orange-arm-chair-2018
     tags:
@@ -259,8 +260,8 @@ works:
     when: '2018'
   - dimensions: 31.5 x 12.6 x 15.75 inches (80 x 32 x 40 cm)
     images:
-      - file: KLee22-2018-A
-      - file: KLee22-2018-B
+      - file: klee22-kwangholee-greenchair-2018-a
+      - file: klee22-kwangholee-greenchair-2018-b
     medium: 'Enamel, wood'
     slug: green-chair-2018
     tags:
@@ -269,8 +270,8 @@ works:
     when: '2018'
   - dimensions: 35.43 x 23.62 x 23.62 inches (90 x 60 x 60 cm)
     images:
-      - file: KLee23-2018-A
-      - file: KLee23-2018-B
+      - file: klee23-kwangholee-blueorangeconsole-2018-a
+      - file: klee23-kwangholee-blueorangeconsole-2018-b
     medium: 'Enamel, wood'
     slug: blue-orange-console
     tags:
@@ -279,8 +280,8 @@ works:
     when: '2018'
   - dimensions: 27.56 x 14.88 x 12.99 inches (70 x 37.8 x 33 cm)
     images:
-      - file: KLee24-2018-A
-      - file: KLee24-2018-B
+      - file: klee24-kwangholee-skybluefloorlamp-2018-a
+      - file: klee24-kwangholee-skybluefloorlamp-2018-b
     medium: 'Enamel, wood'
     slug: sky-blue-floor-lamp-2018
     tags:
@@ -289,8 +290,8 @@ works:
     when: '2018'
   - dimensions: 17.72 x 13.07 x 9.37 inches (45 x 33.2 x 23.8 cm)
     images:
-      - file: KLee25-2018-A
-      - file: KLee25-2018-B
+      - file: klee25-kwangholee-bluefloorlamp-2018-a
+      - file: klee25-kwangholee-bluefloorlamp-2018-b
     medium: 'Enamel, wood'
     slug: blue-floor-lamp-2018
     tags:
@@ -299,8 +300,8 @@ works:
     when: '2018'
   - dimensions: 29.92 x 15.35 x 16.93 inches (76 x 39 x 43 cm)
     images:
-      - file: KLee26-2018-A
-      - file: KLee26-2018-B
+      - file: klee26-kwangholee-redorangechair-2018-a
+      - file: klee26-kwangholee-redorangechair-2018-b
     medium: 'Enamel, wood'
     slug: red-orange-chair-2018
     tags:
@@ -309,7 +310,7 @@ works:
     when: '2018'
   - dimensions: 39.37 x 19.69 x 19.69 inches (100 x 50 x 50 cm)
     images:
-      - file: KLee27-2018
+      - file: klee27-kwangholee-greenfloorlamp-2018
     medium: 'Enamel, wood'
     slug: green-floor-lamp-2018
     tags:
@@ -318,9 +319,9 @@ works:
     when: '2018'
   - dimensions: 17.72 x 55.12 x 13.78 inches (45 x 140 x 35 cm)
     images:
-      - file: KLee34-WovenBench-2018-A
-      - file: KLee34-WovenBench-2018-B
-      - file: KLee34-WovenBench-2018-C
+      - file: klee34-nylonbench-kwangholee-2018-a
+      - file: klee34-nylonbench-kwangholee-2018-b
+      - file: klee34-nylonbench-kwangholee-2018-c
     medium: Nylon
     slug: nylon-bench-2018-dmb
     tags:
@@ -329,7 +330,7 @@ works:
     when: '2018'
   - dimensions: 17.72 x 13.78 x 13.78 inches (45 x 35 x 35 cm)
     images:
-      - file: KLee35
+      - file: klee35-nylonstool-kwangholee-2018
     medium: Nylon
     slug: nylon-stool-dmb-2018
     tags:
