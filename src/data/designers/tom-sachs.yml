@@ -95,15 +95,6 @@ works:
       - Chair
     title: Adirondack
     when: '2017'
-  - dimensions: 24.5 x 26.5 x 33 inches (62.2 x 67.3 x 83.8 cm)
-    images:
-      - file: ' TOS54_2015.393'
-    medium: 'ConEd Barrier, steel hardware'
-    slug: crate-chair
-    tags:
-      - chair
-    title: Crate Chair
-    when: '2015'
   - dimensions: 14 x 33 x 33 inches (35.6 x 83.8 x 83.8 cm)
     images:
       - file: large_syy08h
