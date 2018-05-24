@@ -83,6 +83,15 @@ works:
       - Chair
     title: Marble Stool
     when: '2017'
+  - dimensions: 15.98 x 13.27 x 13.27 inches (40.6 x 33.7 x 33.7 cm)
+    images:
+      - file: kuca190-universestool-2018-outdoor
+    medium: Travertine stone with colored fillings
+    slug: universe-stool-2018
+    tags:
+      - seating
+    title: Universe Stools
+    when: '2018'
   - dimensions: 16 x 13 1/4 x 13 1/4 inches (40.6 x 33.7 x 33.7 cm)
     images:
       - file: kuca155_fgdxvk
@@ -121,15 +130,6 @@ works:
       - Chair
     title: Travertine Stool 3
     when: '2015'
-  - dimensions: 15.98 x 13.27 x 13.27 inches (40.6 x 33.7 x 33.7 cm)
-    images:
-      - file: kuca190-universestool-2018-outdoor
-    medium: Travertine stone with colored fillings
-    slug: universe-stool-2018
-    tags:
-      - seating
-    title: Universe Stools
-    when: '2018'
   - dimensions: 16.5 x 16.5 x .5 inches (41.9 x 41.9 x 1.3 cm)
     images:
       - file: kuca118_pflqdb
