@@ -230,7 +230,7 @@ works:
     images:
       - file: klee19-redarmchair-kwangholee-2018-a
       - file: ' klee19-redarmchair-kwangholee-2018-b  '
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: red-arm-chair-2018
     tags:
       - chair
@@ -241,7 +241,7 @@ works:
       - file: klee20-kwangholee-bluecabinet-2018-a
       - file: klee20-kwangholee-bluecabinet-2018-b
       - file: klee20-kwangholee-bluecabinet-2018-c
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: blue-cabinet-2018
     tags:
       - cabinet
@@ -252,7 +252,7 @@ works:
       - file: klee21-orangearmchair-kwangholee-2018-a
       - file: klee21-orangearmchair-kwangholee-2018-b
       - file: klee21-orangearmchair-kwangholee-2018-c
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: orange-arm-chair-2018
     tags:
       - chair
@@ -262,7 +262,7 @@ works:
     images:
       - file: klee22-kwangholee-greenchair-2018-a
       - file: klee22-kwangholee-greenchair-2018-b
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: green-chair-2018
     tags:
       - chair
@@ -272,7 +272,7 @@ works:
     images:
       - file: klee23-kwangholee-blueorangeconsole-2018-a
       - file: klee23-kwangholee-blueorangeconsole-2018-b
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: blue-orange-console
     tags:
       - table
@@ -282,7 +282,7 @@ works:
     images:
       - file: klee24-kwangholee-skybluefloorlamp-2018-a
       - file: klee24-kwangholee-skybluefloorlamp-2018-b
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: sky-blue-floor-lamp-2018
     tags:
       - lighting
@@ -292,7 +292,7 @@ works:
     images:
       - file: klee25-kwangholee-bluefloorlamp-2018-a
       - file: klee25-kwangholee-bluefloorlamp-2018-b
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: blue-floor-lamp-2018
     tags:
       - lighting
@@ -302,7 +302,7 @@ works:
     images:
       - file: klee26-kwangholee-redorangechair-2018-a
       - file: klee26-kwangholee-redorangechair-2018-b
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: red-orange-chair-2018
     tags:
       - chair
@@ -311,7 +311,7 @@ works:
   - dimensions: 39.37 x 19.69 x 19.69 inches (100 x 50 x 50 cm)
     images:
       - file: klee27-kwangholee-greenfloorlamp-2018
-    medium: 'Enamel, wood'
+    medium: 'Enamel, copper, wood'
     slug: green-floor-lamp-2018
     tags:
       - lighting
