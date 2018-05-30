@@ -112,6 +112,8 @@ works:
     images:
       - file: s94d-klee12-copperchair1-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-chair-1-2018
     tags:
       - chair
@@ -121,6 +123,8 @@ works:
     images:
       - file: s94d-klee13-kwangholee-coppervase1-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-vase-1-2018
     tags:
       - vase
@@ -130,6 +134,8 @@ works:
     images:
       - file: s94d-klee14-kwangholee-coppervase2-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-vase-2-2018
     tags:
       - vase
@@ -139,6 +145,8 @@ works:
     images:
       - file: s94d-klee15-kwangholee-coppervase3-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-vase-3-2018
     tags:
       - vase
@@ -148,6 +156,8 @@ works:
     images:
       - file: s94d-klee16-kwangholee-coppervase4-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-vase-4-2018
     tags:
       - vase
@@ -157,6 +167,8 @@ works:
     images:
       - file: s94d-klee17-kwangholee-coppervase5-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-vase-5-2018
     tags:
       - vase
@@ -166,6 +178,8 @@ works:
     images:
       - file: s94d-klee18-kwangholee-coppersidetable1-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-side-table-1-2018
     tags:
       - table
@@ -175,6 +189,8 @@ works:
     images:
       - file: klee28-coppersidetable2-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-side-table-2-2018
     tags:
       - table
@@ -184,6 +200,8 @@ works:
     images:
       - file: klee29-copperchair2-kwangholee-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-chair-2-2018
     tags:
       - chair
@@ -193,6 +211,8 @@ works:
     images:
       - file: klee30-copperarmchair-kwangholee-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-arm-chair-2018
     tags:
       - chair
@@ -203,6 +223,8 @@ works:
       - file: klee31-coppercabinet-kwangholee-2018-dmb-a
       - file: klee31-coppercabinet-kwangholee-2018-dmb-b
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-cabinet-2018
     tags:
       - storage
@@ -212,6 +234,8 @@ works:
     images:
       - file: klee32-coppersidetable3-2018-dmb
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-side-table-3-2018
     tags:
       - table
@@ -221,6 +245,8 @@ works:
     images:
       - file: klee33-copperchair3-kwangholee-dmb-2018
     medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: copper-chair-3-2018
     tags:
       - chair
@@ -231,6 +257,8 @@ works:
       - file: klee19-redarmchair-kwangholee-2018-a
       - file: ' klee19-redarmchair-kwangholee-2018-b  '
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: red-arm-chair-2018
     tags:
       - chair
@@ -242,6 +270,8 @@ works:
       - file: klee20-kwangholee-bluecabinet-2018-b
       - file: klee20-kwangholee-bluecabinet-2018-c
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: blue-cabinet-2018
     tags:
       - cabinet
@@ -253,6 +283,8 @@ works:
       - file: klee21-orangearmchair-kwangholee-2018-b
       - file: klee21-orangearmchair-kwangholee-2018-c
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: orange-arm-chair-2018
     tags:
       - chair
@@ -263,6 +295,8 @@ works:
       - file: klee22-kwangholee-greenchair-2018-a
       - file: klee22-kwangholee-greenchair-2018-b
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: green-chair-2018
     tags:
       - chair
@@ -273,6 +307,8 @@ works:
       - file: klee23-kwangholee-blueorangeconsole-2018-a
       - file: klee23-kwangholee-blueorangeconsole-2018-b
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: blue-orange-console
     tags:
       - table
@@ -283,6 +319,8 @@ works:
       - file: klee24-kwangholee-skybluefloorlamp-2018-a
       - file: klee24-kwangholee-skybluefloorlamp-2018-b
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: sky-blue-floor-lamp-2018
     tags:
       - lighting
@@ -293,6 +331,8 @@ works:
       - file: klee25-kwangholee-bluefloorlamp-2018-a
       - file: klee25-kwangholee-bluefloorlamp-2018-b
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: blue-floor-lamp-2018
     tags:
       - lighting
@@ -303,6 +343,8 @@ works:
       - file: klee26-kwangholee-redorangechair-2018-a
       - file: klee26-kwangholee-redorangechair-2018-b
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: red-orange-chair-2018
     tags:
       - chair
@@ -312,6 +354,8 @@ works:
     images:
       - file: klee27-kwangholee-greenfloorlamp-2018
     medium: 'Enamel, copper, wood'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: green-floor-lamp-2018
     tags:
       - lighting
@@ -323,6 +367,8 @@ works:
       - file: klee34-nylonbench-kwangholee-2018-b
       - file: klee34-nylonbench-kwangholee-2018-c
     medium: Nylon
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: nylon-bench-2018-dmb
     tags:
       - bench
@@ -332,6 +378,8 @@ works:
     images:
       - file: klee35-nylonstool-kwangholee-2018
     medium: Nylon
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: nylon-stool-dmb-2018
     tags:
       - seating
