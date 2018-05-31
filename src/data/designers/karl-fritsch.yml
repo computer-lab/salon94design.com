@@ -19,12 +19,32 @@ press:
 works:
   - images:
       - file: kf-uptown-installation-1
+    projects:
+      - slug: A Retrospective
+    tags:
+      - jewelry
   - images:
       - file: kf-uptown-installation-2-lr
+    projects:
+      - slug: A Retrospective
+    tags:
+      - jewelry
   - images:
       - file: kf-uptown-installation-7-lr
+    projects:
+      - slug: A Retrospective
+    tags:
+      - jewelry
   - images:
       - file: kf-uptown-installation-9-lr
+    projects:
+      - slug: A Retrospective
+    tags:
+      - jewelry
   - images:
       - file: kf-uptown-installation-10-lr
+    projects:
+      - slug: A Retrospective
+    tags:
+      - jewelry
 status: Represented
