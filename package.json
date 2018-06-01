@@ -10,7 +10,7 @@
     "cloudinary": "^1.10.0",
     "emotion-server": "^7.3.2",
     "fs-extra": "^4.0.2",
-    "gatsby": "^1.9.101",
+    "gatsby": "^1.9.205",
     "gatsby-link": "^1.6.8",
     "gatsby-plugin-emotion": "^1.1.2",
     "gatsby-plugin-google-analytics": "^1.0.16",
@@ -40,7 +40,7 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "build": "gatsby build --prefix-paths && ./contrib/build-admin.sh",
+    "build": "node --max_old_space_size=6000 ./node_modules/.bin/gatsby build --prefix-paths && ./contrib/build-admin.sh",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js' gatsby-node.js gatsby-config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
