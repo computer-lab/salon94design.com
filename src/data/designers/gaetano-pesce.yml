@@ -23,9 +23,9 @@ bio: >
 
   design.
 press:
-  - file: /images/gp-2017.pdf
-    title: Design Market - December 2016
   - title: Wallpaper* - December 2016
+  - file: /images/gp-wallpaper-2016.pdf
+    title: Design Market - December 2016
 works:
   - images:
       - file: GPe_Cabinets
