@@ -255,7 +255,7 @@ works:
   - dimensions: 24.21 x 26.3 x 22.05 inches (61.5 x 66.8 x 56 cm)
     images:
       - file: klee19-redarmchair-kwangholee-2018-a
-      - file: ' klee19-redarmchair-kwangholee-2018-b  '
+      - file: klee19-redarmchair-kwangholee-2018-b
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee

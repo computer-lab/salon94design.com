@@ -113,7 +113,7 @@ works:
     projects:
       - slug: ghost-dog
   - images:
-      - file: ' Ghost_Dog_Install_29'
+      - file: Ghost_Dog_Install_29
     projects:
       - slug: ghost-dog
   - images:

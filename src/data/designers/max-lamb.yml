@@ -583,7 +583,7 @@ works:
     title: 'Tonalite Boulder Stool #9'
     when: '2017'
   - images:
-      - file: ' Screen_Shot_2018-03-14_at_12.49.20_PM'
+      - file: Screen_Shot_2018-03-14_at_12.49.20_PM
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-8
