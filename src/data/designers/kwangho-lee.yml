@@ -11,247 +11,18 @@ bio: >-
   from woven garden hoses, PVC, leather and silk, titled Obsession.
 press: []
 works:
-  - dimensions: 16 x 79 x 79 inches (40.6 x 200.7 x 200.7 cm)
-    hero: false
-    images:
-      - file: large_nyckqp
-      - file: large_ko1pk3
-    medium: Silk
-    price: ''
-    projects:
-      - slug: woven-furniture
-      - slug: midtown-lever-house
-    slug: silk-bench-1
-    tags:
-      - Bench
-    title: Silk Bench 1
-    when: '2006'
-  - caption: Frieze NY
-    dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
-    hero: false
-    images:
-      - file: large_d92map
-    medium: Custom silk rope
-    slug: red-silk-bench
-    tags:
-      - Bench
-    title: 'Red Silk Bench (Frieze NY 2017) '
-    when: '2016'
-  - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
-    images:
-      - file: large_qlarv2
-    medium: Nylon
-    price: ''
-    projects:
-      - slug: woven-furniture
-    slug: kwangho-large-nylon-bench
-    tags:
-      - Bench
-    title: Large Nylon Bench
-    when: '2006'
-  - dimensions: 16.5 x 89 x 12.5 inches (41.9 x 226.1 x 31.8 cm)
-    images:
-      - file: large_bqsrv7
-      - file: large_hg2jjt
-    medium: 'PVC '
-    price: ''
-    projects:
-      - slug: ghost-dog
-    slug: kwangho-small-pvc-bench
-    tags:
-      - Bench
-    title: Small PVC Bench
-    when: '2006'
-  - dimensions: 25.5 x 21 x 31 inches (64.8 x 53.3 x 78.7 cm)
-    edition: Unique
-    hero: true
-    images:
-      - file: large_hhnwac
-    medium: PVC tubing
-    projects:
-      - slug: ghost-dog
-    slug: red-and-grey-pvc-chair
-    tags:
-      - Chair
-    title: Red & Grey PVC Chair
-    when: '2017'
-  - dimensions: 19.5 x 13.5 x 29.5 inches (49.5 x 34.3 x 74.9 cm)
-    images:
-      - file: klee2_egyxge
-    medium: PVC tubing
-    projects:
-      - slug: Bowery Design 2017
-      - slug: Frieze New York 2017
-    slug: stool
-    tags:
-      - Chair
-    title: Stool
-    when: '2017'
-  - dimensions: 57.5 x 41.5 x 29 inches (146.1 x 105.4 x 73.7 cm)
-    images:
-      - file: klee4_xt11vn
-    medium: PVC tubing and copper pipe
-    slug: lamp
-    tags:
-      - Lighting
-    title: Lamp
-    when: '2017'
   - images:
-      - file: Ghost_Dog_Install_37
+      - file: cover
     projects:
-      - slug: ghost-dog
+      - slug: design-miami-basel-2018-kwangholee
+    tags:
+      - ''
   - images:
-      - file: Ghost_Dog_Install_12
-    projects:
-      - slug: ghost-dog
-  - images:
-      - file: Ghost_Dog_Install_35
-    projects:
-      - slug: ghost-dog
-  - dimensions: 29.53 x 15.75 x 23.62 inches (75 x 40 x 60 cm)
-    images:
-      - file: s94d-klee12-copperchair1-2018-dmb
-    medium: Copper
+      - file: S94D-KwanghoLee-ShapeofaRiver
     projects:
       - slug: design-miami-basel-2018-kwangholee
-    slug: copper-chair-1-2018
     tags:
-      - chair
-    title: Copper Chair 1
-    when: '2018'
-  - dimensions: 11.81 x 15.75 x 12.99 inches (30 x 40 x 33 cm)
-    images:
-      - file: s94d-klee13-kwangholee-coppervase1-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-vase-1-2018
-    tags:
-      - vase
-    title: Copper Vase 1
-    when: '2018'
-  - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
-    images:
-      - file: s94d-klee14-kwangholee-coppervase2-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-vase-2-2018
-    tags:
-      - vase
-    title: Copper Vase 2
-    when: '2018'
-  - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
-    images:
-      - file: s94d-klee15-kwangholee-coppervase3-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-vase-3-2018
-    tags:
-      - vase
-    title: Copper Vase 3
-    when: '2018'
-  - dimensions: 13.78 x 18.5 x 9.84 inches (35 x 47 x 25 cm)
-    images:
-      - file: s94d-klee16-kwangholee-coppervase4-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-vase-4-2018
-    tags:
-      - vase
-    title: Copper Vase 4
-    when: '2018'
-  - dimensions: 15.75 x 9.84 x 9.84 inches (40 x 25 x 25 cm)
-    images:
-      - file: s94d-klee17-kwangholee-coppervase5-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-vase-5-2018
-    tags:
-      - vase
-    title: Copper Vase 5
-    when: '2018'
-  - dimensions: 177.17 x 157.48 x 236.22 inches (40 x 60 x 30 cm)
-    images:
-      - file: s94d-klee18-kwangholee-coppersidetable1-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-side-table-1-2018
-    tags:
-      - table
-    title: Copper Side Table 1
-    when: '2018'
-  - dimensions: 15.75 x 14.57 x 14.57 inches (40 x 37 x 37 cm)
-    images:
-      - file: klee28-coppersidetable2-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-side-table-2-2018
-    tags:
-      - table
-    title: Copper Side Table 2
-    when: '2018'
-  - dimensions: 27.56 x 11.81 x 23.62 inches (70 x 30 x 60 cm)
-    images:
-      - file: klee29-copperchair2-kwangholee-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-chair-2-2018
-    tags:
-      - chair
-    title: Copper Chair 2
-    when: '2018'
-  - dimensions: 29.53 x 23.62 x 23.62 inches (75 x 60 x 60 cm)
-    images:
-      - file: klee30-copperarmchair-kwangholee-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-arm-chair-2018
-    tags:
-      - chair
-    title: 'Copper Arm Chair '
-    when: '2018'
-  - dimensions: 62.99 x 31.5 x 21.65 inches (160 x 80 x 55 cm)
-    images:
-      - file: klee31-coppercabinet-kwangholee-2018-dmb-a
-      - file: klee31-coppercabinet-kwangholee-2018-dmb-b
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-cabinet-2018
-    tags:
-      - storage
-    title: Copper Cabinet
-    when: '2018'
-  - dimensions: 15.75 x 31.5 x 19.69 inches (40 x 80 x 50 cm)
-    images:
-      - file: klee32-coppersidetable3-2018-dmb
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-side-table-3-2018
-    tags:
-      - table
-    title: Copper Side Table 3
-    when: '2018'
-  - dimensions: 29.53 x 13.78 x 15.75 inches (75 x 35 x 40 cm)
-    images:
-      - file: klee33-copperchair3-kwangholee-dmb-2018
-    medium: Copper
-    projects:
-      - slug: design-miami-basel-2018-kwangholee
-    slug: copper-chair-3-2018
-    tags:
-      - chair
-    title: Copper Chair 3
-    when: '2018'
+      - ''
   - dimensions: 24.21 x 26.3 x 22.05 inches (61.5 x 66.8 x 56 cm)
     images:
       - file: klee19-redarmchair-kwangholee-2018-a
@@ -361,6 +132,160 @@ works:
       - lighting
     title: Green Floor Lamp
     when: '2018'
+  - dimensions: 29.53 x 15.75 x 23.62 inches (75 x 40 x 60 cm)
+    images:
+      - file: s94d-klee12-copperchair1-2018-dmb
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-chair-1-2018
+    tags:
+      - chair
+    title: Copper Chair 1
+    when: '2018'
+  - dimensions: 11.81 x 15.75 x 12.99 inches (30 x 40 x 33 cm)
+    images:
+      - file: s94d-klee13-kwangholee-coppervase1-2018-dmb
+      - file: kLee13-dmb2018-green
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-vase-1-2018
+    tags:
+      - vase
+    title: Copper Vase 1
+    when: '2018'
+  - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
+    images:
+      - file: s94d-klee14-kwangholee-coppervase2-2018-dmb
+      - file: klee14-dmb2018-green-a
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-vase-2-2018
+    tags:
+      - vase
+    title: Copper Vase 2
+    when: '2018'
+  - dimensions: 11.81 x 10.24 x 10.24 inches (30 x 26 x 26 cm)
+    images:
+      - file: s94d-klee15-kwangholee-coppervase3-2018-dmb
+      - file: klee15-dmb2018-green-a
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-vase-3-2018
+    tags:
+      - vase
+    title: Copper Vase 3
+    when: '2018'
+  - dimensions: 13.78 x 18.5 x 9.84 inches (35 x 47 x 25 cm)
+    images:
+      - file: s94d-klee16-kwangholee-coppervase4-2018-dmb
+      - file: klee16-dmb2018-green-a
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-vase-4-2018
+    tags:
+      - vase
+    title: Copper Vase 4
+    when: '2018'
+  - dimensions: 15.75 x 9.84 x 9.84 inches (40 x 25 x 25 cm)
+    images:
+      - file: s94d-klee17-kwangholee-coppervase5-2018-dmb
+      - file: klee17-dmb2018-green-a
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-vase-5-2018
+    tags:
+      - vase
+    title: Copper Vase 5
+    when: '2018'
+  - dimensions: 177.17 x 157.48 x 236.22 inches (40 x 60 x 30 cm)
+    images:
+      - file: s94d-klee18-kwangholee-coppersidetable1-2018-dmb
+      - file: klee18-dmb2018-green-a
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-side-table-1-2018
+    tags:
+      - table
+    title: Copper Side Table 1
+    when: '2018'
+  - dimensions: 15.75 x 14.57 x 14.57 inches (40 x 37 x 37 cm)
+    images:
+      - file: klee28-coppersidetable2-2018-dmb
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-side-table-2-2018
+    tags:
+      - table
+    title: Copper Side Table 2
+    when: '2018'
+  - dimensions: 27.56 x 11.81 x 23.62 inches (70 x 30 x 60 cm)
+    images:
+      - file: klee29-copperchair2-kwangholee-2018-dmb
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-chair-2-2018
+    tags:
+      - chair
+    title: Copper Chair 2
+    when: '2018'
+  - dimensions: 62.99 x 31.5 x 21.65 inches (160 x 80 x 55 cm)
+    images:
+      - file: klee31-coppercabinet-kwangholee-2018-dmb-a
+      - file: klee31-coppercabinet-kwangholee-2018-dmb-b
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-cabinet-2018
+    tags:
+      - storage
+    title: Copper Cabinet
+    when: '2018'
+  - dimensions: 29.53 x 23.62 x 23.62 inches (75 x 60 x 60 cm)
+    images:
+      - file: klee30-copperarmchair-kwangholee-2018-dmb
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-arm-chair-2018
+    tags:
+      - chair
+    title: 'Copper Arm Chair '
+    when: '2018'
+  - dimensions: 15.75 x 31.5 x 19.69 inches (40 x 80 x 50 cm)
+    images:
+      - file: klee32-coppersidetable3-2018-dmb
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-side-table-3-2018
+    tags:
+      - table
+    title: Copper Side Table 3
+    when: '2018'
+  - dimensions: 29.53 x 13.78 x 15.75 inches (75 x 35 x 40 cm)
+    images:
+      - file: klee33-copperchair3-kwangholee-dmb-2018
+    medium: Copper
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: copper-chair-3-2018
+    tags:
+      - chair
+    title: Copper Chair 3
+    when: '2018'
+  - images:
+      - file: s94d-kwangholee-copper-dmb2018-back
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
   - dimensions: 17.72 x 55.12 x 13.78 inches (45 x 140 x 35 cm)
     images:
       - file: klee34-nylonbench-kwangholee-2018-a
@@ -385,4 +310,101 @@ works:
       - seating
     title: 'Nylon Stool '
     when: '2018'
+  - dimensions: 16 x 79 x 79 inches (40.6 x 200.7 x 200.7 cm)
+    hero: false
+    images:
+      - file: large_nyckqp
+      - file: large_ko1pk3
+    medium: Silk
+    price: ''
+    projects:
+      - slug: woven-furniture
+      - slug: midtown-lever-house
+    slug: silk-bench-1
+    tags:
+      - Bench
+    title: Silk Bench 1
+    when: '2006'
+  - dimensions: 25.5 x 21 x 31 inches (64.8 x 53.3 x 78.7 cm)
+    edition: Unique
+    hero: true
+    images:
+      - file: large_hhnwac
+    medium: PVC tubing
+    projects:
+      - slug: ghost-dog
+    slug: red-and-grey-pvc-chair
+    tags:
+      - Chair
+    title: Red & Grey PVC Chair
+    when: '2017'
+  - dimensions: 16.5 x 89 x 12.5 inches (41.9 x 226.1 x 31.8 cm)
+    images:
+      - file: large_bqsrv7
+      - file: large_hg2jjt
+    medium: 'PVC '
+    price: ''
+    projects:
+      - slug: ghost-dog
+    slug: kwangho-small-pvc-bench
+    tags:
+      - Bench
+    title: Small PVC Bench
+    when: '2006'
+  - caption: Frieze NY
+    dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
+    hero: false
+    images:
+      - file: large_d92map
+    medium: Custom silk rope
+    slug: red-silk-bench
+    tags:
+      - Bench
+    title: 'Red Silk Bench (Frieze NY 2017) '
+    when: '2016'
+  - dimensions: 19.5 x 13.5 x 29.5 inches (49.5 x 34.3 x 74.9 cm)
+    images:
+      - file: klee2_egyxge
+    medium: PVC tubing
+    projects:
+      - slug: Bowery Design 2017
+      - slug: Frieze New York 2017
+    slug: stool
+    tags:
+      - Chair
+    title: Stool
+    when: '2017'
+  - dimensions: 57.5 x 41.5 x 29 inches (146.1 x 105.4 x 73.7 cm)
+    images:
+      - file: klee4_xt11vn
+    medium: PVC tubing and copper pipe
+    slug: lamp
+    tags:
+      - Lighting
+    title: Lamp
+    when: '2017'
+  - images:
+      - file: Ghost_Dog_Install_37
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_12
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Ghost_Dog_Install_35
+    projects:
+      - slug: ghost-dog
+  - dimensions: 15 x 213 x 11 inches (38.1 x 541 x 27.9 cm)
+    images:
+      - file: large_qlarv2
+    medium: Nylon
+    price: ''
+    projects:
+      - slug: woven-furniture
+    slug: kwangho-large-nylon-bench
+    tags:
+      - Bench
+    title: Large Nylon Bench
+    when: '2006'
 status: Represented
