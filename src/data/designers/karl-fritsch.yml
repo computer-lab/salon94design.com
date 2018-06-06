@@ -47,4 +47,155 @@ works:
       - slug: A Retrospective
     tags:
       - jewelry
+  - dimensions: aprox. 2x2x2 inches
+    images:
+      - file: kf-39_1-a
+      - file: kf-39_2
+      - file: kf-39_3
+    medium: 'Gold, diamonds, rubies, sapphires, emeralds'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: sm-2175-2010
+    tags:
+      - jewelry
+    title: SM2175
+    when: '2010'
+  - images:
+      - file: kf_245_dmb
+    medium: '18 karat gold, various gemstones'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-245-2009
+    tags:
+      - jewelry
+    title: KF 245
+    when: '2009'
+  - images:
+      - file: kf_160_dmb
+      - file: kf160
+    medium: 'Palladium white gold, raw diamond 70ct'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-160-2014
+    tags:
+      - jewelry
+    title: KF 160
+    when: '2014'
+  - images:
+      - file: kf149_b_dmb
+      - file: KF149
+    medium: 'Silver, smoky quartz, madeira topaz, moonstone '
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf149-dmb-2014
+    tags:
+      - jewelry
+    title: KF 149
+    when: '2014'
+  - images:
+      - file: kf_157-dmb
+    medium: '18K gold, champagne diamonds'
+    slug: kf-157-dmb-2014
+    tags:
+      - jewelry
+    title: KF 157
+    when: '2014'
+  - images:
+      - file: kf159_a_dmb
+      - file: kf159
+      - file: kf159_b
+    medium: 18k gold
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-159-2014-dmb
+    tags:
+      - jewelry
+    title: KF 159
+    when: '2014'
+  - images:
+      - file: kf_297_dmb
+    medium: 18k gold
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-297-2007
+    tags:
+      - jewelry
+    title: KF 297
+    when: '2007'
+  - images:
+      - file: kf_310_dmb
+    medium: 18k gold
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-310-2014-dmb
+    tags:
+      - jewelry
+    title: KF 310
+    when: '2014'
+  - images:
+      - file: s94_uptown_rings_09_kf176
+    medium: '14k gold, white diamonds, green diamonds, red diamonds'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-176-2014-dmb
+    tags:
+      - jewelry
+    title: KF 176
+    when: '2014'
+  - images:
+      - file: s94_uptown_rings_02_kf141
+    medium: 18k gold
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-141-sm3026-2009
+    tags:
+      - jewelry
+    title: SM3026
+    when: '2009'
+  - images:
+      - file: s94_uptown_rings_03_kf127
+    medium: 'Gold plated silver, amethyst'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-127-2008-dmb
+    tags:
+      - jewelry
+    title: KF 127
+    when: '2008'
+  - images:
+      - file: s94_uptown_rings_07_kf194
+    medium: 'Oxidized silver, emerald and ruby'
+    slug: kf-194-2010-dmb
+    tags:
+      - design-miami-basel-2018-kwangholee
+    title: KF 194
+    when: '2010'
+  - images:
+      - file: kf_205_dmb
+    medium: 'Silver, niello, cubic zirconia'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-205-2015-dmb
+    title: KF 205
+    when: '2015'
+  - images:
+      - file: s94_uptown_rings_08_kf315
+    medium: 'Silver, champagne diamond, rubies, sapphires, peridot, citrin'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-315-2013-dmb
+    tags:
+      - jewelry
+    title: KF 315
+    when: '2013'
+  - images:
+      - file: s94_uptown_rings_11_kf358
+    medium: 'Silver, carved glass stones'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
+    slug: kf-358-2011-dmb
+    tags:
+      - jewelry
+    title: KF 358
+    when: '2011'
 status: Represented
