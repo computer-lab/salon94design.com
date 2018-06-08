@@ -635,6 +635,8 @@ works:
     images:
       - file: GPe175-SediaPortaritratti-2016-LR
     medium: 'Polystyrene, glass fiber, and polyester resin'
+    projects:
+      - slug: design-miami-basel-2018-gaetanopesce
     slug: sedia-portaritratti
     title: Sedia Portaritratti
     when: '2016'
