@@ -50,4 +50,115 @@ works:
       - file: LEVER_HOUSE_INSTALL_2
     projects:
       - slug: midtown-lever-house
+  - dimensions: 58.27 x 15.75 x 23.62 inches (148 x 40 x 60 cm)
+    images:
+      - file: dk5-dontfold-doziekanu
+    medium: 'RIMOWA aluminum sheet, marble'
+    slug: do-not-fold-dk-spazio-maiocchi
+    tags:
+      - shelf
+    title: Don't Fold
+    when: '2018'
+  - dimensions: 12.99 x 18.11 x 14.96 inches (33 x 46 x 38 cm)
+    images:
+      - file: dk6-rimowashell1-doziekanu
+    medium: 'Marble, RIMOWA shell'
+    slug: rimowa-shell-s-dk
+    tags:
+      - storage
+    title: RIMOWA Shell 1
+    when: '2018'
+  - dimensions: 12.99 x 18.11 x 14.96 inches (33 x 46 x 38 cm)
+    images:
+      - file: dk7-rimowashell2-doziekanu
+    medium: 'Marble, RIMOWA shell'
+    slug: rimowa-shell-2-dk
+    tags:
+      - storage
+    title: RIMOWA Shell 2
+    when: '2018'
+  - dimensions: 37.4 x 26.77 x .79 inches (95 x 68 x 2 cm)
+    images:
+      - file: dk8-fracturedreflection1-doziekanu_copy
+    medium: 'RIMOWA aluminum sheet, mirror, marble'
+    slug: fractured-reflection-1-dk
+    tags:
+      - other
+    title: Fractured Reflection 1
+    when: '2018'
+  - dimensions: 37.4 x 26.77 x .79 inches (95 x 68 x 2 cm)
+    images:
+      - file: dk9-fracturedreflection2-doziekanu
+    medium: 'RIMOWA aluminum sheet, mirror, marble'
+    slug: fractured-reflection-2-dk
+    tags:
+      - other
+    title: Fractured Reflection 2
+    when: '2018'
+  - dimensions: 37.4 x 17.72 x 21.65 inches (95 x 45 x 55 cm)
+    images:
+      - file: dk10-chair_iv_for_rimowaa-doziekanu
+    medium: 'RIMOWA aluminum frame, recycled foam, plastic straps'
+    slug: chair-iv-for-rimowa-a-dk
+    tags:
+      - chair
+    title: 'Chair [iv] for Rimowa A'
+    when: '2018'
+  - dimensions: 37.4 x 17.72 x 21.65 inches (95 x 45 x 55 cm)
+    images:
+      - file: dk11-chair_iv_for_rimowab-doziekanu
+    medium: 'RIMOWA aluminum frame, recycled foam, plastic straps'
+    slug: chair-iv-for-rimowa-b-dk
+    tags:
+      - chair
+    title: 'Chair [iv] for Rimowa B'
+    when: '2018'
+  - dimensions: 15.75 x 16.14 x 16.14 inches (40 x 41 x 41 cm)
+    images:
+      - file: dk12-pompeiipiru-doziekanu
+    medium: RIMOWA aluminum sheet
+    slug: pompeii-piru-dk-2018
+    tags:
+      - other
+    title: Pompeii Piru
+    when: '2018'
+  - dimensions: 15.75 x 16.14 x 16.14 inches (40 x 41 x 41 cm)
+    images:
+      - file: dk13-kyotocuhz-doziekanu
+    medium: RIMOWA aluminum sheet
+    slug: kyoto-cuhz-dk-2018
+    tags:
+      - other
+    title: Kyoto Cuhz
+    when: '2018'
+  - dimensions: 14.17 x 19.29 x .39 inches (36 x 49 x 1 cm)
+    images:
+      - file: dk14-frontdeskmilk1-doziekanu
+    medium: 'RIMOWA aluminum frame, hotel bells'
+    slug: front-desk-milk-1
+    tags:
+      - other
+    title: Front Desk Milk 1
+    when: '2018'
+  - dimensions: >-
+      41.73 x 9.06 x 9.06 inches (106 x 23 x 23 cm) - all 12.99 x 7.87 x 7.87
+      inches (33 x 20 x 20 cm) - lamp 28.74 x 9.06 x 9.06 inches (73 x 23 x 23
+      cm) - column
+    images:
+      - file: dk17-flightereureka-doziekanu
+    medium: 'RIMOWA aluminum sheet, steel, plane belt'
+    slug: flighter-eureka-2018-dk
+    tags:
+      - other
+    title: Flighter Eureka
+    when: '2018'
+  - dimensions: 24.41 x 7.87 x 11.81 inches (62 x 20 x 30 cm)
+    images:
+      - file: dk18-dontfoldyoungboy-doziekanu
+    medium: 'RIMOWA aluminum sheet, steel'
+    slug: do-not-fold-young-boy-2018-dk
+    tags:
+      - shelf
+    title: Don't Fold Young Boy
+    when: '2018'
 status: Represented
