@@ -67,4 +67,13 @@ works:
       - table
     title: Table
     when: '2018'
+  - dimensions: '17.75 x 94.5 x 14 inches (40 x 240 x 35 cm) '
+    images:
+      - file: s94d-philippemalouin-steelbench-2018
+    medium: Steel
+    slug: steel-bench-2018
+    tags:
+      - bench
+    title: Steel Bench
+    when: '2018'
 status: Represented
