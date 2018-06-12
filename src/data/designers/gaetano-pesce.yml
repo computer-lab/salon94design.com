@@ -634,10 +634,52 @@ works:
   - dimensions: 161.81 x 120.47 x 70.87 inches (411 x 306 x 180 cm)
     images:
       - file: GPe175-SediaPortaritratti-2016-LR
+      - file: salon94_designmiami__0618_0012
+      - file: salon94_designmiami__0618_0016
+      - file: salon94_designmiami__0618_0019
+      - file: salon94_designmiami__0618_0024
     medium: 'Polystyrene, glass fiber, and polyester resin'
     projects:
       - slug: design-miami-basel-2018-gaetanopesce
     slug: sedia-portaritratti
     title: Sedia Portaritratti
     when: '2016'
+  - images:
+      - file: gpe177-a
+      - file: gpe177-b
+    medium: Resin
+    slug: gaetano-pesce-vase-gpe177
+    tags:
+      - vase
+    title: Vase
+  - images:
+      - file: gpe181-a
+      - file: gpe181-b
+      - file: gpe181-c
+      - file: gpe181-d
+    medium: Resin
+    slug: gaetano-flame-vase-gpe181
+    tags:
+      - vase
+    title: Flame Vase
+  - images:
+      - file: gpe187-a
+      - file: gpe187-b
+      - file: gpe187-c
+      - file: gpe187-d
+    medium: Resin
+    slug: gaetano-pesce-vase-gpe187
+    tags:
+      - vase
+    title: Vase
+  - images:
+      - file: gpe180-a
+      - file: gpe180-b
+      - file: gpe180-d
+    medium: Resin
+    slug: tall-resin-vase-2018-gpe180
+    tags:
+      - vase
+    title: Tall Resin Vase
+    when: '2018'
 status: Represented
