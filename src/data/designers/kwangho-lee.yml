@@ -9,7 +9,11 @@ bio: >-
   has developed a way of knitting industrial materials to create lamps from
   tangles of extension cords, as well as a series of couches and stools made
   from woven garden hoses, PVC, leather and silk, titled Obsession.
-press: []
+press:
+  - file: /images/2018-06-11-Surface.pdf
+    title: Surface - June 2018
+  - file: /images/2018-06-13-SightUnseen.pdf
+    title: SightUnseen - June 2018
 works:
   - images:
       - file: cover
