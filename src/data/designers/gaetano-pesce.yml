@@ -251,6 +251,8 @@ works:
       - file: GPe_46_LR
     medium: Polyurethane resin
     slug: gold-vase
+    tags:
+      - vase
     title: Gold Vase
     when: '2016'
   - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
@@ -261,7 +263,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: mini-stracci-vases
     tags:
-      - Other
+      - vase
     title: Mini Stracci Vases
     when: '2015'
   - dimensions: 5.91 x 7.87 x 7.87 inches (15 x 20 x 20 cm)
@@ -270,7 +272,7 @@ works:
     medium: Polyurethane resin
     slug: mini-flame-vase-2
     tags:
-      - Other
+      - vase
     title: Mini Flame Vase 2
     when: '2014'
   - dimensions: 11.02 x 17.32 x 17.32 inches (28 x 44 x 44 cm)
@@ -279,7 +281,7 @@ works:
     medium: Polyurethane resin
     slug: 3-leg-vase
     tags:
-      - Other
+      - vase
     title: 3 Leg Vase
     when: '2016'
   - dimensions: 9.45 x 6.69 x 6.69 inches (24 x 17 x 17 cm)
@@ -288,7 +290,7 @@ works:
     medium: Polyurethane resin
     slug: amber-vase
     tags:
-      - Other
+      - vase
     title: Amber Vase
     when: '2015'
   - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
@@ -297,7 +299,7 @@ works:
     medium: Polyurethane resin
     slug: mini-medusa-vase
     tags:
-      - Other
+      - vase
     title: Mini Medusa Vase
     when: '2015'
   - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
@@ -306,14 +308,14 @@ works:
     medium: Polyurethane resin
     slug: scaglie-vase-green
     tags:
-      - Other
+      - vase
     title: Scaglie Vase (green)
     when: '2015'
   - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
     medium: Polyurethane resin
     slug: scaglie-vase-pink
     tags:
-      - Other
+      - vase
     title: Scaglie Vase (pink)
     when: '2015'
   - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
@@ -322,7 +324,7 @@ works:
     medium: Polyurethane resin
     slug: mini-flame-vase
     tags:
-      - Other
+      - vase
     title: Mini Flame Vase
     when: '2014'
   - dimensions: 12.6 x 17.32 x 17.32 inches (32 x 44 x 44 cm)
@@ -331,7 +333,7 @@ works:
     medium: Polyurethane resin
     slug: flame-vase-medium
     tags:
-      - Other
+      - vase
     title: Flame Vase Medium
     when: '2014'
   - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
@@ -340,7 +342,7 @@ works:
     medium: Polyurethane resin
     slug: radici-vase-red
     tags:
-      - Other
+      - vase
     title: Radici Vase Red
     when: '2010'
   - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
@@ -349,7 +351,7 @@ works:
     medium: Polyurethane resin
     slug: vase-with-red-legs
     tags:
-      - Other
+      - vase
     title: Vase with Red Legs
     when: '2016'
   - dimensions: 8.66 x 9.84 x 9.84 inches (22 x 25 x 25 cm)
@@ -358,7 +360,7 @@ works:
     medium: Polyurethane resin
     slug: radici-vase-red-black
     tags:
-      - Other
+      - vase
     title: Radici Vase Red/Black
     when: '2010'
   - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
@@ -367,7 +369,7 @@ works:
     medium: Polyurethane resin
     slug: skinny-vase
     tags:
-      - Other
+      - vase
     title: Skinny Vase
     when: '2015'
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
@@ -376,7 +378,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-small
     tags:
-      - Other
+      - vase
     title: Tree Vase Small
     when: ''
   - dimensions: 23.62 x 22.05 x 22.05 inches (60 x 56 x 56 cm)
@@ -385,7 +387,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-medium
     tags:
-      - Other
+      - vase
     title: Tree Vase Medium
     when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
@@ -394,7 +396,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs-2
     tags:
-      - Other
+      - vase
     title: Tree Vase big (4 legs) 2
     when: '2015'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
@@ -403,7 +405,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-big-4-legs
     tags:
-      - Other
+      - vase
     title: Tree Vase Big (4 legs)
     when: '2015'
   - dimensions: 42.13 x 48.43 x 48.43 inches (107 x 123 x 123 cm)
@@ -412,7 +414,7 @@ works:
     medium: Polyurethane resin and papier maché
     slug: tree-vase-xxl
     tags:
-      - Other
+      - vase
     title: Tree Vase XXL
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -420,6 +422,8 @@ works:
       - file: GAETANO_PESCE-37
     medium: Polyurethane resin
     slug: small-rock-vases
+    tags:
+      - vase
     title: Small Rock Vases
     when: '2016'
   - dimensions: 27.56 x 21.65 x 21.65 inches (70 x 55 x 55 cm)
@@ -428,7 +432,7 @@ works:
     medium: Polyurethane resin
     slug: pebble-vase
     tags:
-      - Other
+      - vase
     title: Pebble Vase
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -437,7 +441,7 @@ works:
     medium: Polyurethane resin
     slug: small-pebble-vase
     tags:
-      - Other
+      - vase
     title: Small Pebble Vase
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -446,14 +450,14 @@ works:
     medium: Polyurethane resin
     slug: small-pebble-vase-3
     tags:
-      - Other
+      - vase
     title: Small Pebble Vase 3
     when: '2017'
   - dimensions: 28.35 x 21.65 x 21.65 inches (72 x 55 x 55 cm)
     medium: Polyurethane resin
     slug: pebble-vase-2
     tags:
-      - Other
+      - vase
     title: Pebble Vase 2
     when: '2016'
   - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -462,7 +466,7 @@ works:
     medium: Polyurethane resin
     slug: small-pebble-vase-4
     tags:
-      - Other
+      - vase
     title: Small Pebble Vase 4
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -471,7 +475,7 @@ works:
     medium: Polyurethane resin
     slug: small-pebble-vase-8
     tags:
-      - Other
+      - vase
     title: Small Pebble Vase 8
     when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
@@ -480,7 +484,7 @@ works:
     medium: Polyurethane resin
     slug: small-pebble-vase-9
     tags:
-      - Other
+      - vase
     title: Small Pebble Vase 9
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
@@ -489,7 +493,7 @@ works:
     medium: Polyurethane resin
     slug: ice-cream-vase-6
     tags:
-      - Other
+      - vase
     title: Ice Cream Vase 6
     when: '2017'
   - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
@@ -498,7 +502,7 @@ works:
     medium: Polyurethane resin
     slug: ice-cream-vase
     tags:
-      - Other
+      - vase
     title: Ice Cream Vase
     when: '2017'
   - dimensions: 9 x 7 x 7 inches (22.86 x 17.78 x 17.78 cm)
@@ -507,7 +511,7 @@ works:
     medium: Polyurethane resin
     slug: ice-cream-vase-9
     tags:
-      - Other
+      - vase
     title: Ice Cream Vase 9
     when: '2017'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
@@ -516,7 +520,7 @@ works:
     medium: Polyurethane resin
     slug: ice-cream-vase-1
     tags:
-      - Other
+      - vase
     title: Ice Cream Vase 1
     when: '2017'
   - images:
