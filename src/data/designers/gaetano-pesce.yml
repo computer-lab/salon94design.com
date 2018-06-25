@@ -682,4 +682,120 @@ works:
       - vase
     title: Tall Resin Vase
     when: '2018'
+  - images:
+      - file: gpe166-a
+      - file: gpe166-b
+      - file: gpe166-c
+    medium: Resin
+    slug: medium-rubber-vase-blue
+    tags:
+      - vase
+    title: Medium Rubber Vase Blue
+    when: '2017'
+  - images:
+      - file: gpe167-a
+      - file: gpe167-b
+      - file: gpe167-c
+    medium: Resin
+    slug: medium-rubber-vase-red
+    tags:
+      - vase
+    title: Medium Rubber Vase Red
+    when: '2018'
+  - images:
+      - file: gpe176-a
+      - file: gpe176-b
+      - file: gpe176-c
+    medium: Resin and wood
+    slug: stick-vase-black
+    tags:
+      - vase
+    title: Stick Vase Black
+  - images:
+      - file: gpe178-a
+      - file: gpe178-b
+      - file: gpe178-c
+      - file: gpe178-d
+    medium: Resin
+    slug: fabric-vase-medium-blue
+    tags:
+      - vase
+    title: Fabric Vase Medium Blue
+  - images:
+      - file: gpe179-a
+      - file: gpe179-b
+      - file: gpe179-c
+      - file: gpe179-d
+    medium: Resin
+    slug: resin-bowl-orange
+    tags:
+      - other
+    title: Resin Bowl
+  - images:
+      - file: gpe182-a
+      - file: gpe182-b
+      - file: gpe182-c
+    slug: yellow-vase-giullare
+    tags:
+      - vase
+    title: Yellow Vase Giullare
+  - images:
+      - file: gpe183-a
+      - file: gpe183-b
+      - file: gpe183-c
+    slug: rock-vase-red-gpe
+    tags:
+      - vase
+    title: Rock Vase
+  - images:
+      - file: gpe184-a
+      - file: gpe184-b
+      - file: gpe184-c
+    slug: rock-vase-prototype-red-small
+    tags:
+      - vase
+    title: Rock Vase Prototype Red Small
+  - images:
+      - file: gpe185-a
+      - file: gpe185-b
+      - file: gpe185-c
+    slug: rock-vase-prototype-green-small
+    tags:
+      - vase
+    title: Rock Vase Prototype Green Small
+  - images:
+      - file: gpe194-a
+      - file: gpe194-b
+      - file: gpe194-c
+    slug: rock-vase-prototype-blue-small
+    tags:
+      - vase
+    title: Rock Vase Prototype Blue Small
+  - images:
+      - file: gpe186-a
+      - file: gpe186-b
+      - file: gpe186-c
+      - file: gpe186-d
+    slug: foulard-vase-gpe
+    tags:
+      - vase
+    title: Foulard Vase
+  - images:
+      - file: gpe189-a
+      - file: gpe189-b
+      - file: gpe189-c
+    medium: Resin
+    slug: rock-vase-prototype-red-large
+    tags:
+      - vase
+    title: Rock Vase Prototype Red Large
+  - images:
+      - file: gpe190-a
+      - file: gpe190-b
+      - file: gpe190-c
+    medium: Resin
+    slug: rock-vase-prototype-blue-large
+    tags:
+      - vase
+    title: Rock Vase Prototype Blue Large
 status: Represented
