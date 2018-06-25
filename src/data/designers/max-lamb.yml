@@ -69,7 +69,7 @@ works:
       - slug: design-miami-basel-2017
     slug: thermal-spray-vase-copper
     tags:
-      - Other
+      - vase
     title: 'Thermal Spray Vase Copper '
     when: '2017'
   - dimensions: 33 x 26 x 38 inches (85 x 65 x 97 cm)
@@ -168,7 +168,7 @@ works:
       - slug: design-miami-basel-2017
     slug: thermal-spray-chair-stainless
     tags:
-      - Chair
+      - chair
     title: Thermal Spray Chair Stainless
     when: '2017'
   - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
@@ -182,7 +182,7 @@ works:
       - slug: thermal-spray-furniture
     slug: thermal-spray-shelf-bronze
     tags:
-      - Storage
+      - shelf
     title: Thermal Spray Shelf Bronze
     when: '2017'
   - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
