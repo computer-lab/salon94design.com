@@ -36,7 +36,7 @@ works:
     medium: Laminated plywood and polyurethane resin
     slug: face-cabinet
     tags:
-      - Storage
+      - cabinet
     title: Face Cabinet
     when: '2015'
   - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
@@ -48,7 +48,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: horse-cabinet
     tags:
-      - Storage
+      - cabinet
     title: Horse Cabinet
     when: '2006'
   - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
@@ -57,7 +57,7 @@ works:
     medium: 'Plywood, MDF, polyurethane resin, papier maché'
     slug: ritratto-dell-uomo-contento-cabinet
     tags:
-      - Storage
+      - cabinet
     title: Ritratto Dell'Uomo Contento Cabinet
     when: '2016'
   - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
@@ -66,7 +66,7 @@ works:
     medium: 'Resin, wood, steel'
     slug: tornando-dal-circo-cabinet
     tags:
-      - storage
+      - cabinet
     title: Tornando dal Circo Cabinet
     when: '2016'
   - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
@@ -78,7 +78,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: do-you-still-love-me
     tags:
-      - Storage
+      - cabinet
     title: Do You Still Love Me?
     when: '2007'
   - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
@@ -91,7 +91,7 @@ works:
       - slug: design-miami-2016-pesce
     slug: puglia-cabinet
     tags:
-      - Storage
+      - cabinet
     title: Puglia Cabinet
     when: '2007'
   - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
