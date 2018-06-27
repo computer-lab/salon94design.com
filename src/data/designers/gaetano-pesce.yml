@@ -30,6 +30,15 @@ works:
   - images:
       - file: GPe_Cabinets
     title: ''
+  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+    images:
+      - file: gpe99_tcmdje
+    medium: 'Resin, wood, steel'
+    slug: tornando-dal-circo-cabinet
+    tags:
+      - cabinet
+    title: Tornando dal Circo Cabinet
+    when: '2016'
   - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
     images:
       - file: gpe7_uukgce
@@ -48,39 +57,6 @@ works:
       - cabinet
     title: Face Cabinet
     when: '2015'
-  - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
-    edition: Unique
-    images:
-      - file: large_m6d6hx
-    medium: 'laminated plywood, gold leaf doors'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: horse-cabinet
-    tags:
-      - cabinet
-    title: Horse Cabinet
-    when: '2006'
-  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
-    images:
-      - file: gpe99_tcmdje
-    medium: 'Resin, wood, steel'
-    slug: tornando-dal-circo-cabinet
-    tags:
-      - cabinet
-    title: Tornando dal Circo Cabinet
-    when: '2016'
-  - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
-    hero: true
-    images:
-      - file: large_l6nzoh
-    medium: polyurethane resin and metal structure
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: do-you-still-love-me
-    tags:
-      - cabinet
-    title: Do You Still Love Me?
-    when: '2007'
   - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
     edition: 'Unique '
     hero: false
@@ -94,6 +70,30 @@ works:
       - cabinet
     title: Puglia Cabinet
     when: '2007'
+  - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
+    hero: true
+    images:
+      - file: large_l6nzoh
+    medium: polyurethane resin and metal structure
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: do-you-still-love-me
+    tags:
+      - cabinet
+    title: Do You Still Love Me?
+    when: '2007'
+  - dimensions: 81.89 x 39.37 x 13.78 inches (208 x 100 x 35 cm)
+    edition: Unique
+    images:
+      - file: large_m6d6hx
+    medium: 'laminated plywood, gold leaf doors'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: horse-cabinet
+    tags:
+      - cabinet
+    title: Horse Cabinet
+    when: '2006'
   - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
     images:
       - file: gpe73_whcyfr
