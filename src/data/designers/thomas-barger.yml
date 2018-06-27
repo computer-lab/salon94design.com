@@ -25,220 +25,6 @@ press:
     link: 'https://www.architecturaldigest.com/story/growing-up-with-thomas-barger'
     title: Architectural Digest - February 2018
 works:
-  - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
-    hero: true
-    images:
-      - file: tbar11_nutaaa
-      - file: tbarlmc1_rzehpx
-      - file: tbarlmc2_jsqxkj
-      - file: tbarlmc3_byh5ks
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: love-me-chair
-    tags:
-      - Chair
-    title: Love Me Chair
-    when: '2017'
-  - dimensions: 31 x 18 x 18 inches (78.74 X 45.72 X 45.72 cm)
-    hero: true
-    images:
-      - file: tbar12_s8kgms
-      - file: tbar12-a_idadfv
-      - file: tbar12-b_ye0ang
-      - file: tbar12-c_hyyskk
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: butter-chair-1
-    tags:
-      - Chair
-    title: Butter Chair 1
-    when: '2017'
-  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
-    hero: true
-    images:
-      - file: tbar14_tvabau
-      - file: tbar14-a_n2wvbe
-      - file: tbar14-b_uexywd
-      - file: tbar14-d_pcezvm
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: s-o-s-green-goblin-spidey-please-save-me
-    tags:
-      - Chair
-    title: 'S.O.S. Green Goblin, Spidey Please Save Me'
-    when: '2017'
-  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
-    hero: true
-    images:
-      - file: tbar16_msnr8d
-      - file: tbar16-a_sbj2xk
-      - file: tbar16-b_vre28q
-      - file: tbar16-c_ju4isp
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: tall-church-boy-1
-    tags:
-      - Chair
-    title: Tall Church Boy 1
-    when: '2017'
-  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
-    hero: true
-    images:
-      - file: tbar15_fzjv83
-      - file: tbar15-a_hn5mj6
-      - file: tbar15-c_szgwwk
-      - file: tbar15-d_linr5z
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: protect-me-chair
-    tags:
-      - Chair
-    title: Protect Me Chair
-    when: '2017'
-  - dimensions: 31 x 18 x 18 inches (78.74 x 45.72 x 45.72 cm)
-    hero: true
-    images:
-      - file: tbar13_y8c6pm
-      - file: tbar13-a_tdu7sc
-      - file: tbar13-b_fynks9
-      - file: tbar13-c_n2qjhv
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: butter-chair-2
-    tags:
-      - Chair
-    title: Butter Chair 2
-    when: '2017'
-  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
-    hero: false
-    images:
-      - file: large_ai257t
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects:
-      - slug: ghost-dog
-    slug: underwear-armoire-3
-    tags:
-      - Storage
-    title: Underwear Armoire 3
-    when: '2017'
-  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
-    hero: true
-    images:
-      - file: tbar17_qdkxli
-      - file: tbar17-a_y86nth
-      - file: tbar17-b_dx0flt
-      - file: tbar17-c_nizwza
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: Tall-church-boy-2
-    tags:
-      - Chair
-    title: Tall Church Boy 2
-    when: '2017'
-  - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
-    hero: true
-    images:
-      - file: tbar10instal_fdeawl
-      - file: 6_estibm
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: midtown-lever-house
-    slug: sorting-laundry-for-a-family-of-5-floor
-    tags:
-      - Storage
-    title: Sorting Laundry For a Family of 5 (floor)
-    when: '2017'
-  - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
-    hero: false
-    images:
-      - file: 49936_zbqcxa
-    medium: 'Paper pulp, plywood, styrofoam, cardboard'
-    price: ''
-    projects: []
-    slug: underwear-armoire
-    tags:
-      - Storage
-    title: 'Underwear Armoire, Connor''s Armoire'
-    when: '2016'
-  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
-    hero: true
-    images:
-      - file: tbar18_rmdpic
-      - file: tbar18l_ely4pf
-      - file: tbar18b_enzjnd
-      - file: tbar18r_acdioo
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: tall-church-boy-3
-    tags:
-      - Chair
-    title: Tall Church Boy 3
-    when: '2017'
-  - hero: true
-    images:
-      - file: tbar2_pa29nq
-      - file: tbar2-a_ntlqig
-      - file: tbar2-b_eox0ro
-      - file: tbar2-c_rvoues
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair
-    tags:
-      - Chair
-    title: Chair
-    when: '2016'
-  - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
-    hero: false
-    images:
-      - file: 4F7A9960_fra5k9
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects: []
-    slug: alesandr-rodchenko-snack-chair
-    tags:
-      - Chair
-    title: Aleksandr Rodchenko Snack Chair
-    when: '2017'
-  - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
-    images:
-      - file: large_nbvblq
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects: []
-    slug: aleksandr-rodchenko-snack-chair-with-harness
-    tags:
-      - Chair
-    title: Aleksandr Rodchenko Snack Chair (with harness)
-    when: '2017'
-  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
-    images:
-      - file: S94D-TBar4-ThomasBarger-DontForgetMeOnTheTrainChair-2017-HR
-    medium: Paper pulp and Styrofoam
-    projects:
-      - slug: Bowery Design 2017
-      - slug: ghost-dog
-    slug: dont-forget-me-on-the-train-chair
-    tags:
-      - Chair
-    title: Don't Forget Me on the Train Chair
-    when: '2017'
-  - hero: true
-    images:
-      - file: tbar3_rddvfo
-      - file: tbar3-a_rn8hpm
-      - file: tbar3-b_ochlxr
-      - file: tbar3-d_bxpftp
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-2
-    tags:
-      - Chair
-    title: Chair 2
-    when: '2016'
   - dimensions: 44 x 60 x 38 inches (111.8 x 152.4 x 96.5 cm)
     images:
       - file: S94D-ThomasBarger-lovemeprotectme
@@ -358,6 +144,220 @@ works:
       - storage
     title: Boyfriend's Underwear Armoire
     when: '2018'
+  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
+    images:
+      - file: S94D-TBar4-ThomasBarger-DontForgetMeOnTheTrainChair-2017-HR
+    medium: Paper pulp and Styrofoam
+    projects:
+      - slug: Bowery Design 2017
+      - slug: ghost-dog
+    slug: dont-forget-me-on-the-train-chair
+    tags:
+      - Chair
+    title: Don't Forget Me on the Train Chair
+    when: '2017'
+  - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
+    hero: false
+    images:
+      - file: 4F7A9960_fra5k9
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects: []
+    slug: alesandr-rodchenko-snack-chair
+    tags:
+      - Chair
+    title: Aleksandr Rodchenko Snack Chair
+    when: '2017'
+  - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
+    images:
+      - file: large_nbvblq
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects: []
+    slug: aleksandr-rodchenko-snack-chair-with-harness
+    tags:
+      - Chair
+    title: Aleksandr Rodchenko Snack Chair (with harness)
+    when: '2017'
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
+    hero: true
+    images:
+      - file: tbar16_msnr8d
+      - file: tbar16-a_sbj2xk
+      - file: tbar16-b_vre28q
+      - file: tbar16-c_ju4isp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: tall-church-boy-1
+    tags:
+      - Chair
+    title: Tall Church Boy 1
+    when: '2017'
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
+    hero: true
+    images:
+      - file: tbar17_qdkxli
+      - file: tbar17-a_y86nth
+      - file: tbar17-b_dx0flt
+      - file: tbar17-c_nizwza
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: Tall-church-boy-2
+    tags:
+      - Chair
+    title: Tall Church Boy 2
+    when: '2017'
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
+    hero: true
+    images:
+      - file: tbar18_rmdpic
+      - file: tbar18l_ely4pf
+      - file: tbar18b_enzjnd
+      - file: tbar18r_acdioo
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: tall-church-boy-3
+    tags:
+      - Chair
+    title: Tall Church Boy 3
+    when: '2017'
+  - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
+    hero: true
+    images:
+      - file: tbar10instal_fdeawl
+      - file: 6_estibm
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: midtown-lever-house
+    slug: sorting-laundry-for-a-family-of-5-floor
+    tags:
+      - Storage
+    title: Sorting Laundry For a Family of 5 (floor)
+    when: '2017'
+  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
+    hero: false
+    images:
+      - file: large_ai257t
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
+    projects:
+      - slug: ghost-dog
+    slug: underwear-armoire-3
+    tags:
+      - Storage
+    title: Underwear Armoire 3
+    when: '2017'
+  - dimensions: 31 x 18 x 18 inches (78.74 X 45.72 X 45.72 cm)
+    hero: true
+    images:
+      - file: tbar12_s8kgms
+      - file: tbar12-a_idadfv
+      - file: tbar12-b_ye0ang
+      - file: tbar12-c_hyyskk
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: butter-chair-1
+    tags:
+      - Chair
+    title: Butter Chair 1
+    when: '2017'
+  - dimensions: 31 x 18 x 18 inches (78.74 x 45.72 x 45.72 cm)
+    hero: true
+    images:
+      - file: tbar13_y8c6pm
+      - file: tbar13-a_tdu7sc
+      - file: tbar13-b_fynks9
+      - file: tbar13-c_n2qjhv
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: butter-chair-2
+    tags:
+      - Chair
+    title: Butter Chair 2
+    when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    hero: true
+    images:
+      - file: tbar15_fzjv83
+      - file: tbar15-a_hn5mj6
+      - file: tbar15-c_szgwwk
+      - file: tbar15-d_linr5z
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: protect-me-chair
+    tags:
+      - Chair
+    title: Protect Me Chair
+    when: '2017'
+  - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
+    hero: true
+    images:
+      - file: tbar11_nutaaa
+      - file: tbarlmc1_rzehpx
+      - file: tbarlmc2_jsqxkj
+      - file: tbarlmc3_byh5ks
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: love-me-chair
+    tags:
+      - Chair
+    title: Love Me Chair
+    when: '2017'
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    hero: true
+    images:
+      - file: tbar14_tvabau
+      - file: tbar14-a_n2wvbe
+      - file: tbar14-b_uexywd
+      - file: tbar14-d_pcezvm
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: s-o-s-green-goblin-spidey-please-save-me
+    tags:
+      - Chair
+    title: 'S.O.S. Green Goblin, Spidey Please Save Me'
+    when: '2017'
+  - hero: true
+    images:
+      - file: tbar2_pa29nq
+      - file: tbar2-a_ntlqig
+      - file: tbar2-b_eox0ro
+      - file: tbar2-c_rvoues
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair
+    tags:
+      - Chair
+    title: Chair
+    when: '2016'
+  - hero: true
+    images:
+      - file: tbar3_rddvfo
+      - file: tbar3-a_rn8hpm
+      - file: tbar3-b_ochlxr
+      - file: tbar3-d_bxpftp
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-2
+    tags:
+      - Chair
+    title: Chair 2
+    when: '2016'
+  - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
+    hero: false
+    images:
+      - file: 49936_zbqcxa
+    medium: 'Paper pulp, plywood, styrofoam, cardboard'
+    price: ''
+    projects: []
+    slug: underwear-armoire
+    tags:
+      - Storage
+    title: 'Underwear Armoire, Connor''s Armoire'
+    when: '2016'
   - dimensions: 39 x 23 x 13 inches (99.1 x 58.4 x 33 cm)
     images:
       - file: S94D-TBar37-ThomasBarger-WallDrawing1-2018-A-HR
