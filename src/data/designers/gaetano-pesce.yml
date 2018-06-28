@@ -145,15 +145,6 @@ works:
       - Lighting
     title: Rug Wall Lamp 2
     when: '2017'
-  - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
-    images:
-      - file: gpe104_uqpwfl
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-3
-    tags:
-      - Lighting
-    title: Rug Wall Lamp 3
-    when: '2017'
   - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
     hero: true
@@ -166,6 +157,15 @@ works:
     tags:
       - Lighting
     title: Rug Wall Lamp
+    when: '2017'
+  - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
+    images:
+      - file: gpe104_uqpwfl
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-3
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 3
     when: '2017'
   - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
     images:
@@ -183,15 +183,6 @@ works:
     slug: friend-lamp
     title: Friend Lamp
     when: '2014'
-  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
-    images:
-      - file: gpe19_ns6buc
-    medium: Polyurethane resin
-    slug: jeanne-chair-2
-    tags:
-      - Chair
-    title: Jeanne Chair 2
-    when: '2016'
   - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
     images:
       - file: gpe126_urhqpy
@@ -201,6 +192,15 @@ works:
       - Lighting
     title: Cloud Lamp
     when: '2013'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: gpe19_ns6buc
+    medium: Polyurethane resin
+    slug: jeanne-chair-2
+    tags:
+      - Chair
+    title: Jeanne Chair 2
+    when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
       - file: gpe20_wuxxqn
@@ -535,22 +535,6 @@ works:
       - vase
     title: Tree Vase Small
     when: ''
-  - images:
-      - file: gpe62_u79pkb
-    medium: Polyurethane Resin
-    slug: bracelet-blue-woven
-    tags:
-      - Jewelry
-    title: Bracelet (Blue Woven)
-    when: ''
-  - images:
-      - file: gpe56_cwldy7
-    medium: Polyurethane Resin
-    slug: bracelet-green
-    tags:
-      - Jewelry
-    title: Bracelet (Green)
-    when: ''
   - dimensions: 9.5 x 7.5 x 7 inches (24.1 x 19.1 x 17.8 cm)
     images:
       - file: /images/gpe150.jpg
@@ -566,115 +550,6 @@ works:
     tags:
       - vase
     title: Pebble Vase 2
-    when: '2016'
-  - images:
-      - file: gpe61_oh17gp
-    medium: Polyurethane Resin
-    slug: bracelet-pink
-    tags:
-      - Jewelry
-    title: Bracelet (Pink)
-    when: ''
-  - images:
-      - file: Ghost_Dog_Install_34
-    projects:
-      - slug: ghost-dog
-  - images:
-      - file: Ghost_Dog_Install_38
-    projects:
-      - slug: ghost-dog
-  - images:
-      - file: Ghost_Dog_Install_22
-    projects:
-      - slug: ghost-dog
-  - images:
-      - file: Design_Miami_2016_09
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_01
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_06
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_38
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_11
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_03
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_16
-    projects:
-      - slug: design-miami-2016-pesce
-  - images:
-      - file: Design_Miami_2016_32
-    projects:
-      - slug: design-miami-2016-pesce
-  - dimensions: 86.61 x 66.14 x 28.35 inches (220 x 168 x 72 cm)
-    images:
-      - file: GPe170-GrownChair-2012-LR-A
-    medium: Fabric coated with epoxy resin
-    slug: grown-chair
-    tags:
-      - chair
-    title: Grown Chair
-    when: '2012'
-  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
-    images:
-      - file: GPe171-MobileVerde-2015-HR-A
-      - file: GPe171-MobileVerde-2015-LR-C
-    medium: 'Steel, wood, polyurethane resin '
-    slug: mobile-verde
-    title: Mobile Verde
-    when: '2015'
-  - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
-    images:
-      - file: GPe172-LaSmorfia-2003-LR-A
-    medium: Resin and PVC
-    slug: la-smorfia
-    tags:
-      - chair
-    title: La Smorfia
-    when: '2003'
-  - images:
-      - file: GPe173-54ArmChandelier-1998-LR
-    medium: Resin and copper
-    slug: 54-arm-chandelier
-    tags:
-      - lighting
-    title: 54 Arm Chandelier
-    when: '1998'
-  - images:
-      - file: GPe174-54ArmLamp-1998-LR-A
-      - file: GPe174-54ArmLamp-1998-LR-B
-      - file: GPe174-54ArmLamp-1998-LR-C
-    medium: 'resin copper and plastic '
-    slug: 54-arm-lamp
-    tags:
-      - lighting
-    title: 54 Arm Lamp
-    when: '1998'
-  - dimensions: 161.81 x 120.47 x 70.87 inches (411 x 306 x 180 cm)
-    images:
-      - file: GPe175-SediaPortaritratti-2016-LR
-      - file: salon94_designmiami__0618_0012
-      - file: salon94_designmiami__0618_0016
-      - file: salon94_designmiami__0618_0019
-      - file: salon94_designmiami__0618_0024
-    medium: 'Polystyrene, glass fiber, and polyester resin'
-    projects:
-      - slug: design-miami-basel-2018-gaetanopesce
-    slug: sedia-portaritratti
-    title: Sedia Portaritratti
     when: '2016'
   - images:
       - file: gpe177-a
@@ -750,14 +625,6 @@ works:
       - vase
     title: Rock Vase
   - images:
-      - file: gpe184-a
-      - file: gpe184-b
-      - file: gpe184-c
-    slug: rock-vase-prototype-red-small
-    tags:
-      - vase
-    title: Rock Vase Prototype Red Small
-  - images:
       - file: gpe185-a
       - file: gpe185-b
       - file: gpe185-c
@@ -766,6 +633,14 @@ works:
       - vase
     title: Rock Vase Prototype Green Small
   - images:
+      - file: gpe184-a
+      - file: gpe184-b
+      - file: gpe184-c
+    slug: rock-vase-prototype-red-small
+    tags:
+      - vase
+    title: Rock Vase Prototype Red Small
+  - images:
       - file: gpe194-a
       - file: gpe194-b
       - file: gpe194-c
@@ -773,15 +648,6 @@ works:
     tags:
       - vase
     title: Rock Vase Prototype Blue Small
-  - images:
-      - file: gpe186-a
-      - file: gpe186-b
-      - file: gpe186-c
-      - file: gpe186-d
-    slug: foulard-vase-gpe
-    tags:
-      - vase
-    title: Foulard Vase
   - images:
       - file: gpe189-a
       - file: gpe189-b
@@ -800,4 +666,138 @@ works:
     tags:
       - vase
     title: Rock Vase Prototype Blue Large
+  - images:
+      - file: gpe186-a
+      - file: gpe186-b
+      - file: gpe186-c
+      - file: gpe186-d
+    slug: foulard-vase-gpe
+    tags:
+      - vase
+    title: Foulard Vase
+  - images:
+      - file: gpe56_cwldy7
+    medium: Polyurethane Resin
+    slug: bracelet-green
+    tags:
+      - Jewelry
+    title: Bracelet (Green)
+    when: ''
+  - images:
+      - file: gpe62_u79pkb
+    medium: Polyurethane Resin
+    slug: bracelet-blue-woven
+    tags:
+      - Jewelry
+    title: Bracelet (Blue Woven)
+    when: ''
+  - images:
+      - file: gpe61_oh17gp
+    medium: Polyurethane Resin
+    slug: bracelet-pink
+    tags:
+      - Jewelry
+    title: Bracelet (Pink)
+    when: ''
+  - images:
+      - file: GPe174-54ArmLamp-1998-LR-A
+      - file: GPe174-54ArmLamp-1998-LR-B
+      - file: GPe174-54ArmLamp-1998-LR-C
+    medium: 'resin copper and plastic '
+    slug: 54-arm-lamp
+    tags:
+      - lighting
+    title: 54 Arm Lamp
+    when: '1998'
+  - images:
+      - file: GPe173-54ArmChandelier-1998-LR
+    medium: Resin and copper
+    slug: 54-arm-chandelier
+    tags:
+      - lighting
+    title: 54 Arm Chandelier
+    when: '1998'
+  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
+    images:
+      - file: GPe171-MobileVerde-2015-HR-A
+      - file: GPe171-MobileVerde-2015-LR-C
+    medium: 'Steel, wood, polyurethane resin '
+    slug: mobile-verde
+    title: Mobile Verde
+    when: '2015'
+  - dimensions: 86.61 x 66.14 x 28.35 inches (220 x 168 x 72 cm)
+    images:
+      - file: GPe170-GrownChair-2012-LR-A
+    medium: Fabric coated with epoxy resin
+    slug: grown-chair
+    tags:
+      - chair
+    title: Grown Chair
+    when: '2012'
+  - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
+    images:
+      - file: GPe172-LaSmorfia-2003-LR-A
+    medium: Resin and PVC
+    slug: la-smorfia
+    tags:
+      - chair
+    title: La Smorfia
+    when: '2003'
+  - dimensions: 161.81 x 120.47 x 70.87 inches (411 x 306 x 180 cm)
+    images:
+      - file: GPe175-SediaPortaritratti-2016-LR
+      - file: salon94_designmiami__0618_0012
+      - file: salon94_designmiami__0618_0016
+      - file: salon94_designmiami__0618_0019
+      - file: salon94_designmiami__0618_0024
+    medium: 'Polystyrene, glass fiber, and polyester resin'
+    projects:
+      - slug: design-miami-basel-2018-gaetanopesce
+    slug: sedia-portaritratti
+    title: Sedia Portaritratti
+    when: '2016'
+  - images:
+      - file: Ghost_Dog_Install_22
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Design_Miami_2016_01
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Ghost_Dog_Install_34
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Design_Miami_2016_09
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Ghost_Dog_Install_38
+    projects:
+      - slug: ghost-dog
+  - images:
+      - file: Design_Miami_2016_06
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_11
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_38
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_03
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_32
+    projects:
+      - slug: design-miami-2016-pesce
+  - images:
+      - file: Design_Miami_2016_16
+    projects:
+      - slug: design-miami-2016-pesce
 status: Represented
