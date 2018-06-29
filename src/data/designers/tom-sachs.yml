@@ -23,12 +23,12 @@ bio: >-
   project with Creative Time at the Park Avenue Armory. Sachs was born in New
   York in 1966, he lives and works in New York.
 press:
+  - file: /images/05-02-18 LOfficiel.pdf
+    title: L'Officiel May 2018
   - file: /images/20171111-TomSachs-ArchitecturalDigest-Digital.pdf
     link: >-
       https://www.architecturaldigest.com/story/tom-sachs-newest-project-has-us-over-the-moon
     title: Architectural Digest - November 2017
-  - file: /images/05-02-18 LOfficiel.pdf
-    title: L'Officiel May 2018
 works:
   - hero: true
     images:
@@ -36,6 +36,37 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
     slug: gif-1
+  - dimensions: 32.1 x 18.8 x 20.6 inches (81.5 x 47.8 x 52.3 cm)
+    images:
+      - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-B-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-C-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-D-LR
+      - file: ToS71-BritishRacing_GreenXChair-2018-E-LR
+    medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
+    slug: british-racing-green-x-chair
+    tags:
+      - chair
+    title: British Racing Green X-Chair
+    when: '2018'
+  - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
+    images:
+      - file: tos90-2018-cratechair-lc
+    medium: 'ConEd Barrier, steel hardware'
+    slug: crate-chair-tom-sachs-2018
+    tags:
+      - chair
+    title: Crate Chair
+    when: '2018'
+  - dimensions: 31.5 x 17.25 x 21.5 inches (80 x 43.8 x 54.6 cm)
+    images:
+      - file: tos91-samsonitechair-hr
+    medium: 'Latex paint, KRINK paint '
+    slug: samsonite-model-2250-2018-tos
+    tags:
+      - chair
+    title: Samsonite Model 2250
+    when: '2018'
   - dimensions: 32.375 x 19 x 21 inches (82.2 x 48.3 x 53.3 cm)
     hero: false
     images:
@@ -130,27 +161,6 @@ works:
       - Table
     title: 'Side Table '
     when: '2017'
-  - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
-    images: []
-    medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
-    projects:
-      - slug: design-miami-2017-tom-sachs
-    slug: coned-pedestal-table
-    tags:
-      - Table
-    title: ConEd Pedestal Table
-    when: '2017'
-  - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
-    images:
-      - file: large_kvo346
-    medium: 'ConEd Barrier, steel hardware, incandescent bulb'
-    projects:
-      - slug: design-miami-2017-tom-sachs
-    slug: eileen-gray-lamp
-    tags:
-      - Lighting
-    title: Eileen Gray Lamp
-    when: '2003'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
     images:
       - file: large_ysnmbj
@@ -162,13 +172,6 @@ works:
       - Other
     title: Brick Vase
     when: '2017'
-  - dimensions: 48 x 90 x 5.25 inches (121.9 x 228.6 x 13.3 cm)
-    images:
-      - file: TOS48_2013.355_United_States
-    medium: 'Plywood, latex paint, steel hardware'
-    slug: united-states
-    title: United States
-    when: '2013'
   - dimensions: 73.5 x 76 x 9 inches (186.7 x 193 x 22.9 cm)
     images:
       - file: Sachs_ToS11_LargeChawanCabinet
@@ -178,16 +181,44 @@ works:
     slug: large-chawan-cabinet
     title: Large Chawan Cabinet
     when: '2014'
+  - dimensions: 48 x 90 x 5.25 inches (121.9 x 228.6 x 13.3 cm)
+    images:
+      - file: TOS48_2013.355_United_States
+    medium: 'Plywood, latex paint, steel hardware'
+    slug: united-states
+    title: United States
+    when: '2013'
+  - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
+    images:
+      - file: large_kvo346
+    medium: 'ConEd Barrier, steel hardware, incandescent bulb'
+    projects:
+      - slug: design-miami-2017-tom-sachs
+    slug: eileen-gray-lamp
+    tags:
+      - Lighting
+    title: Eileen Gray Lamp
+    when: '2003'
+  - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
+    images: []
+    medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
+    projects:
+      - slug: design-miami-2017-tom-sachs
+    slug: coned-pedestal-table
+    tags:
+      - Table
+    title: ConEd Pedestal Table
+    when: '2017'
   - images:
       - {}
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
-      - file: DSC_1634
+      - file: DSC_1628
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
-      - file: DSC_1628
+      - file: DSC_1634
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
@@ -199,10 +230,6 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
-      - file: DSC_1648
-    projects:
-      - slug: design-miami-2017-tom-sachs
-  - images:
       - file: DSC_1651
     projects:
       - slug: design-miami-2017-tom-sachs
@@ -211,69 +238,42 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
   - {}
-  - images:
-      - file: UPTOWN_INSTALL-01
-      - {}
   - {}
+  - images:
+      - file: DSC_1648
+    projects:
+      - slug: design-miami-2017-tom-sachs
   - images:
       - file: UPTOWN_INSTALL-02
   - images:
-      - file: UPTOWN_INSTALL-03
-  - images:
       - file: UPTOWN_INSTALL-04
-  - images:
-      - file: UPTOWN_INSTALL-05
   - images:
       - file: UPTOWN_INSTALL-06
   - images:
-      - file: UPTOWN_INSTALL-07
+      - file: UPTOWN_INSTALL-05
   - images:
-      - file: UPTOWN_INSTALL-08
+      - file: UPTOWN_INSTALL-01
+      - {}
+  - images:
+      - file: UPTOWN_INSTALL-03
   - images:
       - file: UPTOWN_INSTALL-09
   - images:
       - file: UPTOWN_INSTALL-10
   - images:
-      - file: UPTOWN_INSTALL-11
-    projects:
-      - {}
+      - file: UPTOWN_INSTALL-07
   - images:
       - file: UPTOWN_INSTALL-12
   - images:
       - file: UPTOWN_INSTALL-13
   - images:
+      - file: UPTOWN_INSTALL-08
+  - images:
+      - file: UPTOWN_INSTALL-11
+    projects:
+      - {}
+  - images:
       - file: UPTOWN_INSTALL-14
   - images:
       - file: UPTOWN_INSTALL-15
-  - dimensions: 32.1 x 18.8 x 20.6 inches (81.5 x 47.8 x 52.3 cm)
-    images:
-      - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
-      - file: ToS71-BritishRacing_GreenXChair-2018-B-LR
-      - file: ToS71-BritishRacing_GreenXChair-2018-C-LR
-      - file: ToS71-BritishRacing_GreenXChair-2018-D-LR
-      - file: ToS71-BritishRacing_GreenXChair-2018-E-LR
-    medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
-    slug: british-racing-green-x-chair
-    tags:
-      - chair
-    title: British Racing Green X-Chair
-    when: '2018'
-  - dimensions: 24.375 x 26.75 x 31.25 inches (61.9 x 67.9 x 79.4 cm)
-    images:
-      - file: tos90-2018-cratechair-lc
-    medium: 'ConEd Barrier, steel hardware'
-    slug: crate-chair-tom-sachs-2018
-    tags:
-      - chair
-    title: Crate Chair
-    when: '2018'
-  - dimensions: 31.5 x 17.25 x 21.5 inches (80 x 43.8 x 54.6 cm)
-    images:
-      - file: tos91-samsonitechair-hr
-    medium: 'Latex paint, KRINK paint '
-    slug: samsonite-model-2250-2018-tos
-    tags:
-      - chair
-    title: Samsonite Model 2250
-    when: '2018'
 status: Represented
