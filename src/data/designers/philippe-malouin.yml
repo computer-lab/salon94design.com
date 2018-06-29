@@ -15,6 +15,33 @@ bio: >-
   operates his design studio.
 press: []
 works:
+  - dimensions: '17.75 x 94.5 x 14 inches (40 x 240 x 35 cm) '
+    images:
+      - file: s94d-philippemalouin-steelbench-2018
+    medium: Steel
+    slug: steel-bench-2018
+    tags:
+      - bench
+    title: Steel Bench
+    when: '2018'
+  - dimensions: 28.74 x 94.49 x 37.4 inches (73 x 240 x 95 cm)
+    images:
+      - file: PM6-Table-2018-LR-A
+    medium: Steel
+    slug: pm-table-2018
+    tags:
+      - table
+    title: Table
+    when: '2018'
+  - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
+    images:
+      - file: philippemalouinstool_dv8svr
+    medium: 'cast concrete, exposed aggregate'
+    slug: pm-stool
+    tags:
+      - chair
+    title: Stool
+    when: '2018'
   - dimensions: 137.8 H x 98.4 in dia / 3.5 m H x 2.5 m dia
     edition: Ed. of 8 + 2 AP
     hero: true
@@ -28,15 +55,6 @@ works:
       - other
     title: Core
     when: '2017'
-  - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
-    images:
-      - file: philippemalouinstool_dv8svr
-    medium: 'cast concrete, exposed aggregate'
-    slug: pm-stool
-    tags:
-      - chair
-    title: Stool
-    when: '2018'
   - images:
       - file: pm-turntablemid
     slug: pm-turntable
@@ -58,22 +76,4 @@ works:
       - file: large_k5vdlp
     projects:
       - slug: design-miami-2017-philippe-malouin-core
-  - dimensions: 28.74 x 94.49 x 37.4 inches (73 x 240 x 95 cm)
-    images:
-      - file: PM6-Table-2018-LR-A
-    medium: Steel
-    slug: pm-table-2018
-    tags:
-      - table
-    title: Table
-    when: '2018'
-  - dimensions: '17.75 x 94.5 x 14 inches (40 x 240 x 35 cm) '
-    images:
-      - file: s94d-philippemalouin-steelbench-2018
-    medium: Steel
-    slug: steel-bench-2018
-    tags:
-      - bench
-    title: Steel Bench
-    when: '2018'
 status: Represented
