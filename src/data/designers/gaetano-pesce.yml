@@ -246,7 +246,8 @@ works:
       - other
     title: Trash Can 4
     when: '2016'
-  - images:
+  - dimensions: 10.5 (5) x 20 inches (26.67 (12.7) x 50.8 cm)
+    images:
       - file: gpe180-b
       - file: gpe180-a
       - file: gpe180-d
@@ -256,7 +257,8 @@ works:
       - vase
     title: Tall Resin Vase
     when: '2018'
-  - images:
+  - dimensions: 7 x 12 inches (17.78 x 30.48 cm)
+    images:
       - file: gpe166-b
       - file: gpe166-a
       - file: gpe166-c
@@ -266,7 +268,8 @@ works:
       - vase
     title: Medium Rubber Vase Blue
     when: '2017'
-  - images:
+  - dimensions: 7 x 12 inches (17.78 x 30.48 cm)
+    images:
       - file: Design_Miami_2016_06
     medium: Resin
     slug: medium-rubber-vase-red
@@ -579,7 +582,8 @@ works:
     tags:
       - vase
     title: Flame Vase
-  - images:
+  - dimensions: 17 (12) x 25 inches (43.18 (30.48) x 63.5 cm)
+    images:
       - file: gpe176-a
       - file: gpe176-b
       - file: gpe176-c
@@ -588,7 +592,8 @@ works:
     tags:
       - vase
     title: Stick Vase Black
-  - images:
+  - dimensions: 19 x 21 inches (48.26 x 53.34 cm)
+    images:
       - file: gpe178-a
       - file: gpe178-b
       - file: gpe178-c
@@ -608,7 +613,8 @@ works:
     tags:
       - other
     title: Resin Bowl
-  - images:
+  - dimensions: '20 (11) x 20 inches (50.8 (27.94) x 50.8 cm) '
+    images:
       - file: gpe182-a
       - file: gpe182-b
       - file: gpe182-c
