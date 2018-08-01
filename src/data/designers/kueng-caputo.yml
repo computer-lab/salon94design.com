@@ -202,15 +202,6 @@ works:
       - chair
     title: Sand Chair 3
     when: '2018'
-  - dimensions: 16.93 x 11.81 x 11.81 inches (43 x 30 x 30 cm)
-    images:
-      - file: KuCa191-SandChair5-2018
-    medium: 'Mortar, sand, pigment paste, styrofoam'
-    slug: sand-chair-5-2018
-    tags:
-      - chair
-    title: Sand Chair 5
-    when: '2018'
   - dimensions: 66.14 x 52.76 inches (168 x 134 cm)
     images:
       - file: KuCa188-HomageCarpet-2018
