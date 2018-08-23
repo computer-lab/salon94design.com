@@ -36,6 +36,15 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
     slug: gif-1
+  - dimensions: 32 x 18.625 x 20 inches (81.3 x 47.3 x 50.8 cm)
+    images:
+      - file: s94d_tbar104_barstoolprototype_lr
+    medium: 'Plywood, latex paint, leather, steel hardware, and epoxy resin'
+    slug: pink_x_chair_2018
+    tags:
+      - chair
+    title: Pink X Chair
+    when: '2018'
   - dimensions: 32.1 x 18.8 x 20.6 inches (81.5 x 47.8 x 52.3 cm)
     images:
       - file: ToS71-BritishRacing_GreenXChair-2018-A-LR
@@ -91,6 +100,15 @@ works:
       - Chair
     title: X Chair with Arms Prototype
     when: '2017'
+  - dimensions: 41.75 x 18.8125 x 20 inches (106 x 47.8 x 50.8 cm)
+    images:
+      - file: s94d_tbar104_barstoolprototype_lr
+    medium: 'Polycarbonate, plywood, oak, steel hardware, and latex paint'
+    slug: batstool_prototype
+    tags:
+      - chair
+    title: 'Barstool '
+    when: '2018'
   - dimensions: 33 x 31 x 34 inches (83.8 x 78.7 x 86.4 cm)
     images:
       - file: large_iwsnc1
