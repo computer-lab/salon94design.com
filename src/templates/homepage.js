@@ -75,6 +75,14 @@ export default function Homepage({ data, pathContext }) {
   const image = featuredImage ? imageInfo(featuredImage) : null
   const link = featuredExternalLink || projectLink(project) || designerLink(designer.slug)
 
+  const img = (
+    <img
+      src={image && image.src}
+      srcSet={image && image.srcSet}
+      sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
+    />
+  )
+
   return (
     <div>
       <Helmet
@@ -91,13 +99,11 @@ export default function Homepage({ data, pathContext }) {
             }
           </ProjectTitle>
           <ImageWrapper>
-            <Link to={link}>
-              <img
-                src={image && image.src}
-                srcSet={image && image.srcSet}
-                sizes={`1200px, (${homepageBreakpoint1}): 95vw`}
-              />
-            </Link>
+            {
+              featuredExternalLink
+                ? <a href={link}>{img}</a>
+                : <Link to={link}>{img}</Link>
+            }
           </ImageWrapper>
         </FeaturedWrapper>
       </CenterContainer>
