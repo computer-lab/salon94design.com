@@ -67,7 +67,10 @@ function createIndex({ boundActionCreators, graphql }) {
       allLandingPageYaml {
         edges {
           node {
+            title
+            featuredDesignerSlug
             featuredProjectSlug
+            featuredExternalLink
             featuredImage
           }
         }
@@ -76,14 +79,19 @@ function createIndex({ boundActionCreators, graphql }) {
   `).then(async result => {
     if (result.errors) return Promise.reject(result.errors)
 
-    const { featuredProjectSlug } = result.data.allLandingPageYaml.edges[0].node
+    const {
+      title,
+      featuredProjectSlug,
+      featuredDesignerSlug,
+      featuredExternalLink
+    } = result.data.allLandingPageYaml.edges[0].node
     let { featuredImage } = result.data.allLandingPageYaml.edges[0].node
     featuredImage = await hydrateImage({ file: featuredImage })
 
     createPage({
       path: '/',
       component: path.resolve(`src/templates/homepage.js`),
-      context: { featuredProjectSlug, featuredImage },
+      context: { title, featuredDesignerSlug, featuredProjectSlug, featuredExternalLink, featuredImage },
     })
   })
 }

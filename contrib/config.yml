@@ -280,12 +280,27 @@ collections:
     create: false
     format: yaml
     fields:
+      - name: title
+        label: Title Link Text
+        widget: string
       - name: featuredProjectSlug
-        label: Featured Exhibition
+        label: Featured Exhibition Slug
         widget: relation
         collection: project
         searchFields: [slug, title]
         valueField: slug
+        default: ''
+      - name: featuredDesignerSlug
+        label: Featured Designer Slug
+        widget: relation
+        collection: designer
+        searchFields: [slug, title]
+        valueField: slug
+        default: ''
+      - name: featuredExternalLink
+        label: Featured External Link
+        widget: string
+        default: ''
       - name: featuredImage
-        label: Featured exhibition image - Cloudinary public id
+        label: Featured image - Cloudinary public id
         widget: string
