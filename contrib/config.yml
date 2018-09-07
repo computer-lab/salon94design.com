@@ -283,24 +283,24 @@ collections:
       - name: title
         label: Title Link Text
         widget: string
+      - name: featuredImage
+        label: Featured image - Cloudinary public id
+        widget: string
+      - name: featuredExternalLink
+        label: Featured External Link (set one of three)
+        widget: string
+        default: ''
       - name: featuredProjectSlug
-        label: Featured Exhibition Slug
+        label: Featured Exhibition Slug (set one of three)
         widget: relation
         collection: project
         searchFields: [slug, title]
         valueField: slug
         default: ''
       - name: featuredDesignerSlug
-        label: Featured Designer Slug
+        label: Featured Designer Slug (set one of three)
         widget: relation
         collection: designer
         searchFields: [slug, title]
         valueField: slug
         default: ''
-      - name: featuredExternalLink
-        label: Featured External Link
-        widget: string
-        default: ''
-      - name: featuredImage
-        label: Featured image - Cloudinary public id
-        widget: string
