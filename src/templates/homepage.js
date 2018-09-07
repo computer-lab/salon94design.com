@@ -7,7 +7,7 @@ import styled from 'emotion/react'
 import { sansfont, childLink, CenterContainer } from '../layouts/emotion-base'
 import ProjectDescription from '../components/ProjectDescription'
 import ProjectDesigners from '../components/ProjectDesigners'
-import { chooseProjectImage, imageInfo, projectLink } from '../util'
+import { chooseProjectImage, imageInfo, projectLink, designerLink } from '../util'
 
 const homepageBreakpoint1 = `max-width: 1000px`
 
@@ -70,39 +70,25 @@ const When = styled.div`
 `
 
 export default function Homepage({ data, pathContext }) {
-  const { project, allDesignersYaml } = data
-  const { featuredImage } = pathContext
-
-  const designers = allDesignersYaml.edges.map(edge => edge.node)
-
+  const { project, allDesignersYaml, designer } = data
+  const { title, featuredImage, featuredExternalLink } = pathContext
   const image = featuredImage ? imageInfo(featuredImage) : null
-
-  const titleLabel =
-    project.type === 'Exhibition' ? `Current Exhibition` : `Current Fair`
-
-  const designerLabel =
-    project.designers && project.designers.length > 1 ? 'Designers' : 'Designer'
-
-  const link = projectLink(project)
-
-  const projectDesigners = (
-    project.designers
-      .map(d => designers.find(designer => d.slug == designer.slug))
-      .filter(d => !!d)
-  );
+  const link = featuredExternalLink || projectLink(project) || designerLink(designer.slug)
 
   return (
     <div>
       <Helmet
-        title={`Salon 94 Design - ${project.title}`}
-        description={`${project.title} is Salon 94 Design's current exhibition`}
+        title={`Salon 94 Design`}
+        description={title}
       />
       <CenterContainer>
         <FeaturedWrapper>
           <ProjectTitle>
-            <Link to={link}>
-              {project.title} – {projectDesigners.map(d => d.title).join(', ')}
-            </Link>
+            {
+              featuredExternalLink
+               ? <a href={link}>{title}</a>
+               : <Link to={link}>{title}</Link>
+            }
           </ProjectTitle>
           <ImageWrapper>
             <Link to={link}>
@@ -224,9 +210,16 @@ export const pageQuery = graphql`
     }
   }
 
-  query HomepageQuery($featuredProjectSlug: String!) {
+  query HomepageQuery($featuredProjectSlug: String!, $featuredDesignerSlug: String!) {
     project: projectsYaml(slug: { eq: $featuredProjectSlug }) {
       ...fullProjectFields
+    }
+    designer: designersYaml(slug: { eq: $featuredDesignerSlug }) {
+      slug
+      title
+      status
+      bio
+      bioHtml
     }
     allDesignersYaml(sort: { order: ASC, fields: [title] }) {
       edges {

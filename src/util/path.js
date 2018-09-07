@@ -1,8 +1,9 @@
 const { getTagCategory } = require('./tag')
 
-const designerLink = slug => `/designers/${slug}`
+const designerLink = slug => (slug ? `/designers/${slug}` : null)
 
 const projectLink = project => {
+  if (!project) return null
   switch (project.type) {
     case 'Art Fair':
       return `/fairs/${project.slug}`
