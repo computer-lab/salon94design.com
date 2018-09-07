@@ -165,9 +165,11 @@ works:
   - images:
       - file: s94_uptown_rings_07_kf194
     medium: 'Oxidized silver, emerald and ruby'
+    projects:
+      - slug: design-miami-basel-2018-kwangholee
     slug: kf-194-2010-dmb
     tags:
-      - design-miami-basel-2018-kwangholee
+      - ''
     title: KF 194
     when: '2010'
   - images:
