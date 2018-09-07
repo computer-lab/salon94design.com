@@ -290,6 +290,7 @@ collections:
         label: Featured External Link (set one of three)
         widget: string
         default: ''
+        required: false
       - name: featuredProjectSlug
         label: Featured Exhibition Slug (set one of three)
         widget: relation
@@ -297,10 +298,12 @@ collections:
         searchFields: [slug, title]
         valueField: slug
         default: ''
+        required: false
       - name: featuredDesignerSlug
         label: Featured Designer Slug (set one of three)
         widget: relation
         collection: designer
         searchFields: [slug, title]
         valueField: slug
+        required: false
         default: ''
