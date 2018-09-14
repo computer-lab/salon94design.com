@@ -525,4 +525,11 @@ works:
       - file: S94D-ThomasBarger-growingup-install-14
     projects:
       - slug: growing-up
+  - dimensions: 62 x 17 1/2 x 19 inches (157.5 x 44.5 x 48.3 cm)
+    images:
+      - file: Tbar42
+    medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
+    slug: S94D-ThomasBarger-tallchurchboys-black
+    title: Tall Church Boys (black)
+    when: '2018'
 status: Represented
