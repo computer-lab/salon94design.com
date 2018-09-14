@@ -5,7 +5,7 @@ bio: |-
   design, hip-hop, and fashion's various microcosms. At home in the post-Tumblr
   world of design, Kanu is driven by a predilection for subverting norms, an
   insatiable urge to create, and a love of melding street culture with design
-  sensibilities.
+  sensibilities. In 2018 Dozie was awarded the Hublot Design Prize.
 press:
   - file: /images/201706-tmag-doziekanu.pdf
     title: The New York Time Style Magazine
@@ -174,5 +174,14 @@ works:
     tags:
       - shelf
     title: Don't Fold Young Boy
+    when: '2018'
+  - dimensions: 37.4 x 17.72 x 17.72 inches (95 x 45 x 45 cm)
+    images:
+      - file: DK27-chairiv
+    medium: 'Aluminum frame, recycled foam, plastic straps'
+    slug: chair-iv
+    tags:
+      - chair
+    title: 'chair [iv]'
     when: '2018'
 status: Represented
