@@ -530,6 +530,8 @@ works:
       - file: Tbar42
     medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
     slug: S94D-ThomasBarger-tallchurchboys-black
+    tags:
+      - chair
     title: Tall Church Boys (black)
     when: '2018'
 status: Represented
