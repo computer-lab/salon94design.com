@@ -472,7 +472,7 @@ class ImageList extends Component {
         {firstImage && (
           <Helmet
             meta={[
-              { name: 'og:image', content: `${ROOT_URL}${firstImage.src}` },
+              { name: 'og:image', content: firstImage.src },
             ]}
           />
         )}
