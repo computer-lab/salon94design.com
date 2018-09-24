@@ -22,6 +22,9 @@ works:
   - dimensions: 35 x 21 x 17 inches
     images:
       - file: S94D-MaxLamb-ForgedChair-2018-Aluminum
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-b-hr
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-c-hr
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-d-hr
     medium: Aluminum
     slug: forged-chair-aluminum
     tags:
@@ -31,6 +34,9 @@ works:
   - dimensions: 31 1/2 x 15 x 17 1/2 inches
     images:
       - file: S94D-MaxLamb-ForgedChair-2018-Steel
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-b-hr
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-c-hr
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-d-hr
     medium: Carbon steel
     slug: forged-chair-steel
     tags:
@@ -224,11 +230,102 @@ works:
       - Bench
     title: Thermal Spray Bench Copper
     when: '2017'
-  - images:
-      - file: LEVER_HOUSE-9
-    projects:
-      - slug: midtown-lever-house
-    slug: midtown-leverhouse-maxlamb-grouping
+  - dimensions: 38 x 20 x 26 inches (96.5 x 50.8 x 66 cm)
+    images:
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_A
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_B
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_C
+      - file: MLa102-ThermalSprayChair_Aluminium_2018_D
+    medium: 'Polystyrene and aluminum '
+    slug: thermal-spray-chair-aluminum-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Aluminum
+    when: '2018'
+  - dimensions: 40 x 19 x 23 inches (101.6 x 48.3 x 58.4 cm)
+    images:
+      - file: MLa103-ThermalSprayChair_Bronze_2018_A
+      - file: MLa103-ThermalSprayChair_Bronze_2018_B
+      - file: MLa103-ThermalSprayChair_Bronze_2018_C
+      - file: MLa103-ThermalSprayChair_Bronze_2018_D
+    medium: 'Polystyrene and bronze '
+    slug: thermal-spray-chair-bronze-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Bronze
+    when: '2018'
+  - dimensions: 28 1/2 x 57 x 27 inches (72.4 x 144.8 x 68.6 cm)
+    images:
+      - file: MLa101-ThermalSprayBench_Copper_2018_A
+      - file: MLa101-ThermalSprayBench_Copper_2018_B
+      - file: MLa101-ThermalSprayBench_Copper_2018_C
+      - file: MLa101-ThermalSprayBench_Copper_2018_D
+    medium: 'Polystyrene and copper '
+    slug: thermal-spray-bench-copper-2018
+    tags:
+      - bench
+    title: Thermal Spray Bench Copper
+    when: '2018'
+  - dimensions: 34 1/2 x 17 x 19 inches (87.6 x 43.2 x 48.3 cm)
+    images:
+      - file: MLa104-ThermalSprayChair_Copper1_2018_A
+      - file: MLa104-ThermalSprayChair_Copper1_2018_B
+      - file: MLa104-ThermalSprayChair_Copper1_2018_C
+      - file: MLa104-ThermalSprayChair_Copper1_2018_D
+    medium: 'Polystyrene and copper '
+    slug: thermal-spray-chair-copper-1-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Copper 1
+    when: '2018'
+  - dimensions: 39 x 20 x 24 inches (99.1 x 50.8 x 61 cm)
+    images:
+      - file: MLa105-ThermalSprayChair_Copper2_2018_A
+      - file: MLa105-ThermalSprayChair_Copper2_2018_B
+      - file: MLa105-ThermalSprayChair_Copper2_2018_C
+      - file: MLa105-ThermalSprayChair_Copper2_2018_D
+    medium: 'Polystyrene and copper '
+    slug: thermal-spray-chair-copper-2-2018
+    tags:
+      - chair
+    title: Thermal Spray Chair Copper 2
+    when: '2018'
+  - dimensions: 24 1/2 x 22 x 21 inches (62.2 x 55.9 x 53.3 cm)
+    images:
+      - file: MLa106-ThermalSprayPlanter_Copper_2018_A
+      - file: MLa106-ThermalSprayPlanter_Copper_B
+      - file: MLa106-ThermalSprayPlanter_Copper_C
+      - file: MLa106-ThermalSprayPlanter_Copper_D
+    medium: Polystyrene and copper
+    slug: thermal-spray-planter-copper-2018
+    tags:
+      - planter
+    title: Thermal Spray Planter Copper
+    when: '2018'
+  - dimensions: 18 x 30 x 20 inches (45.7 x 76.2 x 50.8 cm)
+    images:
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_A
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_B
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_C
+      - file: MLa107-ThermalSprayTable_Aluminium_2018_D
+    medium: Polystyrene and aluminum
+    slug: thermal-spray-table-aluminum-2018
+    tags:
+      - table
+    title: Thermal Spray Table Aluminum
+    when: '2018'
+  - dimensions: 18 x 23 x 20 inches (45.7 x 58.4 x 50.8 cm)
+    images:
+      - file: MLa108-ThermalSprayTable_Bronze_2018_A
+      - file: MLa108-ThermalSprayTable_Bronze_2018_B
+      - file: MLa108-ThermalSprayTable_Bronze_2018_C
+      - file: MLa108-ThermalSprayTable_Bronze_2018_D
+    medium: Polystyrene and bronze
+    slug: thermal-spray-table-bronze-2018
+    tags:
+      - table
+    title: Thermal Spray Table Bronze
+    when: '2018'
   - images:
       - file: S94D-MLa95-MaxLamb-NanocrystallineChair-2015-LR
     medium: Nanocrystalline
@@ -236,15 +333,20 @@ works:
     title: Nanocrystalline Chair
     when: '2015'
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3529
+      - file: LEVER_HOUSE-9
     projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-4
+      - slug: midtown-lever-house
+    slug: midtown-leverhouse-maxlamb-grouping
   - images:
       - file: Vong-Salon94-Lamb-NOV17-3517
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-5
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3529
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-4
   - dimensions: 16.1 x 33.5 x 15.75 inches (40.9 x 85.1 x 40 cm)
     edition: 'unique, initials carved on side'
     hero: true
@@ -340,11 +442,6 @@ works:
       - Chair
     title: 'Tonalite Boulder Chair #6'
     when: '2017'
-  - images:
-      - file: Vong-Salon94-Lamb-NOV17-3516
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-6
   - dimensions: 15 x 25.6 x 31.5 inches (38 x 65 x 80 cm)
     edition: 'unique, inscribed on side'
     images:
@@ -360,24 +457,6 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Chair #7'
-    when: '2017'
-  - dimensions: 22 x 22.8 x 25.6 inches (56 x 58 x 65 cm)
-    edition: 'unique, initials carved on side'
-    hero: false
-    images:
-      - file: large_v1jhmi
-      - file: large_k0reiv
-      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-B-LR
-      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-C-LR
-      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-D-LR
-      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-E-LR
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-8
-    tags:
-      - Chair
-    title: 'Tonalite Boulder Chair #8 '
     when: '2017'
   - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
     edition: 'unique, initials carved on side'
@@ -396,6 +475,24 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Chair #9'
+    when: '2017'
+  - dimensions: 22 x 22.8 x 25.6 inches (56 x 58 x 65 cm)
+    edition: 'unique, initials carved on side'
+    hero: false
+    images:
+      - file: large_v1jhmi
+      - file: large_k0reiv
+      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-B-LR
+      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-C-LR
+      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-D-LR
+      - file: S94D-MLa65-MaxLamb-TonaliteBoulderChair8-2017-E-LR
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-8
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Chair #8 '
     when: '2017'
   - dimensions: 21.7 x 35.4 x 27.6 inches (55 x 90 x 70 cm)
     edition: 'unique, initials carved on side'
@@ -432,10 +529,10 @@ works:
     title: 'Tonalite Boulder Chair #11'
     when: '2017'
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3540
+      - file: Vong-Salon94-Lamb-NOV17-3516
     projects:
       - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-2
+    slug: s94d-uptown-maxlamb-boulders-instal-6
   - images:
       - file: Vong-Salon94-Lamb-NOV17-3543
     projects:
@@ -446,6 +543,11 @@ works:
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-3
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3540
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-2
   - dimensions: 18.9 x 10.2 x 9.1 inches (48 x 26 x 23 cm)
     edition: 'unique, inscribed on side'
     images:
@@ -477,22 +579,6 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Stool #2'
-    when: '2017'
-  - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
-    edition: 'unique, inscribed on side'
-    images:
-      - file: large_ihogrf
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-B-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-C-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-D-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-E-HR
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-3
-    tags:
-      - Chair
-    title: 'Tonalite Boulder Stool #3'
     when: '2017'
   - dimensions: 16.5 x 15.7 x 17.7 inches (42 x 40 x 45 cm)
     edition: 'unique, inscribed on side'
@@ -540,6 +626,22 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Stool #6'
+    when: '2017'
+  - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: large_ihogrf
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-B-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-C-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-D-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-E-HR
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-3
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Stool #3'
     when: '2017'
   - dimensions: 15.7 x 11.8 x 15 inches (40 x 30 x 38 cm)
     edition: 'unique, inscribed on side'
@@ -592,100 +694,4 @@ works:
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-7
-  - dimensions: 28 1/2 x 57 x 27 inches (72.4 x 144.8 x 68.6 cm)
-    images:
-      - file: MLa101-ThermalSprayBench_Copper_2018_A
-      - file: MLa101-ThermalSprayBench_Copper_2018_B
-      - file: MLa101-ThermalSprayBench_Copper_2018_C
-      - file: MLa101-ThermalSprayBench_Copper_2018_D
-    medium: 'Polystyrene and copper '
-    slug: thermal-spray-bench-copper-2018
-    tags:
-      - bench
-    title: Thermal Spray Bench Copper
-    when: '2018'
-  - dimensions: 38 x 20 x 26 inches (96.5 x 50.8 x 66 cm)
-    images:
-      - file: MLa102-ThermalSprayChair_Aluminium_2018_A
-      - file: MLa102-ThermalSprayChair_Aluminium_2018_B
-      - file: MLa102-ThermalSprayChair_Aluminium_2018_C
-      - file: MLa102-ThermalSprayChair_Aluminium_2018_D
-    medium: 'Polystyrene and aluminum '
-    slug: thermal-spray-chair-aluminum-2018
-    tags:
-      - chair
-    title: Thermal Spray Chair Aluminum
-    when: '2018'
-  - dimensions: 40 x 19 x 23 inches (101.6 x 48.3 x 58.4 cm)
-    images:
-      - file: MLa103-ThermalSprayChair_Bronze_2018_A
-      - file: MLa103-ThermalSprayChair_Bronze_2018_B
-      - file: MLa103-ThermalSprayChair_Bronze_2018_C
-      - file: MLa103-ThermalSprayChair_Bronze_2018_D
-    medium: 'Polystyrene and bronze '
-    slug: thermal-spray-chair-bronze-2018
-    tags:
-      - chair
-    title: Thermal Spray Chair Bronze
-    when: '2018'
-  - dimensions: 34 1/2 x 17 x 19 inches (87.6 x 43.2 x 48.3 cm)
-    images:
-      - file: MLa104-ThermalSprayChair_Copper1_2018_A
-      - file: MLa104-ThermalSprayChair_Copper1_2018_B
-      - file: MLa104-ThermalSprayChair_Copper1_2018_C
-      - file: MLa104-ThermalSprayChair_Copper1_2018_D
-    medium: 'Polystyrene and copper '
-    slug: thermal-spray-chair-copper-1-2018
-    tags:
-      - chair
-    title: Thermal Spray Chair Copper 1
-    when: '2018'
-  - dimensions: 39 x 20 x 24 inches (99.1 x 50.8 x 61 cm)
-    images:
-      - file: MLa105-ThermalSprayChair_Copper2_2018_A
-      - file: MLa105-ThermalSprayChair_Copper2_2018_B
-      - file: MLa105-ThermalSprayChair_Copper2_2018_C
-      - file: MLa105-ThermalSprayChair_Copper2_2018_D
-    medium: 'Polystyrene and copper '
-    slug: thermal-spray-chair-copper-2-2018
-    tags:
-      - chair
-    title: Thermal Spray Chair Copper 2
-    when: '2018'
-  - dimensions: 24 1/2 x 22 x 21 inches (62.2 x 55.9 x 53.3 cm)
-    images:
-      - file: MLa106-ThermalSprayPlanter_Copper_2018_A
-      - file: MLa106-ThermalSprayPlanter_Copper_B
-      - file: MLa106-ThermalSprayPlanter_Copper_C
-      - file: MLa106-ThermalSprayPlanter_Copper_D
-    medium: Polystyrene and copper
-    slug: thermal-spray-planter-copper-2018
-    tags:
-      - planter
-    title: Thermal Spray Planter Copper
-    when: '2018'
-  - dimensions: 18 x 30 x 20 inches (45.7 x 76.2 x 50.8 cm)
-    images:
-      - file: MLa107-ThermalSprayTable_Aluminium_2018_A
-      - file: MLa107-ThermalSprayTable_Aluminium_2018_B
-      - file: MLa107-ThermalSprayTable_Aluminium_2018_C
-      - file: MLa107-ThermalSprayTable_Aluminium_2018_D
-    medium: Polystyrene and aluminum
-    slug: thermal-spray-table-aluminum-2018
-    tags:
-      - table
-    title: Thermal Spray Table Aluminum
-    when: '2018'
-  - dimensions: 18 x 23 x 20 inches (45.7 x 58.4 x 50.8 cm)
-    images:
-      - file: MLa108-ThermalSprayTable_Bronze_2018_A
-      - file: MLa108-ThermalSprayTable_Bronze_2018_B
-      - file: MLa108-ThermalSprayTable_Bronze_2018_C
-      - file: MLa108-ThermalSprayTable_Bronze_2018_D
-    medium: Polystyrene and bronze
-    slug: thermal-spray-table-bronze-2018
-    tags:
-      - table
-    title: Thermal Spray Table Bronze
-    when: '2018'
 status: Represented
