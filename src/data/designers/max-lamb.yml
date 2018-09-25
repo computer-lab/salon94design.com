@@ -589,20 +589,21 @@ works:
       - Chair
     title: 'Tonalite Boulder Stool #2'
     when: '2017'
-  - dimensions: 12.6 x 9.5 x 18.1 inches (32 x 24 x 46 cm)
+  - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: large_jzs9oc
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-B-HR
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-C-HR
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-D-HR
+      - file: large_ihogrf
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-B-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-C-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-D-HR
+      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-E-HR
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-6
+    slug: tonalite-boulder-stool-3
     tags:
       - Chair
-    title: 'Tonalite Boulder Stool #6'
+    title: 'Tonalite Boulder Stool #3'
     when: '2017'
   - dimensions: 16.5 x 15.7 x 17.7 inches (42 x 40 x 45 cm)
     edition: 'unique, inscribed on side'
@@ -636,21 +637,20 @@ works:
       - Chair
     title: 'Tonalite Boulder Stool #5'
     when: '2017'
-  - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
+  - dimensions: 12.6 x 9.5 x 18.1 inches (32 x 24 x 46 cm)
     edition: 'unique, inscribed on side'
     images:
-      - file: large_ihogrf
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-B-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-C-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-D-HR
-      - file: S94D-MLa71-MaxLamb-TonaliteBoulder3-2017-E-HR
+      - file: large_jzs9oc
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-B-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-C-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-D-HR
     medium: raw and polished Tonalite granite & bridle leather
     projects:
       - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-3
+    slug: tonalite-boulder-stool-6
     tags:
       - Chair
-    title: 'Tonalite Boulder Stool #3'
+    title: 'Tonalite Boulder Stool #6'
     when: '2017'
   - dimensions: 15.7 x 11.8 x 15 inches (40 x 30 x 38 cm)
     edition: 'unique, inscribed on side'
@@ -682,11 +682,6 @@ works:
       - Chair
     title: 'Tonalite Boulder Stool #9'
     when: '2017'
-  - images:
-      - file: Vong-Salon94-Lamb-NOV17-3549
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-7
   - dimensions: 15.7 x 13.8 x 25.6 inches (40 x 35 x 65 cm)
     images:
       - file: mla_76_sz1p7l
@@ -698,4 +693,9 @@ works:
       - Chair
     title: 'Tonalite Boulder Stool #8'
     when: '2017'
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3549
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-7
 status: Represented
