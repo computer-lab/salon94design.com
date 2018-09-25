@@ -219,6 +219,31 @@ works:
       - chair
     title: Thermal Spray Chair Copper
     when: '2017'
+  - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
+    images:
+      - file: mla100-thermalspraybench_bronze_2018_b
+      - file: mla100-thermalspraybench_bronze_2018_a
+      - file: mla100-thermalspraybench_bronze_2018_c
+      - file: mla100-thermalspraybench_bronze_2018_d
+      - file: mla100-thermalspraybench_bronze_2018_e
+    medium: Polystyrene and bronze
+    slug: thermal-spray-bench-bronze-max-lamb-2018
+    tags:
+      - seating
+    title: Thermal Spray Bench Bronze
+    when: '2018'
+  - dimensions: 28 1/2 x 57 x 27 inches (72.4 x 144.8 x 68.6 cm)
+    images:
+      - file: MLa101-ThermalSprayBench_Copper_2018_A
+      - file: MLa101-ThermalSprayBench_Copper_2018_B
+      - file: MLa101-ThermalSprayBench_Copper_2018_C
+      - file: MLa101-ThermalSprayBench_Copper_2018_D
+    medium: 'Polystyrene and copper '
+    slug: thermal-spray-bench-copper-2018
+    tags:
+      - bench
+    title: Thermal Spray Bench Copper
+    when: '2018'
   - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
     images:
       - file: large_h43oyo
@@ -253,18 +278,6 @@ works:
     tags:
       - chair
     title: Thermal Spray Chair Bronze
-    when: '2018'
-  - dimensions: 28 1/2 x 57 x 27 inches (72.4 x 144.8 x 68.6 cm)
-    images:
-      - file: MLa101-ThermalSprayBench_Copper_2018_A
-      - file: MLa101-ThermalSprayBench_Copper_2018_B
-      - file: MLa101-ThermalSprayBench_Copper_2018_C
-      - file: MLa101-ThermalSprayBench_Copper_2018_D
-    medium: 'Polystyrene and copper '
-    slug: thermal-spray-bench-copper-2018
-    tags:
-      - bench
-    title: Thermal Spray Bench Copper
     when: '2018'
   - dimensions: 34 1/2 x 17 x 19 inches (87.6 x 43.2 x 48.3 cm)
     images:
@@ -347,22 +360,6 @@ works:
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-4
-  - dimensions: 16.1 x 33.5 x 15.75 inches (40.9 x 85.1 x 40 cm)
-    edition: 'unique, initials carved on side'
-    hero: true
-    images:
-      - file: large_fnblqs
-      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-B-LR
-      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-D-LR
-      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-E-LR
-    medium: raw and polished Tonalitle granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalitle-boulder-chair-1
-    tags:
-      - Chair
-    title: 'Tonalitle Boulder Chair #1'
-    when: '2017'
   - dimensions: 22.8 x 36.2 x 30.7 inches (58 x 92 x 78 cm)
     edition: 'unique, initials carved on side'
     images:
@@ -378,6 +375,22 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Chair #2'
+    when: '2017'
+  - dimensions: 16.1 x 33.5 x 15.75 inches (40.9 x 85.1 x 40 cm)
+    edition: 'unique, initials carved on side'
+    hero: true
+    images:
+      - file: large_fnblqs
+      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-B-LR
+      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-D-LR
+      - file: S94D-MLa58-MaxLamb-TonaliteBoulderChair1-2017-E-LR
+    medium: raw and polished Tonalitle granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalitle-boulder-chair-1
+    tags:
+      - Chair
+    title: 'Tonalitle Boulder Chair #1'
     when: '2017'
   - dimensions: 24.4 x 23.6 x 33.9 inches (62 x 59.9 x 86.1 cm)
     edition: 'unique, inscribed on side'
@@ -442,22 +455,6 @@ works:
       - Chair
     title: 'Tonalite Boulder Chair #6'
     when: '2017'
-  - dimensions: 15 x 25.6 x 31.5 inches (38 x 65 x 80 cm)
-    edition: 'unique, inscribed on side'
-    images:
-      - file: salon94designmaxlambtonaliteboulderchair72017_qepuus
-      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-B-LR
-      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-C-LR
-      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-D-LR
-      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-E-LR
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-7
-    tags:
-      - Chair
-    title: 'Tonalite Boulder Chair #7'
-    when: '2017'
   - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
     edition: 'unique, initials carved on side'
     hero: true
@@ -475,6 +472,22 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Chair #9'
+    when: '2017'
+  - dimensions: 15 x 25.6 x 31.5 inches (38 x 65 x 80 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: salon94designmaxlambtonaliteboulderchair72017_qepuus
+      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-B-LR
+      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-C-LR
+      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-D-LR
+      - file: S94D-MLa64-MaxLamb-TonaliteBoulderChair7-2017-E-LR
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-7
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Chair #7'
     when: '2017'
   - dimensions: 22 x 22.8 x 25.6 inches (56 x 58 x 65 cm)
     edition: 'unique, initials carved on side'
@@ -534,15 +547,15 @@ works:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-6
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3543
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-1
-  - images:
       - file: Vong-Salon94-Lamb-NOV17-3533
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-3
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3543
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-1
   - images:
       - file: Vong-Salon94-Lamb-NOV17-3540
     projects:
@@ -596,6 +609,21 @@ works:
       - Chair
     title: 'Tonalite Boulder Stool #4'
     when: '2017'
+  - dimensions: 12.6 x 9.5 x 18.1 inches (32 x 24 x 46 cm)
+    edition: 'unique, inscribed on side'
+    images:
+      - file: large_jzs9oc
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-B-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-C-HR
+      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-D-HR
+    medium: raw and polished Tonalite granite & bridle leather
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-stool-6
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Stool #6'
+    when: '2017'
   - dimensions: 18.1 x 11 x 18.5 inches (46 x 28 x 47 cm)
     edition: 'unique, inscribed on side'
     images:
@@ -611,21 +639,6 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Stool #5'
-    when: '2017'
-  - dimensions: 12.6 x 9.5 x 18.1 inches (32 x 24 x 46 cm)
-    edition: 'unique, inscribed on side'
-    images:
-      - file: large_jzs9oc
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-B-HR
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-C-HR
-      - file: S94D-MLa74-MaxLamb-TonaliteBoulderStool6-2017-D-HR
-    medium: raw and polished Tonalite granite & bridle leather
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-stool-6
-    tags:
-      - Chair
-    title: 'Tonalite Boulder Stool #6'
     when: '2017'
   - dimensions: 15 x 11 x 15.7 inches (38 x 28 x 40 cm)
     edition: 'unique, inscribed on side'
@@ -685,26 +698,13 @@ works:
     title: 'Tonalite Boulder Stool #9'
     when: '2017'
   - images:
-      - file: Screen_Shot_2018-03-14_at_12.49.20_PM
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-8
-  - images:
       - file: Vong-Salon94-Lamb-NOV17-3549
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-7
-  - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
-    images:
-      - file: mla100-thermalspraybench_bronze_2018_b
-      - file: mla100-thermalspraybench_bronze_2018_a
-      - file: mla100-thermalspraybench_bronze_2018_c
-      - file: mla100-thermalspraybench_bronze_2018_d
-      - file: mla100-thermalspraybench_bronze_2018_e
-    medium: Polystyrene and bronze
-    slug: thermal-spray-bench-bronze-max-lamb-2018
-    tags:
-      - seating
-    title: Thermal Spray Bench Bronze
-    when: '2018'
+  - images:
+      - file: Screen_Shot_2018-03-14_at_12.49.20_PM
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-8
 status: Represented
