@@ -19,206 +19,6 @@ works:
       - slug: boulders-max-lamb
     slug: s94d-boulder-install-onsite
     title: ''
-  - dimensions: 35 x 21 x 17 inches
-    images:
-      - file: S94D-MaxLamb-ForgedChair-2018-Aluminum
-      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-b-hr
-      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-c-hr
-      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-d-hr
-    medium: Aluminum
-    slug: forged-chair-aluminum
-    tags:
-      - chair
-    title: Forged Chair
-    when: '2018'
-  - dimensions: 31 1/2 x 15 x 17 1/2 inches
-    images:
-      - file: S94D-MaxLamb-ForgedChair-2018-Steel
-      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-b-hr
-      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-c-hr
-      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-d-hr
-    medium: Carbon steel
-    slug: forged-chair-steel
-    tags:
-      - chair
-    title: Forged Chair
-    when: '2018'
-  - dimensions: 17 1/8 x 11 3/4 x 11 3/4 inches
-    images:
-      - file: S94D-MaxLamb-ForgedStool-2018-Steel
-    medium: Carbon steel
-    slug: forged-stool
-    tags:
-      - chair
-    title: Forged Stool
-    when: '2018'
-  - dimensions: 65 x 24 x 27 inches (165 x 60 x 68 cm)
-    hero: true
-    images:
-      - file: mla-77-a_yec0ep
-      - file: mla-77-b_zqclsh
-      - file: mla-77-c_ypcdxw
-      - file: mla-77-d_nzro54
-    medium: Copper
-    slug: thermal-spray-bench
-    tags:
-      - bench
-    title: Thermal Spray Bench
-    when: '2017'
-  - dimensions: 20.08 x 18.11 x 11.81 inches (51 x 46 x 30 cm)
-    edition: 'unique, initials carved on bottom'
-    images:
-      - file: large_mlyiqn
-      - file: large_ghd8jx
-    medium: 'polystyrene, copper '
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-vase-copper
-    tags:
-      - vase
-    title: 'Thermal Spray Vase Copper '
-    when: '2017'
-  - dimensions: 33 x 26 x 38 inches (85 x 65 x 97 cm)
-    hero: true
-    images:
-      - file: mla-78-a_gd7ur1
-      - file: mla-78-b_b6hldz
-      - file: mla-78-c_dm0hzs
-      - file: mla-78-d_fjpydk
-      - file: mla-78-e_xne7jj
-      - file: mla-78-f_ep14s2
-    medium: Bronze
-    slug: thermal-spray-chair
-    tags:
-      - chair
-    title: Thermal Spray Chair
-    when: '2017'
-  - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
-    images:
-      - file: large_k86r9w
-    medium: Polystyrene and aluminium
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-aluminum
-    tags:
-      - Chair
-    title: Thermal Spray Chair Aluminum
-    when: '2017'
-  - images:
-      - file: large_apt6pq
-    projects:
-      - slug: design-miami-basel-2017
-    slug: s94d-designmiami-maxlamb-boulders-instal-1
-  - dimensions: 36 x 17.75 x 21 inches (91.4 x 45.1 x 53.3 cm)
-    hero: true
-    images:
-      - file: mla-80-a_hrpvdm
-      - file: mla-80-b_opeuo6
-      - file: mla-80-c_tqi2yf
-      - file: mla-80-d_o0vydh
-      - file: mla-80-e_k4vpop
-      - file: mla-80-f_wzn8ey
-    medium: polystyrene and aluminum
-    slug: thermal-spray-chair-aluminum
-    tags:
-      - chair
-    title: Thermal Spray Chair Aluminum
-    when: '2017'
-  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
-    images:
-      - file: large_xwtyvh
-    medium: Polystyrene and copper
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-armchair-copper
-    tags:
-      - Chair
-    title: Thermal Spray Armchair Copper
-    when: '2017'
-  - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
-    images:
-      - file: large_pgxeg2
-    medium: Polystyrene and bronze
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-armchair-bronze
-    tags:
-      - Chair
-    title: Thermal Spray Armchair Bronze
-    when: '2017'
-  - images:
-      - file: large_u0vqog
-    projects:
-      - slug: design-miami-basel-2017
-    slug: s94d-designmiami-maxlamb-boulders-instal-1
-  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
-    edition: 'unique, initials carved on side'
-    images:
-      - file: large_uv121w
-    medium: Polystyrene and stainless steel
-    price: ''
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-dining-table-stainless
-    tags:
-      - Table
-    title: Thermal Spray Dining Table Stainless
-    when: '2017'
-  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
-    edition: 'unique, initials carved on bottom'
-    images:
-      - file: large_pljzuy
-    medium: Polystyrene and stainless steel
-    price: ''
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-stainless
-    tags:
-      - chair
-    title: Thermal Spray Chair Stainless
-    when: '2017'
-  - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
-    edition: 'unique, initials carved on bottom'
-    images:
-      - file: large_byrxun
-      - file: large_ujtm4i
-    medium: Polystyrene and bronze
-    price: ''
-    projects:
-      - slug: thermal-spray-furniture
-    slug: thermal-spray-shelf-bronze
-    tags:
-      - shelf
-    title: Thermal Spray Shelf Bronze
-    when: '2017'
-  - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
-    images:
-      - file: large_c7rwoi
-    medium: Polystyrene and brass
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-chair-brass
-    tags:
-      - Chair
-    title: Thermal Spray Chair Brass
-    when: '2017'
-  - dimensions: 30 x 14.5 x 19.5 inches (76.2 x 36.8 x 49.5 cm)
-    hero: true
-    images:
-      - file: mla-79-a_wciwmb
-      - file: mla-79-b_innlzm
-      - file: mla-79-c_tzzztx
-      - file: mla-79-d_qz0cey
-      - file: mla-79-e_mysbzf
-      - file: mla-79-f_wp0puh
-      - file: mla-79-g_vhxshz
-      - file: mla-79-h_tmksjk
-    medium: polystyrene and copper
-    slug: thermal-spray-chair-Copper
-    tags:
-      - chair
-    title: Thermal Spray Chair Copper
-    when: '2017'
   - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
     images:
       - file: mla100-thermalspraybench_bronze_2018_b
@@ -244,17 +44,6 @@ works:
       - bench
     title: Thermal Spray Bench Copper
     when: '2018'
-  - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
-    images:
-      - file: large_h43oyo
-    medium: Polystyrene and copper
-    projects:
-      - slug: design-miami-basel-2017
-    slug: thermal-spray-bench-copper
-    tags:
-      - Bench
-    title: Thermal Spray Bench Copper
-    when: '2017'
   - dimensions: 38 x 20 x 26 inches (96.5 x 50.8 x 66 cm)
     images:
       - file: MLa102-ThermalSprayChair_Aluminium_2018_A
@@ -338,6 +127,217 @@ works:
     tags:
       - table
     title: Thermal Spray Table Bronze
+    when: '2018'
+  - dimensions: 20.08 x 18.11 x 11.81 inches (51 x 46 x 30 cm)
+    edition: 'unique, initials carved on bottom'
+    images:
+      - file: large_mlyiqn
+      - file: large_ghd8jx
+    medium: 'polystyrene, copper '
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-vase-copper
+    tags:
+      - vase
+    title: 'Thermal Spray Vase Copper '
+    when: '2017'
+  - images:
+      - file: large_apt6pq
+    projects:
+      - slug: design-miami-basel-2017
+    slug: s94d-designmiami-maxlamb-boulders-instal-1
+  - dimensions: 65 x 24 x 27 inches (165 x 60 x 68 cm)
+    hero: true
+    images:
+      - file: mla-77-a_yec0ep
+      - file: mla-77-b_zqclsh
+      - file: mla-77-c_ypcdxw
+      - file: mla-77-d_nzro54
+    medium: Copper
+    slug: thermal-spray-bench
+    tags:
+      - bench
+    title: Thermal Spray Bench
+    when: '2017'
+  - dimensions: 30.31 x 38.98 x 24.41 inches (77 x 99 x 62 cm)
+    images:
+      - file: large_h43oyo
+    medium: Polystyrene and copper
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-bench-copper
+    tags:
+      - Bench
+    title: Thermal Spray Bench Copper
+    when: '2017'
+  - dimensions: 37.01 x 24.41 x 20.47 inches (94 x 62 x 52 cm)
+    images:
+      - file: large_k86r9w
+    medium: Polystyrene and aluminium
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-aluminum
+    tags:
+      - Chair
+    title: Thermal Spray Chair Aluminum
+    when: '2017'
+  - dimensions: 33 x 26 x 38 inches (85 x 65 x 97 cm)
+    hero: true
+    images:
+      - file: mla-78-a_gd7ur1
+      - file: mla-78-b_b6hldz
+      - file: mla-78-c_dm0hzs
+      - file: mla-78-d_fjpydk
+      - file: mla-78-e_xne7jj
+      - file: mla-78-f_ep14s2
+    medium: Bronze
+    slug: thermal-spray-chair
+    tags:
+      - chair
+    title: Thermal Spray Chair
+    when: '2017'
+  - dimensions: 35.43 x 29.92 x 20.87 inches (90 x 76 x 53 cm)
+    images:
+      - file: large_pgxeg2
+    medium: Polystyrene and bronze
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-armchair-bronze
+    tags:
+      - Chair
+    title: Thermal Spray Armchair Bronze
+    when: '2017'
+  - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
+    edition: 'unique, initials carved on side'
+    images:
+      - file: large_uv121w
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-dining-table-stainless
+    tags:
+      - Table
+    title: Thermal Spray Dining Table Stainless
+    when: '2017'
+  - dimensions: 27.95 x 33.86 x 23.62 inches (71 x 86 x 60 cm)
+    images:
+      - file: large_xwtyvh
+    medium: Polystyrene and copper
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-armchair-copper
+    tags:
+      - Chair
+    title: Thermal Spray Armchair Copper
+    when: '2017'
+  - dimensions: 36 x 17.75 x 21 inches (91.4 x 45.1 x 53.3 cm)
+    hero: true
+    images:
+      - file: mla-80-a_hrpvdm
+      - file: mla-80-b_opeuo6
+      - file: mla-80-c_tqi2yf
+      - file: mla-80-d_o0vydh
+      - file: mla-80-e_k4vpop
+      - file: mla-80-f_wzn8ey
+    medium: polystyrene and aluminum
+    slug: thermal-spray-chair-aluminum
+    tags:
+      - chair
+    title: Thermal Spray Chair Aluminum
+    when: '2017'
+  - images:
+      - file: large_u0vqog
+    projects:
+      - slug: design-miami-basel-2017
+    slug: s94d-designmiami-maxlamb-boulders-instal-1
+  - dimensions: 30 x 14.5 x 19.5 inches (76.2 x 36.8 x 49.5 cm)
+    hero: true
+    images:
+      - file: mla-79-a_wciwmb
+      - file: mla-79-b_innlzm
+      - file: mla-79-c_tzzztx
+      - file: mla-79-d_qz0cey
+      - file: mla-79-e_mysbzf
+      - file: mla-79-f_wp0puh
+      - file: mla-79-g_vhxshz
+      - file: mla-79-h_tmksjk
+    medium: polystyrene and copper
+    slug: thermal-spray-chair-Copper
+    tags:
+      - chair
+    title: Thermal Spray Chair Copper
+    when: '2017'
+  - dimensions: 31.5 x 13.78 x 20.47 inches (80 x 35 x 52 cm)
+    images:
+      - file: large_c7rwoi
+    medium: Polystyrene and brass
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-brass
+    tags:
+      - Chair
+    title: Thermal Spray Chair Brass
+    when: '2017'
+  - dimensions: 64.17 x 52.36 x 17.72 inches (163 x 133 x 45 cm)
+    edition: 'unique, initials carved on bottom'
+    images:
+      - file: large_byrxun
+      - file: large_ujtm4i
+    medium: Polystyrene and bronze
+    price: ''
+    projects:
+      - slug: thermal-spray-furniture
+    slug: thermal-spray-shelf-bronze
+    tags:
+      - shelf
+    title: Thermal Spray Shelf Bronze
+    when: '2017'
+  - dimensions: 38.78 x 12.6 x 18.9 inches (98.5 x 32 x 48 cm)
+    edition: 'unique, initials carved on bottom'
+    images:
+      - file: large_pljzuy
+    medium: Polystyrene and stainless steel
+    price: ''
+    projects:
+      - slug: design-miami-basel-2017
+    slug: thermal-spray-chair-stainless
+    tags:
+      - chair
+    title: Thermal Spray Chair Stainless
+    when: '2017'
+  - dimensions: 35 x 21 x 17 inches
+    images:
+      - file: S94D-MaxLamb-ForgedChair-2018-Aluminum
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-b-hr
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-c-hr
+      - file: s94d-mla86-maxlamb-forgedchairprototype4-2018-d-hr
+    medium: Aluminum
+    slug: forged-chair-aluminum
+    tags:
+      - chair
+    title: Forged Chair
+    when: '2018'
+  - dimensions: 31 1/2 x 15 x 17 1/2 inches
+    images:
+      - file: S94D-MaxLamb-ForgedChair-2018-Steel
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-b-hr
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-c-hr
+      - file: s94d-mla84-maxlamb-forgedchairprototype2-2018-d-hr
+    medium: Carbon steel
+    slug: forged-chair-steel
+    tags:
+      - chair
+    title: Forged Chair
+    when: '2018'
+  - dimensions: 17 1/8 x 11 3/4 x 11 3/4 inches
+    images:
+      - file: S94D-MaxLamb-ForgedStool-2018-Steel
+    medium: Carbon steel
+    slug: forged-stool
+    tags:
+      - chair
+    title: Forged Stool
     when: '2018'
   - images:
       - file: S94D-MLa95-MaxLamb-NanocrystallineChair-2015-LR
