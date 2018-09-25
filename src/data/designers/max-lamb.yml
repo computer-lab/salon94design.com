@@ -548,11 +548,6 @@ works:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-6
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3543
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-1
-  - images:
       - file: Vong-Salon94-Lamb-NOV17-3540
     projects:
       - slug: boulders-max-lamb
@@ -694,8 +689,7 @@ works:
     title: 'Tonalite Boulder Stool #8'
     when: '2017'
   - images:
-      - file: Vong-Salon94-Lamb-NOV17-3549
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-7
+      - file: im029615_003-int
+      - file: im029615_004-int
+    title: Exercising in Seating - The Art Institute of Chicago
 status: Represented
