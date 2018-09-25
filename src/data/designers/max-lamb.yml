@@ -694,4 +694,17 @@ works:
     projects:
       - slug: boulders-max-lamb
     slug: s94d-uptown-maxlamb-boulders-instal-7
+  - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
+    images:
+      - file: mla100-thermalspraybench_bronze_2018_b
+      - file: mla100-thermalspraybench_bronze_2018_a
+      - file: mla100-thermalspraybench_bronze_2018_c
+      - file: mla100-thermalspraybench_bronze_2018_d
+      - file: mla100-thermalspraybench_bronze_2018_e
+    medium: Polystyrene and bronze
+    slug: thermal-spray-bench-bronze-max-lamb-2018
+    tags:
+      - seating
+    title: Thermal Spray Bench Bronze
+    when: '2018'
 status: Represented
