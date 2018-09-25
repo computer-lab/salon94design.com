@@ -467,24 +467,6 @@ works:
       - Chair
     title: 'Tonalite Boulder Chair #7'
     when: '2017'
-  - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
-    edition: 'unique, initials carved on side'
-    hero: true
-    images:
-      - file: large_wtbg4p
-      - file: large_smkl6s
-      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-B-LR
-      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-C-LR
-      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-D-LR
-      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-E-LR
-    medium: 'raw and polished Tonalite granite & bridle leather '
-    projects:
-      - slug: boulders-max-lamb
-    slug: tonalite-boulder-chair-9
-    tags:
-      - Chair
-    title: 'Tonalite Boulder Chair #9'
-    when: '2017'
   - dimensions: 22 x 22.8 x 25.6 inches (56 x 58 x 65 cm)
     edition: 'unique, initials carved on side'
     hero: false
@@ -502,6 +484,24 @@ works:
     tags:
       - Chair
     title: 'Tonalite Boulder Chair #8 '
+    when: '2017'
+  - dimensions: 18.5 x 22 x 29.5 inches (47 x 56 x 75 cm)
+    edition: 'unique, initials carved on side'
+    hero: true
+    images:
+      - file: large_wtbg4p
+      - file: large_smkl6s
+      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-B-LR
+      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-C-LR
+      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-D-LR
+      - file: S94D-MLa66-MaxLamb-TonaliteBoulderChair9-2017-E-LR
+    medium: 'raw and polished Tonalite granite & bridle leather '
+    projects:
+      - slug: boulders-max-lamb
+    slug: tonalite-boulder-chair-9
+    tags:
+      - Chair
+    title: 'Tonalite Boulder Chair #9'
     when: '2017'
   - dimensions: 21.7 x 35.4 x 27.6 inches (55 x 90 x 70 cm)
     edition: 'unique, initials carved on side'
@@ -521,16 +521,6 @@ works:
       - Chair
     title: 'Tonalite Boulder Chair #10'
     when: '2017'
-  - images:
-      - file: Vong-Salon94-Lamb-NOV17-3516
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-6
-  - images:
-      - file: Vong-Salon94-Lamb-NOV17-3533
-    projects:
-      - slug: boulders-max-lamb
-    slug: s94d-uptown-maxlamb-boulders-instal-3
   - dimensions: 14.6 x 25.6 x 27.2 inches (37 x 65 x 69 cm)
     edition: 'unique, inscribed on side'
     images:
@@ -547,6 +537,16 @@ works:
       - Chair
     title: 'Tonalite Boulder Chair #11'
     when: '2017'
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3533
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-3
+  - images:
+      - file: Vong-Salon94-Lamb-NOV17-3516
+    projects:
+      - slug: boulders-max-lamb
+    slug: s94d-uptown-maxlamb-boulders-instal-6
   - images:
       - file: Vong-Salon94-Lamb-NOV17-3543
     projects:
