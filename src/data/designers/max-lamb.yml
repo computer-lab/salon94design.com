@@ -730,6 +730,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla135-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.1
@@ -743,16 +744,22 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla136-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.2
     when: '2018'
-  - images:
+  - dimensions: 32.5 x 19 1/2 x 19 1/2 inches (82.6 x 49.5 x 49.5 cm)
+    images:
       - file: S94D-MaxLamb-ThermalSpray-gif-MLa135
+    medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla135-maxlamb-aluminumthermalspraychair-gif
     tags:
       - Chair
+    title: Aluminum Thermal Spray Chair No.1
+    when: '2018'
   - dimensions: 35 1/4 x 21 1/4 x 27 1/2 inches (89.5 x 54 x 69.9 cm)
     images:
       - file: S94D-MaxLamb-AluminumThermalSprayChair-017-MaxLamb-85A4522-V1-sm
@@ -762,6 +769,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla137-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.3
@@ -775,6 +783,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla138-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.4
@@ -788,6 +797,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla139-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.5
@@ -801,6 +811,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla140-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.6
@@ -814,6 +825,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla141-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.7
@@ -827,6 +839,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla142-maxlamb-aluminumthermalspraystool
     tags:
       - Table
       - Chair
@@ -841,6 +854,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla143-maxlamb-aluminumthermalspraystool
     tags:
       - Table
       - Chair
@@ -855,6 +869,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+    slug: mla144-maxlamb-aluminumthermalspraystool
     tags:
       - Chair
       - Table
