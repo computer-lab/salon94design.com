@@ -29,7 +29,8 @@ press:
   - file: /images/20171121-wallpaper-maxlamb-boulders.pdf
     title: Wallpaper*
 works:
-  - images:
+  - hero: true
+    images:
       - file: ThermalSprayCopperChair_1_ExpoChicago
   - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
     images:
@@ -745,5 +746,86 @@ works:
     tags:
       - Chair
     title: Aluminum Thermal Spray Chair No.2
+    when: '2018'
+  - images:
+      - file: S94D-MaxLamb-ThermalSpray-gif-MLa135
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+  - dimensions: 35 1/4 x 21 1/4 x 27 1/2 inches (89.5 x 54 x 69.9 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-017-MaxLamb-85A4522-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-021-MaxLamb-85A4537-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-018-MaxLamb-85A4532-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-020-MaxLamb-85A4535-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.3
+    when: '2018'
+  - dimensions: 32 3/4 x 25 x 20 inches (83.2 x 63.5 x 50.8 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-023-MaxLamb-85A4543-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-026-MaxLamb-85A4550-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-028-MaxLamb-85A4560-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-030-MaxLamb-85A4564-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.4
+    when: '2018'
+  - dimensions: 29 x 19 x 19 3/4 inches (73.7 x 48.3 x 50.2 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-032-MaxLamb-85A4570-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-034-MaxLamb-85A4579-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-036-MaxLamb-85A4583-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-038-MaxLamb-85A4587-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.5
+    when: '2018'
+  - dimensions: 34 x 28 1/2 x 18 1/2 inches (86.4 x 72.4 x 47 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-040-MaxLamb-85A4593-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-042-MaxLamb-85A4600-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-044-MaxLamb-85A4610-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-046-MaxLamb-85A4617-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.6
+    when: '2018'
+  - dimensions: 31 1/4 x 17 x 15 1/4 inches (79.4 x 43.2 x 38.7 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-048-MaxLamb-85A4620-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-051-MaxLamb-85A4626-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-053-MaxLamb-85A4632-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-055-MaxLamb-85A4638-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.7
+    when: '2018'
+  - dimensions: 15 3/4 x 15 x 10 inches (40 x 38.1 x 25.4 cm)
+    images:
+      - {}
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Table
+    title: Aluminum Thermal Spray Stool No.1
     when: '2018'
 status: Represented
