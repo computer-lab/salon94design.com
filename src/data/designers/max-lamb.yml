@@ -875,4 +875,18 @@ works:
       - Table
     title: Aluminum Thermal Spray Stool No.3
     when: '2018'
+  - dimensions: 69 1/2 x 23 1/4 x 30 inches (176.5 x 59.1 x 76.2 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayShelf-076-MaxLamb-85A4755-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayShelf-082-MaxLamb-85A4747-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayShelf-080-MaxLamb-85A4739-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayShelf-078-MaxLamb-85A4734-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    slug: mla145-maxlamb-aluminumthermalsprayshelf
+    tags:
+      - Storage
+    title: Aluminum Thermal Spray Shelf
+    when: '2018'
 status: Represented
