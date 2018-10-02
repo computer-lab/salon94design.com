@@ -820,12 +820,44 @@ works:
     when: '2018'
   - dimensions: 15 3/4 x 15 x 10 inches (40 x 38.1 x 25.4 cm)
     images:
-      - {}
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-057-MaxLamb-85A4654-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-059-MaxLamb-85A4657-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-061-MaxLamb-85A4661-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-063-MaxLamb-85A4666-V1-sm-D
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
     tags:
       - Table
+      - Chair
     title: Aluminum Thermal Spray Stool No.1
+    when: '2018'
+  - dimensions: 17 3/4 x 13 1/2 x 15 inches (45.1 x 34.3 x 38.1 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-068-MaxLamb-85A4684-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-066-MaxLamb-85A4678-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-067-MaxLamb-85A4680-V1-sm-D
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-065-MaxLamb-85A4675-V1-sm
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Table
+      - Chair
+    title: Aluminum Thermal Spray Stool No.2
+    when: '2018'
+  - dimensions: 15 3/4 x 20 3/4 x 14 inches (40 x 52.7 x 35.6 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-070-MaxLamb-85A4687-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-072-MaxLamb-85A4692-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-074-MaxLamb-85A4697-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayTable-075-MaxLamb-85A4699-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+      - Table
+    title: Aluminum Thermal Spray Stool No.3
     when: '2018'
 status: Represented
