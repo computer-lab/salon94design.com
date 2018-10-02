@@ -1,10 +1,26 @@
 slug: max-lamb
 title: Max Lamb
 bio: >-
-  Max Lamb is a British designer who combines traditional - if not prehistoric -
-  design methods with digital design. He is known for employing highly unusual
-  approaches to using natural materials, including pouring pewter onto sand, and
-  volcanic rock.
+  Max Lamb designs sophisticated and personal bodies of work particular to
+  material, location, and tradition.  His series unfold intimate stories from
+  conceptions, creation, and to completion.  He has carved stone from China to
+  Italy, and Vermont, and cast bronze from polystyrene molds.  Each chair,
+  bench, table and vase is unique, and many can live outdoors.
+
+
+  In 2018 the Art Institute of Chicago selected Max Lamb as their designer for
+  the inaugural exhibition, _Max Lamb: Exercises in Seating_, of the
+  Franke/Herro Design Series, where curator Zoe Ryan highlights the work of
+  important emerging talent.  In 2016, Max’s work was included in the Design
+  Triennial _Beauty_ at the Cooper Hewitt, Smithsonian Design Museum in New
+  York.  His work has been widely exhibited at galleries and institutions both
+  in Europe and the US, including Salon 94 Design.
+
+
+  His presentations have been featured in numerous design magazines.  He
+  designed the interior of the Acne flagship store on Madison Avenue in New York
+  and on Geary Street in San Francisco. Max Lamb was born inSt. Austell,
+  Cornwall, England, in 1980.  He lives and works in London, United Kingdom.
 press:
   - file: /images/20171110-architecturaldigest-maxlamb-boulders.pdf
     title: Architectural Digest
@@ -35,6 +51,8 @@ works:
       - file: MLa101-ThermalSprayBench_Copper_2018_C
       - file: MLa101-ThermalSprayBench_Copper_2018_D
     medium: 'Polystyrene and copper '
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-bench-copper-2018
     tags:
       - bench
@@ -71,6 +89,8 @@ works:
       - file: MLa104-ThermalSprayChair_Copper1_2018_C
       - file: MLa104-ThermalSprayChair_Copper1_2018_D
     medium: 'Polystyrene and copper '
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-chair-copper-1-2018
     tags:
       - chair
@@ -83,6 +103,8 @@ works:
       - file: MLa105-ThermalSprayChair_Copper2_2018_C
       - file: MLa105-ThermalSprayChair_Copper2_2018_D
     medium: 'Polystyrene and copper '
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-chair-copper-2-2018
     tags:
       - chair
@@ -95,6 +117,8 @@ works:
       - file: MLa106-ThermalSprayPlanter_Copper_C
       - file: MLa106-ThermalSprayPlanter_Copper_D
     medium: Polystyrene and copper
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-planter-copper-2018
     tags:
       - planter
@@ -132,6 +156,8 @@ works:
       - file: MLa108-ThermalSprayTable_Bronze_2018_C
       - file: MLa108-ThermalSprayTable_Bronze_2018_D
     medium: Polystyrene and bronze
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-table-bronze-2018
     tags:
       - table
@@ -150,6 +176,8 @@ works:
       - file: mla-77-c_ypcdxw
       - file: mla-77-d_nzro54
     medium: Copper
+    projects:
+      - slug: expo-chicago-max-lamb-2018
     slug: thermal-spray-bench
     tags:
       - bench
@@ -692,4 +720,30 @@ works:
       - file: im029615_003-int
       - file: im029615_004-int
     title: Exercising in Seating - The Art Institute of Chicago
+  - dimensions: 32.5 x 19 1/2 x 19 1/2 inches (82.6 x 49.5 x 49.5 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSpray-ArmChair-001-ML-85A4473-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSpray-ArmChair-004-MaxLamb-85A4484-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSpray-ArmChair-007-MaxLamb-85A4489-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSpray-ArmChair-002-MaxLamb-85A4474-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.1
+    when: '2018'
+  - dimensions: 34 x 15 x 20 inches (86.4 x 38.1 x 50.8 cm)
+    images:
+      - file: S94D-MaxLamb-AluminumThermalSpray-ArmChair-010-MaxLamb-85A4495-V1-sm
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-015-MaxLamb-85A4516-V1-sm-B
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-013-MaxLamb-85A4510-V1-sm-C
+      - file: S94D-MaxLamb-AluminumThermalSprayChair-011-MaxLamb-85A4503-V1-sm-D
+    medium: Polystyrene and aluminum
+    projects:
+      - slug: frieze-london-2018
+    tags:
+      - Chair
+    title: Aluminum Thermal Spray Chair No.2
+    when: '2018'
 status: Represented
