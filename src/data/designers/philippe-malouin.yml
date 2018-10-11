@@ -35,12 +35,16 @@ works:
     when: '2018'
   - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
     images:
-      - file: philippemalouinstool_dv8svr
+      - file: S94D-PhilippeMalouin-CoreStool-A
+      - file: S94D-PhilippeMalouin-CoreStool-B
+      - file: S94D-PhilippeMalouin-CoreStool-C
+      - file: S94D-PhilippeMalouin-CoreStool-D
+      - file: S94D-PhilippeMalouin-CoreStool-E
     medium: 'cast concrete, exposed aggregate'
     slug: pm-stool
     tags:
       - chair
-    title: Stool
+    title: Core Stool
     when: '2018'
   - dimensions: 137.8 H x 98.4 in dia / 3.5 m H x 2.5 m dia
     edition: Ed. of 8 + 2 AP
