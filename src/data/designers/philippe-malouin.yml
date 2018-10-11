@@ -15,6 +15,12 @@ bio: >-
   operates his design studio.
 press: []
 works:
+  - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
+    images:
+      - file: CoreStoolSpinning
+    medium: 'cast concrete, exposed aggregate'
+    title: Core Stool
+    when: '2018'
   - dimensions: '17.75 x 94.5 x 14 inches (40 x 240 x 35 cm) '
     images:
       - file: s94d-philippemalouin-steelbench-2018
@@ -59,10 +65,35 @@ works:
       - other
     title: Core
     when: '2017'
-  - images:
+  - dimensions: 18.11 x 15.75 x 15.75 inches (46 x 40 x 40 cm)
+    edition: 'Edition of 3, 1 AP'
+    images:
       - file: pm-turntablemid
-    slug: pm-turntable
-    title: Nylon Turntable
+    medium: Nylon
+    slug: pm-turntable-mid
+    tags:
+      - table
+    title: Nylon Turntable (Mid)
+    when: '2017'
+  - dimensions: 11.42 x 31.5 x 31.5 inches (29 x 80 x 80 cm)
+    edition: 'Edition of 3, 1 AP'
+    images:
+      - file: PM2-NylonTurntable-Low
+    medium: Nylon
+    slug: nylon-turntable-low
+    tags:
+      - table
+    title: Nylon Turntable (Low)
+    when: '2017'
+  - dimensions: 31.61 x 11.81 x 11.81 inches (80.3 x 30 x 30 cm)
+    edition: 'Edition of 3, 1 AP'
+    images:
+      - file: PM3-NylonTurntable-High
+    medium: Nylon
+    slug: nylon-turntable-high
+    tags:
+      - table
+    title: Nylon Turntable (High)
     when: '2017'
   - images:
       - file: DSC_1604
