@@ -103,7 +103,7 @@ export const workImageTexts = ({
       .map(workProject => {
         const project = projects.find(p => p && p.slug === workProject.slug)
         return project ? (
-          <Link to={projectLink(workProject)} key={workProject.slug}>
+          <Link to={projectLink(project)} key={project.slug}>
             {project.title}
           </Link>
         ) : null
