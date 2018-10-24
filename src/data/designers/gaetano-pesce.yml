@@ -812,7 +812,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: Pratt-chair-7-orange
+    slug: pratt-chair-orange
     tags:
       - chair
     title: 'Pratt Chair # 7 1984/2018 (orange)'
@@ -827,7 +827,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: Pratt-chair-7-green
+    slug: pratt-chair-green
     tags:
       - chair
     title: 'Pratt Chair #7 1984/2018 (green)'
@@ -842,7 +842,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: Pratt-chair-7-yellow
+    slug: pratt-chair-yellow
     tags:
       - chair
     title: 'Pratt Chair #7 1984/2018 (yellow)'
@@ -857,7 +857,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: Pratt-chair-7-red
+    slug: pratt-chair-red
     tags:
       - chair
     title: 'Pratt Chair #7 1984/2018 (red)'
