@@ -811,7 +811,7 @@ works:
       - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
     medium: 'polyurethane resin, color pigment '
     projects:
-      - slug: Pratt-chair-7-1984-2018
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-orange
     tags:
       - chair
@@ -826,7 +826,7 @@ works:
       - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-E
     medium: 'polyurethane resin, color pigment '
     projects:
-      - slug: Pratt-chair-7-1984-2018
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-green
     tags:
       - chair
@@ -841,7 +841,7 @@ works:
       - file: GaetanoPesce-PrattChairYellow-GPe208-E
     medium: 'polyurethane resin, color pigment '
     projects:
-      - slug: Pratt-chair-7-1984-2018
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-yellow
     tags:
       - chair
@@ -856,7 +856,7 @@ works:
       - file: GaetanoPesce-PrattChairRed-GPe209-E
     medium: 'polyurethane resin, color pigment '
     projects:
-      - slug: Pratt-chair-7-1984-2018
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-red
     tags:
       - chair
