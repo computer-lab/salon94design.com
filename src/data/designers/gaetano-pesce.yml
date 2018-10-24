@@ -872,7 +872,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: pratt-chair-7-1984-2018
-    slug: Pratt-chair-black
+    slug: pratt-chair-black
     tags:
       - chair
     title: 'Pratt Chair #7 1984/2018 (black)'
@@ -900,6 +900,8 @@ works:
       - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-D
       - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-E
     medium: 'polyurethane resin, color pigment '
+    projects:
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-blueandorange
     tags:
       - chair
@@ -913,6 +915,8 @@ works:
       - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-D
       - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-E
     medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-greenandred
     tags:
       - chairs
@@ -932,5 +936,20 @@ works:
     tags:
       - chair
     title: 'Pratt Chair #7 1984/2018'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairLightBlue-GPe212-A
+      - file: GaetanoPesce-PrattChairLightBlue-GPe212-B
+      - file: GaetanoPesce-PrattChairLightBlue-GPe212-C
+      - file: GaetanoPesce-PrattChairLightBlue-GPe212-D
+      - file: GaetanoPesce-PrattChairLightBlue-GPe212-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-lightblue
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (light blue)'
     when: '2018'
 status: Represented
