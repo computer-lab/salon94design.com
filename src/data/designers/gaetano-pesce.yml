@@ -952,4 +952,49 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (light blue)'
     when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairLightOrange-GPe211-A
+      - file: GaetanoPesce-PrattChairLightOrange-GPe211-B
+      - file: GaetanoPesce-PrattChairLightOrange-GPe211-C
+      - file: GaetanoPesce-PrattChairLightOrange-GPe211-D
+      - file: GaetanoPesce-PrattChairLightOrange-GPe211-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: prat-chair-lightorange
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (light orange)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairLightPurple-GPe205-A
+      - file: GaetanoPesce-PrattChairLightPurple-GPe205-B
+      - file: GaetanoPesce-PrattChairLightPurple-GPe205-C
+      - file: GaetanoPesce-PrattChairLightPurple-GPe205-D
+      - file: GaetanoPesce-PrattChairLightPurple-GPe205-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-lightpurple
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (light purple)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: ' GaetanoPesce-PrattChairPurple-GPe207-A'
+      - file: ' GaetanoPesce-PrattChairPurple-GPe207-B'
+      - file: ' GaetanoPesce-PrattChairPurple-GPe207-C'
+      - file: ' GaetanoPesce-PrattChairPurple-GPe207-D'
+      - file: ' GaetanoPesce-PrattChairPurple-GPe207-E'
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-purple
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (purple)'
+    when: '2018'
 status: Represented
