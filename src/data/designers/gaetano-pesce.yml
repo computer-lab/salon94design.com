@@ -1024,4 +1024,19 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (teal)'
     when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: S94_9-14_Design_Chairs_01
+      - file: S94_9-14_Design_Chairs_02
+      - file: S94_9-14_Design_Chairs_04
+      - file: ' S94_9-14_Design_Chairs_06'
+      - file: S94_9-14_Design_Chairs_01
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-pink
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (pink)'
+    when: '2018'
 status: Represented
