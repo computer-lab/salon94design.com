@@ -1012,4 +1012,16 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (blue and yellow)'
     when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairTeal-B
+      - file: GaetanoPesce-PrattChairTeal-F
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-teal
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (teal)'
+    when: '2018'
 status: Represented
