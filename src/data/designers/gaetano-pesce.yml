@@ -862,4 +862,75 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (red)'
     when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairBlack-GPe210-A
+      - file: GaetanoPesce-PrattChairBlack-GPe210-B
+      - file: GaetanoPesce-PrattChairBlack-GPe210-C
+      - file: GaetanoPesce-PrattChairBlack-GPe210-D
+      - file: GaetanoPesce-PrattChairBlack-GPe210-E
+    medium: 'polyurethane resin, color pigment '
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-black
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (black)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairBlue-GPe215-A
+      - file: GaetanoPesce-PrattChairBlue-GPe215-B
+      - file: GaetanoPesce-PrattChairBlue-GPe215-C
+      - file: GaetanoPesce-PrattChairBlue-GPe215-D
+      - file: GaetanoPesce-PrattChairBlue-GPe215-E
+    medium: 'polyurethane resin, color pigment '
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-blue
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (blue)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-A
+      - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-B
+      - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-C
+      - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-D
+      - file: GaetanoPesce-PrattChairBlueAndOrange-GPe217-E
+    medium: 'polyurethane resin, color pigment '
+    slug: pratt-chair-blueandorange
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (blue and orange)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-A
+      - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-B
+      - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-C
+      - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-D
+      - file: GaetanoPesce-PrattChairGreenAndRed-GPe216-E
+    medium: 'polyurethane resin, color pigment'
+    slug: pratt-chair-greenandred
+    tags:
+      - chairs
+    title: 'Pratt Chair #7 1984/2018 (green and red)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: GaetanoPesce-PrattChairGrey-GPe213-A
+      - file: GaetanoPesce-PrattChairGrey-GPe213-B
+      - file: GaetanoPesce-PrattChairGrey-GPe213-C
+      - file: GaetanoPesce-PrattChairGrey-GPe213-D
+      - file: GaetanoPesce-PrattChairGrey-GPe213-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-grey
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018'
+    when: '2018'
 status: Represented
