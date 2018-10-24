@@ -49,8 +49,7 @@ works:
       - Jewelry
     title: Necklace 2
     when: ''
-  - images:
-      - file: /images/lusa3.jpg
+  - images: []
     medium: 22 Karat Gold
     projects:
       - slug: gold
