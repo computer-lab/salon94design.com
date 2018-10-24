@@ -812,7 +812,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: ''
+    slug: Pratt-chair-7-orange
     title: 'Pratt Chair # 7 1984/2018 (orange)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
@@ -825,6 +825,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
+    slug: Pratt-chair-7-green
     title: 'Pratt Chair #7 1984/2018 (green)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
@@ -837,6 +838,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
+    slug: Pratt-chair-7-yellow
     title: 'Pratt Chair #7 1984/2018 (yellow)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
@@ -849,6 +851,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
+    slug: Pratt-chair-7-red
     title: 'Pratt Chair #7 1984/2018 (red)'
     when: '2018'
 status: Represented
