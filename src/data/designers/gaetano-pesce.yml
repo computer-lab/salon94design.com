@@ -803,10 +803,16 @@ works:
     projects:
       - slug: design-miami-2016-pesce
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-B
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-C
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-D
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
     medium: 'Polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
-    slug: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
+    slug: ''
     title: 'Pratt Chair # 7 1984/2018 (orange)'
     when: '2018'
 status: Represented
