@@ -919,7 +919,7 @@ works:
       - slug: pratt-chair-7-1984-2018
     slug: pratt-chair-greenandred
     tags:
-      - chairs
+      - chair
     title: 'Pratt Chair #7 1984/2018 (green and red)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
@@ -935,7 +935,7 @@ works:
     slug: pratt-chair-grey
     tags:
       - chair
-    title: 'Pratt Chair #7 1984/2018'
+    title: 'Pratt Chair #7 1984/2018 (grey)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
