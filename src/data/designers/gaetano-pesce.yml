@@ -813,32 +813,38 @@ works:
     projects:
       - slug: Pratt-chair-7-1984-2018
     slug: Pratt-chair-7-orange
+    tags:
+      - chair
     title: 'Pratt Chair # 7 1984/2018 (orange)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
-      - file: ' S94D-GaetanoPesce-PrattChairGreen-GPe206-A'
-      - file: ' S94D-GaetanoPesce-PrattChairGreen-GPe206-B'
-      - file: ' S94D-GaetanoPesce-PrattChairGreen-GPe206-C'
-      - file: ' S94D-GaetanoPesce-PrattChairGreen-GPe206-D'
-      - file: ' S94D-GaetanoPesce-PrattChairGreen-GPe206-E'
+      - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-A
+      - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-B
+      - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-C
+      - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-D
+      - file: S94D-GaetanoPesce-PrattChairGreen-GPe206-E
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
     slug: Pratt-chair-7-green
+    tags:
+      - chair
     title: 'Pratt Chair #7 1984/2018 (green)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
-      - file: ' GaetanoPesce-PrattChairYellow-GPe208-A'
-      - file: ' GaetanoPesce-PrattChairYellow-GPe208-B'
-      - file: ' GaetanoPesce-PrattChairYellow-GPe208-C'
-      - file: ' GaetanoPesce-PrattChairYellow-GPe208-D'
-      - file: ' GaetanoPesce-PrattChairYellow-GPe208-E'
+      - file: GaetanoPesce-PrattChairYellow-GPe208-A
+      - file: GaetanoPesce-PrattChairYellow-GPe208-B
+      - file: GaetanoPesce-PrattChairYellow-GPe208-C
+      - file: GaetanoPesce-PrattChairYellow-GPe208-D
+      - file: GaetanoPesce-PrattChairYellow-GPe208-E
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: Pratt-chair-7-1984-2018
     slug: Pratt-chair-7-yellow
+    tags:
+      - chair
     title: 'Pratt Chair #7 1984/2018 (yellow)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
@@ -852,6 +858,8 @@ works:
     projects:
       - slug: Pratt-chair-7-1984-2018
     slug: Pratt-chair-7-red
+    tags:
+      - chair
     title: 'Pratt Chair #7 1984/2018 (red)'
     when: '2018'
 status: Represented
