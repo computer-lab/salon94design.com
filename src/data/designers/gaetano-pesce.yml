@@ -206,11 +206,11 @@ works:
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
-      - file: ' GaetanoPesce-PrattChairPurple-GPe207-A'
-      - file: ' GaetanoPesce-PrattChairPurple-GPe207-B'
-      - file: ' GaetanoPesce-PrattChairPurple-GPe207-C'
-      - file: ' GaetanoPesce-PrattChairPurple-GPe207-D'
-      - file: ' GaetanoPesce-PrattChairPurple-GPe207-E'
+      - file: GaetanoPesce-PrattChairPurple-GPe207-A
+      - file: GaetanoPesce-PrattChairPurple-GPe207-B
+      - file: GaetanoPesce-PrattChairPurple-GPe207-C
+      - file: GaetanoPesce-PrattChairPurple-GPe207-D
+      - file: GaetanoPesce-PrattChairPurple-GPe207-E
     medium: 'polyurethane resin, color pigment'
     projects:
       - slug: pratt-chair-7-1984-2018
