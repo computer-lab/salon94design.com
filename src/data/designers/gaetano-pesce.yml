@@ -249,10 +249,12 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (green and red)'
     when: '2018'
-  - images:
+  - dimensions: ' 15.75 x 47.24 x 31.5 inches (40 x 120 x 80 cm)'
+    images:
       - file: GaetanoPesce-MedusaCoffeeTable-A
       - file: GaetanoPesce-MedusaCoffeeTable-B
       - file: GaetanoPesce-MedusaCoffeeTable-C
+    medium: Polyurethane resin
     slug: medusa-coffee-table
     tags:
       - table
