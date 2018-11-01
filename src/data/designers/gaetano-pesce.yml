@@ -176,6 +176,21 @@ works:
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
+      - file: GaetanoPesce-PrattChairPurple-GPe207-A
+      - file: GaetanoPesce-PrattChairPurple-GPe207-B
+      - file: GaetanoPesce-PrattChairPurple-GPe207-C
+      - file: GaetanoPesce-PrattChairPurple-GPe207-D
+      - file: GaetanoPesce-PrattChairPurple-GPe207-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-purple
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (purple)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
       - file: GaetanoPesce-PrattChairBlack-GPe210-A
       - file: GaetanoPesce-PrattChairBlack-GPe210-B
       - file: GaetanoPesce-PrattChairBlack-GPe210-C
@@ -206,18 +221,18 @@ works:
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
-      - file: GaetanoPesce-PrattChairPurple-GPe207-A
-      - file: GaetanoPesce-PrattChairPurple-GPe207-B
-      - file: GaetanoPesce-PrattChairPurple-GPe207-C
-      - file: GaetanoPesce-PrattChairPurple-GPe207-D
-      - file: GaetanoPesce-PrattChairPurple-GPe207-E
-    medium: 'polyurethane resin, color pigment'
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-B
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-C
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-D
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
+    medium: 'polyurethane resin, color pigment '
     projects:
       - slug: pratt-chair-7-1984-2018
-    slug: pratt-chair-purple
+    slug: pratt-chair-orange
     tags:
       - chair
-    title: 'Pratt Chair #7 1984/2018 (purple)'
+    title: 'Pratt Chair # 7 1984/2018 (orange)'
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
@@ -234,21 +249,28 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (green and red)'
     when: '2018'
-  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
-    images:
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-B
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-C
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-D
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
-    medium: 'polyurethane resin, color pigment '
-    projects:
-      - slug: pratt-chair-7-1984-2018
-    slug: pratt-chair-orange
+  - images:
+      - file: GaetanoPesce-MedusaCoffeeTable-A
+      - file: GaetanoPesce-MedusaCoffeeTable-B
+      - file: GaetanoPesce-MedusaCoffeeTable-C
+    slug: medusa-coffee-table
     tags:
-      - chair
-    title: 'Pratt Chair # 7 1984/2018 (orange)'
+      - table
+    title: Medusa coffee table
     when: '2018'
+  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
+    edition: 'Unique '
+    hero: false
+    images:
+      - file: large_bh76wt
+    medium: 'wood, papier maché'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: puglia-cabinet
+    tags:
+      - cabinet
+    title: Puglia Cabinet
+    when: '2007'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
       - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-A
@@ -264,19 +286,6 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (blue and yellow)'
     when: '2018'
-  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
-    edition: 'Unique '
-    hero: false
-    images:
-      - file: large_bh76wt
-    medium: 'wood, papier maché'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: puglia-cabinet
-    tags:
-      - cabinet
-    title: Puglia Cabinet
-    when: '2007'
   - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
     images:
       - file: gpe7_uukgce
@@ -597,15 +606,6 @@ works:
       - vase
     title: Medium Rubber Vase Blue
     when: '2017'
-  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
-    images:
-      - file: gpe140_ubzllm
-    medium: Polyurethane resin
-    slug: small-pebble-vase
-    tags:
-      - vase
-    title: Small Pebble Vase
-    when: '2017'
   - dimensions: 11.02 x 9.06 x 9.06 inches (28 x 23 x 23 cm)
     images:
       - file: gpe36_taw4ww
@@ -617,6 +617,15 @@ works:
     when: '2016'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
+      - file: gpe140_ubzllm
+    medium: Polyurethane resin
+    slug: small-pebble-vase
+    tags:
+      - vase
+    title: Small Pebble Vase
+    when: '2017'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
       - file: gpe143_d0zbbv
     medium: Polyurethane resin
     slug: small-pebble-vase-3
@@ -624,15 +633,6 @@ works:
       - vase
     title: Small Pebble Vase 3
     when: '2017'
-  - dimensions: 11.02 x 17.32 x 17.32 inches (28 x 44 x 44 cm)
-    images:
-      - file: gpe40_ljihta
-    medium: Polyurethane resin
-    slug: 3-leg-vase
-    tags:
-      - vase
-    title: 3 Leg Vase
-    when: '2016'
   - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
     images:
       - file: gpe53_e3qsay
@@ -642,15 +642,15 @@ works:
       - vase
     title: Skinny Vase
     when: '2015'
-  - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
+  - dimensions: 11.02 x 17.32 x 17.32 inches (28 x 44 x 44 cm)
     images:
-      - file: gpe41_i3zcmk
+      - file: gpe40_ljihta
     medium: Polyurethane resin
-    slug: mini-medusa-vase
+    slug: 3-leg-vase
     tags:
       - vase
-    title: Mini Medusa Vase
-    when: '2015'
+    title: 3 Leg Vase
+    when: '2016'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
     images:
       - file: gpe15_qbxbwc
@@ -659,6 +659,15 @@ works:
     tags:
       - vase
     title: Tree Vase Big (4 legs)
+    when: '2015'
+  - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
+    images:
+      - file: gpe41_i3zcmk
+    medium: Polyurethane resin
+    slug: mini-medusa-vase
+    tags:
+      - vase
+    title: Mini Medusa Vase
     when: '2015'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
@@ -803,15 +812,6 @@ works:
       - vase
     title: Mini Flame Vase
     when: '2014'
-  - dimensions: '20 (11) x 20 inches (50.8 (27.94) x 50.8 cm) '
-    images:
-      - file: gpe182-a
-      - file: gpe182-b
-      - file: gpe182-c
-    slug: yellow-vase-giullare
-    tags:
-      - vase
-    title: Yellow Vase Giullare
   - dimensions: 8.66 x 8.27 x 8.27 inches (22 x 21 x 21 cm)
     images:
       - file: gpe11_lxwvro
@@ -821,6 +821,15 @@ works:
       - vase
     title: Tree Vase Small
     when: ''
+  - dimensions: '20 (11) x 20 inches (50.8 (27.94) x 50.8 cm) '
+    images:
+      - file: gpe182-a
+      - file: gpe182-b
+      - file: gpe182-c
+    slug: yellow-vase-giullare
+    tags:
+      - vase
+    title: Yellow Vase Giullare
   - images:
       - file: gpe185-a
       - file: gpe185-b
@@ -844,15 +853,6 @@ works:
     tags:
       - vase
     title: Rock Vase Prototype Blue Small
-  - images:
-      - file: gpe186-a
-      - file: gpe186-b
-      - file: gpe186-c
-      - file: gpe186-d
-    slug: foulard-vase-gpe
-    tags:
-      - vase
-    title: Foulard Vase
   - images:
       - file: gpe179-a
       - file: gpe179-b
@@ -883,14 +883,15 @@ works:
     tags:
       - vase
     title: Rock Vase Prototype Red Large
-  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
-    images:
-      - file: GPe171-MobileVerde-2015-HR-A
-      - file: GPe171-MobileVerde-2015-LR-C
-    medium: 'Steel, wood, polyurethane resin '
-    slug: mobile-verde
-    title: Mobile Verde
-    when: '2015'
+  - images:
+      - file: gpe186-a
+      - file: gpe186-b
+      - file: gpe186-c
+      - file: gpe186-d
+    slug: foulard-vase-gpe
+    tags:
+      - vase
+    title: Foulard Vase
   - images:
       - file: GPe174-54ArmLamp-1998-LR-A
       - file: GPe174-54ArmLamp-1998-LR-B
@@ -901,6 +902,14 @@ works:
       - lighting
     title: 54 Arm Lamp
     when: '1998'
+  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
+    images:
+      - file: GPe171-MobileVerde-2015-HR-A
+      - file: GPe171-MobileVerde-2015-LR-C
+    medium: 'Steel, wood, polyurethane resin '
+    slug: mobile-verde
+    title: Mobile Verde
+    when: '2015'
   - images:
       - file: Ghost_Dog_Install_22
     projects:
@@ -931,6 +940,14 @@ works:
     tags:
       - vase
     title: Stick Vase Black
+  - images:
+      - file: GPe173-54ArmChandelier-1998-LR
+    medium: Resin and copper
+    slug: 54-arm-chandelier
+    tags:
+      - lighting
+    title: 54 Arm Chandelier
+    when: '1998'
   - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
     images:
       - file: GPe172-LaSmorfia-2003-LR-A
@@ -941,13 +958,13 @@ works:
     title: La Smorfia
     when: '2003'
   - images:
-      - file: GPe173-54ArmChandelier-1998-LR
-    medium: Resin and copper
-    slug: 54-arm-chandelier
+      - file: gpe62_u79pkb
+    medium: Polyurethane Resin
+    slug: bracelet-blue-woven
     tags:
-      - lighting
-    title: 54 Arm Chandelier
-    when: '1998'
+      - Jewelry
+    title: Bracelet (Blue Woven)
+    when: ''
   - images:
       - file: gpe190-a
       - file: gpe190-b
@@ -958,12 +975,12 @@ works:
       - vase
     title: Rock Vase Prototype Blue Large
   - images:
-      - file: gpe62_u79pkb
+      - file: gpe56_cwldy7
     medium: Polyurethane Resin
-    slug: bracelet-blue-woven
+    slug: bracelet-green
     tags:
       - Jewelry
-    title: Bracelet (Blue Woven)
+    title: Bracelet (Green)
     when: ''
   - images:
       - file: gpe61_oh17gp
@@ -972,14 +989,6 @@ works:
     tags:
       - Jewelry
     title: Bracelet (Pink)
-    when: ''
-  - images:
-      - file: gpe56_cwldy7
-    medium: Polyurethane Resin
-    slug: bracelet-green
-    tags:
-      - Jewelry
-    title: Bracelet (Green)
     when: ''
   - images:
       - file: Design_Miami_2016_09
@@ -1016,11 +1025,11 @@ works:
     projects:
       - slug: design-miami-2016-pesce
   - images:
-      - file: Design_Miami_2016_03
+      - file: Design_Miami_2016_01
     projects:
       - slug: design-miami-2016-pesce
   - images:
-      - file: Design_Miami_2016_01
+      - file: Design_Miami_2016_03
     projects:
       - slug: design-miami-2016-pesce
   - images:
@@ -1040,13 +1049,4 @@ works:
     projects:
       - slug: design-miami-2016-pesce
       - {}
-  - images:
-      - file: GaetanoPesce-MedusaCoffeeTable-A
-      - file: GaetanoPesce-MedusaCoffeeTable-B
-      - file: GaetanoPesce-MedusaCoffeeTable-C
-    slug: medusa-coffee-table
-    tags:
-      - table
-    title: Medusa coffee table
-    when: '2018'
 status: Represented
