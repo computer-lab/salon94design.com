@@ -179,12 +179,10 @@ works:
     when: '2018'
   - dimensions: 37.4 x 17.72 x 17.72 inches (95 x 45 x 45 cm)
     images:
-      - file: S94D-DK27-A
-      - file: S94D-DK27-B
-      - file: S94D-DK27-C
-      - file: S94D-DK27-D
-      - file: S94D-DK27-E
-      - file: S94D-DK27-F
+      - file: DozieKanu-FoamChair-A
+      - file: 10-18-18_4690
+      - file: 10-18-18_4691
+      - file: 10-18-18_4692
     medium: 'Aluminum frame, recycled foam, plastic straps'
     slug: chair-iv
     tags:
