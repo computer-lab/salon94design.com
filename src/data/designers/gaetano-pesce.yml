@@ -1056,24 +1056,30 @@ works:
       - {}
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_04
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_03
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_02
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_10
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_05
     projects:
       - slug: pratt-chair-7-1984-2018
+    title: 'Pratt Chair #7 1989/2018 Installation view'
 status: Represented
