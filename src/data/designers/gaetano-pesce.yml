@@ -1056,30 +1056,42 @@ works:
       - {}
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-7
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_04
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-6
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_03
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-5
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_02
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-4
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_10
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-3
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
       - file: S94D_Pesce_05
     projects:
       - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-2
     title: 'Pratt Chair #7 1989/2018 Installation view'
+  - images:
+      - file: ' S94D_Pesce_01D'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-1
+    title: 'Pratt Chair #7 1984/2018 Installation view'
 status: Represented
