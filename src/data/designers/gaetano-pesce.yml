@@ -1051,4 +1051,9 @@ works:
     projects:
       - slug: design-miami-2016-pesce
       - {}
+  - images:
+      - file: S94D_Pesce_17
+      - {}
+    projects:
+      - slug: pratt-chair-7-1984-2018
 status: Represented
