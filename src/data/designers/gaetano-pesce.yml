@@ -1056,4 +1056,24 @@ works:
       - {}
     projects:
       - slug: pratt-chair-7-1984-2018
+  - images:
+      - file: S94D_Pesce_04
+    projects:
+      - slug: pratt-chair-7-1984-2018
+  - images:
+      - file: S94D_Pesce_03
+    projects:
+      - slug: pratt-chair-7-1984-2018
+  - images:
+      - file: S94D_Pesce_02
+    projects:
+      - slug: pratt-chair-7-1984-2018
+  - images:
+      - file: S94D_Pesce_10
+    projects:
+      - slug: pratt-chair-7-1984-2018
+  - images:
+      - file: S94D_Pesce_05
+    projects:
+      - slug: pratt-chair-7-1984-2018
 status: Represented
