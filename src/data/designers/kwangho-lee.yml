@@ -25,6 +25,7 @@ works:
       - file: S94D-KwanghoLee-ShapeofaRiver
     projects:
       - slug: design-miami-basel-2018-kwangholee
+    slug: klee20-flip
     tags:
       - ''
   - dimensions: 24.21 x 26.3 x 22.05 inches (61.5 x 66.8 x 56 cm)
@@ -60,6 +61,7 @@ works:
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: orange-arm-chair-2018
     tags:
       - chair
@@ -72,6 +74,7 @@ works:
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: green-chair-2018
     tags:
       - chair
@@ -84,6 +87,7 @@ works:
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: blue-orange-console
     tags:
       - table
@@ -120,6 +124,7 @@ works:
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: red-orange-chair-2018
     tags:
       - chair
@@ -142,6 +147,7 @@ works:
     medium: Copper
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: copper-chair-1-2018
     tags:
       - chair
@@ -236,6 +242,7 @@ works:
     medium: Copper
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: copper-chair-2-2018
     tags:
       - chair
@@ -259,6 +266,7 @@ works:
     medium: Copper
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: copper-arm-chair-2018
     tags:
       - chair
@@ -281,6 +289,7 @@ works:
     medium: Copper
     projects:
       - slug: design-miami-basel-2018-kwangholee
+      - slug: design-miami-2018
     slug: copper-chair-3-2018
     tags:
       - chair
