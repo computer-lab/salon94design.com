@@ -187,14 +187,14 @@ works:
     when: '2017'
   - dimensions: 14.5 x 20 x 20 inches (36.8 x 50.8 x 50.8 cm)
     images:
-      - file: s94d-tos46-smallcoffeetable
+      - file: s94d-tos46-largecoffeetable
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2018
-    slug: tom-sachs-small-coffee-table
+    slug: tom-sachs-large-coffee-table
     tags:
       - table
-    title: Small Coffee Table
+    title: Large Coffee Table
     when: '2018'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
     images:
