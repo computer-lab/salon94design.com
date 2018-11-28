@@ -568,7 +568,6 @@ works:
     medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
     projects:
       - slug: design-miami-2018
-      - {}
     slug: tbar44-1
     tags:
       - chair
