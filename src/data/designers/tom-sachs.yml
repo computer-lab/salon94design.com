@@ -311,4 +311,15 @@ works:
       - file: UPTOWN_INSTALL-14
   - images:
       - file: UPTOWN_INSTALL-15
+  - dimensions: 14.5 x 20 x 20 inches (36.8 x 50.8 x 50.8 cm)
+    images:
+      - file: s94d-tos45-smallcoffeetable
+    medium: 'Plywood, latex paint, epoxy resin, steel hardware'
+    projects:
+      - slug: design-miami-2018
+    slug: tom-sachs-small-coffee-table
+    tags:
+      - table
+    title: Small Coffee Table
+    when: '2018'
 status: Represented
