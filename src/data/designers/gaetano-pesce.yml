@@ -29,6 +29,7 @@ press:
     title: Wallpaper* - December 2016
 works:
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    hero: true
     images:
       - file: GaetanoPesce-PrattChairLightOrange-GPe211-A
       - file: GaetanoPesce-PrattChairLightOrange-GPe211-B
@@ -170,6 +171,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
     slug: pratt-chair-yellow
     tags:
       - chair
@@ -185,6 +187,7 @@ works:
     medium: 'polyurethane resin, color pigment'
     projects:
       - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
     slug: pratt-chair-purple
     tags:
       - chair
@@ -895,11 +898,14 @@ works:
     tags:
       - vase
     title: Foulard Vase
-  - images:
+  - dimensions: 103.5 x 59 x 50 inches (262.9 x 149.9 x 127 cm)
+    images:
       - file: GPe174-54ArmLamp-1998-LR-A
       - file: GPe174-54ArmLamp-1998-LR-B
       - file: GPe174-54ArmLamp-1998-LR-C
-    medium: 'resin copper and plastic '
+    medium: 'Resin, copper, and plastic '
+    projects:
+      - slug: design-miami-2018
     slug: 54-arm-lamp
     tags:
       - lighting
@@ -909,8 +915,12 @@ works:
     images:
       - file: GPe171-MobileVerde-2015-HR-A
       - file: GPe171-MobileVerde-2015-LR-C
-    medium: 'Steel, wood, polyurethane resin '
+    medium: 'Steel, wood, and polyurethane resin '
+    projects:
+      - slug: design-miami-2018
     slug: mobile-verde
+    tags:
+      - storage
     title: Mobile Verde
     when: '2015'
   - images:
@@ -955,6 +965,8 @@ works:
     images:
       - file: GPe172-LaSmorfia-2003-LR-A
     medium: Resin and PVC
+    projects:
+      - slug: design-miami-2018
     slug: la-smorfia
     tags:
       - chair
@@ -1018,6 +1030,8 @@ works:
     images:
       - file: GPe170-GrownChair-2012-LR-A
     medium: Fabric coated with epoxy resin
+    projects:
+      - slug: design-miami-2018
     slug: grown-chair
     tags:
       - chair
