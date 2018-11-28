@@ -49,6 +49,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+      - slug: design-miami-2018
     slug: mla135-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
@@ -91,6 +92,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+      - slug: design-miami-2018
     slug: mla138-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
@@ -119,6 +121,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+      - slug: design-miami-2018
     slug: mla140-maxlamb-aluminumthermalspraychair
     tags:
       - Chair
@@ -162,6 +165,7 @@ works:
     medium: Polystyrene and aluminum
     projects:
       - slug: frieze-london-2018
+      - slug: design-miami-2018
     slug: mla143-maxlamb-aluminumthermalspraystool
     tags:
       - Table
@@ -200,6 +204,8 @@ works:
   - hero: true
     images:
       - file: ThermalSprayCopperChair_1_ExpoChicago
+    projects:
+      - slug: design-miami-2018
   - dimensions: 27.5 x 100 x 28 inches (69.9 x 254 x 71.1 cm)
     images:
       - file: mla100-thermalspraybench_bronze_2018_b
@@ -222,6 +228,7 @@ works:
     medium: 'Polystyrene and copper '
     projects:
       - slug: expo-chicago-max-lamb-2018
+      - slug: design-miami-2018
     slug: thermal-spray-bench-copper-2018
     tags:
       - bench
@@ -246,6 +253,8 @@ works:
       - file: MLa102-ThermalSprayChair_Aluminium_2018_C
       - file: MLa102-ThermalSprayChair_Aluminium_2018_D
     medium: 'Polystyrene and aluminum '
+    projects:
+      - slug: design-miami-2018
     slug: thermal-spray-chair-aluminum-2018
     tags:
       - chair
@@ -272,6 +281,7 @@ works:
     medium: 'Polystyrene and copper '
     projects:
       - slug: expo-chicago-max-lamb-2018
+      - slug: design-miami-2018
     slug: thermal-spray-chair-copper-1-2018
     tags:
       - chair
@@ -286,6 +296,7 @@ works:
     medium: 'Polystyrene and copper '
     projects:
       - slug: expo-chicago-max-lamb-2018
+      - slug: design-miami-2018
     slug: thermal-spray-chair-copper-2-2018
     tags:
       - chair
@@ -300,6 +311,7 @@ works:
     medium: Polystyrene and copper
     projects:
       - slug: expo-chicago-max-lamb-2018
+      - slug: design-miami-2018
     slug: thermal-spray-planter-copper-2018
     tags:
       - planter
@@ -314,6 +326,7 @@ works:
     medium: Polystyrene and bronze
     projects:
       - slug: expo-chicago-max-lamb-2018
+      - slug: design-miami-2018
     slug: thermal-spray-table-bronze-2018
     tags:
       - table
@@ -384,10 +397,12 @@ works:
       - file: mla-78-e_xne7jj
       - file: mla-78-f_ep14s2
     medium: Bronze
+    projects:
+      - slug: design-miami-2018
     slug: thermal-spray-chair
     tags:
       - chair
-    title: Thermal Spray Chair
+    title: Thermal Spray Arm Chair Bronze
     when: '2017'
   - dimensions: 29.13 x 83.46 x 52.36 inches (74 x 212 x 133 cm)
     edition: 'unique, initials carved on side'
@@ -436,6 +451,8 @@ works:
       - file: mla-79-g_vhxshz
       - file: mla-79-h_tmksjk
     medium: polystyrene and copper
+    projects:
+      - slug: design-miami-2018
     slug: thermal-spray-chair-Copper
     tags:
       - chair
