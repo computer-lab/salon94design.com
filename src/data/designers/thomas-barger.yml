@@ -534,4 +534,44 @@ works:
       - chair
     title: Tall Church Boys (black)
     when: '2018'
+  - dimensions: 62 x 17 1/2 x 19 inches (157.5 x 44.5 x 48.3 cm)
+    images:
+      - file: S94D-TBar42-ThomasBarger-A
+      - file: S94D-TBar42-ThomasBarger-B
+      - file: S94D-TBar42-ThomasBarger-C
+    medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: design-miami-2018
+    slug: tbar42-1
+    tags:
+      - chair
+    title: Tall Church Boy (black) - 1
+    when: '2018'
+  - dimensions: 62 x 17 1/2 x 19 inches (157.5 x 44.5 x 48.3 cm)
+    images:
+      - file: S94D-TBar43-ThomasBarger-A
+      - file: S94D-TBar43-ThomasBarger-B
+      - file: S94D-TBar43-ThomasBarger-C
+    medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: design-miami-2018
+    slug: tbar43-1
+    tags:
+      - chair
+    title: Tall Church Boy (black) - 2
+    when: '2018'
+  - dimensions: 62 x 17 1/2 x 19 inches (157.5 x 44.5 x 48.3 cm)
+    images:
+      - file: S94D-TBar44-ThomasBarger-A
+      - file: S94D-TBar44-ThomasBarger-B
+      - file: S94D-TBar44-ThomasBarger-C
+    medium: 'Paper pulp, plywood, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: design-miami-2018
+      - {}
+    slug: tbar44-1
+    tags:
+      - chair
+    title: Tall Church Boy (black) - 3
+    when: '2018'
 status: Represented
