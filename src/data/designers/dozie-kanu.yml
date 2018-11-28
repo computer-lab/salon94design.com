@@ -32,7 +32,7 @@ press:
 works:
   - dimensions: 20.5 x 104 x 18 inches (52.1 x 264.2 x 45.7 cm)
     edition: Unique
-    hero: true
+    hero: false
     images:
       - file: large_lhrpnx
     medium: 'poured concrete, steel '
@@ -172,6 +172,8 @@ works:
     images:
       - file: dk18-dontfoldyoungboy-doziekanu
     medium: 'RIMOWA aluminum sheet, steel'
+    projects:
+      - slug: design-miami-2018
     slug: do-not-fold-young-boy-2018-dk
     tags:
       - shelf
@@ -181,9 +183,9 @@ works:
     images:
       - file: DozieKanu-FoamChair-A
       - file: 10-18-18_4690
-      - file: 10-18-18_4691
-      - file: 10-18-18_4692
     medium: 'Aluminum frame, recycled foam, plastic straps'
+    projects:
+      - slug: design-miami-2018
     slug: chair-iv
     tags:
       - chair
