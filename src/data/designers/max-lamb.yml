@@ -906,4 +906,34 @@ works:
       - file: im029615_003-int
       - file: im029615_004-int
     title: Exercising in Seating - The Art Institute of Chicago
+  - images:
+      - file: MLa111-MaxLamb-LimestoneLamp-A
+    medium: limestone
+    projects:
+      - slug: design-miami-2018
+    slug: mla-limestone-lamp
+    tags:
+      - lighting
+    title: Limestone Lamp
+    when: '2018'
+  - images:
+      - file: MLa112-MaxLamb-CarraraMarbleLamp-A
+    medium: marble
+    projects:
+      - slug: design-miami-2018
+    slug: mla-marble-lamp
+    tags:
+      - lighting
+    title: Marble Lamp
+    when: '2018'
+  - images:
+      - file: MLa113-MaxLamb-GraniteLamo-A
+    medium: granite
+    projects:
+      - slug: design-miami-2018
+    slug: mla-granite-lamp
+    tags:
+      - lighting
+    title: Granite Lamp
+    when: '2031'
 status: Represented
