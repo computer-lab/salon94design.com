@@ -1114,7 +1114,6 @@ works:
     medium: resin
     projects:
       - slug: pratt-chair-7-1984-2018
-      - slug: design-miami-2018
     slug: gaetano-pesce-vase2
     tags:
       - vase
@@ -1136,7 +1135,6 @@ works:
     medium: resin
     projects:
       - slug: pratt-chair-7-1984-2018
-      - slug: design-miami-2018
     slug: gaetano-pesce-vase1
     tags:
       - vase
@@ -1169,7 +1167,6 @@ works:
     medium: resin
     projects:
       - slug: pratt-chair-7-1984-2018
-      - slug: design-miami-2018
     slug: gaetano-pesce-vase6
     tags:
       - vase
