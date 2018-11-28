@@ -40,6 +40,8 @@ works:
     images:
       - file: s94d_tbar105_pinkxchair_lr
     medium: 'Plywood, latex paint, leather, steel hardware, and epoxy resin'
+    projects:
+      - slug: design-miami-2018
     slug: pink-x-chair-prototype-2018
     tags:
       - chair
