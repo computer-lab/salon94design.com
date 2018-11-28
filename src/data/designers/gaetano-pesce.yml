@@ -29,7 +29,7 @@ press:
     title: Wallpaper* - December 2016
 works:
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
-    hero: true
+    hero: false
     images:
       - file: GaetanoPesce-PrattChairLightOrange-GPe211-A
       - file: GaetanoPesce-PrattChairLightOrange-GPe211-B
@@ -1109,4 +1109,81 @@ works:
       - slug: pratt-chair-7-1984-2018
     slug: Pratt-chair-install-1
     title: 'Pratt Chair #7 1984/2018 Installation view'
+  - images:
+      - file: S94D_Pesce_13
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase2
+    tags:
+      - vase
+    title: 'Vase #2'
+    when: '2018'
+  - images:
+      - file: S94D_Pesce_14
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase3
+    tags:
+      - vase
+    title: 'Vase #3'
+    when: '2018'
+  - images:
+      - file: S94D_Pesce_15
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase1
+    tags:
+      - vase
+    title: 'Vase  #1'
+    when: '2018'
+  - images:
+      - file: S94D_Pesce_12
+    medium: resin
+    projects:
+      - slug: design-miami-2018
+      - slug: pratt-chair-7-1984-2018
+    slug: gaetano-pesce-vase4
+    tags:
+      - vase
+    title: 'Vase #4'
+    when: '2018'
+  - images:
+      - file: S94D_Works_Pesce_07
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase5
+    tags:
+      - vase
+    title: 'Vase #5'
+    when: '2018'
+  - images:
+      - file: S94D_Pesce_16
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase6
+    tags:
+      - vase
+    title: 'Vase #6'
+    when: '2018'
+  - images:
+      - file: ' S94D_Works_Pesce_05'
+    medium: resin
+    projects:
+      - slug: pratt-chair-7-1984-2018
+      - slug: design-miami-2018
+    slug: gaetano-pesce-vase7
+    tags:
+      - vase
+    title: 'Vase #7'
+    when: '2018'
 status: Represented
