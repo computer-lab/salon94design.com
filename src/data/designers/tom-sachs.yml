@@ -55,6 +55,8 @@ works:
       - file: ToS71-BritishRacing_GreenXChair-2018-D-LR
       - file: ToS71-BritishRacing_GreenXChair-2018-E-LR
     medium: 'Plywood, Latex Paint, Leather, Steel Hardware, Epoxy Resin'
+    projects:
+      - slug: design-miami-2018
     slug: british-racing-green-x-chair
     tags:
       - chair
@@ -165,6 +167,7 @@ works:
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2017-tom-sachs
+      - slug: design-miami-2018
     slug: medium-round-table
     tags:
       - Table
@@ -176,6 +179,7 @@ works:
     medium: 'Plywood, latex paint, epoxy resin, steel hardware'
     projects:
       - slug: design-miami-2017-tom-sachs
+      - slug: design-miami-2018
     slug: side-table
     tags:
       - Table
