@@ -574,4 +574,34 @@ works:
       - chair
     title: Tall Church Boy (black) - 3
     when: '2018'
+  - images:
+      - file: tbar-46-doughboychair
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: design-miami-2018
+    slug: doughboy-chair-tbar46
+    tags:
+      - chair
+    title: Doughboy Chair
+    when: '2018'
+  - images:
+      - file: tbar-48-passionoftheholechair
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: design-miami-2018
+    slug: passion-of-hole-tbar47
+    tags:
+      - chair
+    title: Passion of the Hole Chair No.1
+    when: '2018'
+  - images:
+      - file: tbar-49-savethefabergeegg
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: design-miami-2018
+    slug: tbar49-save-the-faberge-egg
+    tags:
+      - chair
+    title: 'Save the Faberge Egg, Save the World'
+    when: '2018'
 status: Represented
