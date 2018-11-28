@@ -185,6 +185,17 @@ works:
       - Table
     title: 'Side Table '
     when: '2017'
+  - dimensions: 14.5 x 20 x 20 inches (36.8 x 50.8 x 50.8 cm)
+    images:
+      - file: s94d-tos46-smallcoffeetable
+    medium: 'Plywood, latex paint, epoxy resin, steel hardware'
+    projects:
+      - slug: design-miami-2018
+    slug: tom-sachs-small-coffee-table
+    tags:
+      - table
+    title: Small Coffee Table
+    when: '2018'
   - dimensions: 7 7/8 x 7 1/4 x 6 1/8 inches (20 x 18.4 x 15.6 cm)
     images:
       - file: large_ysnmbj
@@ -212,6 +223,16 @@ works:
     slug: united-states
     title: United States
     when: '2013'
+  - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
+    images: []
+    medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
+    projects:
+      - slug: design-miami-2017-tom-sachs
+    slug: coned-pedestal-table
+    tags:
+      - Table
+    title: ConEd Pedestal Table
+    when: '2017'
   - dimensions: 47.5 x 12 x 7 inches (120.7 x 30.5 x 17.8 cm)
     images:
       - file: large_kvo346
@@ -223,16 +244,6 @@ works:
       - Lighting
     title: Eileen Gray Lamp
     when: '2003'
-  - dimensions: 20 x 18.5 x 18.5 inches (50.8 x 47 x 47 cm)
-    images: []
-    medium: 'ConEd Barrier, plywood, latex paint, epoxy resin, steel hardware'
-    projects:
-      - slug: design-miami-2017-tom-sachs
-    slug: coned-pedestal-table
-    tags:
-      - Table
-    title: ConEd Pedestal Table
-    when: '2017'
   - images:
       - {}
     projects:
@@ -242,11 +253,11 @@ works:
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
-      - file: DSC_1634
+      - file: DSC_1637
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
-      - file: DSC_1637
+      - file: DSC_1634
     projects:
       - slug: design-miami-2017-tom-sachs
   - images:
@@ -300,15 +311,4 @@ works:
       - file: UPTOWN_INSTALL-14
   - images:
       - file: UPTOWN_INSTALL-15
-  - dimensions: 14.5 x 20 x 20 inches (36.8 x 50.8 x 50.8 cm)
-    images:
-      - file: s94d-tos46-smallcoffeetable
-    medium: 'Plywood, latex paint, epoxy resin, steel hardware'
-    projects:
-      - slug: design-miami-2018
-    slug: tom-sachs-small-coffee-table
-    tags:
-      - table
-    title: Small Coffee Table
-    when: '2018'
 status: Represented
