@@ -1104,7 +1104,7 @@ works:
     slug: Pratt-chair-install-2
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
-      - file: ' S94D_Pesce_01D'
+      - file: S94D_Pesce_01D
     projects:
       - slug: pratt-chair-7-1984-2018
     slug: Pratt-chair-install-1
@@ -1176,7 +1176,7 @@ works:
     title: 'Vase #6'
     when: '2018'
   - images:
-      - file: ' S94D_Works_Pesce_05'
+      - file: S94D_Works_Pesce_05
     medium: resin
     projects:
       - slug: pratt-chair-7-1984-2018
