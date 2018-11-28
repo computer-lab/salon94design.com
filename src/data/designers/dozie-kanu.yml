@@ -32,7 +32,7 @@ press:
 works:
   - dimensions: 20.5 x 104 x 18 inches (52.1 x 264.2 x 45.7 cm)
     edition: Unique
-    hero: false
+    hero: true
     images:
       - file: large_lhrpnx
     medium: 'poured concrete, steel '
@@ -190,5 +190,25 @@ works:
     tags:
       - chair
     title: 'chair [iv]'
+    when: '2018'
+  - images:
+      - file: S94D-DozieKanu-concrete2
+    medium: ''
+    projects:
+      - slug: design-miami-2018
+    slug: dk-concrete-2
+    tags:
+      - chair
+    title: Concrete 2
+    when: '2018'
+  - images:
+      - file: S94D-DozieKanu-concrete5
+    medium: concrete
+    projects:
+      - slug: design-miami-2018
+    slug: dk-conrete5
+    tags:
+      - chair
+    title: Concrete 5
     when: '2018'
 status: Represented
