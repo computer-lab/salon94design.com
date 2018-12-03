@@ -174,8 +174,7 @@ works:
     images:
       - file: dk18-dontfoldyoungboy-doziekanu
     medium: 'RIMOWA aluminum sheet, steel'
-    projects:
-      - slug: design-miami-2018
+    projects: []
     slug: do-not-fold-young-boy-2018-dk
     tags:
       - shelf
