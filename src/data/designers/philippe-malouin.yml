@@ -13,7 +13,11 @@ bio: >-
   Philippe has won the W Hotels ‘Designer of the Future’ Award and the Wallpaper
   ‘Best Use of Material’ Award. Philippe lives and works in London, where he
   operates his design studio.
-press: []
+press:
+  - file: /images/PM-Dezeen-08-02-2018.pdf
+    title: 'Dezeen, August 2018'
+  - file: /images/PM-DesignBoom-12-08-17.pdf
+    title: 'Design Boom, December 2017'
 works:
   - dimensions: 15.75 x 15.75 x 19.09 inches (40 x 40 x 48.5 cm)
     images:
