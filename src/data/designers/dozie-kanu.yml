@@ -57,13 +57,6 @@ works:
     slug: table-on-84s
     title: 'Table on 84s '
     when: '2018'
-  - dimensions: 20 1/2 x 18 x 68 inches (52.1 x 45.7 x 172.7 cm)
-    images:
-      - file: S94D-DK2-DonzieKanu-CommissionedBenchon84s-2017-HR
-    medium: poured concrete and steel
-    slug: commissioned-bench-on-84s
-    title: Commissioned Bench on 84s
-    when: '2018'
   - images:
       - file: LEVER_HOUSE_INSTALL_2
     projects:
@@ -86,33 +79,6 @@ works:
       - storage
     title: RIMOWA Shell 1
     when: '2018'
-  - dimensions: 12.99 x 18.11 x 14.96 inches (33 x 46 x 38 cm)
-    images:
-      - file: dk7-rimowashell2-doziekanu
-    medium: 'Marble, RIMOWA shell'
-    slug: rimowa-shell-2-dk
-    tags:
-      - storage
-    title: RIMOWA Shell 2
-    when: '2018'
-  - dimensions: 37.4 x 26.77 x .79 inches (95 x 68 x 2 cm)
-    images:
-      - file: dk8-fracturedreflection1-doziekanu_copy
-    medium: 'RIMOWA aluminum sheet, mirror, marble'
-    slug: fractured-reflection-1-dk
-    tags:
-      - other
-    title: Fractured Reflection 1
-    when: '2018'
-  - dimensions: 37.4 x 26.77 x .79 inches (95 x 68 x 2 cm)
-    images:
-      - file: dk9-fracturedreflection2-doziekanu
-    medium: 'RIMOWA aluminum sheet, mirror, marble'
-    slug: fractured-reflection-2-dk
-    tags:
-      - other
-    title: Fractured Reflection 2
-    when: '2018'
   - dimensions: 37.4 x 17.72 x 21.65 inches (95 x 45 x 55 cm)
     images:
       - file: dk10-chair_iv_for_rimowaa-doziekanu
@@ -121,24 +87,6 @@ works:
     tags:
       - chair
     title: 'Chair [iv] for Rimowa A'
-    when: '2018'
-  - dimensions: 37.4 x 17.72 x 21.65 inches (95 x 45 x 55 cm)
-    images:
-      - file: dk11-chair_iv_for_rimowab-doziekanu
-    medium: 'RIMOWA aluminum frame, recycled foam, plastic straps'
-    slug: chair-iv-for-rimowa-b-dk
-    tags:
-      - chair
-    title: 'Chair [iv] for Rimowa B'
-    when: '2018'
-  - dimensions: 15.75 x 16.14 x 16.14 inches (40 x 41 x 41 cm)
-    images:
-      - file: dk12-pompeiipiru-doziekanu
-    medium: RIMOWA aluminum sheet
-    slug: pompeii-piru-dk-2018
-    tags:
-      - other
-    title: Pompeii Piru
     when: '2018'
   - dimensions: 15.75 x 16.14 x 16.14 inches (40 x 41 x 41 cm)
     images:
@@ -182,7 +130,6 @@ works:
     when: '2018'
   - dimensions: 37.4 x 17.72 x 17.72 inches (95 x 45 x 45 cm)
     images:
-      - file: DozieKanu-FoamChair-A
       - file: 10-18-18_4690
     medium: 'Aluminum frame, recycled foam, plastic straps'
     projects:
@@ -191,25 +138,5 @@ works:
     tags:
       - chair
     title: 'chair [iv]'
-    when: '2018'
-  - images:
-      - file: S94D-DozieKanu-concrete2
-    medium: ''
-    projects:
-      - slug: design-miami-2018
-    slug: dk-concrete-2
-    tags:
-      - chair
-    title: Concrete 2
-    when: '2018'
-  - images:
-      - file: S94D-DozieKanu-concrete5
-    medium: concrete
-    projects:
-      - slug: design-miami-2018
-    slug: dk-conrete5
-    tags:
-      - chair
-    title: Concrete 5
     when: '2018'
 status: Represented
