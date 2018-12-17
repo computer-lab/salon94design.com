@@ -53,6 +53,7 @@ works:
       - file: klee20-kwangholee-bluecabinet-2018-a
       - file: klee20-kwangholee-bluecabinet-2018-b
       - file: klee20-kwangholee-bluecabinet-2018-c
+      - {}
     medium: 'Enamel, copper, wood'
     projects:
       - slug: design-miami-basel-2018-kwangholee
@@ -428,4 +429,11 @@ works:
       - Bench
     title: Large Nylon Bench
     when: '2006'
+  - images:
+      - file: JRH2657_SALON94_2_PS_hires
+    projects:
+      - slug: design-miami-2018
+    slug: DM18-installview-1
+    title: Design Miami/ 2018 Installation View
+    when: '2018'
 status: Represented
