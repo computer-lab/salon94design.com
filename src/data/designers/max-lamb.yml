@@ -936,4 +936,19 @@ works:
       - lighting
     title: Granite Lamp
     when: '2031'
+  - images:
+      - file: FIAC_2018_Install_01
+    slug: fiat-2018-install-1
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_04
+    slug: fiac-2018-install-2
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_07
+    slug: fiac-2018-install-3
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
 status: Represented
