@@ -60,6 +60,12 @@ works:
     slug: Pratt-chair-install-2
     title: 'Pratt Chair #7 1989/2018 Installation view'
   - images:
+      - file: S94D_Pesce_03
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: Pratt-chair-install-5
+    title: 'Pratt Chair #7 1989/2018 Installation view'
+  - images:
       - file: S94D_Pesce_01D
     projects:
       - slug: pratt-chair-7-1984-2018
@@ -231,6 +237,21 @@ works:
     when: '2018'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-B
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-C
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-D
+      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
+    medium: 'polyurethane resin, color pigment '
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-orange
+    tags:
+      - chair
+    title: 'Pratt Chair # 7 1984/2018 (orange)'
+    when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
       - file: GaetanoPesce-PrattChairPurple-GPe207-A
       - file: GaetanoPesce-PrattChairPurple-GPe207-B
       - file: GaetanoPesce-PrattChairPurple-GPe207-C
@@ -245,27 +266,6 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (purple)'
     when: '2018'
-  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
-    images:
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-A
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-B
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-C
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-D
-      - file: S94D-GaetanoPesce-PrattChairOrange-GPe204-E
-    medium: 'polyurethane resin, color pigment '
-    projects:
-      - slug: pratt-chair-7-1984-2018
-    slug: pratt-chair-orange
-    tags:
-      - chair
-    title: 'Pratt Chair # 7 1984/2018 (orange)'
-    when: '2018'
-  - images:
-      - file: S94D_Pesce_03
-    projects:
-      - slug: pratt-chair-7-1984-2018
-    slug: Pratt-chair-install-5
-    title: 'Pratt Chair #7 1989/2018 Installation view'
   - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
     images:
       - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-A
