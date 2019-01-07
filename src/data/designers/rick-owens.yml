@@ -233,4 +233,19 @@ works:
       - Sofa
     title: Double Récamier 1
     when: '2007'
+  - images:
+      - file: FIAC_2018_Install_01
+    slug: fiac2018-install-1
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_04
+    slug: fiac2018-install-2
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_07
+    slug: fiac2018-install-3
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
 status: Represented
