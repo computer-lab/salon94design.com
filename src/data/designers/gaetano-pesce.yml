@@ -253,6 +253,21 @@ works:
       - chair
     title: 'Pratt Chair #7 1984/2018 (green and red)'
     when: '2018'
+  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
+    images:
+      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-A
+      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-B
+      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-C
+      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-D
+      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-E
+    medium: 'polyurethane resin, color pigment'
+    projects:
+      - slug: pratt-chair-7-1984-2018
+    slug: pratt-chair-blueandyellow
+    tags:
+      - chair
+    title: 'Pratt Chair #7 1984/2018 (blue and yellow)'
+    when: '2018'
   - dimensions: ' 15.75 x 47.24 x 31.5 inches (40 x 120 x 80 cm)'
     images:
       - file: GaetanoPesce-MedusaCoffeeTable-A
@@ -277,21 +292,6 @@ works:
       - cabinet
     title: Puglia Cabinet
     when: '2007'
-  - dimensions: 37 x 19 x 20 inches (94 x 48.3 x 50.8 cm)
-    images:
-      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-A
-      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-B
-      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-C
-      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-D
-      - file: S94D-GaetanoPesce-PrattChairBlueAndYellow-GPe214-E
-    medium: 'polyurethane resin, color pigment'
-    projects:
-      - slug: pratt-chair-7-1984-2018
-    slug: pratt-chair-blueandyellow
-    tags:
-      - chair
-    title: 'Pratt Chair #7 1984/2018 (blue and yellow)'
-    when: '2018'
   - dimensions: 92.91 x 44.88 x 30.31 inches (236 x 114 x 77 cm)
     images:
       - file: gpe7_uukgce
