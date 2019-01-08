@@ -462,33 +462,6 @@ works:
       - table
     title: Golgotha Table
     when: '1972'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe_24_nur33k
-    medium: Polyurethane resin
-    slug: trash-can-4
-    tags:
-      - other
-    title: Trash Can 4
-    when: '2016'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe22_xixpor
-    medium: Polyurethane resin
-    slug: trash-can-2
-    tags:
-      - other
-    title: Trash Can 2
-    when: '2016'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe25_pnqsfj
-    medium: Polyurethane resin
-    slug: trash-can-5
-    tags:
-      - other
-    title: Trash Can 5
-    when: '2016'
   - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
     images:
       - file: gpe129
@@ -516,15 +489,6 @@ works:
     when: '2016'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: gpe20_wuxxqn
-    medium: Polyurethane resin
-    slug: jeanne-chair-3
-    tags:
-      - Chair
-    title: Jeanne Chair 3
-    when: '2016'
-  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
-    images:
       - file: gpe19_ns6buc
     medium: Polyurethane resin
     slug: jeanne-chair-2
@@ -532,18 +496,15 @@ works:
       - Chair
     title: Jeanne Chair 2
     when: '2016'
-  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
-      - file: GPe171-MobileVerde-2015-HR-A
-      - file: GPe171-MobileVerde-2015-LR-C
-    medium: 'Steel, wood, and polyurethane resin '
-    projects:
-      - slug: design-miami-2018
-    slug: mobile-verde
+      - file: gpe20_wuxxqn
+    medium: Polyurethane resin
+    slug: jeanne-chair-3
     tags:
-      - storage
-    title: Mobile Verde
-    when: '2015'
+      - Chair
+    title: Jeanne Chair 3
+    when: '2016'
   - dimensions: 103.5 x 59 x 50 inches (262.9 x 149.9 x 127 cm)
     images:
       - file: GPe174-54ArmLamp-1998-LR-A
@@ -565,6 +526,18 @@ works:
       - lighting
     title: 54 Arm Chandelier
     when: '1998'
+  - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
+    images:
+      - file: GPe171-MobileVerde-2015-HR-A
+      - file: GPe171-MobileVerde-2015-LR-C
+    medium: 'Steel, wood, and polyurethane resin '
+    projects:
+      - slug: design-miami-2018
+    slug: mobile-verde
+    tags:
+      - storage
+    title: Mobile Verde
+    when: '2015'
   - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
     images:
       - file: GPe172-LaSmorfia-2003-LR-A
@@ -587,6 +560,33 @@ works:
       - chair
     title: Grown Chair
     when: '2012'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: gpe25_pnqsfj
+    medium: Polyurethane resin
+    slug: trash-can-5
+    tags:
+      - other
+    title: Trash Can 5
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: gpe22_xixpor
+    medium: Polyurethane resin
+    slug: trash-can-2
+    tags:
+      - other
+    title: Trash Can 2
+    when: '2016'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: gpe_24_nur33k
+    medium: Polyurethane resin
+    slug: trash-can-4
+    tags:
+      - other
+    title: Trash Can 4
+    when: '2016'
   - dimensions: 27.56 x 21.65 x 21.65 inches (70 x 55 x 55 cm)
     images:
       - file: gpe34_fvxrcg
