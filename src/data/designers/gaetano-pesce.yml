@@ -463,15 +463,6 @@ works:
       - cabinet
     title: Tornando dal Circo Cabinet
     when: '2016'
-  - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
-    images:
-      - file: gpe105_iyrohs
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-4
-    tags:
-      - Lighting
-    title: Rug Wall Lamp 4
-    when: '2017'
   - dimensions: 37.4 x 61.02 x 61.02 inches (95 x 155 x 155 cm)
     edition: Unique
     images:
@@ -487,6 +478,24 @@ works:
       caption: ''
       vimeoId: ''
     when: '2017'
+  - dimensions: 51.18 x 39.37 x 39.37 inches (130 x 100 x 100 cm)
+    images:
+      - file: gpe101_qajomv
+    medium: Polyurethane resin and steel
+    slug: rug-lamp-1
+    tags:
+      - Lighting
+    title: Rug Lamp 1
+    when: '2017'
+  - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
+    images:
+      - file: gpe103_mhu2rq
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-2
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 2
+    when: '2017'
   - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
     images:
       - file: gpe104_uqpwfl
@@ -496,18 +505,14 @@ works:
       - Lighting
     title: Rug Wall Lamp 3
     when: '2017'
-  - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
-    edition: Unique
-    hero: true
+  - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
     images:
-      - file: large_sqanh1
-    medium: 'polyurethane resin and steel '
-    projects:
-      - slug: ghost-dog
-    slug: rug-wall-lamp
+      - file: gpe105_iyrohs
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-4
     tags:
       - Lighting
-    title: Rug Wall Lamp
+    title: Rug Wall Lamp 4
     when: '2017'
   - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
     images:
@@ -543,14 +548,6 @@ works:
       - Chair
     title: Jeanne Chair 1
     when: '2016'
-  - images:
-      - file: GPe173-54ArmChandelier-1998-LR
-    medium: Resin and copper
-    slug: 54-arm-chandelier
-    tags:
-      - lighting
-    title: 54 Arm Chandelier
-    when: '1998'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
       - file: gpe19_ns6buc
@@ -559,6 +556,15 @@ works:
     tags:
       - Chair
     title: Jeanne Chair 2
+    when: '2016'
+  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+    images:
+      - file: gpe20_wuxxqn
+    medium: Polyurethane resin
+    slug: jeanne-chair-3
+    tags:
+      - Chair
+    title: Jeanne Chair 3
     when: '2016'
   - dimensions: 43.7 x 28.74 x 40.55 inches (111 x 73 x 103 cm)
     images:
@@ -571,15 +577,6 @@ works:
       - chair
     title: La Smorfia
     when: '2003'
-  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
-    images:
-      - file: gpe25_pnqsfj
-    medium: Polyurethane resin
-    slug: trash-can-5
-    tags:
-      - other
-    title: Trash Can 5
-    when: '2016'
   - dimensions: 103.5 x 59 x 50 inches (262.9 x 149.9 x 127 cm)
     images:
       - file: GPe174-54ArmLamp-1998-LR-A
@@ -593,6 +590,14 @@ works:
       - lighting
     title: 54 Arm Lamp
     when: '1998'
+  - images:
+      - file: GPe173-54ArmChandelier-1998-LR
+    medium: Resin and copper
+    slug: 54-arm-chandelier
+    tags:
+      - lighting
+    title: 54 Arm Chandelier
+    when: '1998'
   - dimensions: 95.28 x 42.52 x 19.69 inches (242 x 108 x 50 cm)
     images:
       - file: GPe171-MobileVerde-2015-HR-A
@@ -605,15 +610,17 @@ works:
       - storage
     title: Mobile Verde
     when: '2015'
-  - dimensions: 51.18 x 39.37 x 39.37 inches (130 x 100 x 100 cm)
+  - dimensions: 86.61 x 66.14 x 28.35 inches (220 x 168 x 72 cm)
     images:
-      - file: gpe101_qajomv
-    medium: Polyurethane resin and steel
-    slug: rug-lamp-1
+      - file: GPe170-GrownChair-2012-LR-A
+    medium: Fabric coated with epoxy resin
+    projects:
+      - slug: design-miami-2018
+    slug: grown-chair
     tags:
-      - Lighting
-    title: Rug Lamp 1
-    when: '2017'
+      - chair
+    title: Grown Chair
+    when: '2012'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
       - file: gpe22_xixpor
@@ -625,12 +632,12 @@ works:
     when: '2016'
   - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
     images:
-      - file: gpe_24_nur33k
+      - file: gpe25_pnqsfj
     medium: Polyurethane resin
-    slug: trash-can-4
+    slug: trash-can-5
     tags:
       - other
-    title: Trash Can 4
+    title: Trash Can 5
     when: '2016'
   - dimensions: 9 x 7.5 x 7 inches (22.9 x 19.1 x 17.8 cm)
     images:
@@ -641,6 +648,15 @@ works:
       - vase
     title: Ice Cream Vase 6
     when: '2017'
+  - dimensions: 25.98 x 19.69 x 19.69 inches (66 x 50 x 50 cm)
+    images:
+      - file: gpe_24_nur33k
+    medium: Polyurethane resin
+    slug: trash-can-4
+    tags:
+      - other
+    title: Trash Can 4
+    when: '2016'
   - dimensions: 27.56 x 21.65 x 21.65 inches (70 x 55 x 55 cm)
     images:
       - file: gpe34_fvxrcg
@@ -650,15 +666,6 @@ works:
       - vase
     title: Pebble Vase
     when: '2016'
-  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
-    images:
-      - file: gpe149_wazum0
-    medium: Polyurethane resin
-    slug: small-pebble-vase-9
-    tags:
-      - vase
-    title: Small Pebble Vase 9
-    when: '2017'
   - dimensions: 7.87 x 3.94 x 3.94 inches (20 x 10 x 10 cm)
     hero: false
     images:
@@ -670,6 +677,15 @@ works:
       - vase
     title: Mini Stracci Vases
     when: '2015'
+  - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: gpe149_wazum0
+    medium: Polyurethane resin
+    slug: small-pebble-vase-9
+    tags:
+      - vase
+    title: Small Pebble Vase 9
+    when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: gpe148_dz7bf1
@@ -697,17 +713,6 @@ works:
       - vase
     title: Ice Cream Vase 9
     when: '2017'
-  - dimensions: 10.5 (5) x 20 inches (26.67 (12.7) x 50.8 cm)
-    images:
-      - file: gpe180-b
-      - file: gpe180-a
-      - file: gpe180-d
-    medium: Resin
-    slug: tall-resin-vase-2018-gpe180
-    tags:
-      - vase
-    title: Tall Resin Vase
-    when: '2018'
   - dimensions: 7 x 12 inches (17.78 x 30.48 cm)
     images:
       - file: gpe166-b
@@ -719,15 +724,17 @@ works:
       - vase
     title: Medium Rubber Vase Blue
     when: '2017'
-  - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
+  - dimensions: 10.5 (5) x 20 inches (26.67 (12.7) x 50.8 cm)
     images:
-      - file: gpe53_e3qsay
-    medium: Polyurethane resin
-    slug: skinny-vase
+      - file: gpe180-b
+      - file: gpe180-a
+      - file: gpe180-d
+    medium: Resin
+    slug: tall-resin-vase-2018-gpe180
     tags:
       - vase
-    title: Skinny Vase
-    when: '2015'
+    title: Tall Resin Vase
+    when: '2018'
   - dimensions: 7.09 x 9.45 x 9.45 inches (18 x 24 x 24 cm)
     images:
       - file: gpe41_i3zcmk
@@ -736,6 +743,15 @@ works:
     tags:
       - vase
     title: Mini Medusa Vase
+    when: '2015'
+  - dimensions: 14.96 x 8.66 x 8.66 inches (38 x 22 x 22 cm)
+    images:
+      - file: gpe53_e3qsay
+    medium: Polyurethane resin
+    slug: skinny-vase
+    tags:
+      - vase
+    title: Skinny Vase
     when: '2015'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
@@ -773,15 +789,6 @@ works:
       - vase
     title: 3 Leg Vase
     when: '2016'
-  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
-    images:
-      - file: gpe16_ixjhix
-    medium: Polyurethane resin and papier maché
-    slug: tree-vase-big-4-legs-2
-    tags:
-      - vase
-    title: Tree Vase big (4 legs) 2
-    when: '2015'
   - dimensions: 11.81 x 20.47 x 20.47 inches (30 x 52 x 52 cm)
     images:
       - file: gpe44_uqi2cd
@@ -801,6 +808,15 @@ works:
     tags:
       - vase
     title: Vase
+  - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
+    images:
+      - file: gpe16_ixjhix
+    medium: Polyurethane resin and papier maché
+    slug: tree-vase-big-4-legs-2
+    tags:
+      - vase
+    title: Tree Vase big (4 legs) 2
+    when: '2015'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: gpe143_d0zbbv
@@ -809,6 +825,15 @@ works:
     tags:
       - vase
     title: Small Pebble Vase 3
+    when: '2017'
+  - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
+    images:
+      - file: gpe144_ix61s8
+    medium: Polyurethane resin
+    slug: small-pebble-vase-4
+    tags:
+      - vase
+    title: Small Pebble Vase 4
     when: '2017'
   - dimensions: 21.65 x 31.5 x 31.5 inches (55 x 80 x 80 cm)
     images:
@@ -819,15 +844,6 @@ works:
       - vase
     title: Tree Vase Big (4 legs)
     when: '2015'
-  - dimensions: 5.19 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
-    images:
-      - file: gpe144_ix61s8
-    medium: Polyurethane resin
-    slug: small-pebble-vase-4
-    tags:
-      - vase
-    title: Small Pebble Vase 4
-    when: '2017'
   - dimensions: 8.66 x 9.84 x 9.84 inches (22 x 25 x 25 cm)
     images:
       - file: gpe55_sqnbxn
@@ -900,15 +916,19 @@ works:
       - vase
     title: Tree Vase Medium
     when: '2016'
-  - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
+  - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
+    edition: Unique
+    hero: true
     images:
-      - file: gpe37_rum41u
-    medium: Polyurethane resin
-    slug: mini-flame-vase
+      - file: large_sqanh1
+    medium: 'polyurethane resin and steel '
+    projects:
+      - slug: ghost-dog
+    slug: rug-wall-lamp
     tags:
-      - vase
-    title: Mini Flame Vase
-    when: '2014'
+      - Lighting
+    title: Rug Wall Lamp
+    when: '2017'
   - dimensions: 5.91 x 5.12 x 5.12 inches (15 x 13 x 13 cm)
     images:
       - file: GAETANO_PESCE-37
@@ -918,15 +938,6 @@ works:
       - vase
     title: Small Rock Vases
     when: '2016'
-  - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
-    images:
-      - file: gpe54_lkvhza
-    medium: Polyurethane resin
-    slug: radici-vase-red
-    tags:
-      - vase
-    title: Radici Vase Red
-    when: '2010'
   - images:
       - file: gpe194-a
       - file: gpe194-b
@@ -961,15 +972,15 @@ works:
     tags:
       - vase
     title: Foulard Vase
-  - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
+  - dimensions: 9.45 x 9.45 x 9.45 inches (24 x 24 x 24 cm)
     images:
-      - file: gpe20_wuxxqn
+      - file: gpe54_lkvhza
     medium: Polyurethane resin
-    slug: jeanne-chair-3
+    slug: radici-vase-red
     tags:
-      - Chair
-    title: Jeanne Chair 3
-    when: '2016'
+      - vase
+    title: Radici Vase Red
+    when: '2010'
   - images:
       - file: gpe184-a
       - file: gpe184-b
@@ -988,6 +999,15 @@ works:
     tags:
       - other
     title: Resin Bowl
+  - dimensions: 7.48 x 9.06 x 9.06 inches (19 x 23 x 23 cm)
+    images:
+      - file: gpe37_rum41u
+    medium: Polyurethane resin
+    slug: mini-flame-vase
+    tags:
+      - vase
+    title: Mini Flame Vase
+    when: '2014'
   - images:
       - file: gpe189-a
       - file: gpe189-b
@@ -1007,14 +1027,6 @@ works:
     tags:
       - vase
     title: Stick Vase Black
-  - images:
-      - file: gpe183-a
-      - file: gpe183-b
-      - file: gpe183-c
-    slug: rock-vase-red-gpe
-    tags:
-      - vase
-    title: Rock Vase
   - dimensions: 19 x 21 inches (48.26 x 53.34 cm)
     images:
       - file: gpe178-a
@@ -1026,15 +1038,6 @@ works:
     tags:
       - vase
     title: Fabric Vase Medium Blue
-  - images:
-      - file: gpe190-a
-      - file: gpe190-b
-      - file: gpe190-c
-    medium: Resin
-    slug: rock-vase-prototype-blue-large
-    tags:
-      - vase
-    title: Rock Vase Prototype Blue Large
   - dimensions: 12.6 x 17.32 x 17.32 inches (32 x 44 x 44 cm)
     images:
       - file: gpe52_cfiks3
@@ -1044,26 +1047,23 @@ works:
       - vase
     title: Flame Vase Medium
     when: '2014'
-  - dimensions: 86.61 x 86.61 x 11.81 inches (220 x 220 x 30 cm)
-    images:
-      - file: gpe103_mhu2rq
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-2
+  - images:
+      - file: gpe183-a
+      - file: gpe183-b
+      - file: gpe183-c
+    slug: rock-vase-red-gpe
     tags:
-      - Lighting
-    title: Rug Wall Lamp 2
-    when: '2017'
-  - dimensions: 86.61 x 66.14 x 28.35 inches (220 x 168 x 72 cm)
-    images:
-      - file: GPe170-GrownChair-2012-LR-A
-    medium: Fabric coated with epoxy resin
-    projects:
-      - slug: design-miami-2018
-    slug: grown-chair
+      - vase
+    title: Rock Vase
+  - images:
+      - file: gpe190-a
+      - file: gpe190-b
+      - file: gpe190-c
+    medium: Resin
+    slug: rock-vase-prototype-blue-large
     tags:
-      - chair
-    title: Grown Chair
-    when: '2012'
+      - vase
+    title: Rock Vase Prototype Blue Large
   - dimensions: 28.35 x 21.65 x 21.65 inches (72 x 55 x 55 cm)
     medium: Polyurethane resin
     slug: pebble-vase-2
