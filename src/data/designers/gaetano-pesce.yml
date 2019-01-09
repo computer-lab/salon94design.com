@@ -429,15 +429,19 @@ works:
       - cabinet
     title: Ritratto Dell'Uomo Contento Cabinet
     when: '2016'
-  - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
+  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
+    edition: 'Unique '
+    hero: false
     images:
-      - file: gpe105_iyrohs
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-4
+      - file: large_bh76wt
+    medium: 'wood, papier maché'
+    projects:
+      - slug: design-miami-2016-pesce
+    slug: puglia-cabinet
     tags:
-      - Lighting
-    title: Rug Wall Lamp 4
-    when: '2017'
+      - cabinet
+    title: Puglia Cabinet
+    when: '2007'
   - dimensions: 86.61 x 43.31 x 17.72 inches (220 x 110 x 45 cm)
     hero: true
     images:
@@ -450,6 +454,24 @@ works:
       - cabinet
     title: Do You Still Love Me?
     when: '2007'
+  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+    images:
+      - file: gpe99_tcmdje
+    medium: 'Resin, wood, steel'
+    slug: tornando-dal-circo-cabinet
+    tags:
+      - cabinet
+    title: Tornando dal Circo Cabinet
+    when: '2016'
+  - dimensions: 86.61 x 86.61 inches (220 x 220 cm)
+    images:
+      - file: gpe105_iyrohs
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-4
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 4
+    when: '2017'
   - dimensions: 37.4 x 61.02 x 61.02 inches (95 x 155 x 155 cm)
     edition: Unique
     images:
@@ -465,6 +487,15 @@ works:
       caption: ''
       vimeoId: ''
     when: '2017'
+  - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
+    images:
+      - file: gpe104_uqpwfl
+    medium: Polyurethane resin and steel
+    slug: rug-wall-lamp-3
+    tags:
+      - Lighting
+    title: Rug Wall Lamp 3
+    when: '2017'
   - dimensions: 80 x 84 x 18 inches (203.2 x 213.4 x 45.7 cm)
     edition: Unique
     hero: true
@@ -478,24 +509,6 @@ works:
       - Lighting
     title: Rug Wall Lamp
     when: '2017'
-  - dimensions: 31.5 x 29.53 x 11.81 inches (80 x 75 x 30 cm)
-    images:
-      - file: gpe104_uqpwfl
-    medium: Polyurethane resin and steel
-    slug: rug-wall-lamp-3
-    tags:
-      - Lighting
-    title: Rug Wall Lamp 3
-    when: '2017'
-  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
-    images:
-      - file: gpe73_whcyfr
-    medium: 'Bricks of Glass, foam and polyester resin'
-    slug: golgotha-table
-    tags:
-      - table
-    title: Golgotha Table
-    when: '1972'
   - dimensions: 96.85 x 64.17 inches (246 x 163 cm)
     images:
       - file: gpe129
@@ -503,19 +516,6 @@ works:
     slug: friend-lamp
     title: Friend Lamp
     when: '2014'
-  - dimensions: 110.24 x 60.63 x 17.72 / 280 x 154 x 45 cm
-    edition: 'Unique '
-    hero: false
-    images:
-      - file: large_bh76wt
-    medium: 'wood, papier maché'
-    projects:
-      - slug: design-miami-2016-pesce
-    slug: puglia-cabinet
-    tags:
-      - cabinet
-    title: Puglia Cabinet
-    when: '2007'
   - dimensions: 63 x 51 x 19 inches (160 x 129.5 x 48.3 cm)
     images:
       - file: gpe126_urhqpy
@@ -525,15 +525,15 @@ works:
       - Lighting
     title: Cloud Lamp
     when: '2013'
-  - dimensions: 96.46 x 53.54 x 39.37 inches (245 x 136 x 100 cm)
+  - dimensions: 28.35 x 118.11 x 40.94 inches (72 x 300 x 104 cm)
     images:
-      - file: gpe99_tcmdje
-    medium: 'Resin, wood, steel'
-    slug: tornando-dal-circo-cabinet
+      - file: gpe73_whcyfr
+    medium: 'Bricks of Glass, foam and polyester resin'
+    slug: golgotha-table
     tags:
-      - cabinet
-    title: Tornando dal Circo Cabinet
-    when: '2016'
+      - table
+    title: Golgotha Table
+    when: '1972'
   - dimensions: 29.92 x 15.75 x 19.69 inches (76 x 40 x 50 cm)
     images:
       - file: gpe18_ojx8kn
