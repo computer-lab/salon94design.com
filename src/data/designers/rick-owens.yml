@@ -256,7 +256,9 @@ works:
     slug: fiac2018-install-3
     title: 'FIAC 2018, Installation view'
     when: '2018'
-  - projects:
+  - images:
+      - file: RO_67-lr
+    projects:
       - slug: FIAC-2018
     slug: ro-showroom-table
     title: Showroom Table
