@@ -92,6 +92,8 @@ works:
     images:
       - file: 158_dwivpo
     medium: Bronze with Gold Patina and Leather
+    projects:
+      - slug: FIAC-2018
     slug: alchemy-chair-1
     tags:
       - Chair
@@ -254,4 +256,9 @@ works:
     slug: fiac2018-install-3
     title: 'FIAC 2018, Installation view'
     when: '2018'
+  - projects:
+      - slug: FIAC-2018
+    slug: ro-showroom-table
+    title: Showroom Table
+    when: '2007'
 status: Represented
