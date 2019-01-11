@@ -936,4 +936,18 @@ works:
       - lighting
     title: Granite Lamp
     when: '2031'
+  - images:
+      - file: Frieze_London_2018_Installation_image_7
+    projects:
+      - slug: frieze-london-2018
+    slug: mla-friezelondon2018-install1
+    title: 'Frieze London, Installation view'
+    when: '2018'
+  - images:
+      - file: Frieze_London_2018_Installation_image_4
+    projects:
+      - slug: frieze-london-2018
+    slug: mla-friezelondon2018-install2
+    title: 'Frieze London, Installation view'
+    when: '2018'
 status: Represented
