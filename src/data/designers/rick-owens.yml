@@ -218,6 +218,13 @@ works:
     tags:
       - Table
     title: Plug Table
+  - images:
+      - file: ro5_xlb4pm
+    projects:
+      - slug: FIAC-2018
+    slug: ro-showroom-table
+    title: Showroom Table
+    when: '2007'
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
     images:
       - file: ro26_zaqijl
@@ -256,11 +263,4 @@ works:
     slug: fiac2018-install-3
     title: 'FIAC 2018, Installation view'
     when: '2018'
-  - images:
-      - file: RO_67-lr
-    projects:
-      - slug: FIAC-2018
-    slug: ro-showroom-table
-    title: Showroom Table
-    when: '2007'
 status: Represented
