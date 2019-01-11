@@ -93,8 +93,7 @@ works:
     images:
       - file: 158_dwivpo
     medium: Bronze with Gold Patina and Leather
-    projects:
-      - slug: FIAC-2018
+    projects: []
     slug: alchemy-chair-1
     tags:
       - Chair
@@ -192,14 +191,6 @@ works:
       - Chair
     title: Stag Chair
     when: '2013'
-  - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
-    images:
-      - file: ro50_r6bbkc
-    medium: Bronze
-    slug: alchemy-chair
-    tags:
-      - Chair
-    title: Alchemy Chair
   - dimensions: 19.7 x 19.7 x 30.3 inches (50 x 50 x 77 cm)
     edition: '4'
     images:
@@ -219,24 +210,6 @@ works:
     tags:
       - Table
     title: Plug Table
-  - images:
-      - file: ro5_xlb4pm
-    projects:
-      - slug: FIAC-2018
-    slug: ro-showroom-table
-    tags:
-      - table
-    title: Showroom Table
-    when: '2007'
-  - images:
-      - file: FIAC_2018_Install_04
-    projects:
-      - slug: FIAC-2018
-    slug: ro-halfbox-alchemy
-    tags:
-      - chair
-    title: Half Box Alchemy Chair
-    when: '2018'
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
     images:
       - file: ro26_zaqijl
@@ -253,6 +226,34 @@ works:
     tags:
       - Sofa
     title: Double Récamier 1
+    when: '2007'
+  - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
+    images:
+      - file: ro50_r6bbkc
+    medium: Bronze
+    projects:
+      - slug: FIAC-2018
+    slug: alchemy-chair
+    tags:
+      - Chair
+    title: Alchemy Chair
+  - images:
+      - file: FIAC_2018_Install_04
+    projects:
+      - slug: FIAC-2018
+    slug: ro-halfbox-alchemy
+    tags:
+      - chair
+    title: Half Box Alchemy Chair
+    when: '2018'
+  - images:
+      - file: RO_67-lr-showroom
+    projects:
+      - slug: FIAC-2018
+    slug: ro-showroom-table
+    tags:
+      - table
+    title: Showroom Table
     when: '2007'
   - images:
       - file: FIAC_2018_Install_01
