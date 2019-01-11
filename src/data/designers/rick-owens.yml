@@ -227,6 +227,27 @@ works:
       - Sofa
     title: Double Récamier 1
     when: '2007'
+  - images:
+      - file: FIAC_2018_Install_01
+    projects:
+      - slug: FIAC-2018
+    slug: fiac2018-install-1
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_04
+    projects:
+      - slug: FIAC-2018
+    slug: fiac2018-install-2
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: FIAC_2018_Install_07
+    projects:
+      - slug: FIAC-2018
+    slug: fiac2018-install-3
+    title: 'FIAC 2018, Installation view'
+    when: '2018'
   - dimensions: 29 x 22.25 x 25.25 inches (73.7 x 56.5 x 64.1 cm)
     images:
       - file: ro50_r6bbkc
@@ -255,25 +276,4 @@ works:
       - table
     title: Showroom Table
     when: '2007'
-  - images:
-      - file: FIAC_2018_Install_01
-    projects:
-      - slug: FIAC-2018
-    slug: fiac2018-install-1
-    title: 'FIAC 2018, Installation view'
-    when: '2018'
-  - images:
-      - file: FIAC_2018_Install_04
-    projects:
-      - slug: FIAC-2018
-    slug: fiac2018-install-2
-    title: 'FIAC 2018, Installation view'
-    when: '2018'
-  - images:
-      - file: FIAC_2018_Install_07
-    projects:
-      - slug: FIAC-2018
-    slug: fiac2018-install-3
-    title: 'FIAC 2018, Installation view'
-    when: '2018'
 status: Represented
