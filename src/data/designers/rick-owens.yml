@@ -11,6 +11,7 @@ bio: >-
 press: []
 works:
   - dimensions: 118.11 x 39.37 x 35.43 inches (300 x 100 x 90 cm)
+    hero: true
     images:
       - file: ro113_gzxqpt
     medium: 'Styrofoam, Gorilla gaffer tape'
@@ -223,6 +224,8 @@ works:
     projects:
       - slug: FIAC-2018
     slug: ro-showroom-table
+    tags:
+      - table
     title: Showroom Table
     when: '2007'
   - dimensions: 43.31 x 39.37 x 141.73 inches (110 x 100 x 360 cm)
@@ -262,5 +265,14 @@ works:
       - slug: FIAC-2018
     slug: fiac2018-install-3
     title: 'FIAC 2018, Installation view'
+    when: '2018'
+  - images:
+      - file: 2018-10-01_RO_FURNITURE_alchemy_half_box_01
+    projects:
+      - slug: FIAC-2018
+    slug: ro-halfbox-alchemy
+    tags:
+      - chair
+    title: Half Box Alchemy Chair
     when: '2018'
 status: Represented
