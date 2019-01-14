@@ -26,6 +26,11 @@ description: >-
 images:
   - caption: Installation view
     file: JRH2657_SALON94_2_PS_hires
+    hero: false
+  - caption: Installation view
+    file: S94_ART_BASEL-03
+  - caption: Installation view
+    file: S94_ART_BASEL-06
 video:
   caption: ''
   vimeoId: ''
