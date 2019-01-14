@@ -50,7 +50,13 @@ description: >-
 
   For more information, please contact Maxime Van Melkebeke at
   maxime@salon94design.com
-images: []
+images:
+  - caption: Installation view
+    file: Expo_Chicago_2018_7
+  - caption: Installation view
+    file: Expo_Chicago_2018_11
+  - caption: Installation view
+    file: Expo_Chicago_2018_5
 video:
   caption: ''
   vimeoId: ''
