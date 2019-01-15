@@ -72,7 +72,7 @@ works:
     title: 'Chair [ iii ]'
     when: '2018'
   - images:
-      - file: S94D-DK3-DonzieKanu-TableOn84s-2018-HR
+      - file: dk-table-concrete
     slug: table-on-84s
     title: 'Table on 84s '
     when: '2018'
@@ -84,7 +84,7 @@ works:
     images:
       - file: dk5-dontfold-doziekanu
     medium: 'RIMOWA aluminum sheet, marble'
-    slug: do-not-fold-dk-spazio-maiocchi
+    slug: spazio_maiocchi_DSC4061
     tags:
       - shelf
     title: Don't Fold
@@ -93,7 +93,7 @@ works:
     images:
       - file: dk6-rimowashell1-doziekanu
     medium: 'Marble, RIMOWA shell'
-    slug: rimowa-shell-s-dk
+    slug: spazio_maiocchi_DSC4097
     tags:
       - storage
     title: RIMOWA Shell 1
@@ -102,7 +102,7 @@ works:
     images:
       - file: dk10-chair_iv_for_rimowaa-doziekanu
     medium: 'RIMOWA aluminum frame, recycled foam, plastic straps'
-    slug: chair-iv-for-rimowa-a-dk
+    slug: spazio_maiocchi_DSC4076-2
     tags:
       - chair
     title: 'Chair [iv] for Rimowa A'
@@ -118,7 +118,7 @@ works:
     when: '2018'
   - dimensions: 14.17 x 19.29 x .39 inches (36 x 49 x 1 cm)
     images:
-      - file: dk14-frontdeskmilk1-doziekanu
+      - file: spazio_maiocchi_DSC4119
     medium: 'RIMOWA aluminum frame, hotel bells'
     slug: front-desk-milk-1
     tags:
@@ -132,7 +132,7 @@ works:
     images:
       - file: dk17-flightereureka-doziekanu
     medium: 'RIMOWA aluminum sheet, steel, plane belt'
-    slug: flighter-eureka-2018-dk
+    slug: spazio_maiocchi_DSC4106
     tags:
       - other
     title: Flighter Eureka
