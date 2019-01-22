@@ -51,6 +51,11 @@ press:
   - file: /images/11-12-2018 AD.pdf
     title: Architectural Digest November 2018
 works:
+  - images:
+      - file: LEVER_HOUSE_INSTALL_2
+    projects:
+      - slug: midtown-lever-house
+    title: Installation view - MIDTOWN
   - dimensions: 20.5 x 104 x 18 inches (52.1 x 264.2 x 45.7 cm)
     edition: Unique
     hero: true
@@ -76,10 +81,6 @@ works:
     slug: dk-table-on-84s
     title: 'Table on 84s '
     when: '2018'
-  - images:
-      - file: LEVER_HOUSE_INSTALL_2
-    projects:
-      - slug: midtown-lever-house
   - dimensions: 58.27 x 15.75 x 23.62 inches (148 x 40 x 60 cm)
     images:
       - file: spazio_maiocchi_DSC4061
