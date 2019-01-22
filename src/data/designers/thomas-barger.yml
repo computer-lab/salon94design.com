@@ -2,21 +2,19 @@ slug: thomas-barger
 title: Thomas Barger
 bio: "Thomas Barger was born in Mattoon, Illinois in 1992. He lives and works in Brooklyn, New York. He studied \rArchitecture and Landscape Architecture at the University of Illinois, Urbana - Champaign, Illinois. In 2017\r Barger’s work was included in the following group shows _MIDTOWN_, at Lever House; _Ghost Dog_ at Salon\r94 Design, and _Distortion/Proportion_ at Wintercheck Factory in Brooklyn."
 press:
-  - file: /images/20180323-T-Mag-ThomasBarger.pdf
-    link: >-
-      https://www.nytimes.com/2018/03/23/t-magazine/sushi-noz-maria-cornejo-editors-picks.html?action=click&contentCollection=t-magazine&region=rank&module=package&version=highlights&contentPlacement=3&pgtype=sectionfront
-    title: T-Magazine - March 2018
+  - file: /images/2018-06-24-dezeen.pdf
+    title: DeZeen - June 2018
   - file: /images/20180320-Hyperallergic-ThomasBarger.pdf
     link: >-
       https://hyperallergic.com/434058/thomas-berger-furniture-salon-94-design-review/
     title: Hyperallergic - March 2018
+  - file: /images/20180308-OfficeMagazine-ThomasBarger.pdf
+    link: 'http://officemagazine.net/boy-meets-art-world'
+    title: office magazine - March 2018
   - file: /images/20180320-SightUnseen-ThomasBarger.pdf
     link: >-
       http://www.sightunseen.com/2018/03/thomas-barger-paper-pulp-chairs-upcycled-ikea-designs-salon-94/
     title: Sight Unseen - March 2018
-  - file: /images/20180308-OfficeMagazine-ThomasBarger.pdf
-    link: 'http://officemagazine.net/boy-meets-art-world'
-    title: office magazine - March 2018
   - file: /images/20180307-Dezeen-ThomasBarger-GrowingUp-c.pdf
     link: >-
       https://www.dezeen.com/2018/03/07/thomas-barger-growing-up-salon-94-design-cartoonish-paper-pulp-chairs/
@@ -24,60 +22,80 @@ press:
   - file: /images/20180221-architecturaldigest-thomasbarger.pdf
     link: 'https://www.architecturaldigest.com/story/growing-up-with-thomas-barger'
     title: Architectural Digest - February 2018
-  - file: '/images/2018-August:September-Economist1843.pdf'
-    title: The Economist 1843 - August/September 2018
   - file: /images/PinUp-fallwinter-2018-BOYFRIEND MATERIAL.pdf
     title: PIN-UP Fall Winter 2018/19
-  - file: /images/2018-06-24-dezeen.pdf
-    title: DeZeen - June 2018
+  - file: '/images/2018-August:September-Economist1843.pdf'
+    title: The Economist 1843 - August/September 2018
+  - file: /images/20180323-T-Mag-ThomasBarger.pdf
+    link: >-
+      https://www.nytimes.com/2018/03/23/t-magazine/sushi-noz-maria-cornejo-editors-picks.html?action=click&contentCollection=t-magazine&region=rank&module=package&version=highlights&contentPlacement=3&pgtype=sectionfront
+    title: T-Magazine - March 2018
 works:
-  - dimensions: 44 x 60 x 38 inches (111.8 x 152.4 x 96.5 cm)
-    images:
-      - file: S94D-ThomasBarger-lovemeprotectme
-    medium: 'Paper pulp, plywood, two wooden chairs, polyurethane, and paint'
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-14
     projects:
       - slug: growing-up
-    slug: love-me-protect-me-chair
-    tags:
-      - chair
-    title: 'Love Me, Protect Me Chair'
-    when: '2018'
-  - dimensions: 74 x 97 x 32 inches (188 x 246.4 x 81.3 cm)
-    images:
-      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-A-HR
-      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-B-HR
-    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
+    title: Installation view - Growing Up
+  - images:
+      - file: Tbar_3_chairs
     projects:
       - slug: growing-up
-    slug: i-never-had-a-closet-closet
-    tags:
-      - storage
-    title: I Never Had a Closet - Closet
-    when: '2018'
-  - dimensions: 68 x 79 x 90 inches (172.7 x 200.7 x 228.6 cm)
-    images:
-      - file: S94D-TBar30-ThomasBarger-MyFamilyIsGettingBigger-2018-A-HR
-    medium: >-
-      Paper pulp, wooden frame, cardboard, polyurethane, formica, found foldable
-      picnic table, and paint
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-07
     projects:
       - slug: growing-up
-    slug: my-family-is-getting-bigger
-    tags:
-      - table
-    title: My Family is Getting Bigger Table/Anti-open Floor Plan
-    when: '2018'
-  - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
-    images:
-      - file: S94D-TBar31-ThomasBarger-DicksCreekTractorTire-2018-A-HR
-    medium: 'Rocks, wooden frame, and stucco'
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-05
     projects:
       - slug: growing-up
-    slug: dicks-creek-tractor-tire
-    tags:
-      - bench
-    title: Dicks Creek Tractor Tire
-    when: '2018'
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-11
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-08
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-04
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-13
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-02
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-09
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-10
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-06
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - images:
+      - file: Ghost_Dog_Install_15
+    projects:
+      - slug: ghost-dog
+    title: Installation view - Ghost Dog
   - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
     images:
       - file: S94D-TBar33-ThomasBarger-Lounger1-2018-A-HR
@@ -92,19 +110,48 @@ works:
       - chair
     title: Lounger 1
     when: '2018'
-  - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
+  - dimensions: 44 x 60 x 38 inches (111.8 x 152.4 x 96.5 cm)
     images:
-      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-A-HR
-      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-B-HR
-      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-C-HR
-      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-D-HR
-    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
+      - file: S94D-ThomasBarger-lovemeprotectme
+    medium: 'Paper pulp, plywood, two wooden chairs, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: lounger-2
+    slug: love-me-protect-me-chair
     tags:
       - chair
-    title: Lounger 2
+    title: 'Love Me, Protect Me Chair'
+    when: '2018'
+  - dimensions: 68 x 79 x 90 inches (172.7 x 200.7 x 228.6 cm)
+    images:
+      - file: S94D-TBar30-ThomasBarger-MyFamilyIsGettingBigger-2018-A-HR
+    medium: >-
+      Paper pulp, wooden frame, cardboard, polyurethane, formica, found foldable
+      picnic table, and paint
+    projects:
+      - slug: growing-up
+    slug: my-family-is-getting-bigger
+    tags:
+      - table
+    title: My Family is Getting Bigger Table/Anti-open Floor Plan
+    when: '2018'
+  - images:
+      - file: S94D-ThomasBarger-growingup-install-12
+    projects:
+      - slug: growing-up
+    title: Installation view - Growing Up
+  - dimensions: 11 1/2 x 27 x 22 inches (29.2 x 68.6 x 55.9 cm)
+    images:
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-A-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-B-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-C-HR
+      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-D-HR
+    medium: 'Rocks, wooden frame, and stucco'
+    projects:
+      - slug: growing-up
+    slug: dicks-creek-rock-planter
+    tags:
+      - other
+    title: Dicks Creek Rock Planter
     when: '2018'
   - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
     images:
@@ -122,20 +169,6 @@ works:
       - chair
     title: Dad's Truck Blanket Chair
     when: '2018'
-  - dimensions: 11 1/2 x 27 x 22 inches (29.2 x 68.6 x 55.9 cm)
-    images:
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-A-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-B-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-C-HR
-      - file: S94D-TBar35-ThomasBarger-DicksCreekRockPlanter-2018-D-HR
-    medium: 'Rocks, wooden frame, and stucco'
-    projects:
-      - slug: growing-up
-    slug: dicks-creek-rock-planter
-    tags:
-      - other
-    title: Dicks Creek Rock Planter
-    when: '2018'
   - dimensions: 32 x 44 x 20 inches (81.3 x 111.8 x 50.8 cm)
     images:
       - file: S94D-TBar29-ThomasBarger-BoyfriendsUnderwearArmoire-2018-A-HR
@@ -150,18 +183,17 @@ works:
       - storage
     title: Boyfriend's Underwear Armoire
     when: '2018'
-  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
+  - dimensions: 18 x 56 x 56 inches (45.7 x 142.2 x 142.2 cm)
     images:
-      - file: S94D-TBar4-ThomasBarger-DontForgetMeOnTheTrainChair-2017-HR
-    medium: Paper pulp and Styrofoam
+      - file: S94D-TBar31-ThomasBarger-DicksCreekTractorTire-2018-A-HR
+    medium: 'Rocks, wooden frame, and stucco'
     projects:
-      - slug: Bowery Design 2017
-      - slug: ghost-dog
-    slug: dont-forget-me-on-the-train-chair
+      - slug: growing-up
+    slug: dicks-creek-tractor-tire
     tags:
-      - Chair
-    title: Don't Forget Me on the Train Chair
-    when: '2017'
+      - bench
+    title: Dicks Creek Tractor Tire
+    when: '2018'
   - dimensions: 32.5 x 21 x 18.5 inches (82.6 x 53.3 x 47 cm)
     hero: false
     images:
@@ -173,6 +205,32 @@ works:
       - Chair
     title: Aleksandr Rodchenko Snack Chair
     when: '2017'
+  - dimensions: 28 1/2 x 23 x 80 inches (72.4 x 58.4 x 203.2 cm)
+    images:
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-A-HR
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-B-HR
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-C-HR
+      - file: S94D-TBar34-ThomasBarger-Lounger2-2018-D-HR
+    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: lounger-2
+    tags:
+      - chair
+    title: Lounger 2
+    when: '2018'
+  - dimensions: 74 x 97 x 32 inches (188 x 246.4 x 81.3 cm)
+    images:
+      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-A-HR
+      - file: S94D-TBar29-ThomasBarger-INeverHadaCloset-2018-B-HR
+    medium: 'Paper pulp, wooden frame, cardboard, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: i-never-had-a-closet-closet
+    tags:
+      - storage
+    title: I Never Had a Closet - Closet
+    when: '2018'
   - dimensions: 32.5 x 22 x 22 inches (82.6 x 55.9 x 55.9 cm)
     images:
       - file: large_nbvblq
@@ -182,21 +240,6 @@ works:
     tags:
       - Chair
     title: Aleksandr Rodchenko Snack Chair (with harness)
-    when: '2017'
-  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
-    hero: true
-    images:
-      - file: tbar16_msnr8d
-      - file: tbar16-a_sbj2xk
-      - file: tbar16-b_vre28q
-      - file: tbar16-c_ju4isp
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: tall-church-boy-1
-    tags:
-      - Chair
-    title: Tall Church Boy 1
     when: '2017'
   - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
     hero: true
@@ -213,60 +256,17 @@ works:
       - Chair
     title: Tall Church Boy 2
     when: '2017'
-  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
-    hero: true
+  - dimensions: 31 x 29 x 28 inches (78.7 x 73.7 x 71.1 cm)
     images:
-      - file: tbar18_rmdpic
-      - file: tbar18l_ely4pf
-      - file: tbar18b_enzjnd
-      - file: tbar18r_acdioo
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+      - file: S94D-TBar4-ThomasBarger-DontForgetMeOnTheTrainChair-2017-HR
+    medium: Paper pulp and Styrofoam
     projects:
-      - slug: growing-up
-    slug: tall-church-boy-3
-    tags:
-      - Chair
-    title: Tall Church Boy 3
-    when: '2017'
-  - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
-    hero: true
-    images:
-      - file: tbar10instal_fdeawl
-      - file: 6_estibm
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: midtown-lever-house
-    slug: sorting-laundry-for-a-family-of-5-floor
-    tags:
-      - Storage
-    title: Sorting Laundry For a Family of 5 (floor)
-    when: '2017'
-  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
-    hero: false
-    images:
-      - file: large_ai257t
-    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
-    projects:
+      - slug: Bowery Design 2017
       - slug: ghost-dog
-    slug: underwear-armoire-3
-    tags:
-      - Storage
-    title: Underwear Armoire 3
-    when: '2017'
-  - dimensions: 31 x 18 x 18 inches (78.74 X 45.72 X 45.72 cm)
-    hero: true
-    images:
-      - file: tbar12_s8kgms
-      - file: tbar12-a_idadfv
-      - file: tbar12-b_ye0ang
-      - file: tbar12-c_hyyskk
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    projects:
-      - slug: growing-up
-    slug: butter-chair-1
+    slug: dont-forget-me-on-the-train-chair
     tags:
       - Chair
-    title: Butter Chair 1
+    title: Don't Forget Me on the Train Chair
     when: '2017'
   - dimensions: 31 x 18 x 18 inches (78.74 x 45.72 x 45.72 cm)
     hero: true
@@ -298,35 +298,35 @@ works:
       - Chair
     title: Protect Me Chair
     when: '2017'
-  - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
     hero: true
     images:
-      - file: tbar11_nutaaa
-      - file: tbarlmc1_rzehpx
-      - file: tbarlmc2_jsqxkj
-      - file: tbarlmc3_byh5ks
+      - file: tbar16_msnr8d
+      - file: tbar16-a_sbj2xk
+      - file: tbar16-b_vre28q
+      - file: tbar16-c_ju4isp
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: love-me-chair
+    slug: tall-church-boy-1
     tags:
       - Chair
-    title: Love Me Chair
+    title: Tall Church Boy 1
     when: '2017'
-  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+  - dimensions: 31 x 18 x 18 inches (78.74 X 45.72 X 45.72 cm)
     hero: true
     images:
-      - file: tbar14_tvabau
-      - file: tbar14-a_n2wvbe
-      - file: tbar14-b_uexywd
-      - file: tbar14-d_pcezvm
+      - file: tbar12_s8kgms
+      - file: tbar12-a_idadfv
+      - file: tbar12-b_ye0ang
+      - file: tbar12-c_hyyskk
     medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
-    slug: s-o-s-green-goblin-spidey-please-save-me
+    slug: butter-chair-1
     tags:
       - Chair
-    title: 'S.O.S. Green Goblin, Spidey Please Save Me'
+    title: Butter Chair 1
     when: '2017'
   - hero: true
     images:
@@ -352,6 +352,36 @@ works:
       - Chair
     title: Chair 2
     when: '2016'
+  - dimensions: 60 X 12 X 12 inches (152.4 x 30.48 x 30.48 cm)
+    hero: true
+    images:
+      - file: tbar18_rmdpic
+      - file: tbar18l_ely4pf
+      - file: tbar18b_enzjnd
+      - file: tbar18r_acdioo
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: tall-church-boy-3
+    tags:
+      - Chair
+    title: Tall Church Boy 3
+    when: '2017'
+  - dimensions: 31 x 34 x 21 inches (78.7 x 86.4 x 53.3 cm)
+    hero: true
+    images:
+      - file: tbar11_nutaaa
+      - file: tbarlmc1_rzehpx
+      - file: tbarlmc2_jsqxkj
+      - file: tbarlmc3_byh5ks
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    projects:
+      - slug: growing-up
+    slug: love-me-chair
+    tags:
+      - Chair
+    title: Love Me Chair
+    when: '2017'
   - dimensions: 27.5 x 36 x 21 inches (69.9 x 91.4 x 53.3 cm)
     hero: false
     images:
@@ -375,16 +405,25 @@ works:
       - other
     title: Wall Drawing 1
     when: ''
-  - dimensions: 33 x 26 x 11 inches (83.8 x 66 x 27.9 cm)
+  - dimensions: 108 x 144 x 15 inches (274.3 x 365.8 x 38.1 cm)
+    hero: true
     images:
-      - file: S94D-TBar36-ThomasBarger-WallDrawing2-2018-A-HR
-    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+      - file: tbar10instal_fdeawl
+      - file: 6_estibm
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
-      - slug: growing-up
-    slug: wall-drawing-2
+      - slug: midtown-lever-house
+    slug: sorting-laundry-for-a-family-of-5-floor
     tags:
-      - other
-    title: Wall Drawing 2
+      - Storage
+    title: Sorting Laundry For a Family of 5 (floor)
+    when: '2017'
+  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
+    images:
+      - file: 18-02-23_SALON94_ThomasBarger_006
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-2-white
+    title: Chair 2 (White)
     when: '2017'
   - dimensions: 30 x 20.5 x 16 inches (76.2 x 52.1 x 40.6 cm)
     images:
@@ -397,67 +436,6 @@ works:
       - chair
     title: Hammer Chair
     when: '2017'
-  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
-    images:
-      - file: 18-02-23_SALON94_ThomasBarger_004
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-1-white
-    tags:
-      - chair
-    title: Chair 1 (White)
-    when: '2017'
-  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
-    images:
-      - file: 18-02-23_SALON94_ThomasBarger_006
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-2-white
-    title: Chair 2 (White)
-    when: '2017'
-  - dimensions: 30.5 x 42 x 21 inches (77.5 x 106.7 x 53.3 cm )
-    images:
-      - file: 18-02-23_SALON94_ThomasBarger_013
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: underwear-armoire-4
-    tags:
-      - other
-    title: Underwear Armoire 4
-    when: '2017'
-  - dimensions: 32.5 x 18 x 18 inches(82.6 x 45.7 x45.7cm)
-    images:
-      - file: S94D-TBar24-ThomasBarger-Chair1Pink-2016-HR
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-1-pink
-    tags:
-      - chair
-    title: Chair 1 (Pink)
-    when: '2016'
-  - dimensions: 33 x 16.5 x 20 inches (83.8 x 41.9 x 50.8 cm)
-    images:
-      - file: S94D-TBar25-ThomasBarger-Chair2Pink-2016-HR
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-2-pink
-    tags:
-      - chair
-    title: Chair 2 (Pink)
-    when: '2016'
-  - dimensions: 34 x 17.5 x 18 inches (86.4 x 44.5 x 45.7 cm)
-    images:
-      - file: S94D-TBar26-ThomasBarger-Chair3Pink-2016-HR
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-3-pink
-    tags:
-      - chair
-    title: Chair 3 (Pink)
-    when: '2016'
-  - dimensions: 33 x 18 x 16 inches (83.8 x 45.7 x 40.6 cm)
-    images:
-      - file: S94D-TBar27-ThomasBarger-Chair4Pink-2016-HR
-    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
-    slug: chair-4-pink
-    tags:
-      - chair
-    title: Chair 4 (Pink)
-    when: '2016'
   - dimensions: 108 X 144 X 15 inches (274.3 X 365.8 X 38.1 cm)
     images:
       - file: S94D-TBar10-ThomasBarger-SortingLaundryforaFamilyof5-2017-A-HR
@@ -469,66 +447,103 @@ works:
       - storage
     title: Sorting Laundry For a Family of 5 (wall)
     when: '2017'
-  - images:
-      - file: Ghost_Dog_Install_15
-    projects:
-      - slug: ghost-dog
-  - images:
-      - file: Tbar_3_chairs
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-02
+  - dimensions: 36 x 24 x 36 inches (91.44 x 60.96 x 91.44 cm)
+    hero: true
+    images:
+      - file: tbar14_tvabau
+      - file: tbar14-a_n2wvbe
+      - file: tbar14-b_uexywd
+      - file: tbar14-d_pcezvm
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
     projects:
       - slug: growing-up
+    slug: s-o-s-green-goblin-spidey-please-save-me
+    tags:
+      - Chair
+    title: 'S.O.S. Green Goblin, Spidey Please Save Me'
+    when: '2017'
+  - dimensions: 33 x 26 x 11 inches (83.8 x 66 x 27.9 cm)
+    images:
+      - file: S94D-TBar36-ThomasBarger-WallDrawing2-2018-A-HR
+    medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
+    projects:
+      - slug: growing-up
+    slug: wall-drawing-2
+    tags:
+      - other
+    title: Wall Drawing 2
+    when: '2017'
+  - dimensions: 30.5 x 42 x 21 inches (77.5 x 106.7 x 53.3 cm )
+    images:
+      - file: 18-02-23_SALON94_ThomasBarger_013
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: underwear-armoire-4
+    tags:
+      - other
+    title: Underwear Armoire 4
+    when: '2017'
   - images:
       - file: S94D-ThomasBarger-growingup-install-03
     projects:
       - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-04
+    title: Installation view - Growing Up
+  - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
+    hero: false
+    images:
+      - file: large_ai257t
+    medium: 'Paper pulp, cardboard, Styrofoam, and plywood'
     projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-05
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-06
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-07
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-08
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-09
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-10
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-11
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-12
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-13
-    projects:
-      - slug: growing-up
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-14
-    projects:
-      - slug: growing-up
+      - slug: ghost-dog
+    slug: underwear-armoire-3
+    tags:
+      - Storage
+    title: Underwear Armoire 3
+    when: '2017'
+  - dimensions: 32.5 x 18 x 18 inches(82.6 x 45.7 x45.7cm)
+    images:
+      - file: S94D-TBar24-ThomasBarger-Chair1Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-1-pink
+    tags:
+      - chair
+    title: Chair 1 (Pink)
+    when: '2016'
+  - dimensions: 26 x 25.5 x 20.5 inches (66 x 64.8 x 52.1 cm)
+    images:
+      - file: 18-02-23_SALON94_ThomasBarger_004
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-1-white
+    tags:
+      - chair
+    title: Chair 1 (White)
+    when: '2017'
+  - dimensions: 34 x 17.5 x 18 inches (86.4 x 44.5 x 45.7 cm)
+    images:
+      - file: S94D-TBar26-ThomasBarger-Chair3Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-3-pink
+    tags:
+      - chair
+    title: Chair 3 (Pink)
+    when: '2016'
+  - dimensions: 33 x 16.5 x 20 inches (83.8 x 41.9 x 50.8 cm)
+    images:
+      - file: S94D-TBar25-ThomasBarger-Chair2Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-2-pink
+    tags:
+      - chair
+    title: Chair 2 (Pink)
+    when: '2016'
+  - dimensions: 33 x 18 x 16 inches (83.8 x 45.7 x 40.6 cm)
+    images:
+      - file: S94D-TBar27-ThomasBarger-Chair4Pink-2016-HR
+    medium: 'Paper pulp, wooden frame, polyurethane, and paint'
+    slug: chair-4-pink
+    tags:
+      - chair
+    title: Chair 4 (Pink)
+    when: '2016'
   - dimensions: 62 x 17 1/2 x 19 inches (157.5 x 44.5 x 48.3 cm)
     images:
       - file: Tbar42
