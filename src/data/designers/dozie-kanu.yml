@@ -73,7 +73,7 @@ works:
     when: '2018'
   - images:
       - file: dk-table-concrete
-    slug: table-on-84s
+    slug: dk-table-on-84s
     title: 'Table on 84s '
     when: '2018'
   - images:
@@ -82,27 +82,27 @@ works:
       - slug: midtown-lever-house
   - dimensions: 58.27 x 15.75 x 23.62 inches (148 x 40 x 60 cm)
     images:
-      - file: dk5-dontfold-doziekanu
+      - file: spazio_maiocchi_DSC4061
     medium: 'RIMOWA aluminum sheet, marble'
-    slug: spazio_maiocchi_DSC4061
+    slug: don't-fold-2018-shelf
     tags:
       - shelf
     title: Don't Fold
     when: '2018'
   - dimensions: 12.99 x 18.11 x 14.96 inches (33 x 46 x 38 cm)
     images:
-      - file: dk6-rimowashell1-doziekanu
+      - file: spazio_maiocchi_DSC4097
     medium: 'Marble, RIMOWA shell'
-    slug: spazio_maiocchi_DSC4097
+    slug: Rimowa-shell-1-2018
     tags:
       - storage
     title: RIMOWA Shell 1
     when: '2018'
   - dimensions: 37.4 x 17.72 x 21.65 inches (95 x 45 x 55 cm)
     images:
-      - file: dk10-chair_iv_for_rimowaa-doziekanu
+      - file: spazio_maiocchi_DSC4076-2
     medium: 'RIMOWA aluminum frame, recycled foam, plastic straps'
-    slug: spazio_maiocchi_DSC4076-2
+    slug: rimowa-a-chair-2018
     tags:
       - chair
     title: 'Chair [iv] for Rimowa A'
@@ -130,19 +130,19 @@ works:
       inches (33 x 20 x 20 cm) - lamp 28.74 x 9.06 x 9.06 inches (73 x 23 x 23
       cm) - column
     images:
-      - file: dk17-flightereureka-doziekanu
+      - file: spazio_maiocchi_DSC4106
     medium: 'RIMOWA aluminum sheet, steel, plane belt'
-    slug: spazio_maiocchi_DSC4106
+    slug: dk-flighter-eureka
     tags:
       - other
     title: Flighter Eureka
     when: '2018'
   - dimensions: 24.41 x 7.87 x 11.81 inches (62 x 20 x 30 cm)
     images:
-      - file: dk18-dontfoldyoungboy-doziekanu
+      - file: spazio_maiocchi_DSC4133
     medium: 'RIMOWA aluminum sheet, steel'
     projects: []
-    slug: spazio_maiocchi_DSC4133
+    slug: dont-fold-young-boy-2018
     tags:
       - shelf
     title: Don't Fold Young Boy
