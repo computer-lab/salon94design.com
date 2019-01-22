@@ -21,6 +21,11 @@ press:
   - file: /images/antonalvaraz-artsy-2015.pdf
     title: ARTSY- April 2015
 works:
+  - images:
+      - file: LEVER_HOUSE_INSTALL_1
+    projects:
+      - slug: midtown-lever-house
+    title: Installation View - MIDTOWN
   - dimensions: 15.75 x 9.84 x 7.87 inches (40 x 25 x 20 cm)
     images:
       - file: aa116_dazlnt
@@ -194,17 +199,6 @@ works:
       - Ceramics
     title: ​V-0308171456
     when: '2017'
-  - dimensions: 14.96 x 11.02 x 8.27 inches (38 x 28 x 21 cm)
-    images:
-      - file: aa129_sldmjl
-    medium: Glazed stoneware
-    projects:
-      - slug: Frieze London 2017
-    slug: ​p-0208171705
-    tags:
-      - Ceramics
-    title: ​P-0208171705
-    when: '2017'
   - dimensions: 15.75 x 12.6 x 12.6 inches (46 x 30 x 19 cm)
     images:
       - file: aa130_ky1lnk
@@ -216,16 +210,16 @@ works:
       - Ceramics
     title: ​I-0208170831
     when: '2017'
-  - dimensions: 19.69 x 8.27 x 7.48 inches (50 x 21 x 19 cm)
+  - dimensions: 14.96 x 11.02 x 8.27 inches (38 x 28 x 21 cm)
     images:
-      - file: aa131_blqfbe
+      - file: aa129_sldmjl
     medium: Glazed stoneware
     projects:
       - slug: Frieze London 2017
-    slug: ​m-0208171400
+    slug: ​p-0208171705
     tags:
       - Ceramics
-    title: ​M-0208171400
+    title: ​P-0208171705
     when: '2017'
   - dimensions: 15.75 x 10.24 x 7.87 inches (40 x 26 x 20 cm)
     images:
@@ -237,6 +231,17 @@ works:
     tags:
       - Ceramics
     title: ​D-0108170800
+    when: '2017'
+  - dimensions: 19.69 x 8.27 x 7.48 inches (50 x 21 x 19 cm)
+    images:
+      - file: aa131_blqfbe
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​m-0208171400
+    tags:
+      - Ceramics
+    title: ​M-0208171400
     when: '2017'
   - dimensions: 17.72 x 9.84 x 7.48 inches (45 x 25 x 19 cm)
     images:
@@ -282,17 +287,6 @@ works:
       - Ceramics
     title: ​O-0108171114
     when: '2017'
-  - dimensions: 15.35 x 7.48 x 8.66 inches (39 x 19 x 22 cm)
-    images:
-      - file: aa138_tkkcyl
-    medium: Glazed stoneware
-    projects:
-      - slug: Frieze London 2017
-    slug: ​x-0308171710
-    tags:
-      - Ceramics
-    title: ​X-0308171710
-    when: '2017'
   - dimensions: 15.75 x 9.45 x 10.63 inches (40 x 24 x 27 cm)
     images:
       - file: aa139_ydmdm3
@@ -303,6 +297,17 @@ works:
     tags:
       - Ceramics
     title: ​U-0108171600
+    when: '2017'
+  - dimensions: 15.35 x 7.48 x 8.66 inches (39 x 19 x 22 cm)
+    images:
+      - file: aa138_tkkcyl
+    medium: Glazed stoneware
+    projects:
+      - slug: Frieze London 2017
+    slug: ​x-0308171710
+    tags:
+      - Ceramics
+    title: ​X-0308171710
     when: '2017'
   - dimensions: 20.47 x 9.06 x 8.27 inches (52 x 23 x 21 cm)
     images:
@@ -326,18 +331,6 @@ works:
       - Ceramics
     title: ​J-3107171959
     when: '2017'
-  - dimensions: 1.5 x 16.5 inches ( 94 x 54.6 x 41.9 cm)
-    hero: false
-    images:
-      - file: large_edagem
-    medium: >-
-      Polyester thread, fabric, fake-fur, pva glue, color pigment, mdf, plywood,
-      osb, wood, plastic and metal
-    slug: the-thread-wrapping-machine-chair-090415
-    tags:
-      - Chair
-    title: The Thread Wrapping Machine Chair 090415
-    when: '2015'
   - dimensions: 18.11 x 82.28 x 10.24 inches (46 x 209 x 26 cm)
     hero: false
     images:
@@ -356,6 +349,18 @@ works:
       caption: ''
       vimeoId: ''
     when: '2015'
+  - dimensions: 1.5 x 16.5 inches ( 94 x 54.6 x 41.9 cm)
+    hero: false
+    images:
+      - file: large_edagem
+    medium: >-
+      Polyester thread, fabric, fake-fur, pva glue, color pigment, mdf, plywood,
+      osb, wood, plastic and metal
+    slug: the-thread-wrapping-machine-chair-090415
+    tags:
+      - Chair
+    title: The Thread Wrapping Machine Chair 090415
+    when: '2015'
   - dimensions: 34 x 22 x 7 inches ( 86.4 x 55.9 x 17.8 cm)
     hero: false
     images:
@@ -368,19 +373,6 @@ works:
       - Chair
     title: The Thread Wrapping Machine Untitled 280415
     when: '2015'
-  - dimensions: 17 3/4 x 13 x 13 inches (45.1 x 33 x 33 cm)
-    images:
-      - file: aa111_wbnms7
-    medium: >-
-      polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
-      wood, plastic and metal
-    projects:
-      - slug: Frieze London 2017
-    slug: thread-wrapped-stool-1
-    tags:
-      - Chair
-    title: Thread Wrapped Stool 1
-    when: '2017'
   - dimensions: 18 x 20 3/4 x 9 3/4 inches (45.7 x 52.7 x 24.8 cm)
     images:
       - file: aa113_hlidrz
@@ -406,6 +398,19 @@ works:
     tags:
       - Chair
     title: Thread Wrapped Stool 3
+    when: '2017'
+  - dimensions: 17 3/4 x 13 x 13 inches (45.1 x 33 x 33 cm)
+    images:
+      - file: aa111_wbnms7
+    medium: >-
+      polyester thread, fabric, pva glue, color pigment, mdf, plywood, osb,
+      wood, plastic and metal
+    projects:
+      - slug: Frieze London 2017
+    slug: thread-wrapped-stool-1
+    tags:
+      - Chair
+    title: Thread Wrapped Stool 1
     when: '2017'
   - dimensions: 18 1/2 x 14 3/4 x 14 3/4 inches (47 x 37.5 x 37.5 cm)
     images:
@@ -433,8 +438,4 @@ works:
       - Table
     title: Thread Wrapped Table
     when: '2017'
-  - images:
-      - file: LEVER_HOUSE_INSTALL_1
-    projects:
-      - slug: midtown-lever-house
 status: Represented
