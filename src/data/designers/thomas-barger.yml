@@ -482,11 +482,6 @@ works:
       - other
     title: Underwear Armoire 4
     when: '2017'
-  - images:
-      - file: S94D-ThomasBarger-growingup-install-03
-    projects:
-      - slug: growing-up
-    title: Installation view - Growing Up
   - dimensions: 31 x 39 x 19 inches (78.7 x 99.1 x 48.3 cm)
     hero: false
     images:
@@ -603,7 +598,10 @@ works:
     title: Doughboy Chair
     when: '2018'
   - images:
-      - file: tbar-48-passionoftheholechair
+      - file: S94D-TBar47-Thomas_Barger-Passion_of_the_Hole_Chair_No1-A
+      - file: S94D-TBar47-Thomas_Barger-Passion_of_the_Hole_Chair_No1-E
+      - file: S94D-TBar47-Thomas_Barger-Passion_of_the_Hole_Chair_No1-B
+      - file: S94D-TBar47-Thomas_Barger-Passion_of_the_Hole_Chair_No1-D
     medium: 'Paper pulp, wooden frame, cardboard, and colored pencil'
     projects:
       - slug: design-miami-2018
@@ -622,4 +620,15 @@ works:
       - chair
     title: 'Save the Faberge Egg, Save the World'
     when: '2018'
+  - images:
+      - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-A
+      - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-B
+      - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-A-c
+      - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-D
+      - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-E
+    slug: chair-for-helms-deep-1
+    tags:
+      - chair
+    title: Chair for Helms Deep
+    when: '2019'
 status: Represented
