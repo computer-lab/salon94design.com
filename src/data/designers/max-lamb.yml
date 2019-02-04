@@ -950,4 +950,101 @@ works:
       - lighting
     title: Granite Lamp
     when: '2031'
+  - dimensions: 29.53 x 20.47 x 27.56 inches (75 x 52 x 70 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa146-a
+      - file: S94D-MaxLamb-Poly-MLa146-b
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-armchair-1
+    tags:
+      - chair
+    title: Scrap Poly Pastel Armchair
+    when: '2018'
+  - dimensions: 32.28 x 14.17 x 20.87 inches (82 x 36 x 53 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa147-a
+      - file: S94D-MaxLamb-Poly-MLa147-b
+      - file: S94D-MaxLamb-Poly-MLa147-c
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-chair-1
+    tags:
+      - chair
+    title: Scrap Poly Pastel Chair
+    when: '2018'
+  - dimensions: 18.9 x 22.05 x 14.57 inches (48 x 56 x 37 cm) (MLa 148)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa148-a
+      - file: S94D-MaxLamb-Poly-MLa148-b
+      - file: S94D-MaxLamb-Poly-MLa148-c
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-stool
+    tags:
+      - seating
+    title: Scrap Poly Pastel Stool
+    when: '2018'
+  - dimensions: 34.25 x 25.59 x 22.05 inches (87 x 65 x 56 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa149-a
+      - file: S94D-MaxLamb-Poly-MLa149-b
+      - file: S94D-MaxLamb-Poly-MLa149-c
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-chair-2
+    tags:
+      - chair
+    title: Scrap Poly Pastel Chair
+    when: '2018'
+  - dimensions: 14.57 x 26.38 x 16.54 inches (37 x 67 x 42 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa151-a
+      - file: S94D-MaxLamb-Poly-MLa151-b
+      - file: S94D-MaxLamb-Poly-MLa151-c
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-vase-1
+    tags:
+      - vase
+    title: Scrap Poly Pastel Vase
+    when: '2018'
+  - dimensions: 22.83 x 22.44 x 16.93 inches (58 x 57 x 43 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa153-a
+      - file: S94D-MaxLamb-Poly-MLa153-b
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-vase-2
+    tags:
+      - vase
+    title: Scrap Poly Pastel Vase
+    when: '2018'
+  - dimensions: 20.87 x 18.5 x 12.6 inches (53 x 47 x 32 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa155-a
+      - file: S94D-MaxLamb-Poly-MLa155-b
+      - file: S94D-MaxLamb-Poly-MLa155-c
+      - file: S94D-MaxLamb-Poly-MLa155-d
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-vase-3
+    tags:
+      - vase
+    title: Scrap Poly Pastel Vase
+    when: '2018'
+  - dimensions: 36.61 x 28.74 x 24.8 inches (93  x 73 x 63 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa156-a
+      - file: S94D-MaxLamb-Poly-MLa156-b
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-armchair-2
+    tags:
+      - chair
+    title: Scrap Poly Pastel Armchair
+    when: '2018'
+  - dimensions: 38.98 x 70.08 x 36.22 inches (99 x 178 x 92 cm)
+    images:
+      - file: S94D-MaxLamb-Poly-MLa157-a
+      - file: S94D-MaxLamb-Poly-MLa157-d
+      - file: S94D-MaxLamb-Poly-MLa157-c
+    medium: 'Polystyrene, rubber polymer'
+    slug: scrap-poly-pastel-bench
+    tags:
+      - seating
+    title: Scrap Poly Pastel Bench
+    when: '2018'
 status: Represented
