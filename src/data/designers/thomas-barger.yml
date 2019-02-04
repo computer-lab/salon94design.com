@@ -633,4 +633,17 @@ works:
       - chair
     title: Chair for Helms Deep
     when: '2019'
+  - dimensions: 30 x 47.5 x 30.5 inches (76.2 x 120.7 x 77.5 cm)
+    images:
+      - file: S94D-TBar58-ThomasBarger-Table_for_Helms_Deep-A
+      - file: S94D-TBar58-ThomasBarger-Table_for_Helms_Deep-B
+      - file: S94D-ThomasBarger-Helms_Deep-A
+      - file: S94D-ThomasBarger-Helms_Deep-B
+      - file: S94D-ThomasBarger-Helms_Deep-C
+    medium: 'Paper pulp, wooden frame, cardboard, and paint'
+    slug: table-for-helms-deep
+    tags:
+      - table
+    title: Table for Helms Deep
+    when: '2019'
 status: Represented
