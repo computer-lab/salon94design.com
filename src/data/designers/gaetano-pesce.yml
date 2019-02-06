@@ -188,6 +188,7 @@ works:
     projects:
       - slug: pratt-chair-7-1984-2018
       - slug: design-miami-2018
+      - slug: frieze-la-2019
     slug: pratt-chair-yellow
     tags:
       - chair
@@ -204,6 +205,7 @@ works:
     projects:
       - slug: pratt-chair-7-1984-2018
       - slug: design-miami-2018
+      - slug: frieze-la-2019
     slug: pratt-chair-purple
     tags:
       - chair
@@ -249,6 +251,7 @@ works:
     medium: 'polyurethane resin, color pigment '
     projects:
       - slug: pratt-chair-7-1984-2018
+      - slug: frieze-la-2019
     slug: pratt-chair-black
     tags:
       - chair
