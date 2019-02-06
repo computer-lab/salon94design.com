@@ -628,6 +628,8 @@ works:
       - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-D
       - file: S94D-TBar54-ThomasBarger-Chair_for_Helms_Deep-1-E
     medium: 'Paper pulp, wooden frame, cardboard, and paint'
+    projects:
+      - slug: frieze-la-2019
     slug: chair-for-helms-deep-1
     tags:
       - chair
@@ -641,6 +643,8 @@ works:
       - file: S94D-ThomasBarger-Helms_Deep-B
       - file: S94D-ThomasBarger-Helms_Deep-C
     medium: 'Paper pulp, wooden frame, cardboard, and paint'
+    projects:
+      - slug: frieze-la-2019
     slug: table-for-helms-deep
     tags:
       - table
