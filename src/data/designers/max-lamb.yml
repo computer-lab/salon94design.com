@@ -955,6 +955,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa146-a
       - file: S94D-MaxLamb-Poly-MLa146-b
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-armchair-1
     tags:
       - chair
@@ -966,6 +968,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa147-b
       - file: S94D-MaxLamb-Poly-MLa147-c
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-chair-1
     tags:
       - chair
@@ -977,6 +981,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa148-b
       - file: S94D-MaxLamb-Poly-MLa148-c
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-stool
     tags:
       - seating
@@ -988,6 +994,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa149-b
       - file: S94D-MaxLamb-Poly-MLa149-c
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-chair-2
     tags:
       - chair
@@ -999,6 +1007,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa151-b
       - file: S94D-MaxLamb-Poly-MLa151-c
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-vase-1
     tags:
       - vase
@@ -1009,6 +1019,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa153-a
       - file: S94D-MaxLamb-Poly-MLa153-b
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-vase-2
     tags:
       - vase
@@ -1021,6 +1033,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa155-c
       - file: S94D-MaxLamb-Poly-MLa155-d
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-vase-3
     tags:
       - vase
@@ -1031,6 +1045,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa156-a
       - file: S94D-MaxLamb-Poly-MLa156-b
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-armchair-2
     tags:
       - chair
@@ -1042,6 +1058,8 @@ works:
       - file: S94D-MaxLamb-Poly-MLa157-d
       - file: S94D-MaxLamb-Poly-MLa157-c
     medium: 'Polystyrene, rubber polymer'
+    projects:
+      - slug: frieze-la-2019
     slug: scrap-poly-pastel-bench
     tags:
       - seating
