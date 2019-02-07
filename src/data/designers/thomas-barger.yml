@@ -650,4 +650,9 @@ works:
       - table
     title: Table for Helms Deep
     when: '2019'
+  - images:
+      - file: HelmsDeepTable
+    slug: helms-deep-2019
+    title: Helms Deep
+    when: '2019'
 status: Represented
